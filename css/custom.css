@@ -14,3 +14,10 @@ ul.links li img {
 footer {
   padding-bottom: 10px;
 }
+
+h4 { font-size: 3.2rem; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h4 { font-size: 3.0rem; }
+}
