@@ -11,6 +11,19 @@ ul.links li {
 ul.links li img {
   margin: auto 5px;
 }
+ul.links ul li {
+	list-style-type: none;
+	position: relative;
+	left: 0.85em;
+}
+ul.links ul li:before {
+	content:"\2219";
+	font-size: 2.5em;
+	line-height: 0;
+	position: absolute;
+	top: .3em;
+	left:-0.5em;
+}
 footer {
   padding-bottom: 10px;
 }
