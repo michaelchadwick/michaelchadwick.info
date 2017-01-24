@@ -20,12 +20,17 @@ var postDate, postTitle, postUrl = "";
 
 // run through all posts and grab info
 blog.posts().all(function(posts){
-  for(var i = 0; i < posts.length; i++){
-    jQuery('.'+MYWRAPPER_CLASS).append(function(){
-			postDate = posts[i].date.substr(0,10);
-			postTitle = posts[i].title;
-			postUrl = posts[i].url;
-      return ('<span>Latest post: ' + postDate + '<br /><a href="' + posts[i].url + '">' + posts[i].title + '</a></span>');
-		});
-  }
+	if (posts.length > 0) {
+	  for(var i = 0; i < posts.length; i++){
+	    jQuery('.'+MYWRAPPER_CLASS).append(function(){
+				postDate = posts[i].date.substr(0,10);
+				postTitle = posts[i].title;
+				postUrl = posts[i].url;
+	      return ('<span>Latest post: ' + postDate + '<br /><a href="' + posts[i].url + '">' + posts[i].title + '</a></span>');
+			});
+	  }
+		if ($('.apiData').prop('display') != 'block') {
+			$('.apiData').show();
+		}
+	}
 });
