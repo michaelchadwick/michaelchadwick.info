@@ -25,6 +25,12 @@ ul.links ul li:before {
 	top: .3em;
 	left:-0.5em;
 }
+ul.links ul li.soundcloud {
+	left: -0.5em;
+}
+ul.links ul li.soundcloud:before {
+	content:"";
+}
 footer {
   padding-bottom: 10px;
 }
