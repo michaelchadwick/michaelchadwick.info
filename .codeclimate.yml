@@ -14,6 +14,10 @@ engines:
     enabled: true
   fixme:
     enabled: true
+  phpmd:
+    enabled: true
+  phpcodesniffer:
+    enabled: true
 ratings:
   paths:
   - "**.css"
