@@ -4,6 +4,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+h1 { margin-left: -1px; }
+h4 { font-size: 3.2rem; }
 ul.links li {
   font-size: 2.5rem;
   list-style-type: square;
@@ -34,8 +36,6 @@ ul.links ul li.soundcloud:before {
 footer {
   padding-bottom: 10px;
 }
-
-h4 { font-size: 3.2rem; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
