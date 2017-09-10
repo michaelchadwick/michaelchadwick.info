@@ -3,6 +3,6 @@ $(function(){
   var $link = "";
 
   $("ul.links li a[href^='http']").each(function() {
-    $(this).parent().css("list-style-image", "url('http://www.google.com/s2/favicons?domain=" + this.hostname + "')");
+    $(this).parent().css("list-style-image", "url('https://www.google.com/s2/favicons?domain=" + this.hostname + "')");
   });
 });
