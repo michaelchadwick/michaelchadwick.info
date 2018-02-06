@@ -9,17 +9,17 @@ $(function() {
 			var postTitle = post.title;
 			var postUrl = "http://codana.me" + post.url;
 			postDate = replaceAll(postDate, '/', '-');
-			$('.blogCodaname').append('<span>Latest post: ' + postDate + '<br /><a href="' + postUrl + '">' + postTitle + '</a></span>');
+			$('.blogCodaname').html('<span>Latest post: ' + postDate + '<br /><a href="' + postUrl + '">' + postTitle + '</a></span>');
 			if ($('.apiData').prop('display') != 'block') {
 				$('.apiData').show();
 			}
 	  }
 	});
-	
+
 	function replaceAll(str, find, replace) {
 	  return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
 	}
-	
+
 	function escapeRegExp(str) {
   	return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
 	}
