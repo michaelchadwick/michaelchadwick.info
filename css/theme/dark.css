@@ -6,11 +6,11 @@ a {
   color: #9bc9d7 !important;
 }
 a.dark {
-  background: #f9f9f9 !important;
-  color: #444 !important;
+  background: #222 !important;
+  color: #f9f9f9 !important;
   text-decoration: underline !important;
 }
 a.light {
-  background: #444 !important;
-  color: #f9f9f9 !important;
+  background: #f9f9f9 !important;
+  color: #222 !important;
 }
