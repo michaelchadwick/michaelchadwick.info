@@ -4,35 +4,66 @@ a {
 a:hover {
   text-decoration: underline;
 }
-h1 { margin-left: -1px; }
-h4 { font-size: 3.2rem; }
+a.dark:hover, a.light:hover {
+  text-decoration: none;
+}
+
+h1 {
+  line-height: 0.8;
+  margin-left: -1px;
+}
+h3 {
+  line-height: 0.8;
+}
+h4 {
+  font-size: 3rem;
+}
+h5 {
+  line-height: 0.8;
+}
+
+li {
+  margin-bottom: 0;
+}
+
 ul.links li {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   list-style-type: square;
+  margin-bottom: 0;
 }
 ul.links li img {
   margin: auto 5px;
 }
 ul.links ul li {
-	list-style-type: none;
-	position: relative;
-	left: 0.85em;
-	font-size: 0.8em;
+  list-style-type: none;
+  position: relative;
+  left: 0.85em;
+  font-size: 0.8em;
 }
 ul.links ul li:before {
-	content:"\2219";
-	font-size: 2.5em;
-	line-height: 0;
-	position: absolute;
-	top: .3em;
-	left:-0.5em;
+  content:"\2219";
+  font-size: 2.5em;
+  line-height: 0;
+  position: absolute;
+  top: .3em;
+  left:-0.5em;
 }
 ul.links ul li.soundcloud {
-	left: -0.5em;
+  left: -0.5em;
 }
 ul.links ul li.soundcloud:before {
-	content:"";
+  content:"";
 }
+
+#theme {
+  text-align: center;
+}
+#theme a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 2px 4px;
+}
+
 footer {
   padding-bottom: 10px;
 }
@@ -43,5 +74,5 @@ footer {
 }
 
 .apiData {
-	display: none;
+  display: none;
 }

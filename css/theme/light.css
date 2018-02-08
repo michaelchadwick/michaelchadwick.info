@@ -1,0 +1,16 @@
+body {
+  background: #f9f9f9;
+  color: #444;
+}
+a {
+  color: #1eaedb !important;
+}
+a.light {
+  background: #f9f9f9 !important;
+  color: #444 !important;
+  text-decoration: underline !important;
+}
+a.dark {
+  background: #444 !important;
+  color: #f9f9f9 !important;
+}
