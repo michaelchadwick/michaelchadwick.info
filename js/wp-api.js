@@ -1,9 +1,9 @@
 $(function() {
-  var BLOG_API_URL = 'https://blog.nebyoolae.com/?json=get_recent_posts'
+  var MUZBLOG_API_URL = 'https://blog.nebyoolae.com/?json=get_recent_posts'
 
   $.ajax({
     dataType: 'json',
-    url: BLOG_API_URL,
+    url: MUZBLOG_API_URL,
     success: function (data) {
       var latestPost = data.posts[0]
       var title = latestPost.title
@@ -12,12 +12,12 @@ $(function() {
 
       $('.blogNebyoolaeCom').html(`Latest post: ${date}<br /><a href='${url}'>${title}</a>`)
 
-      if ($('.apiData').prop('display') != 'block') {
-        $('.apiData').show();
+      if ($('.apiData.muzblog').prop('display') != 'block') {
+        $('.apiData.muzblog').show();
       }
     },
-    error: function () {
-      console.log('No posts found')
+    error: function (e) {
+      console.log('Could not get muzblog data', e)
     }
   })
 })

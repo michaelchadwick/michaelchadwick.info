@@ -1,7 +1,9 @@
 $(function() {
+  var DEVBLOG_API_URL = 'http://codana.me/pages.json'
+
   $.ajax({
     dataType: 'json',
-    url: 'http://codana.me/pages.json',
+    url: DEVBLOG_API_URL,
     success: function (data) {
       var entries = data.entries;
       var post = entries[entries.length-1];
@@ -12,9 +14,12 @@ $(function() {
 
       $('.blogCodaname').html('<span>Latest post: ' + postDate + '<br /><a href="' + postUrl + '">' + postTitle + '</a></span>');
 
-      if ($('.apiData').prop('display') != 'block') {
-        $('.apiData').show();
+      if ($('.apiData.devblog').prop('display') != 'block') {
+        $('.apiData.devblog').show();
       }
+    },
+    error: function (e) {
+      console.log('Could not get devblog data', e)
     }
   });
 
