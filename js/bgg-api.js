@@ -5,7 +5,6 @@ $(function() {
     datatype: 'xml',
     url: BGG_API_URL,
     success: function (xml) {
-      console.log('bgg success')
       var $lastPlay = $(xml).find('play')[0]
       var $lastPlayItem = $($lastPlay).find('item')
 
