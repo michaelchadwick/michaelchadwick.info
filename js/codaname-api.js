@@ -1,5 +1,5 @@
 $(function() {
-  var DEVBLOG_API_URL = 'http://codana.me/pages.json'
+  var DEVBLOG_API_URL = 'https://codana.me/pages.json'
 
   $.ajax({
     dataType: 'json',
