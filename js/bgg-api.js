@@ -15,7 +15,7 @@ $(function() {
       if (name && id && date) {
         $('.bggLastGamePlayed').html(`Latest game: ${date}<br /><a href='https://boardgamegeek.com/boardgame/${id}'>${name}</a>`)
       } else {
-        console.log('bgg api error')
+        console.error('bgg api error')
       }
 
       if ($('.apiData.bgg').prop('display') != 'block') {
@@ -23,7 +23,7 @@ $(function() {
       }
     },
     error: function (e) {
-      console.log('Could not get bgg data', e)
+      console.error('Could not get bgg data', e)
     }
   })
 })

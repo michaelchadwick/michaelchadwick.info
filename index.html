@@ -29,8 +29,8 @@
   <!-- Primary Page Layout -->
   <div class="container">
     <header style="margin-top: 5%">
-      <h1>My name is Michael Chadwick.</h1>
-      <h3>I live in California.</h3>
+      <h1>My name is <strong>Michael Chadwick</strong>.</h1>
+      <h3>I live in <a href='https://www.google.com/maps/place/California/@35.8949354,-137.2963832,4z/data=!3m1!4b1!4m5!3m4!1s0x808fb9fe5f285e3d:0x8b5109a227086f55!8m2!3d36.778261!4d-119.4179324'>California</a>.</h3>
       <h5>Nice to meet you.</h5>
     </header>
 
@@ -46,7 +46,12 @@
       </div>
       <div class="two-thirds column">
         <ul class="links">
-          <li><a href="https://github.com/michaelchadwick">Github</a></li>
+          <li>
+            <a href="https://github.com/michaelchadwick">Github</a>
+            <ul class="apiData devgit">
+              <li class="ghLastChange"></li>
+            </ul>
+          </li>
           <li><a href="http://omni.codana.me">All My Webs</a></li>
           <li><a href="http://games.codana.me">Game Development</a></li>
           <li><a href="https://rubygems.org/profiles/mjchadwick">My Ruby Gems</a></li>
@@ -174,6 +179,7 @@
   <script type="text/javascript" src="js/wp-api.js"></script>
   <script type="text/javascript" src="js/codaname-api.js"></script>
   <script type="text/javascript" src="js/bgg-api.js"></script>
+  <script type="text/javascript" src="js/github-api.js"></script>
 
 <!-- End Document -->
 </body>
