@@ -15,12 +15,15 @@ $(function() {
         dataType: 'json',
         url: `${GH_API_URL}/repos/${GH_USER}/${repo_name}/events?per_page=1`,
         success: function (data) {
-          let commit_sha = data[0].payload.commits[0].sha
-          let commit_msg = data[0].payload.commits[0].message
-          let commit_url = `${GH_URL}/${GH_USER}/${repo_name}/commit/${commit_sha}`
-          let commit_date = data[0].created_at.substr(0, 10)
 
-          updatePageChunk(repo_name, repo_url, commit_sha, commit_msg, commit_url, commit_date)
+          if (data.length > 0) {
+            let commit_sha = data[0].payload.commits[0].sha
+            let commit_msg = data[0].payload.commits[0].message
+            let commit_url = `${GH_URL}/${GH_USER}/${repo_name}/commit/${commit_sha}`
+            let commit_date = data[0].created_at.substr(0, 10)
+
+            updatePageChunk(repo_name, repo_url, commit_sha, commit_msg, commit_url, commit_date)
+          }
         },
         error: function (e) {
           console.error('Could not get last commit message', e)
