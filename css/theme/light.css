@@ -1,16 +1,16 @@
 body {
-  background: #f9f9f9;
-  color: #444;
+  background: #f6f6f6;
+  color: #282828;
 }
 a {
   color: #1eaedb !important;
 }
 a.light {
-  background: #f9f9f9 !important;
-  color: #444 !important;
-  text-decoration: underline !important;
+  background: #f6f6f6 !important;
+  color: #282828 !important;
 }
 a.dark {
-  background: #444 !important;
-  color: #f9f9f9 !important;
+  background: #282828 !important;
+  color: #f6f6f6 !important;
+  text-decoration: underline !important;
 }

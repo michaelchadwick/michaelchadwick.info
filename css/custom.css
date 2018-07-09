@@ -1,3 +1,7 @@
+body {
+  transition: .5s
+}
+
 a {
   text-decoration: none;
 }
@@ -36,6 +40,7 @@ ul.links li {
   font-size: 2.25rem;
   list-style-type: square;
   margin-bottom: 0;
+  padding: 5px 10px;
 }
 
 ul.links li img {
@@ -48,8 +53,9 @@ ul.links ul {
 
 ul.links ul li {
   font-size: 0.8em;
-  left: 0.85em;
+  left: 0.65em;
   list-style-type: none;
+  padding: 0;
   position: relative;
 }
 
@@ -71,13 +77,18 @@ ul.links ul li.soundcloud::before {
 }
 
 #theme {
+  bottom: 0;
+  position: fixed;
+  right: 0;
   text-align: center;
+  z-index: 10000;
 }
 
 #theme a {
   cursor: pointer;
   display: inline-block;
-  padding: 2px 4px;
+  padding: 2px;
+  width: 35px;
 }
 
 footer {
