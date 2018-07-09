@@ -13,14 +13,14 @@ $(function() {
 
       $.ajax({
         dataType: 'json',
-        url: `${GH_API_URL}/repos/${GH_USER}/${repo_name}/events?per_page=1`,
+        url: `${GH_API_URL}/repos/${GH_USER}/${repo_name}/commits?per_page=1`,
         success: function (data) {
 
           if (data.length > 0) {
-            let commit_sha = data[0].payload.commits[0].sha
-            let commit_msg = data[0].payload.commits[0].message
-            let commit_url = `${GH_URL}/${GH_USER}/${repo_name}/commit/${commit_sha}`
-            let commit_date = data[0].created_at.substr(0, 10)
+            let commit_sha = data[0].sha
+            let commit_msg = data[0].commit.message
+            let commit_url = data[0].html_url
+            let commit_date = data[0].commit.author.date.substr(0, 10)
 
             updatePageChunk(repo_name, repo_url, commit_sha, commit_msg, commit_url, commit_date)
           }
@@ -36,13 +36,13 @@ $(function() {
   })
 
   function updatePageChunk(repo_name, repo_url, commit_sha, commit_msg, commit_url, commit_date) {
-    let str = `<span>Latest update: ${commit_date}<br />
+    let str = `<span>Latest commit: ${commit_date}<br />
     <strong><a href='${repo_url}'>${repo_name}</a></strong></span><br />
     - <a href='${commit_url}'>${commit_msg}</a></span>`
 
     $('.ghLastChange').html(str)
 
-    if ($('.apiData.devgit').prop('display') != 'block') {
+    if ($('.apiData.devgit').prop('display') !== 'block') {
       $('.apiData.devgit').show()
     }
   }
