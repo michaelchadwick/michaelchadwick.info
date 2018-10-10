@@ -12,7 +12,7 @@ $(function() {
 
       $('.blogNebyoolaeCom').html(`Latest post: ${date}<br /><a href='${url}'>${title}</a>`)
 
-      if ($('.apiData.muzblog').prop('display') != 'block') {
+      if ($('.apiData.muzblog').prop('display') !== 'block') {
         $('.apiData.muzblog').show()
       }
     },

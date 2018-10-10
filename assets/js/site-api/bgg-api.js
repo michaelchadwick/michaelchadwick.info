@@ -18,7 +18,7 @@ $(function() {
         console.error('bgg api error')
       }
 
-      if ($('.apiData.bgg').prop('display') != 'block') {
+      if ($('.apiData.bgg').prop('display') !== 'block') {
         $('.apiData.bgg').show()
       }
     },

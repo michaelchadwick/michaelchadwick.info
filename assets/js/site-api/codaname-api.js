@@ -9,12 +9,12 @@ $(function() {
       var post = entries[entries.length-1]
       var postDate = post.url.substr(1,10)
       var postTitle = post.title
-      var postUrl = "http://codana.me" + post.url
+      var postUrl = `http://codana.me${post.url}`
       postDate = replaceAll(postDate, '/', '-')
 
       $('.blogCodaname').html('<span>Latest post: ' + postDate + '<br /><a href="' + postUrl + '">' + postTitle + '</a></span>')
 
-      if ($('.apiData.devblog').prop('display') != 'block') {
+      if ($('.apiData.devblog').prop('display') !== 'block') {
         $('.apiData.devblog').show()
       }
     },
