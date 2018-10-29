@@ -6,9 +6,9 @@ $(function () {
 
   $style = $('style#theme')
   $('div#theme a.light').on('click', function () {
-    $style.html('@import url("css/theme/light.css")')
+    $style.html('@import url("assets/css/theme/light.css")')
   })
-  $('div#theme a.dark').on('click', function (link) {
-    $style.html('@import url("css/theme/dark.css")')
+  $('div#theme a.dark').on('click', function () {
+    $style.html('@import url("assets/css/theme/dark.css")')
   })
 })
