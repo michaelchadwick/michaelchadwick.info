@@ -1,5 +1,5 @@
-// BoardGameGeek
-const BGG = $(function() {
+// BOARDGAMEGEEK
+const BG = $(function() {
   var BGG_API_URL = 'https://www.boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
 
   $.ajax({
@@ -29,7 +29,7 @@ const BGG = $(function() {
   })
 })
 
-// codana.me
+// CODANAME
 const CN = $(function() {
   var CODANAME_API_URL = 'https://codana.me/pages.json'
 
@@ -123,29 +123,95 @@ const GH = $(function() {
   }
 })
 
-// RUBYGEMS
-const RG = $(function() {
-  var RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/search.json'
-  var RUBYGEMS_API_KEY = ''
+// POCKET - disabled because no CORS enabled
+// const PO = $(function() {
+//   var POCKET_CONSUMER_KEY = '74718-3ff41ce74106148e7402d4d0'
+//   var POCKET_REDIRECT_URL = 'https://michaelchadwick.info'
+//   var POCKET_REQUEST_URL = 'https://getpocket.com/v3/oauth/request'
+//   var requestCode = ''
+//   var POCKET_ACCESS_URL = 'https://getpocket.com/v3/oauth/authorize'
+//   var accessToken = ''
+//   var POCKET_QUERY_URL = 'https://getpocket.com/v3/get'
 
-  $.ajax({
-    url: RUBYGEMS_API_URL,
-    type: 'GET',
-    beforeSend: function (xhr) {
-      xhr.setRequestHeader('Authorization', RUBYGEMS_API_KEY)
-    },
-    data: {},
-    dataType: 'json',
-    success: function (data) {
-      console.log('rubygems data', data)
-    },
-    error: function (e) {
-      console.error('Could not get rubygems data', e)
-    }
-  })
-})
+//   $.ajax({
+//     url: POCKET_REQUEST_URL,
+//     dataType: 'json',
+//     type: 'POST',
+//     async: false,
+//     data: {
+//       "consumer_key": POCKET_CONSUMER_KEY,
+//       "redirect_uri": POCKET_REDIRECT_URL
+//     },
+//     success: function (data) {
+//       console.log('success! pocket request url', data)
+//       $(this).requestCode = data
+//     },
+//     error: function (e) {
+//       console.error('Could not get pocket request data', e)
+//     }
+//   })
 
-// SOUNDCLOUD
+//   $.ajax({
+//     url: POCKET_ACCESS_URL,
+//     dataType: 'json',
+//     type: 'POST',
+//     async: false,
+//     data: {
+//       "consumer_key": POCKET_CONSUMER_KEY,
+//       "code": requestCode
+//     },
+//     success: function (data) {
+//       console.log('success! pocket access url', data)
+//       $(this).accessToken = data
+//     },
+//     error: function (e) {
+//       console.error('Could not get pocket access data', e)
+//     }
+//   })
+
+//   $.ajax({
+//     url: POCKET_QUERY_URL,
+//     dataType: 'json',
+//     type: 'POST',
+//     async: false,
+//     data: {
+//       "consumer_key": POCKET_CONSUMER_KEY,
+//       "access_token": accessToken,
+//       "count": 5,
+//       "detailType": "complete"
+//     },
+//     success: function (data) {
+//       console.log('success! pocket query', data)
+//     },
+//     error: function (e) {
+//       console.error('Could not get pocket query data', e)
+//     }
+//   })
+// })
+
+// RUBYGEMS - disabled due to rubygems.org not honoring preflight OPTIONS requests
+// const RG = $(function() {
+//   var RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json'
+//   var RUBYGEMS_API_KEY = ''
+
+//   $.get({
+//     url: RUBYGEMS_API_URL,
+//     type: 'GET',
+//     beforeSend: function (xhr) {
+//       xhr.setRequestHeader('Authorization', RUBYGEMS_API_KEY)
+//     },
+//     data: {},
+//     dataType: 'json',
+//     success: function (data) {
+//       console.log('rubygems data', data)
+//     },
+//     error: function (e) {
+//       console.error('Could not get rubygems data', e)
+//     }
+//   })
+// })
+
+// SOUNDCLOUD - not using right now
 // const SC = $(function() {
 //   var myUserId = 17397
 //   var $sc_embed_wrapper = $('li.soundcloud')
