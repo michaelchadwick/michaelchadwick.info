@@ -125,7 +125,7 @@ const GH = $(function() {
 
 // POCKET - disabled because no CORS enabled
 // const PO = $(function() {
-//   var POCKET_CONSUMER_KEY = '74718-3ff41ce74106148e7402d4d0'
+//   var POCKET_CONSUMER_KEY = ''
 //   var POCKET_REDIRECT_URL = 'https://michaelchadwick.info'
 //   var POCKET_REQUEST_URL = 'https://getpocket.com/v3/oauth/request'
 //   var requestCode = ''
@@ -191,9 +191,9 @@ const GH = $(function() {
 
 // RUBYGEMS - disabled due to rubygems.org not honoring preflight OPTIONS requests
 // const RG = $(function() {
-//   var RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json'
 //   var RUBYGEMS_API_KEY = ''
-
+//   var RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json'
+//
 //   $.get({
 //     url: RUBYGEMS_API_URL,
 //     type: 'GET',
