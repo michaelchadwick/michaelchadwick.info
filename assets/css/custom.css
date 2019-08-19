@@ -23,6 +23,10 @@ h1 {
 h3 {
   line-height: 0.8;
 }
+h3.task-header {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
 
 h4 {
   font-size: 3rem;
@@ -30,6 +34,11 @@ h4 {
 
 h5 {
   line-height: 0.8;
+}
+
+hr {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 li {
@@ -74,6 +83,10 @@ ul.links ul li.soundcloud {
 
 ul.links ul li.soundcloud::before {
   content: "";
+}
+
+header h5 {
+  margin-bottom: 4rem;
 }
 
 #theme {
