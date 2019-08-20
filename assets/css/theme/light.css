@@ -1,5 +1,9 @@
 body {
-  background: #f6f6f6;
+  background-attachment: fixed;
+  background-color: #f6f6f6;
+  background-image: url(/assets/images/svg/liquid-cheese.svg);
+  /* background by SVGBackgrounds.com */
+  background-size: cover;
   color: #282828;
 }
 a {

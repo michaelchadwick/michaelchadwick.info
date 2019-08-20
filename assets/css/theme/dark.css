@@ -1,5 +1,9 @@
 body {
-  background: #282828;
+  background-attachment: fixed;
+  background-color: #282828;
+  background-image: url(/assets/images/svg/wavey-fingerprint.svg);
+  /* background by SVGBackgrounds.com */
+  background-size: cover;
   color: #f3f3f3;
 }
 a {
