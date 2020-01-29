@@ -37,6 +37,7 @@ h5 {
 }
 
 hr {
+  border-top: 1px solid #b3aeae;
   margin-bottom: 1.5em;
   margin-top: 1.5em;
 }
