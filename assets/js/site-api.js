@@ -31,7 +31,7 @@ const BG = $(function() {
 
 // CODANAME
 const CN = $(function() {
-  var CODANAME_API_URL = 'https://codana.me/pages.json'
+  var CODANAME_API_URL = 'https://codana.me/api/v1/pages.json'
 
   $.ajax({
     dataType: 'json',
