@@ -31,7 +31,7 @@ const BG = $(function() {
 
 // CODANAME
 const CN = $(function() {
-  var CODANAME_API_URL = 'https://codaname.neb.host/api/v1/pages.json'
+  var CODANAME_API_URL = 'https://neb.host/blog/api/v1/pages.json'
 
   $.ajax({
     dataType: 'json',
@@ -41,7 +41,7 @@ const CN = $(function() {
       var post = entries[entries.length-1]
       var postDate = post.url.substr(1,10)
       var postTitle = post.title
-      var postUrl = `http://codana.me${post.url}`
+      var postUrl = `https://neb.host/blog${post.url}`
       postDate = replaceAll(postDate, '/', '-')
 
       $('.blogCodaname').html('<span>Latest post: ' + postDate + '<br /><a href="' + postUrl + '">' + postTitle + '</a></span>')
