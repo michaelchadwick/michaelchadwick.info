@@ -39,9 +39,10 @@ const CN = $(function() {
     success: function (data) {
       var entries = data.entries
       var post = entries[entries.length-1]
+      console.log('post', post)
       var postDate = post.url.substr(1,10)
       var postTitle = post.title
-      var postUrl = `https://neb.host/blog${post.url}`
+      var postUrl = `https://neb.host${post.url}`
       postDate = replaceAll(postDate, '/', '-')
 
       $('.blogCodaname').html('<span>Latest post: ' + postDate + '<br /><a href="' + postUrl + '">' + postTitle + '</a></span>')
