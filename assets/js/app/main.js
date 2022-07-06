@@ -38,3 +38,11 @@ btn.addEventListener('click', function(event) {
 
   localStorage.setItem('mcinfo-theme', theme)
 })
+
+MCInfo.initApi = function() {
+  MCInfo.BG()
+  MCInfo.CN()
+  MCInfo.GH()
+}
+
+window.onload = MCInfo.initApi
