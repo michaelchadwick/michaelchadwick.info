@@ -1,5 +1,5 @@
 // BOARDGAMEGEEK
-const BG = $(function() {
+MCInfo.BG = $(function() {
   var BGG_API_URL = 'https://www.boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
 
   $.ajax({
@@ -30,7 +30,7 @@ const BG = $(function() {
 })
 
 // CODANAME
-const CN = $(function() {
+MCInfo.CN = $(function() {
   var CODANAME_API_URL = 'https://neb.host/blog/api/v1/pages.json'
 
   $.ajax({
@@ -65,7 +65,7 @@ const CN = $(function() {
 })
 
 // GITHUB
-const GH = $(function() {
+MCInfo.GH = $(function() {
   var GH_USER = 'michaelchadwick'
   var GH_API_URL = 'https://api.github.com'
   var GH_API_LAST_REPO = `${GH_API_URL}/users/${GH_USER}/repos?sort=updated&per_page=1`
@@ -123,7 +123,7 @@ const GH = $(function() {
 
 // POCKET - disabled because no CORS enabled
 /*
-const PO = $(function() {
+MCInfo.PO = $(function() {
   var POCKET_CONSUMER_KEY = ''
   var POCKET_REDIRECT_URL = 'https://michaelchadwick.info'
   var POCKET_REQUEST_URL = 'https://getpocket.com/v3/oauth/request'
@@ -191,7 +191,7 @@ const PO = $(function() {
 
 // RUBYGEMS - disabled due to rubygems.org not honoring preflight OPTIONS requests
 /*
-const RG = $(function() {
+MCInfo.RG = $(function() {
   var RUBYGEMS_API_KEY = ''
   var RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json'
 
@@ -215,7 +215,7 @@ const RG = $(function() {
 
 // SOUNDCLOUD - not using right now
 /*
-const SC = $(function() {
+MCInfo.SC = $(function() {
   var myUserId = 17397
   var $sc_embed_wrapper = $('li.soundcloud')
 
@@ -251,26 +251,28 @@ const SC = $(function() {
 */
 
 // WORDPRESS - moved all wordpress blog content to static codaname site
-// const WP = $(function() {
-//   var MUZBLOG_API_URL = 'https://blog.nebyoolae.com/wp-json/wp/v2/posts'
+/*
+MCInfo.WP = $(function() {
+  var MUZBLOG_API_URL = 'https://blog.nebyoolae.com/wp-json/wp/v2/posts'
 
-//   $.ajax({
-//     dataType: 'json',
-//     url: MUZBLOG_API_URL,
-//     success: function (data) {
-//       var latestPost = data[0]
-//       var title = latestPost.title.rendered
-//       var date = latestPost.date.split('T')[0]
-//       var url = latestPost.link
+  $.ajax({
+    dataType: 'json',
+    url: MUZBLOG_API_URL,
+    success: function (data) {
+      var latestPost = data[0]
+      var title = latestPost.title.rendered
+      var date = latestPost.date.split('T')[0]
+      var url = latestPost.link
 
-//       $('.blogNebyoolaeCom').html(`Latest post: ${date}<br /><a href='${url}'>${title}</a>`)
+      $('.blogNebyoolaeCom').html(`Latest post: ${date}<br /><a href='${url}'>${title}</a>`)
 
-//       if ($('.apiData.muzblog').prop('display') !== 'block') {
-//         $('.apiData.muzblog').show()
-//       }
-//     },
-//     error: function (e) {
-//       console.error('Could not get muzblog data', e)
-//     }
-//   })
-// })
+      if ($('.apiData.muzblog').prop('display') !== 'block') {
+        $('.apiData.muzblog').show()
+      }
+    },
+    error: function (e) {
+      console.error('Could not get muzblog data', e)
+    }
+  })
+})
+*/
