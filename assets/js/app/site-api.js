@@ -1,136 +1,135 @@
+// _UTILITIES
+function replaceAll(str, find, replace) {
+  return str.replace(new RegExp(escapeRegExp(find), 'g'), replace)
+}
+
+function escapeRegExp(str) {
+  return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1")
+}
+
 // BOARDGAMEGEEK
-MCInfo.BG = $(function() {
-  var BGG_API_URL = 'https://www.boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
+MCInfo.BG = async function() {
+  const bggLastGamePlayed = document.querySelector('.bggLastGamePlayed')
+  const bggApiData = document.querySelector('.apiData.bgg')
 
-  $.ajax({
-    datatype: 'xml',
-    url: BGG_API_URL,
-    success: function (xml) {
-      var $lastPlay = $(xml).find('play')[0]
-      var $lastPlayItem = $($lastPlay).find('item')
+  fetch(BGG_API_URL, {
+    headers: {
+      'Content-Type': 'application/xml',
+    }
+  }).then(response => {
+    if (!response.ok) {
+      throw new Error('Could not get bgg data')
+    }
 
-      var name = $lastPlayItem[0].attributes['name'].value
-      var id = $lastPlayItem[0].attributes['objectid'].value
-      var date = $lastPlay.attributes['date'].value
+    return response
+  }).then(xml => {
+    const lastPlay = xml.querySelector('play')[0]
+    const lastPlayItem = lastPlay.querySelector('item')
 
-      if (name && id && date) {
-        $('.bggLastGamePlayed').html(`Latest game: ${date}<br /><a href='https://boardgamegeek.com/boardgame/${id}'>${name}</a>`)
-      } else {
-        console.error('bgg api error')
-      }
+    const name = lastPlayItem[0].getAttribute('name').value
+    const id = lastPlayItem[0].getAttribute('objectid').value
+    const date = lastPlay.getAttribute('date').value
 
-      if ($('.apiData.bgg').prop('display') !== 'block') {
-        $('.apiData.bgg').show()
-      }
-    },
-    error: function (e) {
-      console.error('Could not get bgg data', e)
+    if (name && id && date) {
+      bggLastGamePlayed.innerHTML = `Latest game: ${date}<br />`
+      bggLastGamePlayed.innerHTML += `<a href='https://boardgamegeek.com/boardgame/${id}'>${name}</a>`
+    } else {
+      console.error('bgg api error')
+    }
+
+    if (bggApiData.style.display !== 'block') {
+      bggApiData.style.display = 'block'
     }
   })
-})
+}
 
 // CODANAME
-MCInfo.CN = $(function() {
-  var CODANAME_API_URL = 'https://neb.host/blog/api/v1/pages.json'
+MCInfo.CN = async function() {
+  const devblog = document.querySelector('blogCodaname')
+  const devblogApi = document.querySelector('.apiData.devblog')
 
-  $.ajax({
-    dataType: 'json',
-    url: CODANAME_API_URL,
-    success: function (data) {
-      var entries = data.entries
-      var post = entries[entries.length-1]
-      var postDate = post.url.substr(6,10)
-      var postTitle = post.title
-      var postUrl = `https://neb.host${post.url}`
+  fetch(CODANAME_API_URL)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Could not get devblog data')
+      }
+
+      return response.json()
+    }).then(data => {
+      const entries = data.entries
+      const post = entries[entries.length-1]
+      const postTitle = post.title
+      const postUrl = `${CODANAME_URL}${post.url}`
+
+      let postDate = post.url.substr(6,10)
       postDate = replaceAll(postDate, '/', '-')
 
-      $('.blogCodaname').html('<span>Latest post: ' + postDate + '<br /><a href="' + postUrl + '">' + postTitle + '</a></span>')
+      devblog.innerHTML = `<span>Latest post: ${postDate}<br />`
+      devblog.innerHTML += `<a href="${postUrl}">${postTitle}</a></span>`
 
-      if ($('.apiData.devblog').prop('display') !== 'block') {
-        $('.apiData.devblog').show()
+      if (devblogApi.style.display !== 'block') {
+        devblogApi.style.display = 'block'
       }
-    },
-    error: function (e) {
-      console.error('Could not get devblog data', e)
-    }
-  })
-
-  function replaceAll(str, find, replace) {
-    return str.replace(new RegExp(escapeRegExp(find), 'g'), replace)
-  }
-
-  function escapeRegExp(str) {
-    return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1")
-  }
-})
+    })
+}
 
 // GITHUB
-MCInfo.GH = $(function() {
-  var GH_USER = 'michaelchadwick'
-  var GH_API_URL = 'https://api.github.com'
-  var GH_API_LAST_REPO = `${GH_API_URL}/users/${GH_USER}/repos?sort=updated&per_page=1`
+MCInfo.GH = async function() {
+  const ghLastRepo = await fetch(GH_API_LAST_REPO)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Could not get devgit data')
+      }
 
-  $.ajax({
-    dataType: 'json',
-    url: GH_API_LAST_REPO,
-    success: function (data) {
-      let repo_name = data[0].name
-      let repo_url = data[0].html_url
+      return response.json()
+    })
 
-      $.ajax({
-        dataType: 'json',
-        url: `${GH_API_URL}/repos/${GH_USER}/${repo_name}/commits?per_page=1`,
-        success: function (data) {
-          if (data.length > 0) {
-            let commit_sha = data[0].sha
-            let commit_msg = data[0].commit.message
-            let commit_url = data[0].html_url
-            let commit_date = data[0].commit.author.date.substr(0, 10)
+  fetch(ghLastRepo)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Could not get last commit message')
+      }
 
-            updatePageChunk(repo_name, repo_url, commit_sha, commit_msg, commit_url, commit_date)
-          }
-        },
-        error: function (e) {
-          console.error('Could not get last commit message', e)
-        }
-      })
-    },
-    error: function (e) {
-      console.error('Could not get devgit data', e)
-    }
-  })
+      return response.json()
+    }).then(data => {
+      const repo_name = data[0].name
+      const repo_url = data[0].html_url
+
+      if (data.length > 0) {
+        const commit_sha = data[0].sha
+        const commit_msg = data[0].commit.message
+        const commit_url = data[0].html_url
+        const commit_date = data[0].commit.author.date.substr(0, 10)
+
+        updatePageChunk(repo_name, repo_url, commit_sha, commit_msg, commit_url, commit_date)
+      }
+    })
 
   function updatePageChunk(repo_name, repo_url, commit_sha, commit_msg, commit_url, commit_date) {
-    let str = `<span>Latest commit: ${commit_date}<br />
-    <strong><a href='${repo_url}'>${repo_name}</a></strong></span><br />
-    - <a href='${commit_url}'>${commit_msg}</a></span>`
+    const ghLastChange = document.querySelector('.ghLastChange')
+    const ghApiData = document.querySelector('.apiData.devgit')
 
-    $('.ghLastChange').html(str)
+    let str = ''
+    str += '<span>'
+    str += `Latest commit: ${commit_date}<br />`
+    str += `<strong><a href='${repo_url}'>${repo_name}</a></strong>`
+    str += '</span>'
+    str += `<br />- <a href='${commit_url}'>${commit_msg}</a></span>`
 
-    if ($('.apiData.devgit').prop('display') !== 'block') {
-      $('.apiData.devgit').show()
+    ghLastChange.innerHTML = str
+
+    if (ghApiData.style.display !== 'block') {
+      ghApiData.style.display = 'block'
     }
   }
-
-  function replaceAll(str, find, replace) {
-    return str.replace(new RegExp(escapeRegExp(find), 'g'), replace)
-  }
-
-  function escapeRegExp(str) {
-    return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1")
-  }
-})
+}
 
 // POCKET - disabled because no CORS enabled
 /*
-MCInfo.PO = $(function() {
-  var POCKET_CONSUMER_KEY = ''
-  var POCKET_REDIRECT_URL = 'https://michaelchadwick.info'
-  var POCKET_REQUEST_URL = 'https://getpocket.com/v3/oauth/request'
-  var requestCode = ''
-  var POCKET_ACCESS_URL = 'https://getpocket.com/v3/oauth/authorize'
-  var accessToken = ''
-  var POCKET_QUERY_URL = 'https://getpocket.com/v3/get'
+MCInfo.PO = async function() {
+  let POCKET_CONSUMER_KEY = ''
+  let requestCode = ''
+  let accessToken = ''
 
   $.ajax({
     url: POCKET_REQUEST_URL,
@@ -186,14 +185,13 @@ MCInfo.PO = $(function() {
       console.error('Could not get pocket query data', e)
     }
   })
-})
+}
 */
 
 // RUBYGEMS - disabled due to rubygems.org not honoring preflight OPTIONS requests
 /*
-MCInfo.RG = $(function() {
-  var RUBYGEMS_API_KEY = ''
-  var RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json'
+MCInfo.RG = async function() {
+  let RUBYGEMS_API_KEY = ''
 
   $.get({
     url: RUBYGEMS_API_URL,
@@ -210,14 +208,13 @@ MCInfo.RG = $(function() {
       console.error('Could not get rubygems data', e)
     }
   })
-})
+}
 */
 
 // SOUNDCLOUD - not using right now
 /*
-MCInfo.SC = $(function() {
-  var myUserId = 17397
-  var $sc_embed_wrapper = $('li.soundcloud')
+MCInfo.SC = async function() {
+  let $sc_embed_wrapper = $('li.soundcloud')
 
   $.getJSON('js/client_ids.json', function(data) {
     SC.initialize({
@@ -231,7 +228,7 @@ MCInfo.SC = $(function() {
   function getLatestTrack() {
     SC.get('/tracks',
     {
-      user_id: myUserId,
+      user_id: SC_USER_ID,
       limit: 1
     },
     function(latest_track) {
@@ -247,14 +244,12 @@ MCInfo.SC = $(function() {
       )
     })
   }
-})
+}
 */
 
 // WORDPRESS - moved all wordpress blog content to static codaname site
 /*
-MCInfo.WP = $(function() {
-  var MUZBLOG_API_URL = 'https://blog.nebyoolae.com/wp-json/wp/v2/posts'
-
+MCInfo.WP = async function() {
   $.ajax({
     dataType: 'json',
     url: MUZBLOG_API_URL,
@@ -274,5 +269,5 @@ MCInfo.WP = $(function() {
       console.error('Could not get muzblog data', e)
     }
   })
-})
+}
 */

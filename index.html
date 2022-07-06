@@ -40,10 +40,11 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- VENDOR -->
   <link rel="stylesheet" href="/assets/css/vendor/normalize.css">
   <link rel="stylesheet" href="/assets/css/vendor/skeleton.css">
-  <link rel="stylesheet" href="/assets/css/custom.css">
-  <style id="theme" type="text/css">@import url("/assets/css/theme/light.css");</style>
+  <!-- CUSTOM -->
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
 
@@ -55,9 +56,7 @@
       <h5>Nice to meet you.</h5>
     </header>
 
-    <div id="theme">
-      <a class="light">light</a>  <a class="dark">dark</a>
-    </div>
+    <button id="theme-toggler">light</button>
 
     <hr />
 
@@ -240,11 +239,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- VENDOR -->
   <script type="text/javascript" src="./assets/js/vendor/ga.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
   <!-- CUSTOM -->
   <script type="text/javascript" src="./assets/js/app.js"></script>
   <!--<script type="text/javascript" src="./assets/js/app/favicon.js"></script>-->
+  <script type="text/javascript" src="./assets/js/app/constants.js"></script>
   <script type="text/javascript" src="./assets/js/app/main.js"></script>
   <script type="text/javascript" src="./assets/js/app/site-api.js"></script>
 

@@ -1,17 +1,40 @@
-$(function () {
-  // find links and change their <li> background to be their favicon
-  $('ul.links li a.favicon[href^="http"]').each(function () {
-    $(this).parent().css(
-      'list-style-image', `url('https://www.google.com/s2/favicons?domain=${this.hostname}')`
-    )
-  })
+// find links and change their <li> background to be their favicon
+const favicons = document.querySelectorAll('ul.links li a.favicon[href^="http"]')
 
-  // change the theme to day/night
-  $style = $('style#theme')
-  $('div#theme a.light').on('click', function () {
-    $style.html('@import url("assets/css/theme/light.css")')
-  })
-  $('div#theme a.dark').on('click', function () {
-    $style.html('@import url("assets/css/theme/dark.css")')
-  })
+favicons.forEach(f => {
+  const parentStyle = f.parentElement.style
+  const hostname = f.hostname
+
+  parentStyle.listStyleImage = `url('https://www.google.com/s2/favicons?domain=${hostname}')`
+})
+
+const btn = document.getElementById('theme-toggler')
+const bodyClasses = document.body.classList
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
+const currentTheme = localStorage.getItem('mcinfo-theme')
+
+if (currentTheme == 'dark') {
+  bodyClasses.toggle('dark-theme')
+  btn.innerHTML = 'dark'
+} else if (currentTheme == 'light') {
+  bodyClasses.toggle('light-theme')
+  btn.innerHTML = 'light'
+}
+
+let theme = ''
+
+// Listen for a click on the button
+btn.addEventListener('click', function(event) {
+  if (prefersDarkScheme.matches) {
+    bodyClasses.toggle('light-theme')
+    theme = bodyClasses.contains('light-theme') ? 'light' : 'dark'
+  } else {
+    bodyClasses.toggle('dark-theme')
+    theme = bodyClasses.contains('dark-theme') ? 'dark' : 'light'
+  }
+
+  // update text inside toggler
+  event.target.innerHTML = theme
+
+  localStorage.setItem('mcinfo-theme', theme)
 })
