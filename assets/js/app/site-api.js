@@ -67,44 +67,31 @@ MCInfo.CN = function() {
 
 // GITHUB
 MCInfo.GH = async function() {
-  const ghLastRepo = await fetch(GH_API_LAST_REPO).then(response => response.json())
+  const ghRecentCommits = await fetch(
+    `${GH_API_URL}/search/commits?q=author:${GH_USER}&sort=committer-date&per_page=3`)
+    .then(response => response.json())
 
-  let ghRepoName = ''
-  let ghRepoUrl = ''
+  if (ghRecentCommits) {
+    const ghLastChanges = document.querySelector('.ghLastChange')
+    const ghApiData = document.querySelector('.apiData.devgit')
 
-  if (ghLastRepo.length) {
-    ghRepoName = ghLastRepo[0].name
-    ghRepoUrl = ghLastRepo[0].html_url
-  }
+    let str = ''
+    str += `<span>Latest commits:</span>`
 
-  const GH_API_LAST_COMMIT = `${GH_API_URL}/repos/${GH_USER}/${ghRepoName}/commits?per_page=1`
+    ghRecentCommits.items.forEach(item => {
+      const msg = item.commit.message
+      const url = item.html_url
+      const repo = item.repository.name
+      const date = item.commit.author.date.substr(0, 10)
 
-  const ghLastCommit = await fetch(GH_API_LAST_COMMIT).then(response => response.json())
+      str += `<br />- ${date}: <a href='${url}'>${msg}</a></span> (<strong><a href='${repo}'>${repo}</a></strong>)`
+    })
 
-  let ghCommitMsg = ''
-  let ghCommitUrl = ''
-  let ghCommitDate = ''
+    ghLastChanges.innerHTML = str
 
-  if (ghLastCommit.length) {
-    ghCommitMsg = ghLastCommit[0].commit.message
-    ghCommitUrl = ghLastCommit[0].html_url
-    ghCommitDate = ghLastCommit[0].commit.author.date.substr(0, 10)
-  }
-
-  const ghLastChange = document.querySelector('.ghLastChange')
-  const ghApiData = document.querySelector('.apiData.devgit')
-
-  let str = ''
-  str += '<span>'
-  str += `Latest commit: ${ghCommitDate}<br />`
-  str += `<strong><a href='${ghRepoUrl}'>${ghRepoName}</a></strong>`
-  str += '</span>'
-  str += `<br />- <a href='${ghCommitUrl}'>${ghCommitMsg}</a></span>`
-
-  ghLastChange.innerHTML = str
-
-  if (ghApiData.style.display !== 'block') {
-    ghApiData.style.display = 'block'
+    if (ghApiData.style.display !== 'block') {
+      ghApiData.style.display = 'block'
+    }
   }
 }
 
