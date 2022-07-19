@@ -30,13 +30,15 @@ const btn = document.getElementById('theme-toggler')
 const bodyClasses = document.body.classList
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
 const currentTheme = localStorage.getItem('mcinfo-theme')
+const darkText = '🌙 dark'
+const lightText = '☀️ light'
 
 if (currentTheme == 'dark') {
   bodyClasses.toggle('dark-theme')
-  btn.innerHTML = 'dark'
+  btn.innerHTML = darkText
 } else if (currentTheme == 'light') {
   bodyClasses.toggle('light-theme')
-  btn.innerHTML = 'light'
+  btn.innerHTML = lightText
 }
 
 let theme = ''
@@ -52,7 +54,7 @@ btn.addEventListener('click', function(event) {
   }
 
   // update text inside toggler
-  event.target.innerHTML = theme
+  event.target.innerHTML = theme == 'light' ? lightText : darkText
 
   localStorage.setItem('mcinfo-theme', theme)
 })
