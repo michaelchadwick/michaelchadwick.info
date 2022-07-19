@@ -1,3 +1,6 @@
+/* main */
+/* app entry point and main functions */
+
 // find links and change their <li> background to be their favicon
 const faviconLinks = document.querySelectorAll('ul.links li.dynamic a.favicon[href^="http"]')
 
@@ -30,15 +33,14 @@ const btn = document.getElementById('theme-toggler')
 const bodyClasses = document.body.classList
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
 const currentTheme = localStorage.getItem('mcinfo-theme')
-const darkText = '🌙 dark'
-const lightText = '☀️ light'
+
 
 if (currentTheme == 'dark') {
   bodyClasses.toggle('dark-theme')
-  btn.innerHTML = darkText
+  btn.innerHTML = THEME_DARK_TEXT
 } else if (currentTheme == 'light') {
   bodyClasses.toggle('light-theme')
-  btn.innerHTML = lightText
+  btn.innerHTML = THEME_LIGHT_TEXT
 }
 
 let theme = ''
@@ -54,15 +56,20 @@ btn.addEventListener('click', function(event) {
   }
 
   // update text inside toggler
-  event.target.innerHTML = theme == 'light' ? lightText : darkText
+  event.target.innerHTML = theme == 'light' ? THEME_LIGHT_TEXT : THEME_DARK_TEXT
 
   localStorage.setItem('mcinfo-theme', theme)
 })
 
-MCInfo.initApi = function() {
+MCInfo.initApi = () => {
+  // get external site data
   MCInfo.BG()
   MCInfo.CN()
   MCInfo.GH()
 }
+
+/************************************************************************
+ * ON PAGE LOAD, DO THIS *
+ ************************************************************************/
 
 window.onload = MCInfo.initApi

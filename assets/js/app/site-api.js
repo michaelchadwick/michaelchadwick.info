@@ -76,8 +76,7 @@ MCInfo.GH = async function() {
     const ghInfo = document.querySelector('.ghInfo')
     const ghApiData = document.querySelector('.apiData.devgit')
 
-    let str = ''
-    str += `<span>Pinned Projects:</span> `
+    let str = `<span>Pinned projects:</span> `
 
     let projects = []
 

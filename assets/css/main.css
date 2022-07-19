@@ -86,7 +86,7 @@ li {
 }
 
 ul.links li {
-  font-size: 2.25rem;
+  font-size: 2rem;
   list-style-type: square;
   margin-bottom: 0;
   padding: 5px 10px;
@@ -94,44 +94,48 @@ ul.links li {
   ul.links li::marker {
     padding: 0;
   }
-  ul.links li img {
-    margin: auto 5px;
-  }
-  ul.links li ul {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-    ul.links li ul li {
-      font-size: 0.8em;
-      left: 0.65em;
-      list-style-type: none;
-      padding: 0;
-      position: relative;
+    ul.links li a {
+      padding-bottom: 2px;
     }
-      ul.links li ul li::before {
-        content: "\2219";
-        font-size: 2.5em;
-        left: -0.5em;
-        line-height: 0;
-        position: absolute;
-        top: 0.3em;
+    ul.links li img {
+      margin: auto 5px;
+    }
+    ul.links li ul {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+      ul.links li ul li {
+        font-size: 0.8em;
+        left: 0.65em;
+        list-style-type: none;
+        padding: 0;
+        position: relative;
       }
-        ul.links li ul li.blank {
-          left: -0.75em;
+        ul.links li ul li::before {
+          content: "\2219";
+          font-size: 2.5em;
+          left: -0.5em;
+          line-height: 0;
+          position: absolute;
+          top: 0.3em;
         }
-          ul.links li ul li.blank::before {
+          ul.links li ul li.blank {
+            left: -0.75em;
+          }
+            ul.links li ul li.blank::before {
+              content: "";
+            }
+          ul.links li ul li.blank a,
+          ul.links li ul li.blank span {
+            position: relative;
+            top: -2px;
+          }
+        ul.links li ul li.soundcloud {
+          left: -0.5em;
+        }
+          ul.links li ul li.soundcloud::before {
             content: "";
           }
-        ul.links li ul li.blank a {
-          position: relative;
-          top: -2px;
-        }
-      ul.links li ul li.soundcloud {
-        left: -0.5em;
-      }
-        ul.links li ul li.soundcloud::before {
-          content: "";
-        }
 
 header h5 {
   margin-bottom: 4rem;
