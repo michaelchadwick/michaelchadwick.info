@@ -1,11 +1,29 @@
 // find links and change their <li> background to be their favicon
-const favicons = document.querySelectorAll('ul.links li a.favicon[href^="http"]')
+const faviconLinks = document.querySelectorAll('ul.links li.dynamic a.favicon[href^="http"]')
 
-favicons.forEach(f => {
+faviconLinks.forEach(f => {
   const parentStyle = f.parentElement.style
-  const hostname = f.hostname
+  const hostname = f.href
 
-  parentStyle.listStyleImage = `url('https://www.google.com/s2/favicons?domain=${hostname}')`
+  let iconSize = 16
+
+  // if (hostname == 'https://nebyoolae.itch.io/') {
+  //   iconSize = 32
+  // }
+
+  let url = `https://www.google.com/s2/favicons?domain=${hostname}&sz=${iconSize}`
+
+  parentStyle.listStyleImage = `url(${url})`
+})
+
+const indentedLists = document.querySelectorAll('ul.links li ul li')
+
+indentedLists.forEach(li => {
+  if (li.style.listStyleImage) {
+    if (li.style.listStyleImage.indexOf('http')) {
+      li.classList.add('blank')
+    }
+  }
 })
 
 const btn = document.getElementById('theme-toggler')

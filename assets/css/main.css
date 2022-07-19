@@ -116,6 +116,16 @@ ul.links li {
         position: absolute;
         top: 0.3em;
       }
+        ul.links li ul li.blank {
+          left: -0.75em;
+        }
+          ul.links li ul li.blank::before {
+            content: "";
+          }
+        ul.links li ul li.blank a {
+          position: relative;
+          top: -2px;
+        }
       ul.links li ul li.soundcloud {
         left: -0.5em;
       }
@@ -150,3 +160,11 @@ footer {
 .apiData {
   display: none;
 }
+
+ul.links li.manual.code {
+  list-style-image: url('../images/png/code-solid.png');
+}
+  ul.links li.manual.code::marker {
+    position: relative;
+    top: -2px;
+  }

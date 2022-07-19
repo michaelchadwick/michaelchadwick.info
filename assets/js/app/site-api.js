@@ -51,7 +51,7 @@ MCInfo.CN = function() {
       const entries = data.entries
       const post = entries[entries.length-1]
       const postTitle = post.title
-      const postUrl = `${CODANAME_URL}${post.url}`
+      const postUrl = `${NEB_HOST_URL}${post.url}`
 
       let postDate = post.url.substr(6,10)
       postDate = _replaceAll(postDate, '/', '-')
@@ -67,32 +67,63 @@ MCInfo.CN = function() {
 
 // GITHUB
 MCInfo.GH = async function() {
-  const ghRecentCommits = await fetch(
-    `${GH_API_URL}/search/commits?q=author:${GH_USER}&sort=committer-date&per_page=3`)
+  // pinned projects
+  const ghPinnedProjects = await fetch(
+    `${GH_PINNED_API}${GH_USER}`)
     .then(response => response.json())
 
-  if (ghRecentCommits) {
-    const ghLastChanges = document.querySelector('.ghLastChange')
+  if (ghPinnedProjects) {
+    const ghInfo = document.querySelector('.ghInfo')
     const ghApiData = document.querySelector('.apiData.devgit')
 
     let str = ''
-    str += `<span>Latest commits:</span>`
+    str += `<span>Pinned Projects:</span> `
 
-    ghRecentCommits.items.forEach(item => {
-      const msg = item.commit.message
-      const url = item.html_url
-      const repo = item.repository.name
-      const date = item.commit.author.date.substr(0, 10)
+    let projects = []
 
-      str += `<br />- ${date}: <a href='${url}'>${msg}</a></span> (<strong><a href='${repo}'>${repo}</a></strong>)`
+    ghPinnedProjects.forEach(item => {
+      const url = item.link
+      const repo = item.repo
+
+      projects.push(`<a href='${url}'>${repo}</a>`)
     })
 
-    ghLastChanges.innerHTML = str
+    str += projects.join(', ')
+
+    ghInfo.innerHTML = str
 
     if (ghApiData.style.display !== 'block') {
       ghApiData.style.display = 'block'
     }
   }
+
+  // recent commits
+  // const ghRecentCommits = await fetch(
+  //   `${GH_API_URL}/search/commits?q=author:${GH_USER}&sort=committer-date&per_page=3`)
+  //   .then(response => response.json())
+
+  // if (ghRecentCommits) {
+  //   const ghInfo = document.querySelector('.ghInfo')
+  //   const ghApiData = document.querySelector('.apiData.devgit')
+
+  //   let str = ''
+  //   str += `<span>Latest commits:</span>`
+
+  //   ghRecentCommits.items.forEach(item => {
+  //     const msg = item.commit.message
+  //     const url = item.html_url
+  //     const repo = item.repository.name
+  //     const date = item.commit.author.date.substr(0, 10)
+
+  //     str += `<br />- ${date}: <a href='${url}'>${msg}</a></span> (<strong><a href='${repo}'>${repo}</a></strong>)`
+  //   })
+
+  //   ghInfo.innerHTML = str
+
+  //   if (ghApiData.style.display !== 'block') {
+  //     ghApiData.style.display = 'block'
+  //   }
+  // }
 }
 
 // _UTILITIES
