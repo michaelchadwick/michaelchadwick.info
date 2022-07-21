@@ -1,10 +1,7 @@
 .codeclimate.yml
 .csslintrc
 .eslintignore
-.eslintrc.js
-.eslintrc.json
-.eslintrc.yaml
-.eslintrc.yml
+.eslintrc*
 .git
 .gitignore
 .jshintrc
@@ -12,3 +9,4 @@ LICENSE.md
 README.md
 Rakefile
 rsync-exclude.txt
+TODO.md
