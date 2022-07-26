@@ -52,11 +52,13 @@ let lastKnownScrollPosition = 0
 let ticking = false
 
 MCInfo.handleResize = () => {
-  headerScrolled.style.width = `${window.innerWidth - 40}px`
+  const width = document.body.clientWidth
 
-  if (document.body.clientWidth < 768) {
+  if (width >= 550 && lastKnownScrollPosition <= 200) {
     headerScrolled.classList.remove('show')
   }
+
+  headerScrolled.style.width = `${window.innerWidth - 40}px`
 }
 
 MCInfo.handleScroll = () => {

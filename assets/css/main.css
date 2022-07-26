@@ -220,13 +220,10 @@ header.header-top {
     }
   }
 header.header-scrolled {
-  align-items: center;
   background: #ffffffee;
   background: linear-gradient(322deg, rgba(237,241,247,1) 0%, rgba(158,195,231,0.9122023809523809) 100%);
   box-shadow: 0 0 2px 2px #b3aeae;
-  display: flex;
   height: 40px;
-  justify-content: space-between;
   left: 0;
   margin-top: 0;
   padding: 10px 20px;
@@ -245,23 +242,29 @@ header.header-scrolled {
     top: 0;
   }
     header.header-scrolled span {
+      display: inline-block;
       line-height: 0.85;
+      padding: 7px 0;
     }
       header.header-scrolled span.name {
+        float: left;
         font-weight: 600;
       }
-      header.header-scrolled span.desc {
-        display: inline-block;
-        font-size: 0.8em;
-        padding: 0;
+        header.header-scrolled span.name span.desc {
+          font-size: 0.8em;
+          font-weight: 300;
+          padding: 0;
+        }
+      header.header-scrolled span.blog {
+        float: right;
+        padding: 14px 0;
       }
-      @media (min-width: 375px) {
+      @media (min-width: 550px) {
         header.header-scrolled span {
           line-height: 1;
         }
-          header.header-scrolled span.desc {
-            font-size: 0.9em;
-            padding: 0 1em;
+          header.header-scrolled span.name {
+            padding-top: 4px;
           }
       }
 
