@@ -118,12 +118,22 @@ h4 {
 
 h5 {
   font-size: 1.5rem;
-  line-height: 0.8;
   margin-bottom: 2rem;
 }
 @media (min-width: 550px) {
   h5 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+  }
+}
+
+h6 {
+  font-size: 1.25rem;
+  line-height: 0.8;
+  margin-bottom: 2rem;
+}
+@media (min-width: 550px) {
+  h6 {
+    font-size: 1.6rem;
     margin-bottom: 4rem;
   }
 }
