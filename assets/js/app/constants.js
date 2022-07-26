@@ -21,6 +21,3 @@ const POCKET_QUERY_URL = 'https://getpocket.com/v3/get'
 const RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json'
 
 const SC_USER_ID = 17397
-
-const THEME_DARK_TEXT = '🌙 dark'
-const THEME_LIGHT_TEXT = '☀️ light'

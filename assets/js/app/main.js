@@ -1,6 +1,8 @@
 /* main */
 /* app entry point and main functions */
 
+let theme = ''
+
 // find links and change their <li> background to be their favicon
 const faviconLinks = document.querySelectorAll('ul.links li.dynamic a.favicon[href^="http"]')
 
@@ -29,7 +31,7 @@ indentedLists.forEach(li => {
   }
 })
 
-const btn = document.getElementById('theme-toggler')
+const btnThemeToggler = document.getElementById('theme-toggler')
 const header = document.querySelector('header')
 const headerScrolled = document.querySelector('header.header-scrolled')
 const bodyClasses = document.body.classList
@@ -38,17 +40,19 @@ const currentTheme = localStorage.getItem('mcinfo-theme')
 
 if (currentTheme == 'dark') {
   bodyClasses.toggle('dark-theme')
-  btn.innerHTML = THEME_DARK_TEXT
+
+  btnThemeToggler.innerHTML = '🌙'
 } else if (currentTheme == 'light') {
   bodyClasses.toggle('light-theme')
-  btn.innerHTML = THEME_LIGHT_TEXT
+
+  btnThemeToggler.innerHTML = '☀️'
 }
 
 let lastKnownScrollPosition = 0
 let ticking = false
 
 MCInfo.handleResize = () => {
-  headerScrolled.style.width = `${window.innerWidth - 20}px`
+  headerScrolled.style.width = `${window.innerWidth - 40}px`
 
   if (document.body.clientWidth < 768) {
     headerScrolled.classList.remove('show')
@@ -58,7 +62,7 @@ MCInfo.handleResize = () => {
 MCInfo.handleScroll = () => {
   lastKnownScrollPosition = window.scrollY
 
-  if (document.body.clientWidth >= 768) {
+  if (document.body.clientWidth >= 550) {
     // https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event#examples
     if (!ticking) {
       window.requestAnimationFrame(() => {
@@ -77,8 +81,7 @@ MCInfo.handleScroll = () => {
 }
 
 MCInfo.addEventHandlers = () => {
-  // Listen for a click on the button
-  btn.addEventListener('click', function(event) {
+  btnThemeToggler.addEventListener('click', function(event) {
     if (prefersDarkScheme.matches) {
       bodyClasses.toggle('light-theme')
       theme = bodyClasses.contains('light-theme') ? 'light' : 'dark'
@@ -88,7 +91,7 @@ MCInfo.addEventHandlers = () => {
     }
 
     // update text inside toggler
-    event.target.innerHTML = theme == 'light' ? THEME_LIGHT_TEXT : THEME_DARK_TEXT
+    event.target.innerHTML = theme == 'light' ? '☀️' : '🌙'
 
     localStorage.setItem('mcinfo-theme', theme)
   })
@@ -96,11 +99,6 @@ MCInfo.addEventHandlers = () => {
   window.onresize = MCInfo.handleResize
   window.onscroll = MCInfo.handleScroll
 }
-
-
-let theme = ''
-
-
 
 MCInfo.initApi = () => {
   MCInfo.addEventHandlers()
