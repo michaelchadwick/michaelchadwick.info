@@ -164,6 +164,9 @@ ul.links li {
     ul.links li.manual.code {
       list-style-image: url('../images/png/code-solid.png');
     }
+      body.dark-theme ul.links li.manual.code {
+        list-style-image: url('../images/png/code-solid-rev.png');
+      }
       ul.links li.manual.code::marker {
         position: relative;
         top: -2px;
@@ -243,6 +246,14 @@ header.header-scrolled {
   width: 100%;
   z-index: 1;
 }
+  body.dark-theme header.header-scrolled {
+    background: #000000ee;
+    background: linear-gradient(322deg, rgb(0, 0, 0) 0%, rgba(35, 43, 51, 0.912) 100%);
+    box-shadow: 0 0 2px 2px #383636;
+  }
+    body.dark-theme header.header-scrolled span.blog a {
+      background: #000000ee;
+    }
 @media (min-width: 550px) {
   header.header-scrolled {
     top: -100px;
