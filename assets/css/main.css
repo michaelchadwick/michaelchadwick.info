@@ -276,9 +276,9 @@ header.header-scrolled {
           font-weight: 300;
           padding: 0;
         }
-      header.header-scrolled span.blog {
+      header.header-scrolled div.menu span {
         float: right;
-        padding: 14px 0;
+        padding: 14px 5px;
       }
       @media (min-width: 550px) {
         header.header-scrolled span {
