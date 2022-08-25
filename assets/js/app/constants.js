@@ -1,6 +1,6 @@
 const BGG_API_URL = 'https://www.boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
 
-const CODANAME_URL = 'https://neb.host/blog'
+const CODANAME_URL = 'https://michaelchadwick.info/blog'
 const CODANAME_API_URL = `${CODANAME_URL}/api/v1/pages.json`
 
 const GH_USER = 'michaelchadwick'
