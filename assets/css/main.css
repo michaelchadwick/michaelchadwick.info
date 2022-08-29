@@ -681,6 +681,15 @@ footer {
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
+.post {
+  margin: 20px;
+}
+@media (min-width: 550px) {
+  .post {
+    margin: 0;
+  }
+}
+
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;
