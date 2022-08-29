@@ -61,6 +61,9 @@ body {
       color: #9bc9d7;
       text-decoration: underline;
     }
+    body.dark-theme footer.site-footer p {
+      color: #f3f3f3;
+    }
     /*
     body.dark-theme ul.links li {
       background-color: #282828;
@@ -262,7 +265,7 @@ ul.links li {
 
 header.header-top {
   display: none;
-  margin-top: 5%;
+  margin-top: 4%;
   position: relative;
 }
   @media (min-width: 550px) {
