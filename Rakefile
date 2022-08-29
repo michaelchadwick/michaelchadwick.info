@@ -4,9 +4,9 @@ task :deploy do |t|
   # build site
   sh "bundle exec jekyll build --incremental JEKYLL_ENV=production"
   # sync site to remote host
-  sh "rsync -auP --exclude-from='rsync-exclude.txt' ./_site/* $MC_INFO_REMOTE"
+  sh "rsync -auP --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
   # backup drafts
-  sh "rsync -auP ./_drafts/* $MC_INFO_REMOTE/blog/_drafts"
+  sh "rsync -auP ./_drafts/* $MCINFO_REMOTE/blog/_drafts"
 end
 
 task :build do |t|
