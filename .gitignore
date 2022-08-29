@@ -24,4 +24,4 @@ Rakefile
 # I currently have no way to bring them in otherwise
 !assets/css/vendor
 !assets/icons
-!assets/scripts/vendor/
+!assets/js/vendor/
