@@ -101,12 +101,20 @@ MCInfo.addEventHandlers = () => {
 }
 
 MCInfo.initApi = () => {
+  // set env
+  MCInfo.env = MCINFO_PROD_URL.includes(document.location.hostname) ? 'prod' : 'local'
+
+  // adjust <title> for env
+  if (MCInfo.env == 'local') {
+    document.title = '(LH) ' + document.title
+  }
+
   MCInfo.addEventHandlers()
 
   if (document.location.pathname == '/') {
     // get external site data
     MCInfo.BG()
-    MCInfo.CN()
+    MCInfo.BLOG()
     MCInfo.GH()
   }
 

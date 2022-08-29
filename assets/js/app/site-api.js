@@ -35,12 +35,12 @@ MCInfo.BG = function() {
   })
 }
 
-// CODANAME
-MCInfo.CN = function() {
-  const devblog = document.querySelector('.blogCodaname')
+// BLOG
+MCInfo.BLOG = function() {
+  const devblog = document.querySelector('.mcinfoBlog')
   const devblogApi = document.querySelector('.apiData.devblog')
 
-  fetch(CODANAME_API_URL)
+  fetch(MCINFO_API_URL)
     .then(response => {
       if (!response.ok) {
         throw new Error('Could not get devblog data')
@@ -51,7 +51,7 @@ MCInfo.CN = function() {
       const entries = data.entries
       const post = entries[entries.length-1]
       const postTitle = post.title
-      const postUrl = `${NEB_HOST_URL}${post.url}`
+      const postUrl = `${MCINFO_URL}${post.url}`
 
       let postDate = post.url.substr(6,10)
       postDate = _replaceAll(postDate, '/', '-')
