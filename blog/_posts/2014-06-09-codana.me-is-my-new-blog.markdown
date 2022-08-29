@@ -1,0 +1,15 @@
+---
+
+layout: post
+title:  "Codana.me is my new dev blog"
+tags: jekyll update webdev
+
+---
+
+Code(dev) + coda(music) + name + wanton need to use a specialized TLD = codana.me :)
+
+<!--more-->
+
+This is the home for all the code, audio, and audio code developments by me, Michael Chadwick, now proudly brought to you by [Jekyll](https://jekyllrb.com).
+
+Most of my code is open source and found on [Github]({{ site.gh_link }}). Music is usually done under the "Nebyoolae" name/brand, with singles and one-offs found on [Soundcloud]({{ site.sc_link }}), and full albums on [Bandcamp]({{ site.bc_link }}).

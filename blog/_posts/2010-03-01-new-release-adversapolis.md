@@ -1,0 +1,55 @@
+---
+id: 1804
+title: 'New Release: Adversapolis'
+date: 2010-03-01T01:12:00-08:00
+author: adminyoolae
+layout: post
+tags:
+  - music-composition
+  - new-releases
+---
+My entry for the RPM 2010 Challenge is complete! I invented a new &#8220;personality&#8221; for this project called Adversapolis. The album is self-titled because I couldn&#8217;t come up with anything else once I spent my creative juices on that.
+
+The album of original music is about 42 minutes long, consists of 9 songs, and features me on the guitar, bass guitar, and vocals. The drums were sequenced, as usual. The genre is &#8220;Rock&#8221; or &#8220;Alternative Rock,&#8221; depending on your druthers. You can grab it from its very own domain, [Adversapolis](http://adversapolis.com), for the next Time of Some Duration, which will then be succeeded by the Time Wherein It Gets Integrated Into Nebyoolae.com, As Well.
+
+<!--more Find out more information about the making of Adversapolis-->
+
+**THE CONCEPT**
+For those of you who aren&#8217;t familiar with RPM, it&#8217;s basically a make-an-album in a month kind of thing. You have a month (in this case, February, so fewer days than your average month) to record either 10 songs or 35 minutes of music. You&#8217;re supposed to write all the music during this time, too, except I kind of cheated on that and had most of it worked out beforehand. A previous collection of songs that were just sitting on my hard drive (among many, many others) called Kaleidoscopic was basically just asking to be recorded right, and now was the time. However, this didn&#8217;t mean it was necessarily easier, as everything except drums had to be learned on the spot whilst recording, anyway. When you&#8217;re done, you burn it to a CD and send it to some &#8220;RPM HQ&#8221; in New Hampshire, postdated by March 1. I&#8217;ve got the CD mailer on the table in front of me, so as soon as I wake up tomorrow and get out the door, the first stop I&#8217;m making is the post office. What happens to it after that remains to be seen.
+
+The name Adversapolis comes from my last name&#8217;s meaning. Chadwick essentially boils down to &#8220;from the warrior&#8217;s town.&#8221; Since the album deals with confusion and self-doubt, I decided to smush &#8220;Adversity&#8221; with &#8220;the people,&#8221; resulting in Adversapolis.
+
+I give thanks to [yunikoneko](http://yunikoneko.livejournal.com/){.lj-user} for mentioning she was going to do it, as it was enough arbitrary momentum to get me to do it, as well, and it somehow carried me throughout the whole thing. Being finished with it makes me very happy, as do all the projects in the past I&#8217;ve since finished, and using an artificial deadline to make sure it got done was immensely helpful to stem the tide of self-editing that always washes over me during any project I do.
+
+**THE COMPOSITION**
+I make, or at least think about making, music all the time. If you know me, then this is not news. If&#8217;n we continue this train of logic, then you also know that _usually_ the music I make has no vocals and/or lyrics. If there&#8217;s any instrument I&#8217;m not comfortable with no matter how many times I try using it, it&#8217;s my voice. It&#8217;s weak, resides, amateurishly, in my head, and has trouble staying on key. I sing along to other people&#8217;s music just like you do, but when it comes to singing alone, or along with music I&#8217;ve written, my confidence level plummets.
+
+Despite this frustrating shortcoming, the power that accessible music has over the public is hard to ignore. Instrumental music never quite works its way into the consciousness of the masses as well as songs with words following a catchy melody. In my journey as a musician, I&#8217;m always looking to fulfill niches. My first album was an instrumental rock album, focusing on extended musical passages of quasi-virtuosity, following in my guitar heroes Satch and Vai. I&#8217;ve since made an electronica/dance album, a chiptune album, and a video game soundtrack. None of these albums featured vocals. I like them all for different reasons, but they still don&#8217;t have the immediacy of that pop album that everyone always loves, and instead they get relegated to some novelty bin in the collective consciousness.
+
+Therefore, one day, several years ago, I purposefully started constructing pop songs that had lyrics to sing. At the time, I was going through both a relationship and, later, a breakup. Adding the feelings that arose from those situations to some more general introspective thoughts, songs began to come together. Unfortunately, as with a lot of musical ideas I come up with, they end up as either a MIDI composition in Tabit, or a bunch of MIDI sequences in Logic. I can assign neat synths and samples to these sequences all the live long day, but they never feel as alive and dynamic as if they were recorded live with real instruments. Life is a many-varied activity, and it kept passing me by, never delivering the right combination of ambition, confidence, and spare time to make these cold, lifeless compositions into real-life **songs**, possessing the characteristics I (and likely most of you reading this) require to think of them as &#8220;legitimate.&#8221;
+
+Fast-forward to February 1, 2010, and my decision to do this RPM Challenge has been consummated, I know I have the time, and I know I have the ambition. Also, I know I have the support of my wife to follow my hobby and passion, and the support of my household to deal with the audio volume level requirements to see it through ;-)
+
+**THE RECORDING**
+Setting up our office with mics and amps was fun. I bought some extra XLR and 1/4&#8243; cables to rightfully hook up all of the meager gear I have. The electric bass guitar, electric guitar, and acoustic-electric guitar were all placed upon an amp or wall, and the mics were either pointed at an amp or at my guitar, depending on what was being recorded at any given moment.
+
+Of course, once that red light is on and the bar starts moving to the right in Logic, I become a different performer. When I&#8217;m not trying to get a good take of something, and can play freely, fearlessly, things tend to come more naturally. Turn on the record function, and the confidence starts slipping away, and missed takes can easily overload my frustration capacity. This is all not to mention that what my ears hear when they&#8217;re tuned to an amp or guitar soundhole&#8217;s output is very different when the source is a wav/aiff file. I haven&#8217;t had much luck in my engineering days to get what I hear live or in my head to be the same as what a recording puts out. Over time, I&#8217;ve just grown to accept whatever I can get down, even if ultimately it ends up sounding amateurish, either due to the quality of the recording gear or the quality of the actual recording of things itself. It all still seems rather mysterious to me, and so I just move on, happy to have recorded anything.
+
+In general, the recording came out well, even if there seems to be minor clipping on all tracks. My usage of limiters seems inexperienced at best. I never seem to know what kind of guitar &#8220;sound&#8221; to use, and so it&#8217;s fairly different on each track. My guitars and amps are all over 10 years old, and I&#8217;m pretty tired of the sound I get out of them, but can&#8217;t afford anything better still. The drum sequences were written a while ago, and although I tweaked them here and there, I was a bit too rushed to really make them sound any more &#8220;real&#8221;.
+
+Since this was my first real stab at recording vocals right, I feel their quality is the worst of all instruments, and I couldn&#8217;t think of anything besides doubling vocals to add harmony. My inability to sing a single note is outshone only by my inability to know what interval to sing along with it to make it sound good or better. The lyrics are pretty introspective, and while not amazing, I think they are the best I&#8217;ve ever written. It&#8217;s been pointed out that I rely on the beginner trick of rhyming constantly, and I agree. It&#8217;s not consistently flagrant, but it is consistent, and I wish to work on this in the future.
+
+**THE FINISHED PRODUCT**
+I decided to make some jewel case art to go along with everything. Here&#8217;s what the main booklet part looks like from the front to the inside to the back.
+
+<div style="margin: auto;">
+  <img src="http://adversapolis.com/img/ad_web01.jpg" alt="Jewel Case Booklet Front" /><br /> <img src="http://adversapolis.com/img/ad_web02.jpg" alt="Jewel Case Booklet Inside" /><br /> <img src="http://adversapolis.com/img/ad_web03.jpg" alt="Jewel Case Booklet Back" /><br /> <img src="http://adversapolis.com/img/ad_web04.jpg" alt="The whole kit and kaboodle" />
+</div>
+
+**THE AFTERMATH**
+Since I&#8217;ve &#8220;lived&#8221; with these songs for so many years, only now giving them the treatment I&#8217;d always hoped to, a saturation point has been reached. Listening to the album right now still fills me with anxiety, because I&#8217;m too close to the project to be objective. Now is the time in which I want to upload it to the Internet, hope others will listen and give feedback, and sit back and let it simmer. My opinion on my albums changes with time, and since this album is so different from the others (although similar to Pure Yellow Colour&#8217;s album), it will be interesting to see whether I end up liking it more, or loathing it.
+
+Other people&#8217;s opinions weigh heavily on my mind, a fact I am not proud of, but cannot dispute. The value of my work in the musical field, while always fun, is at the mercy of the public&#8217;s decision, because I choose to put myself out there and desire a recourse that is not simply ignorance. I know I should just create to create, and I will because I have to, but I crave the discourse and the criticism, to both validate the art&#8217;s existence, and to educate myself for future ventures. Almost with no doubt, I will be left wanting for participation, and this is something I&#8217;ve had to learn to understand without spite. Living inside my head so fervently brings its share of disappointment.
+
+**FOR THE ROAD**
+Now that Adversapolis is out of the way, I can finish up the PYC Rock Band DLC songs (they need a bit of tweaking) and upload them to the Rock Band Network that went live about a month ago. Once they&#8217;re done, I can honestly sit back and lose myself in a project-less existence for a while. I&#8217;ll be back on the creative pipe soon enough, I&#8217;m sure, as that is my way. I hope you join me for the ride then, too :-)

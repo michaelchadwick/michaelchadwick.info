@@ -1,0 +1,17 @@
+---
+
+layout: post
+title: "New coding project: Utter"
+tags: coding github mac miscellaneous objective-c osx
+
+---
+
+<p>I've used <a href="https://nsgn.net/software/say/">say.app</a> off and on for many years to play around with the OSX <em>say</em> command, and grab the occasional text-as-audio file for various projects. It's the quickest and easiest way to get speech in digital audio form via a GUI on a Mac that I know of (awfully specific, but still useful!).</p>
+
+<!--more-->
+
+<p>Unfortunately, say.app never got beyond beta status (still works fine) and hasn't been maintained since 2006(!). Furthermore, I've wanted a coding project to tinker with and Xcode was looking lonely, so I thought to myself "I should make a better say.app!".</p>
+
+<p>Since there's no source code available, I just dug into the Speech Synthesis API and <a href="https://github.com/michaelchadwick/utter">built (most of) it from scratch</a>. I call it Utter because it's a synonym for "say", it's short, it's memorable, and it's kind of silly (and I couldn't find anyone else using it in my short Google search). There is some functionality from the original application I haven't sussed out yet, but the guts are there and functional. I even made a minor adjustment so that when you choose to save the audio to a file, it will still play through the speakers at the same time (say.app is silent when saving to a file). I plan to add additional functionality as I figure out how to harness the speech synthesis system better.</p>
+
+<p>Furthermore, now there will be a modern, public repository for such an application that anyone can see and build upon. I'm still a pretty novice Objective-C programmer, so I'm sure my code can be improved, and putting it on Github seems to be the way you put yourself out there and get better nowadays.</p>

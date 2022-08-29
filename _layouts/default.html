@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+
+  {% include header-scrolled.html %}
+
+  <!-- Primary Page Layout -->
+  <div class="container">
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% comment %}
+    {% include google-analytics.html %}
+    {% endcomment %}
+
+  </div><!-- bucket -->
+
+</body>
+</html>

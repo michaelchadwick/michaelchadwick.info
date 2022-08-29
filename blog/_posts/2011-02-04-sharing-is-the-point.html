@@ -1,0 +1,34 @@
+---
+
+layout: post
+title: "Sharing is the Point"
+tags: asp hypercard sharepoint webdev
+
+---
+
+<p>Over the course of my history of computer programming (which stretches from the simplest markup language to full-on compiled languages), I've tried out a lot of things. When my family got its first personal computer, an AST rocking a 100MHz Pentium 1 processor and Windows 3.1 (MPC level 2, baby!), it came with <a href="https://en.wikipedia.org/wiki/QBASIC">QBASIC</a> alongside its foundational copy of DOS 6. I remember playing <a href="http://www.reloaded.org/download/QBasic-Gorillas/199/">Gorillas</a> on it, later marveling at the source code, not really understanding how it all worked.</p>
+
+<!--more-->
+
+<p>School had actually introduced me to <a href="https://en.wikipedia.org/wiki/HyperCard">HyperCard</a> as part of a 7th grade computer literacy course before my run-in with QBASIC, but that was a higher-level language and didn't get me into the nitty gritty of code, even though it did spark my interest in what would later become HTML. Near the end of high school I took an intro to C programming course, compiling source with gcc, and uploading my programs to a UNIX home directory. In college, I took a class on Java. And that was about it for direct school influence.</p>
+
+<p>Thus, all the rest of my programming experience came via either work or personal projects. Using our family's AST I built my first rudimentary website, lost to the annals of history. Many, many, many revisions later, we have what is largely <a href="https://nebyoolae.com">nebyoolae.com</a> and <a href="http://nebyooweb.com">nebyooweb.com</a>. Basic HTML was later joined with CSS. JavaScript, which became jQuery, was added in next, along with a MySQL database and PHP. The CakePHP framework now encapsulates both of their current forms. My Ruby and Ruby on Rails knowledge is still in its infancy, but it's growing. In the last 15 years I've also used several scripting languages, as well as prettified text using various markup languages.</p>
+
+<p>I still only speak English with any kind of fluency, though.</p>
+
+<p>At work I picked up on ASP and even some Perl. More recently, I have picked up ASP.NET, C#, and today's <em>actual</em> topic, <strong>Sharepoint</strong>.</p>
+
+<p><strong>OH RIGHT, SHAREPOINT WAS THE TOPIC</strong></p>
+<p>Microsoft's Windows Sharepoint Services (WSS) is basically a layer that sits on top of ASP.NET, providing additional functionality. It could be described as a sort of Content Management System (CMS) as it allows people to view, add, edit, and remove content like documents, pictures, and text, but it can also be shared with others, all in one central web application.</p>
+
+<p>Before my current job, I'd heard of Sharepoint, but never used it. Now, I've installed it, configured it, branded it, and even begun to start customizing it. Unfortunately, Sharepoint only runs on Windows Server, and not client OSes like Windows 7. This makes developing for it slightly more of a hassle, especially if your network connection is slow or the remote server is slow to react to changes.</p>
+
+<p>This problem seemed to have no recourse until I read a <a href="http://community.bamboosolutions.com/blogs/bambooteamblog/archive/2008/05/21/how-to-install-windows-sharepoint-services-3-0-sp1-on-vista-x64-x86.aspx">3 year-old article</a>.</p>
+
+<p>Apparently, using some third-party trickery, you can sidestep the server OS requirement and do the impossible. Using additional guidance from here, I finally got SP installed and can get to Central Admin. This can make creating custom Web Parts easier since you can test them locally, removing the need to copy them to a server to see if they work.</p>
+
+<p>However, I haven't actually been able to successfully connect to a local web application created through Sharepoint's CA. I give my user account full control, but when I input my credentials it refuses to accept them. And that's only on Internet Explorer 8. Google Chrome has since started simply crashing when I try to access the web app, choking on something unknown.</p>
+
+<p>Sigh.</p>
+
+<p>It's frustrating to have gotten this far only to be stuck. Computing is often riddled with issues like this, and it's really easy to get dejected and just give up. I'll keep trying to fix the problem, but for now it's back to Post-Build Server Copying for development.</p>

@@ -1,0 +1,86 @@
+<footer class="site-footer">
+  <img src="{{ site.baseurl }}/assets/images/mc-logo.png"
+    alt="Michael Chadwick"
+    title="Michael Chadwick"
+  />
+
+  <p>built with <a href="https://jekyllrb.com">Jekyll</a> and <a href="http://getskeleton.com">Skeleton</a></p>
+
+  <hr />
+
+  <nav class="site-bio">
+
+    <div class="cols cols-3">
+      <div class="col">
+        <ul>
+          <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a></li>
+          <li><a href="{{ '/sitemap.xml' | prepend: site.baseurl }}">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <ul id="social-links">
+          <li>
+            <a href="{{ site.gh_link }}">
+              <span class="icon github">{% include svg-gh.html %}</span>
+              <span class="username">{{ site.gh_username }}</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.tw_link }}">
+              <span class="icon twitter">{% include svg-tw.html %}</span>
+              <span class="username">{{ site.tw_username }}</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.sc_n_link }}">
+              <span class="icon soundcloud">{% include svg-sc.html %}</span>
+              <span class="username">{{ site.sc_n_username }}</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.sc_mb_link }}">
+              <span class="icon soundcloud">{% include svg-sc.html %}</span>
+              <span class="username">{{ site.sc_mb_username }}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <p class="text">{{ site.description_html }}</p>
+      </div>
+    </div>
+
+  </nav>
+</footer>
+
+<!-- JAVASCRIPTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- VENDOR -->
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/vendor/jquery.colorbox.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/vendor/ga.js"></script>
+<!-- CUSTOM -->
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app/constants.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app/desktop.js"></script>
+
+{% if page.style == "site-api" %}
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app/site-api.js"></script>
+{% endif %}
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app/main.js"></script>
+
+{% if page.tags contains "tabdiv" or page.tags contains "vexflow" %}
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/vendor/vexflow/tabdiv.min.js"></script>
+{% endif %}
+
+{% if page.tags contains "resume-print" %}
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app/resumes_print.js"></script>
+{% endif %}
+
+{% if page.search %}
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/vendor/simple-jekyll-search.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app/search.js"></script>
+{% endif %}

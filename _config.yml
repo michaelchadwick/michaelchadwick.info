@@ -1,0 +1,66 @@
+# Site settings
+title: MC.Info
+subtitle: code, audio, and life developments by michael chadwick
+author: Michael Chadwick
+extra_title: " | home of audio dev michael chadwick"
+email: mike@neb.host
+description: "code, audio, and life developments by michael chadwick"
+description_html: "code, audio, and life developments by <a href='https://michaelchadwick.info'>michael chadwick</a>"
+description_short: "code, audio, life"
+url: "https://michaelchadwick.info"
+blogurl: "/blog"
+encoding: UTF-8
+exclude: ["Rakefile", ".deploy.sh"]
+include: ["mus.html", "net.html", "index_print.html"]
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+tag_page_layout: tag_page
+tag_page_dir: blog/tags
+
+plugins:
+  - jekyll-feed
+  - jekyll-loading-lazy
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-timeago
+  - jemoji
+# Plugin settings
+jekyll_admin:
+  hidden_links:
+    - staticfiles
+    - datafiles
+jekyll_timeago:
+  depth: 2
+  default_locale: 'en'
+  fallbacks: true
+feed:
+  disable_in_development: true
+pagination:
+  enabled: true
+  per_page: 20
+  sort_field: 'date'
+  sort_reverse: true
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Custom Site settings
+gh_username: michaelchadwick
+tw_username: mjchadwick
+sc_n_username: nebyoolae
+sc_mb_username: massive-battery
+bc_username: nebyoolae
+mc_link: https://michaelchadwick.info
+neb_link: https://nebyoolae.com
+gh_link: https://github.com/michaelchadwick
+tw_link: https://twitter.com/mjchadwick
+htg_link: https://hackingthegrepson.com
+sc_n_link: https://soundcloud.com/nebyoolae
+sc_mb_link: https://soundcloud.com/massive-battery
+bc_neb_link: https://nebyoolae.bandcamp.com
+bc_flv_link: https://flylikevenus.bandcamp.com
+bc_fench_link: https://fench.bandcamp.com
+bc_pyc_link: https://pureyellow.bandcamp.com
+bc_rc_link: https://rustycrab.bandcamp.com

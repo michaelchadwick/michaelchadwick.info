@@ -1,0 +1,19 @@
+---
+
+layout: post
+title: "WkHTMLtoPDF, or Why I Hate Building From Source"
+tags: cakephp coding wkhtmltopdf rant webdev pdf shell cli source
+
+---
+
+<p>I like using technology to simplify things. Well, that's being rather prudent. I like technology because it pays my way through life, really. But to be more specific I like it when there's some cool tool (especially when it's free) that I can easily download and use to make something more awesome or make a long process more speedy.</p>
+
+<!--more-->
+
+<p>For instance, building a web page using fairly complex HTML, CSS, and JavaScript and turning it into a nice PDF for easy sharing. Now, in the past, if I wanted to accomplish this, I'd load it up in Safari and Save As...PDF. This works out pretty well, but it's a manual process, and I usually like to crop out some elements of the page to frame it a little more nicely. Recently, I discovered <a href="https://code.google.com/p/wkhtmltopdf/">WkHTMLtoPDF</a>, a C shell script which harnesses the <strong>awesome</strong> power of WebKit to funnel your web page's contents into a slick PDF. There is also a PHP wrapper available so it's just a simple function call away. This could be embedded in your website, guys. And by guys, I mean "Mike!".</p>
+
+<p>Unlike, say, a zip file, or even a do-it-all-for-you pkg installer, the way to get this script is more UNIX-y. Building things from source code, while something I first did way back in 1999 in a C programming class, is not something I've <em>never</em> done, it's not something I feel wholly comfortable with either. The command line and I are on speaking terms, but I often feel like a stranger in a strange land when interfacing with my computer that way. It looks waaaaay cooler to accomplish things with a flurry of typing and Return hits, but it's also very arcane and largely non-graphical. Running a command like "./configure" or "make install" erupts a cavalcade of confusing text on the screen, doing this and that, and not really making much sense, honestly. Hopefully, at the end of it, you have a working library or program you can now use, but for me I usually just end up with an error message, indicating something that takes me further down the rabbit hole of debugging or system administrating.</p>
+
+<p>I'm a web programmer most of the time, and compiling software is not something I do much of. My code is interpreted by a browser, always being re-read and re-processed and re-factored, all in real-time. This "put-a-bunch-of-stuff-in-a-bowl-and-hit-bake" is something that gives me great pause and consternation. Too many times it just leaves me with that aforementioned screen of gobbledygook, a bunch of files <em>somewhere</em> on my computer, and no progress.</p>
+
+<p>Long story short, my computer cloned a couple of git repositories, did some compiling, and it all resulted in a few arcane errors and me no closer to using this awesome script that would be sweet to use.</p>

@@ -1,0 +1,27 @@
+---
+
+layout: post
+title: "Redmine Upgrade Woes (With a Happy Ending)"
+tags: redmine technology ruby rails debugging upgrading
+
+---
+
+<p><a href="https://www.redmine.org">Redmine</a> is a great project management web application written using the Ruby on Rails framework. I've been using it to help myself organize all of the many coding (and recently music) projects I work on.</p>
+
+<!--more-->
+
+<p>For some reason, when I initially installed it on my <a href="https://site5.com">Site 5</a> host, I grabbed some non-stable release (1.0.2.devel.4232) to begin my experience with Redmine. Everything works fine, so it doesn't really matter, but I've always thought I should install a more stable version. It would have bug fixes and new features, so why not?</p>
+
+<p>A few weeks ago I grabbed the 1.0.5 release and tried upgrading, only to be met by an issue with the i18n Ruby gem. No matter how many times I installed it, running one of the upgrade steps helpfully reminded me I did not have it. I tried some general troubleshooting (reinstalling gem, checking Google, etc.), but couldn't get it working. I gave up and went back to my dev release, which still happily worked.</p>
+
+<p>Recently, Redmine's development blog announced their <a href="https://www.redmine.org/news/50">1.1.0 release</a>, so I downloaded it, uploaded it to my server, and went through all of the upgrade steps again. Once I got to the end, I tried running the command that plagued me before, reaching the same result. Some more research led me to do some .bash_profile updates and some app/config/environment additions. Finally, the gem was recognized and I was on my way. Bringing up my browser and typing in my brand-spankin' new subdomain into Google Chrome was surely going to get me back to work with actually <em>using</em> Redmine instead of just installing it. Right? Not yet.</p>
+
+<p>My app instead spat out a message explaining that there was a missing file. I found a fix. Now my app just says it can't start at all. Checking the Redmine app logs show nothing. Checking the main server Apache error logs was not helpful.</p>
+
+<p>Grrrrrr.</p>
+
+<p><strong>UPDATE</strong></p>
+
+<p>As usual, a friend more wise in these ways helped me out. I had been neglecting to turn on Passenger support in an .htaccess file, so the server was using another technology to try and load Redmine. Once I added the right lines, it sprang to life.</p>
+
+<p>I just checked everything and all my data appears to be intact. Back to managing projects!</p>

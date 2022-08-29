@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Installing Windows on Your Mac When You Have No Internal Optical Drive"
+tags: apple osx bootcamp how-to install windows windows-7
+headerImage: posts/2013/05/apple_boot_camp.jpg
+---
+<p>We have many computers at home. Between my wife and I, there're plenty of ways to surf the Internet, watch Netflix, and play computer games. However, not all computers are equal in power, and there're reasons to use one over another. This brings me to an on-and-off again struggle I've recently gone through, but ultimately succeeded at!, to put Windows on my 2011-era MacBook Pro.</p>
+
+<!--more-->
+
+<p><strong>THE GOLDEN AGE</strong></p>
+<p>Back in the late 2000s, I was rocking a 2007-era white MacBook. I play games on my iPhone, iPad, and Mac. Apple has garnered more developer love over the years, so many more games come to OS X than they used to, but there are still plenty of AAA devs who only target (or have historically targeted) Windows, and that's why it's still nice to have a decently-beefy PC around. Using Boot Camp to get Windows 7 on the MacBook was pretty straightforward, and there was no real trouble. When I went to put it on my MBP, once again the process was easy, and life was good. My Mac, now with a proper 3D graphics card, was easily the most powerful Windows-running machine in our house. But last year, when I finally decided to make the switch from the plain old stock slow-HDD+optical-drive to the screamin' fast-SSD+extra-faster-HDD, Apple put on the brakes when I tried to recreate my sweet setup of OS X and Windows on one portable dream machine.</p>
+
+<p><strong>BOOTING STUNTED</strong></p>
+<p>For whatever reason, I could neither create a Windows 7 USB install thumb drive that would actually  boot, nor could I create a Windows 7 DVD install disc that would actually boot. I tried multiple ISOs of Windows 7, multiple discs and disc drives, and multiple processes to create the aforementioned USB thumb drive (1. Windows 7 USB/DVD install disk creator utility, 2. Boot Camp assistant, and 3. <em>diskpart</em> on the command line).</p>
+
+<p>Getting Mountain Lion to even see the USB drive at boot required checking out both <a href="https://refit.sourceforge.net/">rEFIt</a> and <a href="https://www.rodsbooks.com/refind/">rEFInd</a>, some custom boot loaders freely available on the Internet. They definitely got my MBP to <strong>see</strong> a USB drive on boot, but booting off of them kept resulting in the same "Non-system disk"-type errors. I was stonewalled. DVDs met a similar fate, as the same error would appear, forcing me, yet again, to reboot my Mac in frustration. I almost gave up.</p>
+
+<p><strong>A LIGHT APPEARS</strong></p>
+<p>Real progress finally started to be made once we brought in help from my wife's iMac. Our first attempt to install Boot Camp across Firewire to my Mac in target disk mode failed as Windows flat-out refuses to install to an external drive. I thought the operation was sunk until both of our brains locked into unison and we more or less simultaneously said out loud "we should install Boot Camp on the iMac and <em>transfer</em> it to your machine!". Now, I'd never done anything like that, and it seemed like a big hassle, but it actually worked! It took a third-party utility named <a href="https://twocanoes.com/winclone">WinClone</a> to do the heavy lifting, which had been mentioned on several articles as we Googled ways to fix my problem, but it totally worked.</p>
+
+<p>(Aside: During this whole process I learned how much Boot Camp Assistant is really just a big software wizard, and nothing it does can't easily be done outside of it. It does three things: 1) Create a Windows install disk (just use Disk Utility to burn an ISO), 2) Download Windows support files (can be gotten from MS and copied to your install disk), and 3) Partition your hard drive for Boot Camp (use Disk Utility to make a FAT partition for Windows). What it does is nice your first time around, but after the 5th or 6th attempt at this, I decided to just eschew its helpfulness altogether.)</p>
+
+<p><strong>THE PROCESS</strong></p>
+<p>In sum, the process to actually get Windows on my 2011-era MacBook with an SSD+HDD (and no internal optical drive) setup was thusly:</p>
+
+<p>1) Use Disk Utility to create a FAT partition on a separate, "helper" Mac<br />
+2) Restart helper Mac and boot from Windows 7 DVD install disc<br />
+3) Format FAT partition in Windows install to NTFS<br />
+4) Install Windows 7 (which required one reboot back into Windows to finish it, and then another reboot back to Mac)<br />
+5) Install and use WinClone to clone NTFS partition to .winclone file<br />
+6) Move .winclone file to target Mac<br />
+7) Use Disk Utility to create a FAT partition on target Mac<br />
+8) Install and use WinClone on target Mac to restore .winclone file to FAT partition<br />
+9) Restart target Mac and boot into newly restored Windows partition<br />
+10) Use Windows!</p>
+
+<p><strong>THE TAKEAWAY</strong></p>
+<p>Apple really doesn't want you to take out your optical drive. Sure, you can and I actually don't miss it at all, but as you can tell it complicates things. The helper Mac was set up like my MBP used to be and it had no trouble installing Windows, so obviously my post-purchase upgrade angered my machine. You'd think in the 2010s all operating systems would be able to deal with these kinds of hardware configurations, but I guess not. Regardless, the method was more complicated than I would've thought it would be when I started this whole process, but I couldn't think of any other way to go about it. I just hope this helps out someone else who has been beating their head against the wall, staring at error messages and wondering what's going on.</p>

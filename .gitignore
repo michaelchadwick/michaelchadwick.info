@@ -1,8 +1,27 @@
+# dont track jekyll draft posts
 _drafts
+# don't track template posts
+_posts/_*.md
+# don't track computed site files
 _site
-!assets/icons
+
+# misc
 bower_components
-dandelion.yml
-js/client_ids.json
 keybase*
-scripts/
+.DS_Store
+.deploy.sh
+.jekyll-cache
+.jekyll-metadata
+
+# meta config files
+dandelion.yml
+Rakefile
+
+# don't track backup files
+*.bak
+
+# DO track vendor CSS/JS files
+# I currently have no way to bring them in otherwise
+!assets/css/vendor
+!assets/icons
+!assets/scripts/vendor/

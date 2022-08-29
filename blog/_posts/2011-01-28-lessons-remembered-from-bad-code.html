@@ -1,0 +1,30 @@
+---
+
+layout: post
+title: "Lessons Remembered from Bad Code"
+tags: rant webdev
+
+---
+
+<p>You know it when you see it: <strong>bad code</strong>. It's not necessarily code that doesn't work (but it often is). Bad code is hard to parse, has needless complexity, and doesn't take advantage of the language's constructs for making your code easy to follow, edit, augment, and fix. We all have probably been guilty of producing bad code, either through ignorance or laziness. However, it's always something that <em>should</em> be avoided, if possible.</p>
+
+<!--more-->
+
+<p>Relating mostly to web development, here is a short list I've compiled off the top of my head:</p>
+
+<ul>
+  <li>using old layout design patterns (e.g. &lt;frame&gt;)</li>
+  <li>using &lt;table&gt; instead of &lt;div&gt;</li>
+  <li>not using master page/view layouts</li>
+  <li>in-line Javascript or CSS</li>
+  <li>mixing tons of client-side code with server-side code in the same file</li>
+  <li>not using external code files for functions</li>
+  <li>redefining the same functions in multiple files</li>
+  <li>hard-coding <em>presentation markup</em> in <strong>compiled classes</strong></li>
+  <li>creating all-new pages for a short amount of information</li>
+  <li>label nomenclature inconsistency (i.e. calling it a "bar" here, but a "foo" there)</li>
+  <li>using deprecated elements or attributes</li>
+  <li>rendering basic functions broken if something the user can disable is turned off (i.e. Javascript)</li>
+</ul>
+
+<p>Nothing here is revolutionary or unique and can be seen from the simplest script to the most complex enterprise application. Still, STOP IT OK GUYS.</p>

@@ -1,0 +1,100 @@
+---
+title: Music Studio
+date: 2012-04-12T09:52:05-07:00
+layout: page
+---
+<p>While I&#8217;ve been dabbling with making patterned noise since the mid-1990s, the acquisition of an Apple MacBook in 2007 and a copy of Logic Pro really solidified my &#8220;studio&#8221; efforts. While I&#8217;ve used Cakewalk, Reaper, Ableton, and Pro Tools, nothing makes as much sense to me as <a href="http://apple.com/logicpro">Logic</a> and I highly recommend it.</p>
+
+<p>For those of you who enjoy knowing how music can be made, I will now enumerate my wares.</p>
+
+<h2>Digital Audio Workstation</h2>
+
+<a href="{{ site.baseurl }}/assets/images/music-studio/studio_desk_angled.jpg"><img title="Studio desk, angled" src="{{ site.baseurl }}/assets/images/music-studio/studio_desk_angled-640x480.jpg" alt="Studio desk" width="550" height="412" /></a>
+
+<p><strong>DAW</strong>: Early 2011-era 15&#8243; <a href="http://www.apple.com/macbook-pro/">Macbook Pro</a>, 2.0 GHz i7, 8 GB RAM (vertically monolithic, care of a <a href="http://www.hengedocks.com">Henge Dock</a>)</p>
+
+<ul>
+  <li><strong>Storage</strong>
+    <ul>
+      <li>Main: 256 GB <a href="http://www.amazon.com/gp/product/B004W2JL2A/ref=oh_details_o08_s00_i00?ie=UTF8&psc=1">Crucial SSD</a>, SATA 3, 6GB/s</li>
+      <li>Media: 1 TB <a href="http://www.amazon.com/gp/product/B005DVJJWQ/ref=oh_details_o00_s00_i00?ie=UTF8&psc=1">Western Digital HDD</a>, 7200 RPM</li>
+      <li>Backup: 2 TB Western Digital HDD, Time Machined</li>
+    </ul>
+  </li>
+  <li><strong>Audio Interface:</strong> <del>M-Audio FastTrack Ultra</del><a href="http://www.music-group.com/Categories/Behringer/Computer-Audio/Audio-Interfaces/UMC202HD/p/P0BJZ">Behringer U-Phoria UMC202HD</a></li>
+  <li><strong>Inputs</strong>
+    <ul>
+      <li>3x <a href="http://www.shure.com/americas/products/microphones/sm/sm58-vocal-microphone">SM58</a>s, 1x <a href="http://www.shure.com/americas/products/microphones/beta/beta-58a-vocal-microphone">SM58A</a> for vocals</li>
+      <li>2x <a href="http://www.shure.com/americas/products/microphones/sm/sm57-instrument-microphone">SM57</a>s for amps/instrument miking</li>
+      <li>1x <a href="http://www.rodemic.com/mics/nt1-a">Rode NT1A</a> for anything, really</li>
+      <li>1x <s>M-Audio Axiom 25</s><a href="http://www.alesis.com/q49">Alesis Q49</a> MIDI Controller</li>
+      <li>1x <a href="http://midiplus.com/html/AKM320.html">midiplus AKM320</a>, 32-key MIDI Controller</li>
+      <li>1x <a href="http://www.amazon.com/Wireless-Mustang-PRO-Guitar-Controller-PlayStation-3/dp/B003RS1A7Y">Fender Mustang Rock Band</a> MIDI Controller</li>
+    </ul>
+  </li>
+  <li><strong>Sequencer</strong>: Apple Logic</li>
+</ul>
+
+<p><strong>Outputs:</strong> For my main speakers, I use the <a href="http://www.musiciansfriend.com/pro-audio/">KRK RP-8</a>s. When I need it to be quiet and closer to my ears, I don some <del>AudioTechnica ATH-M40FS</del> Sony <a href="http://www.amazon.com/Sony-MDRV6-Studio-Monitor-Headphones/dp/B00001WRSJ/186-4683528-0587355?ie=UTF8&*Version*=1&*entries*=0">MDR-V6</a> &#8216;phones.</p>
+
+<h2>Instruments</h2>
+
+<a href="{{ site.baseurl }}/assets/images/music-studio/guitars1.jpg"><img title="Guitart" src="{{ site.baseurl }}/assets/images/music-studio/guitars1-640x480.jpg" alt="Guitart" width="448" height="336" /></a>
+
+<p>I&#8217;m a guitarist, first and foremost, so I&#8217;ve got a few of them in various styles:</p>
+
+<ul>
+  <li><strong>Guitars</strong>
+    <ul>
+      <li>Fender American <a href="http://www.fender.com/guitars/stratocaster/">Stratocaster</a> electric (amp: Fender mini-amp, fx: Digitech RP7 Multi-FX board)</li>
+      <li>Samick steel-string acoustic</li>
+      <li><a href="http://www.ovationguitars.com/applause">Ovation Applause</a> acoustic-electric</li>
+      <li>Ovation acoustic-electric</li>
+      <li><a href="http://crafterusa.com/category/guitars/classical/">Crafter acoustic-electric classical</a></li>
+      <li>Generic classical</li>
+    </ul>
+  </li>
+  <li><strong>Basses</strong>
+    <ul>
+      <li>Fender <a href="http://www.fender.com/basses/precision-bass/">Squier P-Bass</a> electric (amp: Behringer <a href="http://www.musiciansfriend.com/amplifiers-effects/behringer-bx1200-ultrabass-120w-1x12-combo">BX1200 Ultrabass 120W 1&#215;12 Combo</a>)</li>
+      <li>Laguna <a href="http://www.playlaguna.com/legacy_models/index.cfm?model=lab5cebub">Laguna LAB5CE acoustic bass</a> acoustic-electric</li>
+    </ul>
+  </li>
+  <li><strong>Strings</strong>
+    <ul>
+      <li>Violins (2x)</li>
+      <li>Cello</li>
+      <li>Mandolin</li>
+      <li>Ukelele</li>
+    </ul>
+  </li>
+  <li><strong>Keys</strong>
+    <ul>
+      <li>Steinberg & Sons Upright Piano</li>
+    </ul>
+  </li>
+  <li><strong>Winds</strong>
+    <ul>
+      <li>Harmonica</li>
+      <li>Yamaha <a href="http://usa.yamaha.com/products/musical-instruments/winds/recorders/yrs-24b/?mode=model">YRS24B recorder</a></li>
+      <li>Wooden flutes (2x)</li>
+      <li>Hoehner <a href="http://www.amazon.com/Hohner-32B-Piano-Style-Melodica-Black/dp/B0055DCWKS">32B melodica</a></li>
+    </ul>
+  </li>
+  <li><strong>Percussion</strong>
+    <ul>
+      <li>Bongo</li>
+      <li>Shaker</li>
+      <li>Tambourine</li>
+    </ul>
+  </li>
+  <li><strong>Other</strong>
+    <ul>
+      <li><a href="http://en.wikipedia.org/wiki/Otamatone">Otomatone</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>The room I record in is a downstairs bedroom, but it works well enough for my purposes.</p>
+
+<a href="{{ site.baseurl }}/assets/images/music-studio/studio_wall_panorama.jpg"><img src="{{ site.baseurl }}/assets/images/music-studio/studio_wall_panorama-640x205.jpg" alt="Studio wall panorama" width="640" height="205" /></a>

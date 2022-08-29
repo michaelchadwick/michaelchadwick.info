@@ -1,0 +1,33 @@
+---
+
+layout: post
+title: "VexFlow TabDiv - Easy Musical Staves Via Code"
+tags: javascript tabdiv vexflow vextab music
+
+---
+
+<p>Some really cool guy who does audio programming (among other things, I presume?) that goes by the moniker <a href="https://0xfe.blogspot.com/">0xFE</a> made this really sweet musical notation API called <a href="https://vexflow.com/">VexFlow</a>. By using a text-based language called <a href="https://vexflow.com/tabdiv/">VexTab</a>, you can make graphical music staves without needing images!</p>
+
+<!--more-->
+
+<p>Why, look below here (make sure <a href="{{ site.baseurl }}/2012/10/11/vexflow-tabdiv-easy-musical-staves"> you're on my site</a> in order to see the magic happen) and you'll see one:</p>
+
+<div class="vextab-auto" title="The C major scale" width="570">
+tabstave<br />
+notes 3-5/6 2-3-5/5 2-4-5/4
+</div>
+<div class="vex-tabdiv-caption">The C major scale</div>
+
+<p>You just use text to make the awesomeness up above, telling VexFlow what notes you want to see, and how they should be displayed. In short, I believe I might start using this to illustrate some musical ideas I have coming up.</p>
+<p>So that this post actually has some original musical content, I'll leave the first 4 bars of <a href="https://nebyoolae.com/track/beloved">Beloved</a>, which is an original piece I wrote for <a href="https://nebyoolae.com/album/stringing-you-along">Stringing You Along</a>.</p>
+
+<div class="vextab-auto" title="First four bars of 'Beloved'" width="570">
+tabstave<br />
+notes :8 2/5 4/4 :q 4/3 :h 2v/3 |<br />
+notes :8 (2/2.2/3) (3/2.4/3) (2/2.2/3) 4/3 2/3 :q 4v/3 :8 2h4p2p0/3<br />
+tabstave<br />
+notes :8 2/5 4/4 :q 4/3 :h 2v/3 |<br />
+notes :8 (2/3.2/2.5/1) :q 2/1 :q 3/2 :16 2h3p2/2 :8 4/3 2/3</div>
+<div class="vex-tabdiv-caption">First four bars of 'Beloved'</div>
+
+<p>The spacing and all is a little wonky, but it gets the general gist across. Hell, maybe I'll even fork it and improve it someday. Knowing I at least want to focus on musical programming makes it easier to swallow this whole return to personal development.</p>

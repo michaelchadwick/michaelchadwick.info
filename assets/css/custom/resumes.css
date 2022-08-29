@@ -1,0 +1,130 @@
+/* CLASSES */
+a.formatlink {
+  font-size: 0.9em;
+  line-height: 0.3em;
+}
+
+.head {
+  background: #ff98009a;
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #222;
+  clear: both;
+  color: #222;
+  font-size: 1.1em;
+  font-weight: 600;
+  left: -15px;
+  letter-spacing: 0.08em;
+  padding: 6px 15px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.jobindent {
+  clear: both;
+  font-weight: bold;
+  margin: 0 0 0 8px;
+}
+
+.jobname {
+  background: rgba(255, 193, 7, 0.31);
+  clear: right;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  min-height: 106px;
+  padding: 5px;
+  text-align: left; }
+  .jobname img {
+    border: 1px solid #165f1d;
+    float: left;
+    left: 0;
+    margin: 2px 10px 5px 2px;
+    position: static;
+    width: auto; }
+    .jobname ul {
+      font-weight: normal; }
+
+.jobdesc {
+  clear: both;
+  font-weight: normal;
+  margin: 5px;
+  overflow: hidden;
+  padding: 6px 4px 4px;
+  text-align: left; }
+  .jobdesc ul {
+    clear: both;
+    margin: 0;
+    padding: 3px 5px 5px; }
+    .jobdesc ul li {
+      margin-left: 20px; }
+
+ul.skills {
+  color: #333;
+  margin: 0; }
+  ul.skills li {
+    clear: left;
+    font-size: 16px;
+    font-weight: normal;
+    list-style: square; }
+  ul.skills li.first {
+    clear: none;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    list-style: none;
+    margin-bottom: 2px;
+    margin-left: 0;
+    margin-right: 12px;
+    margin-top: 5px; }
+  ul.skills li.first-next {
+    clear: both; }
+
+@media (min-width: 768px) {
+  ul.skills li {
+    clear: none;
+    float: left;
+    margin: 2px 14px; }
+    ul.skills li.first {
+      clear: left;
+      margin-left: 5px;
+      width: 240px; }
+      ul.skills li.first.tall {
+        margin-bottom: 25px; }
+      ul.skills li.first.taller {
+        margin-bottom: 50px; }
+      ul.skills li.first.tallest {
+        margin-bottom: 75px; }
+      ul.skills li.first-next {
+        clear: none; }
+}
+
+#print-link {
+  margin: 5px 45px;
+  text-align: center; }
+  #print-link a.button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.44;
+    border-radius: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+#job-types {
+  border-top: 1px solid #444;
+  margin: 20px 45px;
+  padding-top: 3px;
+  text-align: center; }

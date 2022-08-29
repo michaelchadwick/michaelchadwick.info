@@ -1,7 +1,8 @@
 /* main */
 /* app entry point and main functions */
+/* global MCInfo */
 
-let theme = ''
+let theme = 'light'
 
 // find links and change their <li> background to be their favicon
 const faviconLinks = document.querySelectorAll('ul.links li.dynamic a.favicon[href^="http"]')
@@ -32,7 +33,7 @@ indentedLists.forEach(li => {
 })
 
 const btnThemeToggler = document.getElementById('theme-toggler')
-const header = document.querySelector('header')
+// const headerTop = document.querySelector('header.header-top')
 const headerScrolled = document.querySelector('header.header-scrolled')
 const bodyClasses = document.body.classList
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
@@ -58,7 +59,7 @@ MCInfo.handleResize = () => {
     headerScrolled.classList.remove('show')
   }
 
-  headerScrolled.style.width = `${window.innerWidth - 40}px`
+  headerScrolled.style.width = `${window.innerWidth}px`
 }
 
 MCInfo.handleScroll = () => {
@@ -84,13 +85,10 @@ MCInfo.handleScroll = () => {
 
 MCInfo.addEventHandlers = () => {
   btnThemeToggler.addEventListener('click', function(event) {
-    if (prefersDarkScheme.matches) {
-      bodyClasses.toggle('light-theme')
-      theme = bodyClasses.contains('light-theme') ? 'light' : 'dark'
-    } else {
-      bodyClasses.toggle('dark-theme')
-      theme = bodyClasses.contains('dark-theme') ? 'dark' : 'light'
-    }
+    bodyClasses.toggle('dark-theme')
+    bodyClasses.toggle('light-theme')
+
+    theme = bodyClasses.contains('light-theme') ? 'light' : 'dark'
 
     // update text inside toggler
     event.target.innerHTML = theme == 'light' ? '☀️' : '🌙'
@@ -105,13 +103,21 @@ MCInfo.addEventHandlers = () => {
 MCInfo.initApi = () => {
   MCInfo.addEventHandlers()
 
-  // get external site data
-  MCInfo.BG()
-  MCInfo.CN()
-  MCInfo.GH()
+  if (document.location.pathname == '/') {
+    // get external site data
+    MCInfo.BG()
+    MCInfo.CN()
+    MCInfo.GH()
+  }
 
   MCInfo.handleScroll()
   MCInfo.handleResize()
+
+  if (prefersDarkScheme.matches) {
+    bodyClasses.add('dark-theme')
+    bodyClasses.remove('light-theme')
+    btnThemeToggler.innerHTML = '🌙'
+  }
 }
 
 /************************************************************************

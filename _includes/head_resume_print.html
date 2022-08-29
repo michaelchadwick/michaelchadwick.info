@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }}{{ site.extra_title }}{% else %}{{ site.title }}{{ site.extra_title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jekyll.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+  <!-- Favicons -->
+  <link rel="favicon" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="{{ site.baseurl }}/assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/images/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+</head>

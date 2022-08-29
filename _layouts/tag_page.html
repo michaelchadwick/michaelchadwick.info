@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<header class="page-header">
+  <h1>Tag</h1>
+  <h3 class="tag">{{ page.tag }}</h3>
+</header>
+
+<div class="page-tag">
+
+  <article class="page-content">
+    <a href="{{ site.blogurl }}/tags">&lt;&lt; back to tags</h6>
+
+    <ul>
+    {% for post in page.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a><br />
+        <div class="tag-meta">
+          <div class="date">{{ post.date | date_to_string }}</div>
+          <div class="tag">{{ post | tags }}</div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </article>
+
+</div>
