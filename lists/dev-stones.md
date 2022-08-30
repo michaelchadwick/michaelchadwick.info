@@ -5,15 +5,13 @@ layout: page
 ---
 This is my own personal list of both the development milestones I desire to reach, as well as the ones I already have. Hopefully, the &#8220;fulfilled&#8221; list gets longer as the &#8220;desired&#8221; list dwindles, but is also refreshed with new ideas over time.
 
+My list of <a href="/lists/muz-stones">musical milestones</a> also exists.
+
 ### <span style="color: #800000;">Objectives Desired</span>
 
-  * <span style="color: #800000;">Capistrano: create a custom recipe for Ruby on Rails website deployment</span>
   * <span style="color: #800000;">CoreAudio: create a custom Audio Unit for Logic/Garageband</span>
   * <span style="color: #800000;">Google Chrome: create extension</span>
-  * <span style="color: #800000;">HTML/CSS/LESS: create a LESS stylesheet</span>
-  * <span style="color: #800000;">HTML/CSS/SASS: create a SASS stylesheet</span>
   * <span style="color: #800000;">iPhone: create an iPhone app</span>
-  * <span style="color: #800000;">Javascript/Coffeescript: create a script in Coffeescript</span>
   * <span style="color: #800000;">Python: write a useful python script</span>
   * <span style="color: #800000;">Ruby/Rails: finish and deploy a completed Ruby on Rails application</span>
 
@@ -30,15 +28,11 @@ This is my own personal list of both the development milestones I desire to reac
   * <span style="color: #008000;">ASP.NET/Sharepoint: created a custom document library</span>
   * <span style="color: #008000;">ASP.NET/Sharepoint: created a WebPart</span>
   * <span style="color: #008000;">ASP.NET/Sharepoint: used a WebPart</span>
-
   * <span style="color: #008000;">AWStats: installed on host</span>
   * <span style="color: #008000;">AWStats: customized script/theme</span>
-
   * <span style="color: #008000;">Capistrano: create a custom recipe for PHP website deployment</span>
-
   * <span style="color: #008000;">Flash: used JW player to display audio on web page</span>
   * <span style="color: #008000;">Flash: used JW player to display video on web page</span>
-
   * <span style="color: #008000;">Git: created a repository</span>
   * <span style="color: #008000;">Git: added a file to a repo</span>
   * <span style="color: #008000;">Git: made a commit</span>
@@ -57,23 +51,21 @@ This is my own personal list of both the development milestones I desire to reac
   * <span style="color: #008000;">Git: configured custom git aliases</span>
   * <span style="color: #008000;">Git/Github: create a public repository</span>
   * <span style="color: #008000;">Git/Github: forked someone else&#8217;s repository</span>
-  * <span style="color: rgb(0, 128, 0);">Git/Github: improve forked project and issue pull request</span>
-
+  * <span style="color: #008000">Git/Github: improve forked project and issue pull request</span>
   * <span style="color: #008000;">Google Chrome: submitted bug report</span>
   * <span style="color: #008000;">Google Docs: embedded spreadsheet with web front-end</span>
   * <span style="color: #008000;">Google Maps: embedded custom map</span>
-
   * <span style="color: #008000;">HTML: created HTML page</span>
   * <span style="color: #008000;">HTML: edited HTML page</span>
   * <span style="color: #008000;">HTML: created custom error page</span>
   * <span style="color: #008000;">HTML/CSS: created a desktop stylesheet</span>
   * <span style="color: #008000;">HTML/CSS: created an ie-specific stylesheet</span>
   * <span style="color: #008000;">HTML/CSS: created a mobile stylesheet</span>
+  * <span style="color: #008000;">HTML/CSS/SASS: create a SASS stylesheet</span>
   * <span style="color: #008000;">HTML/CSS3: created drop shadows</span>
   * <span style="color: #008000;">HTML/CSS3: created gradient</span>
   * <span style="color: #008000;">HTML/CSS3: created box-shadows</span>
   * <span style="color: #008000;">HTML/Email: created HTML email</span>
-
   * <span style="color: #008000;">Javascript: created custom script</span>
   * <span style="color: #008000;">Javascript: created a mouseover event handler</span>
   * <span style="color: #008000;">Javascript: created a keyup event handler</span>
@@ -89,7 +81,6 @@ This is my own personal list of both the development milestones I desire to reac
   * <span style="color: #008000;">Javascript/jQuery: created image slideshow</span>
   * <span style="color: #008000;">Javascript/jQuery: created a div toggle</span>
   * <span style="color: #008000;">Javascript/jQuery: created a lightboxed feedback form (using lightbox plugin)</span>
-
   * <span style="color: #008000;">PHP: checked for viewport size to serve up mobile or desktop css</span>
   * <span style="color: #008000;">PHP: created dynamic copyright year</span>
   * <span style="color: #008000;">PHP: created single file upload widget</span>
@@ -108,25 +99,20 @@ This is my own personal list of both the development milestones I desire to reac
   * <span style="color: #008000;">PHP/HTML: created an EDIT form to edit data in a database</span>
   * <span style="color: #008000;">PHP/HTML: created a VIEW view to display data in a database</span>
   * <span style="color: #008000;">PHP/PEAR: sent email from web page</span>
-
   * <span style="color: #008000;">Redmine: installed on host</span>
   * <span style="color: #008000;">Redmine: customized theme</span>
   * <span style="color: #008000;">Redmine: upgraded Redmine installation</span>
-
   * <span style="color: #008000;">Ruby: complete Ruby Koans</span>
   * <span style="color: #008000;">Ruby/Gems: create a Ruby gem</span>
   * <span style="color: #008000;">Ruby/Gems: installed Ruby Gem</span>
   * <span style="color: #008000;">Ruby/Rails: created a new Ruby on Rails application</span>
-
   * <span style="color: #008000;">SQL: wrote SELECT statement</span>
   * <span style="color: #008000;">SQL: wrote UPDATE statement</span>
   * <span style="color: #008000;">SQL/MySQL: created database</span>
   * <span style="color: #008000;">SQL/MySQL: created table</span>
   * <span style="color: #008000;">SQL/MySQL: created index</span>
   * <span style="color: #008000;">SQL/MySQL: created foreign key</span>
-
   * <span style="color: #008000;">WordPress: installed on host</span>
   * <span style="color: #008000;">WordPress: customized theme</span>
-
   * <span style="color: #008000;">XML: created a custom XML file</span>
   * <span style="color: #008000;">XML: created a custom RSS feed</span>

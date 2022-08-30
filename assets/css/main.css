@@ -420,6 +420,7 @@ footer {
   padding-top: 4rem;
 }
   footer img {
+    margin-bottom: 10px;
     width: 25%;
   }
   @media (min-width: 550px) {

@@ -5,14 +5,22 @@ layout: page
 ---
 This is my own personal list of both the musical milestones I desire to reach, as well as the ones I already have. Hopefully, the &#8220;fulfilled&#8221; list gets longer as the &#8220;desired&#8221; list dwindles, but is also refreshed with new ideas over time.
 
+My list of <a href="/lists/dev-stones">development milestones</a> also exists.
+
 ### <span style="color: #800000;">Objectives Desired</span>
 
-  * <span style="color: #800000;">Instrument/Drums: record a song with real drums</span>
-  * <span style="color: #800000;">Instrument/Piano: learn how to competently play a piano/keyboard</span>
+  <ul>
+    <li><span style="color: #800000;">Instrument/Drums: record a song with real drums</span></li>
+    <li><span style="color: #800000;">Instrument/Piano: learn how to competently play a piano/keyboard</span></li>
+  </ul>
 
-  * <span style="color: #800000;">Miscellaneous/Compo: participate in 5 compos</span>
+  <ul>
+    <li><span style="color: #800000;">Miscellaneous/Compo: participate in 5 compos</span></li>
+  </ul>
 
-  * <span style="color: #800000;">Song/Dumeh: have Dumeh performed live</span>
+  <ul>
+    <li><span style="color: #800000;">Song/Dumeh: have Dumeh performed live</span></li>
+  </ul>
 
 ### <span style="color: #008000;">Objectives Fulfilled</span>
 
