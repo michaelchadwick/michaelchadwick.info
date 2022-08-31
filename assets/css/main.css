@@ -219,6 +219,9 @@ ul.links li {
     ul.links li a {
       padding-bottom: 2px;
     }
+      ul.links li a.m-adjust {
+        margin-left: -6px;
+      }
     ul.links li img {
       margin: auto 5px;
     }
