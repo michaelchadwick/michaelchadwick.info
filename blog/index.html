@@ -48,7 +48,7 @@ pagination:
         {% if post.content contains '<!--more-->' %}
         <p>{{ post.content | split:'<!--more-->' | first }}</p>
         <div class="full-entry">
-          <a href="{{ post.url | prepend: site.baseurl }}" class="pure-button pure-button-primary">^^^ Full entry ^^^</a>
+          <a href="{{ post.url | prepend: site.baseurl }}">^^^ Full entry ^^^</a>
         </div>
         {% endif %}
       </li>
