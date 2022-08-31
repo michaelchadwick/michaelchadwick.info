@@ -1,5 +1,9 @@
 /* main.css */
 
+:root {
+  --link-color: #1e9edb;
+}
+
 /* Josh W Comeau */
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
 
@@ -90,7 +94,7 @@ body {
 }
 
 a {
-  color: #1eaedb;
+  color: var(--link-color);
   text-decoration: none;
 }
   a:hover {
@@ -438,7 +442,7 @@ footer {
     footer.site-footer a,
     footer.site-footer a:active,
     footer.site-footer a:visited {
-      background-color: #1eaedb;
+      background-color: var(--link-color);
       color: #d5f9ff;
       display: inline-block;
       font-weight: 600;
@@ -446,7 +450,7 @@ footer {
     }
     footer.site-footer a:hover {
       background-color: #d5f9ff;
-      color: #1eaedb;
+      color: var(--link-color);
       text-decoration: none;
     }
 
@@ -866,7 +870,7 @@ footer {
   justify-content: space-between;
 }
   #tag-cloud a {
-    background-color: #1eaedb;
+    background-color: var(--link-color);
     border-radius: 5px;
     color: #ffffff;
     margin: 5px;
@@ -874,5 +878,5 @@ footer {
   }
     #tag-cloud a:hover {
       background-color: #ffffff;
-      color: #1eaedb;
+      color: var(--link-color);
     }

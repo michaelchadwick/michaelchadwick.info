@@ -1,10 +1,10 @@
 // POCKET - disabled because no CORS enabled
-MCInfo.PO = async function() {
+MCInfo.PO = function() {
   let POCKET_CONSUMER_KEY = ''
   let requestCode = ''
   let accessToken = ''
 
-  await fetch(POCKET_REQUEST_URL, {
+  fetch(POCKET_REQUEST_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'json',
@@ -12,7 +12,7 @@ MCInfo.PO = async function() {
     body: JSON.stringify({
       "consumer_key": POCKET_CONSUMER_KEY,
       "redirect_uri": POCKET_REDIRECT_URL
-    }
+    })
   }).then(response => {
     if (!response.ok) {
       throw new Error('Could not get Pocket requeat data')
@@ -22,18 +22,19 @@ MCInfo.PO = async function() {
   }).then(data => {
     console.log('success! pocket request url', data)
     requestCode = data
-  })
 
-  await fetch(POCKET_ACCESS_URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'json',
-    },
-    body: JSON.stringify({
-      "consumer_key": POCKET_CONSUMER_KEY,
-      "code": requestCode
-    }
-  }).then(response => {
+    return fetch(POCKET_ACCESS_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'json',
+      },
+      body: JSON.stringify({
+        "consumer_key": POCKET_CONSUMER_KEY,
+        "code": requestCode
+      })
+    })
+  })
+  .then(response => {
     if (!response.ok) {
       throw new Error('Could not get Pocket access data')
     }
@@ -41,21 +42,23 @@ MCInfo.PO = async function() {
     return response.json()
   }).then(data => {
     console.log('success! pocket access url', data)
-    accessToken = data
-  })
 
-  await fetch(POCKET_QUERY_URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'json',
-    },
-    body: JSON.stringify({
-      "consumer_key": POCKET_CONSUMER_KEY,
-      "access_token": accessToken,
-      "count": 5,
-      "detailType": "complete"
-    }
-  }).then(response => {
+    accessToken = data
+
+    return fetch(POCKET_QUERY_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'json',
+      },
+      body: JSON.stringify({
+        "consumer_key": POCKET_CONSUMER_KEY,
+        "access_token": accessToken,
+        "count": 5,
+        "detailType": "complete"
+      })
+    })
+  })
+  .then(response => {
     if (!response.ok) {
       throw new Error('Could not get Pocket query data')
     }
@@ -132,6 +135,53 @@ MCInfo.SC = async function() {
   }
 }
 
+// STEAM - disabled because no CORS enabled
+MCInfo.STEAM = function() {
+  const steamLastGamePlayed = document.querySelector('.steamLastGamePlayed')
+  const steamApiData = document.querySelector('.apiData.steam')
+
+  fetch(ENV_URL)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('env vars fetch failed')
+      }
+
+      return response.json()
+    })
+    .then(json => {
+      const steamKey = json['STEAM_WEB_API_KEY']
+      const steamId = json['STEAM_ID_64']
+      const steamUrl = `${STEAM_API_URL}/?key=${steamKey}&steamid=${steamId}`
+
+      return fetch(steamUrl)
+    })
+      .then(response => {
+        if (!response.ok) {
+          console.error('steam response', response)
+          throw new Error('steam api fetch failed')
+        }
+
+        return response.json()
+      })
+      .then(data => {
+        const game = data['response']['games']
+
+        const gameTitle = game['name']
+        const gameId = game['appid']
+        const gameUrl = `https://steamcommunity.com/app/${gameId}`
+
+        steamLastGamePlayed.innerHTML = `<span>Latest game: ${gameTitle}<br />`
+        steamLastGamePlayed.innerHTML += `<a href="${gameUrl}">${gameTitle}</a></span>`
+
+        if (steamApiData.style.display !== 'block') {
+          steamApiData.style.display = 'block'
+        }
+      })
+      .catch(error => {
+        console.error('steam request failed', error)
+      })
+}
+
 // WORDPRESS - moved all wordpress blog content to static codaname site
 MCInfo.WP = async function() {
   const muzblog = document.querySelector('.blogNebyoolaeCom')
@@ -155,5 +205,5 @@ MCInfo.WP = async function() {
       if (muzBlogApiData.style.display !== 'block') {
         muzBlogApiData.style.display = 'block'
       }
-    }
+    })
 }

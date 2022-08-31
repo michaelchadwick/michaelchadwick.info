@@ -66,21 +66,22 @@
 <script type="text/javascript" src="/assets/js/app.js"></script>
 <script type="text/javascript" src="/assets/js/app/constants.js"></script>
 <script type="text/javascript" src="/assets/js/app/desktop.js"></script>
-
+<script type="text/javascript" src="/assets/js/app/utils.js"></script>
+<!-- CUSTOM CONDITIONAL -->
 {% if page.style == "site-api" %}
 <script type="text/javascript" src="/assets/js/app/site-api.js"></script>
 {% endif %}
-
+<!-- CUSTOM -->
 <script type="text/javascript" src="/assets/js/app/main.js"></script>
-
+<!-- CUSTOM CONDITIONAL -->
 {% if page.tags contains "tabdiv" or page.tags contains "vexflow" %}
 <script type="text/javascript" src="/assets/js/vendor/vexflow/tabdiv.min.js"></script>
 {% endif %}
-
+<!-- CUSTOM CONDITIONAL -->
 {% if page.tags contains "resume-print" %}
 <script type="text/javascript" src="/assets/js/app/resumes_print.js"></script>
 {% endif %}
-
+<!-- CUSTOM CONDITIONAL -->
 {% if page.search %}
 <script type="text/javascript" src="/assets/js/vendor/simple-jekyll-search.min.js"></script>
 <script type="text/javascript" src="/assets/js/app/search.js"></script>

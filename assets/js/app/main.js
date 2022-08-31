@@ -1,6 +1,7 @@
 /* main */
 /* app entry point and main functions */
 /* global MCInfo */
+/* eslint-disable no-undef */
 
 let theme = 'light'
 
@@ -113,7 +114,7 @@ MCInfo.initApi = () => {
 
   if (document.location.pathname == '/') {
     // get external site data
-    MCInfo.BG()
+    MCInfo.BGG()
     MCInfo.BLOG()
     MCInfo.GH()
   }
