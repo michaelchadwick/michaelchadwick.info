@@ -13,12 +13,17 @@ faviconLinks.forEach(f => {
   const hostname = f.href
 
   let iconSize = 16
+  let url = ''
 
-  // if (hostname == 'https://nebyoolae.itch.io/') {
-  //   iconSize = 32
-  // }
-
-  let url = `https://www.google.com/s2/favicons?domain=${hostname}&sz=${iconSize}`
+  // exceptions
+  switch (hostname) {
+  case 'https://nebyoolae.newgrounds.com/':
+    url = 'https://www.newgrounds.com/img/icons/favicon.png'
+    break
+  default:
+    url = `https://www.google.com/s2/favicons?domain=${hostname}&sz=${iconSize}`
+    break
+  }
 
   parentStyle.listStyleImage = `url(${url})`
 })
