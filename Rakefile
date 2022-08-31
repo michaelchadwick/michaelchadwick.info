@@ -17,4 +17,8 @@ task :serve do |t|
   sh "bundle exec jekyll serve -w -o --unpublished"
 end
 
+task :serve_inc do |t|
+  sh "bundle exec jekyll serve -w -o --unpublished --incremental"
+end
+
 task :default => [:deploy]
