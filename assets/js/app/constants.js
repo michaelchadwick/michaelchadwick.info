@@ -13,6 +13,7 @@ const MCINFO_PROD_URL = [
   'michaelchadwick.info',
   'tremloop.com'
 ]
+const MCINFO_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_BLOG_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_API_URL = '/api/v1/pages.json'
 
