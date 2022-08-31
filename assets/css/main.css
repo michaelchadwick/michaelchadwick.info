@@ -439,7 +439,7 @@ footer {
   }
   footer.site-footer {
     height: auto;
-    padding: 10px;
+    padding: 0;
   }
     footer.site-footer li {
       padding: 3px 5px;
@@ -494,6 +494,7 @@ footer {
 /* override skeleton */
 .container {
   padding: 0;
+  width: 90%;
 }
 @media (min-width: 400px) {
   .container {
