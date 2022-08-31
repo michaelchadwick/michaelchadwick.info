@@ -51,7 +51,7 @@ MCInfo.BLOG = function() {
       const entries = data.entries
       const post = entries[entries.length-1]
       const postTitle = post.title
-      const postUrl = `${MCINFO_BLOG_URL}${post.url}`
+      const postUrl = `${MCINFO_URL}${post.url}`
 
       let postDate = post.url.substr(6,10)
       postDate = _replaceAll(postDate, '/', '-')
