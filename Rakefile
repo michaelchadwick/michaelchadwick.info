@@ -6,7 +6,7 @@ task :deploy do |t|
   # sync site to remote host
   sh "rsync -auP --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
   # backup drafts
-  sh "rsync -auP ./_drafts/* $MCINFO_REMOTE/blog/_drafts"
+  sh "rsync -auP ./_drafts/* $MCINFO_DRAFTS"
 end
 
 task :build do |t|
