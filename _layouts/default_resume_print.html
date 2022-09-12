@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+{% include head_resume_print.html %}
+<body>
 
-  {% include head_resume_print.html %}
-
-  <body>
-
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      </div>
+  <div class="page-content">
+    <div class="wrap">
+    {{ content }}
     </div>
+  </div>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-  </body>
+</body>
 </html>

@@ -6,7 +6,7 @@
 let theme = 'light'
 
 // find links and change their <li> background to be their favicon
-const faviconLinks = document.querySelectorAll('ul.links li.dynamic a.favicon[href^="http"]')
+const faviconLinks = document.querySelectorAll('ul.links li.dynamic a.favicon')
 
 faviconLinks.forEach(f => {
   const parentStyle = f.parentElement.style
@@ -16,13 +16,12 @@ faviconLinks.forEach(f => {
   let url = ''
 
   // exceptions
-  switch (hostname) {
-  case 'https://nebyoolae.newgrounds.com/':
+  if (hostname == 'https://nebyoolae.newgrounds.com/') {
     url = 'https://www.newgrounds.com/img/icons/favicon.png'
-    break
-  default:
+  } else if(hostname.endsWith('/blog')) {
+    url = '/assets/images/mc-logo-icon.png'
+  } else {
     url = `https://www.google.com/s2/favicons?domain=${hostname}&sz=${iconSize}`
-    break
   }
 
   parentStyle.listStyleImage = `url(${url})`
@@ -39,7 +38,7 @@ indentedLists.forEach(li => {
 })
 
 const btnThemeToggler = document.getElementById('theme-toggler')
-// const headerTop = document.querySelector('header.header-top')
+// const headerTop = document.querySelector('header.header-wide')
 const headerScrolled = document.querySelector('header.header-scrolled')
 const bodyClasses = document.body.classList
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
@@ -118,6 +117,11 @@ MCInfo.initApi = () => {
   MCInfo.addEventHandlers()
 
   if (document.location.pathname == '/') {
+    // get external site data
+    MCInfo.BLOG()
+  }
+
+  if (document.location.pathname == '/projects/') {
     // get external site data
     MCInfo.BGG()
     MCInfo.BLOG()

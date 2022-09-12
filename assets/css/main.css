@@ -229,6 +229,9 @@ ul.links li {
     ul.links li a {
       padding-bottom: 2px;
     }
+      ul.links li a.m-adjust {
+        margin-left: -6px;
+      }
       @media (min-width: 550px) {
         ul.links li a.m-adjust {
           margin-left: -6px;
@@ -282,18 +285,34 @@ ul.links li {
 
 /* LAYOUT */
 
-header.header-top {
+header.header-narrow {
+  border-bottom: 1px solid #d3d3d3;
+  display: block;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+}
+  @media (min-width: 550px) {
+    header.header-narrow {
+      display: none;
+    }
+  }
+
+  header.header-narrow .location {
+    font-size: 1.3rem;
+  }
+
+header.header-wide {
   display: none;
-  margin: 4% 0 4rem;
+  margin: 2rem 0 4rem;
   position: relative;
 }
   @media (min-width: 550px) {
-    header.header-top {
+    header.header-wide {
       display: block;
     }
   }
 
-  header.header-top .location {
+  header.header-wide .location {
     font-size: 3.6rem;
     font-weight: 300;
     letter-spacing: -.1rem;
@@ -302,7 +321,7 @@ header.header-top {
     margin-top: 0;
   }
 
-  header.header-top .tasks {
+  header.header-wide .tasks {
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: -.05rem;
@@ -310,7 +329,7 @@ header.header-top {
     margin-bottom: 2rem;
   }
 
-  header.header-top .greeting {
+  header.header-wide .greeting {
     font-size: 1.6rem;
     font-weight: 300;
     letter-spacing: 0;
@@ -324,7 +343,7 @@ header.header-scrolled {
   height: 55px;
   left: 0;
   margin-top: 0;
-  padding: 10px 20px;
+  padding: 10px 15px;
   position: fixed;
   top: 0;
   transition: top 0.2s cubic-bezier(.3, .73, .3, .74);
@@ -406,6 +425,11 @@ header.page-header {
     position: relative;
     text-align: center;
   }
+  @media (min-width: 550px) {
+    header.page-header h3.tag {
+      margin-top: 1rem;
+    }
+  }
     header.page-header h3.tag::after {
       background: inherit;
       border-radius: 4px;
@@ -462,8 +486,8 @@ footer.site-footer p {
 }
 
 footer {
-  border-top: 1px solid #b3aeae;
-  padding-top: 4rem;
+  border-top: 1px solid #d3d3d3;
+  padding: 2rem 0;
 }
   footer img {
     margin-bottom: 10px;
@@ -475,40 +499,41 @@ footer {
     }
   }
 
-  footer.site-footer {
-    border-top: 1px solid #e8e8e8;
-    padding: 2rem 0;
+  footer.site-footer ul {
+    list-style: none;
   }
-    footer.site-footer ul {
-      list-style: none;
-    }
 
-    footer.site-footer li,
-    footer.site-footer p {
-      font-size: 1.5rem;
-      letter-spacing: -.3px;
-      color: #828282;
-    }
+  footer.site-footer li,
+  footer.site-footer p {
+    font-size: 1.5rem;
+    letter-spacing: -.3px;
+    color: #828282;
+  }
 
-    footer.site-footer li {
-      padding: 3px 2px;
-    }
+  footer.site-footer li {
+    padding: 3px 2px;
+  }
 
-    footer.site-footer a,
-    footer.site-footer a:active,
-    footer.site-footer a:visited {
-      background-color: var(--link-color);
-      color: #d5f9ff;
-      display: inline-block;
-      font-weight: 600;
-      padding: 3px 5px;
-    }
-    footer.site-footer a:hover {
-      background-color: #d5f9ff;
-      color: var(--link-color);
-      text-decoration: none;
-    }
+  footer.site-footer a,
+  footer.site-footer a:active,
+  footer.site-footer a:visited {
+    background-color: var(--link-color);
+    color: #d5f9ff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 3px 5px;
+  }
+  footer.site-footer a:hover {
+    background-color: #d5f9ff;
+    color: var(--link-color);
+    text-decoration: none;
+  }
 
+  footer.site-footer .site-bio {
+    border-top: 2px solid #c8c8c8;
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
     footer.site-footer .site-bio .cols {
       display: block;
     }
@@ -522,15 +547,15 @@ footer {
       }
     }
 
-    footer.site-footer .github-icon-svg,
-    footer.site-footer .twitter-icon-svg,
-    footer.site-footer .soundcloud-icon-svg {
-      display: inline-block;
-      width: 16px;
-      height: 16px;
-      position: relative;
-      top: 3px;
-    }
+  footer.site-footer .github-icon-svg,
+  footer.site-footer .twitter-icon-svg,
+  footer.site-footer .soundcloud-icon-svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+  }
 
 /* Base */
 /* ----------------------------------------------------------*/
@@ -556,6 +581,10 @@ footer {
   padding: 0;
   width: 93%;
 }
+  .container.container-blog .header-narrow {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 
 /* Site header */
 
