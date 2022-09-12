@@ -267,9 +267,9 @@ ul.links {
         padding-bottom: 2px;
       }
         ul.links li a.m-adjust {
-          margin-left: -6px;
+          margin-left: 0;
         }
-        @media (min-width: 550px) {
+        @media (min-width: 768px) {
           ul.links li a.m-adjust {
             margin-left: -6px;
           }
