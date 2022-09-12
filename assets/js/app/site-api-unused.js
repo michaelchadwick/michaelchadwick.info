@@ -69,6 +69,64 @@ MCInfo.PO = function() {
   })
 }
 
+// PODBEAN - disabled because no CORS enabled
+MCInfo.POD = async function() {
+  const podbean = document.querySelector('.htgPod')
+  const podbeanApi = document.querySelector('.apiData.devpod')
+
+  fetch(PHP_GETENV_URL, {
+    body: {
+      CLIENT_ID_KEY: 'PODBEAN_MCINFO_CLIENT_ID',
+      CLIENT_SECRET_KEY: 'PODBEAN_MCINFO_CLIENT_SECRET'
+    },
+    method: 'POST'
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Could not get devpod data')
+      }
+
+      return response.text()
+    }).then(data => {
+      // console.log('client_creds', data)
+
+      return fetch(PODBEAN_OAUTH_URL, {
+        body: 'grant_type=client_credentials',
+        headers: {
+          'Authorization': 'Basic ' + btoa(data.creds.client_id + ':' + data.creds.client_secret)
+        },
+        method: 'POST'
+      })
+    }).then(response => {
+      if (!response.ok) {
+        throw new Error('Could not get devpod data')
+      }
+
+      return response.text()
+    }).then(response => {
+      return fetch(`${PODBEAN_API_URL}/episodes?access_token=${response}`)
+    }).then(response => {
+        if (!response.ok) {
+          throw new Error('Could not get devpod data')
+        }
+
+        return response.json()
+      }).then(data => {
+        const episodes = data
+        const ep = episodes[0]
+        const epTitle = ep.title
+        const epTime = new Date(ep.publish_time)
+        const epUrl = `${ep.permalink_url}`
+
+        podbean.innerHTML = `<span>Latest episode: ${epTime}<br />`
+        podbean.innerHTML += `<a href="${epUrl}">${epTitle}</a></span>`
+
+        if (podbeanApi.style.display !== 'block') {
+          podbeanApi.style.display = 'block'
+        }
+      })
+}
+
 // RUBYGEMS - disabled due to rubygems.org not honoring preflight OPTIONS requests
 MCInfo.RG = async function() {
   let RUBYGEMS_API_KEY = ''

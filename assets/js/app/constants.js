@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-const ENV_URL = '.env'
-
 const BGG_API_URL = 'https://www.boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
 
 const GH_USER = 'michaelchadwick'
@@ -16,6 +14,11 @@ const MCINFO_PROD_URL = [
 const MCINFO_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_BLOG_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_API_URL = '/api/v1/pages.json'
+
+const PHP_GETENV_URL = './assets/php/getenv.php'
+
+// const PODBEAN_OAUTH_URL = 'https://api.podbean.com/v1/oauth/token'
+// const PODBEAN_API_URL = 'https://api.podbean.com/v1'
 
 const STEAM_API_URL = 'https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1'
 
