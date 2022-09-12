@@ -3,6 +3,7 @@
 :root {
   --link-color: #1e9edb;
   --link-color-rev: #d5f9ff;
+  --gray-color: #d3d3d3;
 }
 
 /* Josh W Comeau */
@@ -23,6 +24,7 @@ html, body {
 
 img, picture, video, canvas, svg {
   display: block;
+  height: auto;
   max-width: 100%;
 }
 
@@ -115,6 +117,33 @@ a {
     text-decoration: underline;
   }
 
+  a.btn-more {
+    background-color: var(--link-color);
+    border-radius: 0.5rem;
+    color: var(--link-color-rev);
+    display: inline-block;
+    font-weight: 600;
+    left: 0.5rem;
+    margin-bottom: 3rem;
+    padding: 0.8rem 2.5rem;
+    position: relative;
+  }
+    a.btn-more:hover {
+      background-color: var(--link-color-rev);
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+  a.anchor {
+    position: relative;
+    top: -50px;
+  }
+    @media (min-width: 550px) {
+      a.anchor {
+        top: -35px;
+      }
+    }
+
 h1 {
   font-size: 3rem;
   font-weight: 500;
@@ -153,11 +182,13 @@ h2 {
 
 h3 {
   font-size: 2.75rem;
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 @media (min-width: 550px) {
   h3 {
     font-size: 3rem;
+    font-weight: 500;
   }
 }
 
@@ -202,80 +233,87 @@ li {
   margin-bottom: 0;
 }
 
-ul.links li {
-  font-size: 2rem;
-  list-style-type: square;
-  margin-bottom: 0;
-  padding-left: 1px;
+ul.links {
+  margin-bottom: 1rem;
 }
-@media (min-width: 550px) {
   ul.links li {
-    padding: 5px 10px;
+    font-size: 2rem;
+    line-height: 1.4;
+    list-style-type: square;
+    margin-bottom: 5px;
+    padding-left: 1px;
   }
-}
-  ul.links li::marker {
-    padding: 0;
+  @media (min-width: 550px) {
+    ul.links li {
+      line-height: 1;
+      margin-bottom: 0;
+      padding: 5px 10px;
+    }
   }
-    ul.links li.manual.code {
-      list-style-image: url('../images/code-solid.png');
+    ul.links li::marker {
+      padding: 0;
     }
-      body.dark-theme ul.links li.manual.code {
-        list-style-image: url('../images/code-solid-rev.png');
+      ul.links li.manual.code {
+        list-style-image: url('../images/code-solid.png');
       }
-      ul.links li.manual.code::marker {
-        position: relative;
-        top: -2px;
+        body.dark-theme ul.links li.manual.code {
+          list-style-image: url('../images/code-solid-rev.png');
+        }
+        ul.links li.manual.code::marker {
+          position: relative;
+          top: -2px;
+        }
+      ul.links li a {
+        padding-bottom: 2px;
       }
-    ul.links li a {
-      padding-bottom: 2px;
-    }
-      ul.links li a.m-adjust {
-        margin-left: -6px;
-      }
-      @media (min-width: 550px) {
         ul.links li a.m-adjust {
           margin-left: -6px;
         }
-      }
-    ul.links li img {
-      margin: auto 5px;
-    }
-    ul.links li ul {
-      margin-bottom: 0;
-      margin-top: 0;
-    }
-      ul.links li ul li {
-        font-size: 0.8em;
-        left: 0.65em;
-        list-style-type: none;
-        padding: 0;
-        position: relative;
-      }
-        ul.links li ul li::before {
-          content: "\2219";
-          font-size: 2.5em;
-          left: -0.5em;
-          line-height: 0;
-          position: absolute;
-          top: 0.3em;
-        }
-          ul.links li ul li.blank {
-            left: -0.75em;
+        @media (min-width: 550px) {
+          ul.links li a.m-adjust {
+            margin-left: -6px;
           }
-            ul.links li ul li.blank::before {
+        }
+      ul.links li img {
+        margin: auto 5px;
+      }
+      ul.links li ul {
+        margin-bottom: 0;
+        margin-top: 1rem;
+      }
+        ul.links li ul li {
+          font-size: 0.8em;
+          left: 0.65em;
+          line-height: 1.4;
+          list-style-type: none;
+          padding: 0;
+          position: relative;
+        }
+          ul.links li ul li::before {
+            content: "\2219";
+            font-size: 2.5em;
+            left: -0.5em;
+            line-height: 0;
+            position: absolute;
+            top: 0.3em;
+          }
+            ul.links li ul li.blank {
+              left: -0.75em;
+            }
+              ul.links li ul li.blank::before {
+                content: "";
+              }
+            ul.links li ul li.blank a,
+            ul.links li ul li.blank span {
+              position: relative;
+              top: -2px;
+            }
+          ul.links li ul li.soundcloud {
+            left: -0.5em;
+          }
+            ul.links li ul li.soundcloud::before {
               content: "";
             }
-          ul.links li ul li.blank a,
-          ul.links li ul li.blank span {
-            position: relative;
-            top: -2px;
-          }
-        ul.links li ul li.soundcloud {
-          left: -0.5em;
-        }
-          ul.links li ul li.soundcloud::before {
-            content: "";
-          }
 
 /* CUSTOM CLASSES */
 
@@ -283,10 +321,14 @@ ul.links li {
   display: none;
 }
 
+.row {
+  margin-bottom: 1rem;
+}
+
 /* LAYOUT */
 
 header.header-narrow {
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1px solid var(--gray-color);
   display: block;
   margin: 2rem 0;
   padding-bottom: 2rem;
@@ -486,7 +528,7 @@ footer.site-footer p {
 }
 
 footer {
-  border-top: 1px solid #d3d3d3;
+  border-top: 1px solid var(--gray-color);
   padding: 2rem 0;
 }
   footer img {
@@ -507,7 +549,7 @@ footer {
   footer.site-footer p {
     font-size: 1.5rem;
     letter-spacing: -.3px;
-    color: #828282;
+    color: #626262;
   }
 
   footer.site-footer li {
@@ -518,13 +560,13 @@ footer {
   footer.site-footer a:active,
   footer.site-footer a:visited {
     background-color: var(--link-color);
-    color: #d5f9ff;
+    color: var(--link-color-rev);
     display: inline-block;
     font-weight: 600;
     padding: 3px 5px;
   }
   footer.site-footer a:hover {
-    background-color: #d5f9ff;
+    background-color: var(--link-color-rev);
     color: var(--link-color);
     text-decoration: none;
   }
@@ -670,13 +712,15 @@ footer {
 .post-header .meta {
   font-size: 1.5rem;
   color: #818181;
-  margin-top: 5px;
+}
+
+.post-header .tag {
+  margin-bottom: 1rem;
 }
 
 .post-content { margin: 0 0 30px; }
 
 .post-content > * { margin: 20px 0; }
-
 
 .post-content h1,
 .post-content h2,
