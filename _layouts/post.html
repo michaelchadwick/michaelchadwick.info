@@ -22,11 +22,6 @@ comments: true
     </span>
 
     <div class="meta pretags">
-    {% comment %}
-    {% if page.author %}
-      • {{ page.author }}
-    {% endif %}
-    {% endcomment %}
     {% if page.meta %}
       • {{ page.meta }}
     {% endif %}
@@ -37,15 +32,15 @@ comments: true
     {% if page.headerImage %}
     <div class="post-header-image full-entry">
       <img
-        data-orig-file="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
-        data-orig-size="1200,1200"
+        src="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
         data-image-title="{{ page.headerImage }}"
+        data-orig-file="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
         data-medium-file="{{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-240x240.jpg"
         data-large-file="{{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-480x480.jpg"
+        data-orig-size="1200,1200"
         loading="lazy"
         width="480"
         height="480"
-        src="{{ site.baseurl }}/assets/images/{{ page.headerImage }}.jpg"
         alt="{{ page.title }}"
         title="{{ page.title }}"
         srcset="{{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-480x480.jpg 480w, {{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-240x240.jpg 240w, {{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-150x150.jpg 150w, {{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-768x768.jpg 768w, {{ site.baseurl }}/assets/images/{{ page.headerImage }} 1200w"
