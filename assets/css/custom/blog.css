@@ -6,6 +6,14 @@
   --white: #ffffff;
 }
 
+.container {
+  width: 100%;
+}
+
+body.dark-theme .posts .full-entry a {
+  box-shadow: 0 3px 5px #555;
+}
+
 /* basic */
 a[rel='tag'] {
   letter-spacing: 0.03em;
@@ -179,7 +187,7 @@ nav.site-links a:visited {
   margin: 15px 0;
   padding: 3px;
   position: relative;
-  transition: 1.5s;
+  transition: 0.5s;
   width: 99%;
   z-index: 1;
 }
@@ -200,7 +208,7 @@ nav.site-links a:visited {
   margin-bottom: 0;
   padding: 0.5em;
   position: relative;
-  transition: 1.5s;
+  transition: 0.5s;
   width: 100%;
   z-index: 2;
 }
@@ -346,13 +354,13 @@ nav.site-links a:visited {
   padding: 5px;
   position: relative;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   width: 100%;
 }
   .posts .full-entry a:hover {
     background-color: var(--link-color-rev);
     color: var(--link-color);
-    text-decoration: none;
   }
 
 @media (min-width: 960px) {

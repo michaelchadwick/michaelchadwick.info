@@ -40,8 +40,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* FOUNDATIONAL */
 
-
-
 body {
   -webkit-font-smoothing: antialiased;
   --text-color: #282828;
@@ -64,7 +62,21 @@ body {
     body.dark-theme a {
       background: #282828;
       color: #9bc9d7;
-      text-decoration: underline;
+    }
+    body.dark-theme code {
+      background: #111111;
+      color: #fcfcfc;
+    }
+    body.dark-theme .overlay {
+      background: rgba(120, 120, 120, 0.8);
+    }
+    body.dark-theme #search-container {
+      background: #222222;
+      border: 1px solid #fcfcfc;
+    }
+    body.dark-theme #search-container input {
+      background: #222222;
+      color: #ffffff;
     }
     body.dark-theme footer.site-footer p {
       color: #f3f3f3;
@@ -105,13 +117,13 @@ a {
 
 h1 {
   font-size: 3rem;
+  font-weight: 500;
   line-height: 1;
   margin-bottom: 1rem;
 }
 @media (min-width: 550px) {
   h1 {
     font-size: 5rem;
-    margin-left: -1px;
     margin-bottom: 2rem;
   }
 }
@@ -121,31 +133,32 @@ h2 {
   line-height: 0.8;
   margin-bottom: 1rem;
 }
-@media (min-width: 550px) {
-  h2 {
-    font-size: 3.6rem;
-    margin-bottom: 2rem;
-  }
-}
-
-h3 {
-  font-size: 2rem;
-}
-  h3.task-header {
+  h2.task-header {
     border-bottom: 1px solid #b3aeae;
     border-top: 1px solid #b3aeae;
     display: none;
   }
 @media (min-width: 550px) {
-  h3 {
-    font-size: 3rem;
+  h2 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
   }
-    h3.task-header {
+    h2.task-header {
       display: block;
       font-size: 3.6rem;
       line-height: 0.8;
       padding: 2.3rem 0;
     }
+}
+
+h3 {
+  font-size: 2.75rem;
+  font-weight: 500;
+}
+@media (min-width: 550px) {
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 h4 {
@@ -189,11 +202,6 @@ li {
   margin-bottom: 0;
 }
 
-ul.menu li {
-  float: left;
-  list-style-type: none;
-}
-
 ul.links li {
   font-size: 2rem;
   list-style-type: square;
@@ -221,8 +229,10 @@ ul.links li {
     ul.links li a {
       padding-bottom: 2px;
     }
-      ul.links li a.m-adjust {
-        margin-left: -6px;
+      @media (min-width: 550px) {
+        ul.links li a.m-adjust {
+          margin-left: -6px;
+        }
       }
     ul.links li img {
       margin: auto 5px;
@@ -274,13 +284,37 @@ ul.links li {
 
 header.header-top {
   display: none;
-  margin-top: 4%;
+  margin: 4% 0 4rem;
   position: relative;
 }
   @media (min-width: 550px) {
     header.header-top {
       display: block;
     }
+  }
+
+  header.header-top .location {
+    font-size: 3.6rem;
+    font-weight: 300;
+    letter-spacing: -.1rem;
+    line-height: 0.8;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+
+  header.header-top .tasks {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -.05rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  header.header-top .greeting {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 0.8;
   }
 
 header.header-scrolled {
@@ -302,7 +336,7 @@ header.header-scrolled {
     background: linear-gradient(322deg, rgb(0, 0, 0) 0%, rgba(35, 43, 51, 0.975) 100%);
     box-shadow: 0 0 2px 2px #383636;
   }
-    body.dark-theme header.header-scrolled span.blog a {
+    body.dark-theme header.header-scrolled .menu a {
       background: #000000ee;
     }
 @media (min-width: 550px) {
@@ -315,7 +349,7 @@ header.header-scrolled {
   }
     header.header-scrolled .logo-sm {
       float: left;
-      padding: 5px 5px 5px 0;
+      padding: 2px 5px 5px 0;
     }
     header.header-scrolled div.site-meta {
       display: none;
@@ -367,8 +401,8 @@ header.page-header {
     font-size: 2rem;
     height: 35px;
     line-height: 35px;
-    margin: 1rem 0.5rem 0 1rem;
-    padding: 0.2rem 2.5rem 0 1rem;
+    margin: 0 0.5rem 0 1rem;
+    padding: 0 2.5rem 0 1rem;
     position: relative;
     text-align: center;
   }
@@ -380,7 +414,7 @@ header.page-header {
       height: 27px;
       position: absolute;
       right: -10px;
-      top: 5px;
+      top: 4px;
       -ms-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
@@ -423,6 +457,9 @@ footer.site-footer li,
 footer.site-footer p {
   color: #3a2822;
 }
+footer.site-footer p {
+  margin-bottom: 0;
+}
 
 footer {
   border-top: 1px solid #b3aeae;
@@ -437,13 +474,26 @@ footer {
       width: auto;
     }
   }
+
   footer.site-footer {
-    height: auto;
-    padding: 0;
+    border-top: 1px solid #e8e8e8;
+    padding: 2rem 0;
   }
-    footer.site-footer li {
-      padding: 3px 5px;
+    footer.site-footer ul {
+      list-style: none;
     }
+
+    footer.site-footer li,
+    footer.site-footer p {
+      font-size: 1.5rem;
+      letter-spacing: -.3px;
+      color: #828282;
+    }
+
+    footer.site-footer li {
+      padding: 3px 2px;
+    }
+
     footer.site-footer a,
     footer.site-footer a:active,
     footer.site-footer a:visited {
@@ -472,6 +522,16 @@ footer {
       }
     }
 
+    footer.site-footer .github-icon-svg,
+    footer.site-footer .twitter-icon-svg,
+    footer.site-footer .soundcloud-icon-svg {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      top: 3px;
+    }
+
 /* Base */
 /* ----------------------------------------------------------*/
 
@@ -494,13 +554,7 @@ footer {
 /* override skeleton */
 .container {
   padding: 0;
-  width: 90%;
-}
-@media (min-width: 400px) {
-  .container {
-    width: 95%;
-    padding: 0;
-  }
+  width: 93%;
 }
 
 /* Site header */
@@ -537,65 +591,6 @@ footer {
   margin-left: 20px;
   color: #727272;
   letter-spacing: -.5px;
-}
-
-/* Site footer */
-
-.site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px 0;
-}
-
-.footer-heading {
-  font-size: 1.8rem;
-  font-weight: 300;
-  letter-spacing: -.5px;
-  margin-bottom: 15px;
-}
-
-.site-footer .column { float: left; margin-bottom: 15px; }
-
-.footer-col-1 {
-  width: 270px; /*fallback*/
-  width: -webkit-calc(35% - 10px);
-  width: -moz-calc(35% - 10px);
-  width: -o-calc(35% - 10px);
-  width: calc(35% - 10px);
-  margin-right: 10px
-}
-.footer-col-2 {
-  width: 175px; /*fallback*/
-  width: -webkit-calc(23.125% - 10px);
-  width: -moz-calc(23.125% - 10px);
-  width: -o-calc(23.125% - 10px);
-  width: calc(23.125% - 10px);
-  margin-right: 10px
-}
-.footer-col-3 {
-  width: 335px; /*fallback*/
-  width: -webkit-calc(41.875%);
-  width: -moz-calc(41.875%);
-  width: -o-calc(41.875%);
-  width: calc(41.875%);
-}
-
-.site-footer ul { list-style: none; }
-
-.site-footer li,
-.site-footer p {
-  font-size: 1.5rem;
-  letter-spacing: -.3px;
-  color: #828282;
-}
-
-.github-icon-svg,
-.twitter-icon-svg,
-.soundcloud-icon-svg {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  top: 3px;
 }
 
 
@@ -694,43 +689,34 @@ footer {
 .post-content ol { padding-left: 20px; }
 
 .post {
-  margin: 20px;
+  margin: 0;
 }
-@media (min-width: 550px) {
-  .post {
-    margin: 0;
+  .post pre,
+  .post code {
+    border: 1px solid #d5d5e9;
+    background-color: #eef;
+    padding: 8px 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 1.5rem;
   }
-}
+  .post code { padding: 1px 5px; }
 
-.post pre,
-.post code {
-  border: 1px solid #d5d5e9;
-  background-color: #eef;
-  padding: 8px 12px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  font-size: 1.5rem;
-}
+  .post ul,
+  .post ol { margin-left: 1.35em; }
 
-.post code { padding: 1px 5px; }
+  .post pre code { border: none; }
 
-.post ul,
-.post ol { margin-left: 1.35em; }
-
-.post pre code { border: none; }
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.post pre.terminal code { background-color: #333; }
+  .post pre.terminal {
+    border: 1px solid #000;
+    background-color: #333;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+    .post pre.terminal code { background-color: #333; }
 
 .post .post-date {
   font-size: 1.4rem;
@@ -860,6 +846,10 @@ footer {
 
 /* page-specific */
 
+.page-tag article {
+  padding-top: 0;
+}
+
 .page-tag ul {
   margin-top: 10px;
 }
@@ -887,3 +877,10 @@ footer {
       background-color: #ffffff;
       color: var(--link-color);
     }
+
+.js-accordion-controller {
+  cursor: pointer;
+}
+  .js-accordion-controller:hover {
+    color: #9bc9d7;
+  }
