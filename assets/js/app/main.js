@@ -44,27 +44,31 @@ const bodyClasses = document.body.classList
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
 const currentTheme = localStorage.getItem('mcinfo-theme')
 
-if (currentTheme == 'dark') {
-  bodyClasses.toggle('dark-theme')
+if (btnThemeToggler) {
+  if (currentTheme == 'dark') {
+    bodyClasses.toggle('dark-theme')
 
-  btnThemeToggler.innerHTML = '🌙'
-} else if (currentTheme == 'light') {
-  bodyClasses.toggle('light-theme')
+    btnThemeToggler.innerHTML = '🌙'
+  } else if (currentTheme == 'light') {
+    bodyClasses.toggle('light-theme')
 
-  btnThemeToggler.innerHTML = '☀️'
+    btnThemeToggler.innerHTML = '☀️'
+  }
 }
 
 let lastKnownScrollPosition = 0
 let ticking = false
 
 MCInfo.handleResize = () => {
-  const width = document.body.clientWidth
+  if (headerScrolled) {
+    const width = document.body.clientWidth
 
-  if (width >= 550 && lastKnownScrollPosition <= 200) {
-    headerScrolled.classList.remove('show')
+    if (width >= 550 && lastKnownScrollPosition <= 200) {
+      headerScrolled.classList.remove('show')
+    }
+
+    headerScrolled.style.width = `${window.innerWidth}px`
   }
-
-  headerScrolled.style.width = `${window.innerWidth}px`
 }
 
 MCInfo.handleScroll = () => {

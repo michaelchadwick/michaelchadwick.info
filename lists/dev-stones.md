@@ -1,6 +1,5 @@
 ---
 title: Dev-stones
-date: 2011-01-16T05:08:50-08:00
 layout: page
 ---
 This is my own personal list of both the development milestones I desire to reach, as well as the ones I already have. Hopefully, the &#8220;fulfilled&#8221; list gets longer as the &#8220;desired&#8221; list dwindles, but is also refreshed with new ideas over time.
