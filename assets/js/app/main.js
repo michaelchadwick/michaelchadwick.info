@@ -132,7 +132,8 @@ MCInfo.initApi = () => {
     MCInfo.BLOG()
     MCInfo.GH(),
     MCInfo.POD(),
-    MCInfo.RG()
+    MCInfo.RG(),
+    MCInfo.STEAM()
   }
 
   MCInfo.handleScroll()

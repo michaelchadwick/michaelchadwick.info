@@ -114,53 +114,6 @@ MCInfo.SC = async function() {
   }
 }
 
-// STEAM - disabled because no CORS enabled
-MCInfo.STEAM = function() {
-  const steamLastGamePlayed = document.querySelector('.steamLastGamePlayed')
-  const steamApiData = document.querySelector('.apiData.steam')
-
-  fetch(ENV_URL)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('env vars fetch failed')
-      }
-
-      return response.json()
-    })
-    .then(json => {
-      const steamKey = json['STEAM_WEB_API_KEY']
-      const steamId = json['STEAM_ID_64']
-      const steamUrl = `${STEAM_API_URL}/?key=${steamKey}&steamid=${steamId}`
-
-      return fetch(steamUrl)
-    })
-      .then(response => {
-        if (!response.ok) {
-          console.error('steam response', response)
-          throw new Error('steam api fetch failed')
-        }
-
-        return response.json()
-      })
-      .then(data => {
-        const game = data['response']['games']
-
-        const gameTitle = game['name']
-        const gameId = game['appid']
-        const gameUrl = `https://steamcommunity.com/app/${gameId}`
-
-        steamLastGamePlayed.innerHTML = `<span>Latest game: ${gameTitle}<br />`
-        steamLastGamePlayed.innerHTML += `<a href="${gameUrl}">${gameTitle}</a></span>`
-
-        if (steamApiData.style.display !== 'block') {
-          steamApiData.style.display = 'block'
-        }
-      })
-      .catch(error => {
-        console.error('steam request failed', error)
-      })
-}
-
 // WORDPRESS - moved all wordpress blog content to static codaname site
 MCInfo.WP = async function() {
   const muzblog = document.querySelector('.blogNebyoolaeCom')

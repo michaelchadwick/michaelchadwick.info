@@ -176,3 +176,34 @@ MCInfo.RG = async function() {
     }
   })
 }
+
+// STEAM
+MCInfo.STEAM = function() {
+  const steamLastGamePlayed = document.querySelector('.steamLastGamePlayed')
+  const steamApiData = document.querySelector('.apiData.steam')
+
+  fetch(SITE_API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ 'site': 'steam' })
+  })
+  .then(response => response.json())
+  .then(data => {
+    const game = data['response']['games'][0]
+
+    const gameTitle = game['name']
+    const gameId = game['appid']
+    const gameUrl = `https://steamcommunity.com/app/${gameId}`
+
+    steamLastGamePlayed.innerHTML = `<span>Latest game: <a href="${gameUrl}">${gameTitle}</a></span>`
+
+    if (steamApiData.style.display !== 'block') {
+      steamApiData.style.display = 'block'
+    }
+  })
+  .catch(error => {
+    console.error('steam request failed', error)
+  })
+}

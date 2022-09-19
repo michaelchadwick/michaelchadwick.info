@@ -17,8 +17,6 @@ const MCINFO_API_URL = '/api/v1/pages.json'
 
 const SITE_API_URL = './assets/php/site-api.php'
 
-const STEAM_API_URL = 'https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1'
-
 // wordpress has been deleted
 // const MUZBLOG_API_URL = 'https://blog.nebyoolae.com/wp-json/wp/v2/posts'
 
