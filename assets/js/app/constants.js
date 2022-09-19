@@ -17,9 +17,6 @@ const MCINFO_API_URL = '/api/v1/pages.json'
 
 const SITE_API_URL = './assets/php/site-api.php'
 
-// const PODBEAN_OAUTH_URL = 'https://api.podbean.com/v1/oauth/token'
-// const PODBEAN_API_URL = 'https://api.podbean.com/v1'
-
 const STEAM_API_URL = 'https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1'
 
 // wordpress has been deleted
@@ -30,7 +27,5 @@ const STEAM_API_URL = 'https://api.steampowered.com/IPlayerService/GetRecentlyPl
 // const POCKET_REQUEST_URL = 'https://getpocket.com/v3/oauth/request'
 // const POCKET_ACCESS_URL = 'https://getpocket.com/v3/oauth/authorize'
 // const POCKET_QUERY_URL = 'https://getpocket.com/v3/get'
-
-const RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json'
 
 const SC_USER_ID = 17397

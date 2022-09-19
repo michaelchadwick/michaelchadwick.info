@@ -233,6 +233,10 @@ li {
   margin-bottom: 0;
 }
 
+ul.apiData.narrow {
+  max-width: 260px;
+}
+
 ul.links {
   margin-bottom: 1rem;
 }
@@ -266,14 +270,21 @@ ul.links {
       ul.links li a {
         padding-bottom: 2px;
       }
-        ul.links li a.m-adjust {
+        ul.links li a.m4-adjust,
+        ul.links li a.m6-adjust {
           margin-left: 0;
         }
         @media (min-width: 768px) {
-          ul.links li a.m-adjust {
+          ul.links li a.m4-adjust {
+            margin-left: -4px;
+          }
+          ul.links li a.m6-adjust {
             margin-left: -6px;
           }
         }
+      ul.links span.detail {
+        font-size: 1rem;
+      }
       ul.links li img {
         margin: auto 5px;
       }
@@ -308,6 +319,13 @@ ul.links {
               position: relative;
               top: -2px;
             }
+              ul.links li ul li.blank ul.apiData {
+                margin-top: 0;
+              }
+                ul.links li ul li.blank ul.apiData li a {
+                  font-size: 1.2rem;
+                  top: 0;
+                }
           ul.links li ul li.soundcloud {
             left: -0.5em;
           }

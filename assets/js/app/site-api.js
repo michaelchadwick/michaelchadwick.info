@@ -134,9 +134,7 @@ MCInfo.POD = function() {
     },
     body: JSON.stringify({ 'site': 'podbean' }),
   })
-    .then(response => {
-      return response.json()
-    })
+    .then(response => response.json())
     .then(ep => {
       const podbean = document.querySelector('.htgPod')
       const podbeanApi = document.querySelector('.apiData.devPod')
@@ -150,4 +148,31 @@ MCInfo.POD = function() {
         podbeanApi.style.display = 'block'
       }
     })
+}
+
+// RUBYGEMS - disabled due to rubygems.org not honoring preflight OPTIONS requests
+MCInfo.RG = async function() {
+  fetch(SITE_API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ 'site': 'rubygems' })
+  })
+  .then(response => response.json())
+  .then(data => {
+    const rubygems = document.querySelector('.rubyGems')
+    const rubygemsApi = document.querySelector('.apiData.gemList')
+    const gems = []
+
+    Object.values(data).forEach(gem => {
+      gems.push(`<a href="https://rubygems.org/gems/${gem.name}">${gem.name}</a>`)
+    })
+
+    rubygems.innerHTML = gems.sort().join(', ')
+
+    if (rubygemsApi.style.display !== 'block') {
+      rubygemsApi.style.display = 'block'
+    }
+  })
 }

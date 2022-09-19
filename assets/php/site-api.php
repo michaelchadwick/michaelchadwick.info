@@ -3,9 +3,20 @@ require '../../vendor/autoload.php';
 
 use GuzzleHttp\Client;
 
-$json = file_get_contents('php://input');
-$data = json_decode($json);
-$site = $data->site;
+// fetch() API
+if ($json = file_get_contents('php://input')) {
+  $data = json_decode($json);
+  $site = $data->site;
+}
+// command line
+else if (isset($argv) && count($argv) > 1) {
+  $site = $argv[1];
+}
+// no site?
+else {
+  echo "error: no site supplied\n";
+  exit();
+}
 
 switch ($site) {
   case 'podbean':
@@ -21,6 +32,7 @@ switch ($site) {
     $client = new Client(['base_uri' => $PODBEAN_API_URL, 'timeout'  => 5.0]);
     $token = null;
 
+    // get access_token first
     try {
       $response = $client->post($PODBEAN_OAUTH_ROUTE, [
         'debug' => false,
@@ -53,6 +65,7 @@ switch ($site) {
       echo $responseString;
     }
 
+    // get latest episode
     try {
       $response = $client->get($PODBEAN_EPS_ROUTE . '?access_token=' . $token, [
         'debug' => false
@@ -75,4 +88,34 @@ switch ($site) {
 
       echo $responseString;
     }
+
+    break;
+
+  case 'rubygems':
+    $RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json';
+    $RUBYGEMS_API_KEY = getenv('RUBYGEMS_API_KEY');
+
+    $client = new Client(['base_uri' => $RUBYGEMS_API_URL, 'timeout'  => 5.0]);
+
+    // get all my gems
+    try {
+      $response = $client->get('', [
+        'debug' => false,
+        // 'headers' => [
+        //   'Authorization' => $RUBYGEMS_API_KEY
+        // ]
+      ]);
+
+      echo $response->getBody();
+    } catch (GuzzleHttp\Exception\RequestException $e) {
+      $response = $e->getResponse();
+      $responseString = $response->getBody()->getContents();
+
+      echo $responseString;
+    }
+
+    break;
+
+  default:
+    echo "error: unknown site: '$site' supplied\n";
 }

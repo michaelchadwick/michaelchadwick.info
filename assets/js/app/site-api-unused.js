@@ -69,27 +69,6 @@ MCInfo.PO = function() {
   })
 }
 
-// RUBYGEMS - disabled due to rubygems.org not honoring preflight OPTIONS requests
-MCInfo.RG = async function() {
-  let RUBYGEMS_API_KEY = ''
-
-  fetch(RUBYGEMS_API_URL, {
-    method: 'GET',
-    headers: {
-      'Authorization': RUBYGEMS_API_KEY
-    },
-    body: JSON.stringify({}),
-  }).then(response => {
-    if (!response.ok) {
-      throw new Error('Could not get rubygems data')
-    }
-
-    return response.json()
-  }).then(data => {
-    console.log('rubygems data', data)
-  })
-}
-
 // SOUNDCLOUD - not using right now
 MCInfo.SC = async function() {
   let scEmbedWrapper = document.querySelector('li.soundcloud')
