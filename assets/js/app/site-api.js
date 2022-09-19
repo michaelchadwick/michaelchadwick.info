@@ -124,3 +124,30 @@ MCInfo.GH = async function() {
   //   }
   // }
 }
+
+// PODBEAN
+MCInfo.POD = function() {
+  fetch(SITE_API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ 'site': 'podbean' }),
+  })
+    .then(response => {
+      return response.json()
+    })
+    .then(ep => {
+      const podbean = document.querySelector('.htgPod')
+      const podbeanApi = document.querySelector('.apiData.devPod')
+
+      const podDate = new Date(parseInt(ep.time * 1000)).toLocaleDateString('en-CA')
+
+      podbean.innerHTML = `<span>Latest episode: ${podDate}<br />`
+      podbean.innerHTML += `<a href="${ep.url}">${ep.title}</a></span>`
+
+      if (podbeanApi.style.display !== 'block') {
+        podbeanApi.style.display = 'block'
+      }
+    })
+}

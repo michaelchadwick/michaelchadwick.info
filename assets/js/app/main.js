@@ -122,14 +122,16 @@ MCInfo.initApi = () => {
 
   if (document.location.pathname == '/') {
     // get external site data
-    MCInfo.BLOG()
+    MCInfo.BLOG(),
+    MCInfo.POD()
   }
 
-  if (document.location.pathname == '/projects/') {
+  if (document.location.pathname == '/projects') {
     // get external site data
     MCInfo.BGG()
     MCInfo.BLOG()
-    MCInfo.GH()
+    MCInfo.GH(),
+    MCInfo.POD()
   }
 
   MCInfo.handleScroll()

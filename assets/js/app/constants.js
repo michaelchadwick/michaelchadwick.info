@@ -15,7 +15,7 @@ const MCINFO_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_BLOG_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_API_URL = '/api/v1/pages.json'
 
-const PHP_GETENV_URL = './assets/php/getenv.php'
+const SITE_API_URL = './assets/php/site-api.php'
 
 // const PODBEAN_OAUTH_URL = 'https://api.podbean.com/v1/oauth/token'
 // const PODBEAN_API_URL = 'https://api.podbean.com/v1'
