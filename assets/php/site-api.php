@@ -1,0 +1,78 @@
+<?php
+require '../../vendor/autoload.php';
+
+use GuzzleHttp\Client;
+
+$json = file_get_contents('php://input');
+$data = json_decode($json);
+$site = $data->site;
+
+switch ($site) {
+  case 'podbean':
+    $PODBEAN_API_URL = 'https://api.podbean.com';
+    $PODBEAN_OAUTH_ROUTE = '/v1/oauth/token';
+    $PODBEAN_EPS_ROUTE = '/v1/episodes';
+
+    $creds = array(
+      'client_id' => getenv('PODBEAN_MCINFO_CLIENT_ID'),
+      'client_secret' => getenv('PODBEAN_MCINFO_CLIENT_SECRET')
+    );
+
+    $client = new Client(['base_uri' => $PODBEAN_API_URL, 'timeout'  => 5.0]);
+    $token = null;
+
+    try {
+      $response = $client->post($PODBEAN_OAUTH_ROUTE, [
+        'debug' => false,
+        'auth' => [
+          $creds['client_id'],
+          $creds['client_secret']
+        ],
+        'form_params' => [
+          'grant_type' => 'client_credentials'
+        ]
+      ]);
+
+      $body = $response->getBody()->getContents();
+      $token = json_decode($body)->access_token;
+    } catch (GuzzleHttp\Exception\RequestException $e) {
+      if ($e->hasResponse()) {
+        $response = $e->getResponse();
+        var_dump($response->getStatusCode()); // HTTP status code;
+        var_dump($response->getReasonPhrase()); // Response message;
+        var_dump((string) $response->getBody()); // Body, normally it is JSON;
+        var_dump(json_decode((string) $response->getBody())); // Body as the decoded JSON;
+        var_dump($response->getHeaders()); // Headers array;
+        var_dump($response->hasHeader('Content-Type')); // Is the header presented?
+        var_dump($response->getHeader('Content-Type')[0]); // Concrete header value;
+      }
+    } catch (GuzzleHttp\Exception\ClientException $e) {
+      $response = $e->getResponse();
+      $responseString = $response->getBody()->getContents();
+
+      echo $responseString;
+    }
+
+    try {
+      $response = $client->get($PODBEAN_EPS_ROUTE . '?access_token=' . $token, [
+        'debug' => false
+      ]);
+
+      $body = json_decode($response->getBody()->getContents());
+      $ep = $body->episodes[0];
+      $epTime = $ep->publish_time;
+      $epTitle = $ep->title;
+      $epUrl = $ep->permalink_url;
+
+      echo json_encode([
+        'time' => $epTime,
+        'title' => $epTitle,
+        'url' => $epUrl
+      ]);
+    } catch (GuzzleHttp\Exception\RequestException $e) {
+      $response = $e->getResponse();
+      $responseString = $response->getBody()->getContents();
+
+      echo $responseString;
+    }
+}
