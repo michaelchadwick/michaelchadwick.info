@@ -37,22 +37,23 @@ indentedLists.forEach(li => {
   }
 })
 
-const btnThemeToggler = document.getElementById('theme-toggler')
-// const headerTop = document.querySelector('header.header-wide')
+const themeToggler = document.querySelector('#theme-toggler')
+const imgThemeToggler = document.querySelector('#theme-toggler span.theme-image')
+const lblThemeToggler = document.querySelector('#theme-toggler span.theme-label')
 const headerScrolled = document.querySelector('header.header-scrolled')
 const bodyClasses = document.body.classList
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
 const currentTheme = localStorage.getItem('mcinfo-theme')
 
-if (btnThemeToggler) {
+if (themeToggler) {
   if (currentTheme == 'dark') {
     bodyClasses.toggle('dark-theme')
 
-    btnThemeToggler.innerHTML = '🌙'
-  } else if (currentTheme == 'light') {
+    imgThemeToggler.innerHTML = '🌙'
+  } else {
     bodyClasses.toggle('light-theme')
 
-    btnThemeToggler.innerHTML = '☀️'
+    imgThemeToggler.innerHTML = '☀️'
   }
 }
 
@@ -93,14 +94,14 @@ MCInfo.handleScroll = () => {
 }
 
 MCInfo.addEventHandlers = () => {
-  btnThemeToggler.addEventListener('click', function(event) {
+  themeToggler.addEventListener('click', function() {
     bodyClasses.toggle('dark-theme')
     bodyClasses.toggle('light-theme')
 
     theme = bodyClasses.contains('light-theme') ? 'light' : 'dark'
 
     // update text inside toggler
-    event.target.innerHTML = theme == 'light' ? '☀️' : '🌙'
+    imgThemeToggler.innerHTML = theme == 'light' ? '☀️' : '🌙'
 
     localStorage.setItem('mcinfo-theme', theme)
   })
@@ -142,7 +143,7 @@ MCInfo.initApi = () => {
   if (prefersDarkScheme.matches) {
     bodyClasses.add('dark-theme')
     bodyClasses.remove('light-theme')
-    btnThemeToggler.innerHTML = '🌙'
+    imgThemeToggler.innerHTML = '🌙'
   }
 }
 
