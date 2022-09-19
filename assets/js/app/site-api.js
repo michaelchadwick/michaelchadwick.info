@@ -150,7 +150,7 @@ MCInfo.POD = function() {
     })
 }
 
-// RUBYGEMS - disabled due to rubygems.org not honoring preflight OPTIONS requests
+// RUBYGEMS
 MCInfo.RG = async function() {
   fetch(SITE_API_URL, {
     method: 'POST',
