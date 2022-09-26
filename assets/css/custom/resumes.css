@@ -5,14 +5,13 @@ a.formatlink {
 }
 
 .head {
-  background: #ff98009a;
+  background: #9bc5fbbd;
   border-bottom: 1px solid #222;
   border-top: 1px solid #222;
   clear: both;
   color: #222;
   font-size: 1.1em;
   font-weight: 600;
-  left: -15px;
   letter-spacing: 0.08em;
   padding: 6px 15px;
   position: relative;
@@ -27,15 +26,15 @@ a.formatlink {
 }
 
 .jobname {
-  background: rgba(255, 193, 7, 0.31);
+  background: rgba(155, 203, 255, 0.31);
   clear: right;
   font-weight: bold;
   margin: 0 0 5px 0;
-  min-height: 106px;
+  min-height: 90px;
   padding: 5px;
   text-align: left; }
   .jobname img {
-    border: 1px solid #165f1d;
+    border: 1px solid #161a5f;
     float: left;
     left: 0;
     margin: 2px 10px 5px 2px;
@@ -56,7 +55,7 @@ a.formatlink {
     margin: 0;
     padding: 3px 5px 5px; }
     .jobdesc ul li {
-      margin-left: 20px; }
+      margin-left: 5px; }
 
 ul.skills {
   color: #333;
