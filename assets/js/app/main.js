@@ -127,7 +127,9 @@ MCInfo.initApi = () => {
     MCInfo.POD()
   }
 
-  if (document.location.pathname == '/projects') {
+  const projectUrls = ['/projects', '/projects/']
+
+  if (projectUrls.includes(document.location.pathname)) {
     // get external site data
     MCInfo.BGG()
     MCInfo.BLOG()

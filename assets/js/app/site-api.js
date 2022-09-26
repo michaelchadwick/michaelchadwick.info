@@ -13,6 +13,8 @@ MCInfo.BGG = function() {
 
     return response.text()
   }).then(data => {
+    // console.log('boardgamegeek api request SUCCESS')
+
     const xml = new DOMParser().parseFromString(data, 'text/xml')
     const plays = _xml2json(xml).plays.play[0]
     const lastPlay = plays['@attributes']
@@ -32,6 +34,8 @@ MCInfo.BGG = function() {
     if (bggApiData.style.display !== 'block') {
       bggApiData.style.display = 'block'
     }
+  }).catch(error => {
+    console.error('boardgamegeek api request failed', error)
   })
 }
 
@@ -40,61 +44,73 @@ MCInfo.BLOG = function() {
   const devblog = document.querySelector('.mcinfoBlog')
   const devblogApi = document.querySelector('.apiData.devblog')
 
-  fetch(MCINFO_API_URL)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Could not get devblog data')
-      }
+  fetch(MCINFO_API_URL, {
+    method: 'GET',
+    mode: 'cors'
+  }).then(response => {
+    if (!response.ok) {
+      throw new Error('Could not get devblog data')
+    }
 
-      return response.json()
-    }).then(data => {
-      const entries = data.entries
-      const post = entries[entries.length-1]
-      const postTitle = post.title
-      const postUrl = `${post.url}`
+    return response.json()
+  }).then(data => {
+    // console.log('blog api request SUCCESS')
 
-      let postDate = post.url.substr(6,10)
-      postDate = _replaceAll(postDate, '/', '-')
+    const entries = data.entries
+    const post = entries[entries.length-1]
+    const postTitle = post.title
+    const postUrl = `${post.url}`
 
-      devblog.innerHTML = `<span>Latest post: ${postDate}<br />`
-      devblog.innerHTML += `<a href="${postUrl}">${postTitle}</a></span>`
+    let postDate = post.url.substr(6,10)
+    postDate = _replaceAll(postDate, '/', '-')
 
-      if (devblogApi.style.display !== 'block') {
-        devblogApi.style.display = 'block'
-      }
-    })
+    devblog.innerHTML = `<span>Latest post: ${postDate}<br />`
+    devblog.innerHTML += `<a href="${postUrl}">${postTitle}</a></span>`
+
+    if (devblogApi.style.display !== 'block') {
+      devblogApi.style.display = 'block'
+    }
+  }).catch(error => {
+    console.error('blog api request failed')
+  })
 }
 
 // GITHUB
 MCInfo.GH = async function() {
   // pinned projects
-  const ghPinnedProjects = await fetch(
-    `${GH_PINNED_API}${GH_USER}`)
-    .then(response => response.json())
+  fetch(`${GH_PINNED_API}${GH_USER}`, {
+    method: 'GET'
+  }).then(response => {
+    return response.json()
+  }).then(ghPinnedProjects => {
+    if (ghPinnedProjects) {
+      // console.log('github api request SUCCESS')
 
-  if (ghPinnedProjects) {
-    const ghInfo = document.querySelector('.ghInfo')
-    const ghApiData = document.querySelector('.apiData.devgit')
+      const ghApiList = document.querySelector('.apiData.devgit')
+      const ghApiListItem = document.querySelector('.ghInfo')
 
-    let str = `<span>Pinned projects:</span> `
+      let str = `<span>Pinned projects:</span> `
 
-    let projects = []
+      let projects = []
 
-    ghPinnedProjects.forEach(item => {
-      const url = item.link
-      const repo = item.repo
+      ghPinnedProjects.forEach(item => {
+        const url = item.link
+        const repo = item.repo
 
-      projects.push(`<a href='${url}'>${repo}</a>`)
-    })
+        projects.push(`<a href='${url}'>${repo}</a>`)
+      })
 
-    str += projects.join(', ')
+      str += projects.join(', ')
 
-    ghInfo.innerHTML = str
+      ghApiListItem.innerHTML = str
 
-    if (ghApiData.style.display !== 'block') {
-      ghApiData.style.display = 'block'
+      if (ghApiList.style.display !== 'block') {
+        ghApiList.style.display = 'block'
+      }
     }
-  }
+  }).catch(error => {
+    console.error('github api request failed', error)
+  })
 
   // recent commits
   // const ghRecentCommits = await fetch(
@@ -102,8 +118,8 @@ MCInfo.GH = async function() {
   //   .then(response => response.json())
 
   // if (ghRecentCommits) {
-  //   const ghInfo = document.querySelector('.ghInfo')
-  //   const ghApiData = document.querySelector('.apiData.devgit')
+  //   const ghApiListItem = document.querySelector('.ghApiListItem')
+  //   const ghApiList = document.querySelector('.apiData.devgit')
 
   //   let str = ''
   //   str += `<span>Latest commits:</span>`
@@ -117,10 +133,10 @@ MCInfo.GH = async function() {
   //     str += `<br />- ${date}: <a href='${url}'>${msg}</a></span> (<strong><a href='${repo}'>${repo}</a></strong>)`
   //   })
 
-  //   ghInfo.innerHTML = str
+  //   ghApiListItem.innerHTML = str
 
-  //   if (ghApiData.style.display !== 'block') {
-  //     ghApiData.style.display = 'block'
+  //   if (ghApiList.style.display !== 'block') {
+  //     ghApiList.style.display = 'block'
   //   }
   // }
 }
@@ -129,25 +145,27 @@ MCInfo.GH = async function() {
 MCInfo.POD = function() {
   fetch(SITE_API_URL, {
     method: 'POST',
+    mode: 'cors',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ 'site': 'podbean' }),
+  }).then(response => {
+    return response.json()
+  }).then(ep => {
+    // console.log('podbean api request SUCCESS')
+
+    const podbeanApiListItem = document.querySelector('.htgPod')
+    const podbeanDate = new Date(parseInt(ep.time * 1000)).toLocaleDateString('en-CA')
+
+    podbeanApiListItem.innerHTML = `<span>Latest episode: ${podbeanDate}<br />`
+    podbeanApiListItem.innerHTML += `<a href="${ep.url}">${ep.title}</a></span>`
+  }).catch(error => {
+    console.error('podbean api request failed', error);
+
+    const podbeanApiList = document.querySelector('.apiData.devPod')
+    podbeanApiList.style.display = 'none';
   })
-    .then(response => response.json())
-    .then(ep => {
-      const podbean = document.querySelector('.htgPod')
-      const podbeanApi = document.querySelector('.apiData.devPod')
-
-      const podDate = new Date(parseInt(ep.time * 1000)).toLocaleDateString('en-CA')
-
-      podbean.innerHTML = `<span>Latest episode: ${podDate}<br />`
-      podbean.innerHTML += `<a href="${ep.url}">${ep.title}</a></span>`
-
-      if (podbeanApi.style.display !== 'block') {
-        podbeanApi.style.display = 'block'
-      }
-    })
 }
 
 // RUBYGEMS
@@ -158,9 +176,11 @@ MCInfo.RG = async function() {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ 'site': 'rubygems' })
-  })
-  .then(response => response.json())
-  .then(data => {
+  }).then(response => {
+    return response.json()
+  }).then(data => {
+    // console.log('rubygems api request SUCCESS')
+
     const rubygems = document.querySelector('.rubyGems')
     const rubygemsApi = document.querySelector('.apiData.gemList')
     const gems = []
@@ -174,6 +194,8 @@ MCInfo.RG = async function() {
     if (rubygemsApi.style.display !== 'block') {
       rubygemsApi.style.display = 'block'
     }
+  }).catch(error => {
+    console.error('rubygems api request failed', error)
   })
 }
 
@@ -188,9 +210,11 @@ MCInfo.STEAM = function() {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ 'site': 'steam' })
-  })
-  .then(response => response.json())
-  .then(data => {
+  }).then(response => {
+    return response.json()
+  }).then(data => {
+    // console.log('steam api request SUCCESS')
+
     const game = data['response']['games'][0]
 
     const gameTitle = game['name']
@@ -202,8 +226,7 @@ MCInfo.STEAM = function() {
     if (steamApiData.style.display !== 'block') {
       steamApiData.style.display = 'block'
     }
-  })
-  .catch(error => {
-    console.error('steam request failed', error)
+  }).catch(error => {
+    console.error('steam api request failed', error)
   })
 }
