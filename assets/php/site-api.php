@@ -116,34 +116,34 @@ switch ($site) {
 
     break;
 
-    case 'steam':
-      $STEAM_API_URL = 'https://api.steampowered.com';
-      $STEAM_API_KEY = getenv('STEAM_WEB_API_KEY');
-      $STEAM_API_ID = getenv('STEAM_ID_64');
-      $STEAM_GET_GAMES_ROUTE = '/IPlayerService/GetRecentlyPlayedGames/v1';
+  case 'steam':
+    $STEAM_API_URL = 'https://api.steampowered.com';
+    $STEAM_API_KEY = getenv('STEAM_WEB_API_KEY');
+    $STEAM_API_ID = getenv('STEAM_ID_64');
+    $STEAM_GET_GAMES_ROUTE = '/IPlayerService/GetRecentlyPlayedGames/v1';
 
-      $client = new Client(['base_uri' => $STEAM_API_URL, 'timeout'  => 5.0]);
+    $client = new Client(['base_uri' => $STEAM_API_URL, 'timeout'  => 5.0]);
 
-      // get all my gems
-      try {
-        $response = $client->get($STEAM_GET_GAMES_ROUTE, [
-          'debug' => false,
-          'query' => [
-            'key' => $STEAM_API_KEY,
-            'steamid' => $STEAM_API_ID,
-            'format' => 'json'
-          ]
-        ]);
+    // get all my gems
+    try {
+      $response = $client->get($STEAM_GET_GAMES_ROUTE, [
+        'debug' => false,
+        'query' => [
+          'key' => $STEAM_API_KEY,
+          'steamid' => $STEAM_API_ID,
+          'format' => 'json'
+        ]
+      ]);
 
-        echo $response->getBody();
-      } catch (GuzzleHttp\Exception\RequestException $e) {
-        $response = $e->getResponse();
-        $responseString = $response->getBody()->getContents();
+      echo $response->getBody();
+    } catch (GuzzleHttp\Exception\RequestException $e) {
+      $response = $e->getResponse();
+      $responseString = $response->getBody()->getContents();
 
-        echo $responseString;
-      }
+      echo $responseString;
+    }
 
-      break;
+    break;
 
   default:
     echo "error: unknown site: '$site' supplied\n";
