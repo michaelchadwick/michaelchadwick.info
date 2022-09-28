@@ -21,4 +21,8 @@ task :serve_inc do |t|
   sh "bundle exec jekyll serve -w -o --unpublished --incremental"
 end
 
+task :sync do |t|
+  sh "rsync -auP --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
+end
+
 task :default => [:deploy]
