@@ -1,5 +1,10 @@
 {
-    "require": {
-        "guzzlehttp/guzzle": "^7.0"
+  "config": {
+    "platform": {
+        "php": "7.4"
     }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.0"
+  }
 }
