@@ -1,10 +1,10 @@
 <?php
 require '../../vendor/autoload.php';
 
-use Dotenv\DotEnv;
+use Dotenv\Dotenv;
 use GuzzleHttp\Client;
 
-$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
 $dotenv->load();
 
 // fetch() API
