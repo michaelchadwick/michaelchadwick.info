@@ -1,7 +1,11 @@
 <?php
 require '../../vendor/autoload.php';
 
+use Dotenv\DotEnv;
 use GuzzleHttp\Client;
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 // fetch() API
 if ($json = file_get_contents('php://input')) {
@@ -25,8 +29,8 @@ switch ($site) {
     $PODBEAN_EPS_ROUTE = '/v1/episodes';
 
     $creds = array(
-      'client_id' => getenv('PODBEAN_MCINFO_CLIENT_ID'),
-      'client_secret' => getenv('PODBEAN_MCINFO_CLIENT_SECRET')
+      'client_id' => $_ENV['PODBEAN_MCINFO_CLIENT_ID'],
+      'client_secret' => $_ENV['PODBEAN_MCINFO_CLIENT_SECRET']
     );
 
     $client = new Client(['base_uri' => $PODBEAN_API_URL, 'timeout'  => 5.0]);
@@ -93,7 +97,7 @@ switch ($site) {
 
   case 'rubygems':
     $RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json';
-    $RUBYGEMS_API_KEY = getenv('RUBYGEMS_API_KEY');
+    $RUBYGEMS_API_KEY = $_ENV['RUBYGEMS_API_KEY'];
 
     $client = new Client(['base_uri' => $RUBYGEMS_API_URL, 'timeout'  => 5.0]);
 
@@ -118,8 +122,8 @@ switch ($site) {
 
   case 'steam':
     $STEAM_API_URL = 'https://api.steampowered.com';
-    $STEAM_API_KEY = getenv('STEAM_WEB_API_KEY');
-    $STEAM_API_ID = getenv('STEAM_ID_64');
+    $STEAM_API_KEY = $_ENV['STEAM_WEB_API_KEY'];
+    $STEAM_API_ID = $_ENV['STEAM_ID_64'];
     $STEAM_GET_GAMES_ROUTE = '/IPlayerService/GetRecentlyPlayedGames/v1';
 
     $client = new Client(['base_uri' => $STEAM_API_URL, 'timeout'  => 5.0]);
