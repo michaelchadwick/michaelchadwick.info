@@ -5,6 +5,7 @@
 .git
 .gitignore
 .jshintrc
+*.icloud
 LICENSE.md
 README.md
 Rakefile
