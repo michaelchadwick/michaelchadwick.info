@@ -805,7 +805,10 @@ footer {
   .post ul,
   .post ol { margin-left: 1.35em; }
 
-  .post pre code { border: none; }
+  .post pre code {
+    border: none;
+    white-space: pre-wrap;
+  }
 
   .post pre.terminal {
     border: 1px solid #000;
