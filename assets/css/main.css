@@ -209,7 +209,7 @@ h4 {
 
 h5 {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 550px) {
   h5 {
