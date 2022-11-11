@@ -18,6 +18,8 @@ faviconLinks.forEach(f => {
   // exceptions
   if (hostname == 'https://nebyoolae.newgrounds.com/') {
     url = 'https://www.newgrounds.com/img/icons/favicon.png'
+  } else if (hostname == 'https://fenchy.bandcamp.com/album/just-a-waste-ep') {
+    url = '/assets/images/fenchy-jaw-ep-icon.jpg'
   } else if(hostname.endsWith('/blog')) {
     url = '/assets/images/mc-logo-icon.png'
   } else {
