@@ -5,7 +5,7 @@ const BGG_API_URL = 'https://www.boardgamegeek.com/xmlapi2/plays?username=nebyoo
 const GH_USER = 'michaelchadwick'
 const GH_API_URL = 'https://api.github.com'
 const GH_API_LAST_REPO = `${GH_API_URL}/users/${GH_USER}/repos?sort=updated&per_page=1`
-const GH_PINNED_API = 'https://gh-pinned-repos.egoist.sh/?username='
+const GH_PINNED_API = 'https://gh-pinned-repos.egoist.dev/?username='
 
 const MCINFO_PROD_URL = [
   'michaelchadwick.info',
