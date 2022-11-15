@@ -550,7 +550,7 @@ footer.site-footer p {
   color: #3a2822;
 }
 footer.site-footer p {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -577,6 +577,9 @@ footer {
     letter-spacing: -.3px;
     color: #626262;
   }
+    footer.site-footer p.text-small {
+      font-size: 1.25rem;
+    }
 
   footer.site-footer li {
     padding: 3px 2px;
@@ -589,7 +592,8 @@ footer {
     color: var(--link-color-rev);
     display: inline-block;
     font-weight: 600;
-    padding: 3px 5px;
+    margin: 0 1px;
+    padding: 2px 3px;
   }
   footer.site-footer a:hover {
     background-color: var(--link-color-rev);
