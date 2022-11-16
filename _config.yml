@@ -49,6 +49,7 @@ permalink: pretty
 # Custom Site settings
 gh_username: michaelchadwick
 tw_username: mjchadwick
+masto_username: nebyoolae
 sc_n_username: nebyoolae
 sc_mb_username: massive-battery
 bc_username: nebyoolae
@@ -56,6 +57,7 @@ mc_link: https://michaelchadwick.info
 neb_link: https://nebyoolae.com
 gh_link: https://github.com/michaelchadwick
 tw_link: https://twitter.com/mjchadwick
+masto_link: https://masto.neb.host/@nebyoolae
 htg_link: https://hackingthegrepson.com
 sc_n_link: https://soundcloud.com/nebyoolae
 sc_mb_link: https://soundcloud.com/massive-battery
