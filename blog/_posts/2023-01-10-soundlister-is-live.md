@@ -1,7 +1,7 @@
 ---
 title: 'Soundlister is Live'
 layout: post
-headerImage: posts/2022/soundlister-2023-01-10.png
+headerImage: posts/2023/soundlister-2023-01-10.png
 tags: audio list music playlist tool web
 ---
 
