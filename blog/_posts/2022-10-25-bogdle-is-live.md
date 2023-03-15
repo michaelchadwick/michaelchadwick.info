@@ -5,13 +5,13 @@ headerImage: posts/2022/bogdle-2022-10-25.png
 tags: bogdle boggle daily game nebapp puzzle vuejs wordle wordsmyth
 ---
 
-It's finally time to reveal my finished web game: <a href="https://bogdle.fun">Bogdle</a>.
+It's finally time to reveal my finished web game: <a href="https://bogdle.neb.host">Bogdle</a>.
 
 I <a href="/blog/2022/05/bogdle-intro">blogged about it before</a> and it's finally ready for prime time.
 
 <!--more-->
 
-<a href="https://bogdle.fun">Bogdle</a> is a Wordle-inspired game of Boggle, the popular grid word-search. The look and feel is definitely Wordle, but the actual gameplay is [Wordsmyth](https://apps.apple.com/us/app/wordsmyth-a-daily-word-game/id1534959553), a Boggle-like game for iOS that I got addicted to at one point.
+<a href="https://bogdle.neb.host">Bogdle</a> is a Wordle-inspired game of Boggle, the popular grid word-search. The look and feel is definitely Wordle, but the actual gameplay is [Wordsmyth](https://apps.apple.com/us/app/wordsmyth-a-daily-word-game/id1534959553), a Boggle-like game for iOS that I got addicted to at one point.
 
 ## BASICS
 
