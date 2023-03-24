@@ -42,9 +42,9 @@ a.formatlink {
     position: static;
     width: auto;
   }
-    .jobname ul {
-      font-weight: normal;
-    }
+  .jobname ul {
+    font-weight: normal;
+  }
 
 .jobdesc {
   clear: both;
