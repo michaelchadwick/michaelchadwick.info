@@ -49,9 +49,8 @@ a.formatlink {
 .jobdesc {
   clear: both;
   font-weight: normal;
-  margin: 5px;
   overflow: hidden;
-  padding: 6px 4px 4px;
+  padding: 5px;
   text-align: left;
 }
   .jobdesc ul {
