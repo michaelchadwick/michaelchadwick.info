@@ -32,16 +32,19 @@ a.formatlink {
   margin: 0 0 5px 0;
   min-height: 90px;
   padding: 5px;
-  text-align: left; }
+  text-align: left;
+}
   .jobname img {
     border: 1px solid #161a5f;
     float: left;
     left: 0;
     margin: 2px 10px 5px 2px;
     position: static;
-    width: auto; }
+    width: auto;
+  }
     .jobname ul {
-      font-weight: normal; }
+      font-weight: normal;
+    }
 
 .jobdesc {
   clear: both;
@@ -49,81 +52,97 @@ a.formatlink {
   margin: 5px;
   overflow: hidden;
   padding: 6px 4px 4px;
-  text-align: left; }
+  text-align: left;
+}
   .jobdesc ul {
     clear: both;
     margin: 0;
-    padding: 3px 5px 5px; }
+    padding: 3px 5px 5px;
+  }
     .jobdesc ul li {
-      margin-left: 5px; }
+      margin-left: 5px;
+    }
 
 ul.skills {
   color: #333;
-  margin: 0; }
+  margin: 0;
+}
   ul.skills li {
     clear: left;
     font-size: 16px;
     font-weight: normal;
-    list-style: square; }
-  ul.skills li.first {
-    clear: none;
-    float: left;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 16px;
-    list-style: none;
-    margin-bottom: 2px;
-    margin-left: 0;
-    margin-right: 12px;
-    margin-top: 5px; }
-  ul.skills li.first-next {
-    clear: both; }
+    list-style: square;
+  }
+    ul.skills li.first {
+      clear: none;
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 16px;
+      list-style: none;
+      margin-bottom: 2px;
+      margin-left: 0;
+      margin-right: 12px;
+      margin-top: 5px;
+    }
+    ul.skills li.first-next {
+      clear: both;
+    }
 
 @media (min-width: 768px) {
   ul.skills li {
     clear: none;
     float: left;
-    margin: 2px 14px; }
+    margin: 2px 14px;
+  }
     ul.skills li.first {
       clear: left;
       margin-left: 5px;
-      width: 240px; }
+      width: 240px;
+    }
       ul.skills li.first.tall {
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+      }
       ul.skills li.first.taller {
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+      }
       ul.skills li.first.tallest {
-        margin-bottom: 75px; }
+        margin-bottom: 75px;
+      }
       ul.skills li.first-next {
-        clear: none; }
+        clear: none;
+      }
 }
 
 #print-link {
   margin: 5px 45px;
-  text-align: center; }
+  text-align: center;
+}
   #print-link a.button {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
     background-image: none;
     border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 16px;
-    line-height: 1.44;
     border-radius: 0px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.44;
+    margin-bottom: 0;
+    padding: 6px 12px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; }
+    user-select: none;
+    -ms-touch-action: manipulation;
+    text-align: center;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
 
 #job-types {
   border-top: 1px solid #444;
   margin: 20px 45px;
   padding-top: 3px;
-  text-align: center; }
+  text-align: center;
+}
