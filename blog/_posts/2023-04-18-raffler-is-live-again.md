@@ -5,7 +5,7 @@ headerImage: posts/2023/raffler-2023-04-18.png
 tags: choice css jquery list nebapp raffle raffler random renovation sass tool web web-app web-storage-api
 ---
 
-Way back in <a href="blog/2017/08/14/raffler-ftw">2017</a>, I created a web app called <a href="https://raffler.neb.host">Raffler</a> that let you take a bunch of choices, put them in a digital hat, and pick one out at random. It was one of my first projects to really experiment with things like the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">Web Storage API</a>, <a href="https://sass-lang.com">SASS</a>, <a href="https://createjs.com">CreateJS</a>, <a href="https://gulpjs.com">GulpJS</a>, and actually having my code be used in a <a href="https://uccsc.ucsd.edu">public forum</a>.
+Way back in <a href="/blog/2017/08/14/raffler-ftw">2017</a>, I created a web app called <a href="https://raffler.neb.host">Raffler</a> that let you take a bunch of choices, put them in a digital hat, and pick one out at random. It was one of my first projects to really experiment with things like the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">Web Storage API</a>, <a href="https://sass-lang.com">SASS</a>, <a href="https://createjs.com">CreateJS</a>, <a href="https://gulpjs.com">GulpJS</a>, and actually having my code be used in a <a href="https://uccsc.ucsd.edu">public forum</a>.
 
 Since then, both JS and CSS have improved significantly, and I've found myself wishing to use fewer dependencies, if possible. Thus, a renovation was in order.
 
