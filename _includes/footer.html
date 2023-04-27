@@ -1,15 +1,23 @@
 <footer class="site-footer">
-  <img src="/assets/images/mc-logo.png"
-    alt="Michael Chadwick"
-    title="Michael Chadwick"
-  />
-
-  <p>built with <a href="https://jekyllrb.com">Jekyll</a> and <a href="http://getskeleton.com">Skeleton</a></p>
 
   <nav class="site-bio">
 
-    <div class="cols cols-3">
-      <div class="col">
+    <div class="row">
+
+      <!-- logo and summary -->
+      <div class="three columns">
+        <a href="{{ site.home_relative_url }}" class="plain">
+          <img src="/assets/images/mc-logo-med.png"
+            alt="Michael Chadwick"
+            title="Michael Chadwick"
+          />
+        </a>
+
+        <p class="text">{{ site.description_html }}</p>
+      </div>
+
+      <!-- global links -->
+      <div class="two columns">
         <ul>
           <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a></li>
           <li><a href="{{ '/sitemap.xml' | prepend: site.baseurl }}">Sitemap</a></li>
@@ -17,7 +25,8 @@
         </ul>
       </div>
 
-      <div class="col">
+      <!-- social links -->
+      <div class="three columns">
         <ul id="social-links">
           <li>
             <a href="{{ site.gh_link }}">
@@ -36,6 +45,7 @@
               <span class="icon mastodon">{% include svg-masto.html %}</span>
               <span class="username">{{ site.masto_username }}</span>
             </a>
+          </li>
           <li>
             <a href="{{ site.sc_n_link }}">
               <span class="icon soundcloud">{% include svg-sc.html %}</span>
@@ -51,8 +61,9 @@
         </ul>
       </div>
 
-      <div class="col">
-        <p class="text">{{ site.description_html }}</p>
+      <!-- credits and donations -->
+      <div class="four columns">
+        <p>Built with <a href="https://jekyllrb.com">Jekyll</a> and <a href="http://getskeleton.com">Skeleton</a></p>
         <p class="text text-small">'Triangles' loading icon from <a href="https://loading.io/icon/">loading.io</a></p>
       </div>
     </div>

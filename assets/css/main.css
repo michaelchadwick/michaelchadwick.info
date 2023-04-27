@@ -558,13 +558,7 @@ footer {
   padding: 2rem 0;
 }
   footer img {
-    margin-bottom: 10px;
-    width: 25%;
-  }
-  @media (min-width: 550px) {
-    footer img {
-      width: auto;
-    }
+    margin-bottom: 0;
   }
 
   footer.site-footer ul {
@@ -582,29 +576,52 @@ footer {
     }
 
   footer.site-footer li {
-    padding: 3px 2px;
+    padding: 3px 0;
   }
+    @media (min-width: 550px) {
+      footer.site-footer li {
+        padding: 3px 2px;
+      }
+    }
 
   footer.site-footer a,
   footer.site-footer a:active,
   footer.site-footer a:visited {
     background-color: var(--link-color);
+    border: 1px solid transparent;
     color: var(--link-color-rev);
     display: inline-block;
     font-weight: 600;
     margin: 0 1px;
     padding: 2px 3px;
   }
-  footer.site-footer a:hover {
-    background-color: var(--link-color-rev);
-    color: var(--link-color);
-    text-decoration: none;
+    footer.site-footer a:hover,
+    footer.site-footer a:active:hover,
+    footer.site-footer a:visited:hover {
+      background-color: var(--link-color-rev);
+      border: 1px solid var(--link-color);
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+  footer.site-footer a.plain,
+  footer.site-footer a:active.plain,
+  footer.site-footer a:visited.plain {
+    background: none;
+    border: none;
+    color: inherit;
   }
+    footer.site-footer a.plain:hover,
+    footer.site-footer a.plain:active:hover,
+    footer.site-footer a.plain:visited:hover {
+      background: none;
+      border: none;
+      color: inherit;
+    }
 
   footer.site-footer .site-bio {
-    border-top: 2px solid #c8c8c8;
-    margin-top: 2rem;
-    padding-top: 2rem;
+    margin-top: 0;
+    padding-top: 0;
   }
     footer.site-footer .site-bio .cols {
       display: block;
