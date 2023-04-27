@@ -589,11 +589,12 @@ footer {
   footer.site-footer a:visited {
     background-color: var(--link-color);
     border: 1px solid transparent;
+    border-radius: 4px;
     color: var(--link-color-rev);
     display: inline-block;
     font-weight: 600;
     margin: 0 1px;
-    padding: 2px 3px;
+    padding: 2px 5px;
   }
     footer.site-footer a:hover,
     footer.site-footer a:active:hover,
