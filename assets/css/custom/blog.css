@@ -134,9 +134,9 @@ article {
 }
 
 nav.site-links,
-nav.site-bio,
-footer.site-footer li,
-footer.site-footer p {
+nav#site-bio,
+footer#site-footer li,
+footer#site-footer p {
   color: #22243a;
 }
 nav.site-links {

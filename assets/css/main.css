@@ -80,7 +80,7 @@ body {
       background: #222222;
       color: #ffffff;
     }
-    body.dark-theme footer.site-footer p {
+    body.dark-theme footer#site-footer p {
       color: #f3f3f3;
     }
     /*
@@ -546,12 +546,12 @@ body.dark-theme button#theme-toggler {
 }
 
 nav.site-links,
-nav.site-bio,
-footer.site-footer li,
-footer.site-footer p {
+nav#site-bio,
+footer#site-footer li,
+footer#site-footer p {
   color: #3a2822;
 }
-footer.site-footer p {
+footer#site-footer p {
   margin-bottom: 5px;
 }
 
@@ -563,32 +563,32 @@ footer {
     margin-bottom: 0;
   }
 
-  footer.site-footer ul {
+  footer#site-footer ul {
     list-style: none;
   }
 
-  footer.site-footer li,
-  footer.site-footer p {
+  footer#site-footer li,
+  footer#site-footer p {
     font-size: 1.5rem;
     letter-spacing: -.3px;
     color: #626262;
   }
-    footer.site-footer p.text-small {
+    footer#site-footer p.text-small {
       font-size: 1.25rem;
     }
 
-  footer.site-footer li {
+  footer#site-footer li {
     padding: 3px 0;
   }
     @media (min-width: 550px) {
-      footer.site-footer li {
+      footer#site-footer li {
         padding: 3px 2px;
       }
     }
 
-  footer.site-footer a,
-  footer.site-footer a:active,
-  footer.site-footer a:visited {
+  footer#site-footer a,
+  footer#site-footer a:active,
+  footer#site-footer a:visited {
     background-color: var(--link-color);
     border: 1px solid transparent;
     border-radius: 4px;
@@ -598,39 +598,39 @@ footer {
     margin: 0 1px;
     padding: 2px 5px;
   }
-    footer.site-footer a:hover,
-    footer.site-footer a:active:hover,
-    footer.site-footer a:visited:hover {
+    footer#site-footer a:hover,
+    footer#site-footer a:active:hover,
+    footer#site-footer a:visited:hover {
       background-color: var(--link-color-rev);
       border: 1px solid var(--link-color);
       color: var(--link-color);
       text-decoration: none;
     }
 
-  footer.site-footer a.plain,
-  footer.site-footer a:active.plain,
-  footer.site-footer a:visited.plain {
+  footer#site-footer a.plain,
+  footer#site-footer a:active.plain,
+  footer#site-footer a:visited.plain {
     background: none;
     border: none;
     color: inherit;
   }
-    footer.site-footer a.plain:hover,
-    footer.site-footer a.plain:active:hover,
-    footer.site-footer a.plain:visited:hover {
+    footer#site-footer a.plain:hover,
+    footer#site-footer a.plain:active:hover,
+    footer#site-footer a.plain:visited:hover {
       background: none;
       border: none;
       color: inherit;
     }
 
-  footer.site-footer .site-bio {
+  footer#site-footer #site-bio {
     margin-top: 0;
     padding-top: 0;
   }
-    footer.site-footer .site-bio .cols {
+    footer#site-footer #site-bio .cols {
       display: block;
     }
     @media (min-width: 550px) {
-      footer.site-footer .site-bio .cols {
+      footer#site-footer #site-bio .cols {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
@@ -639,10 +639,10 @@ footer {
       }
     }
 
-  footer.site-footer .github-icon-svg,
-  footer.site-footer .twitter-icon-svg,
-  footer.site-footer .masto-icon-svg,
-  footer.site-footer .soundcloud-icon-svg {
+  footer#site-footer .github-icon-svg,
+  footer#site-footer .twitter-icon-svg,
+  footer#site-footer .masto-icon-svg,
+  footer#site-footer .soundcloud-icon-svg {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -934,7 +934,7 @@ footer {
     margin-right: 0;
   }
 
-  .site-footer .column.footer-col-3 {
+  #site-footer .column.footer-col-3 {
     width: auto;
     float: none;
     clear: both;
@@ -962,7 +962,7 @@ footer {
   .post-content ul,
   .post-content ol { padding-left: 10px; }
 
-  .site-footer .column {
+  #site-footer .column {
     float: none;
     clear: both;
     width: auto;
