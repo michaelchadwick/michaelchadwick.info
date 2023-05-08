@@ -25,9 +25,9 @@ tags: true
       {% assign count = items[2] | plus: 0 %}
       {% if count > 30 %}
         {% assign size = 5 %}
-      {% elseif count > 15 %}
+      {% elsif count > 15 %}
         {% assign size = 4 %}
-      {% elseif count > 5 %}
+      {% elsif count > 5 %}
         {% assign size = 3 %}
       {% else %}
         {% assign size = count %}
