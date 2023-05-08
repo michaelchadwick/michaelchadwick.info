@@ -24,6 +24,7 @@ plugins:
   - jekyll-loading-lazy
   - jekyll-paginate-v2
   - jekyll-sitemap
+  - jekyll-tagging
   - jekyll-timeago
   - jemoji
 # Plugin settings
