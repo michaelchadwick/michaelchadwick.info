@@ -7,16 +7,39 @@ tags: true
 
 <div class="page-tags">
 
-  <div id="tag-cloud">
+  <!--
+    https://www.gungorbudak.com/blog/2017/12/08/tags-cloud-sorted-by-post-count-for-jekyll-blogs-without-plugins/
+  -->
+
+  {% capture tags %}
     {% for tag in site.tags %}
-      <a href="{{ tag[0] }}" id="{{ forloop.index }}" class="tag">
-        <span>{{ tag[0] | remove:'\s' }}</span>
-      </a>
+      {{ tag[1].size | plus: -10000 }}###{{ tag[0] | replace: ' ', '##' }}###{{ tag[1].size }}
+    {% endfor %}
+  {% endcapture %}
+  {% assign sorted_tags = tags | split: ' ' | sort %}
+
+  <div id="tag-cloud">
+    {% for sorted_tag in sorted_tags %}
+      {% assign items = sorted_tag | split: '###' %}
+      {% assign tag = items[1] | replace: '##', ' ' %}
+      {% assign count = items[2] | plus: 0 %}
+      {% if count > 30 %}
+        {% assign size = 5 %}
+      {% elseif count > 15 %}
+        {% assign size = 4 %}
+      {% elseif count > 5 %}
+        {% assign size = 3 %}
+      {% else %}
+        {% assign size = count %}
+      {% endif %}
+
+      <a
+        class="tag tag-size-{{ size }}"
+        href="{{ tag }}"
+        id="{{ forloop.index }}"
+        rel="tag"
+      >{{ tag | remove:'\s' }} ({{ count }})</a>
     {% endfor %}
   </div>
 
 </div>
-
-<!--TODO-->
-<!--<script src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"></script>-->
-<!--<script src="{{ site.baseurl }}/assets/js/tags.js"></script>-->

@@ -2,6 +2,10 @@
 
 :root {
   --link-color: #1e9edb;
+  --link-color-faded1: #357c9c;
+  --link-color-faded2: #3083aa;
+  --link-color-faded3: #2d8fbd;
+  --link-color-faded4: #2597cb;
   --link-color-rev: #d5f9ff;
   --gray-color: #d3d3d3;
 }
@@ -994,6 +998,7 @@ footer {
   }
 
 #tag-cloud {
+  align-items: center;
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
@@ -1008,7 +1013,47 @@ footer {
     #tag-cloud a:hover {
       background-color: #ffffff;
       color: var(--link-color);
+      text-decoration: none;
     }
+    #tag-cloud a.tag-size-5 {
+      font-size: 2.2rem;
+    }
+
+    #tag-cloud a.tag-size-4 {
+      background-color: var(--link-color-faded4);
+      font-size: 2.05rem;
+    }
+      #tag-cloud a.tag-size-4:hover {
+        background-color: #ffffff;
+        color: var(--link-color-faded4);
+      }
+
+    #tag-cloud a.tag-size-3 {
+      background-color: var(--link-color-faded3);
+      font-size: 1.9rem;
+    }
+      #tag-cloud a.tag-size-3:hover {
+        background-color: #ffffff;
+        color: var(--link-color-faded3);
+      }
+
+    #tag-cloud a.tag-size-2 {
+      background-color: var(--link-color-faded2);
+      font-size: 1.7rem;
+    }
+      #tag-cloud a.tag-size-2:hover {
+        background-color: #ffffff;
+        color: var(--link-color-faded2);
+      }
+
+    #tag-cloud a.tag-size-1 {
+      background-color: var(--link-color-faded1);
+      font-size: 1.4rem;
+    }
+      #tag-cloud a.tag-size-1:hover {
+        background-color: #ffffff;
+        color: var(--link-color-faded1);
+      }
 
 .js-accordion-controller {
   cursor: pointer;
