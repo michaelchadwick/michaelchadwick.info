@@ -95,10 +95,10 @@ body {
     --text-color: #f3f3f3;
     --bkgr-color: #282828ee;
   }
-  body.light-theme {
-    --text-color: #282828;
-    --bkgr-color: #f6f6f6ee;
-  }
+    body.light-theme {
+      --text-color: #282828;
+      --bkgr-color: #f6f6f6ee;
+    }
 }
 
 @media (min-width: 550px) {
@@ -418,6 +418,7 @@ header.header-scrolled {
     body.dark-theme header.header-scrolled .menu a {
       background: #000000ee;
     }
+
 @media (min-width: 550px) {
   header.header-scrolled {
     top: -100px;
@@ -705,14 +706,14 @@ footer {
   float: right;
   line-height: 56px;
 }
-
-.site-nav .menu-icon { display: none; }
-
-.site-nav .page-link {
-  margin-left: 20px;
-  color: #727272;
-  letter-spacing: -.5px;
-}
+  .site-nav .menu-icon {
+    display: none;
+  }
+  .site-nav .page-link {
+    margin-left: 20px;
+    color: #727272;
+    letter-spacing: -.5px;
+  }
 
 
 /* Page Content styles */
@@ -726,90 +727,95 @@ footer {
 /* Home styles */
 /* ----------------------------------------------------------*/
 
-.home h1 { margin-bottom: 25px; }
-
-.posts { list-style-type: none; }
-
-.posts li { margin-bottom: 30px; }
-
-.posts .post-link {
-  font-size: 2.4rem;
-  font-weight: 600;
-  letter-spacing: -1px;
-  line-height: 1;
+.home h1 {
+  margin-bottom: 25px;
 }
 
-.posts .post-date {
-  display: block;
-  font-size: 1.5rem;
-  color: #818181;
+.posts {
+  list-style-type: none;
 }
+  .posts li {
+    margin-bottom: 30px;
+  }
+  .posts .post-link {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+  .posts .post-date {
+    display: block;
+    font-size: 1.5rem;
+    color: #818181;
+  }
 
 
 /* Post styles */
 /* ----------------------------------------------------------*/
 
-.post-header { margin: 5px 0 15px; }
-
-.post-header h1 {
-  font-size: 4.2rem;
-  letter-spacing: -1.75px;
-  line-height: 1;
-  font-weight: 300;
-  margin-bottom: 0;
+.post-header {
+  margin: 5px 0 15px;
 }
+  .post-header h1 {
+    font-size: 4.2rem;
+    letter-spacing: -1.75px;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  .post-header .meta {
+    font-size: 1.5rem;
+    color: #818181;
+  }
+  .post-header .tag {
+    margin-bottom: 1rem;
+  }
 
-.post-header .meta {
-  font-size: 1.5rem;
-  color: #818181;
+.post-content {
+  margin: 0 0 30px;
 }
+  .post-content > * {
+    margin: 20px 0;
+  }
 
-.post-header .tag {
-  margin-bottom: 1rem;
-}
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6 {
+    line-height: 1;
+    font-weight: 300;
+    margin: 40px 0 20px;
+  }
 
-.post-content { margin: 0 0 30px; }
+  .post-content h2 {
+    font-size: 3.2rem;
+    letter-spacing: -1.25px;
+  }
+  .post-content h3 {
+    font-size: 2.6rem;
+    letter-spacing: -1px;
+  }
+  .post-content h4 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
 
-.post-content > * { margin: 20px 0; }
+  .post-content blockquote {
+    border-left: 4px solid #e8e8e8;
+    padding-left: 20px;
+    font-size: 1.75rem;
+    opacity: .6;
+    letter-spacing: -1px;
+    font-style: italic;
+    margin: 30px 0;
+  }
 
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-  line-height: 1;
-  font-weight: 300;
-  margin: 40px 0 20px;
-}
-
-.post-content h2 {
-  font-size: 3.2rem;
-  letter-spacing: -1.25px;
-}
-
-.post-content h3 {
-  font-size: 2.6rem;
-  letter-spacing: -1px;
-}
-
-.post-content h4 {
-  font-size: 2rem;
-  letter-spacing: -1px;
-}
-
-.post-content blockquote {
-  border-left: 4px solid #e8e8e8;
-  padding-left: 20px;
-  font-size: 1.75rem;
-  opacity: .6;
-  letter-spacing: -1px;
-  font-style: italic;
-  margin: 30px 0;
-}
-
-.post-content ul,
-.post-content ol { padding-left: 20px; }
+  .post-content ul,
+  .post-content ol {
+    padding-left: 20px;
+  }
 
 .post {
   margin: 0;
@@ -844,13 +850,13 @@ footer {
   }
     .post pre.terminal code { background-color: #333; }
 
-.post .post-date {
-  font-size: 1.4rem;
-}
+  .post .post-date {
+    font-size: 1.4rem;
+  }
 
-.post .tag a {
-  font-size: 1.3rem;
-}
+  .post .tag a {
+    font-size: 1.3rem;
+  }
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
