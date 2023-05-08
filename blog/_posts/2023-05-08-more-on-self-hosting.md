@@ -1,7 +1,7 @@
 ---
 title: 'More on Self-Hosting'
 layout: post
-headerImage: posts/self-hosted2.png
+headerImage: posts/self-hosted2.jpg
 tags: blog chat email rss self-hosting server update web
 ---
 
