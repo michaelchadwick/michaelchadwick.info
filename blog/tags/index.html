@@ -29,8 +29,10 @@ tags: true
         {% assign size = 4 %}
       {% elsif count > 5 %}
         {% assign size = 3 %}
+      {% elsif count > 1 %}
+        {% assign size = 2 %}
       {% else %}
-        {% assign size = count %}
+        {% assign size = 1 %}
       {% endif %}
 
       <a
