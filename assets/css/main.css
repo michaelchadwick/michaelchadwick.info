@@ -771,9 +771,15 @@ footer {
     font-size: 1.5rem;
     color: #818181;
   }
-  .post-header .tag {
+  .post-header .tags {
+    font-size: 1.25rem;
+    line-height: 1;
     margin-bottom: 1rem;
   }
+    .post-header .tags a {
+      display: inline-block;
+      margin-right: 0.35rem;
+    }
 
 .post-content {
   margin: 0 0 30px;

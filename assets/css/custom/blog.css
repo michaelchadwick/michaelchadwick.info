@@ -442,9 +442,16 @@ h3.tag {
     width: 25px;
   }
 
-span.tag,
-div.tag {
+span.tags,
+div.tags {
   font-size: 1.25rem;
+  line-height: 1;
+}
+
+span.tags a,
+div.tags a {
+  display: inline-block;
+  margin-right: 0.35rem;
 }
 
 /* media queries */

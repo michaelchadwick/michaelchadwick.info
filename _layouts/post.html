@@ -27,7 +27,13 @@ comments: true
     {% endif %}
     </div>
     {% if page.tags %}
-    <div class="tag">{{ page | tags }}</div>
+    <!--<div class="tag">{# page | tags #}</div>-->
+    {% assign sorted_tags = page.tags | sort %}
+    <div class="tags">
+      {% for tag in sorted_tags %}
+        <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+    </div>
     {% endif %}
     {% if page.headerImage %}
     <div class="post-header-image full-entry">

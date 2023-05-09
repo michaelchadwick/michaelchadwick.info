@@ -31,7 +31,12 @@ pagination:
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <div class="tag">{{ post | tags }}</div>
+        {% assign sorted_tags = post.tags | sort %}
+        <div class="tags">
+          {% for tag in sorted_tags %}
+            <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </div>
 
         {% if post.headerImage %}
         <div class="post-header-image">
