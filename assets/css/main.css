@@ -451,6 +451,8 @@ header.header-scrolled {
       }
         header.header-scrolled div.site-meta span.name a {
           color: #0c6a87;
+          display: inline-block;
+          height: 18px;
         }
         header.header-scrolled div.site-meta span.name span.desc {
           font-size: 0.8em;
