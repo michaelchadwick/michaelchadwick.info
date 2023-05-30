@@ -275,17 +275,19 @@ ul.links {
       ul.links li a {
         padding-bottom: 2px;
       }
-        ul.links li a.m4-adjust,
-        ul.links li a.m6-adjust {
+        ul.links li a.m4-adjust {
           margin-left: 0;
+        }
+        ul.links li a.m6-adjust {
+          margin-left: -6px;
         }
         @media (min-width: 768px) {
           ul.links li a.m4-adjust {
             margin-left: -4px;
           }
-          ul.links li a.m6-adjust {
+          /* ul.links li a.m6-adjust {
             margin-left: -6px;
-          }
+          } */
         }
       ul.links span.detail {
         font-size: 0.8em;
