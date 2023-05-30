@@ -123,22 +123,45 @@ MCInfo.initApi = () => {
 
   MCInfo.addEventHandlers()
 
+  // external site checking for homepage
   if (document.location.pathname == '/') {
     // get external site data
-    MCInfo.BLOG(),
-    MCInfo.POD()
+    MCInfo.BLOG()
+
+    if (MCInfo.env != 'local') {
+      MCInfo.POD()
+    } else {
+      // hide podcast
+      const elem = document.getElementsByClassName('devPod')[0]
+
+      elem.style.display = 'none'
+    }
   }
 
-  const projectUrls = ['/projects', '/projects/']
-
-  if (projectUrls.includes(document.location.pathname)) {
+  // external site checking for projects page
+  if (['/projects', '/projects/'].includes(document.location.pathname)) {
     // get external site data
     MCInfo.BGG()
     MCInfo.BLOG()
-    MCInfo.GH(),
-    MCInfo.POD(),
-    MCInfo.RG(),
-    MCInfo.STEAM()
+    MCInfo.GH()
+
+    // podbean fails on local for some reason
+    if (MCInfo.env != 'local') {
+      MCInfo.POD()
+      MCInfo.RG()
+      MCInfo.STEAM()
+    } else {
+      // hide podcast, rubygems, steam
+      const elems = []
+
+      // need to use getElementsByClassName because
+      // it returns live nodes
+      elems.push(document.getElementsByClassName('devPod')[0])
+      elems.push(document.getElementsByClassName('gemList')[0])
+      elems.push(document.getElementsByClassName('steam')[0])
+
+      elems.forEach(elem => elem.style.display = 'none')
+    }
   }
 
   MCInfo.handleScroll()
