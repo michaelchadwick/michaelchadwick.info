@@ -17,7 +17,7 @@ The music playing in the background? It&#8217;s a pleasant mix of spaghetti west
 
 Watch this video to see one of them, as well as a third piece that&#8217;s a mashup of the first and second one.
 
-{% include youtubePlayer.html id="DGxgFxF47XY" %}
+{% include yt_player.html id="DGxgFxF47XY" %}
 
 Darren plays these songs in an open tuning, really giving them their characteristic &#8220;open-ness&#8221;, a sound that rings out because of all the open strings sustaining constantly. Now, I learned to play the two main songs, &#8220;Build That Wall&#8221; and &#8220;Home Sweet Home&#8221;, in regular tuning, mainly due to Internet tabs written as such and laziness on my part, and they still sound fine. You hear the music and sing the words, and you get the gist. For a quick accomplishment and bout of satisfaction, it gets the job done. Such renditions are not really &#8220;authentic,&#8221; though. You miss out on certain notes that shape the music in a distinctive way when you play them this way.
 

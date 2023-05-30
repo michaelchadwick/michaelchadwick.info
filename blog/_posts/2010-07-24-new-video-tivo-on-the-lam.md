@@ -16,6 +16,6 @@ Oh, no! The TiVos have been falsely accused of watching U-Verse and have been lo
 
 Featuring more music from the upcoming &#8220;The Matic&#8221; release, &#8220;Mellifluous&#8221; is a cute, little suspense spy theme to accompany our favorite DVR mascots&#8217; escape from imprisonment. Check it out!
 
-{% include youtubePlayer.html id="aS525JYfNG8" %}
+{% include yt_player.html id="aS525JYfNG8" %}
 
 <!--more-->

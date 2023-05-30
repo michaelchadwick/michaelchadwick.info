@@ -16,11 +16,7 @@
 
       <!-- global links -->
       <div class="two columns">
-        <ul>
-          <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a></li>
-          <li><a href="{{ '/sitemap.xml' | prepend: site.baseurl }}">Sitemap</a></li>
-          <li><a href="{{ '/resume' | prepend: site.baseurl }}">R&eacute;sum&eacute;</a></li>
-        </ul>
+        {% include global_links.html %}
       </div>
 
       <!-- social links -->
@@ -28,31 +24,31 @@
         <ul id="social-links">
           <li>
             <a href="{{ site.gh_link }}">
-              <span class="icon github">{% include svg-gh.html %}</span>
+              <span class="icon github">{% include svg_gh.html %}</span>
               <span class="username">{{ site.gh_username }}</span>
             </a>
           </li>
           <li>
             <a href="{{ site.tw_link }}">
-              <span class="icon twitter">{% include svg-tw.html %}</span>
+              <span class="icon twitter">{% include svg_tw.html %}</span>
               <span class="username">{{ site.tw_username }}</span>
             </a>
           </li>
           <li>
             <a rel="me" href="{{ site.masto_link }}">
-              <span class="icon mastodon">{% include svg-masto.html %}</span>
+              <span class="icon mastodon">{% include svg_masto.html %}</span>
               <span class="username">{{ site.masto_username }}</span>
             </a>
           </li>
           <li>
             <a href="{{ site.sc_n_link }}">
-              <span class="icon soundcloud">{% include svg-sc.html %}</span>
+              <span class="icon soundcloud">{% include svg_sc.html %}</span>
               <span class="username">{{ site.sc_n_username }}</span>
             </a>
           </li>
           <li>
             <a href="{{ site.sc_mb_link }}">
-              <span class="icon soundcloud">{% include svg-sc.html %}</span>
+              <span class="icon soundcloud">{% include svg_sc.html %}</span>
               <span class="username">{{ site.sc_mb_username }}</span>
             </a>
           </li>
@@ -61,8 +57,7 @@
 
       <!-- credits and donations -->
       <div class="four columns">
-        <p>Built with <a href="https://jekyllrb.com">Jekyll</a> and <a href="http://getskeleton.com">Skeleton</a></p>
-        <p class="text text-small">'Triangles' loading icon from <a href="https://loading.io/icon/">loading.io</a></p>
+        {% include skeleton.html %}
         {% include kofi.html %}
       </div>
 

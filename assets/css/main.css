@@ -295,8 +295,9 @@ ul.links {
       ul.links li img {
         margin: auto 5px;
       }
-        ul.links li img.loading {
-          margin-left: -24px;
+        ul.links li .loading {
+          margin-left: -25px;
+          margin-top: 1px;
         }
       ul.links li ul {
         margin-bottom: 0;
@@ -590,7 +591,7 @@ footer {
   }
     @media (min-width: 550px) {
       footer#site-footer li {
-        padding: 3px 2px;
+        padding: 2px;
       }
     }
 
@@ -604,7 +605,7 @@ footer {
     display: inline-block;
     font-weight: 600;
     margin: 0 1px;
-    padding: 2px 5px;
+    padding: 0 5px;
   }
     footer#site-footer a:hover,
     footer#site-footer a:active:hover,
@@ -1071,3 +1072,29 @@ footer {
   .js-accordion-controller:hover {
     color: var(--link-color);
   }
+
+/* spinner */
+.lds-dual-ring {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 4px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

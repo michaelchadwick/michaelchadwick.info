@@ -12,7 +12,7 @@ tags:
   - robyn
   - unpublished
 ---
-{% include youtubePlayer.html id="6cdqMN4OK3g" %}
+{% include yt_player.html id="6cdqMN4OK3g" %}
 
 Robyn and I decided to decorate our house for Christmas today. We already had our 4&#8242; fake tree up on an end table next to the living room window, a wreath was hung from the front door, and our stockings were hung on a nearby bookshelf, but we hadn&#8217;t put up any lights! Lights are what make any holiday worth its salt&#8230;worth its NaCl.
 

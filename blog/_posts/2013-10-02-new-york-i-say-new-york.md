@@ -9,7 +9,7 @@ tags:
   - vacation
   - video
 ---
-{% include youtubePlayer.html id="lLB_049KVpU" %}
+{% include yt_player.html id="lLB_049KVpU" %}
 
 I can now say I&#8217;ve totally been to the state of New York, as well as its eponymous island city (and Queens for a bit, too). All of the media I&#8217;ve ever seen about New York feels largely validated, although I never got above 60th Street, so the Upper Sides, Harlem, and The Bronx are still mysteries to me.
 

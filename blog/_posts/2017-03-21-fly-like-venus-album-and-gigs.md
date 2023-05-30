@@ -19,4 +19,4 @@ The sweet rock band I&#8217;m currently in, [Fly Like Venus](http://flylikevenus
 
 **News the Three**: a new live video for &#8220;Scenes from My Window&#8221; appears!
 
-{% include youtubePlayer.html id="VYTi7mE9xEc" %}
+{% include yt_player.html id="VYTi7mE9xEc" %}
