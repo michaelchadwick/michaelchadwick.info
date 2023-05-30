@@ -32,7 +32,7 @@ I&#8217;ve been in a duo, back in the mid-2000s, called [Pure Yellow Colour](htt
 
 I&#8217;ve been in a band for a few years now, called [Fly Like Venus](https://flylikevenus.bandcamp.com). We made an album. It&#8217;s on [iTunes](https://music.apple.com/us/album/scenes/1250933105) and [Spotify](https://open.spotify.com/album/1ihBm7GuciNaOlyqCRyxwi). We&#8217;re (slowly) working on a second one.
 
-Solo-wise, I&#8217;ve created and publicly released forty-one collections of music, be they full albums or EPs or what have you. The genres range from [instrumental rock](https://nebyoolae.bandcamp.com/album/zoetic) to [vocal pop rock](https://fench.bandcamp.com/album/puttery) to [EDM](https://nebyoolae.bandcamp.com/album/soothe-the-savage-beats) to [ambient](https://nebyoolae.bandcamp.com/album/marcos-minefield-ost) to [video game remixes](https://nebyoolae.bandcamp.com/album/gamey-amalgam) to [chiptune](https://nebyoolae.bandcamp.com/album/average-town) to a fully-arranged [orchestral symphony](https://nebyoolae.bandcamp.com/album/dumeh-in-cm-op-1-no-1).
+Solo-wise, I&#8217;ve created and publicly released forty-one collections of music, be they full albums or EPs or what have you. The genres range from [instrumental rock](https://nebyoolae.bandcamp.com/album/zoetic) to [vocal pop rock](https://fenchy.bandcamp.com/album/puttery) to [EDM](https://nebyoolae.bandcamp.com/album/soothe-the-savage-beats) to [ambient](https://nebyoolae.bandcamp.com/album/marcos-minefield-ost) to [video game remixes](https://nebyoolae.bandcamp.com/album/gamey-amalgam) to [chiptune](https://nebyoolae.bandcamp.com/album/average-town) to a fully-arranged [orchestral symphony](https://nebyoolae.bandcamp.com/album/dumeh-in-cm-op-1-no-1).
 
 <hr class="wp-block-separator" />
 
@@ -44,7 +44,7 @@ Here&#8217;s what I&#8217;ve come up with:
 
   * **Nebyoolae** &#8211; the granddaddy of them all. Essentially, from now on, I tend to only release something using this name if it&#8217;s instrumental&#8230;something or other. Rock, dance, etc., if it&#8217;s just instrumental, then it goes under this term.
 
-  * **Fench** &#8211; my made-up pop rock band that has lyrics and singing. I&#8217;ve only released one album, so far, but I have two more in the pipe. I think I might want to re-record, or at least re-release, a bunch of vocal stuff that was tagged with Nebyoolae as Fench.
+  * **Fenchy** &#8211; my made-up pop rock band that has lyrics and singing. I&#8217;ve only released one album, so far, but I have two more in the pipe. I think I might want to re-record, or at least re-release, a bunch of vocal stuff that was tagged with Nebyoolae as Fenchy.
 
   * **Massive Battery** &#8211; my odd electronica outfit, only using Native Instruments&#8217; Massive for synths and Battery for percussion. Oh, and loads of vocal samples. Become a [Dance Master](https://soundcloud.com/massive-battery/dance-master), ya&#8217;ll.
   * **Fly Like Venus** &#8211; my current band. I play rhythm (and sometimes lead) guitar, and I contribute to songwriting and vocals. It&#8217;s a group effort, so it&#8217;s in its own little world.

@@ -18,9 +18,13 @@ faviconLinks.forEach(f => {
   // exceptions
   if (hostname == 'https://nebyoolae.newgrounds.com/') {
     url = 'https://www.newgrounds.com/img/icons/favicon.png'
-  } else if (hostname == 'https://fenchy.bandcamp.com/album/just-a-waste-ep') {
-    url = '/assets/images/fenchy-jaw-ep-icon.jpg'
-  } else if(hostname.endsWith('/blog')) {
+  } else if (hostname == 'https://fenchy.bandcamp.com/') {
+    url = '/assets/images/fenchy-icon.jpg'
+  } else if (hostname == 'https://flylikevenus.bandcamp.com/') {
+    url = '/assets/images/flv-icon.jpg'
+  } else if (hostname == 'https://rustycrab.bandcamp.com/') {
+    url = '/assets/images/rustycrab-icon.jpg'
+  } else if (hostname.endsWith('/blog')) {
     url = '/assets/images/mc-logo-icon.png'
   } else {
     url = `https://www.google.com/s2/favicons?domain=${hostname}&sz=${iconSize}`
