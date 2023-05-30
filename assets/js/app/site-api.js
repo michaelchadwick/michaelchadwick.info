@@ -3,6 +3,7 @@ MCInfo.BGG = function() {
   const bggLastGamePlayed = document.querySelector('.bggLastGamePlayed')
   const bggApiData = document.querySelector('.apiData.bgg')
 
+  // get most recent board game play
   fetch(BGG_API_URL, {
     method: 'GET',
     mode: 'cors'
@@ -44,6 +45,7 @@ MCInfo.BLOG = function() {
   const devblog = document.querySelector('.mcinfoBlog')
   const devblogApi = document.querySelector('.apiData.devblog')
 
+  // get most recent blog post
   fetch(MCINFO_API_URL, {
     method: 'GET',
     mode: 'cors'
@@ -77,7 +79,7 @@ MCInfo.BLOG = function() {
 
 // GITHUB
 MCInfo.GH = async function() {
-  // pinned projects
+  // get pinned projects
   fetch(`${GH_PINNED_API}${GH_USER}`, {
     method: 'GET'
   }).then(response => {
@@ -112,7 +114,7 @@ MCInfo.GH = async function() {
     console.error('github api request failed', error)
   })
 
-  // recent commits
+  // get recent commits
   // const ghRecentCommits = await fetch(
   //   `${GH_API_URL}/search/commits?q=author:${GH_USER}&sort=committer-date&per_page=3`)
   //   .then(response => response.json())
@@ -143,6 +145,7 @@ MCInfo.GH = async function() {
 
 // PODBEAN
 MCInfo.POD = function() {
+  // get most recent podcast episode
   fetch(SITE_API_URL, {
     method: 'POST',
     mode: 'cors',
@@ -170,6 +173,7 @@ MCInfo.POD = function() {
 
 // RUBYGEMS
 MCInfo.RG = async function() {
+  // get linked list of rubygems
   fetch(SITE_API_URL, {
     method: 'POST',
     headers: {
@@ -204,6 +208,7 @@ MCInfo.STEAM = function() {
   const steamLastGamePlayed = document.querySelector('.steamLastGamePlayed')
   const steamApiData = document.querySelector('.apiData.steam')
 
+  // get most recent steam game played
   fetch(SITE_API_URL, {
     method: 'POST',
     headers: {
