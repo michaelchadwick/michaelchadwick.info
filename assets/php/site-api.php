@@ -76,7 +76,14 @@ switch ($site) {
       ]);
 
       $body = json_decode($response->getBody()->getContents());
-      $ep = $body->episodes[0];
+
+      $i = 0;
+
+      while ($body->episodes[$i]->status == 'draft') {
+        $i++;
+      }
+
+      $ep = $body->episodes[$i];
       $epTime = $ep->publish_time;
       $epTitle = $ep->title;
       $epUrl = $ep->permalink_url;
