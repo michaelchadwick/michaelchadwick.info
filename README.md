@@ -4,6 +4,14 @@
 
 ## local development
 
+### build dependencies
+
 `$ bundle install`
 
-`$ (bundle exec) jekyll serve --watch`
+### serve local dev version
+
+`$ bundle exec jekyll serve --watch --open-url http://localhost:4000`
+
+or
+
+`$ ./serve.sh`
