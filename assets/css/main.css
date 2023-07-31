@@ -239,6 +239,11 @@ li {
   margin-bottom: 0;
 }
 
+ul ul {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
 ul.apiData.narrow {
   max-width: 260px;
 }
