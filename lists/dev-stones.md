@@ -11,7 +11,6 @@ My list of <a href="/lists/muz-stones">musical milestones</a> also exists.
   * <span style="color: #800000;">CoreAudio: create a custom Audio Unit for Logic/Garageband</span>
   * <span style="color: #800000;">Google Chrome: create extension</span>
   * <span style="color: #800000;">iPhone: create an iPhone app</span>
-  * <span style="color: #800000;">Python: write a useful python script</span>
   * <span style="color: #800000;">Ruby/Rails: finish and deploy a completed Ruby on Rails application</span>
 
 ### <span style="color: #008000;">Objectives Fulfilled</span>
@@ -98,6 +97,7 @@ My list of <a href="/lists/muz-stones">musical milestones</a> also exists.
   * <span style="color: #008000;">PHP/HTML: created an EDIT form to edit data in a database</span>
   * <span style="color: #008000;">PHP/HTML: created a VIEW view to display data in a database</span>
   * <span style="color: #008000;">PHP/PEAR: sent email from web page</span>
+  * <span style="color: #008000;">Python: write a useful python script</span>
   * <span style="color: #008000;">Redmine: installed on host</span>
   * <span style="color: #008000;">Redmine: customized theme</span>
   * <span style="color: #008000;">Redmine: upgraded Redmine installation</span>
