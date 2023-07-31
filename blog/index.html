@@ -74,9 +74,9 @@ pagination:
       {% if page == paginator.page %}
         <em>{{ page }}</em>
       {% elsif page == 1 %}
-        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        <a href="{{ '/' | prepend: site.blogurl | replace: '//', '/' }}">{{ page }}</a>
       {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        <a href="{{ site.paginate_path | prepend: site.blogurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
