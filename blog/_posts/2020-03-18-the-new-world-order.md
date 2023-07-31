@@ -1,7 +1,6 @@
 ---
-title: The New World Order
-date: 2020-03-18T10:32:14-07:00
 layout: post
+title: The New World Order
 tags: covid-19 status-update
 ---
 You may have heard of [COVID-19](https://covid-19.splunkforgood.com/coronavirus__covid_19_), a novel coronavirus that&#8217;s sweeping the globe. Welp, what it means for me so far is working from home, schools closed, and a general unrest and fear of The Outside.

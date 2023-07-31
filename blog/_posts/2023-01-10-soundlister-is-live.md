@@ -1,8 +1,8 @@
 ---
-title: 'SoundLister is Live'
 layout: post
-headerImage: posts/2023/soundlister-2023-01-10.png
+title: 'SoundLister is Live'
 tags: audio list music nebapp playlist tool web
+headerImage: posts/2023/soundlister-2023-01-10.png
 ---
 
 Are you a musician or sound designer or any sort? Ever just need to listen to a bunch of sketches or samples you've made, one after the other, but don't feel ready to put them into a "real" audio application like iTunes? Want to be able to listen to them from any device with an Internet connection and a web browser?

@@ -1,11 +1,8 @@
 ---
-
 layout: post
 title:  "Programming After 40"
 tags: introspection minecraft webdev work
 headerImage: posts/mc_40.png
-excerpt: "I'm 40 years old and I've been working on dev of some sort or another for two-and-a-half decades. I have a reliable career, but still have time to work on toy projects for fun when I want, and yet lately...I have not been interested. Now what?"
-
 ---
 
 I'm 40 years-old and I've been working on dev of some sort or another for two-and-a-half decades. I have a reliable career, but still have time to work on toy projects for fun when I want, and yet lately...I have not been interested.

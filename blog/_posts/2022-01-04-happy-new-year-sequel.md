@@ -1,6 +1,6 @@
 ---
-title: 'Happy New Year Sequel'
 layout: post
+title: 'Happy New Year Sequel'
 tags: announcement blog codaname jekyll nebyooblog wordpress
 ---
 

@@ -1,11 +1,8 @@
 ---
-
 layout: post
 title:  "Sometimes Self-Hosting Services Satisfies Sufficiently"
 tags: self-hosted webdev freshrss homer neb.host wallabag roundcube drupal linode vue-js minecraft wordpress jekyll-rb hugo
 headerImage: posts/self-hosted.jpg
-excerpt: ""
-
 ---
 
 Over the years, the way I've used the Internet has changed: initial discovery through a modem and AOL, creating my own little space on a local ISP's at `/~username`, always-on broadband in college, and then residential service that I've now had for nearly 2 decades. Once you're online all the time, you start using it a lot more. I've used the popular services everyone else uses, like Google and Wikipedia, but also toyed with running my own services on some server somewhere, usually shared. Issues of privacy and security are definitely relevant here, but customization and control are even more important to me.

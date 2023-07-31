@@ -51,7 +51,7 @@ a.tag:hover {
 }
 
 p {
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -71,6 +71,16 @@ ul ul {
   margin-bottom: 10px;
   margin-left: 2em;
 }
+
+li.unpublished {
+  background-color: #ffacac21;
+  border: 2px dashed #fb9d9d;
+  margin: 0 2em;
+  padding: 1em;
+}
+  li.unpublished p {
+    font-weight: 300;
+  }
 
 code.header {
   background-color: #fff9c4;

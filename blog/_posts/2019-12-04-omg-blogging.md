@@ -1,7 +1,7 @@
 ---
+layout: post
 title: OMG BLOGGING
 date: 2019-12-04T16:11:26-08:00
-layout: post
 tags: fly-like-venus github nebyoolae wordpress work
 ---
 Some basic info, to catch up for many years of no blogging:

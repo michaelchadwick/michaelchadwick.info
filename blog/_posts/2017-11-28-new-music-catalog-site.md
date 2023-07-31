@@ -1,7 +1,7 @@
 ---
+layout: post
 title: New Music Catalog Site
 date: 2017-11-28T09:03:13-08:00
-layout: post
 tags: catalog meta music website
 headerImage: posts/2017/11/Screenshot-2017-11-28-09.00.06.png
 ---

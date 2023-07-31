@@ -1,6 +1,6 @@
 ---
-title: 'Audio Hash Mac'
 layout: post
+title: 'Audio Hash Mac'
 tags: audio-hash development macdev objective-c swift swiftui utterly xcode
 ---
 

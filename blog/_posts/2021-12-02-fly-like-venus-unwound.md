@@ -1,7 +1,6 @@
 ---
-title: 'Fly Like Venus: Unwound'
-date: 2021-12-02T10:00:16-08:00
 layout: post
+title: 'Fly Like Venus: Unwound'
 tags: album fly-like-venus music new-release unwound
 headerImage: posts/2021/12/flv-unwound-album-cover.jpg
 ---

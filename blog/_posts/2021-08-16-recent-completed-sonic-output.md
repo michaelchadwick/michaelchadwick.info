@@ -1,9 +1,10 @@
 ---
-title: Recent Completed Sonic Output
-date: 2021-08-16T08:58:19-07:00
 layout: post
+date: 2021-08-16T08:58:19-07:00
+title: Recent Completed Sonic Output
 tags: album music new-release while-you-rest upgrade gamey-goulash
 ---
+
 In the past few months, I&#8217;ve been able to complete some new music, and I guess making a blog post about that is something people do, so&#8230;here it is.
 
 <!--more-->

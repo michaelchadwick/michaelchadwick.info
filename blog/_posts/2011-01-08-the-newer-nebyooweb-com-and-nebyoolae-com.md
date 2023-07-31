@@ -1,17 +1,12 @@
 ---
+layout: post
 title: The New(er) Nebyooweb.com and Nebyoolae.com
 date: 2011-01-08T12:02:54-08:00
-layout: post
 tags: bugs cakephp jquery nebyoolae.com nebyooweb.com ruby-on-rails web-development wrapup
 headerImage: posts/2011/01/ss_nebyooweb.png
 ---
+
 My two flagship websites, [Nebyooweb.com](http://nebyooweb.com) (web portfolio), and [Nebyoolae.com](http://nebyoolae.com) (original music), have been updated to versions&#8230;uh&#8230;they&#8217;re newer.
-
-##### NEBYOOWEB.COM
-
-<img aria-describedby="caption-attachment-4009" data-attachment-id="4009" data-orig-file="{{ site.baseurl }}/assets/images/posts/2011/01/ss_nebyooweb.png" data-orig-size="846,561" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="ss_nebyooweb" data-image-description="<p>Nebyooweb.com screenshot</p>
-" data-image-caption="<p>Nebyooweb.com</p>
-" data-medium-file="{{ site.baseurl }}/assets/images/posts/2011/01/ss_nebyooweb-640x424.png" data-large-file="{{ site.baseurl }}/assets/images/posts/2011/01/ss_nebyooweb-800x530.png" loading="lazy" class="size-medium wp-image-4009 " title="ss_nebyooweb" src="{{ site.baseurl }}/assets/images/posts/2011/01/ss_nebyooweb-640x424.png" alt="Nebyooweb.com" width="448" height="297" srcset="{{ site.baseurl }}/assets/images/posts/2011/01/ss_nebyooweb-640x424.png 640w, {{ site.baseurl }}/assets/images/posts/2011/01/ss_nebyooweb-800x530.png 800w, {{ site.baseurl }}/assets/images/posts/2011/01/ss_nebyooweb.png 846w" sizes="(max-width: 448px) 100vw, 448px" />
 
 Nebyooweb.com (Nebyoolae + web; genius, I know) is my personal web development/design portfolio. If anyone wants to know how I build websites, then this is a good portal. This new version has quite a few changes.
 

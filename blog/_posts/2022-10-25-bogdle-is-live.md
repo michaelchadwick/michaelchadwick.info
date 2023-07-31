@@ -1,8 +1,8 @@
 ---
-title: 'Bogdle is Live'
 layout: post
-headerImage: posts/2022/bogdle-2022-10-25.png
+title: 'Bogdle is Live'
 tags: bogdle boggle daily game nebapp puzzle vuejs wordle wordsmyth
+headerImage: posts/2022/bogdle-2022-10-25.png
 ---
 
 It's finally time to reveal my finished web game: <a href="https://bogdle.neb.host">Bogdle</a>.

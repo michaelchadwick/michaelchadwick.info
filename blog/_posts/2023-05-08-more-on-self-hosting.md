@@ -1,8 +1,8 @@
 ---
-title: 'More on Self-Hosting'
 layout: post
-headerImage: posts/self-hosted2.jpg
+title: 'More on Self-Hosting'
 tags: blog chat email rss self-hosting server update web
+headerImage: posts/self-hosted2.jpg
 ---
 
 About 6 months ago I did a <a href="/blog/2021/11/19/sometimes-self-hosting-services-satisfies-sufficiently">post</a> about self-hosting: installing versions of server software on your own host, rather than using services provided wholly by another entity (Gmail, Github, etc.). I talked about which services I'm currently self-hosting and which I was thinking about self-hosting.

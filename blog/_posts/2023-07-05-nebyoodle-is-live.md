@@ -1,8 +1,8 @@
 ---
-title: 'Nebyoodle is Live'
 layout: post
-headerImage: posts/2023/nebyoodle-2023-07-05.png
+title: 'Nebyoodle is Live'
 tags: audio bogdle game music nebapp nebyoolae nebyoomusic web wordle-like
+headerImage: posts/2023/nebyoodle-2023-07-05.png
 ---
 
 First of all, RIP [Heardle](https://heardle.app) :(

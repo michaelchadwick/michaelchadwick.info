@@ -1,9 +1,8 @@
 ---
-title: New Album, New Persona
-date: 2020-05-02T13:37:09-07:00
 layout: post
-headerImage: posts/2020/05/fench_artist_photo.png
+title: New Album, New Persona
 tags: album announcement fenchy music new-release rpm-challenge
+headerImage: posts/2020/05/fench_artist_photo.png
 ---
 Say hello to [Fenchy](https://fenchy.bandcamp.com/releases).
 

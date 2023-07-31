@@ -1,6 +1,6 @@
 ---
-title: 'NebApp Highlight: Dave API'
 layout: post
+title: 'NebApp Highlight: Dave API'
 tags: nebapp daaaaave dave api php json
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Codaname No More'
 layout: post
+title: 'Codaname No More'
 tags: announcement blog codaname domains jekyll-rb mcinfo
 ---
 

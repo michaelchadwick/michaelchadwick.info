@@ -1,7 +1,6 @@
 ---
-title: The Musical Road Ahead, 2021 Edition
-date: 2021-02-05T11:15:46-08:00
 layout: post
+title: The Musical Road Ahead, 2021 Edition
 tags: fly-like-venus gamey-goulash music pandemonium  reflective
 ---
 All right. It&#8217;s 2021. I&#8217;ve been making music since I was a teenager back in the mid-90s. I&#8217;m now 40 years-old and have finished dozens of releases in a variety of styles. What else is there to do?

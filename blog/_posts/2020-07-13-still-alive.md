@@ -1,9 +1,9 @@
 ---
-title: Still Alive
-date: 2020-07-13T08:48:36-07:00
 layout: post
+title: Still Alive
 tags: bandcamp fenchy massive-battery music nebyoolae
 ---
+
 Neither the [Portal](https://www.youtube.com/watch?v=Y6ljFaKRTrI) or [Mirror&#8217;s Edge](https://www.youtube.com/watch?v=TERyxFfMqDk) theme song, but true all the same: I&#8217;m still alive, kicking, and making music. None of that music is ready to drop online just yet, but it&#8217;s in the works.
 
 <!--more-->

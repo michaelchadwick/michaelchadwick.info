@@ -28,7 +28,11 @@ pagination:
 
   <ul class="posts">
     {% for post in paginator.posts %}
-      <li>
+      <li{% if post.tags contains 'unpublished' %} class="unpublished"{% endif %}>
+        {% if post.tags contains 'unpublished' %}
+        <div><strong>UNPUBLISHED</strong></div>
+        {% endif %}
+
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         {% assign sorted_tags = post.tags | sort %}
@@ -54,9 +58,11 @@ pagination:
 
         {% if post.content contains '<!--more-->' %}
         <p>{{ post.content | split:'<!--more-->' | first }}</p>
+        {% unless post.tags contains 'unpublished' %}
         <div class="full-entry">
           <a href="{{ post.url | prepend: site.baseurl }}">^^^ Full entry ^^^</a>
         </div>
+        {% endunless %}
         {% endif %}
       </li>
     {% endfor %}
