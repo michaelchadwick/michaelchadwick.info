@@ -18,7 +18,7 @@ pagination:
       {% assign unpub_count = site.tags.unpublished.size %}
       {% assign pub_count = site.posts.size | minus: unpub_count %}
 
-      placeholder="Search {{ site.posts | size }} ({{ pub_count }} public/{{ unpub_count }} private) posts..."
+      placeholder="Search {{ site.posts | size }} ({{ pub_count }} pub/{{ unpub_count }} priv) posts..."
     {% else %}
       placeholder="Search {{ site.posts | size }} posts..."
     {% endif %}
@@ -59,11 +59,15 @@ pagination:
         {% if post.content contains '<!--more-->' %}
         <p>{{ post.content | split:'<!--more-->' | first }}</p>
         {% unless post.tags contains 'unpublished' %}
+        <!--
         <div class="full-entry">
           <a href="{{ post.url | prepend: site.baseurl }}">^^^ Full entry ^^^</a>
         </div>
+        -->
         {% endunless %}
         {% endif %}
+
+        <hr />
       </li>
     {% endfor %}
   </ul>

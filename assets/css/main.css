@@ -673,12 +673,18 @@ footer {
 /* override skeleton */
 .container {
   padding: 0;
-  width: 93%;
+  width: 90%;
 }
+  @media (min-width: 550px) {
+    .container {
+      max-width: 800px;
+    }
+  }
   .container.container-blog .header-narrow {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+
 
 /* Site header */
 

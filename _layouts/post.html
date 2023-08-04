@@ -18,52 +18,53 @@ comments: true
       Posted: <em>{{ page.date | timeago }}</em>
       {% else %}
       <em>{{ page.date | date: "%b %-d, %Y" }}</em>
-    {% endif %}
+      {% endif %}
     </span>
 
     <div class="meta pretags">
-    {% if page.meta %}
-      • {{ page.meta }}
-    {% endif %}
+      {% if page.meta %}
+        • {{ page.meta }}
+      {% endif %}
     </div>
+
     {% if page.tags %}
-    <!--<div class="tag">{# page | tags #}</div>-->
-    {% assign sorted_tags = page.tags | sort %}
-    <div class="tags">
-      {% for tag in sorted_tags %}
-        <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
-      {% endfor %}
-    </div>
+      {% assign sorted_tags = page.tags | sort %}
+      <div class="tags">
+        {% for tag in sorted_tags %}
+          <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
     {% endif %}
+
     {% if page.headerImage %}
-    <div class="post-header-image full-entry">
-      <img
-        alt="{{ page.title }}"
-        title="{{ page.title }}"
-        src="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
-        data-image-title="{{ page.headerImage }}"
-        data-orig-file="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
-        loading="lazy"
-        width="480" height="480"
-      />
-      <!--
-      <img
-        alt="{{ page.title }}"
-        title="{{ page.title }}"
-        src="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
-        srcset="{{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-480x480.jpg 480w, {{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-240x240.jpg 240w, {{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-150x150.jpg 150w, {{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-768x768.jpg 768w, {{ site.baseurl }}/assets/images/{{ page.headerImage }} 1200w"
-        sizes="(max-width: 480px) 100vw, 480px"
-        data-image-title="{{ page.headerImage }}"
-        data-orig-file="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
-        data-medium-file="{{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-240x240.jpg"
-        data-large-file="{{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-480x480.jpg"
-        data-orig-size="1200,1200"
-        loading="lazy"
-        width="480"
-        height="480"
-      />
-      -->
-    </div>
+      <div class="post-header-image full-entry">
+        <img
+          alt="{{ page.title }}"
+          title="{{ page.title }}"
+          src="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
+          data-image-title="{{ page.headerImage }}"
+          data-orig-file="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
+          loading="lazy"
+          width="480" height="480"
+        />
+        <!--
+        <img
+          alt="{{ page.title }}"
+          title="{{ page.title }}"
+          src="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
+          srcset="{{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-480x480.jpg 480w, {{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-240x240.jpg 240w, {{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-150x150.jpg 150w, {{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-768x768.jpg 768w, {{ site.baseurl }}/assets/images/{{ page.headerImage }} 1200w"
+          sizes="(max-width: 480px) 100vw, 480px"
+          data-image-title="{{ page.headerImage }}"
+          data-orig-file="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
+          data-medium-file="{{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-240x240.jpg"
+          data-large-file="{{ site.baseurl }}/assets/images/{{ page.headerImage | slice: 0, -4 }}-480x480.jpg"
+          data-orig-size="1200,1200"
+          loading="lazy"
+          width="480"
+          height="480"
+        />
+        -->
+      </div>
     {% endif %}
   </header>
 
