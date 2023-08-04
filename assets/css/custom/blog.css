@@ -202,7 +202,7 @@ nav.site-links {
 #search-container {
   background: #fcfcfc;
   border: 1px solid #bbbbbb;
-  margin: 15px 0;
+  margin: 10px 0 5px;
   padding: 3px;
   position: relative;
   transition: 0.5s;
@@ -210,7 +210,7 @@ nav.site-links {
   z-index: 1;
 }
   #search-container.selected {
-    background: #fff;
+    background: var(--neutral-white);
     border: 0px;
     outline: none;
     user-select: none;
@@ -219,10 +219,10 @@ nav.site-links {
     -webkit-user-select: none;
   }
   #search-container input {
-    border: 0px;
+    border: 0;
     box-sizing: border-box;
     display: inline-block;
-    font-size: 1.25em;
+    font-size: 1em;
     margin-bottom: 0;
     padding: 0.5em;
     position: relative;
@@ -230,6 +230,11 @@ nav.site-links {
     width: 100%;
     z-index: 2;
   }
+    @media (min-width: 450px) {
+      #search-container input {
+        font-size: 1.25em;
+      }
+    }
     #search-container input::placeholder {
       color: #aaa;
     }
@@ -256,7 +261,7 @@ nav.site-links {
   padding-left: 0;
 }
   .posts .img-container {
-    box-shadow: 1px 1px 5px #333;
+    box-shadow: 1px 1px 5px #333333;
   }
 
 .post-header {
@@ -273,19 +278,27 @@ nav.site-links {
   .posts img,
   .post-content img,
   .post-header-image img {
-    border: 2px solid #444444;
-    box-shadow: 0 1px 2px #888888;
+    border: none;
+    box-shadow: none;
     height: auto;
     position: relative;
-    right: 2px;
+    right: 0;
     width: 100%;
   }
+    @media (min-width: 450px) {
+      .posts img,
+      .post-content img,
+      .post-header-image img {
+        border: 2px solid #444444;
+        box-shadow: 0 1px 2px #888888;
+      }
+    }
     @media (min-width: 768px) {
       .posts img,
       .post-content img,
       .post-header-image img {
-        background-color: #fff;
-        box-shadow: 0 3px 5px #888;
+        background-color: var(--neutral-white);
+        box-shadow: 0 3px 5px #888888;
         float: right;
         margin-bottom: 1em;
         margin-left: 2em;
@@ -295,11 +308,31 @@ nav.site-links {
 
 .post-header-image {
   margin: 15px 0;
+  max-height: 50vw;
+  overflow: hidden;
 }
+  @media (min-width: 450px) {
+    .post-header-image {
+      overflow: auto;
+    }
+  }
+  @media (min-width: 768px) {
+    .post-header-image {
+      float: right;
+    }
+  }
   .post-header-image img {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 55%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 55%);
     transform: rotate(0deg) scale(1);
     transition-duration: 300ms;
   }
+    @media (min-width: 768px) {
+      .post-header-image img {
+        -webkit-mask-image: none;
+        mask-image: none;
+      }
+    }
     .post-header-image:not(.full-entry) img:hover {
       transform: rotate(0.55deg) scale(1.01);
       transition-duration: 300ms;
