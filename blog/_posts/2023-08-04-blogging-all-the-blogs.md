@@ -9,6 +9,8 @@ I've been blogging on the web for over 20 years. I started with [LiveJournal](ht
 
 Moving all of that cruft from one system to another is non-trivial, and I left a lot of old stuff in a format that couldn't be used..._until now_.
 
+_Note_: the post header image was created using [NightCafe](https://nightcafe.studio), but the words are my own (I swear!).
+
 <!--more-->
 
 ## MY PROCESS
@@ -33,7 +35,7 @@ Conflict: The following destination is shared by multiple files
 
 Most of the fixes I found on the web did not address it for me (e.g. duplicate <code>page.html</code> and <code>page.md</code>), but once I searched for the offending tag name it was obvious: <code>tag name</code> vs. <code>tag-name</code> was resulting in the same page, which is not ideal.
 
-The fix? Make sure you only use one format or the other. I just renamed any tags that had spaces to use hyphens instead and voila.
+The fix? Make sure you only use one format or the other. I just renamed any tags that had spaces to use hyphens instead and _voil&#224;_.
 
 ## IN THE END
 
