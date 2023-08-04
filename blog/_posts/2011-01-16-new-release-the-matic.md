@@ -1,15 +1,12 @@
 ---
+id: 5142
 title: 'New Release: The Matic'
-date: 2010-08-30T10:16:13-07:00
+date: 2011-01-16T01:39:45-08:00
 layout: post
-tags: album music music-composition new-release the-matic
-headerImage: posts/2010/08/the_matic_cover.jpg
 ---
 [Album of the NebyooMoment: The Matic](http://nebyoolae.com/albums/12)
 
 You may have noticed, if you&#8217;ve been following this blog, that I recently created seven music videos under the guise of &#8220;The Matic Music Videos.&#8221; YouTube&#8217;s got the [whole mess of them](http://www.youtube.com/view_play_list?p=AFAC55BA232E03E6). Ranging in subjects from Alaska to cooking turkey stroganoff to springing TiVos out of jail, they were a blast to make.
-
-<!--more-->
 
 Each video features music from my latest album release, aptly titled &#8220;The Matic.&#8221; All of the themes were created before the video, and before I even thought to add video to them. I&#8217;ve never done a &#8220;music video&#8221; in the past as it never really occurred to me, I didn&#8217;t have a video camera of any sort, and I didn&#8217;t have any video ideas.
 

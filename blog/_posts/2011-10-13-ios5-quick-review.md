@@ -2,7 +2,6 @@
 id: 4841
 title: 'iOS5 Quick Review'
 date: 2011-10-13T09:47:00-07:00
-author: adminyoolae
 layout: post
 tags:
   - apple

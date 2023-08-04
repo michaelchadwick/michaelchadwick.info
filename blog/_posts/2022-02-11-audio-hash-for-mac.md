@@ -4,13 +4,13 @@ title: 'Audio Hash Mac'
 tags: audio-hash development macdev objective-c swift swiftui utterly xcode
 ---
 
-## A VERY SHORT STORY
-
 Once upon a time I created a web app called [Audio Hash](https://neb.host/audiohash). It involved low-level audio manipulation in order to take multiple audio files, grab random chunks of them, and then combine them into a sampler of sorts, or a "hash".
 
 The only problem is...it still doesn't work (_as of 2022-02-11_).
 
 <!--more-->
+
+## A VERY SHORT STORY
 
 Despite the web version not actually working, I _was_ successful in getting JavaScript to make a long, _silent_ audio file as a product of this "hash", so if that's your use case, I've got you covered. Regardless, it was really fun learning about [what actually makes up a WAV file](https://github.com/michaelchadwick/audiohash-web/blob/master/assets/js/app/audiohash.js#L95-L129), and despite it ultimately being a failure, AudioHash-Web was a catalyst. Unperturbed, I changed platform to [Windows Forms](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/ms229601(v=vs.100)) and was actually able to [make something that worked](https://github.com/michaelchadwick/audiohash-win) using the awesome [NAudio](https://github.com/naudio/NAudio) library.
 

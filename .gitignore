@@ -1,9 +1,14 @@
 # dont track jekyll draft posts
-_drafts
+blog/_drafts
 # don't track template posts
-_posts/_*.md
+blog/_posts/_*.md
+# don't track unpublished posts
+blog/_posts/*-PRIVATE.md
 # don't track computed site files
 _site
+
+# don't track _test stuff
+_test
 
 # misc
 bower_components

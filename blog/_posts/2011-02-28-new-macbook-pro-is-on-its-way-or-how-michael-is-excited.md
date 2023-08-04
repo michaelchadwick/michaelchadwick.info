@@ -2,7 +2,6 @@
 id: 4127
 title: 'New MacBook Pro Is On Its Way, Or How Michael is Excited'
 date: 2011-02-28T11:59:26-08:00
-author: adminyoolae
 layout: post
 tags:
   - apple

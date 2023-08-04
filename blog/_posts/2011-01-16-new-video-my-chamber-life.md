@@ -1,0 +1,13 @@
+---
+id: 5150
+title: 'New Video: My Chamber Life'
+date: 2011-01-16T01:40:18-08:00
+layout: post
+---
+The final music video in my series &#8220;The Matic&#8221; is up on YouTube. For this final one, we take a tour of the coast. After living inland for several years, I often forget how nice the beach is. Seeing it just puts me in a better mood.
+
+[My Chamber Life &#8211; NebyooTube of the Day](http://www.youtube.com/watch?v=vysbOGr2ZBQ)
+
+This is the seventh and final video in what has been a really enjoyable project. Look! I made a [playlist for all seven videos](http://www.youtube.com/view_play_list?p=AFAC55BA232E03E6).
+
+I&#8217;m no movie-making expert, much like I&#8217;m not a music-making expert, but at least I&#8217;m more comfortable with iMovie now :-P If nothing else, I have some stats of who is listening to my music since it&#8217;s in the background of each video. Nebyoolae.com doesn&#8217;t quite have the same simple quality of reporting that YouTube.com does, so it&#8217;s given me some insight I didn&#8217;t have before. For those of you who watched, I thank you. Subsequent videos will be made, I&#8217;m sure, but I&#8217;m taking a break for now.

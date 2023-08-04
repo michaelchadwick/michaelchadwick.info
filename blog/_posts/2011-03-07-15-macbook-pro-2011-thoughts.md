@@ -2,7 +2,6 @@
 id: 4236
 title: '15&#8243; MacBook Pro 2011 Thoughts'
 date: 2011-03-07T10:09:16-08:00
-author: adminyoolae
 layout: post
 tags:
   - apple

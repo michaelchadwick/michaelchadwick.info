@@ -1,15 +1,14 @@
 ---
+id: 5141
 title: 'New Release: Gamey Mixture'
-date: 2010-09-14T09:15:22-07:00
+date: 2010-10-08T09:25:11-07:00
 layout: post
-tags: album music music-composition new-release
-headerImage: posts/2010/09/gamey_mixture_cover.jpg
 ---
-[Album of the NebyooMoment: Gamey Mixture](http://nebyoolae.com/albums/gamey-mixture)
+!['New]('http://nebyoolae.com/img/blog/gmalbum.jpg')
+
+[Album of the NebyooMoment: Gamey Mixture](http://nebyoolae.com/albums/13)
 
 **Another** new album already? Yes. Projects overlap for me a lot, or I&#8217;ll do a bunch of preliminary work at some point, let the project drop for a while, and then come back to it. So, things can tend to get finished near each other as each one gets more and more complete.
-
-<!--more-->
 
 Videogames! Videogame music! These are two things I love. I&#8217;ve done a few [videogame](http://nebyoolae.com/songs/182) [remixes](http://nebyoolae.com/songs/133) in the past , but I&#8217;ve never tackled a mess o&#8217; them at once. There&#8217;s no common theme among the fourteen tracks that make up [Gamey Mixture](http://nebyoolae.com/albums/13) except that I worked on them all at the same time, so you may notice some similar approaches. Most are from the NES, but a few from other platforms sneaked in, too.
 

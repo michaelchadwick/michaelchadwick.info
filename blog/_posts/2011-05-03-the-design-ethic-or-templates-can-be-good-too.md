@@ -2,7 +2,6 @@
 id: 4665
 title: 'The Design Ethic, Or Templates Can Be Good, Too'
 date: 2011-05-03T10:41:29-07:00
-author: adminyoolae
 layout: post
 tags:
   - blogging

@@ -1,11 +1,8 @@
 ---
-id: 1804
+id: 5156
 title: 'New Release: Adversapolis'
-date: 2010-03-01T01:12:00-08:00
+date: 2010-10-08T09:33:58-07:00
 layout: post
-tags:
-  - music-composition
-  - new-releases
 ---
 My entry for the RPM 2010 Challenge is complete! I invented a new &#8220;personality&#8221; for this project called Adversapolis. The album is self-titled because I couldn&#8217;t come up with anything else once I spent my creative juices on that.
 
@@ -41,7 +38,7 @@ Since this was my first real stab at recording vocals right, I feel their qualit
 **THE FINISHED PRODUCT**
 I decided to make some jewel case art to go along with everything. Here&#8217;s what the main booklet part looks like from the front to the inside to the back.
 
-<div style="margin: auto;">
+<div style="margin: auto">
   <img src="http://adversapolis.com/img/ad_web01.jpg" alt="Jewel Case Booklet Front" /><br /> <img src="http://adversapolis.com/img/ad_web02.jpg" alt="Jewel Case Booklet Inside" /><br /> <img src="http://adversapolis.com/img/ad_web03.jpg" alt="Jewel Case Booklet Back" /><br /> <img src="http://adversapolis.com/img/ad_web04.jpg" alt="The whole kit and kaboodle" />
 </div>
 

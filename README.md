@@ -14,4 +14,4 @@
 
 or
 
-`$ ./serve.sh`
+`$ ./scripts/serve.sh`

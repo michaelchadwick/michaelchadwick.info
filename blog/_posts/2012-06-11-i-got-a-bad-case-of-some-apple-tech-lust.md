@@ -2,7 +2,6 @@
 id: 5090
 title: 'I Got a Bad Case of Some Apple Tech Lust'
 date: 2012-06-11T10:59:52-07:00
-author: adminyoolae
 layout: post
 tags:
   - apple

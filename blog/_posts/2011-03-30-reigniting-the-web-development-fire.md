@@ -2,7 +2,6 @@
 id: 4617
 title: 'Reigniting the Web Development Fire'
 date: 2011-03-30T10:53:01-07:00
-author: adminyoolae
 layout: post
 tags:
   - technology
