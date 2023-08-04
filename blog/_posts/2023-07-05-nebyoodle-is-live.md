@@ -27,7 +27,12 @@ For a random-track-guessing web game, that's pretty useful!
 
 ### WEB AUDIO API
 
-[This](https://ah.neb.host) [is](https://keebord.neb.host) [something](https://soundlister.neb.host) I've dealt with plenty of times before, so I'm not neophyte to making audio occur on a website, but the Web Audio API is still something that is non-trivial to deal with beyond <code><audio src="sound.mp3"></code>.
+[This](https://ah.neb.host) [is](https://keebord.neb.host) [something](https://soundlister.neb.host) I've dealt with plenty of times before, so I'm not neophyte to making audio occur on a website, but the Web Audio API is still something that is non-trivial to deal with beyond the following:
+
+<audio controls>
+  <source src="/assets/audio/posts/sound.mp3" type="audio/mpeg">
+No &lt;audio&gt; support in your browser found.
+</audio>
 
 The main issue was handling skips vs incorrect guesses vs correct guesses and how they affect the UI and the overall game status. When it's just text or images, it's one thing, but when it's audio, it's a bit different.
 

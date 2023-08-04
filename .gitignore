@@ -30,3 +30,7 @@ Rakefile
 !assets/css/vendor
 !assets/icons
 !assets/js/vendor/
+
+# DO track my random audio files
+!audio
+!assets/audio/posts/*.mp3
