@@ -1,4 +1,5 @@
 # dont track jekyll draft posts
+_drafts
 blog/_drafts
 # don't track template posts
 blog/_posts/_*.md
