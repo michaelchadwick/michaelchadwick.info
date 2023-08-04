@@ -2,7 +2,7 @@ task :deploy do |t|
   # push to master branch
   sh "git push origin master"
   # build site
-  sh "bundle exec jekyll build --incremental JEKYLL_ENV=production"
+  sh "bundle exec jekyll build JEKYLL_ENV=production"
   # sync site to remote host
   sh "rsync -auP --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
   # backup drafts
@@ -10,7 +10,7 @@ task :deploy do |t|
 end
 
 task :build do |t|
-  sh "bundle exec jekyll build --incremental"
+  sh "bundle exec jekyll build"
 end
 
 task :serve do |t|
