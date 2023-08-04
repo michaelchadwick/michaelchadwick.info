@@ -75,7 +75,7 @@ ul ul {
 li.unpublished {
   background-color: #ffacac21;
   border: 2px dashed #fb9d9d;
-  margin: 0 2em;
+  margin: 0;
   padding: 1em;
 }
   li.unpublished p {
