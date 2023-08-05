@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# adds "unpublished" tag to files in a directory
+# adds "published: false" to meta
 
 count=0
 # limit=1
@@ -19,23 +19,22 @@ if [ -d "$DIR" ]; then
   do
     # if [[ $count -lt $limit ]]; then
 
-      privatize=false
+      unpublish=false
 
       while IFS= read -r line
       do
-        if [[ $line == tags:* ]]; then
-          # File has tags, so add unpublished one at top of list
+        if [[ $line == "- unpublished" ]]; then
+          # File has unpublished tag, so add published: false
           echo "..processing $file"
-          privatize=true
+          unpublish=true
         else
-          # File does not have date; skip
-          # echo "no date string found"
+          # File does not have unpublished tag; skip
           :
         fi
       done < "$file"
 
       # add new unpublished tag
-      if [[ $privatize == true ]]; then
+      if [[ $unpublish == true ]]; then
         count=$((count + 1))
 
         match='tags:'
