@@ -7,8 +7,6 @@ tags:
   - music-composition
   - organization
 ---
-##### ANOTHER LONG INTRO TO AN ESTABLISHED NOTION
-
 Making music is a way for me to express myself. It combines the somewhat mechanical method of constructing something new out of existing parts, but it also allows me to emotionally imbue something in a symbolic way. When words fail to properly display how I&#8217;m feeling, creating structured sound sometimes does the trick.
 
 <!--more-->

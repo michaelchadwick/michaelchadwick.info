@@ -19,11 +19,9 @@ tags:
   - note-charts
   - pure-yellow-colour
   - pyc
-  - rb
-  - rbn
   - reaper
   - rock-band
-  - rock-band network
+  - rock-band-network
 ---
 Much progress, however ancillary, has been made tonight.
 

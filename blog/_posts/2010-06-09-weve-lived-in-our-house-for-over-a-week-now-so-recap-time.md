@@ -9,7 +9,8 @@ lj_permalink:
   - http://nebyoolae.livejournal.com/570763.html
 lj_current_music:
   - 'The Sun and the Moon - Disasterpeace'
-tags: domestic home house recap unpublished video wrapup
+tags: domestic home house recap video wrapup
+published: false
 ---
 
 ![New front door](http://lh5.ggpht.com/_9Yiv4isc_w0/TA8e19GaYRI/AAAAAAAACY0/lYp1jclSI8k/s288/01_frontdoor.jpg)

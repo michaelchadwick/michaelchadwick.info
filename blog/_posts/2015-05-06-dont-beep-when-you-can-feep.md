@@ -7,7 +7,9 @@ excerpt: "Spending time at the command line, coding away at various things, some
 
 ---
 
-I've been interested in sound and audio for a long time now. Probably from the time I heard my first beep or click from a child's toy (can't be sure), my mind got hooked on these air fluctuations and how to make more of them. Once I got into playing guitar and messing around on computers and *patterned* air movements (i.e. music), this became a fully-realized obsession. Even with all of the complexity inherent in my musical endeavors, the simple things still feel good, and if I can make a simple Ruby gem that can beep at you, then by Thor's hammer I will!
+I've been interested in sound and audio for a long time now. Probably from the time I heard my first beep or click from a child's toy (can't be sure), my mind got hooked on these air fluctuations and how to make more of them.
+
+Once I got into playing guitar and messing around on computers and *patterned* air movements (i.e. music), this became a fully-realized obsession. Even with all of the complexity inherent in my musical endeavors, the simple things still feel good, and if I can make a simple Ruby gem that can beep at you, then by Thor's hammer I will!
 
 **Ahem**.
 

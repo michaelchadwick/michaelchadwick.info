@@ -10,42 +10,18 @@ There is now an unofficial tracklisting for _Nebyoolaeous Experience_!
 
 <div>
   <ol id="internal-source-marker_0.20184823288582265">
-    <li>
-      The Jam Bridge
-    </li>
-    <li>
-      Blue Boxer
-    </li>
-    <li>
-      Zenith Exit
-    </li>
-    <li>
-      Jamboni
-    </li>
-    <li>
-      Nothing Road
-    </li>
-    <li>
-      Intelligent Discourse
-    </li>
-    <li>
-      Emerald
-    </li>
-    <li>
-      SoCal Switchblade
-    </li>
-    <li>
-      Music for Synths
-    </li>
-    <li>
-      Thirteen Striking Clocks
-    </li>
-    <li>
-      New Settlement
-    </li>
-    <li>
-      Indigo
-    </li>
+    <li>The Jam Bridge</li>
+    <li>Blue Boxer</li>
+    <li>Zenith Exit</li>
+    <li>Jamboni</li>
+    <li>Nothing Road</li>
+    <li>Intelligent Discourse</li>
+    <li>Emerald</li>
+    <li>SoCal Switchblade</li>
+    <li>Music for Synths</li>
+    <li>Thirteen Striking Clocks</li>
+    <li>New Settlement</li>
+    <li>Indigo</li>
   </ol>
 </div>
 

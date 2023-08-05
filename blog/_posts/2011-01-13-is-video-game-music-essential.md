@@ -8,7 +8,6 @@ tags:
   - rant
   - video-game-music
 ---
-##### THE SETUP
 
 A Kotaku article about someone gaining [the &#8220;courage&#8221; to ignore video game music](http://kotaku.com/5730637/the-year-i-gained-the-courage-to-ignore-video-game-music) was published online recently.
 

@@ -8,7 +8,7 @@ My entry for the RPM 2010 Challenge is complete! I invented a new &#8220;persona
 
 The album of original music is about 42 minutes long, consists of 9 songs, and features me on the guitar, bass guitar, and vocals. The drums were sequenced, as usual. The genre is &#8220;Rock&#8221; or &#8220;Alternative Rock,&#8221; depending on your druthers. You can grab it from its very own domain, [Adversapolis](http://adversapolis.com), for the next Time of Some Duration, which will then be succeeded by the Time Wherein It Gets Integrated Into Nebyoolae.com, As Well.
 
-<!--more Find out more information about the making of Adversapolis-->
+<!--more-->
 
 **THE CONCEPT**
 For those of you who aren&#8217;t familiar with RPM, it&#8217;s basically a make-an-album in a month kind of thing. You have a month (in this case, February, so fewer days than your average month) to record either 10 songs or 35 minutes of music. You&#8217;re supposed to write all the music during this time, too, except I kind of cheated on that and had most of it worked out beforehand. A previous collection of songs that were just sitting on my hard drive (among many, many others) called Kaleidoscopic was basically just asking to be recorded right, and now was the time. However, this didn&#8217;t mean it was necessarily easier, as everything except drums had to be learned on the spot whilst recording, anyway. When you&#8217;re done, you burn it to a CD and send it to some &#8220;RPM HQ&#8221; in New Hampshire, postdated by March 1. I&#8217;ve got the CD mailer on the table in front of me, so as soon as I wake up tomorrow and get out the door, the first stop I&#8217;m making is the post office. What happens to it after that remains to be seen.

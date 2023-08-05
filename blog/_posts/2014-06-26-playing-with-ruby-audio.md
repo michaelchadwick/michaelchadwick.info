@@ -5,7 +5,9 @@ title:  "Playing with Ruby Audio"
 tags: ruby audio ruby-audio
 
 ---
-I've got a bunch of albums on [Bandcamp](https://nebyoolae.bandcamp.com). They're generally anywhere from 20-50 minutes long. Sometimes, you just want to test out something and not try to take in the whole enchilada in one sitting, so I decided a while ago to start making "samplers" that are ~2 minutes long and provide a kind of appetizer mashup option. This is kind of tedious, so what else but code could come to the rescue!
+I've got a bunch of albums on [Bandcamp](https://nebyoolae.bandcamp.com). They're generally anywhere from 20-50 minutes long. Sometimes, you just want to test out something and not try to take in the whole enchilada in one sitting, so I decided a while ago to start making "samplers" that are ~2 minutes long and provide a kind of appetizer mashup option.
+
+This is kind of tedious, so what else but code could come to the rescue!
 
 <!--more-->
 

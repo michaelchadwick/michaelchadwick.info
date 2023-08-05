@@ -4,7 +4,7 @@ date: 2009-09-26T01:56:42-07:00
 layout: post
 tags:
   - nebyoolae.com
-  - web-development
+  - webdev
 ---
 <img src='http://nebyoolae.com/img/blog/twitter_rss.jpg' alt='The Power of Communication' />
 

@@ -8,7 +8,9 @@ tags:
   - nostalgia
   - pure-yellow-colour
 ---
-I&#8217;ve been reading through my sizable archive of posts on [here](https://blog.nebyoolae.com) (the majority of which came from my ~10 years spent on [LiveJournal](http://livejournal.com) and are now private to protect all the people who I apparently had no problem with referring to by name all the time). This is not too uncommon, as I&#8217;m wont to do this every, say, 6-12 months, reliving the nostalgia of my life using the most articulate record I know of.
+I&#8217;ve been reading through my sizable archive of posts on [here](https://blog.nebyoolae.com) (the majority of which came from my ~10 years spent on [LiveJournal](http://livejournal.com) and are now private to protect all the people who I apparently had no problem with referring to by name all the time).
+
+This is not too uncommon, as I&#8217;m wont to do this every, say, 6-12 months, reliving the nostalgia of my life using the most articulate record I know of.
 
 <!--more-->
 

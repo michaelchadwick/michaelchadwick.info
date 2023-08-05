@@ -4,7 +4,9 @@ title: On Being Nebyoolaeous
 tags: fly-like-venus guitar music nostalgia pure-yellow-colour retrospective
 ---
 
-I first legitimately played a guitar in high school, sometime in the mid-1990s. A friend of mine had brought an acoustic guitar to school for some kind of talent/show-and-tell kind of thing, and I remember being quite impressed. I&#8217;d never really had much interest in learning any kind of music instrument up to that point, except for maybe the drums. However, drums had three issues: s p a c e, <span style="color: #0B0"><span style="color:#0fba2c" class="has-inline-color">price</span></span>, and **loudness**. Unfortunately, they required too much of each.
+I first legitimately played a guitar in high school, sometime in the mid-1990s. A friend of mine had brought an acoustic guitar to school for some kind of talent/show-and-tell kind of thing, and I remember being quite impressed. I&#8217;d never really had much interest in learning any kind of music instrument up to that point, except for maybe the drums.
+
+However, drums had three issues: s p a c e, <span style="color: #0B0"><span style="color:#0fba2c" class="has-inline-color">price</span></span>, and **loudness**. Unfortunately, they required too much of each.
 
 <!--more-->
 

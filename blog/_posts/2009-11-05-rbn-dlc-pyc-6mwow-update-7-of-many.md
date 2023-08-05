@@ -19,11 +19,9 @@ tags:
   - note-charts
   - pure-yellow-colour
   - pyc
-  - rb
-  - rbn
   - reaper
   - rock-band
-  - rock-band network
+  - rock-band-network
 ---
 OMFG! I got it to build! I got to build!
 

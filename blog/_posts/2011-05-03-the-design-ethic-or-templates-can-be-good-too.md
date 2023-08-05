@@ -7,7 +7,7 @@ tags:
   - blogging
   - templates
   - user-design
-  - web-development
+  - webdev
   - wordpress
 ---
 <img
@@ -18,6 +18,8 @@ tags:
 />
 
 In case you&#8217;re not actually seeing this post in its natural habitat, Lazy in the Blog has the new look above. Let me explain why.
+
+<!--more-->
 
 I&#8217;m always looking at user interfaces, observing the widgets and styles people concoct to connect the user to the system. I look at my personal websites and constantly see things I want to change, this cycling iterative process of creation, criticism, and recreation. I may not be an artist, but I know <del>what I like</del>what works. Even if I&#8217;m not able to construct the ideal thing that&#8217;s floating in my head, whatever I come up with is (hopefully) usable and visually appealing. When I come back to look at it later with a fresher mind, I&#8217;ll know what still needs to be done. Everything can always be better. Time and experience bring this philosophy to the forefront again and again.
 

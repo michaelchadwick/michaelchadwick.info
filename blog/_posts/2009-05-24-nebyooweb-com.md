@@ -8,7 +8,7 @@ lj_permalink:
   - http://nebyoolae.livejournal.com/560602.html
   - nebyooweb.com
 tags:
-  - web-development
+  - webdev
 ---
 Nebyooweb is live! Just point your browser to <http://nebyooweb.com> and feast your eyes on what I&#8217;ve done.
 

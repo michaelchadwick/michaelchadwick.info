@@ -3,14 +3,16 @@ id: 4832
 title: Minecraft, Again! Now in Beta, Version 1.8
 date: 2011-09-30T15:08:45-07:00
 layout: post
+tags: gaming minecraft
 ---
-<a href="http://blog.nebyoolae.com/minecraft-again-now-in-beta-version-1-8/minecraft-2/" rel="attachment wp-att-4820"><img data-attachment-id="4820" data-permalink="https://blog.nebyoolae.com/?attachment_id=4820" data-orig-file="https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft.png" data-orig-size="1000,600" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="Minecraft Beta 1.8" data-image-description="" data-image-caption="" data-medium-file="https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-640x384.png" data-large-file="https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-800x480.png" loading="lazy" class="alignnone size-large wp-image-4820" title="Minecraft Beta 1.8" src="http://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-800x480.png" alt="Screenshot from Nebyooland, my Minecraft Beta 1.8 multiplayer game" width="548" height="329" srcset="https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-800x480.png 800w, https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-640x384.png 640w, https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft.png 1000w" sizes="(max-width: 548px) 100vw, 548px" /></a>
-
-**CONTEXT**
 
 The last time I played Minecraft was in late 2010, back when it was still alpha. There were a lot of bugs, but it was playable. My friends and I enjoyed exploring and surviving and building on our mutual friend&#8217;s multiplayer server for a couple weeks. It rocked!
 
 As is usual with me, my interest waned the more I played and my initial projects finished. I saw what others were doing (both in-game and on the Internet) and my desire to build (in my opinion) lesser creations shriveled up. Logging on to the game seemed like more of a chore than a joy, and I eventually lost interest.
+
+<!--more-->
+
+<a href="http://blog.nebyoolae.com/minecraft-again-now-in-beta-version-1-8/minecraft-2/" rel="attachment wp-att-4820"><img data-attachment-id="4820" data-permalink="https://blog.nebyoolae.com/?attachment_id=4820" data-orig-file="https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft.png" data-orig-size="1000,600" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="Minecraft Beta 1.8" data-image-description="" data-image-caption="" data-medium-file="https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-640x384.png" data-large-file="https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-800x480.png" loading="lazy" class="alignnone size-large wp-image-4820" title="Minecraft Beta 1.8" src="http://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-800x480.png" alt="Screenshot from Nebyooland, my Minecraft Beta 1.8 multiplayer game" width="548" height="329" srcset="https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-800x480.png 800w, https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft-640x384.png 640w, https://blog.nebyoolae.com/wp-content/uploads/2011/09/minecraft.png 1000w" sizes="(max-width: 548px) 100vw, 548px" /></a>
 
 **WHAT&#8217;S NEW**
 

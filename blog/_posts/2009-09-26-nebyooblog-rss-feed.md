@@ -17,7 +17,7 @@ tags:
   - nebyoolae
   - news
   - songs
-  - web-development
+  - webdev
 ---
 NebyooBlog!
 

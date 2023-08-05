@@ -12,6 +12,8 @@ I got home from work yesterday and plugged in my trusty iPhone as quickly as I c
 
 Why? **iOS5 is out, people**!
 
+<!--more-->
+
 For the deep, invasive, and overly analytic take, I&#8217;d suggest checking out [Ars Technica](http://arstechnica.com/apple/reviews/2011/10/ios-5-reviewed-notifications-imessages-and-icloud-oh-my.ars). For my shallow, roughshod, and scattershot review, read on.
 
 **NOTIFICATIONS**

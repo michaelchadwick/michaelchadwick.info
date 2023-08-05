@@ -6,11 +6,7 @@ lj_itemid:
   - "2214"
 lj_permalink:
   - http://nebyoolae.livejournal.com/566936.html
-  - gaming
-  - pure-yellow-colour
-  - rock-band
-  - rock-band network
-tags: gaming midi music-composition note-charts pure-yellow-colour pyc rb rbn reaper rock-band rock-band network smwow
+tags: gaming midi music-composition note-charts pure-yellow-colour reaper rock-band rock-band-network smwow
 ---
 THIS IS IT! The moment you&#8217;ve all been waiting for. Pure Yellow Colour&#8217;s &#8220;Six More Weeks of Winter&#8221; being played on my Xbox 360.
 

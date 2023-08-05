@@ -6,7 +6,7 @@ layout: post
 tags:
   - technology
   - upgrading
-  - web-development
+  - webdev
 ---
 **WHEREIN I REFLECT A BIT**
 

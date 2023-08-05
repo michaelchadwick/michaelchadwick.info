@@ -19,11 +19,9 @@ tags:
   - note-charts
   - pure-yellow-colour
   - pyc
-  - rb
-  - rbn
   - reaper
   - rock-band
-  - rock-band network
+  - rock-band-network
 ---
 I have completed a serviceable note chart for Expert Bass. Whew. I had less source material to go on, so I had to do more manual editing of notes than with drums (but not too much more).
 

@@ -3,6 +3,7 @@ id: 4595
 title: An Exposition
 date: 2011-03-10T15:04:19-08:00
 layout: post
+tags: music-composition ponderance twitter
 ---
 Yesterday, I tweeted. This is not a signficant event anymore, but a friend responding to it directly can still be seen as something to make note of. The tweet was as follows:
 
@@ -10,7 +11,7 @@ Yesterday, I tweeted. This is not a signficant event anymore, but a friend respo
 
 Said friend asked for me to expand on this in an LJ post. I feel like the best way to do that is to actually start with the second statement first, as it&#8217;s more of a global issue, and to finish with the first, which seems more personal. Here we go.
 
-<!--more Competing in the age of the Internet-->
+<!--more-->
 
 **COMPETING IN THE AGE OF THE INTERNET**
 Competition brings to mind a contest, wherein there is an established forum for battle, as far as writing notes and recording them can be a battle. As cool as it might be to have a Collosseum devoted to such ends, what reality shows is that it&#8217;s more of an asynchronous test of egos.

@@ -4,6 +4,7 @@ blog/_drafts
 # don't track template posts
 blog/_posts/_*.md
 # don't track unpublished posts
+blog/_posts/*-PRIVATE.html
 blog/_posts/*-PRIVATE.md
 # don't track computed site files
 _site

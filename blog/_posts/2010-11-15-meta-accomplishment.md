@@ -3,7 +3,7 @@ title: Meta-Accomplishment
 date: 2010-11-15T15:16:41-08:00
 layout: post
 tags:
-  - web-development
+  - webdev
   - work
 ---
 Accomplishment is a drug. Each time you successfully achieve something you get a little rush. Dopamine or seratonin or some kind of neurotransmitter is released and you&#8217;re doing all right. But what about when you don&#8217;t have time to finish something? What if you can&#8217;t actually finish it because you&#8217;re not able? What if the end goal is just not within reach at this very moment? You need a hit of that accomplishment energy, so you gotta do something.

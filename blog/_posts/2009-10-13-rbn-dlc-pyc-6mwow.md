@@ -19,11 +19,9 @@ tags:
   - note-charts
   - pure-yellow-colour
   - pyc
-  - rb
-  - rbn
   - reaper
   - rock-band
-  - rock-band network
+  - rock-band-network
 ---
 I&#8217;m making note charts for Pure Yellow Colour&#8217;s &#8220;Six More Weeks of Winter&#8221; in order to eventually upload to the Rock Band Network for fun and (very small potential) profit. In the end, you will be able to go online to the Rock Band Music Store and download the track I made, just like any other, and play it on your XBOXEN THREE HUNDRED AND SIXTY (and maybe the PS3ZLE, too).
 

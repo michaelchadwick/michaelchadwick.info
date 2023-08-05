@@ -13,11 +13,11 @@ For the most part, [Gem Warrior](https://gw.neb.host) is done. What a blast it h
 
 I made a game!
 
+<!--more-->
+
 How do I know I'm done? Besides the relative burnout I feel from working on it for a while, the features I most wanted to implement are in, and all the bugs that have cropped up (that I know ;P) are fixed. There is a world of Jool, a player to control, levels and abilities to attain, items to get and use (and equip if appropriate), monsters to fight, some people to talk to, and a final boss to defeat. It's as complete a game as I'm willing to make it.
 
 Now, for the first time, I'm going to take a little walk through how the game works, both game-wise and code-wise, which will be long and detailed. However, if you are making a game in Ruby (or whatever), I think it may be enlightening.
-
-<!--more-->
 
 ## Table of Contents
 

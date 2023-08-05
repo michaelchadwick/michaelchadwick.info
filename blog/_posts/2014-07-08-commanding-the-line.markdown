@@ -8,7 +8,9 @@ tags: cmd command shell bash prompt osx windows
 
 `$ echo 'Hello World!'`
 
-Graphical User Interfaces (GUIs) are a great thing and they make computing a lot easier. I've been fiddling with audio programming a bit lately (mainly loading/modifying/saving WAV files), and while getting your hands dirty allows for more flexibility and automation, I still love Audacity and Logic for their accessibility. That being said, the command line is still often more powerful, but it comes with a higher learning curve.
+Graphical User Interfaces (GUIs) are a great thing and they make computing a lot easier. I've been fiddling with audio programming a bit lately (mainly loading/modifying/saving WAV files), and while getting your hands dirty allows for more flexibility and automation, I still love Audacity and Logic for their accessibility.
+
+That being said, the command line is still often more powerful, but it comes with a higher learning curve.
 
 That, and it still feels like magic most days.
 

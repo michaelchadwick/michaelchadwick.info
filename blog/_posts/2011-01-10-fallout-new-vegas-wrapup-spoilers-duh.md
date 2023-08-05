@@ -7,11 +7,11 @@ headerImage: posts/2011/01/fnv.jpg
 ---
 The exciting conclusion to Fallout: New Vegas was finally within my grasp last night. **Be warned: _there be spoilers abound_**.
 
+<!--more-->
+
 ##### THE FATE OF NEW VEGAS
 
 _For the record, I played on Normal difficulty, Hardcore mode. Most of my time was spent with Rex and Veronica as companions (halfway through until end), and I was more or less Morally Good (except to the NCR and Legion, whom I slaughtered with reckless abandon in the finale)._
-
-<!--more-->
 
 Once you reach the actual city of New Vegas, only after a long, enjoyable jaunt throughout the Mojave desert and its various settlements and denizens, you find there&#8217;s a power struggle going on. Sure, you&#8217;re already privy to the general rivalry between NCR and Caesar&#8217;s Legion for the Hoover Dam by the time you get there, but the factions involved in ruling this post-apocalyptic land are even more numerous than you once knew.
 

@@ -7,7 +7,9 @@ headerImage: posts/2014/12/lullabies_cover.jpg
 ---
 [Lullabies, by Michael Chadwick](http://nebyoolae.bandcamp.com/album/lullabies)
 
-Sometimes, you just need some relaxing solo classical guitar to lull a young person into a state of unconsciousness. In order to facilitate this, or maybe just to offer up a collection of pleasant music to play in the background for some other task, I made a [Lullabies album](http://nebyoolae.bandcamp.com/album/lullabies). The whole shebang is pay-what-you-will, or you can just stream for free.
+Sometimes, you just need some relaxing solo classical guitar to lull a young person into a state of unconsciousness.
+
+In order to facilitate this, or maybe just to offer up a collection of pleasant music to play in the background for some other task, I made a [Lullabies album](http://nebyoolae.bandcamp.com/album/lullabies). The whole shebang is pay-what-you-will, or you can just stream for free.
 
 <!--more-->
 

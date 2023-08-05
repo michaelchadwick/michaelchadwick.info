@@ -217,23 +217,23 @@ h5 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-@media (min-width: 550px) {
-  h5 {
-    font-size: 2rem;
+  @media (min-width: 550px) {
+    h5 {
+      font-size: 2rem;
+    }
   }
-}
 
 h6 {
   font-size: 1.25rem;
   line-height: 0.8;
   margin-bottom: 2rem;
 }
-@media (min-width: 550px) {
-  h6 {
-    font-size: 1.6rem;
-    margin-bottom: 4rem;
+  @media (min-width: 550px) {
+    h6 {
+      font-size: 1.6rem;
+      margin-bottom: 4rem;
+    }
   }
-}
 
 li {
   margin-bottom: 0;
@@ -335,6 +335,10 @@ ul.links {
             ul.links li ul li.soundcloud::before {
               content: "";
             }
+
+iframe.youtube {
+  padding-top: 1em;
+}
 
 /* CUSTOM CLASSES */
 
@@ -506,6 +510,67 @@ header.page-header {
       transform: rotate(45deg);
       width: 27px;
     }
+
+div#unpub-indicator {
+  align-items: center;
+  background-color: #a89d25;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  bottom: 5px;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 0;
+  opacity: 0.9;
+  position: fixed;
+  right: 95px;
+  text-align: center;
+  width: 40px;
+  z-index: 10000;
+}
+  @media (min-width: 550px) {
+    div#unpub-indicator {
+      right: 150px;
+    }
+  }
+  div#unpub-indicator.unpublished {
+    background-color: #a89d25;
+  }
+  div#unpub-indicator.published {
+    background-color: #1da826;
+  }
+
+div#env-indicator {
+  align-items: center;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  bottom: 5px;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 0;
+  opacity: 0.9;
+  position: fixed;
+  right: 50px;
+  text-align: center;
+  width: 40px;
+  z-index: 10000;
+}
+  @media (min-width: 550px) {
+    div#env-indicator {
+      right: 105px;
+    }
+  }
+  div#env-indicator.env-indicator-prod {
+    background-color: #cb0b38;
+  }
+  div#env-indicator.env-indicator-dev {
+    background-color: #1da826;
+  }
 
 button#theme-toggler {
   background-color: var(--bkgr-color);
@@ -741,7 +806,7 @@ footer {
 .posts {
   list-style-type: none;
 }
-  .posts li {
+  .posts li.post-row {
     margin-bottom: 30px;
   }
   .posts .post-link {
@@ -800,8 +865,10 @@ footer {
     }
   }
   .post-header-image.full-entry img {
+    /*
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 55%);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 55%);
+    */
   }
     @media (min-width: 768px) {
       .post-header-image.full-entry img {

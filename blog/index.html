@@ -14,61 +14,65 @@ pagination:
   <div id="search-container">
     <input type="search"
       id="search-input"
-    {% if site.unpublished and site.tags.unpublished.size > 0 %}
-      {% assign unpub_count = site.tags.unpublished.size %}
-      {% assign pub_count = site.posts.size | minus: unpub_count %}
-
-      placeholder="Search {{ site.posts | size }} ({{ pub_count }} pub/{{ unpub_count }} priv) posts..."
-    {% else %}
       placeholder="Search {{ site.posts | size }} posts..."
-    {% endif %}
     />
     <ul id="results-container"></ul>
   </div>
 
   <ul class="posts">
     {% for post in paginator.posts %}
-      <li{% if post.tags contains 'unpublished' %} class="unpublished"{% endif %}>
-        {% if post.tags contains 'unpublished' %}
-        <div><strong>UNPUBLISHED</strong></div>
-        {% endif %}
 
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        {% assign sorted_tags = post.tags | sort %}
-        <div class="tags">
-          {% for tag in sorted_tags %}
-            <a href="/blog/tags/{{ tag }}">{{ tag }}</a>
-          {% endfor %}
-        </div>
+      <li class="post-row{% if post.published == false %} unpublished{% endif %}">
 
-        {% if post.headerImage %}
-        <div class="post-header-image">
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            <img
-              src="{{ site.baseurl }}/assets/images/{{ post.headerImage }}"
-              alt="{{ post.title }}"
-              title="{{ post.title }}"
-              width="480"
-              height="480"
-            />
-          </a>
-        </div>
-        {% endif %}
+        <div class="post-meta">
 
-        {% if post.content contains '<!--more-->' %}
-        <p>{{ post.content | split:'<!--more-->' | first }}</p>
-        {% unless post.tags contains 'unpublished' %}
-        <!--
-        <div class="full-entry">
-          <a href="{{ post.url | prepend: site.baseurl }}">^^^ Full entry ^^^</a>
-        </div>
-        -->
-        {% endunless %}
-        {% endif %}
+          {% if post.published == false %}
+          <div><strong>UNPUBLISHED</strong></div>
+          {% endif %}
 
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          {% assign sorted_tags = post.tags | sort %}
+          <div class="tags">
+            {% for tag in sorted_tags %}
+              <a href="/blog/tags/{{ tag }}">{{ tag }}</a>
+            {% endfor %}
+          </div>
+
+        </div><!-- /post-meta -->
+
+        <div class="post-main">
+
+          <div class="post-header-image">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <img
+                {% if post.headerImage %}
+                src="{{ site.baseurl }}/assets/images/{{ post.headerImage }}"
+                {% else %}
+                src="{{ site.baseurl }}/assets/images/default_header.jpg"
+                {% endif %}
+                alt="{{ post.title }}"
+                title="{{ post.title }}"
+                width="480"
+                height="270"
+              />
+            </a>
+          </div><!-- /post-header-image -->
+
+          <div class="post-teaser">
+            {% if post.content contains '<!--more-->' %}
+            <p>{{ post.content | split:'<!--more-->' | first }}</p>
+            {% endif %}
+          </div><!-- /post-teaser -->
+
+        </div><!-- /post-main -->
+
+        {% if post.published != false %}
         <hr />
+        {% endif %}
       </li>
+
     {% endfor %}
   </ul>
 

@@ -6,7 +6,9 @@ tags: web email gmail osx yosemite terminal bash shell scp mail
 
 ---
 
-I've messed around with my own personal file host system for years, so that I could share stuff with others over the Internet. Initially, it was just a lazy (FTP to host) + (email link to friend) system. However, the uber way to handle something like this is to write a slick terminal script one-liner. My OS of choice is OS X and I updated to Yosemite recently, so I decided to figure out how to do it and I'm thinking someone out there may find this information useful for any script that needs email capability.
+I've messed around with my own personal file host system for years, so that I could share stuff with others over the Internet. Initially, it was just a lazy (FTP to host) + (email link to friend) system. However, the uber way to handle something like this is to write a slick terminal script one-liner.
+
+My OS of choice is OS X and I updated to Yosemite recently, so I decided to figure out how to do it and I'm thinking someone out there may find this information useful for any script that needs email capability.
 
 <!--more-->
 

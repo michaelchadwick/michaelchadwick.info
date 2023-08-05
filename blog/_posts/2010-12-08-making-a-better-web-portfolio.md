@@ -7,7 +7,7 @@ tags:
   - nebyooweb.com
   - organization
   - redmine
-  - web-development
+  - webdev
 ---
 I&#8217;ve had the domain [nebyoolae.com](http://nebyoolae.com) since 03/03/2003 (wow, I swear I didn&#8217;t pick that day for any particular reason). Before that I had some personal websites, but they didn&#8217;t have the distinctive vanity address that I eventually picked out for myself. Generally, it&#8217;s been a place to showcase my original music, and it&#8217;s been fun updating it every year or so with a new look or technology. Music hasn&#8217;t been a very profitable business, however, and so in 2009 I bought [nebyooweb.com](http://nebyooweb.com), ostensibly to showcase my very web development skills themselves.
 
