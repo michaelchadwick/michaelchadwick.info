@@ -22,10 +22,12 @@
   </div>
 </header>
 
-{% if site.unpublished %}
-<div id="unpub-indicator" class="unpublished">ALL</div>
-{% else %}
-<div id="unpub-indicator" class="published">PUB-ONLY</div>
+{% if jekyll.environment == 'development' %}
+  {% if site.unpublished %}
+  <div id="unpub-indicator" class="unpublished">ALL</div>
+  {% else %}
+  <div id="unpub-indicator" class="published">PUB-ONLY</div>
+  {% endif %}
 {% endif %}
 
 {% if jekyll.environment == 'development' %}
