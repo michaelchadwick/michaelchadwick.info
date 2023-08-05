@@ -18,7 +18,7 @@ tags:
   - music-composition
   - note-charts
   - pure-yellow-colour
-  - pyc
+  - pure-yellow-colour
   - reaper
   - rock-band
   - rock-band-network

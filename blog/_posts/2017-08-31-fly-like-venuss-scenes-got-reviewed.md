@@ -4,7 +4,6 @@ date: 2017-08-31T10:55:16-07:00
 layout: post
 tags:
   - album
-  - flv
   - fly-like-venus
   - review
 ---

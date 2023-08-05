@@ -6,7 +6,7 @@ tags:
   - album
   - gig
   - guitar
-  - paid
+  - music-performance
   - wedding
 ---
 Spurred on partly by a request I received several months ago and then delivered upon last weekend (more on that in a minute), I&#8217;ve made progress on the new album of music I&#8217;m working on. Solo acoustic guitar pieces are the theme this time, with the codename of &#8220;Stringing You Along&#8221; (until I can think of something less lame), and I&#8217;ve gotten about 60% of them recorded. It&#8217;s felt really good to just play the guitar a lot, and my confidence as a player is boosted considerably.

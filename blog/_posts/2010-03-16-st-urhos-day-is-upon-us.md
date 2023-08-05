@@ -18,7 +18,7 @@ tags:
   - music
   - new-release
   - pure-yellow-colour
-  - pyc
+  - pure-yellow-colour
   - song
   - st-urho
 ---

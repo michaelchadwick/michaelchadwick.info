@@ -7,9 +7,7 @@ tags:
   - music
   - php
   - posterity
-  - programming
   - pure-yellow-colour
-  - pyc
   - ruby-on-rails
   - webdev
 headerImage: posts/2013/10/pyc_flower.jpg

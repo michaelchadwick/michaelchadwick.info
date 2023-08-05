@@ -3,8 +3,7 @@ title: 'Fly Like Venus: Live'
 date: 2016-08-31T08:44:02-07:00
 layout: post
 tags:
-  - company pub and kitchen
-  - flv
+  - company-pub-and-kitchen
   - fly-like-venus
   - live
   - video
