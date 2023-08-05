@@ -4,7 +4,7 @@ date: 2013-09-22T00:47:30-07:00
 layout: post
 tags:
   - friends
-  - podcast
+  - podcasts
 ---
 It seems kind of dumb that the best way to keep up with my friends in person (excluding the obvious constant contact that social media provides) is to schedule events. However, most of us have jobs and houses and marriages and kids and hobbies and what have you. These things are high priority and &#8220;hanging out&#8221; often gets left by the wayside. Thus, scheduling friendship becomes important.
 

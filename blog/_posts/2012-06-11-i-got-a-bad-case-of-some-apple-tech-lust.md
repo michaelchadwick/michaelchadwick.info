@@ -5,9 +5,9 @@ date: 2012-06-11T10:59:52-07:00
 layout: post
 tags:
   - apple
-  - macbook-pro
+  - macbook
   - retina-display
-  - tech-lust
+  - technology
 ---
 [http://www.apple.com/macbook-pro](http://www.apple.com/macbook-pro)
 

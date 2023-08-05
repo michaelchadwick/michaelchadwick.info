@@ -2,7 +2,7 @@
 
 layout: post
 title:  "Gem Warrior: Part 2 (of Some Indeterminate Number)"
-tags: game gaming ruby text adventure gemwarrior gem
+tags: game gaming ruby text-adventure gemwarrior rubygems
 excerpt: "Much progress has been made on Gem Warrior since last I posted, and I've learned a bunch about Ruby and how to properly structure a game."
 
 ---

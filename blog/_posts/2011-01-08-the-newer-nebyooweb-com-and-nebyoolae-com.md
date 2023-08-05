@@ -2,7 +2,7 @@
 layout: post
 title: The New(er) Nebyooweb.com and Nebyoolae.com
 date: 2011-01-08T12:02:54-08:00
-tags: bugs cakephp jquery nebyoolae.com nebyooweb.com ruby-on-rails web-development wrapup
+tags: bugs cakephp jquery nebyoolae.com nebyooweb.com ruby-on-rails webdev wrapup
 headerImage: posts/2011/01/ss_nebyooweb.png
 ---
 

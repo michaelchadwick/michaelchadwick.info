@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sometimes Self-Hosting Services Satisfies Sufficiently"
-tags: self-hosted webdev freshrss homer neb.host wallabag roundcube drupal linode vue-js minecraft wordpress jekyll-rb hugo
+tags: self-hosting webdev freshrss homer neb.host wallabag roundcube drupal linode vue-js minecraft wordpress jekyll-rb hugo
 headerImage: posts/self-hosted.jpg
 ---
 

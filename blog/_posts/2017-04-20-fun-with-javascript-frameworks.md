@@ -2,7 +2,7 @@
 
 layout: post
 title:  "\"Fun\" with Javascript Frameworks"
-tags: angular angularjs express javascript meteorjs nodejs reactjs systemjs webpack requirejs raffler typescript
+tags: angular angular-js express javascript meteor-js node-js react-js system-js webpack require-js raffler typescript
 excerpt: "I recently completed a new web app called Raffler that lets you take a list of items (usually names) and then 'raffle' them (i.e. randomly choose one)."
 
 ---

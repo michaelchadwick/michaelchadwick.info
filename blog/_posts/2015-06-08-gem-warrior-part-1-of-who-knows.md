@@ -2,7 +2,7 @@
 
 layout: post
 title:  "Gem Warrior: Part 1 (of Who Knows)"
-tags: game gaming ruby text adventure gemwarrior gem
+tags: game gaming ruby text-adventure gemwarrior rubygems
 excerpt: "I've embarked on a game development project called **Gem Warrior**, a roguelite text adventure, (eventually) replete with a juicy command list, glorious monsters, and a hyperkeen randomized world that challenges you to discover its seemingly boundless majesties, and defeat an Evil Guy to Win the Day!"
 
 ---
