@@ -1094,37 +1094,50 @@ footer {
 }
 
 .tag-meta {
-  margin-left: 23px;
+  margin-bottom: 0.5em;
+  margin-left: 1.1em;
 }
   .tag-meta .tag {
     font-size: 1.3rem;
+    line-height: 1.3;
   }
 
 #tag-cloud {
   align-items: center;
   display: flex;
-  flex-flow: wrap;
+  flex-flow: column;
   justify-content: space-between;
 }
+  @media (min-width: 576px) {
+    #tag-cloud {
+      flex-flow: wrap;
+    }
+  }
   #tag-cloud a {
     background-color: var(--link-color);
     border-radius: 5px;
     color: #ffffff;
-    margin: 5px;
-    padding: 5px 9px;
+    margin: 5px 2px;
+    padding: 4px 8px;
+    width: 100%;
   }
+    @media (min-width: 576px) {
+      #tag-cloud a {
+        width: auto;
+      }
+    }
     #tag-cloud a:hover {
       background-color: #ffffff;
       color: var(--link-color);
       text-decoration: none;
     }
     #tag-cloud a.tag-size-5 {
-      font-size: 2.2rem;
+      font-size: 2.10rem;
     }
 
     #tag-cloud a.tag-size-4 {
       background-color: var(--link-color-faded4);
-      font-size: 2.05rem;
+      font-size: 2.00rem;
     }
       #tag-cloud a.tag-size-4:hover {
         background-color: #ffffff;
@@ -1133,7 +1146,7 @@ footer {
 
     #tag-cloud a.tag-size-3 {
       background-color: var(--link-color-faded3);
-      font-size: 1.9rem;
+      font-size: 1.80rem;
     }
       #tag-cloud a.tag-size-3:hover {
         background-color: #ffffff;
@@ -1142,7 +1155,7 @@ footer {
 
     #tag-cloud a.tag-size-2 {
       background-color: var(--link-color-faded2);
-      font-size: 1.7rem;
+      font-size: 1.60rem;
     }
       #tag-cloud a.tag-size-2:hover {
         background-color: #ffffff;
@@ -1151,7 +1164,7 @@ footer {
 
     #tag-cloud a.tag-size-1 {
       background-color: var(--link-color-faded1);
-      font-size: 1.4rem;
+      font-size: 1.30rem;
     }
       #tag-cloud a.tag-size-1:hover {
         background-color: #ffffff;
