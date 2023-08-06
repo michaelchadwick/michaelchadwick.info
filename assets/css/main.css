@@ -8,7 +8,8 @@
   --link-color-faded4: #2597cb;
   --link-color-rev: #d5f9ff;
   --gray-color: #d3d3d3;
-  --white-color: #fafafa;
+
+  --neutral-white: #fafafa;
 }
 
 /* Josh W Comeau */
@@ -70,6 +71,12 @@ body {
       background: #282828;
       color: #9bc9d7;
     }
+      body.dark-theme .post-nav a {
+        color: var(--link-color-rev);
+      }
+        body.dark-theme .post-nav a:hover {
+          color: var(--link-color);
+        }
     body.dark-theme code {
       background: #111111;
       color: #fcfcfc;
@@ -716,6 +723,11 @@ footer {
     top: 3px;
   }
 
+  footer#site-footer #logo-slogan,
+  footer#site-footer #built-with {
+    margin-bottom: 1em;
+  }
+
 /* Base */
 /* ----------------------------------------------------------*/
 
@@ -830,6 +842,7 @@ footer {
 }
   @media (min-width: 768px) {
     .post-header {
+      margin-bottom: 1em;
       margin-top: 2em;
     }
   }
@@ -860,6 +873,7 @@ footer {
 }
   @media (min-width: 768px) {
     .post-header-image.full-entry {
+      margin-top: 2em;
       max-height: none;
       overflow: auto;
     }
@@ -921,7 +935,7 @@ footer {
 
   .post-content ul,
   .post-content ol {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
 .post {
@@ -940,7 +954,7 @@ footer {
   .post code { padding: 1px 5px; }
 
   .post ul,
-  .post ol { margin-left: 1.35em; }
+  .post ol { margin-left: 0; }
 
   .post pre code {
     border: none;
@@ -1082,6 +1096,50 @@ footer {
   }
 }
 
+.post-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+  @media (min-width: 768px) {
+    .post-nav {
+      flex-direction: row;
+    }
+      .post-nav .card {
+        width: 300px;
+      }
+  }
+  .post-nav a {
+    color: var(--link-color-rev);
+    text-decoration: none;
+  }
+    .post-nav a:hover {
+      color: var(--link-color);
+    }
+  .post-nav .card {
+    border-radius: 4px;
+    box-shadow: 10px 10px 0 #888888;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: relative;
+  }
+    .post-nav .card.post-nav-prev {
+      background-color: var(--link-color-faded2);
+    }
+    .post-nav .card.post-nav-next {
+      background-color: var(--link-color);
+      text-align: right;
+    }
+    .post-nav .card:hover {
+      background-color: var(--link-color-rev);
+    }
+      .post-nav .card .page-title {
+        font-size: 2rem;
+        font-weight: 700;
+      }
 
 /* page-specific */
 
@@ -1108,7 +1166,7 @@ footer {
   flex-flow: column;
   justify-content: space-between;
 }
-  @media (min-width: 576px) {
+  @media (min-width: 550px) {
     #tag-cloud {
       flex-flow: wrap;
     }
@@ -1121,7 +1179,7 @@ footer {
     padding: 4px 8px;
     width: 100%;
   }
-    @media (min-width: 576px) {
+    @media (min-width: 550px) {
       #tag-cloud a {
         width: auto;
       }
