@@ -10,11 +10,15 @@ task :deploy do |t|
 end
 
 task :build do |t|
-  sh "bundle exec jekyll build"
+  sh "JEKYLL_ENV=production bundle exec jekyll build"
 end
 
 task :serve do |t|
   sh "bundle exec jekyll serve --watch --open-url http://localhost:4000"
+end
+
+task :serve_prod do |t|
+  sh "JEKYLL_ENV=production bundle exec jekyll serve --watch --open-url http://localhost:4000"
 end
 
 task :serve_unpub do |t|
