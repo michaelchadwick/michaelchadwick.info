@@ -116,7 +116,7 @@ MCInfo.addEventHandlers = () => {
   window.onscroll = MCInfo.handleScroll
 }
 
-MCInfo.initApi = () => {
+MCInfo.initApi = async () => {
   // set env
   MCInfo.env = MCINFO_PROD_URL.includes(document.location.hostname) ? 'prod' : 'local'
 
@@ -185,7 +185,7 @@ MCInfo.initApi = () => {
 
   const showUnpublished = params.unpublished
 
-  if (showUnpublished == MCInfo.BLOG_PRIV()['key']) {
+  if (showUnpublished == await MCInfo.BLOG_PRIV()['key']) {
     MCInfo.showUnpublished = true
   }
 

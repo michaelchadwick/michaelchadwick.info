@@ -1,5 +1,5 @@
 // BLOG_PRIV
-MCInfo.BLOG_PRIV = function() {
+MCInfo.BLOG_PRIV = async function() {
   fetch(SITE_VIS_URL, {
     method: 'POST',
     headers: {
