@@ -25,7 +25,7 @@ faviconLinks.forEach(f => {
   } else if (hostname == 'https://rustycrab.bandcamp.com/') {
     url = '/assets/images/rustycrab-icon.jpg'
   } else if (hostname.endsWith('/blog')) {
-    url = '/assets/images/mc-logo-icon.png'
+    url = '/assets/images/mc-logo-16px.png'
   } else {
     url = `https://www.google.com/s2/favicons?domain=${hostname}&sz=${iconSize}`
   }
