@@ -17,7 +17,6 @@ group :jekyll_plugins do
   gem 'jekyll-loading-lazy'
   gem 'jekyll-paginate-v2'
   gem 'jekyll_pages_api', :git => 'https://github.com/chosak/jekyll_pages_api'
-  gem 'jekyll-sitemap'
   gem 'jekyll-tagging'
   gem 'jekyll-timeago'
 end

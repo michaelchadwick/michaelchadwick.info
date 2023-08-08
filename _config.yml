@@ -23,7 +23,6 @@ plugins:
   - jekyll-feed
   - jekyll-loading-lazy
   - jekyll-paginate-v2
-  - jekyll-sitemap
   # - jekyll-tagging # here for ref; uncommenting breaks jekyll build for some reason
   - jekyll-timeago
   - jemoji
