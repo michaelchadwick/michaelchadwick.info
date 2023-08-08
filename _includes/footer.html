@@ -83,6 +83,9 @@
 {% if page.style == "site-api" %}
 <script type="text/javascript" src="/assets/js/app/site-api.js"></script>
 {% endif %}
+{% if page.style == "site-visibility" or page.style == "blog" or page.layout == "post" %}
+<script type="text/javascript" src="/assets/js/app/site-visibility.js"></script>
+{% endif %}
 <!-- CUSTOM -->
 <script type="text/javascript" src="/assets/js/app/main.js"></script>
 <!-- CUSTOM CONDITIONAL -->

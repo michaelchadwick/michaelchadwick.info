@@ -59,9 +59,17 @@ MCInfo.BLOG = function() {
     // console.log('blog api request SUCCESS')
 
     const entries = data.entries
-    const post = entries[entries.length-1]
+
+    let i = 1
+
+    // find the most recent published post
+    while (entries[entries.length - i].meta.published == false) {
+      i++
+    }
+
+    const post = entries[entries.length - i]
     const postTitle = post.title
-    const postUrl = `${post.url}`
+    const postUrl = post.url
 
     let postDate = post.url.substr(6,10)
     postDate = _replaceAll(postDate, '/', '-')
@@ -73,7 +81,7 @@ MCInfo.BLOG = function() {
       devblogApi.style.display = 'block'
     }
   }).catch(error => {
-    console.error('blog api request failed')
+    console.error('blog api request failed', error)
   })
 }
 

@@ -23,6 +23,15 @@ else {
 }
 
 switch ($site) {
+  case 'mcinfo_priv':
+    $key = $_ENV['MCINFO_PRIVATE_KEY'];
+
+    echo json_encode([
+      'key' => $key
+    ]);
+
+    break;
+
   case 'podbean':
     $PODBEAN_API_URL = 'https://api.podbean.com';
     $PODBEAN_OAUTH_ROUTE = '/v1/oauth/token';

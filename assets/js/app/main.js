@@ -176,6 +176,28 @@ MCInfo.initApi = () => {
     bodyClasses.remove('light-theme')
     imgThemeToggler.innerHTML = '🌙'
   }
+
+  MCInfo.showUnpublished = false
+
+  const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  })
+
+  const showUnpublished = params.unpublished
+
+  if (showUnpublished) {
+    MCInfo.BLOG_PRIV()
+
+    // MCInfo.showUnpublished = true
+  }
+
+  const privatePosts = document.querySelectorAll('.post-row.unpublished')
+
+  if (MCInfo.showUnpublished) {
+    privatePosts.forEach(p => p.style.display = 'block')
+  } else {
+    privatePosts.forEach(p => p.style.display = 'none')
+  }
 }
 
 /************************************************************************
