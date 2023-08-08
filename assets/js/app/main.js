@@ -183,10 +183,17 @@ MCInfo.initApi = async () => {
     get: (searchParams, prop) => searchParams.get(prop),
   })
 
-  const showUnpublished = params.unpublished
+  const key = params.unpublished
 
-  if (showUnpublished == await MCInfo.BLOG_PRIV()['key']) {
-    MCInfo.showUnpublished = true
+  if (key) {
+    const lock = await MCInfo.BLOG_PRIV()
+
+    console.log('lock', lock)
+    console.log('key', key)
+
+    if (key == lock) {
+      MCInfo.showUnpublished = true
+    }
   }
 
   const privatePosts = document.querySelectorAll('.post-row.unpublished')
