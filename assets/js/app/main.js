@@ -185,10 +185,8 @@ MCInfo.initApi = () => {
 
   const showUnpublished = params.unpublished
 
-  if (showUnpublished) {
-    MCInfo.BLOG_PRIV()
-
-    // MCInfo.showUnpublished = true
+  if (showUnpublished == MCInfo.BLOG_PRIV()['key']) {
+    MCInfo.showUnpublished = true
   }
 
   const privatePosts = document.querySelectorAll('.post-row.unpublished')
