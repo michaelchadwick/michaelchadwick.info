@@ -13,7 +13,7 @@ MCInfo.BLOG_PRIV = async function() {
 
     return response.json()
   }).then(data => {
-    console.log('mcinfo_priv', data)
+    // console.log('mcinfo_priv', data)
 
     return data
   })
