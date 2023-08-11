@@ -79,7 +79,8 @@ pagination:
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      {% assign paginator_prev_link = paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' %}
+      <a href="{{ paginator_prev_link }}">&laquo; Prev</a>
     {% else %}
       <span>&laquo; Prev</span>
     {% endif %}
@@ -88,14 +89,17 @@ pagination:
       {% if page == paginator.page %}
         <em>{{ page }}</em>
       {% elsif page == 1 %}
-        <a href="{{ '/' | prepend: site.blogurl | replace: '//', '/' }}">{{ page }}</a>
+        {% assign paginator_page_link = '/' | prepend: site.blogurl | replace: '//', '/' %}
+        <a href="{{ paginator_page_link }}">{{ page }}</a>
       {% else %}
-        <a href="{{ site.paginate_path | prepend: site.blogurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% assign paginator_page_link = site.paginate_path | prepend: site.blogurl | replace: '//', '/' | replace: ':num', page %}
+        <a href="{{ paginator_page_link }}">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      {% assign paginator_next_link = paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' %}
+      <a href="{{ paginator_next_link }}">Next &raquo;</a>
     {% else %}
       <span>Next &raquo;</span>
     {% endif %}

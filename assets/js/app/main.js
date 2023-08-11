@@ -117,8 +117,9 @@ MCInfo.addEventHandlers = () => {
 }
 
 MCInfo.initApi = async () => {
-  // set env
+  // set some site vars
   MCInfo.env = MCINFO_PROD_URL.includes(document.location.hostname) ? 'prod' : 'local'
+  MCInfo.showUnpublished = false
 
   // adjust <title> for env
   if (MCInfo.env == 'local') {
@@ -177,8 +178,6 @@ MCInfo.initApi = async () => {
     imgThemeToggler.innerHTML = '🌙'
   }
 
-  MCInfo.showUnpublished = false
-
   const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
   })
@@ -186,22 +185,38 @@ MCInfo.initApi = async () => {
   const key = params.unpublished
 
   if (key) {
-    const lock = await MCInfo.BLOG_PRIV()
+    const lockbox = await MCInfo.BLOG_PRIV()
+    const lock = lockbox.key
 
-    console.log('lock', lock)
-    console.log('key', key)
+    MCInfo.showUnpublished = key == lock ? true : false
 
-    if (key == lock) {
-      MCInfo.showUnpublished = true
+    if (MCInfo.showUnpublished) {
+      const blogIndexUnpubPosts = document.querySelectorAll('.post-row.unpublished')
+      const blogIndexNavLinks = document.querySelectorAll('.pagination a')
+      const blogIndexPostLinks = document.querySelectorAll('.post-link')
+      const blogPostNavLinks = document.querySelectorAll('.post .post-nav a')
+      const blogLinks = document.querySelectorAll('span.blog a')
+
+      if (blogIndexUnpubPosts.length) {
+        blogIndexUnpubPosts.forEach(p => p.style.display = 'block')
+      }
+
+      if (blogIndexNavLinks.length) {
+        blogIndexNavLinks.forEach(link => link.href += `?unpublished=${key}`)
+      }
+
+      if (blogIndexPostLinks.length) {
+        blogIndexPostLinks.forEach(link => link.href += `?unpublished=${key}`)
+      }
+
+      if (blogPostNavLinks.length) {
+        blogPostNavLinks.forEach(link => link.href += `?unpublished=${key}`)
+      }
+
+      if (blogLinks.length) {
+        blogLinks.forEach(link => link.href += `?unpublished=${key}`)
+      }
     }
-  }
-
-  const privatePosts = document.querySelectorAll('.post-row.unpublished')
-
-  if (MCInfo.showUnpublished) {
-    privatePosts.forEach(p => p.style.display = 'block')
-  } else {
-    privatePosts.forEach(p => p.style.display = 'none')
   }
 }
 

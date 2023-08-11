@@ -1,6 +1,6 @@
 // BLOG_PRIV
-MCInfo.BLOG_PRIV = async function() {
-  fetch(SITE_VIS_URL, {
+MCInfo.BLOG_PRIV = function() {
+  return fetch(SITE_VIS_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -13,8 +13,6 @@ MCInfo.BLOG_PRIV = async function() {
 
     return response.json()
   }).then(data => {
-    // console.log('mcinfo_priv', data)
-
     return data
   })
 }
