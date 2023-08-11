@@ -212,6 +212,12 @@ nav.site-links {
   width: 100%;
   z-index: 1;
 }
+  @media (min-width: 768px) {
+    #search-container {
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+  }
   #search-container.selected {
     background: var(--neutral-white);
     border: 0px;
