@@ -14,7 +14,8 @@ pagination:
   <div id="search-container">
     <input type="search"
       id="search-input"
-      placeholder="Search {{ site.posts | size }} posts..."
+      data-post-size="{{ site.posts | size }}"
+      placeholder="Search posts..."
     />
     <ul id="results-container"></ul>
   </div>
