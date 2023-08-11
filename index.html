@@ -4,6 +4,15 @@ layout: default
 style: site-api
 ---
 
+{% comment %}
+<pre id="jekyll-debug"></pre>
+<script>
+  var obj = JSON.parse(decodeURIComponent("{{ site.webrick | jsonify | uri_escape }}"));
+  var prettyJson = JSON.stringify(obj, null, 2);
+  document.getElementById("jekyll-debug").textContent = prettyJson;
+</script>
+{% endcomment %}
+
 <div class="row">
   <h3>Latest Code</h3>
 
