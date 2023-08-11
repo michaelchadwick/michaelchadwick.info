@@ -12,6 +12,47 @@
   --neutral-white: #fafafa;
 }
 
+:root {
+  /* bootstrap v3 */
+  /*
+  --xs-min:  0;
+  --xs-max:  479px;
+  --sm-min:  480px;
+  --sm-max:  767px;
+  --md-min:  768px;
+  --md-max:  991px;
+  --lg-min:  992px;
+  --lg-max:  1199px;
+  --xl-min:  1200px;
+  */
+
+  /* bootstrap v4 */
+  /*
+  --xs-min:  0;
+  --xs-max:  575px;
+  --sm-min:  576px;
+  --sm-max:  767px;
+  --md-min:  768px;
+  --md-max:  991px;
+  --lg-min:  992px;
+  --lg-max:  1199px;
+  --xl-min:  1200px;
+  */
+
+  /* bootstrap v5 */
+  --xs-min:  0;
+  --xs-max:  575px;
+  --sm-min:  576px;
+  --sm-max:  767px;
+  --md-min:  768px;
+  --md-max:  991px;
+  --lg-min:  992px;
+  --lg-max:  1199px;
+  --xl-min:  1200px;
+  --xl-max:  1399px;
+  --xxl-min: 1400px;
+}
+
 /* Josh W Comeau */
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
 
