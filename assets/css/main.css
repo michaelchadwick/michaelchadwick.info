@@ -879,7 +879,7 @@ footer {
 /* ----------------------------------------------------------*/
 
 .post-header {
-  margin: 1em 0 2.5em;
+  margin: 1em 0;
 }
   @media (min-width: 768px) {
     .post-header {
@@ -930,6 +930,7 @@ footer {
         -webkit-mask-image: none;
         mask-image: none;
         max-width: none;
+        width: 100%;
       }
     }
 
@@ -1100,6 +1101,8 @@ footer {
     width: calc(50% - 10px);
     margin-right: 0;
   }
+
+  .post-header h1 { font-size: 3.2rem; }
 
   #site-footer .column.footer-col-3 {
     width: auto;
