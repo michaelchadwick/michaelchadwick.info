@@ -9,6 +9,17 @@ task :deploy do |t|
   sh "rsync -auP ./_drafts/* $MCINFO_DRAFTS"
 end
 
+task :deploy_unpub do |t|
+  # push to master branch
+  sh "git push origin master"
+  # build site (with unpublished posts)
+  sh "JEKYLL_ENV=production bundle exec jekyll build --unpublished"
+  # sync site to remote host
+  sh "rsync -auP --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
+  # backup drafts
+  sh "rsync -auP ./_drafts/* $MCINFO_DRAFTS"
+end
+
 task :build do |t|
   sh "JEKYLL_ENV=production bundle exec jekyll build"
 end
