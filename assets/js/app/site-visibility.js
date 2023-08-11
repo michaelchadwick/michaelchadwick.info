@@ -1,18 +1,18 @@
 // BLOG_PRIV
-MCInfo.BLOG_PRIV = function() {
+MCInfo.BLOG_PRIV = function(key) {
   return fetch(SITE_VIS_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ 'site': 'mcinfo_priv' })
+    body: JSON.stringify({ 'key': key })
   }).then(response => {
     if (!response.ok) {
       throw new Error('Could not get mcinfo visibility')
     }
 
     return response.json()
-  }).then(data => {
-    return data
+  }).then(unlocked => {
+    return unlocked
   })
 }

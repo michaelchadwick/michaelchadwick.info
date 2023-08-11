@@ -66,39 +66,6 @@ if (themeToggler) {
 let lastKnownScrollPosition = 0
 let ticking = false
 
-MCInfo.handleResize = () => {
-  if (headerScrolled) {
-    const width = document.body.clientWidth
-
-    if (width >= 550 && lastKnownScrollPosition <= 200) {
-      headerScrolled.classList.remove('show')
-    }
-
-    headerScrolled.style.width = `${window.innerWidth}px`
-  }
-}
-
-MCInfo.handleScroll = () => {
-  lastKnownScrollPosition = window.scrollY
-
-  if (document.body.clientWidth >= 550) {
-    // https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event#examples
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        if (lastKnownScrollPosition > 200) {
-          headerScrolled.classList.add('show')
-        } else {
-          headerScrolled.classList.remove('show')
-        }
-
-        ticking = false
-      })
-
-      ticking = true
-    }
-  }
-}
-
 MCInfo.addEventHandlers = () => {
   themeToggler.addEventListener('click', function() {
     bodyClasses.toggle('dark-theme')
@@ -112,11 +79,11 @@ MCInfo.addEventHandlers = () => {
     localStorage.setItem('mcinfo-theme', theme)
   })
 
-  window.onresize = MCInfo.handleResize
-  window.onscroll = MCInfo.handleScroll
+  window.onresize = MCInfo._handleResize
+  window.onscroll = MCInfo._handleScroll
 }
 
-MCInfo.initApi = async () => {
+MCInfo.initApi = () => {
   // set some site vars
   MCInfo.env = MCINFO_PROD_URL.includes(document.location.hostname) ? 'prod' : 'local'
   MCInfo.showUnpublished = false
@@ -169,8 +136,8 @@ MCInfo.initApi = async () => {
     }
   }
 
-  MCInfo.handleScroll()
-  MCInfo.handleResize()
+  MCInfo._handleScroll()
+  MCInfo._handleResize()
 
   if (prefersDarkScheme.matches) {
     bodyClasses.add('dark-theme')
@@ -178,6 +145,14 @@ MCInfo.initApi = async () => {
     imgThemeToggler.innerHTML = '🌙'
   }
 
+  MCInfo._handleVisibility()
+}
+
+/************************************************************************
+ * private methods
+ ************************************************************************/
+
+MCInfo._handleVisibility = async () => {
   const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
   })
@@ -185,10 +160,10 @@ MCInfo.initApi = async () => {
   const key = params.unpublished
 
   if (key) {
-    const lockbox = await MCInfo.BLOG_PRIV()
-    const lock = lockbox.key
+    const unlockAttempt = await MCInfo.BLOG_PRIV(key)
+    const isUnlocked = unlockAttempt.isUnlocked
 
-    MCInfo.showUnpublished = key == lock ? true : false
+    MCInfo.showUnpublished = isUnlocked ? true : false
 
     if (MCInfo.showUnpublished) {
       const blogIndexUnpubPosts = document.querySelectorAll('.post-row.unpublished')
@@ -216,6 +191,39 @@ MCInfo.initApi = async () => {
       if (blogLinks.length) {
         blogLinks.forEach(link => link.href += `?unpublished=${key}`)
       }
+    }
+  }
+}
+
+MCInfo._handleResize = () => {
+  if (headerScrolled) {
+    const width = document.body.clientWidth
+
+    if (width >= 550 && lastKnownScrollPosition <= 200) {
+      headerScrolled.classList.remove('show')
+    }
+
+    headerScrolled.style.width = `${window.innerWidth}px`
+  }
+}
+
+MCInfo._handleScroll = () => {
+  lastKnownScrollPosition = window.scrollY
+
+  if (document.body.clientWidth >= 550) {
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event#examples
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        if (lastKnownScrollPosition > 200) {
+          headerScrolled.classList.add('show')
+        } else {
+          headerScrolled.classList.remove('show')
+        }
+
+        ticking = false
+      })
+
+      ticking = true
     }
   }
 }

@@ -6,10 +6,13 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
 $dotenv->load();
 
-$key = $_ENV['MCINFO_PRIVATE_KEY'];
+if ($json = file_get_contents('php://input')) {
+  $data = json_decode($json);
+  $key = $data->key;
+}
+
+$lock = $_ENV['MCINFO_PRIVATE_KEY'];
 
 echo json_encode([
-  'key' => $key
+  'isUnlocked' => $key == $lock
 ]);
-
-// echo $key;
