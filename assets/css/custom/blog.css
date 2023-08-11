@@ -80,6 +80,7 @@ ul ul {
 li.unpublished {
   background-color: #ffacac21;
   border: 2px dashed #fb9d9d;
+  display: none;
   margin: 0;
   padding: 1rem 1rem 0;
 }
