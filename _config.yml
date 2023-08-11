@@ -11,11 +11,12 @@ url: "https://michaelchadwick.info"
 home_relative_url: "/"
 blogurl: "/blog"
 encoding: UTF-8
-exclude: ["Rakefile", ".deploy.sh"]
-include: ["mus.html", "net.html", "index_print.html"]
+exclude: ["Rakefile", ".deploy.sh", ".env.example"]
+include: ["mus.html", "net.html", "index_print.html", ".env"]
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
+    Access-Control-Allow-Methods: "POST, GET, OPTIONS"
 tag_page_layout: tag_page
 tag_page_dir: blog/tags
 
