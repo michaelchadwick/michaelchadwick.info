@@ -985,22 +985,26 @@ footer {
 }
   .post pre,
   .post code {
-    border: 1px solid #d5d5e9;
     background-color: #eef;
-    padding: 8px 12px;
+    border: 1px solid #d5d5e9;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     font-size: 1.5rem;
+    padding: 8px;
   }
-  .post code { padding: 1px 5px; }
+  .post code {
+    padding: 1px 5px;
+    white-space: pre-line;
+  }
 
   .post ul,
   .post ol { margin-left: 0; }
 
   .post pre code {
     border: none;
-    white-space: pre-wrap;
+    overflow: auto;
+    white-space: pre;
   }
 
   .post pre.terminal {
