@@ -1,7 +1,7 @@
 on:
   push:
     paths:
-      - 'blog/*.md'
+      - 'blog/_posts/*.md'
 
 jobs:
   Post-To-Mastodon:
