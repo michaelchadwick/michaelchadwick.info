@@ -1,4 +1,4 @@
-name: announce-new-blog-post-to-mastodon
+name: Announce New Blog Post on Mastodon
 run-name: ${{ github.actor }} is announcing a new blog post to Mastodon
 on:
   push:
