@@ -1,9 +1,0 @@
-- name: Send toot to Mastodon
-  id: mastodon
-  uses: michaelchadwick/toot-to-mastodon-github-action@v1
-  with:
-    message: "Hello from GitHub Actions!"
-    visibility: "public" # default: public
-  env:
-    MASTODON_URL: ${{ secrets.https://masto.neb.host }} # https://example.social
-    MASTODON_ACCESS_TOKEN: ${{ secrets.UKUnfabOALBbrnlZ7q4zcE84eGwsfXETJjBGJLn2Irw }} # access token
