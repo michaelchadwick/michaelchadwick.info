@@ -12,10 +12,6 @@
 
 `$ bundle exec jekyll serve --watch --open-url http://localhost:4000`
 
-or
-
-`$ ./scripts/serve.sh`
-
 ## acknowledgements
 
 Thanks to [melodiouscode](https://github.com/melodiouscode/melodiouscode-snippets/blob/main/creating-a-sitemap-xml-file-with-jekyll/sitemap.xml) for the cool Liquid templating approach to creating a sitemap vs. using a plugin!
