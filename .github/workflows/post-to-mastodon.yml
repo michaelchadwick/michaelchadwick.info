@@ -1,12 +1,22 @@
-name: announce-new-blog-post-to-mastodon
-run-name: ${{ github.actor }} is announcing a new blog post to Mastodon
 on:
   push:
     paths:
       - 'blog/*.md'
-with:
-  message: "Hello from GitHub Actions!"
-  visibility: "private" # default: public
-  env:
-    MASTODON_URL: ${{ secrets.MASTODON_URL }} # https://example.social
-    MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }} # access token
+
+jobs:
+  Post-To-Mastodon:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: mastodon-send
+      id: mastodon
+      uses: cbrgm/mastodon-github-action@v1.0.3
+    
+      with:
+        message: |
+          #New post on MC.Info
+          https://michaelchadwick.info/blog
+        visibility: "private" # default: public
+      env:
+        MASTODON_URL: ${{ secrets.MASTODON_URL }}
+        MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
