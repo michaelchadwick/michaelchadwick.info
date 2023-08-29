@@ -15,7 +15,7 @@ comments: true
       {% if daysSince > 365 %}
         Posted: {{ page.date | timeago }}
       {% else %}
-        {{ page.date | date: "%b %-d, %Y" }}
+        {{ page.date | date: site.date_YYYYMMDD_dash | slice: 0, 10 }}
       {% endif %}
     </span>
 
@@ -68,7 +68,7 @@ comments: true
       <div class="card post-nav-prev">
         <div class="page-nav">&laquo; Previous</div>
         <div class="page-title">{{ page.previous.title }}</div>
-        <div class="page-date">{{ page.previous.date | date: "%b %d, %Y" }}</div>
+        <div class="page-date">{{ page.previous.date | date: site.date_YYYYMMDD_dash }}</div>
       </div>
     </a>
   {% endif %}
@@ -77,7 +77,7 @@ comments: true
       <div class="card post-nav-next">
         <div class="page-nav">Next &raquo;</div>
         <div class="page-title">{{ page.next.title }}</div>
-        <div class="page-date">{{ page.next.date | date: "%b %d, %Y" }}</div>
+        <div class="page-date">{{ page.next.date | date: site.date_YYYYMMDD_dash }}</div>
       </div>
     </a>
   {% endif %}

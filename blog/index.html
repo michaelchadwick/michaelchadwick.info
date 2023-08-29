@@ -31,10 +31,16 @@ pagination:
           <div><strong>UNPUBLISHED</strong></div>
           {% endif %}
 
-          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-date">
+            {{ post.date | date: site.date_YYYYMMDD_dash }}
+          </span>
 
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+          </a>
+
           {% assign sorted_tags = post.tags | sort %}
+
           <div class="tags">
             {% for tag in sorted_tags %}
               <a href="/blog/tags/{{ tag }}">{{ tag }}</a>

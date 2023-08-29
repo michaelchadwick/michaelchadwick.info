@@ -19,6 +19,10 @@ webrick:
     Access-Control-Allow-Methods: "POST, GET, OPTIONS"
 tag_page_layout: tag_page
 tag_page_dir: blog/tags
+date_YYYYMMDD_dash: "%Y-%m-%d"
+date_YYYYMMDD_slash: "%Y/%m/%d"
+date_MMDDYYYY: "%b %-d, %Y"
+date_YYYYMD: "%Y-%m-%d"
 
 plugins:
   - jekyll-feed
