@@ -31,7 +31,7 @@ comments: true
       {% assign sorted_tags = page.tags | sort %}
       <div class="tags">
         {% for tag in sorted_tags %}
-          <a href="/blog/tag/{{ tag }}">{{ tag }}</a>
+          <a href="/blog/tags/{{ tag }}">{{ tag }}</a>
         {% endfor %}
       </div>
     {% endif %}
