@@ -25,7 +25,7 @@ task :build do |t|
 end
 
 task :serve do |t|
-  sh "bundle exec jekyll serve --watch --open-url http://localhost:4000"
+  sh "bundle exec jekyll serve --incremental --watch --open-url http://localhost:4000"
 end
 
 task :serve_prod do |t|
