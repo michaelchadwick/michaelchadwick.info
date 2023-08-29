@@ -18,7 +18,6 @@ tags:
   - music-composition
   - note-charts
   - pure-yellow-colour
-  - pure-yellow-colour
   - reaper
   - rock-band
   - rock-band-network
