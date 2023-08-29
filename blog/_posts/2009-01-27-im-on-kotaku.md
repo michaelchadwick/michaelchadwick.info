@@ -9,6 +9,7 @@ lj_permalink:
 tags:
   - music-composition
   - recognition
+  - soundtrack
 ---
 <http://kotaku.com/5139847/listen-to-the-jrpg-soundtrack-of-the-jrpg-that-doesnt-exist>
 
