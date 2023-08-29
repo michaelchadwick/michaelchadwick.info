@@ -12,7 +12,7 @@ comments: true
     {% assign daysSince = hoursSince | divided_by: 24 %}
 
     <span class="post-date" title="{{ page.date | date: "%b %-d, %Y" }}">
-      {% if daysSince > 31 %}
+      {% if daysSince > 365 %}
         Posted: {{ page.date | timeago }}
       {% else %}
         {{ page.date | date: "%b %-d, %Y" }}
