@@ -1331,3 +1331,9 @@ footer {
     transform: rotate(360deg);
   }
 }
+
+/* Github-powered commentes */
+.utterances {
+  margin: 0;
+  max-width: 800px;
+}

@@ -47,7 +47,7 @@ pagination:
             {% endfor %}
           </div>
 
-        </div><!-- /post-meta -->
+        </div>
 
         <div class="post-main">
 
@@ -65,15 +65,15 @@ pagination:
                 height="270"
               />
             </a>
-          </div><!-- /post-header-image -->
+          </div>
 
           <div class="post-teaser">
             {% if post.content contains '<!--more-->' %}
-            <p>{{ post.content | split:'<!--more-->' | first }}</p>
+            <p>{{ post.content | split:'<!--more-->' | first | raw }}</p>
             {% endif %}
-          </div><!-- /post-teaser -->
+          </div>
 
-        </div><!-- /post-main -->
+        </div>
 
         {% if post.published != false %}
         <hr />
