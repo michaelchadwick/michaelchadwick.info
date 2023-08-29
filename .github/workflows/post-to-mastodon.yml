@@ -7,11 +7,16 @@ jobs:
   Post-To-Mastodon:
     runs-on: ubuntu-latest
     steps:
-    
+
+    - env:
+        EVENT_CONTEXT: ${{ toJSON(github.event) }}
+      run: |
+        echo $EVENT_CONTACT
+
     - name: mastodon-send
       id: mastodon
       uses: cbrgm/mastodon-github-action@v1.0.3
-    
+
       with:
         message: |
           #New post on MC.Info
