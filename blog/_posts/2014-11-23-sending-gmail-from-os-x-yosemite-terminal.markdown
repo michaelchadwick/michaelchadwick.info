@@ -2,7 +2,7 @@
 
 layout: post
 title:  "Sending Gmail from OS X Yosemite Terminal"
-tags: web email gmail osx yosemite terminal bash shell scp mail
+tags: web email gmail osx osx-yosemite terminal bash shell scp mail
 
 ---
 

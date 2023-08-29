@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AWStats Hacking, or How I Inserted HTML into a 20K+ LOC Perl Script"
-tags: awstats hacking html open-source perl self-hosted
+tags: awstats hacking html open-source perl self-hosting
 published: true
 ---
 

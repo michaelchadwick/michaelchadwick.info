@@ -2,7 +2,7 @@
 
 layout: post
 title:  "Playing with Javascript and the Web Audio API"
-tags: webdev audio html5 javascript audiohash
+tags: webdev audio html html5 javascript audiohash web-audio-api
 
 ---
 

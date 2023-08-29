@@ -2,7 +2,7 @@
 
 layout: post
 title:  "Some Fun New Web Projects to Kick Off 2015"
-tags: webdev html5 javascript jquery localstorage json
+tags: webdev html html5 javascript jquery localstorage json
 
 ---
 
