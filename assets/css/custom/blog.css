@@ -276,6 +276,7 @@ nav.site-links {
 
 .post-main {
   display: block;
+  margin-top: 1em;
 }
   @media (min-width: 768px) {
     .post-main {
@@ -326,7 +327,7 @@ nav.site-links {
     }
 
 .post-header-image {
-  margin: 15px 0;
+  margin: 0 0 1em 0;
   max-height: 50vw;
   overflow: hidden;
 }
@@ -334,7 +335,7 @@ nav.site-links {
     .post-header-image {
       max-height: none;
       max-width: 200px;
-      margin: 1em 0 1em 2em;
+      margin: 0 0 1em 2em;
     }
   }
   .post-header-image img {
