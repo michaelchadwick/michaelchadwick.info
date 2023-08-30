@@ -247,7 +247,7 @@ MCInfo.STEAM = function() {
           const gameUrl = `https://steamcommunity.com/app/${gameId}`
           const gameIcon = `https://media.steampowered.com/steamcommunity/public/images/apps/${gameId}/${imageHash}.jpg`
 
-          steamLastGamePlayed.innerHTML = `<span><img src="${gameIcon}" />Latest game: <a href="${gameUrl}">${gameTitle}</a></span>`
+          steamLastGamePlayed.innerHTML = `<span>Latest game: <img width="16" height="16" src="${gameIcon}" /><a href="${gameUrl}">${gameTitle}</a></span>`
 
           if (steamApiData.style.display !== 'block') {
             steamApiData.style.display = 'block'
