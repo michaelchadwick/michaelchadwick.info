@@ -232,7 +232,9 @@ MCInfo.STEAM = function() {
 
     console.log('steam resp', resp)
 
-    if (resp.total_count) {
+    if (resp['total_count']) {
+      console.log('total_count', resp['total_count'])
+
       if (resp.total_count == 0) {
         steamLastGamePlayed.innerHTML = `<span>Steam says I have not played any games :-O</span>`
       }
