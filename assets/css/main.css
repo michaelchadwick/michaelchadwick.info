@@ -299,6 +299,12 @@ ul.links {
       ul.links li img {
         margin: auto 5px;
       }
+        ul.links li img.steam-icon {
+          float: left;
+          margin: 2px 4px 0 0;
+          height: 16px;
+          width: 16px;
+        }
         ul.links li .loading {
           margin-left: -25px;
           margin-top: 1px;
@@ -1285,11 +1291,4 @@ footer {
 .utterances {
   margin: 0;
   max-width: 800px;
-}
-
-.steam-icon {
-  float: left;
-  margin: 2px 4px 0 0;
-  height: 16px;
-  width: 16px;
 }
