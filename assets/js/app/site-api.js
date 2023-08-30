@@ -232,7 +232,7 @@ MCInfo.STEAM = function() {
 
     console.log('steam resp', resp)
 
-    if (data['response']['total_count']) {
+    if ('total_count' in resp) {
       console.log('total_count', resp['total_count'])
 
       if (resp.total_count == 0) {
