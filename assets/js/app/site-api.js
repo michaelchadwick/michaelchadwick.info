@@ -228,13 +228,19 @@ MCInfo.STEAM = function() {
   }).then(data => {
     // console.log('steam api request SUCCESS')
 
-    const game = data['response']['games'][0]
+    const games = data['response']['games']
 
-    const gameTitle = game['name']
-    const gameId = game['appid']
-    const gameUrl = `https://steamcommunity.com/app/${gameId}`
+    if (games.length) {
+      const game = games[0]
 
-    steamLastGamePlayed.innerHTML = `<span>Latest game: <a href="${gameUrl}">${gameTitle}</a></span>`
+      const gameTitle = game['name']
+      const gameId = game['appid']
+      const gameUrl = `https://steamcommunity.com/app/${gameId}`
+
+      steamLastGamePlayed.innerHTML = `<span>Latest game: <a href="${gameUrl}">${gameTitle}</a></span>`
+    } else {
+      steamLastGamePlayed.innerHTML = `<span>Steam failed to respond >:-(</span>`
+    }
 
     if (steamApiData.style.display !== 'block') {
       steamApiData.style.display = 'block'
