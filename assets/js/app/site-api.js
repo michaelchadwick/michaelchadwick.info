@@ -232,7 +232,7 @@ MCInfo.STEAM = function() {
 
     console.log('steam resp', resp)
 
-    if (resp['total_count']) {
+    if (data['response']['total_count']) {
       console.log('total_count', resp['total_count'])
 
       if (resp.total_count == 0) {
@@ -243,7 +243,7 @@ MCInfo.STEAM = function() {
 
       const games = resp['games']
 
-      if (games.length) {
+      if (games) {
         const game = games[0]
 
         const gameTitle = game['name']
