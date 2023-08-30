@@ -1,0 +1,99 @@
+/* main-dark.css */
+
+:root {
+  --link-color:         #1e9edb;
+  --link-color-faded1:  #357c9c;
+  --link-color-faded2:  #3083aa;
+  --link-color-faded3:  #2d8fbd;
+  --link-color-faded4:  #2597cb;
+  --link-color-rev:     #d5f9ff;
+  --link-color-rev2:    #9bc9d7;
+  --gray-color:         #d3d3d3;
+
+  --neutral-white:      #fafafa;
+}
+
+/* FOUNDATIONAL */
+
+body.dark-theme {
+  --text-color: #f3f3f3;
+  --bkgr-color: #282828ee;
+  background-image: url(/assets/images/wavey-fingerprint.svg);
+  /* background-image by SVGBackgrounds.com */
+}
+  body.dark-theme a {
+    background: #282828;
+    color: #9bc9d7;
+  }
+    @media (hover: hover) {
+      body.dark-theme a.btn-more:hover {
+        background-color: var(--link-color-faded4);
+        color: var(--neutral-white);
+      }
+    }
+    body.dark-theme .post-nav a {
+      color: var(--link-color-rev);
+    }
+      body.dark-theme .post-nav a:hover {
+        color: var(--link-color);
+      }
+  body.dark-theme code {
+    background: #111111;
+    color: #fcfcfc;
+  }
+  body.dark-theme .overlay {
+    background: rgba(120, 120, 120, 0.8);
+  }
+  body.dark-theme #search-container {
+    background: #222222;
+    border: 1px solid #fcfcfc;
+  }
+  body.dark-theme #search-container input {
+    background: #222222;
+    color: #ffffff;
+  }
+  body.dark-theme footer#site-footer p {
+    color: #f3f3f3;
+  }
+  /*
+  body.dark-theme ul.links li {
+    background-color: #282828;
+  }
+  */
+
+body.dark-theme header.header-scrolled div.site-meta span.name a {
+  color: var(--link-color-rev2);
+}
+
+body.dark-theme ul.links li span {
+  color: var(--neutral-white);
+}
+  body.dark-theme ul.links li.manual.code {
+    list-style-image: url('../images/code-rev.svg');
+  }
+  body.dark-theme ul.links li.manual.music {
+    list-style-image: url('../images/music-rev.svg');
+  }
+
+body.dark-theme header.header-scrolled {
+  background: #000000ee;
+  background: linear-gradient(322deg, rgb(0, 0, 0) 0%, rgba(35, 43, 51, 0.975) 100%);
+  box-shadow: 0 0 2px 2px #383636;
+}
+  body.dark-theme header.header-scrolled .menu a {
+    background: #000000ee;
+  }
+
+body.dark-theme button#theme-toggler {
+  color: var(--text-color);
+}
+  @media (min-width: 550px) {
+    body.dark-theme button#theme-toggler span.theme-image::after {
+      content: " dark"
+    }
+  }
+
+body.dark-theme .lds-dual-ring:after {
+  border: 2px solid var(--neutral-white);
+  border-color: var(--neutral-white) transparent var(--neutral-white) transparent;
+}

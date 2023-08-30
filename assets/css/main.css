@@ -102,57 +102,17 @@ body {
   font-size: 1.6rem;
   margin-top: 70px;
 }
-  body.dark-theme {
-    --text-color: #f3f3f3;
-    --bkgr-color: #282828ee;
-    background-image: url(/assets/images/wavey-fingerprint.svg);
-    /* background-image by SVGBackgrounds.com */
-  }
-    body.dark-theme a {
-      background: #282828;
-      color: #9bc9d7;
+  @media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+      --text-color: #f3f3f3;
+      --bkgr-color: #282828ee;
     }
-      body.dark-theme .post-nav a {
-        color: var(--link-color-rev);
+      body.light-theme {
+        --text-color: #282828;
+        --bkgr-color: #f6f6f6ee;
       }
-        body.dark-theme .post-nav a:hover {
-          color: var(--link-color);
-        }
-    body.dark-theme code {
-      background: #111111;
-      color: #fcfcfc;
-    }
-    body.dark-theme .overlay {
-      background: rgba(120, 120, 120, 0.8);
-    }
-    body.dark-theme #search-container {
-      background: #222222;
-      border: 1px solid #fcfcfc;
-    }
-    body.dark-theme #search-container input {
-      background: #222222;
-      color: #ffffff;
-    }
-    body.dark-theme footer#site-footer p {
-      color: #f3f3f3;
-    }
-    /*
-    body.dark-theme ul.links li {
-      background-color: #282828;
-    }
-    */
-
-@media (prefers-color-scheme: dark) {
-  /* defaults to dark theme */
-  body {
-    --text-color: #f3f3f3;
-    --bkgr-color: #282828ee;
   }
-    body.light-theme {
-      --text-color: #282828;
-      --bkgr-color: #f6f6f6ee;
-    }
-}
 
 @media (min-width: 550px) {
   body {
@@ -317,15 +277,19 @@ ul.links {
       padding: 0;
     }
       ul.links li.manual.code {
-        list-style-image: url('../images/code-solid.png');
+        list-style-image: url('../images/code.svg');
       }
-        body.dark-theme ul.links li.manual.code {
-          list-style-image: url('../images/code-solid-rev.png');
-        }
         ul.links li.manual.code::marker {
           position: relative;
-          top: -2px;
         }
+
+      ul.links li.manual.music {
+        list-style-image: url('../images/music.svg');
+      }
+        ul.links li.manual.music::marker {
+          position: relative;
+        }
+
       ul.links li a {
         padding-bottom: 2px;
       }
@@ -461,14 +425,6 @@ header.header-scrolled {
   width: 100%;
   z-index: 3;
 }
-  body.dark-theme header.header-scrolled {
-    background: #000000ee;
-    background: linear-gradient(322deg, rgb(0, 0, 0) 0%, rgba(35, 43, 51, 0.975) 100%);
-    box-shadow: 0 0 2px 2px #383636;
-  }
-    body.dark-theme header.header-scrolled .menu a {
-      background: #000000ee;
-    }
 
 @media (min-width: 550px) {
   header.header-scrolled {
@@ -647,16 +603,9 @@ button#theme-toggler {
       display: inline;
     }
 
-  body.dark-theme button#theme-toggler span.theme-image::after {
-    content: " dark"
-  }
   body.light-theme button#theme-toggler span.theme-image::after {
     content: " light"
   }
-}
-
-body.dark-theme button#theme-toggler {
-  color: var(--text-color);
 }
 
 nav.site-links,
