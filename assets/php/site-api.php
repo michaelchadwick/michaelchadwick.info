@@ -144,7 +144,7 @@ switch ($site) {
 
     $client = new Client(['base_uri' => $STEAM_API_URL, 'timeout'  => 5.0]);
 
-    // get all my gems
+    // get all my games
     try {
       $response = $client->get($STEAM_GET_GAMES_ROUTE, [
         'debug' => false,

@@ -226,38 +226,34 @@ MCInfo.STEAM = function() {
   }).then(response => {
     return response.json()
   }).then(data => {
-    console.log('steam api request SUCCESS', data)
+    // console.log('steam api request SUCCESS', data)
 
     const resp = data['response']
-
-    console.log('steam resp', resp)
 
     if ('total_count' in resp) {
       console.log('total_count', resp['total_count'])
 
-      if (resp.total_count == 0) {
-        steamLastGamePlayed.innerHTML = `<span>Steam says I have not played any games :-O</span>`
-      }
-    } else {
-      console.log('resp[games]', resp['games'])
-
-      const games = resp['games']
-
-      if (games) {
-        const game = games[0]
-
-        const gameTitle = game['name']
-        const gameId = game['appid']
-        const gameUrl = `https://steamcommunity.com/app/${gameId}`
-
-        steamLastGamePlayed.innerHTML = `<span>Latest game: <a href="${gameUrl}">${gameTitle}</a></span>`
+      if (resp.total_count <= 0) {
+        steamLastGamePlayed.innerHTML = `<span>No games played in the last 2 weeks :(</span>`
       } else {
-        steamLastGamePlayed.innerHTML = `<span>Steam failed to respond >:-(</span>`
-      }
-    }
+        const games = resp['games']
 
-    if (steamApiData.style.display !== 'block') {
-      steamApiData.style.display = 'block'
+        if (games) {
+          const game = games[0]
+
+          const gameTitle = game['name']
+          const gameId = game['appid']
+          const imageHash = game['img_icon_url']
+          const gameUrl = `https://steamcommunity.com/app/${gameId}`
+          const gameIcon = `https://media.steampowered.com/steamcommunity/public/images/apps/${gameId}/${imageHash}`
+
+          steamLastGamePlayed.innerHTML = `<span><img src="${gameIcon}" />Latest game: <a href="${gameUrl}">${gameTitle}</a></span>`
+
+          if (steamApiData.style.display !== 'block') {
+            steamApiData.style.display = 'block'
+          }
+        }
+      }
     }
   }).catch(error => {
     console.error('steam api request failed', error)
