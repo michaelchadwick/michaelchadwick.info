@@ -1286,3 +1286,10 @@ footer {
   margin: 0;
   max-width: 800px;
 }
+
+.steam-icon {
+  float: left;
+  margin: 2px 4px 0 0;
+  height: 16px;
+  width: 16px;
+}
