@@ -245,7 +245,7 @@ MCInfo.STEAM = function() {
           const gameId = game['appid']
           const imageHash = game['img_icon_url']
           const gameUrl = `https://steamcommunity.com/app/${gameId}`
-          const gameIcon = `https://media.steampowered.com/steamcommunity/public/images/apps/${gameId}/${imageHash}`
+          const gameIcon = `https://media.steampowered.com/steamcommunity/public/images/apps/${gameId}/${imageHash}.jpg`
 
           steamLastGamePlayed.innerHTML = `<span><img src="${gameIcon}" />Latest game: <a href="${gameUrl}">${gameTitle}</a></span>`
 
