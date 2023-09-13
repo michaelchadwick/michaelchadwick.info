@@ -36,3 +36,6 @@ Rakefile
 # DO track my random audio files
 !audio
 !assets/audio/posts/*.mp3
+
+# DO track my random video files
+!assets/video/posts/*.mp4
