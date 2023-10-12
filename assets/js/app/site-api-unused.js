@@ -114,7 +114,7 @@ MCInfo.SC = async function() {
   }
 }
 
-// WORDPRESS - moved all wordpress blog content to static codaname site
+// WORDPRESS - moved all wordpress blog content to static site
 MCInfo.WP = async function() {
   const muzblog = document.querySelector('.blogNebyoolaeCom')
   const muzBlogApiData = document.querySelector('.apiData.muzblog')
