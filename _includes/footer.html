@@ -3,7 +3,7 @@
     <div class="row">
 
       <!-- logo and summary -->
-      <div class="three columns" id="logo-slogan">
+      <div class="four columns" id="logo-slogan">
         <a href="{{ site.home_relative_url }}" class="plain">
           <img src="/assets/images/mc-logo-53x60.png"
             alt="Michael Chadwick"
@@ -40,23 +40,11 @@
               <span class="username">{{ site.masto_username }}</span>
             </a>
           </li>
-          <li>
-            <a href="{{ site.sc_n_link }}">
-              <span class="icon soundcloud">{% include svg_sc.html %}</span>
-              <span class="username">{{ site.sc_n_username }}</span>
-            </a>
-          </li>
-          <li>
-            <a href="{{ site.sc_mb_link }}">
-              <span class="icon soundcloud">{% include svg_sc.html %}</span>
-              <span class="username">{{ site.sc_mb_username }}</span>
-            </a>
-          </li>
         </ul>
       </div>
 
       <!-- credits and donations -->
-      <div class="four columns">
+      <div class="three columns">
         {% include built_with.html %}
         {% include kofi.html %}
       </div>

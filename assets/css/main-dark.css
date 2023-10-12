@@ -1,23 +1,34 @@
 /* main-dark.css */
 
 :root {
-  --link-color:         #1e9edb;
-  --link-color-faded1:  #357c9c;
-  --link-color-faded2:  #3083aa;
-  --link-color-faded3:  #2d8fbd;
-  --link-color-faded4:  #2597cb;
-  --link-color-rev:     #d5f9ff;
-  --link-color-rev2:    #9bc9d7;
-  --gray-color:         #d3d3d3;
+  --color-primary:        #1e9edb;
+  --color-faded1:         #357c9c;
+  --color-faded2:         #3083aa;
+  --color-faded3:         #2d8fbd;
+  --color-faded4:         #2597cb;
+  --color-primary-rev:    #d5f9ff;
 
-  --neutral-white:      #fafafa;
+  --link-color:             var(--color-primary);
+  --link-color-faded1:      var(--color-faded1);
+  --link-color-faded2:      var(--color-faded2);
+  --link-color-faded3:      var(--color-faded3);
+  --link-color-faded4:      var(--color-faded4);
+  --link-color-rev:         var(--color-primary-rev);
+
+  --neutral-gray:         #d3d3d3;
+  --neutral-black:        #282828;
+  --neutral-white:        #fafafa;
+  --neutral-white-trans:  #f6f6f6ee;
+
+  --text-color:             var(--neutral-black);
+  --bg-color:               var(--neutral-white-trans);
 }
 
 /* FOUNDATIONAL */
 
 body.dark-theme {
   --text-color: #f3f3f3;
-  --bkgr-color: #282828ee;
+  --bg-color: #282828ee;
   background-image: url(/assets/images/wavey-fingerprint.svg);
   /* background-image by SVGBackgrounds.com */
 }
@@ -85,6 +96,7 @@ body.dark-theme header.header-scrolled {
   }
 
 body.dark-theme button#theme-toggler {
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
   @media (min-width: 550px) {

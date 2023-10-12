@@ -1,15 +1,27 @@
 /* main.css */
 
 :root {
-  --link-color: #1e9edb;
-  --link-color-faded1: #357c9c;
-  --link-color-faded2: #3083aa;
-  --link-color-faded3: #2d8fbd;
-  --link-color-faded4: #2597cb;
-  --link-color-rev: #d5f9ff;
-  --gray-color: #d3d3d3;
+  --color-primary:        #1e9edb;
+  --color-faded1:         #357c9c;
+  --color-faded2:         #3083aa;
+  --color-faded3:         #2d8fbd;
+  --color-faded4:         #2597cb;
+  --color-primary-rev:    #d5f9ff;
 
-  --neutral-white: #fafafa;
+  --link-color:             var(--color-primary);
+  --link-color-faded1:      var(--color-faded1);
+  --link-color-faded2:      var(--color-faded2);
+  --link-color-faded3:      var(--color-faded3);
+  --link-color-faded4:      var(--color-faded4);
+  --link-color-rev:         var(--color-primary-rev);
+
+  --neutral-gray:         #d3d3d3;
+  --neutral-black:        #282828;
+  --neutral-white:        #fafafa;
+  --neutral-white-trans:  #f6f6f6ee;
+
+  --text-color:             var(--neutral-black);
+  --bg-color:               var(--neutral-white-trans);
 }
 
 :root {
@@ -91,10 +103,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   -webkit-font-smoothing: antialiased;
-  --text-color: #282828;
-  --bkgr-color: #f6f6f6ee;
   background-attachment: fixed;
-  background-color: var(--bkgr-color);
+  background-color: var(--bg-color);
   background-image: url(/assets/images/liquid-cheese.svg);
   /* background-image by SVGBackgrounds.com */
   background-size: cover;
@@ -105,12 +115,12 @@ body {
   @media (prefers-color-scheme: dark) {
     /* defaults to dark theme */
     body {
+      --bg-color: #282828ee;
       --text-color: #f3f3f3;
-      --bkgr-color: #282828ee;
     }
       body.light-theme {
+        --bg-color: #f6f6f6ee;
         --text-color: #282828;
-        --bkgr-color: #f6f6f6ee;
       }
   }
 
@@ -364,11 +374,26 @@ iframe.youtube {
 .row {
   margin-bottom: 1rem;
 }
+  @media (min-width: 550px) {
+    .row .section-label h3 {
+      border-bottom: 2px solid var(--text-color);
+      margin-right: -3.65vw;
+    }
+    .row .section-content {
+      border-left: 2px solid var(--text-color);
+    }
+  }
+  @media (min-width: 890px) {
+    .row .section-label h3 {
+      border-bottom: 2px solid var(--text-color);
+      margin-right: -33px;
+    }
+  }
 
 /* LAYOUT */
 
 header.header-narrow {
-  border-bottom: 1px solid var(--gray-color);
+  border-bottom: 1px solid var(--neutral-gray);
   display: block;
   margin: 2rem 0;
   padding-bottom: 1rem;
@@ -584,7 +609,7 @@ div#env-indicator {
   }
 
 button#theme-toggler {
-  background-color: var(--bkgr-color);
+  background-color: var(--bg-color);
   bottom: 5px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -626,8 +651,8 @@ footer#site-footer p {
 }
 
 footer {
-  border-top: 1px solid var(--gray-color);
-  padding: 2rem 0;
+  border-top: 1px solid var(--neutral-gray);
+  padding: 2rem 0 1rem;
 }
   footer img {
     margin-bottom: 0;
@@ -724,6 +749,19 @@ footer {
   footer#site-footer #built-with {
     margin-bottom: 1em;
   }
+
+  footer#site-footer #logo-slogan {
+    align-items: center;
+    display: flex;
+  }
+    footer#site-footer #logo-slogan a {
+      padding: 0 5px 0;
+    }
+    @media (min-width: 550px) {
+      footer#site-footer #logo-slogan a {
+        padding: 0 5px;
+      }
+    }
 
 /* Base */
 /* ----------------------------------------------------------*/
