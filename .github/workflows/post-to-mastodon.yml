@@ -31,7 +31,7 @@ jobs:
         message: |
           New post on my blog
           https://michaelchadwick.info/blog
-          ${{steps.notes.outputs.result"}}
+          ${{steps.notes.outputs.result}}
           #blog
         visibility: "private" # default: public
       env:
