@@ -14,7 +14,7 @@ jobs:
     - name: Notes 📝
       id: notes
       run: |
-        POST_NAME=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }})
+        git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
     - name: mastodon-send
       id: mastodon
       uses: cbrgm/mastodon-github-action@v1.0.3
@@ -23,6 +23,7 @@ jobs:
         message: |
           New post on my blog: $commitmsg
           post=$POST_NAME
+          ${{ steps.notes.outputs }}
           ${{ steps.notes.outputs.POST_NAME }}
           https://michaelchadwick.info/blog
           #blog
