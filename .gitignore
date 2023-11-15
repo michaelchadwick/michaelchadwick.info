@@ -19,6 +19,8 @@ keybase*
 .deploy.sh
 .jekyll-cache
 .jekyll-metadata
+.secrets
+act.json
 
 # meta config files
 dandelion.yml
