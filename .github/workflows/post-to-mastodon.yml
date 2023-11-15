@@ -9,7 +9,20 @@ jobs:
     if: contains(github.event.head_commit.message, 'new blog post:')
     runs-on: ubuntu-latest
     steps:
+    - name: Notes 📝
+      id: notes
+      uses: actions/github-script@d556feaca394842dc55e4734bf3bb9f685482fa0
+      with:
+        result-encoding: string
+        script: |
+          notes = context.payload.release.body
 
+          // replace all non-supported characters
+          // notes = notes.replaceAll('###', '')
+          // notes = notes.replaceAll('**', '')
+          // notes = notes.replace(/ \(\[[0-9a-z]+\]\(.*\)/g, '')
+          // notes = notes.trim()
+          return notes
     - name: mastodon-send
       id: mastodon
       uses: cbrgm/mastodon-github-action@v1.0.3
@@ -18,9 +31,9 @@ jobs:
         message: |
           New post on my blog
           https://michaelchadwick.info/blog
-
+          ${{steps.notes.outputs.result"}}
           #blog
-        visibility: "public" # default: public
+        visibility: "private" # default: public
       env:
         MASTODON_URL: ${{ secrets.MASTODON_URL }}
         MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
