@@ -7,33 +7,23 @@ on:
 jobs:
   Post-To-Mastodon:
     if: contains(github.event.head_commit.message, 'new blog post:')
+    env:
+      commitmsg: ${{ github.event.head_commit.message }}
     runs-on: ubuntu-latest
     steps:
     - name: Notes 📝
       id: notes
-      uses: actions/github-script@v7
-      with:
-        result-encoding: string
-        script: |
-          title = github.event.head_commit.message
-          return title
-
-          // notes = context.payload.release.body
-          // replace all non-supported characters
-          // notes = notes.replaceAll('###', '')
-          // notes = notes.replaceAll('**', '')
-          // notes = notes.replace(/ \(\[[0-9a-z]+\]\(.*\)/g, '')
-          // notes = notes.trim()
-          // return notes
+      run: |
+        git diff-tree --no-commit-id --name-only -r ${{ github.sha }} >> $POST_NAME
     - name: mastodon-send
       id: mastodon
       uses: cbrgm/mastodon-github-action@v1.0.3
 
       with:
         message: |
-          New post on my blog
+          New post on my blog: $commitmsg
+          $POST_NAME
           https://michaelchadwick.info/blog
-          ${{ steps.notes.outputs.title }}
           #blog
         visibility: "private" # default: public
       env:
