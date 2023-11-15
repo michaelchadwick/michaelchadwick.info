@@ -15,8 +15,8 @@ jobs:
       with:
         result-encoding: string
         script: |
-          title = github.event.head_commit.message
-          return title
+          // title = github.event.head_commit.message
+          // return title
 
           // notes = context.payload.release.body
           // replace all non-supported characters
@@ -33,7 +33,8 @@ jobs:
         message: |
           New post on my blog
           https://michaelchadwick.info/blog
-          ${{steps.title.outputs.result}}
+          ${{ github.event.commits[0].message }}
+          ${{ github.event.head_commit.message }}
           #blog
         visibility: "private" # default: public
       env:
