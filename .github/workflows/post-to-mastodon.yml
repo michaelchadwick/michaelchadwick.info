@@ -14,7 +14,15 @@ jobs:
     - name: Identify Added Blog Post
       id: parse_commit
       run: |
-        post_file=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }})
+        if [ -n ${{ github.event.act }} ]; then
+          sha=${{ secrets.TEST_SHA }}
+          echo "using ${{ secrets.TEST_SHA }} for local act testing"
+        else
+          sha=${{ github.sha }}
+        fi
+
+        # Get filename added in most recent commit
+        post_file=$(git diff-tree --no-commit-id --name-only -r $sha)
 
         if [ -n "$post_file" ]; then
           # Assuming only one new blog post is added in the commit
@@ -30,12 +38,14 @@ jobs:
           url=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | sed -E 's/[[:space:]]+/-/g' | sed -E 's/^-//;s/-$//')
           post_url="$base_url/$date/$url"
 
-          echo "post_title=$title" >> $GITHUB_ENV
-          echo "post_url=$post_url" >> $GITHUB_ENV
-          echo "post_tags=$tags" >> $GITHUB_ENV
+          # Add pertinent Github environment variables
+          #echo "post_title=$title" >> $GITHUB_ENV
+          #echo "post_url=$post_url" >> $GITHUB_ENV
+          #echo "post_tags=$tags" >> $GITHUB_ENV
         fi
     - name: Post to Mastodon
       id: mastodon
+      if: ${{ env.post_title != '' && env.post_url != '' }}
       uses: cbrgm/mastodon-github-action@v1.0.3
       with:
         message: |
@@ -43,7 +53,7 @@ jobs:
           ${{ env.post_url }}
 
           #blog ${{ env.post_tags }}
-        visibility: "private" # default: public
+        visibility: "private"
       env:
         MASTODON_URL: ${{ secrets.MASTODON_URL }}
         MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
