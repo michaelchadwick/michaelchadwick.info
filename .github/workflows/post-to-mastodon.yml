@@ -52,7 +52,7 @@ jobs:
           New blog: "${{ env.post_title }}"
           ${{ env.post_url }}
 
-          #blog ${{ env.post_tags }}
+          ${{ env.post_tags }} #blog
         visibility: "public"
       env:
         MASTODON_URL: ${{ secrets.MASTODON_URL }}
