@@ -28,15 +28,20 @@ jobs:
   post:
     if: contains(github.event.head_commit.message, 'new blog post:')
     runs-on: ubuntu-latest
-    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Get Commit SHA
+      id: get_commit_sha
+      if: ${{ !env.ACT }}
+      run: |
+        echo "Running on Github"
+        echo "sha=${{ github.sha }}" >> $GITHUB_ENV
     - name: Identify Added Blog Post
       id: identify_added_blog_post
       run: |
-        if [ -n ${{ github.event.act }} ]; then
+        if [ -z ${{ env.sha }} ]; then
+          echo "using secret local SHA for 'act' testing"
           sha=${{ secrets.TEST_SHA }}
-          echo "using ${{ secrets.TEST_SHA }} for local act testing"
-        else
-          sha=${{ github.sha }}
         fi
 
         if [ -n "$post_file" ]; then
@@ -131,26 +136,36 @@ Also, the `runs-on` value is there because a small VM gets spun up to run your a
 
 ```yaml
 steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Get Commit SHA
+      id: get_commit_sha
+      if: ${{ !env.ACT }}
+      run: |
+        echo "Running on Github"
+        echo "sha=${{ github.sha }}" >> $GITHUB_ENV
     - name: Identify Added Blog Post
-      id: identify_added_blog_post
     ...
     - name: Post to Mastodon
-      id: post_to_mastodon
+    ...
 ```
 
-My one job has two steps: parse the commit to get the title, url, and tags from a Markdown file, and then post it to Mastodon.
+My one job has four steps:
+
+1. Checkout code using a default Github Action
+2. If we are not using `act` on local (i.e. on Github), use the latest SHA
+3. Parse the commit to get the title, url, and tags from a Markdown file
+4. Post to Mastodon
 
 ```yaml
       run: |
-        if [ -n ${{ github.event.act }} ]; then
+        if [ -z ${{ env.sha }} ]; then
+          echo "using secret local SHA for 'act' testing"
           sha=${{ secrets.TEST_SHA }}
-          echo "using ${{ secrets.TEST_SHA }} for local act testing"
-        else
-          sha=${{ github.sha }}
         fi
 ```
 
-This part grabs the SHA (the long alphanumeric string that identifies your commit) from the most recent `git push` and uses it later to extract information about the blog post I want to use in my Mastodon post. Since I'm using `act` for local development, there's a check for it so I can use an existing SHA that already has the correct commit message and file added if this action is run locally.
+The above part is in step 3 and sets a environment variable for our SHA (the long alphanumeric string that identifies your commit) if it hasn't been set in step 2. This `secrets.TEST_SHA` is a hand-picked identifier from the git repo's history that I know has the correct commit message and file added, and is used for local testing. The action uses the SHA later to extract information about the blog post to use in my Mastodon post.
 
 The rest of the `identify_added_blog_post` step consists mainly of grabbing info from the Markdown file using *nix tools like `awk` and `grep` and `sed`, and was helpfully provided by ChatGPT3. The variables I need are added to the `$GITHUB_ENV` variable to be used in the second step.
 
