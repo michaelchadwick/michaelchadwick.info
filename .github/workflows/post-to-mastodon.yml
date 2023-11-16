@@ -11,14 +11,18 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    - name: Get Commit SHA
+      id: get_commit_sha
+      if: ${{ !env.ACT }}
+      run: |
+        echo "Running on Github"
+        echo "sha=${{ github.sha }}" >> $GITHUB_ENV
     - name: Identify Added Blog Post
       id: identify_added_blog_post
       run: |
-        if [ -n ${{ github.event.act }} ]; then
+        if [ -z ${{ env.sha }} ]; then
+          echo "using secret local SHA for 'act' testing"
           sha=${{ secrets.TEST_SHA }}
-          echo "using ${{ secrets.TEST_SHA }} for local act testing"
-        else
-          sha=${{ github.sha }}
         fi
 
         # Get filename added in most recent commit
