@@ -14,8 +14,7 @@ jobs:
     - name: Identify Added Blog Post
       id: parse_commit
       run: |
-        # post_file=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }})
-        post_file=$(git diff-tree --no-commit-id --name-only -r 2a3656d0c115521f1c69181d54e533b602a8955b)
+        post_file=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }})
 
         if [ -n "$post_file" ]; then
           # Assuming only one new blog post is added in the commit
