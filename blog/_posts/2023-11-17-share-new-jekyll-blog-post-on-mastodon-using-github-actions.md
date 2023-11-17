@@ -2,6 +2,7 @@
 layout: post
 title: "Share New Jekyll Blog Post on Mastodon Using Github Actions"
 tags: automation chatgpt chatgpt3 github github-actions jekyll mastodon
+headerImage: posts/2023/github-actions-2023-11-17.jpg
 published: true
 ---
 
