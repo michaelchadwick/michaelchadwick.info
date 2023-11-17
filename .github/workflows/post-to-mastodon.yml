@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Get Commit SHA
       id: get_commit_sha
       if: ${{ !env.ACT }}
@@ -55,6 +57,7 @@ jobs:
         fi
     - name: Post to Mastodon
       id: post_to_mastodon
+      if: ${{ env.post_title != '' && env.post_url != '' }}
       uses: cbrgm/mastodon-github-action@v1.0.3
       with:
         message: |
