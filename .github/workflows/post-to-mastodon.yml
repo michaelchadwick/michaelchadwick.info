@@ -51,7 +51,6 @@ jobs:
         fi
     - name: Post to Mastodon
       id: post_to_mastodon
-      if: ${{ env.post_url != '' }}
       uses: cbrgm/mastodon-github-action@v1.0.3
       with:
         message: |
