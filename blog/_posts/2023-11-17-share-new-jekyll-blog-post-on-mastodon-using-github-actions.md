@@ -86,7 +86,7 @@ jobs:
 
 I _would_ say that this Github Action I have written is a Github Action I have written, except for the fact that a lot of it was written by [ChatGPT3](https://chat.openai.com).
 
-My initial stab at writing a Github Action was a lot less complicated than the final one, and didn't have a long shell script to create variables. The resulting Mastodon post was just a link to my blog, and a simple "New blog post" title. I figured I could do better than this, but it would take some real effort.
+My initial stab at writing a Github Action was a lot less complicated than the final one, didn't use [Github's repo checkout action](https://github.com/actions/checkout), and didn't have a long shell script to create variables. The resulting Mastodon post was just a link to my blog, and a simple "New blog post" title. I figured I could do better than this, but it would take some real effort.
 
 Poring through the docs yielded some half-hearted and nonfunctional results (creating actions are not as simple as I would hope), so I did something I've done very little of thus far: I asked ChatGPT.
 
@@ -194,12 +194,12 @@ The rest of the `identify_added_blog_post` step consists mainly of grabbing info
         MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
 ```
 
-Thanks to [this Github Action](https://github.com/cbrgm/mastodon-github-action), I could bring those juicy variables to my second step and plug them into the `with: message:` value. Finally, a worthy payload is sent off to my Mastodon instance.
+Thanks to [this Github Action](https://github.com/cbrgm/mastodon-github-action), I could bring those juicy variables to my final step and plug them into the `with: message:` value. Finally, a worthy payload is sent off to my Mastodon instance, and the people rejoiced.
 
 ## FOR THE ROAD
 
-For how little I actually write blog posts, the time spent on getting a Github Action to work was probably overkill. However, as a programmer, just trying to see if it can be done is a valid reason for anything.
+For how little I actually write blog posts, the time spent on getting a Github Action to work was most likely overkill. However, as a programmer, just trying to see if it can be done is a valid reason for anything.
 
 Now that this blog post is done, committing its finality and pushing it to Github will hopefully, and accurately, create a Mastodon post linking to it. The meta of all this is truly overwhelming.
 
-_POSTSCRIPT_: Guess what? Running this on Github did not quite work, so more fiddling was necessary. What fun.
+_POSTSCRIPT_: Guess what? Running this on Github did not quite work, so more fiddling was necessary: Apparently, the Github checkout action needed some additional configuration (the code above has been updated) to actually see the commit that is crucial for getting the filename for anything else to work. This wasn't necessary for `act` to work, so it was confusing for sure. But now it works! Yaaaaaaaay!
