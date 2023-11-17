@@ -27,6 +27,8 @@ jobs:
           sha=${{ env.sha }}
         fi
 
+        echo "Using SHA: $sha"
+
         # Get filename added in most recent commit
         post_file=$(git diff-tree --no-commit-id --name-only -r $sha)
 
