@@ -22,9 +22,9 @@ jobs:
       run: |
         if [ -z ${{ env.sha }} ]; then
           echo "using secret local SHA for 'act' testing"
-          $sha=${{ secrets.TEST_SHA }}
+          sha=${{ secrets.TEST_SHA }}
         else
-          $sha=${{ env.sha }}
+          sha=${{ env.sha }}
         fi
 
         # Get filename added in most recent commit
