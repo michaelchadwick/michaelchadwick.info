@@ -30,6 +30,8 @@ jobs:
         # Get filename added in most recent commit
         post_file=$(git diff-tree --no-commit-id --name-only -r $sha)
 
+        echo "Using file: $post_file"
+
         if [ -n "$post_file" ]; then
           # Assuming only one new blog post is added in the commit
           new_post_file=$(echo "$post_file" | head -n 1)
@@ -58,7 +60,7 @@ jobs:
           ${{ env.post_url }}
 
           ${{ env.post_tags }} #blog
-        visibility: "public"
+        visibility: "private"
       env:
         MASTODON_URL: ${{ secrets.MASTODON_URL }}
         MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
