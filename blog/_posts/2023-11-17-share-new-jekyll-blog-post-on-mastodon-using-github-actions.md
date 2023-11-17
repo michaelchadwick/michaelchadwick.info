@@ -17,6 +17,8 @@ Github Actions are YAML config files you write to trigger some kind of event to 
 
 I'll go into detail on some specifics, but first here's the full thing:
 
+{% raw %}
+
 ```yaml
 name: Blog2Masto
 on:
@@ -82,6 +84,8 @@ jobs:
         MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
 ```
 
+{% endraw %}
+
 ## ARTIFICIAL INTELLIHELP
 
 I _would_ say that this Github Action I have written is a Github Action I have written, except for the fact that a lot of it was written by [ChatGPT3](https://chat.openai.com).
@@ -117,6 +121,8 @@ It's not exaggeration to claim that without the previous online help, I would ha
 
 Thus, my `.github/workflows/post-to-mastodon.yml` action was truly born, and now we will break it down.
 
+{% raw %}
+
 ```yaml
 name: Blog2Masto
 on:
@@ -125,7 +131,11 @@ on:
       - 'blog/_posts/*.md'
 ```
 
+{% endraw %}
+
 Github Actions are referred to as _workflows_ that are triggered by some kind of _event_ that occurs on a repository. My _event_ is simple: when I do a `git push`, check if there is a file within the commit that matches a path. That path is where my blog posts live. If so, run a _job_.
+
+{% raw %}
 
 ```yaml
 jobs:
@@ -134,9 +144,13 @@ jobs:
     runs-on: ubuntu-latest
 ```
 
+{% endraw %}
+
 Github Actions consist of _jobs_ that consist of _steps_. I only have one job I need to accomplish: post to my Mastodon instance. I only want the job to run if a `git push` is adding a new blog post, so I figured the easiest way was to just put that in the commit message and check for it. There may be a way to do this by checking for "only when a Markdown post is _added_", but this works for my purpose.
 
 Also, the `runs-on` value is there because a small VM gets spun up to run your action, which is kind of cool.
+
+{% raw %}
 
 ```yaml
 steps:
@@ -156,12 +170,16 @@ steps:
     ...
 ```
 
+{% endraw %}
+
 My one job has four steps:
 
 1. Checkout code using a default Github Action
 2. If we are not using `act` on local (i.e. on Github), use the latest SHA
 3. Parse the commit to get the title, url, and tags from a Markdown file
 4. Post to Mastodon
+
+{% raw %}
 
 ```yaml
       run: |
@@ -173,9 +191,13 @@ My one job has four steps:
         fi
 ```
 
+{% endraw %}
+
 The above part is in step 3 and sets a environment variable for our SHA (the long alphanumeric string that identifies your commit) if it hasn't been set in step 2. This `secrets.TEST_SHA` is a hand-picked identifier from the git repo's history that I know has the correct commit message and file added, and is used for local testing. The action uses the SHA later to extract information about the blog post to use in my Mastodon post.
 
 The rest of the `identify_added_blog_post` step consists mainly of grabbing info from the Markdown file using *nix tools like `awk` and `grep` and `sed`, and was helpfully provided by ChatGPT3. The variables I need are added to the `$GITHUB_ENV` variable to be used in the second step.
+
+{% raw %}
 
 ```yaml
     - name: Post to Mastodon
@@ -193,6 +215,8 @@ The rest of the `identify_added_blog_post` step consists mainly of grabbing info
         MASTODON_URL: ${{ secrets.MASTODON_URL }}
         MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
 ```
+
+{% endraw %}
 
 Thanks to [this Github Action](https://github.com/cbrgm/mastodon-github-action), I could bring those juicy variables to my final step and plug them into the `with: message:` value. Finally, a worthy payload is sent off to my Mastodon instance, and the people rejoiced.
 
