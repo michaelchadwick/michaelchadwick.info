@@ -176,7 +176,7 @@ The rest of the `identify_added_blog_post` step consists mainly of grabbing info
 ```yaml
     - name: Post to Mastodon
       id: post_to_mastodon
-      if: ${{ env.post_title != '' && env.post_url != '' }}
+      if: ${{ env.post_url != '' }}
       uses: cbrgm/mastodon-github-action@v1.0.3
       with:
         message: |
