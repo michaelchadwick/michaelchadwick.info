@@ -42,6 +42,8 @@ jobs:
         if [ -z ${{ env.sha }} ]; then
           echo "using secret local SHA for 'act' testing"
           sha=${{ secrets.TEST_SHA }}
+        else
+          sha=${{ env.sha }}
         fi
 
         if [ -n "$post_file" ]; then
@@ -162,6 +164,8 @@ My one job has four steps:
         if [ -z ${{ env.sha }} ]; then
           echo "using secret local SHA for 'act' testing"
           sha=${{ secrets.TEST_SHA }}
+        else
+          sha=${{ env.sha }}
         fi
 ```
 
