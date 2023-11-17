@@ -197,3 +197,5 @@ Thanks to [this Github Action](https://github.com/cbrgm/mastodon-github-action),
 For how little I actually write blog posts, the time spent on getting a Github Action to work was probably overkill. However, as a programmer, just trying to see if it can be done is a valid reason for anything.
 
 Now that this blog post is done, committing its finality and pushing it to Github will hopefully, and accurately, create a Mastodon post linking to it. The meta of all this is truly overwhelming.
+
+_POSTSCRIPT_: Guess what? Running this on Github did not quite work, so more fiddling was necessary. What fun.
