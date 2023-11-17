@@ -30,6 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     - name: Checkout code
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Get Commit SHA
       id: get_commit_sha
       if: ${{ !env.ACT }}
@@ -140,6 +142,8 @@ Also, the `runs-on` value is there because a small VM gets spun up to run your a
 steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Get Commit SHA
       id: get_commit_sha
       if: ${{ !env.ACT }}
