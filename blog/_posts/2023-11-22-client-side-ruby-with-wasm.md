@@ -6,7 +6,7 @@ headerImage: posts/2023/ruby-on-wasm-2023-11-22.jpg
 published: true
 ---
 
-I've never tried to do anything with Web Assembly before, even though it seems quite exciting. However, while searching the Internet for a way to showcase some old Ruby scripts I wrote once in my early programming days, I came upon this Javascript library that lets you run Ruby in a web page.
+I've never tried to do anything with Web Assembly before, even though it seems quite exciting. However, while searching the Internet for a way to showcase some old Ruby scripts I wrote once in my early programming days, I came upon this Javascript library that lets you run client-side Ruby in a web page.
 
 And folks...I just had to try it out.
 
