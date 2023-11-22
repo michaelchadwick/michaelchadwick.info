@@ -30,7 +30,7 @@ jobs:
         fi
 
         # Get filename added in most recent commit
-        post_file=$(git diff-tree --no-commit-id --name-only -r $sha) | grep -E '_posts/.*\.md$'
+        post_file=$(git diff-tree --no-commit-id --name-only -r $sha | grep -E '_posts/.*\.md$')
 
         if [ -n "$post_file" ]; then
           # Assuming only one new blog post is added in the commit
