@@ -63,20 +63,19 @@ a.formatlink {
     }
 
 ul.skills {
-  color: #333;
+  color: #282828;
   margin: 0;
 }
   ul.skills li {
     clear: left;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 700;
     list-style: square;
   }
     ul.skills li.first {
       clear: none;
       float: left;
-      font-size: 16px;
-      font-weight: bold;
+      font-weight: 900;
       line-height: 16px;
       list-style: none;
       margin-bottom: 2px;
@@ -87,6 +86,17 @@ ul.skills {
     ul.skills li.first-next {
       clear: both;
     }
+
+  ul.skills.other {
+    color: #383838;
+    margin: 0;
+  }
+    ul.skills.other li {
+      font-weight: 500;
+    }
+      ul.skills.other li.first {
+        font-weight: 700;
+      }
 
 @media (min-width: 768px) {
   ul.skills li {
