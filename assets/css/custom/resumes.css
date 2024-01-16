@@ -13,7 +13,7 @@ a.formatlink {
   font-size: 1.1em;
   font-weight: 600;
   letter-spacing: 0.08em;
-  padding: 6px 15px;
+  padding: 3px 10px;
   position: relative;
   text-align: left;
   width: 100%;
@@ -22,7 +22,7 @@ a.formatlink {
 .jobindent {
   clear: both;
   font-weight: bold;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 5px;
 }
 
 .jobname {
@@ -62,29 +62,35 @@ a.formatlink {
       margin-left: 5px;
     }
 
+ul li::before {
+  content: '';
+  margin-left: -0.5rem;
+}
+
 ul.skills {
   color: #282828;
+  display: block;
   margin: 0;
 }
+  @media (min-width: 768px) {
+    ul.skills {
+      align-items: center;
+      display: flex;
+    }
+  }
+
   ul.skills li {
-    clear: left;
     font-size: 16px;
     font-weight: 700;
     list-style: square;
+    margin-left: 2rem;
   }
     ul.skills li.first {
-      clear: none;
-      float: left;
       font-weight: 900;
       line-height: 16px;
       list-style: none;
-      margin-bottom: 2px;
+      margin-bottom: 0.5rem;
       margin-left: 0;
-      margin-right: 12px;
-      margin-top: 5px;
-    }
-    ul.skills li.first-next {
-      clear: both;
     }
 
   ul.skills.other {
@@ -100,12 +106,9 @@ ul.skills {
 
 @media (min-width: 768px) {
   ul.skills li {
-    clear: none;
-    float: left;
     margin: 2px 14px;
   }
     ul.skills li.first {
-      clear: left;
       margin-left: 5px;
       width: 240px;
     }
