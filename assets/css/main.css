@@ -147,11 +147,15 @@ a {
     color: var(--link-color-rev);
     display: inline-block;
     font-weight: 600;
-    left: 0.5rem;
     margin-bottom: 3rem;
     padding: 0.8rem 2.5rem;
     position: relative;
   }
+    @media (min-width: 550px) {
+      a.btn-more {
+        left: 0.5rem;
+      }
+    }
     a.btn-more:hover {
       background-color: var(--link-color-rev);
       border: 1px solid var(--link-color);
