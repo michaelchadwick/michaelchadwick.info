@@ -70,12 +70,13 @@ ul li::before {
 ul.skills {
   color: #282828;
   display: block;
-  margin: 0;
 }
   @media (min-width: 768px) {
     ul.skills {
       align-items: center;
       display: flex;
+      gap: 2rem;
+      padding: 0.25rem 0;
     }
   }
 
@@ -83,15 +84,26 @@ ul.skills {
     font-size: 16px;
     font-weight: 700;
     list-style: square;
-    margin-left: 2rem;
   }
     ul.skills li.first {
       font-weight: 900;
-      line-height: 16px;
       list-style: none;
-      margin-bottom: 0.5rem;
-      margin-left: 0;
     }
+      @media (min-width: 768px) {
+        ul.skills li.first {
+          line-height: 16px;
+          margin-left: 1.5rem;
+          min-width: 220px;
+        }
+      }
+      ul.skills li:not(.first) {
+        margin-left: 2rem;
+      }
+        @media (min-width: 768px) {
+          ul.skills li:not(.first) {
+            margin-left: 0.5rem;
+          }
+        }
 
   ul.skills.other {
     color: #383838;
@@ -103,28 +115,6 @@ ul.skills {
       ul.skills.other li.first {
         font-weight: 700;
       }
-
-@media (min-width: 768px) {
-  ul.skills li {
-    margin: 2px 14px;
-  }
-    ul.skills li.first {
-      margin-left: 5px;
-      width: 240px;
-    }
-      ul.skills li.first.tall {
-        margin-bottom: 25px;
-      }
-      ul.skills li.first.taller {
-        margin-bottom: 50px;
-      }
-      ul.skills li.first.tallest {
-        margin-bottom: 75px;
-      }
-      ul.skills li.first-next {
-        clear: none;
-      }
-}
 
 #print-link {
   margin: 5px 45px;

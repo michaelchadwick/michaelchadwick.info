@@ -785,7 +785,7 @@ footer {
 /* override skeleton */
 .container {
   padding: 0;
-  width: 90%;
+  width: 95%;
 }
   @media (min-width: 550px) {
     .container {
