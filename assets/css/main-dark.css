@@ -32,6 +32,18 @@ body.dark-theme {
   background-image: url(/assets/images/wavey-fingerprint.svg);
   /* background-image by SVGBackgrounds.com */
 }
+  body.dark-theme .button:hover, button:hover,
+  body.dark-theme input[type="submit"]:hover,
+  body.dark-theme input[type="reset"]:hover,
+  body.dark-theme input[type="button"]:hover,
+  body.dark-theme .button:focus,
+  body.dark-theme button:focus,
+  body.dark-theme input[type="submit"]:focus,
+  body.dark-theme input[type="reset"]:focus,
+  body.dark-theme input[type="button"]:focus {
+    color: var(--text-color);
+  }
+
   body.dark-theme a {
     background: #282828;
     color: #9bc9d7;
@@ -85,6 +97,9 @@ body.dark-theme ul.links li span {
   body.dark-theme ul.links li.manual.music {
     list-style-image: url('../images/music-rev.svg');
   }
+body.dark-theme ul.skills {
+  color: var(--text-color);
+}
 
 body.dark-theme header.header-scrolled {
   background: #000000ee;

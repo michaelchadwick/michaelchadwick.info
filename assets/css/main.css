@@ -17,10 +17,12 @@
 
   --neutral-gray:         #d3d3d3;
   --neutral-black:        #282828;
+  --neutral-dark-gray:    #b1b1b1;
   --neutral-white:        #fafafa;
   --neutral-white-trans:  #f6f6f6ee;
 
   --text-color:             var(--neutral-black);
+  --text-shaded-color:      var(--neutral-dark-gray);
   --bg-color:               var(--neutral-white-trans);
 }
 
@@ -117,6 +119,7 @@ body {
     body {
       --bg-color: #282828ee;
       --text-color: #f3f3f3;
+      --text-shaded-color: #b1b1b1;
     }
       body.light-theme {
         --bg-color: #f6f6f6ee;

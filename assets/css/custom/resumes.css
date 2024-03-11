@@ -68,7 +68,7 @@ ul li::before {
 }
 
 ul.skills {
-  color: #282828;
+  color: var(--text-color);
   display: block;
 }
   @media (min-width: 768px) {
@@ -106,7 +106,7 @@ ul.skills {
         }
 
   ul.skills.other {
-    color: #383838;
+    color: var(--text-shaded-color);
     margin: 0;
   }
     ul.skills.other li {
@@ -141,6 +141,10 @@ ul.skills {
     vertical-align: middle;
     white-space: nowrap;
   }
+    #print-link a.button:hover {
+      border-color: var(--text-shaded-color);
+      text-decoration: none;
+    }
 
 #job-types {
   border-top: 1px solid #444;
