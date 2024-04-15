@@ -7,6 +7,7 @@
 .jshintrc
 *.icloud
 LICENSE.md
+localdev.sh
 README.md
 Rakefile
 rsync-exclude.txt
