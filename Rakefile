@@ -4,9 +4,9 @@ task :deploy do |t|
   # build site
   sh "JEKYLL_ENV=production bundle exec jekyll build"
   # sync site to remote host
-  sh "rsync -auP --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
+  sh "rsync -auP --no-p --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
   # backup drafts
-  sh "rsync -auP ./_drafts/* $MCINFO_DRAFTS"
+  sh "rsync -auP --no-p ./_drafts/* $MCINFO_DRAFTS"
 end
 
 task :deploy_unpub do |t|
@@ -15,9 +15,9 @@ task :deploy_unpub do |t|
   # build site (with unpublished posts)
   sh "JEKYLL_ENV=production bundle exec jekyll build --unpublished"
   # sync site to remote host
-  sh "rsync -auP --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
+  sh "rsync -auP --no-p --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
   # backup drafts
-  sh "rsync -auP ./_drafts/* $MCINFO_DRAFTS"
+  sh "rsync -auP --no-p ./_drafts/* $MCINFO_DRAFTS"
 end
 
 task :build do |t|
@@ -41,7 +41,7 @@ task :serve_unpub_prod do |t|
 end
 
 task :sync do |t|
-  sh "rsync -auP --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
+  sh "rsync -auP --no-p --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
 end
 
 task :default => [:deploy]
