@@ -54,22 +54,47 @@ indentedLists.forEach(li => {
   }
 })
 
+const unpubIndicator = document.querySelector('#unpub-indicator')
+const envIndicator = document.querySelector('#env-indicator')
+
+if (unpubIndicator) {
+  unpubIndicator.style.display = 'flex'
+}
+if (envIndicator) {
+  envIndicator.style.display = 'flex'
+}
+
 const themeToggler = document.querySelector('#theme-toggler')
 const imgThemeToggler = document.querySelector('#theme-toggler span.theme-image')
 const lblThemeToggler = document.querySelector('#theme-toggler span.theme-label')
 const headerScrolled = document.querySelector('header.header-scrolled')
-const bodyClasses = document.body.classList
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
-const currentTheme = localStorage.getItem('mcinfo-theme')
+const savedTheme = localStorage.getItem('mcinfo-theme')
 
+let bodyClasses = document.body.classList
+bodyClasses.remove(['dark-theme', 'light-theme'])
+
+// check system color theme first
+if (prefersDarkScheme.matches) {
+  bodyClasses.add('dark-theme')
+  bodyClasses.remove('light-theme')
+  imgThemeToggler.innerHTML = '🌙'
+} else {
+  bodyClasses.add('light-theme')
+  bodyClasses.remove('dark-theme')
+  imgThemeToggler.innerHTML = '☀️'
+}
+
+// then check theme toggler
 if (themeToggler) {
-  if (currentTheme == 'dark') {
-    bodyClasses.toggle('dark-theme')
-
+  themeToggler.style.display = 'inline-block'
+  if (savedTheme == 'dark') {
+    bodyClasses.add('dark-theme')
+    bodyClasses.remove('light-theme')
     imgThemeToggler.innerHTML = '🌙'
   } else {
-    bodyClasses.toggle('light-theme')
-
+    bodyClasses.add('light-theme')
+    bodyClasses.remove('dark-theme')
     imgThemeToggler.innerHTML = '☀️'
   }
 }
@@ -149,13 +174,6 @@ MCInfo.initApi = () => {
 
   MCInfo._handleScroll()
   MCInfo._handleResize()
-
-  if (prefersDarkScheme.matches) {
-    bodyClasses.add('dark-theme')
-    bodyClasses.remove('light-theme')
-    imgThemeToggler.innerHTML = '🌙'
-  }
-
   MCInfo._handleVisibility()
 }
 

@@ -560,7 +560,7 @@ div#unpub-indicator {
   border: 1px solid #bbb;
   border-radius: 4px;
   bottom: 5px;
-  display: flex;
+  display: none;
   font-size: 1.2rem;
   font-weight: 600;
   height: 40px;
@@ -590,7 +590,7 @@ div#env-indicator {
   border: 1px solid #bbb;
   border-radius: 4px;
   bottom: 5px;
-  display: flex;
+  display: none;
   font-size: 1.2rem;
   font-weight: 600;
   height: 40px;
@@ -618,6 +618,7 @@ div#env-indicator {
 button#theme-toggler {
   background-color: var(--bg-color);
   bottom: 5px;
+  display: none;
   font-size: 1.5rem;
   font-weight: 600;
   height: 40px;
