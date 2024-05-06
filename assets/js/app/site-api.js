@@ -1,7 +1,7 @@
-// frontend script to send out HTTP requests to
-//   backend script that actually accesses remote APIs
+// frontend script to send out HTTP requests to APIs
+// - some go to a backend script due to authentication
 
-// BOARDGAMEGEEK
+// BOARDGAMEGEEK (frontend)
 MCInfo.BGG = function() {
   const bggLastGamePlayed = document.querySelector('.bggLastGamePlayed')
   const bggApiData = document.querySelector('.apiData.bgg')
@@ -43,7 +43,7 @@ MCInfo.BGG = function() {
   })
 }
 
-// BLOG
+// BLOG (frontend)
 MCInfo.BLOG = function() {
   const devblog = document.querySelector('.mcinfoBlog')
   const devblogApi = document.querySelector('.apiData.devblog')
@@ -88,7 +88,7 @@ MCInfo.BLOG = function() {
   })
 }
 
-// GITHUB
+// GITHUB (frontend)
 MCInfo.GH = async function() {
   // get pinned projects
   fetch(`${GH_PINNED_API}${GH_USER}`, {
@@ -154,7 +154,7 @@ MCInfo.GH = async function() {
   // }
 }
 
-// PODBEAN
+// PODBEAN (backend)
 MCInfo.POD = function() {
   // get most recent podcast episode
   fetch(BACKEND_SITE_API_PATH, {
@@ -182,7 +182,7 @@ MCInfo.POD = function() {
   })
 }
 
-// RUBYGEMS
+// RUBYGEMS (backend)
 MCInfo.RG = async function() {
   // get linked list of rubygems
   fetch(BACKEND_SITE_API_PATH, {
@@ -214,7 +214,7 @@ MCInfo.RG = async function() {
   })
 }
 
-// STEAM
+// STEAM (backend)
 MCInfo.STEAM = function() {
   const steamLastGamePlayed = document.querySelector('.steamLastGamePlayed')
   const steamApiData = document.querySelector('.apiData.steam')
