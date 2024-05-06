@@ -154,7 +154,7 @@ MCInfo.GH = async function() {
 // PODBEAN
 MCInfo.POD = function() {
   // get most recent podcast episode
-  fetch(SITE_API_URL, {
+  fetch(BACKEND_SITE_API_PATH, {
     method: 'POST',
     mode: 'cors',
     headers: {
@@ -182,7 +182,7 @@ MCInfo.POD = function() {
 // RUBYGEMS
 MCInfo.RG = async function() {
   // get linked list of rubygems
-  fetch(SITE_API_URL, {
+  fetch(BACKEND_SITE_API_PATH, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -217,7 +217,7 @@ MCInfo.STEAM = function() {
   const steamApiData = document.querySelector('.apiData.steam')
 
   // get most recent steam game played
-  fetch(SITE_API_URL, {
+  fetch(BACKEND_SITE_API_PATH, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

@@ -15,7 +15,7 @@ const MCINFO_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_BLOG_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_API_URL = '/api/v1/pages.json'
 
-const SITE_API_URL = '/assets/php/site-api.php'
+const BACKEND_SITE_API_PATH = '/assets/php/site-api.php'
 const SITE_VIS_URL = '/assets/php/site-visibility.php'
 
 // wordpress has been deleted
