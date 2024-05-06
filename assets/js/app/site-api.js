@@ -1,3 +1,6 @@
+// frontend script to send out HTTP requests to
+//   backend script that actually accesses remote APIs
+
 // BOARDGAMEGEEK
 MCInfo.BGG = function() {
   const bggLastGamePlayed = document.querySelector('.bggLastGamePlayed')
