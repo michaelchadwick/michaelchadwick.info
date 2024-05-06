@@ -154,7 +154,8 @@ MCInfo.initApi = () => {
     // get external site data
     MCInfo.BGG()
     MCInfo.BLOG()
-    MCInfo.GH()
+    // pinned repo service in flux, so turning off for now
+    // MCInfo.GH()
 
     // podbean fails on local for some reason
     if (MCInfo.env != 'local') {
