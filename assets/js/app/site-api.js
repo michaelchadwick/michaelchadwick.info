@@ -174,7 +174,9 @@ MCInfo.POD = function(type = 'latest') {
       podbeanEpisodes.innerHTML = "<ul>";
       
       data.body.episodes.forEach(ep => {
-        podbeanEpisodes.innerHTML += `<li>${ep.title.substring(20)}</li>`;
+        if (ep.status != 'draft') {
+          podbeanEpisodes.innerHTML += `<li>${ep.title.substring(20)}</li>`;
+        }
       })
       
       podbeanEpisodes.innerHTML += "</ul>";
