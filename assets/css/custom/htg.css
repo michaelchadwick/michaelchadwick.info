@@ -1,7 +1,12 @@
+body {
+  margin-top: 0;
+}
 .htgEpisodes {
   border: 2px solid #af3f3f;
   height: auto;
+  max-height: 400px;
   min-height: 50px;
   min-width: 50%;
+  overflow: auto;
   padding: 1em;
 }
