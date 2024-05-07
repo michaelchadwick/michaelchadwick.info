@@ -172,9 +172,11 @@ MCInfo.POD = function(type = 'latest') {
     if (type == 'episodes') {
       const podbeanEpisodes = document.querySelector('.htgEpisodes')
       podbeanEpisodes.innerHTML = "<ul>";
-      eps.body.episodes.forEach(ep => {
+      
+      data.body.episodes.forEach(ep => {
         podbeanEpisodes.innerHTML += `<li>${data.title.substring(20)}</li>`;
       })
+      
       podbeanEpisodes.innerHTML += "</ul>";
     } else {
       const podbeanApiListItem = document.querySelector('.htgPod')
