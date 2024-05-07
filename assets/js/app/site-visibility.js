@@ -1,6 +1,6 @@
 // BLOG_PRIV
 MCInfo.BLOG_PRIV = function(key) {
-  return fetch(SITE_VIS_URL, {
+  return fetch(BACKEND_SITE_VIS_PATH, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

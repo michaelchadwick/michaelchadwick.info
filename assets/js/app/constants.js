@@ -16,7 +16,7 @@ const MCINFO_BLOG_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_API_URL = '/api/v1/pages.json'
 
 const BACKEND_SITE_API_PATH = '/assets/php/site-api.php'
-const SITE_VIS_URL = '/assets/php/site-visibility.php'
+const BACKEND_SITE_VIS_PATH = '/assets/php/site-visibility.php'
 
 // wordpress has been deleted
 // const MUZBLOG_API_URL = 'https://blog.nebyoolae.com/wp-json/wp/v2/posts'
