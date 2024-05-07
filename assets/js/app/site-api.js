@@ -171,7 +171,11 @@ MCInfo.POD = function(type = 'latest') {
 
     if (type == 'episodes') {
       const podbeanEpisodes = document.querySelector('.htgEpisodes')
-      podbeanEpisodes.innerHTML = eps;
+      podbeanEpisodes.innerHTML = "<ul>";
+      eps.body.episodes.forEach(ep => {
+        podbeanEpisodes.innerHTML += `<li>${ep.title.substring(20)}</li>`;
+      })
+      podbeanEpisodes.innerHTML += "</ul>";
     } else {
       const podbeanApiListItem = document.querySelector('.htgPod')
       const podbeanDate = new Date(parseInt(ep.time * 1000)).toLocaleDateString('en-CA')
