@@ -166,22 +166,22 @@ MCInfo.POD = function(type = 'latest') {
     body: JSON.stringify({ 'site': 'podbean', 'arg1': type }),
   }).then(response => {
     return response.json()
-  }).then(eps => {
-    console.log('podbean api request SUCCESS')
+  }).then(data => {
+    // console.log('podbean api request SUCCESS')
 
     if (type == 'episodes') {
       const podbeanEpisodes = document.querySelector('.htgEpisodes')
       podbeanEpisodes.innerHTML = "<ul>";
       eps.body.episodes.forEach(ep => {
-        podbeanEpisodes.innerHTML += `<li>${ep.title.substring(20)}</li>`;
+        podbeanEpisodes.innerHTML += `<li>${data.title.substring(20)}</li>`;
       })
       podbeanEpisodes.innerHTML += "</ul>";
     } else {
       const podbeanApiListItem = document.querySelector('.htgPod')
-      const podbeanDate = new Date(parseInt(ep.time * 1000)).toLocaleDateString('en-CA')
+      const podbeanDate = new Date(parseInt(data.time * 1000)).toLocaleDateString('en-CA')
 
       podbeanApiListItem.innerHTML = `<span>Latest episode: ${podbeanDate}<br />`
-      podbeanApiListItem.innerHTML += `<a href="${ep.url}">${ep.title}</a></span>`
+      podbeanApiListItem.innerHTML += `<a href="${data.url}">${data.title}</a></span>`
     }
   }).catch(error => {
     console.error('podbean api request failed', error);
