@@ -169,18 +169,23 @@ MCInfo.POD = function(type = 'latest') {
   }).then(data => {
     // console.log('podbean api request SUCCESS')
 
+    // create list of all episode titles
     if (type == 'episodes') {
       const podbeanEpisodes = document.querySelector('.htgEpisodes')
-      podbeanEpisodes.innerHTML = "<ul>";
+      let html = "<ul>";
       
       data.body.episodes.forEach(ep => {
         if (ep.status != 'draft') {
-          podbeanEpisodes.innerHTML += `<li>${ep.title.substring(20)}</li>`;
+          html += `<li>${ep.title.substring(20)}</li>`;
         }
       })
       
-      podbeanEpisodes.innerHTML += "</ul>";
-    } else {
+      html += "</ul>";
+
+      podbeanEpisodes.innerHTML = html;
+    }
+    // display latest episode pertinent info
+    else {
       const podbeanApiListItem = document.querySelector('.htgPod')
       const podbeanDate = new Date(parseInt(data.time * 1000)).toLocaleDateString('en-CA')
 
