@@ -155,25 +155,30 @@ MCInfo.GH = async function() {
 }
 
 // PODBEAN (backend)
-MCInfo.POD = function() {
-  // get most recent podcast episode
+MCInfo.POD = function(type = 'latest') {
+  // get podcast episodes
   fetch(BACKEND_SITE_API_PATH, {
     method: 'POST',
     mode: 'cors',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ 'site': 'podbean' }),
+    body: JSON.stringify({ 'site': 'podbean', 'arg1': type }),
   }).then(response => {
     return response.json()
-  }).then(ep => {
-    // console.log('podbean api request SUCCESS')
+  }).then(eps => {
+    console.log('podbean api request SUCCESS')
 
-    const podbeanApiListItem = document.querySelector('.htgPod')
-    const podbeanDate = new Date(parseInt(ep.time * 1000)).toLocaleDateString('en-CA')
+    if (type == 'episodes') {
+      const podbeanEpisodes = document.querySelector('.htgEpisodes')
+      podbeanEpisodes.innerHTML = eps;
+    } else {
+      const podbeanApiListItem = document.querySelector('.htgPod')
+      const podbeanDate = new Date(parseInt(ep.time * 1000)).toLocaleDateString('en-CA')
 
-    podbeanApiListItem.innerHTML = `<span>Latest episode: ${podbeanDate}<br />`
-    podbeanApiListItem.innerHTML += `<a href="${ep.url}">${ep.title}</a></span>`
+      podbeanApiListItem.innerHTML = `<span>Latest episode: ${podbeanDate}<br />`
+      podbeanApiListItem.innerHTML += `<a href="${ep.url}">${ep.title}</a></span>`
+    }
   }).catch(error => {
     console.error('podbean api request failed', error);
 

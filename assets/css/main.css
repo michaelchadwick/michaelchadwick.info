@@ -8,12 +8,12 @@
   --color-faded4:         #2597cb;
   --color-primary-rev:    #d5f9ff;
 
-  --link-color:             var(--color-primary);
-  --link-color-faded1:      var(--color-faded1);
-  --link-color-faded2:      var(--color-faded2);
-  --link-color-faded3:      var(--color-faded3);
-  --link-color-faded4:      var(--color-faded4);
-  --link-color-rev:         var(--color-primary-rev);
+  --link-color:           var(--color-primary);
+  --link-color-faded1:    var(--color-faded1);
+  --link-color-faded2:    var(--color-faded2);
+  --link-color-faded3:    var(--color-faded3);
+  --link-color-faded4:    var(--color-faded4);
+  --link-color-rev:       var(--color-primary-rev);
 
   --neutral-gray:         #d3d3d3;
   --neutral-black:        #282828;
@@ -21,9 +21,9 @@
   --neutral-white:        #fafafa;
   --neutral-white-trans:  #f6f6f6ee;
 
-  --text-color:             var(--neutral-black);
-  --text-shaded-color:      var(--neutral-dark-gray);
-  --bg-color:               var(--neutral-white-trans);
+  --text-color:           var(--neutral-black);
+  --text-shaded-color:    var(--neutral-dark-gray);
+  --bg-color:             var(--neutral-white-trans);
 }
 
 :root {

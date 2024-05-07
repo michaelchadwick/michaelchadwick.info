@@ -11,6 +11,11 @@ $dotenv->load();
 if ($json = file_get_contents('php://input')) {
   $data = json_decode($json);
   $site = $data->site;
+  $arg1 = null;
+
+  if (isset($data->arg1)) {
+    $arg1 = $data->arg1;
+  }
 }
 // command line
 else if (isset($argv) && count($argv) > 1) {
@@ -78,7 +83,7 @@ switch ($site) {
       echo $responseString;
     }
 
-    // get latest episode
+    // get episodes
     try {
       $response = $client->get($PODBEAN_EPS_ROUTE . '?access_token=' . $token, [
         'debug' => false
@@ -86,22 +91,31 @@ switch ($site) {
 
       $body = json_decode($response->getBody()->getContents());
 
-      $i = 0;
-
-      while ($body->episodes[$i]->status == 'draft') {
-        $i++;
+      // get all episodes
+      if ($arg1 == 'episodes') {
+        echo json_encode([
+          'body' => $body
+        ]);
       }
+      // get latest episode
+      else {
+        $i = 0;
 
-      $ep = $body->episodes[$i];
-      $epTime = $ep->publish_time;
-      $epTitle = $ep->title;
-      $epUrl = $ep->permalink_url;
+        while ($body->episodes[$i]->status == 'draft') {
+          $i++;
+        }
 
-      echo json_encode([
-        'time' => $epTime,
-        'title' => $epTitle,
-        'url' => $epUrl
-      ]);
+        $ep = $body->episodes[$i];
+        $epTime = $ep->publish_time;
+        $epTitle = $ep->title;
+        $epUrl = $ep->permalink_url;
+
+        echo json_encode([
+          'time' => $epTime,
+          'title' => $epTitle,
+          'url' => $epUrl
+        ]);
+      }
     } catch (GuzzleHttp\Exception\RequestException $e) {
       $response = $e->getResponse();
       $responseString = $response->getBody()->getContents();
