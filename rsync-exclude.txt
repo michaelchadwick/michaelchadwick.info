@@ -12,5 +12,4 @@ localdev.sh
 README.md
 Rakefile
 rsync-exclude.txt
-TODO.md
-vendor/
+vendor
