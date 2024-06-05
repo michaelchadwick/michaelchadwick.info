@@ -3,9 +3,6 @@
 /* global MCInfo */
 /* eslint-disable no-undef */
 
-// TODO: Update Music Studio page with current gear
-// TODO: Add remaining drafts to blog as unpublished posts
-
 let theme = 'light'
 
 // find links and change their <li> background to be their favicon
