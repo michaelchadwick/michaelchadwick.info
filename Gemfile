@@ -6,6 +6,7 @@ group :default do
   gem 'json'
   gem 'kramdown-parser-gfm'
   gem 'psych', '>=3.3'
+  gem 'rake'
 end
 
 group :jekyll do
