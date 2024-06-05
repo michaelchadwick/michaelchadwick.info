@@ -25,19 +25,19 @@ task :build do |t|
 end
 
 task :serve do |t|
-  sh "bundle exec jekyll serve --incremental --livereload --watch --open-url http://localhost:4000"
+  sh "bundle exec jekyll serve --livereload --watch --open-url http://localhost:4000"
 end
 
 task :serve_prod do |t|
-  sh "JEKYLL_ENV=production bundle exec jekyll serve --watch --open-url http://localhost:4000"
+  sh "JEKYLL_ENV=production bundle exec jekyll serve --livereload --watch --open-url http://localhost:4000"
 end
 
 task :serve_unpub do |t|
-  sh "bundle exec jekyll serve --watch --unpublished --open-url http://localhost:4000"
+  sh "bundle exec jekyll serve --incremental --unpublished --livereload --watch --open-url http://localhost:4000"
 end
 
 task :serve_unpub_prod do |t|
-  sh "JEKYLL_ENV=production bundle exec jekyll serve --watch --unpublished --open-url http://localhost:4000"
+  sh "JEKYLL_ENV=production bundle exec jekyll serve --incremental --unpublished --livereload --watch --open-url http://localhost:4000"
 end
 
 task :sync do |t|
