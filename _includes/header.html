@@ -22,18 +22,18 @@
   </div>
 </header>
 
-{% if jekyll.environment == 'development' %}
-  {% if site.unpublished %}
-  <div id="unpub-indicator" class="unpublished">ALL</div>
-  {% else %}
-  <div id="unpub-indicator" class="published">PUB-ONLY</div>
+<aside class="dashboard">
+  {% if jekyll.environment == 'development' %}
+    {% if site.unpublished %}
+    <div id="unpub-indicator" class="unpublished">ALL</div>
+    {% else %}
+    <div id="unpub-indicator" class="published">PUB-ONLY</div>
+    {% endif %}
+
+    <div id="env-indicator" class="env-indicator-dev">DEV</div>
   {% endif %}
-{% endif %}
 
-{% if jekyll.environment == 'development' %}
-<div id="env-indicator" class="env-indicator-dev">DEV</div>
-{% endif %}
-
-<button id="theme-toggler">
-  <span class="theme-image">☀️</span>
-</button>
+  <button id="theme-toggler">
+    <span class="theme-image">☀️</span>
+  </button>
+</aside>

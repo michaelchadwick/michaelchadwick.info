@@ -554,12 +554,20 @@ header.page-header {
       width: 27px;
     }
 
+aside.dashboard {
+  bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  position: fixed;
+  right: 5px;
+}
+
 div#unpub-indicator {
   align-items: center;
   background-color: #a89d25;
   border: 1px solid #bbb;
   border-radius: 4px;
-  bottom: 5px;
   display: none;
   font-size: 1.2rem;
   font-weight: 600;
@@ -567,29 +575,26 @@ div#unpub-indicator {
   justify-content: center;
   margin-bottom: 0;
   opacity: 0.9;
-  position: fixed;
-  right: 95px;
   text-align: center;
   width: 40px;
   z-index: 10000;
 }
   @media (min-width: 550px) {
     div#unpub-indicator {
-      right: 150px;
+      width: auto;
     }
   }
   div#unpub-indicator.unpublished {
     background-color: #a89d25;
   }
   div#unpub-indicator.published {
-    background-color: #1da826;
+    background-color: #5ec264;
   }
 
 div#env-indicator {
   align-items: center;
   border: 1px solid #bbb;
   border-radius: 4px;
-  bottom: 5px;
   display: none;
   font-size: 1.2rem;
   font-weight: 600;
@@ -597,27 +602,24 @@ div#env-indicator {
   justify-content: center;
   margin-bottom: 0;
   opacity: 0.9;
-  position: fixed;
-  right: 50px;
   text-align: center;
   width: 40px;
   z-index: 10000;
 }
   @media (min-width: 550px) {
     div#env-indicator {
-      right: 105px;
+      width: auto;
     }
   }
   div#env-indicator.env-indicator-prod {
     background-color: #cb0b38;
   }
   div#env-indicator.env-indicator-dev {
-    background-color: #1da826;
+    background-color: #5ec264;
   }
 
 button#theme-toggler {
   background-color: var(--bg-color);
-  bottom: 5px;
   display: none;
   font-size: 1.5rem;
   font-weight: 600;
@@ -625,8 +627,6 @@ button#theme-toggler {
   margin-bottom: 0;
   opacity: 0.9;
   padding: 0 10px;
-  position: fixed;
-  right: 5px;
   text-align: center;
   width: 40px;
   z-index: 10000;
