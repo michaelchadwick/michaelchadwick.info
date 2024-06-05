@@ -4,6 +4,9 @@
 
 ## Local Development
 
+* Ruby
+* Composer
+
 ### Build Dependencies
 
 `$ bundle install`
@@ -11,7 +14,7 @@
 
 ### Serve Local Development Version
 
-`$ bundle exec jekyll serve --watch --open-url http://localhost:4000`
+`$ rake serve`
 
 ## Acknowledgements
 
