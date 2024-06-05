@@ -138,6 +138,7 @@ MCInfo.initApi = () => {
     // get external site data
     MCInfo.SiteApi.BLOG()
 
+    // backend api calls fail on local because WEBrick does not allow POSTs
     if (MCInfo.env != 'local') {
       MCInfo.SiteApi.POD()
     } else {
@@ -156,7 +157,7 @@ MCInfo.initApi = () => {
     // pinned repo service in flux, so turning off for now
     // MCInfo.SiteApi.GH()
 
-    // podbean fails on local for some reason
+    // backend api calls fail on local because WEBrick does not allow POSTs
     if (MCInfo.env != 'local') {
       MCInfo.SiteApi.POD()
       MCInfo.SiteApi.RG()
