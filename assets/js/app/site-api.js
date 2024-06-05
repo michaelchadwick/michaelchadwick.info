@@ -156,7 +156,7 @@ MCInfo.SiteApi.GH = async function() {
   // }
 }
 
-// PODBEAN (backend)
+// PODBEAN (backend) // TODO: fix so it works on local
 MCInfo.SiteApi.POD = function(type = 'latest') {
   // get podcast episodes
   fetch(BACKEND_SITE_API_PATH, {
@@ -202,7 +202,7 @@ MCInfo.SiteApi.POD = function(type = 'latest') {
   })
 }
 
-// RUBYGEMS (backend)
+// RUBYGEMS (backend) // TODO: fix so it works on local
 MCInfo.SiteApi.RG = async function() {
   // get linked list of rubygems
   fetch(BACKEND_SITE_API_PATH, {
@@ -234,7 +234,7 @@ MCInfo.SiteApi.RG = async function() {
   })
 }
 
-// STEAM (backend)
+// STEAM (backend) // TODO: fix so it works on local
 MCInfo.SiteApi.STEAM = function() {
   const steamLastGamePlayed = document.querySelector('.steamLastGamePlayed')
   const steamApiData = document.querySelector('.apiData.steam')
