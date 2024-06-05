@@ -138,7 +138,7 @@ MCInfo.initApi = () => {
     // get external site data
     MCInfo.SiteApi.BLOG()
 
-    if (MCInfo.env != 'local' || true) {
+    if (MCInfo.env != 'local') {
       MCInfo.SiteApi.POD()
     } else {
       // hide podcast
