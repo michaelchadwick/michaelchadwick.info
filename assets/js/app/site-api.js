@@ -1,8 +1,10 @@
 // frontend script to send out HTTP requests to APIs
 // - some go to a backend script due to authentication
 
+if ((typeof MCInfo.SiteApi) === 'undefined') MCInfo.SiteApi = {}
+
 // BOARDGAMEGEEK (frontend)
-MCInfo.BGG = function() {
+MCInfo.SiteApi.BGG = function() {
   const bggLastGamePlayed = document.querySelector('.bggLastGamePlayed')
   const bggApiData = document.querySelector('.apiData.bgg')
 
@@ -44,7 +46,7 @@ MCInfo.BGG = function() {
 }
 
 // BLOG (frontend)
-MCInfo.BLOG = function() {
+MCInfo.SiteApi.BLOG = function() {
   const devblog = document.querySelector('.mcinfoBlog')
   const devblogApi = document.querySelector('.apiData.devblog')
 
@@ -89,7 +91,7 @@ MCInfo.BLOG = function() {
 }
 
 // GITHUB (frontend)
-MCInfo.GH = async function() {
+MCInfo.SiteApi.GH = async function() {
   // get pinned projects
   fetch(`${GH_PINNED_API}${GH_USER}`, {
     method: 'GET'
@@ -155,7 +157,7 @@ MCInfo.GH = async function() {
 }
 
 // PODBEAN (backend)
-MCInfo.POD = function(type = 'latest') {
+MCInfo.SiteApi.POD = function(type = 'latest') {
   // get podcast episodes
   fetch(BACKEND_SITE_API_PATH, {
     method: 'POST',
@@ -201,7 +203,7 @@ MCInfo.POD = function(type = 'latest') {
 }
 
 // RUBYGEMS (backend)
-MCInfo.RG = async function() {
+MCInfo.SiteApi.RG = async function() {
   // get linked list of rubygems
   fetch(BACKEND_SITE_API_PATH, {
     method: 'POST',
@@ -233,7 +235,7 @@ MCInfo.RG = async function() {
 }
 
 // STEAM (backend)
-MCInfo.STEAM = function() {
+MCInfo.SiteApi.STEAM = function() {
   const steamLastGamePlayed = document.querySelector('.steamLastGamePlayed')
   const steamApiData = document.querySelector('.apiData.steam')
 
@@ -280,3 +282,150 @@ MCInfo.STEAM = function() {
     console.error('steam api request failed', error)
   })
 }
+
+// UNUSED FOR NOW
+/*
+
+// POCKET - disabled because no CORS enabled
+MCInfo.SiteApi.POCKET = function() {
+  let POCKET_CONSUMER_KEY = ''
+  let requestCode = ''
+  let accessToken = ''
+
+  fetch(POCKET_REQUEST_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'json',
+    },
+    body: JSON.stringify({
+      "consumer_key": POCKET_CONSUMER_KEY,
+      "redirect_uri": POCKET_REDIRECT_URL
+    })
+  }).then(response => {
+    if (!response.ok) {
+      throw new Error('Could not get Pocket requeat data')
+    }
+
+    return response.json()
+  }).then(data => {
+    console.log('success! pocket request url', data)
+    requestCode = data
+
+    return fetch(POCKET_ACCESS_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'json',
+      },
+      body: JSON.stringify({
+        "consumer_key": POCKET_CONSUMER_KEY,
+        "code": requestCode
+      })
+    })
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Could not get Pocket access data')
+    }
+
+    return response.json()
+  }).then(data => {
+    console.log('success! pocket access url', data)
+
+    accessToken = data
+
+    return fetch(POCKET_QUERY_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'json',
+      },
+      body: JSON.stringify({
+        "consumer_key": POCKET_CONSUMER_KEY,
+        "access_token": accessToken,
+        "count": 5,
+        "detailType": "complete"
+      })
+    })
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Could not get Pocket query data')
+    }
+
+    return response.json()
+  }).then(data => {
+    console.log('success! pocket query', data)
+  })
+}
+
+// SOUNDCLOUD - not using right now
+MCInfo.SiteApi.SC = async function() {
+  let scEmbedWrapper = document.querySelector('li.soundcloud')
+
+  await fetch('js/client_ids.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Could not get soundcloud client ids')
+      }
+
+      return response.json()
+    }).then(data => {
+      SC.initialize({
+        client_id: data.soundcloud,
+        redirect_uri: '/'
+      })
+    })
+
+  getLatestTrack()
+
+  function getLatestTrack() {
+    MCInfo.SiteApi.SC.get('/tracks', {
+      user_id: SC_USER_ID,
+      limit: 1
+    },
+    function(latest_track) {
+      scEmbedWrapper.innerHTML = ''
+
+      const scPlayerDiv = document.createElement('div')
+      scPlayerDiv.id = 'sc_player'
+
+      scEmbedWrapper.append(scPlayerDiv)
+
+      MCInfo.SiteApi.SC.oEmbed(
+        latest_track.permalink_url,
+        {
+          show_comments: false,
+          maxheight: 166
+        },
+        document.getElementById('sc_player')
+      )
+    })
+  }
+}
+
+// WORDPRESS - moved all wordpress blog content to static site
+MCInfo.SiteApi.WP = async function() {
+  const muzblog = document.querySelector('.blogNebyoolaeCom')
+  const muzBlogApiData = document.querySelector('.apiData.muzblog')
+
+  fetch(MUZBLOG_API_URL)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Could not get muzblog data')
+      }
+
+      return response.json()
+    }).then(data => {
+      var latestPost = data[0]
+      var title = latestPost.title.rendered
+      var date = latestPost.date.split('T')[0]
+      var url = latestPost.link
+
+      muzblog.innerHTML = `Latest post: ${date}<br /><a href='${url}'>${title}</a>`
+
+      if (muzBlogApiData.style.display !== 'block') {
+        muzBlogApiData.style.display = 'block'
+      }
+    })
+}
+    
+*/

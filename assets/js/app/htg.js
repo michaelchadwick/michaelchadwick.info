@@ -17,5 +17,5 @@ if (prefersDarkScheme.matches) {
 // external site checking for podcasts/htg page
 if (['/podcasts/htg', '/podcasts/htg/'].includes(document.location.pathname)) {
   console.log('you have reached a fun internal page')
-  MCInfo.POD('episodes')
+  MCInfo.SiteApi.POD('episodes')
 }

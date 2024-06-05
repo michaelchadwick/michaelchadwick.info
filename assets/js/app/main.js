@@ -136,10 +136,10 @@ MCInfo.initApi = () => {
   // external site checking for homepage
   if (document.location.pathname == '/') {
     // get external site data
-    MCInfo.BLOG()
+    MCInfo.SiteApi.BLOG()
 
-    if (MCInfo.env != 'local') {
-      MCInfo.POD()
+    if (MCInfo.env != 'local' || true) {
+      MCInfo.SiteApi.POD()
     } else {
       // hide podcast
       const elem = document.getElementsByClassName('devPod')[0]
@@ -151,16 +151,16 @@ MCInfo.initApi = () => {
   // external site checking for projects page
   if (['/projects', '/projects/'].includes(document.location.pathname)) {
     // get external site data
-    MCInfo.BGG()
-    MCInfo.BLOG()
+    MCInfo.SiteApi.BGG()
+    MCInfo.SiteApi.BLOG()
     // pinned repo service in flux, so turning off for now
-    // MCInfo.GH()
+    // MCInfo.SiteApi.GH()
 
     // podbean fails on local for some reason
     if (MCInfo.env != 'local') {
-      MCInfo.POD()
-      MCInfo.RG()
-      MCInfo.STEAM()
+      MCInfo.SiteApi.POD()
+      MCInfo.SiteApi.RG()
+      MCInfo.SiteApi.STEAM()
     } else {
       // hide podcast, rubygems, steam
       const elems = []
