@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 
-const BGG_API_URL = 'https://www.boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
+const BGG_API_URL = 'https://boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
 
 const GH_USER = 'michaelchadwick'
 const GH_API_URL = 'https://api.github.com'
