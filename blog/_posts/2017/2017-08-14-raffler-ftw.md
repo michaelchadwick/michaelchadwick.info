@@ -53,4 +53,4 @@ For that reason alone, I think I may start using something like Angular or React
 
 Thus, I'll most likely keep doing what I've been doing, since it works, and only change once I'm forced to by some other directive. Weeee!
 
-<script async type="text/javascript" src="{{ site.baseurl }}/assets/js/rand_perc.js"></script>
+<script async type="text/javascript" src="{{ site.baseurl }}/assets/js/page/rand_perc.js"></script>
