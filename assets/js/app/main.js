@@ -126,7 +126,9 @@ MCInfo.initApi = () => {
 
   // adjust <title> for env
   if (MCInfo.env == 'local') {
-    document.title = '(LH) ' + document.title
+    if (!document.title.includes('(LH) ')) {
+      document.title = '(LH) ' + document.title
+    }
   }
 
   MCInfo.addEventHandlers()
