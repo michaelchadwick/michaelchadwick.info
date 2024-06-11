@@ -1,10 +1,10 @@
 ---
 title: Muz-stones
-layout: page
+layout: list
 ---
 This is my own personal list of both the musical milestones I desire to reach, as well as the ones I already have. Hopefully, the &#8220;fulfilled&#8221; list gets longer as the &#8220;desired&#8221; list dwindles, but is also refreshed with new ideas over time.
 
-My list of <a href="/lists/dev-stones">development milestones</a> also exists.
+My list of <a href="{{ site.siteurl }}/lists/dev-stones">development milestones</a> also exists.
 
 ### <span style="color: #800000;">Objectives Desired</span>
 
