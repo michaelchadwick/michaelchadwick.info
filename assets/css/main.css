@@ -582,6 +582,7 @@ aside.dashboard {
   gap: 0.1em;
   position: fixed;
   right: 5px;
+  z-index: 1;
 }
 
 div#unpub-indicator {
