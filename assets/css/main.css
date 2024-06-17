@@ -277,6 +277,13 @@ h6 {
   }
 }
 
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  font-size: 100%;
+}
+
 li {
   margin-bottom: 0;
 }
