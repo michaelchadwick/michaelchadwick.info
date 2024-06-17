@@ -18,12 +18,21 @@ if ($json = file_get_contents('php://input')) {
   }
 }
 // command line
-else if (isset($argv) && count($argv) > 1) {
-  $site = $argv[1];
+else if (isset($argv)) {
+  if (count($argv) > 1) {
+    $site = $argv[1];
+  } else {
+    echo "error: no site supplied\n";
+    exit();
+  }
 }
+// direct url (debugging)
+// else if (isset($_GET['site'])) {
+//   $site = $_GET['site'];
+// }
 // no site?
 else {
-  echo "error: no site supplied\n";
+  // echo "error: no site supplied\n";
   exit();
 }
 
@@ -86,7 +95,7 @@ switch ($site) {
     // get episodes
     try {
       $response = $client->get(
-        $PODBEAN_EPS_ROUTE . '?access_token=' . $token . '&offset=0&limit=100', 
+        $PODBEAN_EPS_ROUTE . '?access_token=' . $token . '&offset=0&limit=100',
         [
           'debug' => false
         ]
@@ -155,8 +164,8 @@ switch ($site) {
 
   case 'steam':
     $STEAM_API_URL = 'https://api.steampowered.com';
-    $STEAM_API_KEY = $_ENV['STEAM_WEB_API_KEY'];
-    $STEAM_API_ID = $_ENV['STEAM_ID_64'];
+    $STEAM_API_KEY = getenv('STEAM_WEB_API_KEY');
+    $STEAM_API_ID = getenv('STEAM_ID_64');
     $STEAM_GET_GAMES_ROUTE = '/IPlayerService/GetRecentlyPlayedGames/v1';
 
     $client = new Client(['base_uri' => $STEAM_API_URL, 'timeout'  => 5.0]);
