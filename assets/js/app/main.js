@@ -8,7 +8,7 @@ let theme = 'light'
 // find links and change their <li> background to be their favicon
 const faviconLinks = document.querySelectorAll('ul.links li.dynamic a.favicon')
 
-faviconLinks.forEach(f => {
+faviconLinks.forEach((f) => {
   const parentStyle = f.parentElement.style
   const hostname = f.href
 
@@ -21,22 +21,28 @@ faviconLinks.forEach(f => {
   } else {
     switch (hostname) {
       case 'https://nebyoolae.itch.io/': {
-        url = '/assets/images/itchio-icon.png'; break
+        url = '/assets/images/itchio-icon.png'
+        break
       }
       case 'https://nebyoolae.newgrounds.com/': {
-        url = '/assets/images/newgrounds-icon.png'; break
+        url = '/assets/images/newgrounds-icon.png'
+        break
       }
       case 'https://fenchy.bandcamp.com/': {
-        url = '/assets/images/fenchy-icon.jpg'; break
+        url = '/assets/images/fenchy-icon.jpg'
+        break
       }
       case 'https://flylikevenus.bandcamp.com/': {
-        url = '/assets/images/flv-icon.jpg'; break
+        url = '/assets/images/flv-icon.jpg'
+        break
       }
       case 'https://rustycrab.bandcamp.com/': {
-        url = '/assets/images/rustycrab-icon.jpg'; break
+        url = '/assets/images/rustycrab-icon.jpg'
+        break
       }
       default: {
-        url = `https://www.google.com/s2/favicons?domain=${hostname}&sz=${iconSize}`; break
+        url = `https://www.google.com/s2/favicons?domain=${hostname}&sz=${iconSize}`
+        break
       }
     }
   }
@@ -46,7 +52,7 @@ faviconLinks.forEach(f => {
 
 const indentedLists = document.querySelectorAll('ul.links li ul li')
 
-indentedLists.forEach(li => {
+indentedLists.forEach((li) => {
   if (li.style.listStyleImage) {
     if (li.style.listStyleImage.indexOf('http')) {
       li.classList.add('blank')
@@ -103,7 +109,7 @@ let lastKnownScrollPosition = 0
 let ticking = false
 
 MCInfo.addEventHandlers = () => {
-  themeToggler.addEventListener('click', function() {
+  themeToggler.addEventListener('click', function () {
     bodyClasses.toggle('dark-theme')
     bodyClasses.toggle('light-theme')
 
@@ -172,7 +178,7 @@ MCInfo.initApi = () => {
       elems.push(document.getElementsByClassName('gemList')[0])
       elems.push(document.getElementsByClassName('steam')[0])
 
-      elems.forEach(elem => elem.style.display = 'none')
+      elems.forEach((elem) => (elem.style.display = 'none'))
     }
   }
 
@@ -206,23 +212,23 @@ MCInfo._handleVisibility = async () => {
       const blogLinks = document.querySelectorAll('span.blog a')
 
       if (blogIndexUnpubPosts.length) {
-        blogIndexUnpubPosts.forEach(p => p.style.display = 'block')
+        blogIndexUnpubPosts.forEach((p) => (p.style.display = 'block'))
       }
 
       if (blogIndexNavLinks.length) {
-        blogIndexNavLinks.forEach(link => link.href += `?unpublished=${key}`)
+        blogIndexNavLinks.forEach((link) => (link.href += `?unpublished=${key}`))
       }
 
       if (blogIndexPostLinks.length) {
-        blogIndexPostLinks.forEach(link => link.href += `?unpublished=${key}`)
+        blogIndexPostLinks.forEach((link) => (link.href += `?unpublished=${key}`))
       }
 
       if (blogPostNavLinks.length) {
-        blogPostNavLinks.forEach(link => link.href += `?unpublished=${key}`)
+        blogPostNavLinks.forEach((link) => (link.href += `?unpublished=${key}`))
       }
 
       if (blogLinks.length) {
-        blogLinks.forEach(link => link.href += `?unpublished=${key}`)
+        blogLinks.forEach((link) => (link.href += `?unpublished=${key}`))
       }
     }
   }
