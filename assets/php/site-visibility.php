@@ -11,7 +11,7 @@ if ($json = file_get_contents('php://input')) {
   $key = $data->key;
 }
 
-$lock = $_ENV['MCINFO_PRIVATE_KEY'];
+$lock = getenv('MCINFO_PRIVATE_KEY');
 
 echo json_encode([
   'isUnlocked' => $key == $lock

@@ -38,7 +38,7 @@ else {
 
 switch ($site) {
   case 'mcinfo_priv':
-    $key = $_ENV['MCINFO_PRIVATE_KEY'];
+    $key = getenv('MCINFO_PRIVATE_KEY');
 
     echo json_encode([
       'key' => $key
@@ -52,8 +52,8 @@ switch ($site) {
     $PODBEAN_EPS_ROUTE = '/v1/episodes';
 
     $creds = array(
-      'client_id' => $_ENV['PODBEAN_MCINFO_CLIENT_ID'],
-      'client_secret' => $_ENV['PODBEAN_MCINFO_CLIENT_SECRET']
+      'client_id' => getenv('PODBEAN_MCINFO_CLIENT_ID'),
+      'client_secret' => getenv('PODBEAN_MCINFO_CLIENT_SECRET')
     );
 
     $client = new Client(['base_uri' => $PODBEAN_API_URL, 'timeout'  => 5.0]);
@@ -139,7 +139,7 @@ switch ($site) {
 
   case 'rubygems':
     $RUBYGEMS_API_URL = 'https://rubygems.org/api/v1/owners/mjchadwick/gems.json';
-    $RUBYGEMS_API_KEY = $_ENV['RUBYGEMS_API_KEY'];
+    $RUBYGEMS_API_KEY = getenv('RUBYGEMS_API_KEY');
 
     $client = new Client(['base_uri' => $RUBYGEMS_API_URL, 'timeout'  => 5.0]);
 
