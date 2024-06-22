@@ -5,13 +5,13 @@ tags: bogdle boggle daily game nebapp puzzle vuejs wordle wordsmyth
 headerImage: posts/2022/bogdle-2022-10-25.png
 ---
 
-It's finally time to reveal my finished web game: <a href="https://bogdle.neb.host">Bogdle</a>.
+It's finally time to reveal my finished web game: **Bogdle**.
 
-I <a href="/blog/2022/05/bogdle-intro">blogged about it before</a> and it's finally ready for prime time.
+I [blogged about it before](/blog/2022/05/bogdle-intro) and it's finally ready for prime time.
 
 <!--more-->
 
-<a href="https://bogdle.neb.host">Bogdle</a> is a Wordle-inspired game of Boggle, the popular grid word-search. The look and feel is definitely Wordle, but the actual gameplay is [Wordsmyth](https://apps.apple.com/us/app/wordsmyth-a-daily-word-game/id1534959553), a Boggle-like game for iOS that I got addicted to at one point.
+[Bogdle](https://bogdle.neb.host) is a Wordle-inspired game of Boggle, the popular grid word-search. The look and feel is definitely Wordle, but the actual gameplay is [Wordsmyth](https://apps.apple.com/us/app/wordsmyth-a-daily-word-game/id1534959553), a Boggle-like game for iOS that I got addicted to at one point.
 
 ## BASICS
 
@@ -21,7 +21,7 @@ As with all the other daily puzzle games, there is a new one each day so people 
 
 ## TECH
 
-The technology stack is all custom HTML, CSS, and <a href="http://vanilla-js.com">Vanilla JS</a> for the most part. Wordle uses <a href="https://vuejs.org">VueJS</a>, I believe, and I definitely cribbed a lot from its general document structure, but there's no framework generating Bogdle's template.
+The technology stack is all custom HTML, CSS, and [Vanilla JS](http://vanilla-js.com) for the most part. Wordle uses [VueJS](https://vuejs.org), I believe, and I definitely cribbed a lot from its general document structure, but there's no framework generating Bogdle's template.
 
 PHP is used to pick the daily seed word and make sure each 24 hour period serves a unique seed. I found a lot of sites use client-side time to pick their daily puzzles, which means that you can change your local system clock to "hack" the game to any day you want, but Bogdle uses server time so it always gives you the "correct" puzzle based on its clock.
 
@@ -37,6 +37,6 @@ No music to be found on Bogdle as of yet, which is surprising coming from me, I 
 
 Bogdle, being based on Boggle, doesn't have that immediate viral spark that makes other daily puzzles so imminently shareable, but I added a share button when you win, anyway. Hopefully, Bogdle will find a few fans of the puzzle style and garner some repeat visits. In the end, I will mainly use this project as a framework for future ideas in the same vein.
 
-Oh! Source code (minus some server scripty stuff) is on <a href="https://github.com/michaelchadwick/bogdle">Github</a> if you want to see the gooey insides.
+Oh! Source code (minus some server scripty stuff) is on [Github](https://github.com/michaelchadwick/bogdle) if you want to see the gooey insides.
 
 Now go find some words!
