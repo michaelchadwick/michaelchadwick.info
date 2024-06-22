@@ -10,87 +10,95 @@ sitemap:
 {% comment %}
 <pre id="jekyll-debug"></pre>
 <script>
-  var obj = JSON.parse(decodeURIComponent("{{ site.webrick | jsonify | uri_escape }}"));
-  var prettyJson = JSON.stringify(obj, null, 2);
-  document.getElementById("jekyll-debug").textContent = prettyJson;
+  var obj = JSON.parse(decodeURIComponent('{{ site.webrick | jsonify | uri_escape }}'))
+  var prettyJson = JSON.stringify(obj, null, 2)
+  document.getElementById('jekyll-debug').textContent = prettyJson
 </script>
 {% endcomment %}
 
-<div class="row">
-  <h3>Latest Code</h3>
+<div class="homepage-blocks">
+  <div class="row">
+    <h3>Code</h3>
 
-  <ul class="links">
-    <li class="dynamic">
-      <a href="https://keebord.neb.host" class="favicon">Keebord</a> - Play piano
-    </li>
-    <li class="dynamic">
-      <a href="https://raffler.neb.host" class="favicon">Raffler</a> - And the winner is...
-    </li>
-  </ul>
+    <ul class="links">
+      <li class="dynamic">
+        <a href="https://keebord.neb.host" class="favicon">Keebord</a> - Play piano
+      </li>
+      <li class="dynamic">
+        <a href="https://raffler.neb.host" class="favicon">Raffler</a> - And the winner is...
+      </li>
+    </ul>
 
-  <h4>Code In Progress</h4>
+    <h4>Code In Progress</h4>
 
-  <ul class="links">
-  <li class="dynamic">
-      <a href="https://ah.neb.host" class="favicon">Audio Hash</a> - Make a musical sampler platter
-    </li>
-    <li class="dynamic">
-      <a href="https://gw.neb.host" class="favicon">Gem Warrior</a> - Escape a dungeon?
-    </li>
-  </ul>
+    <ul class="links">
+      <li class="dynamic">
+        <a href="https://ah.neb.host" class="favicon">Audio Hash</a> - Make a musical sampler
+        platter
+      </li>
+      <li class="dynamic">
+        <a href="https://gw.neb.host" class="favicon">Gem Warrior</a> - Escape a dungeon?
+      </li>
+    </ul>
 
-  <a href="/projects" class="btn-more">View All Code Projects</a>
+    <a href="/projects" class="btn-more">View All Code Projects</a>
+  </div>
 
-</div>
+  <div class="row">
+    <h3>Music</h3>
 
-<div class="row">
-  <h3>Latest Music</h3>
+    <ul class="links">
+      <li class="dynamic">
+        <a href="{{ site.bc_neb_link }}/album/murky-music" class="favicon">Murky Music</a>
+        (Nebyoolae)
+      </li>
+      <li class="dynamic">
+        <a href="{{ site.bc_fenchy_link }}/album/just-a-waste-ep" class="favicon"
+          >Just a Waste (EP)</a
+        >
+        (Fenchy)
+      </li>
+      <li class="dynamic">
+        <a href="https://flylikevenus.bandcamp.com/album/unwound" class="favicon">Unwound</a> (Fly
+        Like Venus)
+      </li>
+      <li class="dynamic">
+        <a href="https://soundcloud.com/massive-battery/sets/just-a-pain" class="favicon"
+          >Just a Pain</a
+        ><span> (Massive Battery)</span>
+      </li>
+    </ul>
 
-  <ul class="links">
-    <li class="dynamic"><a href="{{ site.bc_neb_link }}/album/murky-music" class="favicon">Murky Music</a> (Nebyoolae)</li>
-    <li class="dynamic"><a href="{{ site.bc_fenchy_link }}/album/just-a-waste-ep" class="favicon">Just a Waste (EP)</a> (Fenchy)</li>
-    <li class="dynamic"><a href="https://flylikevenus.bandcamp.com/album/unwound" class="favicon">Unwound</a> (Fly Like Venus)</li>
-    <li class="dynamic"><a href="https://soundcloud.com/massive-battery/sets/just-a-pain" class="favicon">Just a Pain</a><span> (Massive Battery)</span></li>
-  </ul>
+    <a href="/projects#audio" class="btn-more">View All Music and Audio</a>
+  </div>
 
-  <a href="/projects#audio" class="btn-more">View All Music and Audio</a>
+  <div class="row">
+    <h3>Latest Blogs</h3>
 
-</div>
+    <ul class="links">
+      <li class="dynamic">
+        <a href="/blog" class="favicon">Code, audio, and life blog</a>
+        <ul class="apiData devblog">
+          <li class="mcinfoBlog">{% include spinner.html %}</li>
+        </ul>
+      </li>
+    </ul>
 
-<div class="row">
-  <h3>Latest Blogs</h3>
+    <a href="/blog" class="btn-more">View All Blogs</a>
+  </div>
 
-  <ul class="links">
-    <li class="dynamic">
-      <a href="/blog" class="favicon">Code, audio, and life blog</a>
-      <ul class="apiData devblog">
-        <li class="mcinfoBlog">
-          {% include spinner.html %}
-        </li>
-      </ul>
-    </li>
-  </ul>
+  <div class="row">
+    <h3>Broadcasts</h3>
 
-  <a href="/blog" class="btn-more">View All Blogs</a>
+    <ul class="links">
+      <li class="dynamic">
+        <a href="https://hackingthegrepson.podbean.com" class="favicon">Hacking the Grepson</a>
+        <ul class="apiData devPod">
+          <li class="htgPod">{% include spinner.html %}</li>
+        </ul>
+      </li>
+    </ul>
 
-</div>
-
-<div class="row">
-  <h3>Latest Broadcasts</h3>
-
-  <ul class="links">
-    <li class="dynamic">
-      <a href="https://hackingthegrepson.podbean.com" class="favicon">Hacking the Grepson</a>
-      <ul class="apiData devPod">
-        <li class="htgPod">
-          {% include spinner.html %}
-        </li>
-      </ul>
-    </li>
-  </ul>
-
-</div>
-
-<div class="row">
-  <a href="/projects" class="btn-more">View All Projects</a>
+    <a href="/projects" class="btn-more">View All Projects</a>
+  </div>
 </div>

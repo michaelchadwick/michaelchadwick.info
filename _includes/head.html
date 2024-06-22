@@ -1,55 +1,61 @@
 <head>
   <!-- BASIC
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <meta http-equiv="cache-control" content="Public">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }}{{ site.extra_title }}{% else %}{{ site.title }}{{ site.extra_title }}{% endif %}</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="cache-control" content="Public" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    {% if page.title %}{{ page.title }}{{ site.extra_title }}{% else %}{{ site.title }}{{
+    site.extra_title }}{% endif %}
+  </title>
 
   <!-- META
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="Michael Chadwick">
-  <meta name="title" content="All the Info About Me - Michael Chadwick">
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:title" content="All the Info About Me - Michael Chadwick">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="/assets/icons/android-chrome-256x256.png">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="twitter:card" content="summary">
-  <meta property="twitter:domain" content="{{ site.url }}">
-  <meta property="env" content="{{ jekyll.environment }}">
-  <link rel="canonical" href="{{ site.url }}">
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="author" content="Michael Chadwick" />
+  <meta name="title" content="All the Info About Me - Michael Chadwick" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:title" content="All the Info About Me - Michael Chadwick" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image" content="/assets/icons/android-chrome-256x256.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:domain" content="{{ site.url }}" />
+  <meta property="env" content="{{ jekyll.environment }}" />
+  <link rel="canonical" href="{{ site.url }}" />
 
   <!-- FAVICONS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#3da4d6">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <meta name="msapplication-TileColor" content="#00aba9">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#3da4d6" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#00aba9" />
+  <meta name="theme-color" content="#ffffff" />
 
   <!-- FONTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:300,500,700,900" rel="stylesheet" type="text/css">
+  <link
+    href="//fonts.googleapis.com/css?family=Raleway:300,500,700,900"
+    rel="stylesheet"
+    type="text/css"
+  />
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="/assets/css/vendor/skeleton.css">
+  <link rel="stylesheet" href="/assets/css/vendor/skeleton.css" />
 
   <!-- CUSTOM -->
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/main-dark.css">
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/main-dark.css" />
+  <link rel="stylesheet" href="/assets/css/custom/highlight.css" />
 
   {% if page.style == "blog" %}
-  <link rel="stylesheet" href="/assets/css/custom/blog.css">
-  {% endif %}
-
-  {% if page.tags contains "tabdiv" or page.tags contains "vexflow" %}
-  <link rel="stylesheet" href="/assets/css/vendor/vexflow/tabdiv.css">
+  <link rel="stylesheet" href="/assets/css/custom/blog.css" />
+  {% endif %} {% if page.tags contains "tabdiv" or page.tags contains "vexflow" %}
+  <link rel="stylesheet" href="/assets/css/vendor/vexflow/tabdiv.css" />
   {% endif %}
 </head>
