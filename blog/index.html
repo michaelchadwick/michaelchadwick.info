@@ -1,20 +1,22 @@
 ---
 title: Blog
+title_icon: fa-solid fa-book
 layout: default
 style: blog
 search: true
 pagination:
   enabled: true
+tags: fa fa-solid
 ---
 
 <!-- TODO: Add remaining drafts to blog as unpublished posts -->
 
-<h2>Blog</h3>
+<h2>Blog <i class="fa-solid fa-book"></i></h2>
 
 <div class="home">
-
   <div id="search-container">
-    <input type="search"
+    <input
+      type="search"
       id="search-input"
       data-post-size="{{ site.posts | size }}"
       placeholder="Search posts..."
@@ -25,94 +27,85 @@ pagination:
   <ul class="posts{% if site.unpublished %} posts-unpublished{% endif %}">
     {% for post in paginator.posts %}
 
-      <li class="post-row{% if post.published == false %} unpublished{% endif %}">
-
-        <div class="post-meta">
-
-          {% if post.published == false %}
-          <div><strong>UNPUBLISHED</strong></div>
-          {% endif %}
-
-          <span class="post-date">
-            {{ post.date | date: site.date_YYYYMMDD_dash }}
-          </span>
-
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-          </a>
-
-          {% assign sorted_tags = post.tags | sort %}
-
-          <div class="tags">
-            {% for tag in sorted_tags %}
-              <a href="/blog/tags/{{ tag }}">{{ tag }}</a>
-            {% endfor %}
-          </div>
-
-        </div>
-
-        <div class="post-main">
-
-          <div class="post-header-image">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-              <img
-                {% if post.headerImage %}
-                src="{{ site.baseurl }}/assets/images/{{ post.headerImage }}"
-                {% else %}
-                src="{{ site.baseurl }}/assets/images/default_header.jpg"
-                {% endif %}
-                alt="{{ post.title }}"
-                title="{{ post.title }}"
-                width="480"
-                height="270"
-              />
-            </a>
-          </div>
-
-          <div class="post-teaser">
-            {% if post.content contains '<!--more-->' %}
-            <p>{{ post.content | split:'<!--more-->' | first | raw }}</p>
-            {% endif %}
-          </div>
-
-        </div>
-
-        {% if post.published != false %}
-        <hr />
+    <li class="post-row{% if post.published == false %} unpublished{% endif %}">
+      <div class="post-meta">
+        {% if post.published == false %}
+        <div><strong>UNPUBLISHED</strong></div>
         {% endif %}
-      </li>
+
+        <span class="post-date"> {{ post.date | date: site.date_YYYYMMDD_dash }} </span>
+
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+
+        {% assign sorted_tags = post.tags | sort %}
+
+        <div class="tags">
+          {% for tag in sorted_tags %}
+          <a href="/blog/tags/{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="post-main">
+        <div class="post-header-image">
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <img
+              {%
+              if
+              post.headerImage
+              %}
+              src="{{ site.baseurl }}/assets/images/{{ post.headerImage }}"
+              {%
+              else
+              %}
+              src="{{ site.baseurl }}/assets/images/default_header.jpg"
+              {%
+              endif
+              %}
+              alt="{{ post.title }}"
+              title="{{ post.title }}"
+              width="480"
+              height="270"
+            />
+          </a>
+        </div>
+
+        <div class="post-teaser">
+          {% if post.content contains '<!--more-->' %}
+          <p>{{ post.content | split:'<!--more-->' | first | raw }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if post.published != false %}
+      <hr />
+      {% endif %}
+    </li>
 
     {% endfor %}
   </ul>
 
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
-    {% if paginator.previous_page %}
-      {% assign paginator_prev_link = paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' %}
-      <a href="{{ paginator_prev_link }}">&laquo; Prev</a>
+    {% if paginator.previous_page %} {% assign paginator_prev_link = paginator.previous_page_path |
+    prepend: site.baseurl | replace: '//', '/' %}
+    <a href="{{ paginator_prev_link }}">&laquo; Prev</a>
     {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <em>{{ page }}</em>
-      {% elsif page == 1 %}
-        {% assign paginator_page_link = '/' | prepend: site.blogurl | replace: '//', '/' %}
-        <a href="{{ paginator_page_link }}">{{ page }}</a>
-      {% else %}
-        {% assign paginator_page_link = site.paginate_path | prepend: site.blogurl | replace: '//', '/' | replace: ':num', page %}
-        <a href="{{ paginator_page_link }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      {% assign paginator_next_link = paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' %}
-      <a href="{{ paginator_next_link }}">Next &raquo;</a>
+    <span>&laquo; Prev</span>
+    {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
+    <em>{{ page }}</em>
+    {% elsif page == 1 %} {% assign paginator_page_link = '/' | prepend: site.blogurl | replace:
+    '//', '/' %}
+    <a href="{{ paginator_page_link }}">{{ page }}</a>
+    {% else %} {% assign paginator_page_link = site.paginate_path | prepend: site.blogurl | replace:
+    '//', '/' | replace: ':num', page %}
+    <a href="{{ paginator_page_link }}">{{ page }}</a>
+    {% endif %} {% endfor %} {% if paginator.next_page %} {% assign paginator_next_link =
+    paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' %}
+    <a href="{{ paginator_next_link }}">Next &raquo;</a>
     {% else %}
-      <span>Next &raquo;</span>
+    <span>Next &raquo;</span>
     {% endif %}
   </div>
   {% endif %}
-
 </div>

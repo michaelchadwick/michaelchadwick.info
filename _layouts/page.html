@@ -1,18 +1,13 @@
 ---
 layout: default
 ---
-<div class="page">
 
+<div class="page">
   <header class="page-header">
-    <h2>{{ page.title }}</h2>
+    <h2>{{ page.title }} <i class="{{ page.title_icon }}"></i></h2>
   </header>
 
-  <div class="subhead">
-    {{ page.subtitle }}
-  </div>
+  <div class="subhead">{{ page.subtitle }}</div>
 
-  <article class="page-content">
-    {{ content }}
-  </article>
-
+  <article class="page-content">{{ content }}</article>
 </div>
