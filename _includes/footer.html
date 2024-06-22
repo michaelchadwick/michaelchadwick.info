@@ -1,11 +1,11 @@
 <footer id="site-footer">
   <nav id="site-bio">
     <div class="row">
-
       <!-- logo and summary -->
       <div class="four columns" id="logo-slogan">
         <a href="{{ site.home_relative_url }}" class="plain">
-          <img src="/assets/images/mc-logo-53x60.png"
+          <img
+            src="/assets/images/mc-logo-53x60.png"
             alt="Michael Chadwick"
             title="Michael Chadwick"
           />
@@ -15,9 +15,7 @@
       </div>
 
       <!-- global links -->
-      <div class="two columns">
-        {% include global_links.html %}
-      </div>
+      <div class="two columns">{% include global_links.html %}</div>
 
       <!-- social links -->
       <div class="three columns" id="social">
@@ -44,11 +42,7 @@
       </div>
 
       <!-- credits and donations -->
-      <div class="three columns">
-        {% include built_with.html %}
-        {% include kofi.html %}
-      </div>
-
+      <div class="three columns">{% include built_with.html %} {% include kofi.html %}</div>
     </div>
   </nav>
 </footer>
@@ -66,11 +60,10 @@
 <!-- CUSTOM CONDITIONAL -->
 {% if page.tags contains 'about' %}
 <script type="text/javascript" src="/assets/js/app/page/about.js"></script>
-{% endif %}
-{% if page.style == "site-api" %}
+{% endif %} {% if page.style == "site-api" %}
 <script type="text/javascript" src="/assets/js/app/site-api.js"></script>
-{% endif %}
-{% if page.style == "site-visibility" or page.style == "blog" or page.layout == "post" %}
+{% endif %} {% if page.style == "site-visibility" or page.style == "blog" or page.layout == "post"
+%}
 <script type="text/javascript" src="/assets/js/app/site-visibility.js"></script>
 {% endif %}
 <!-- CUSTOM -->
@@ -87,4 +80,13 @@
 {% if page.search %}
 <script type="text/javascript" src="/assets/js/vendor/simple-jekyll-search.min.js"></script>
 <script type="text/javascript" src="/assets/js/app/search.js"></script>
+{% endif %}
+
+<!-- CUSTOM CONDITIONAL -->
+{% if page.tags contains 'fa' or post.tags contains 'fa' %}
+<script type="text/javascript" src="/assets/js/vendor/fontawesome/fontawesome.min.js"></script>
+{% endif %} {% if page.tags contains 'fa-brands' or post.tags contains 'fa-brands' %}
+<script type="text/javascript" src="/assets/js/vendor/fontawesome/brands.min.js"></script>
+{% endif %} {% if page.tags contains 'fa-solid' or post.tags contains 'fa-solid' %}
+<script type="text/javascript" src="/assets/js/vendor/fontawesome/solid.min.js"></script>
 {% endif %}
