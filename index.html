@@ -17,27 +17,31 @@ sitemap:
 {% endcomment %}
 
 <div class="homepage-blocks">
-  <div class="row">
-    <h3>Code</h3>
+  <div class="row code">
+    <h2>Code</h2>
+    <h3>Latest Releases</h3>
 
     <ul class="links">
       <li class="dynamic">
-        <a href="https://keebord.neb.host" class="favicon">Keebord</a> - Play piano
+        <a href="https://keebord.neb.host" class="favicon">Keebord</a><br />
+        <span>Play piano</span>
       </li>
       <li class="dynamic">
-        <a href="https://raffler.neb.host" class="favicon">Raffler</a> - And the winner is...
+        <a href="https://raffler.neb.host" class="favicon">Raffler</a><br />
+        <span>And the winner is...</span>
       </li>
     </ul>
 
-    <h4>Code In Progress</h4>
+    <h3>Works In Progress</h3>
 
     <ul class="links">
       <li class="dynamic">
-        <a href="https://ah.neb.host" class="favicon">Audio Hash</a> - Make a musical sampler
-        platter
+        <a href="https://ah.neb.host" class="favicon">Audio Hash</a><br />
+        <span>Make a musical sampler platter</span>
       </li>
       <li class="dynamic">
-        <a href="https://gw.neb.host" class="favicon">Gem Warrior</a> - Escape a dungeon?
+        <a href="https://gw.neb.host" class="favicon">Gem Warrior</a><br />
+        <span>Escape a dungeon?</span>
       </li>
     </ul>
 
@@ -45,6 +49,7 @@ sitemap:
   </div>
 
   <div class="row">
+    <h2>Audio</h2>
     <h3>Music</h3>
 
     <ul class="links">
@@ -69,11 +74,22 @@ sitemap:
       </li>
     </ul>
 
+    <h3>Broadcasts</h3>
+
+    <ul class="links">
+      <li class="dynamic">
+        <a href="https://hackingthegrepson.podbean.com" class="favicon">Hacking the Grepson</a>
+        <ul class="apiData devPod">
+          <li class="htgPod">{% include spinner.html %}</li>
+        </ul>
+      </li>
+    </ul>
+
     <a href="/projects#audio" class="btn-more">View All Music and Audio</a>
   </div>
 
-  <div class="row">
-    <h3>Latest Blogs</h3>
+  <div class="row blog">
+    <h2>Blog</h2>
 
     <ul class="links">
       <li class="dynamic">
@@ -87,17 +103,8 @@ sitemap:
     <a href="/blog" class="btn-more">View All Blogs</a>
   </div>
 
-  <div class="row">
-    <h3>Broadcasts</h3>
-
-    <ul class="links">
-      <li class="dynamic">
-        <a href="https://hackingthegrepson.podbean.com" class="favicon">Hacking the Grepson</a>
-        <ul class="apiData devPod">
-          <li class="htgPod">{% include spinner.html %}</li>
-        </ul>
-      </li>
-    </ul>
+  <div class="row projects">
+    <h2>Projects</h2>
 
     <a href="/projects" class="btn-more">View All Projects</a>
   </div>
