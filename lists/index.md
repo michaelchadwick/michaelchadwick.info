@@ -16,13 +16,40 @@ I have goals in both the development and musical realms.
 
 Over time, one begins to realize they vibe with certain things.
 
-#### Art, Audio
+#### Art
 
+##### Audio
+
+- [Carpenter Brut](https://carpenterbrut.bandcamp.com)
 - [Disasterpeace](https://disasterpeace.com)
+- [Joe Satriani](http://www.satriani.com)
 
-#### Art, Visual
+##### Visual
 
-- [Kilian Eng](https://www.tumblr.com/dwdesign)
+- [Kilian Eng](https://dwdesign.tumblr.com)
+
+#### Games
+
+##### Absurd
+
+- [Space Funeral](https://thecatamites.itch.io/space-funeral)
+
+##### Action
+
+- [Hotline Miami](https://en.wikipedia.org/wiki/Hotline_Miami)
+- [Just Cause](https://en.wikipedia.org/wiki/Just_Cause_(video_game_series))
+
+##### Adventure
+
+- [Fallout](https://en.wikipedia.org/wiki/Fallout_(video_game))
+- [Monkey Island](https://en.wikipedia.org/wiki/Monkey_Island)
+- [Subnautica](https://en.wikipedia.org/wiki/Subnautica)
+
+##### Puzzle
+
+- [Baba is You](https://en.wikipedia.org/wiki/Baba_Is_You)
+- [Portal](https://en.wikipedia.org/wiki/Portal_(series))
+- [The Witness](https://en.wikipedia.org/wiki/The_Witness_(2016_video_game))
 
 #### Web Services
 
