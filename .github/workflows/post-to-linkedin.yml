@@ -1,0 +1,84 @@
+name: Blog2LinkedIn
+on:
+  push:
+    paths:
+      - 'blog/_posts/*/*.md'
+
+jobs:
+  post:
+    if: contains(github.event.head_commit.message, 'new blog post:')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Get Commit SHA
+        id: get_commit_sha
+        if: ${{ !env.ACT }}
+        run: |
+          echo "Running on Github"
+          echo "sha=${{ github.sha }}" >> $GITHUB_ENV
+      # - name: Identify Added Blog Post
+      #   id: identify_added_blog_post
+      #   run: |
+      #     if [ -z ${{ env.sha }} ]; then
+      #       echo "using secret local SHA for 'act' testing"
+      #       sha=${{ secrets.TEST_SHA }}
+      #     else
+      #       sha=${{ env.sha }}
+      #     fi
+
+      #     # Get filename added in most recent commit
+      #     post_file=$(git diff-tree --no-commit-id --name-only -r $sha | grep -E '_posts/.*\.md$')
+
+      #     if [ -n "$post_file" ]; then
+      #       # Assuming only one new blog post is added in the commit
+      #       new_post_file=$(echo "$post_file" | head -n 1)
+
+      #       # Extract information from front matter using awk and grep
+      #       post_title=$(awk '/^title:/ {$1=""; sub(/^[ \t]+/, ""); print}' "$new_post_file" | tr -d '"')
+      #       date=$(echo "$new_post_file" | grep -oP '\d{4}-\d{2}-\d{2}' | sed 's/-/\//g')
+
+      #       post_summary="New blog post"
+
+      #       # Construct the URL based on Jekyll site's URL structure
+      #       base_url="${{ secrets.BLOG_URL }}"
+      #       url=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | sed -E 's/[[:space:]]+/-/g' | sed -E 's/^-//;s/-$//')
+      #       post_url="$base_url/$date/$url"
+
+      #       # Add pertinent Github environment variables
+      #       echo "post_title=$post_title" >> $GITHUB_ENV
+      #       echo "post_summary=$post_summary" >> $GITHUB_ENV
+      #       echo "post_url=$post_url" >> $GITHUB_ENV
+      #     fi
+      # - name: Post to LinkedIn
+      #   id: post_to_linkedin
+      #   if: ${{ env.post_title != '' && env.post_summary != '' && env.post_url != '' }}
+      #   env:
+      #     LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
+      #     LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+      #   run: |
+      #     echo '{
+      #       "author": "urn:li:person:michaeljchadwick",
+      #       "lifecycleState": "PUBLISHED",
+      #       "specificContent": {
+      #         "com.linkedin.ugc.ShareContent": {
+      #           "shareCommentary": {
+      #             "text": "${{ env.post_summary}}
+      #             ${{ env.post_title }}
+      #             ${{ env.post_url }}"
+      #           },
+      #           "shareMediaCategory": "NONE"
+      #         }
+      #       },
+      #       "visibility": {
+      #         "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+      #       }
+      #     }' > payload.json
+
+      #     curl -X POST \
+      #       -H "Authorization: Bearer $LINKEDIN_ACCESS_TOKEN" \
+      #       -H "Content-Type: application/json" \
+      #       -d @payload.json \
+      #       https://api.linkedin.com/v2/ugcPosts
