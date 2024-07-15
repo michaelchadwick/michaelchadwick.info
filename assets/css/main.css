@@ -1312,7 +1312,8 @@ footer#site-footer #logo-slogan a.plain {
   color: var(--link-color);
 }
 
-.musical-tone {
+.musical-tone,
+.musical-tone:visited {
   background-color: var(--link-color);
   border: 1px solid transparent;
   border-radius: 4px;
