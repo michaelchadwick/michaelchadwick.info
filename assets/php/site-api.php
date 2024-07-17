@@ -113,7 +113,8 @@ switch ($site) {
       else {
         $i = 0;
 
-        while ($body->episodes[$i]->status == 'draft') {
+        $skipStatuses = ['draft', 'future'];
+        while (in_array($body->episodes[$i]->status, $skipStatuses)) {
           $i++;
         }
 
