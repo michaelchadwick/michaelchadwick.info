@@ -12,7 +12,7 @@ Over the last few months I've made some updates to some of my web apps. Here's a
 
 ## BOGDLE
 
-```
+```shell
 Date: Wed Mar 27
 - removed some inappropriate words
 - added sounds for incorrect guess, and repeated guess
@@ -22,26 +22,26 @@ Building a [word game](https://bogdle.neb.host) that uses a corpus as large as t
 
 Also, to liven things up, I made some more sound effects, courtesy of my daughter :D
 
-```
+```shell
 Date: Mon Mar 18
 - bogdle now keeps track of daily pangrams found, and allows sharing of accomplishment
 ```
 
-A friend of mine said that they don't play Bogdle (or words games in this vein) as a daily because it takes too long (some days can take a long time!). I agree with their assessment; it's why I don't regularly play Bogdle, and I *made* it! Thus, I figured a _mini_-goal (besides finding ALL the words) could be to find the *pangram* (thanks for the term, [Spelling Bee](https://nytimes.com/puzzles/spelling-bee)). It's gotten me to do the puzzle each day ever since.
+A friend of mine said that they don't play Bogdle (or words games in this vein) as a daily because it takes too long (some days can take a long time!). I agree with their assessment; it's why I don't regularly play Bogdle, and I *made* it! Thus, I figured a *mini*-goal (besides finding ALL the words) could be to find the *pangram* (thanks for the term, [Spelling Bee](https://nytimes.com/puzzles/spelling-bee)). It's gotten me to do the puzzle each day ever since.
 
 ## NEBYOODLE
 
-```
+```shell
 Date: Wed Mar 13
 - skipped and wrong guess now have a matching background color
 - skipped and wrong guess now have a matching border color
 ```
 
-My "[guess the song](https://guess.nebyoolae.com)" game using only music I've made (verrrrry niche audience) hasn't changed much, but I did make the main view of guesses have a bit more color. Spotify's daily game, now discontinued, was the initial inspiration, and its design was very minimal. As time went on, I felt like Nebyoodle's UI could use a _smidge_ more color, especially when making guesses, so that you could see how well you're doing at a glance. Color and iconography go a long way.
+My "[guess the song](https://guess.nebyoolae.com)" game using only music I've made (verrrrry niche audience) hasn't changed much, but I did make the main view of guesses have a bit more color. Spotify's daily game, now discontinued, was the initial inspiration, and its design was very minimal. As time went on, I felt like Nebyoodle's UI could use a *smidge* more color, especially when making guesses, so that you could see how well you're doing at a glance. Color and iconography go a long way.
 
 ## RAFFLER
 
-```
+```shell
 Date: Fri Apr 12
 - only play countdown sound once
 ```
@@ -52,7 +52,7 @@ Unfortunately, I just couldn't figure out why it did this. My best guess was tha
 
 Regardless of all that work, the fix was far less elegant: I have a variable that keeps track of the interval between cycles of each item in the raffler. This variable gets bigger and bigger as the raffler goes from beginning to end, making a "slowdown" effect. Once the raffle has chosen an item, it resets back to a default value. I just made sure the audio file can only be triggered when the interval variable is equal to the default value. Bam, done, fixed. Why didn't I do this eons ago?!
 
-```
+```shell
 Date: Fri Apr 12
 - removed talkify; implemented SpeechSynthesis API
 ```
@@ -61,7 +61,7 @@ One feature Raffler has is to read the item chosen out loud, for better accessib
 
 Recently, I found that Javascript has its own built-in [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) interface (part of the Web Speech API), and is dead simple to use. The fewer dependencies, the better.
 
-```
+```shell
 Date: Thu Apr 11
 - moved some functions into their own files in a lib/ subdir
 ```

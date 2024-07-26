@@ -31,8 +31,8 @@ It&#8217;s gonna be good, man.
 
 There are some music friends of mine making quality tunes that are inspiring me to want to do more covers, as well.
 
-  * [Samantha Hogan (Shogan)](https://samanthahogan-composer.bandcamp.com/album/midi-tastic-video-game-ish-music-v-1)
-  * [Forrest MASH](https://www.youtube.com/channel/UCCNiGiYxzPsnmuQFOCel9eg)
+* [Samantha Hogan (Shogan)](https://samanthahogan-composer.bandcamp.com/album/midi-tastic-video-game-ish-music-v-1)
+* [Forrest MASH](https://www.youtube.com/channel/UCCNiGiYxzPsnmuQFOCel9eg)
 
 <hr class="wp-block-separator" />
 

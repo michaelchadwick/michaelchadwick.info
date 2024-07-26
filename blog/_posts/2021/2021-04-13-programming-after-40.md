@@ -24,7 +24,7 @@ So what _do_ I have to show for myself after 25 years? Some highlights:
 * [Feep](https://github.com/michaelchadwick/feep)
 * [Utterly](https://github.com/michaelchadwick/utterly)
 * [Axeracer](https://github.com/michaelchadwick/game-off-2016)
-* Oh, and *this site, itself*, of course
+* Oh, and _this site, itself_, of course
 
 ### What's Going On?
 
@@ -38,4 +38,4 @@ I got the [official book on redstone](https://www.amazon.com/Minecraft-Guide-Red
 
 There's always the potential of making another game, since that idea is always bubbling around. In other news, we got a fancy Sony TV to replace an ailing Vizio model, and all the remote apps to control it are unacceptable for various reasons. Maybe I could get back into Swift and actually finally make an iOS app?
 
-For now, I guess I don't really *need* a project, right? I mean, the push to constantly create has been monopolized by music for a while now and maybe there's just no room currently for a dev project.
+For now, I guess I don't really _need_ a project, right? I mean, the push to constantly create has been monopolized by music for a while now and maybe there's just no room currently for a dev project.

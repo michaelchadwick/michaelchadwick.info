@@ -15,13 +15,13 @@ Typing as a musician, I make music a lot. My brain just kind of synthesizes soun
 
 While all of this so far is fantastic, there is still no way within the aforementioned system to LISTEN TO A PLAYLIST OF AUDIO IN ORDER WITHOUT THE AUDIO STOPPING AFTER EACH FILE.
 
-_Ahem_.
+*Ahem*.
 
 Thus, as a musician who is also a web developer, I decided to make something that fixes this as best as I could.
 
 SoundLister is a web application that takes a directory (or multiple directories) of audio, creates an old-school Winamp-ish audio player with a playlist, and slaps it on a one-page web app. You click/tap play and it plays all the audio files in order, and then (by default) plays them again. And again. And again and again and again until you either stop it, you toggle the Repeat option off, your device runs out of juice, or the heat death of the universe ends everything. That's it!
 
-Well, there's a bit more, but that's essentially _*it*_.
+Well, there's a bit more, but that's essentially **it**.
 
 ## DESIGN
 
@@ -39,9 +39,9 @@ The audio files are read in by a custom PHP script, analyzed for ID3 information
 
 ## DRAWBACKS
 
-Due to how iOS _still_ treats web applications, if you lock your screen while SoundLister is doing its thing, and an audio file finishes, it will *not* automatically start the next one in the playlist. This, of course, defeats a HUGE percentage of the functionality for me, but I have yet to find a workaround despite trying several Javascript hacks.
+Due to how iOS *still* treats web applications, if you lock your screen while SoundLister is doing its thing, and an audio file finishes, it will *not* automatically start the next one in the playlist. This, of course, defeats a HUGE percentage of the functionality for me, but I have yet to find a workaround despite trying several Javascript hacks.
 
-Android phones seem to process the whole shebang _just fine_, and I'm not jealous AT ALL.
+Android phones seem to process the whole shebang *just fine*, and I'm not jealous AT ALL.
 
 ## FOR THE ROAD
 

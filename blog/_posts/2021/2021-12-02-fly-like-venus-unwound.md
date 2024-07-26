@@ -13,8 +13,8 @@ Much of the recording was done at home, so it has a more &#8220;studio&#8221; fe
 
 One can listen or purchase it from many places, as is the way these days:
 
-  * [Bandcamp](https://flylikevenus.bandcamp.com/releases)
-  * [Youtube](https://music.youtube.com/channel/UCZM6OHNCjdvKJvjseMNVihA)
-  * [iTunes/Apple Music](https://music.apple.com/us/artist/fly-like-venus/1250934211)
-  * [Spotify](https://open.spotify.com/artist/0UTm3Fpds4BVrvSFIGj2iD?si=bbO-4hnjQWqTSBm3MZWeog&dl_branch=1)
-  * [Amazon](https://www.amazon.com/s?k=Fly+Like+Venus&i=digital-music)
+* [Bandcamp](https://flylikevenus.bandcamp.com/releases)
+* [Youtube](https://music.youtube.com/channel/UCZM6OHNCjdvKJvjseMNVihA)
+* [iTunes/Apple Music](https://music.apple.com/us/artist/fly-like-venus/1250934211)
+* [Spotify](https://open.spotify.com/artist/0UTm3Fpds4BVrvSFIGj2iD?si=bbO-4hnjQWqTSBm3MZWeog&dl_branch=1)
+* [Amazon](https://www.amazon.com/s?k=Fly+Like+Venus&i=digital-music)
