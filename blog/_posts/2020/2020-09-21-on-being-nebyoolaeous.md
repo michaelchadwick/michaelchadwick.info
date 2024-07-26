@@ -44,14 +44,14 @@ Lately, I&#8217;ve been segmenting myself, trying to come up with different &#82
 
 Here&#8217;s what I&#8217;ve come up with:
 
-  * **Nebyoolae** &#8211; the granddaddy of them all. Essentially, from now on, I tend to only release something using this name if it&#8217;s instrumental&#8230;something or other. Rock, dance, etc., if it&#8217;s just instrumental, then it goes under this term.
+* **Nebyoolae** &#8211; the granddaddy of them all. Essentially, from now on, I tend to only release something using this name if it&#8217;s instrumental&#8230;something or other. Rock, dance, etc., if it&#8217;s just instrumental, then it goes under this term.
 
-  * **Fenchy** &#8211; my made-up pop rock band that has lyrics and singing. I&#8217;ve only released one album, so far, but I have two more in the pipe. I think I might want to re-record, or at least re-release, a bunch of vocal stuff that was tagged with Nebyoolae as Fenchy.
+* **Fenchy** &#8211; my made-up pop rock band that has lyrics and singing. I&#8217;ve only released one album, so far, but I have two more in the pipe. I think I might want to re-record, or at least re-release, a bunch of vocal stuff that was tagged with Nebyoolae as Fenchy.
 
-  * **Massive Battery** &#8211; my odd electronica outfit, only using Native Instruments&#8217; Massive for synths and Battery for percussion. Oh, and loads of vocal samples. Become a [Dance Master](https://soundcloud.com/massive-battery/dance-master), ya&#8217;ll.
-  * **Fly Like Venus** &#8211; my current band. I play rhythm (and sometimes lead) guitar, and I contribute to songwriting and vocals. It&#8217;s a group effort, so it&#8217;s in its own little world.
+* **Massive Battery** &#8211; my odd electronica outfit, only using Native Instruments&#8217; Massive for synths and Battery for percussion. Oh, and loads of vocal samples. Become a [Dance Master](https://soundcloud.com/massive-battery/dance-master), ya&#8217;ll.
+* **Fly Like Venus** &#8211; my current band. I play rhythm (and sometimes lead) guitar, and I contribute to songwriting and vocals. It&#8217;s a group effort, so it&#8217;s in its own little world.
 
-  * **Jasper Crabbyhat** &#8211; my one-man kid band inspired by [Caspar Babypants](https://babypantsmusic.com/home). I know, I know. I have an album in the works, regardless.
+* **Jasper Crabbyhat** &#8211; my one-man kid band inspired by [Caspar Babypants](https://babypantsmusic.com/home). I know, I know. I have an album in the works, regardless.
 
 <hr class="wp-block-separator" />
 
