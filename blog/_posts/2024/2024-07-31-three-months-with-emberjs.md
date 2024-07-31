@@ -4,7 +4,7 @@ title: 'Three Months With EmberJS'
 tags: angular emberjs jquery react retrospective vuejs webdev
 headerImage: posts/2024/three-months-emberjs.jpg
 headerImageCaption: 'a sharpened colorful closeup on a large fiery wood ember that is sitting on a blurrier less contrasty dirt ground, cartoony - NightCafe (model: Dreamshaper XL Lightning, preset: Hyperreal)'
-published: false
+published: true
 ---
 
 I started a new job recently, so I've been learning and using EmberJS, an open-source JavaScript framework. It's been over 3 months now, and it's time to do a retrospective.
