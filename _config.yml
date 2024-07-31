@@ -2,30 +2,31 @@
 title: MC.Info
 subtitle: code, audio, and life developments by michael chadwick
 author: Michael Chadwick
-extra_title: " | home of audio dev michael chadwick"
+extra_title: ' | home of audio dev michael chadwick'
 email: mike@neb.host
-description: "code, audio, and life developments by michael chadwick"
+description: 'code, audio, and life developments by michael chadwick'
 description_html: "code, audio, and life of <a href='/'>michael chadwick</a>"
-description_short: "code, audio, life"
-url: "https://michaelchadwick.info"
-home_relative_url: "/"
-blogurl: "/blog"
+description_short: 'code, audio, life'
+url: 'https://michaelchadwick.info'
+home_relative_url: '/'
+blogurl: '/blog'
 encoding: UTF-8
-exclude: ["Rakefile", ".deploy.sh", ".env.example"]
-include: ["mus.html", "net.html", "index_print.html", ".env"]
+exclude: ['Rakefile', '.deploy.sh', '.env.example']
+include: ['mus.html', 'net.html', 'index_print.html', '.env']
 webrick:
   headers:
-    Access-Control-Allow-Origin: "*"
-    Access-Control-Allow-Methods: "POST, GET, OPTIONS"
+    Access-Control-Allow-Origin: '*'
+    Access-Control-Allow-Methods: 'POST, GET, OPTIONS'
 tag_page_layout: tag_page
 tag_page_dir: blog/tags
 enable_comments: true
-date_YYYYMMDD_dash: "%Y-%m-%d"
-date_YYYYMMDD_slash: "%Y/%m/%d"
-date_MMDDYYYY: "%b %-d, %Y"
-date_YYYYMD: "%Y-%m-%d"
+date_YYYYMMDD_dash: '%Y-%m-%d'
+date_YYYYMMDD_slash: '%Y/%m/%d'
+date_MMDDYYYY: '%b %-d, %Y'
+date_YYYYMD: '%Y-%m-%d'
 
 plugins:
+  - jekyll-environment-variables
   - jekyll-feed
   - jekyll-loading-lazy
   - jekyll-paginate-v2
