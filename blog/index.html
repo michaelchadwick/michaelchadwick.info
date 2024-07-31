@@ -24,10 +24,14 @@ tags: fa fa-solid
     <ul id="results-container"></ul>
   </div>
 
-  <ul class="posts{% if site.unpublished %} posts-unpublished{% endif %}">
+  <ul
+    class="posts{% if site.unpublished %} posts-unpublished{% endif %}"{% if site.env.SHOW_UNPUB == 'true' %}style="display: block"{% endif %}
+  >
     {% for post in paginator.posts %}
 
-    <li class="post-row{% if post.published == false %} unpublished{% endif %}">
+    <li
+      class="post-row{% if post.published == false %} unpublished{% endif %}"{% if site.env.SHOW_UNPUB == 'true' %}style="display: block"{% endif %}
+    >
       <div class="post-meta">
         {% if post.published == false %}
         <div><strong>UNPUBLISHED</strong></div>
