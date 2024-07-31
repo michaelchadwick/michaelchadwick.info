@@ -1028,6 +1028,7 @@ footer#site-footer #logo-slogan a.plain {
 .post-content h4,
 .post-content h5,
 .post-content h6 {
+  clear: both;
   line-height: 1;
   font-weight: 600;
   margin: 40px 0 20px;
