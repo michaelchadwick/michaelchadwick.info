@@ -952,7 +952,7 @@ footer#site-footer #logo-slogan a.plain {
 /* ----------------------------------------------------------*/
 
 .post-header {
-  margin: 1em 0;
+  margin: 1em 0 0.5em;
 }
 @media (min-width: 768px) {
   .post-header {
@@ -982,29 +982,36 @@ footer#site-footer #logo-slogan a.plain {
 }
 
 .post-header-image.full-entry {
+  align-items: center;
+  display: flex;
   max-height: 200px;
   overflow: hidden;
 }
+.post-header-image.full-entry img {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.post-header-image-caption {
+  border-left: 1px solid #000;
+  border-right: 1px solid #aaa;
+  font-size: 0.8em;
+  line-height: 1;
+  margin-top: 3px;
+  padding: 5px 10px;
+}
 @media (min-width: 768px) {
   .post-header-image.full-entry {
+    display: block;
     margin-top: 2em;
     max-height: none;
     overflow: auto;
   }
-}
-/*
-  .post-header-image.full-entry img {
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 55%);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 55%);
-
-  }
-  */
-@media (min-width: 768px) {
   .post-header-image.full-entry img {
     -webkit-mask-image: none;
     mask-image: none;
+    max-height: none;
     max-width: none;
-    width: 100%;
   }
 }
 

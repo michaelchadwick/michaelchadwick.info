@@ -17,6 +17,9 @@ layout: default
         {{ page.date | date: site.date_YYYYMMDD_dash | slice: 0, 10 }}
       {% endif %}
     </span>
+    {% unless post.published %}
+    <span>UNPUBLISHED</span>
+    {% endunless %}
 
     <h1>{{ page.title }}</h1>
 
@@ -54,6 +57,11 @@ layout: default
         {% endif %}
       />
     </div>
+    {% if page.headerImageCaption %}
+    <div class="post-header-image-caption">
+      {{ page.headerImageCaption }}
+    </div>
+    {% endif %}
   </header>
 
   <article class="post-content">

@@ -53,24 +53,19 @@ tags: fa fa-solid
       <div class="post-main">
         <div class="post-header-image">
           <a href="{{ post.url | prepend: site.baseurl }}">
-            <img
-              {%
-              if
-              post.headerImage
-              %}
-              src="{{ site.baseurl }}/assets/images/{{ post.headerImage }}"
-              {%
-              else
-              %}
-              src="{{ site.baseurl }}/assets/images/default_header.jpg"
-              {%
-              endif
-              %}
-              alt="{{ post.title }}"
-              title="{{ post.title }}"
-              width="480"
-              height="270"
-            />
+            <figure>
+              <img
+                {% if post.headerImage %}
+                src="{{ site.baseurl }}/assets/images/{{ post.headerImage }}"
+                {% else %}
+                src="{{ site.baseurl }}/assets/images/default_header.jpg"
+                {% endif %}
+                alt="{{ post.title }}"
+                title="{{ post.title }}"
+                width="480"
+                height="270"
+              />
+            </figure>
           </a>
         </div>
 
