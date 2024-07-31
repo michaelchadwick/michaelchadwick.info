@@ -3,6 +3,7 @@ layout: post
 title: "Client-Side Ruby with Web Assembly"
 tags: ruby wasm web web-assembly
 headerImage: posts/2023/ruby-on-wasm-2023-11-22.jpg
+headerImageCaption: '"ruby programming language logo superimposed on the web assembly logo" Origami paper folds papercraft, made of paper, stationery, 8K resolution 64 megapixels soft focus - NightCafe (model: SDXL 1.0)'
 published: true
 ---
 

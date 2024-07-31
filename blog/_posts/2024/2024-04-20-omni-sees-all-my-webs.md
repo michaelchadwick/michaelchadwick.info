@@ -3,6 +3,7 @@ layout: post
 title: "Omni Sees All My Webs"
 tags: omni nebapps
 headerImage: posts/2024/omni-sees-all-my-webs.jpg
+headerImageCaption: 'omni sees all my webs - NightCafe (model: Dreamshaper XL Lightning, preset: NightCafe)'
 published: true
 ---
 
