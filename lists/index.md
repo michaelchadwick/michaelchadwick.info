@@ -28,6 +28,10 @@ Over time, one begins to realize they vibe with certain things.
 
 - [Kilian Eng](https://dwdesign.tumblr.com)
 
+#### Design
+
+- [Tania Rascia](https://www.taniarascia.com)
+
 #### Games
 
 ##### Absurd
