@@ -18,7 +18,7 @@ Over time, one begins to realize they vibe with certain things.
 
 #### Art
 
-##### Audio
+##### Aural
 
 - [Carpenter Brut](https://carpenterbrut.bandcamp.com)
 - [Disasterpeace](https://disasterpeace.com)
