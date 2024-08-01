@@ -11,19 +11,38 @@
 
   <!-- META
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <meta name="author" content="{{ site.author }}" />
+
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+  {% elsif page.title %}
+  <meta name="description" content="{{ page.title }}" />
+  {% else %}
   <meta name="description" content="{{ site.description }}" />
-  <meta name="author" content="Michael Chadwick" />
-  <meta name="title" content="All the Info About Me - Michael Chadwick" />
-  <meta property="og:url" content="{{ site.url }}" />
-  <meta property="og:title" content="All the Info About Me - Michael Chadwick" />
-  <meta property="og:description" content="{{ site.description }}" />
+  {% endif %} {% if page.title %}
+  <meta name="title" content="{{ page.title }}" />
+  {% else %}
+  <meta name="title" content="{{ site.title }}" />
+  {% endif %}
+
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:image" content="/assets/icons/android-chrome-256x256.png" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="twitter:card" content="summary" />
-  <meta property="twitter:domain" content="{{ site.url }}" />
+  <meta property="twitter:domain" content="{{ site.url }}{{ page.url }}" />
   <meta property="env" content="{{ jekyll.environment }}" />
-  <link rel="canonical" href="{{ site.url }}" />
+
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  {% else %}
+  <meta property="og:title" content="{{ site.title }}" />
+  {% endif %} {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}" />
+  {% else %}
+  <meta property="og:description" content="{{ site.description }}" />
+  {% endif %}
 
   <!-- FAVICONS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

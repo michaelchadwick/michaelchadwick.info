@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
-<body class="light-theme">
+  {% include head.html %}
+  <body class="light-theme">
+    {% include header-scrolled.html %}
 
-  {% include header-scrolled.html %}
+    <!-- Primary Page Layout -->
+    <div class="container">
+      <div class="overlay"></div>
 
-  <!-- Primary Page Layout -->
-  <div class="container">
-
-    <div class="overlay"></div>
-
-    {% include header.html %}
-
-    {{ content }}
-
-    {% include footer.html %}
-
-  </div><!-- /container -->
-
-</body>
+      {% include header.html %} {{ content }} {% include footer.html %}
+    </div>
+    <!-- /container -->
+  </body>
 </html>
