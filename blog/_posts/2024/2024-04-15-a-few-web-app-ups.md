@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "A Few Web App Ups"
+description: "Over the last few months I've made some updates to some of my web apps. Here's a short overview of those changes, using my very own git commit messages as headers!"
 tags: bogdle games gem-warrior keebord nebapps nebyoodle puzzles raffler speech-synthesis wordle
 headerImage: posts/2024/a-few-web-app-ups.jpg
 headerImageCaption: 'large desert landscape, small spiderweb in the middle, spiderweb being welded by a single robot engineer - NightCafe (model: Dreamshaper XL Lightning, preset: Striking)'
 published: true
 ---
 
-Over the last few months I've made some updates to some of my web apps. Here's a short overview of those changes, using my very own git commit messages as headers!
+{{ page.description}}
 
 <!--more-->
 

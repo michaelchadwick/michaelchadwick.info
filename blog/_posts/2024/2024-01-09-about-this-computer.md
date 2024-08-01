@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "About This Computer"
+description: "Have you ever wanted to just get a quick print out (to the screen) of all the tech that's on your computer? I've been working on a shell script for years that does just that."
 tags: about bash documentation linux macos neofetch python scripting shell sysadmin tool unix
 headerImage: posts/2024/about-this-computer-2024-01-09.jpg
 headerImageCaption: '"your computer specifications" abstract art complementary colors fine details numbers letters - NightCafe (model: SDXL 1.0)'
 published: true
 ---
 
-Have you ever wanted to just get a quick print out (to the screen) of all the tech that's on your computer? I've been working on a shell script for years that does just that.
+{{ page.description }}
 
 <!--more-->
 
