@@ -12,7 +12,7 @@ faviconLinks.forEach((f) => {
   const parentStyle = f.parentElement.style
   const hostname = f.href
 
-  let iconSize = 16
+  let iconSize = f.dataset.size ?? 16
   let url = ''
 
   // exceptions
