@@ -130,6 +130,7 @@ body {
   color: var(--text-color);
   font-size: 1.6rem;
   margin-top: 70px;
+  transition: 500ms;
 }
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
@@ -155,6 +156,7 @@ a {
   color: var(--link-color);
   font-weight: 600;
   text-decoration: none;
+  transition: 1000ms;
 }
 a:hover {
   text-decoration: underline;
