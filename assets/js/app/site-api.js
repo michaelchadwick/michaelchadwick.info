@@ -166,7 +166,7 @@ MCInfo.SiteApi.GH = async function () {
 }
 
 // PODBEAN (backend) // TODO: fix so it works on local
-MCInfo.SiteApi.POD = function (type = 'latest') {
+MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
   // get podcast episodes
   fetch(MCInfo.BACKEND_SITE_API_PATH, {
     method: 'POST',
@@ -215,7 +215,7 @@ MCInfo.SiteApi.POD = function (type = 'latest') {
 }
 
 // RUBYGEMS (backend) // TODO: fix so it works on local
-MCInfo.SiteApi.RG = async function () {
+MCInfo.SiteApi.RUBYGEMS = async function () {
   // get linked list of rubygems
   fetch(MCInfo.BACKEND_SITE_API_PATH, {
     method: 'POST',

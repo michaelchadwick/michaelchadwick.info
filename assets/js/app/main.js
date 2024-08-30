@@ -139,7 +139,7 @@ MCInfo.initApi = () => {
   if (document.location.pathname == '/') {
     // get external site data
     MCInfo.SiteApi.BLOG()
-    MCInfo.SiteApi.POD()
+    MCInfo.SiteApi.PODBEAN()
   }
 
   // external site checking for projects page
@@ -149,8 +149,8 @@ MCInfo.initApi = () => {
     MCInfo.SiteApi.BLOG()
     // pinned repo service in flux, so turning off for now
     // MCInfo.SiteApi.GH()
-    MCInfo.SiteApi.POD()
-    MCInfo.SiteApi.RG()
+    MCInfo.SiteApi.PODBEAN()
+    MCInfo.SiteApi.RUBYGEMS()
     MCInfo.SiteApi.STEAM()
   }
 
