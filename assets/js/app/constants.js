@@ -1,22 +1,20 @@
 /* eslint-disable no-unused-vars */
 
-const BGG_API_URL = 'https://boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
+const BGG_API_URL =
+  'https://boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
 
 const GH_USER = 'michaelchadwick'
 const GH_API_URL = 'https://api.github.com'
 const GH_API_LAST_REPO = `${GH_API_URL}/users/${GH_USER}/repos?sort=updated&per_page=1`
 const GH_PINNED_API = 'https://gh-pinned-repos.egoist.dev/?username='
 
-const MCINFO_PROD_URL = [
-  'michaelchadwick.info',
-  'tremloop.com'
-]
+const MCINFO_PROD_URL = ['michaelchadwick.info', 'tremloop.com']
 const MCINFO_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_BLOG_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_API_URL = '/api/v1/pages.json'
 
-const BACKEND_SITE_API_PATH = '/assets/php/site-api.php'
-const BACKEND_SITE_VIS_PATH = '/assets/php/site-visibility.php'
+const BACKEND_SITE_API_PATH = 'http://localhost:3000/site-api.php'
+const BACKEND_SITE_VIS_PATH = 'http://localhost:3000/site-visibility.php'
 
 // wordpress has been deleted
 // const MUZBLOG_API_URL = 'https://blog.nebyoolae.com/wp-json/wp/v2/posts'

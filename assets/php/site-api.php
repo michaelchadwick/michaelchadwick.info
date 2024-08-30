@@ -4,6 +4,10 @@ require '../../vendor/autoload.php';
 use Dotenv\Dotenv;
 use GuzzleHttp\Client;
 
+header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Origin: *');
+
 $dotenv = Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
 $dotenv->load();
 

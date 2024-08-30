@@ -12,6 +12,13 @@
 `$ bundle install`
 `$ composer install`
 
+### PHP API
+
+In order for `/assets/php/*` files to work, you must run a local server:
+
+* `cd /path/to/mc/assets/php`
+* `php -S 127.0.0.1:3000`
+
 ### Serve Local Development Version
 
 `$ rake serve`
