@@ -8,9 +8,9 @@ MCInfo.env = MCINFO_PROD_URL.includes(document.location.hostname) ? 'prod' : 'lo
 MCInfo.showUnpublished = false
 
 if (MCInfo.env == 'prod') {
-  const BACKEND_SITE_API_PATH = '/assets/php/site-api.php'
-  const BACKEND_SITE_VIS_PATH = '/assets/php/site-visibility.php'
+  MCInfo.BACKEND_SITE_API_PATH = '/assets/php/site-api.php'
+  MCInfo.BACKEND_SITE_VIS_PATH = '/assets/php/site-visibility.php'
 } else {
-  const BACKEND_SITE_API_PATH = 'http://localhost:3000/site-api.php'
-  const BACKEND_SITE_VIS_PATH = 'http://localhost:3000/site-visibility.php'
+  MCInfo.BACKEND_SITE_API_PATH = 'http://localhost:3000/site-api.php'
+  MCInfo.BACKEND_SITE_VIS_PATH = 'http://localhost:3000/site-visibility.php'
 }
