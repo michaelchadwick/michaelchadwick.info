@@ -126,10 +126,6 @@ MCInfo.addEventHandlers = () => {
 }
 
 MCInfo.initApi = () => {
-  // set some site vars
-  MCInfo.env = MCINFO_PROD_URL.includes(document.location.hostname) ? 'prod' : 'local'
-  MCInfo.showUnpublished = false
-
   // adjust <title> for env
   if (MCInfo.env == 'local') {
     if (!document.title.includes('(LH) ')) {
