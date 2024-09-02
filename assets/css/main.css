@@ -336,7 +336,6 @@ ul.links li.manual.music::marker {
 
 ul.links li a {
   display: block;
-  padding-bottom: 2px;
 }
 @media (min-width: 768px) {
   ul.links li a {
@@ -838,6 +837,13 @@ footer#site-footer #logo-slogan a.plain {
 }
 .homepage-blocks .row.code ul.links li.dynamic {
   display: list-item;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .homepage-blocks .row.code ul.links li.dynamic {
+    height: 80px;
+    margin-bottom: 0;
+  }
 }
 .homepage-blocks .row ul.links li {
   padding-left: 0;
