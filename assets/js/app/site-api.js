@@ -39,8 +39,8 @@ MCInfo.SiteApi.BGG = function () {
         console.error('bgg api error')
       }
 
-      if (bggApiData.style.display !== 'block') {
-        bggApiData.style.display = 'block'
+      if (!bggApiData.classList.contains('show')) {
+        bggApiData.classList.add('show')
       }
     })
     .catch((error) => {
@@ -87,8 +87,8 @@ MCInfo.SiteApi.BLOG = function () {
       devblog.innerHTML = `<span>Latest post: ${postDate}<br />`
       devblog.innerHTML += `<a href="${postUrl}">${postTitle}</a></span>`
 
-      if (devblogApi.style.display !== 'block') {
-        devblogApi.style.display = 'block'
+      if (!devblogApi.classList.contains('show')) {
+        devblogApi.classList.add('show')
       }
     })
     .catch((error) => {
@@ -127,8 +127,8 @@ MCInfo.SiteApi.GH = async function () {
 
         ghApiListItem.innerHTML = str
 
-        if (ghApiList.style.display !== 'block') {
-          ghApiList.style.display = 'block'
+        if (!ghApiList.classList.contains('show')) {
+          ghApiList.classList.add('show')
         }
       }
     })
@@ -159,8 +159,8 @@ MCInfo.SiteApi.GH = async function () {
 
   //   ghApiListItem.innerHTML = str
 
-  //   if (ghApiList.style.display !== 'block') {
-  //     ghApiList.style.display = 'block'
+  //   if (!ghApiList.classList.contains('show')) {
+  //     ghApiList.classList.add('show')
   //   }
   // }
 }
@@ -199,11 +199,16 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
       }
       // display latest episode pertinent info
       else {
+        const podbeanApi = document.querySelector('.apiData.devPod')
         const podbeanApiListItem = document.querySelector('.htgPod')
         const podbeanDate = new Date(parseInt(data.time * 1000)).toLocaleDateString('en-CA')
 
         podbeanApiListItem.innerHTML = `<span>Latest episode: ${podbeanDate}<br />`
         podbeanApiListItem.innerHTML += `<a href="${data.url}">${data.title}</a></span>`
+
+        if (!podbeanApi.classList.contains('show')) {
+          podbeanApi.classList.add('show')
+        }
       }
     })
     .catch((error) => {
@@ -240,8 +245,8 @@ MCInfo.SiteApi.RUBYGEMS = async function () {
 
       rubygems.innerHTML = gems.sort().join(', ')
 
-      if (rubygemsApi.style.display !== 'block') {
-        rubygemsApi.style.display = 'block'
+      if (!rubygemsApi.classList.contains('show')) {
+        rubygemsApi.classList.add('show')
       }
     })
     .catch((error) => {
@@ -289,8 +294,8 @@ MCInfo.SiteApi.STEAM = function () {
 
             steamLastGamePlayed.innerHTML = `<span>Latest game:</span><br /><img class="steam-icon" src="${gameIcon}" /><a href="${gameUrl}">${gameTitle}</a>`
 
-            if (steamApiData.style.display !== 'block') {
-              steamApiData.style.display = 'block'
+            if (!steamApiData.classList.contains('show')) {
+              steamApiData.classList.add('show')
             }
           }
         }
@@ -440,8 +445,8 @@ MCInfo.SiteApi.WP = async function() {
 
       muzblog.innerHTML = `Latest post: ${date}<br /><a href='${url}'>${title}</a>`
 
-      if (muzBlogApiData.style.display !== 'block') {
-        muzBlogApiData.style.display = 'block'
+      if (!muzBlogApiData.classList.contains('show')) {
+        muzBlogApiData.classList.add('show')
       }
     })
 }

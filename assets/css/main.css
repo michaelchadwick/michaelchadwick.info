@@ -316,6 +316,9 @@ ul.links li {
     padding: 5px 10px;
   }
 }
+ul.links .show {
+  display: block;
+}
 ul.links li::marker {
   margin-right: 0;
   padding: 0;
@@ -372,6 +375,12 @@ ul.links li ul li::before {
   line-height: 0;
   position: absolute;
   top: 0.25em;
+}
+ul.links li ul li.loader::before {
+  display: none;
+}
+ul.links li ul.show li.loader::before {
+  display: block;
 }
 ul.links li ul li.blank {
   left: -0.75em;
