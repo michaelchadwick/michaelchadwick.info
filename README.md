@@ -17,7 +17,7 @@
 In order for `/assets/php/*` files to work, you must run a local server:
 
 * `cd /path/to/mc/assets/php`
-* `php -S 127.0.0.1:3000`
+* `php -S 127.0.0.1:4001`
 
 ### Serve Local Development Version
 
