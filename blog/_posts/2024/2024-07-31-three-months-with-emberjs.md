@@ -5,6 +5,7 @@ description: "I started a new job recently, so I've been learning and using Embe
 tags: angular emberjs jquery react retrospective vuejs webdev
 headerImage: posts/2024/three-months-emberjs.jpg
 headerImageCaption: 'a sharpened colorful closeup on a large fiery wood ember that is sitting on a blurrier less contrasty dirt ground, cartoony - NightCafe (model: Dreamshaper XL Lightning, preset: Hyperreal)'
+image: posts/2024/three-months-emberjs.jpg
 published: true
 ---
 

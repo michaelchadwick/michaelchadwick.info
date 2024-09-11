@@ -5,6 +5,7 @@ description: "Over the last few months I've made some updates to some of my web 
 tags: bogdle games gem-warrior keebord nebapps nebyoodle puzzles raffler speech-synthesis wordle
 headerImage: posts/2024/a-few-web-app-ups.jpg
 headerImageCaption: 'large desert landscape, small spiderweb in the middle, spiderweb being welded by a single robot engineer - NightCafe (model: Dreamshaper XL Lightning, preset: Striking)'
+image: posts/2024/a-few-web-app-ups.jpg
 published: true
 ---
 

@@ -5,6 +5,7 @@ description: "Have you ever wanted to just get a quick print out (to the screen)
 tags: about bash documentation linux macos neofetch python scripting shell sysadmin tool unix
 headerImage: posts/2024/about-this-computer-2024-01-09.jpg
 headerImageCaption: '"your computer specifications" abstract art complementary colors fine details numbers letters - NightCafe (model: SDXL 1.0)'
+image: posts/2024/about-this-computer-2024-01-09.jpg
 published: true
 ---
 
