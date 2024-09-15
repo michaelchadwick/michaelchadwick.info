@@ -14,6 +14,7 @@ group :jekyll do
 end
 
 group :jekyll_plugins do
+  gem 'jekyll-archives'
   gem 'jekyll-environment-variables'
   gem 'jekyll-feed'
   gem 'jekyll-loading-lazy'
