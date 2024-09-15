@@ -24,9 +24,7 @@
   --text-color: var(--neutral-black);
   --text-shaded-color: var(--neutral-dark-gray);
   --bg-color: var(--neutral-white-trans);
-}
 
-:root {
   /* bootstrap v3 */
   /*
   --xs-min:  0;
