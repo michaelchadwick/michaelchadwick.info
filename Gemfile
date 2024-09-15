@@ -10,11 +10,10 @@ group :default do
 end
 
 group :jekyll do
-  gem 'jekyll', '>=4.2.0'
+  gem 'jekyll', '>=4.3.0'
 end
 
 group :jekyll_plugins do
-  gem 'jekyll-archives'
   gem 'jekyll-environment-variables'
   gem 'jekyll-feed'
   gem 'jekyll-loading-lazy'
