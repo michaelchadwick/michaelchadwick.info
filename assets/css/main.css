@@ -851,7 +851,7 @@ footer#site-footer #logo-slogan a.plain {
   padding-left: 0;
 }
 .homepage-blocks .row.code ul.links li a {
-  display: block;
+  display: flex;
 }
 .homepage-blocks .row.code ul.links li span {
   display: block;
