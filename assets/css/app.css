@@ -270,6 +270,9 @@ h6 {
   line-height: 0.8;
   margin-bottom: 2rem;
 }
+h6.year-links a {
+  line-height: 1.2;
+}
 @media (min-width: 550px) {
   h6 {
     font-size: 1.6rem;
@@ -295,6 +298,10 @@ ul ul {
 
 ul.apiData.narrow {
   max-width: 260px;
+}
+
+ul.archives-years {
+  margin-left: 10px;
 }
 
 ul.links {
@@ -1428,4 +1435,8 @@ footer#site-footer #logo-slogan a.plain {
 /* Fontawesome */
 h2 .svg-inline--fa {
   height: 0.75em;
+}
+
+.archives-link {
+  margin-bottom: 1em;
 }

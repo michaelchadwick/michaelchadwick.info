@@ -1,0 +1,25 @@
+---
+title: Blog > Archives
+title_icon: fa-solid fa-book
+layout: default
+style: blog
+search: false
+tags: fa fa-solid
+---
+
+<h2>
+  <a href="{{ site.blogurl }}">Blog</a> <i class="fa-solid fa-book"></i> &gt; Archives ({{
+  site.posts.size }})
+</h2>
+
+<div class="home">
+  {% assign current_year = site.time | date: '%Y' %} {% assign year_range = (2009..current_year) |
+  reverse %}
+  <ul class="archives-years">
+    {% for year in year_range %}
+    <li>
+      <a href="{{ year }}">{{ year }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
