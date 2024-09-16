@@ -660,6 +660,13 @@ div#env-indicator.env-indicator-prod {
 div#env-indicator.env-indicator-dev {
   background-color: #5ec264;
 }
+@media (hover: hover) {
+  div#env-indicator.env-indicator-dev:hover {
+    background-color: #cb0b38;
+    color: var(--neutral-white);
+    cursor: pointer;
+  }
+}
 
 button#theme-toggler {
   background-color: var(--bg-color);

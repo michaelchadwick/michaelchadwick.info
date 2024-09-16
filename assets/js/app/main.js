@@ -70,6 +70,7 @@ if (envIndicator) {
   envIndicator.style.display = 'flex'
 }
 
+const envLinker = document.querySelector('.env-indicator-dev')
 const themeToggler = document.querySelector('#theme-toggler')
 const imgThemeToggler = document.querySelector('#theme-toggler span.theme-image')
 const lblThemeToggler = document.querySelector('#theme-toggler span.theme-label')
@@ -109,6 +110,15 @@ let lastKnownScrollPosition = 0
 let ticking = false
 
 MCInfo.addEventHandlers = () => {
+  envLinker.addEventListener('mouseover', function (event) {
+    event.target.innerText = 'PROD'
+  })
+  envLinker.addEventListener('mouseout', function (event) {
+    event.target.innerText = 'DEV'
+  })
+  envLinker.addEventListener('click', function (event) {
+    window.open('https://michaelchadwick.info', '_blank')
+  })
   themeToggler.addEventListener('click', function () {
     bodyClasses.toggle('dark-theme')
     bodyClasses.toggle('light-theme')
