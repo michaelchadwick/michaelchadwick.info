@@ -110,15 +110,17 @@ let lastKnownScrollPosition = 0
 let ticking = false
 
 MCInfo.addEventHandlers = () => {
-  envLinker.addEventListener('mouseover', function (event) {
-    event.target.innerText = 'PROD'
-  })
-  envLinker.addEventListener('mouseout', function (event) {
-    event.target.innerText = 'DEV'
-  })
-  envLinker.addEventListener('click', function (event) {
-    window.open('https://michaelchadwick.info', '_blank')
-  })
+  if (envLinker) {
+    envLinker.addEventListener('mouseover', function (event) {
+      event.target.innerText = 'PROD'
+    })
+    envLinker.addEventListener('mouseout', function (event) {
+      event.target.innerText = 'DEV'
+    })
+    envLinker.addEventListener('click', function (event) {
+      window.open('https://michaelchadwick.info', '_blank')
+    })
+  }
   themeToggler.addEventListener('click', function () {
     bodyClasses.toggle('dark-theme')
     bodyClasses.toggle('light-theme')
