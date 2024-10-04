@@ -154,7 +154,7 @@ a {
   color: var(--link-color);
   font-weight: 600;
   text-decoration: none;
-  transition: 1000ms;
+  transition: 250ms;
 }
 a:hover {
   text-decoration: underline;
