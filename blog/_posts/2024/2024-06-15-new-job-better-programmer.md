@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'New Job, Better Programmer'
+date: 2024-06-15 19:48:00
 tags: development dynamic-analysis emberjs eslint husky introspection linting npm pnpm programming static-analysis stylelint testing
 headerImage: posts/2024/new-job-better-programmer.jpg
 headerImageCaption: 'programmer wearing a t-shirt and jeans, in a hero pose, outside, standing at the top of a mountain, one fist in the air, one hand down grasping a keyboard, impressive, leveling up - NightCafe (model: Dreamshaper XL Lightning, preset: Vibrant)'

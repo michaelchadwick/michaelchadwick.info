@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Few Web App Ups"
+date: 2024-04-15 20:21:00
 description: "Over the last few months I've made some updates to some of my web apps. Here's a short overview of those changes, using my very own git commit messages as headers!"
 tags: bogdle games gem-warrior keebord nebapps nebyoodle puzzles raffler speech-synthesis wordle
 headerImage: posts/2024/a-few-web-app-ups.jpg

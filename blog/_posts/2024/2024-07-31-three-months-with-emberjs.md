@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Three Months With EmberJS'
+date: 2024-07-31 12:05:00
 description: "I started a new job recently, so I've been learning and using EmberJS, an open-source JavaScript framework. It's been over 3 months now, and it's time to do a retrospective."
 tags: angular emberjs jquery react retrospective vuejs webdev
 headerImage: posts/2024/three-months-emberjs.jpg

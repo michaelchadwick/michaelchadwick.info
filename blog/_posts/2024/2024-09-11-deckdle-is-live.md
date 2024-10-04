@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Deckdle is Live'
+date: 2024-09-11 15:01:00
 description: "Announcing Deckdle, yet another web game in my portfolio. Play a daily solitaire card game and try to get the highest score possible."
 tags: cards daily deckdle game nebapp solitaire web webdev wordle-like
 headerImage: posts/2024/deckdle-is-live.png
