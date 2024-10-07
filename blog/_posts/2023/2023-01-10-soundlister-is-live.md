@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'SoundLister is Live'
+date: 2023-01-10 07:49:00
 tags: audio list music nebapp playlist tool web
 headerImage: posts/2023/soundlister-2023-01-10.png
 ---

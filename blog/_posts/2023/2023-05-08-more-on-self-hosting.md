@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'More on Self-Hosting'
+date: 2023-05-08 08:26:00
 tags: blog chat email rss self-hosting server update web
 headerImage: posts/2023/more-on-self-hosting-2023-05-08.jpg
 ---

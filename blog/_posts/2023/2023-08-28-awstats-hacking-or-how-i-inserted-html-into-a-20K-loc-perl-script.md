@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AWStats Hacking, or How I Inserted HTML into a 20K+ LOC Perl Script"
+date: 2023-08-28 16:54:00
 tags: awstats hacking html open-source perl self-hosting
 published: true
 ---

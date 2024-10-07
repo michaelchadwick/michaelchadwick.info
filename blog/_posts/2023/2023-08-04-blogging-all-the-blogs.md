@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Blogging All the Blogs'
+date: 2023-08-04 10:24:00
 tags: blogging site-maintenance
 headerImage: posts/2023/blogging-all-the-blogs-2023-08-04.jpg
 headerImageCaption: '"blogging all the blogs" - NightCafe (model: SDXL 1.0)'

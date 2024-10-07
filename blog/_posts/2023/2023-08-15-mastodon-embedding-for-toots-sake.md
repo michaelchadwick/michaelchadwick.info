@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mastodon Embedding for Toot's Sake"
+date: 2023-08-15 15:23:00
 tags: fun garageband garageband-ios live-loops logic mastodon music
 published: true
 ---

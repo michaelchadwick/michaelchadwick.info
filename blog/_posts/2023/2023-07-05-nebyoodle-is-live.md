@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Nebyoodle is Live'
+date: 2023-07-05 08:23:00
 tags: audio bogdle game music nebapp nebyoolae nebyoomusic web wordle-like
 headerImage: posts/2023/nebyoodle-2023-07-05.png
 ---

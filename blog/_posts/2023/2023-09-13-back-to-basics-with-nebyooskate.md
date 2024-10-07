@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Back to BASICs with NebyooSkate"
+date: 2023-09-13 10:08:00
 tags: basic gamedev lowresnx nebyooskate pico8 tic80
 headerImage: posts/2023/nebyooskate-title-2023-09-13.jpg
 published: true

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Share New Jekyll Blog Post on Mastodon Using Github Actions"
+date: 2023-11-17 10:17:00
 tags: automation chatgpt chatgpt3 github github-actions jekyll mastodon
 headerImage: posts/2023/github-actions-2023-11-17.jpg
 headerImageCaption: '"Make github do my bidding" - NightCafe (model: SDXL 1.0)'
