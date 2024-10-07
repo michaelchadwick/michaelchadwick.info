@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Audio Hash Mac'
+date: 2022-02-11 08:43:00
 tags: audio-hash development macdev objective-c swift swiftui utterly xcode
 ---
 

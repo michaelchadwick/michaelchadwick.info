@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New Album, New Persona
+date: 2020-05-02 08:43:00
 tags: album announcement fenchy music new-release rpm-challenge
 headerImage: posts/2020/05/fench_artist_photo.png
 ---

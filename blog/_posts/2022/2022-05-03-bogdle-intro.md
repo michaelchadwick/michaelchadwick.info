@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Bogdle, a Wordle-inspired Boggle Clone'
+date: 2022-05-03 08:43:00
 tags: bogdle boggle game javascript web-game word-game wordle
 headerImage: posts/2022/bogdle-2022-05-03.png
 ---

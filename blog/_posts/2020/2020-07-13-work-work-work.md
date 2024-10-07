@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Work, Work, Work"
+date: 2020-07-13 08:43:00
 tags: drupal drupal7 drupal8 redesign update work angular symfony mongodb typescript prototyping
 headerImage: posts/drupal_code.png
 ---

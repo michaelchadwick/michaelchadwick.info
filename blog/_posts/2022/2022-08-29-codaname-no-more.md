@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Codaname No More'
+date: 2022-08-29 15:08:00
 tags: announcement blog codaname domains jekyll-rb mcinfo
 ---
 

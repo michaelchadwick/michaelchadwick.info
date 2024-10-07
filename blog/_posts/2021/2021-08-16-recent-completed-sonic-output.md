@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2021-08-16T08:58:19-07:00
+date: 2021-08-16 08:58:19
 title: Recent Completed Sonic Output
 tags: album music new-release while-you-rest upgrade gamey-goulash
 ---
