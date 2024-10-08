@@ -276,8 +276,6 @@ MCInfo.SiteApi.STEAM = function () {
       const resp = data['response']
 
       if ('total_count' in resp) {
-        console.log('total_count', resp['total_count'])
-
         if (resp.total_count <= 0) {
           steamLastGamePlayed.innerHTML = `<span>No games played in the last 2 weeks :(</span>`
         } else {
