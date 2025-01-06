@@ -3,6 +3,7 @@ layout: post
 title: 'NebApp Highlight: Dave API'
 date: 2022-10-14 10:30:00
 tags: api daaaaave dave json nebapp php
+published: true
 ---
 
 While designing a webapp that needs to call a remote API, sometimes the API you actually need to use is too complicated or not even available due to local development access issues (e.g. CORS). It's [times like these](https://www.youtube.com/watch?v=rhzmNRtIp8k) you learn to, uh, use something lighter and more accessible.

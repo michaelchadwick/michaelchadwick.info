@@ -1,11 +1,10 @@
 ---
-
 layout: post
 title:  "Game Development with Pico-8"
 tags: game gaming lua pico8 learning github
 headerImage: posts/pico8_startup.gif
 excerpt: "Spurred on by Github's Game Off game jam, I've decided to use Pico-8 as my game engine workplace, as writing everything from scratch can be a bit of an ordeal."
-
+published: true
 ---
 
 Spurred on by [Github's Game Off](https://github.com/github/game-off-2016) game jam, and inspired by [Hook, Line, and Thinker](https://itch.io/jam/fishing-jam-2/topic/44829/fishing-puzzle-game-in-pico-8-hook-line-and-thinker), I've decided to use [Pico-8](https://lexaloffle.com/pico-8.php) as my game engine workplace, as writing everything from scratch can be a [bit of an ordeal](/2015/06/08/gem-warrior-part-1-of-who-knows/). An all-in-one minimalist design shop, Pico-8 has the ability to do the cart, sprites, and audio all in one neat little package.

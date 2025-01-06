@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "Audio Manipulation with NAudio on Windows"
 tags: windows windows7 naudio audio application audiohash wav
-
+published: true
 ---
 
 After much frustration with some low-level audio manipulation in Javascript, I decided to change gears and make my first Windows Form application using Visual Studio 2010 and a great 3rd-party audio library. Yes, it's really 2015; I'm just behind. In this, I have gotten further in my goal of gluing disparate audio files into a single one. Which is pretty great.

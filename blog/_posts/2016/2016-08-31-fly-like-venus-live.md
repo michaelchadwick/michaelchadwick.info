@@ -2,11 +2,8 @@
 title: 'Fly Like Venus: Live'
 date: 2016-08-31T08:44:02-07:00
 layout: post
-tags:
-  - company-pub-and-kitchen
-  - fly-like-venus
-  - live
-  - video
+tags: company-pub-and-kitchen fly-like-venus live video
+published: true
 ---
 The band I&#8217;m in, [Fly Like Venus](http://flylikevenus.com), played their first show recently! It was at the [Company Pub and Kitchen](http://companypubandkitchen.com/), which is a pretty nice venue, with its own stage and crew. We got it on video and it can be viewed in the little box below.
 

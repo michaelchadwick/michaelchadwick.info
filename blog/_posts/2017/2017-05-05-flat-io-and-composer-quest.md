@@ -6,6 +6,7 @@ tags:
   - composer-quest
   - composition
   - flatio
+published: true
 ---
 A few months ago one of my favorite podcasts ended. I was actually on [Composer Quest](http://composerquest.com) a few times as a guest, and the host even stayed with me for a night during his World Tour. All in all, Charlie made a very cool thing, and I&#8217;ll miss it.
 

@@ -8,7 +8,9 @@ tags:
   - music
   - recording
   - video
+published: true
 ---
+
 The sweet rock band I&#8217;m currently in, [Fly Like Venus](http://flylikevenus.com), is getting more legit everyday.
 
 <!--more-->

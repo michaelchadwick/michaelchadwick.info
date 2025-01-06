@@ -1,10 +1,9 @@
 ---
-
 layout: post
 title:  "Don't Beep When You Can Feep"
 tags: audio cli beep feep ruby wav wavfile
 excerpt: "Spending time at the command line, coding away at various things, sometimes I just want to make some noise. Of course, most of us turn to our MP3 collection or Spotify, but that wouldn't be nerdy enough nor would it involve programming, so I borne 'feep' into the world."
-
+published: true
 ---
 
 I've been interested in sound and audio for a long time now. Probably from the time I heard my first beep or click from a child's toy (can't be sure), my mind got hooked on these air fluctuations and how to make more of them.

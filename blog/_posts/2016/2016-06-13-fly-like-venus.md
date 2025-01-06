@@ -4,6 +4,7 @@ date: 2016-06-13T09:51:03-07:00
 layout: post
 tags: fly-like-venus music music-composition music-performance
 headerImage: posts/2016/06/FLV_Logo_icon_1000px-768x864.png
+published: true
 ---
 As an addendum to the last post, I would be remiss to forget to talk about [Fly Like Venus](http://flylikevenus.com) for a little bit.
 

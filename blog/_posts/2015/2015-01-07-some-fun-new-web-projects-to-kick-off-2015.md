@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "Some Fun New Web Projects to Kick Off 2015"
 tags: webdev html html5 javascript jquery localstorage json
-
+published: true
 ---
 
 2015 is apparently the year that I get inspired to work on web projects again, and rediscover the joys of the change-refresh cycle, JavaScript/jQuery, and HTML5. I just finished (is that really possible, though?) a couple new web apps and I'd like to drop some knowledge about them.

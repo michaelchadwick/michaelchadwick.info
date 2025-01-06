@@ -3,6 +3,7 @@ layout: post
 title: 'Happy New Year Sequel'
 date: 2022-01-04 08:43:00
 tags: announcement blog codaname jekyll nebyooblog wordpress
+published: true
 ---
 
 It's now 2022 (or 2020 2, if you're cheeky), and time for a blog-type announcement dealio: NebyooBlog, formerly [here](https://blog.nebyoolae.com), is finally shutting down...

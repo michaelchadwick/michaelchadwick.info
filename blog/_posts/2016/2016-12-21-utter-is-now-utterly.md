@@ -1,11 +1,10 @@
 ---
-
 layout: post
 title:  "Utter is now Utterly"
 tags: utter utterly mac macos apple objective-c swift github cow
 headerImage: posts/utterly.png
 excerpt: "Presenting: Utterly, a macOS app that puts a GUI on top of Apple's built-in speech synthesis technology."
-
+published: true
 ---
 
 Presenting: [Utterly](https://github.com/michaelchadwick/utterly), a macOS app that puts a GUI on top of Apple's built-in speech synthesis technology.

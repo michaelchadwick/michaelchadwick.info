@@ -4,6 +4,7 @@ title: 'Fly Like Venus: Unwound'
 date: 2021-12-02 08:43:00
 tags: album fly-like-venus music new-release unwound
 headerImage: posts/2021/12/flv-unwound-album-cover.jpg
+published: true
 ---
 
 The awesome rock band that I play in just (well, recently) released a second album! It&#8217;s called Unwound, and it&#8217;s a definite sophomore release: similar to the first release, but more experimental.

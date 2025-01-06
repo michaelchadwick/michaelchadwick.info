@@ -1,10 +1,9 @@
 ---
-
 layout: post
 title:  "Gem Warrior: Part 2 (of Some Indeterminate Number)"
 tags: game gaming ruby text-adventure gemwarrior rubygems
 excerpt: "Much progress has been made on Gem Warrior since last I posted, and I've learned a bunch about Ruby and how to properly structure a game."
-
+published: true
 ---
 
 Much progress has been made on [Gem Warrior](https://github.com/michaelchadwick/gemwarrior) since last I posted, and I've learned a bunch about Ruby and how to properly structure a game. I've also come to a fairly good stopping point where people can start to actually beta test the game and I can get much needed feedback outside of the echo chamber of my own head.

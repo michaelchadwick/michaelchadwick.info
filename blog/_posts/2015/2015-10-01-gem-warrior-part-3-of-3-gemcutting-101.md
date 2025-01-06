@@ -1,10 +1,9 @@
 ---
-
 layout: post
 title: "Gem Warrior: Part 3 (of 3): Gemcutting 101"
 tags: game gaming ruby text-adventure gemwarrior rubygem guide markov yaml audio yaml wrapup
 excerpt: "For the most part, Gem Warrior is done. What a blast it has been! I'm not sure I've worked so hard on a project in a long time."
-
+published: true
 ---
 
 (Previous posts [1](/2015/06/08/gem-warrior-part-1-of-who-knows/) and [2](/2015/07/16/gem-warrior-part-2-of-some-indeterminate-number/))

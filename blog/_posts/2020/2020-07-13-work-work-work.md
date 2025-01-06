@@ -4,6 +4,7 @@ title:  "Work, Work, Work"
 date: 2020-07-13 08:43:00
 tags: drupal drupal7 drupal8 redesign update work angular symfony mongodb typescript prototyping
 headerImage: posts/drupal_code.png
+published: true
 ---
 
 Has it really been almost three years since I last rapped at ya? I think the post title explains it best: I've been working at work on work, and so not much personal coding has occurred.

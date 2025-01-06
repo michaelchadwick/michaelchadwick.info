@@ -3,6 +3,7 @@ layout: post
 title: 'Audio Hash Mac'
 date: 2022-02-11 08:43:00
 tags: audio-hash development macdev objective-c swift swiftui utterly xcode
+published: true
 ---
 
 Once upon a time I created a web app called [Audio Hash](https://neb.host/audiohash). It involved low-level audio manipulation in order to take multiple audio files, grab random chunks of them, and then combine them into a sampler of sorts, or a "hash".

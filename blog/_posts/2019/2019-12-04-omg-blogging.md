@@ -3,7 +3,9 @@ layout: post
 title: OMG BLOGGING
 date: 2019-12-04 16:11:26
 tags: fly-like-venus github nebyoolae wordpress work
+published: true
 ---
+
 Some basic info, to catch up for many years of no blogging:
 
 * I&#8217;m about to turn 39 in a few days

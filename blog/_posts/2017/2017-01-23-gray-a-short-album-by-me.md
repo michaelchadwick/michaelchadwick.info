@@ -3,6 +3,7 @@ title: Gray, a short album by me
 date: 2017-01-23T08:55:43-08:00
 layout: post
 tags: album announcement gray music new-release
+published: true
 ---
 
 I have a new album of music out. It&#8217;s a 5-track EP called [Gray](https://nebyoolae.bandcamp.com/album/gray).

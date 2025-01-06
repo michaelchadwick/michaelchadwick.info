@@ -4,6 +4,7 @@ title:  "Programming After 40"
 date: 2021-04-13 08:43:00
 tags: introspection minecraft webdev work
 headerImage: posts/mc_40.png
+published: true
 ---
 
 I'm 40 years-old and I've been working on dev of some sort or another for two-and-a-half decades. I have a reliable career, but still have time to work on toy projects for fun when I want, and yet lately...I have not been interested.

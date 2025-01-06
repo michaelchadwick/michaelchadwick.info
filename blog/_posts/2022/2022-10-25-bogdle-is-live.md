@@ -4,6 +4,7 @@ title: 'Bogdle is Live'
 date: 2022-10-25 10:38:00
 tags: bogdle boggle daily game nebapp puzzle vuejs wordle wordsmyth
 headerImage: posts/2022/bogdle-2022-10-25.png
+published: true
 ---
 
 It's finally time to reveal my finished web game: **Bogdle**.

@@ -3,7 +3,9 @@ title: 'How I Didn&#8217;t Finish the 2017 RPM Challenge'
 date: 2017-02-27T08:06:07-08:00
 layout: post
 tags: music rpm-challenge
+published: true
 ---
+
 The [RPM Challenge](http://rpmchallenge.com) is an annual, um, challenge to make an album of music in a month. That&#8217;s 35 minutes or 10 songs, whichever comes first. I completed it once in [2010](http://adversapolis.rpmchallenge.com/), which was when I made my first album of both music and lyrics.
 
 <!--more-->

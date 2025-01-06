@@ -3,7 +3,9 @@ title: Checking Back In
 date: 2016-06-13T09:31:29-07:00
 layout: post
 tags: announcement podcast quibblings
+published: true
 ---
+
 The last time I updated this site, which has gone from a dump of my old LiveJournal, to a fairly recurring life blog, to a mainly defunct music blog, I had just recently become a father. In the following, oh, year and a half, I&#8217;ve been a little preoccupied with doing that thing.
 
 **However**, I&#8217;ve found time, carved into the recesses of the night, to finish a couple more albums of music.

@@ -1,10 +1,9 @@
 ---
-
 layout: post
 title:  "\"Fun\" with Javascript Frameworks"
 tags: angular angular-js express javascript meteor-js node-js react-js system-js webpack require-js raffler typescript
 excerpt: "I recently completed a new web app called Raffler that lets you take a list of items (usually names) and then 'raffle' them (i.e. randomly choose one)."
-
+published: true
 ---
 
 I recently completed a new web app called [Raffler](https://raffler.codana.me) that lets you take a list of items (usually names) and then "raffle" them (i.e. randomly choose one). It's an extension of an older web app I made called [Just Pick One](https://codaname.neb.host/jpo), but except for some neat animation I added on the front-end design, the back-end logic was largely the same as always: one big honkin' `funcs.js` file full of global variables and methods. Bad Mike, I know, I know, but it's just how I function when I build from scratch.

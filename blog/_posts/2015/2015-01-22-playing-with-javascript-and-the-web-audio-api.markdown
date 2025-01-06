@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "Playing with Javascript and the Web Audio API"
 tags: webdev audio html html5 javascript audiohash web-audio-api
-
+published: true
 ---
 
 While working on a tool in Ruby to make sampler tracks out of several album components, I realized I did not yet know enough about how to manipulate audio to do what I wanted. I needed to approach it from a different vantage point, and a different language altogether.

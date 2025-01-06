@@ -11,6 +11,7 @@ tags:
   - new-release
   - recording
   - video-game-music
+published: true
 ---
 **Solo**: [Nebyoolae &#8211; Close to the Metal](https://nebyoolae.bandcamp.com/album/close-to-the-metal)
 

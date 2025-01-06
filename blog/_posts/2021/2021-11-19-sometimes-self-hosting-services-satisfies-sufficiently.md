@@ -4,6 +4,7 @@ title:  "Sometimes Self-Hosting Services Satisfies Sufficiently"
 date: 2021-11-19 08:43:00
 tags: self-hosting webdev freshrss homer neb.host wallabag roundcube drupal linode vue-js minecraft wordpress jekyll-rb hugo
 headerImage: posts/self-hosted.jpg
+published: true
 ---
 
 Over the years, the way I've used the Internet has changed: initial discovery through a modem and AOL, creating my own little space on a local ISP's at `/~username`, always-on broadband in college, and then residential service that I've now had for nearly 2 decades.

@@ -2,11 +2,8 @@
 title: Composer Quest Olympics
 date: 2016-11-22T11:29:18-08:00
 layout: post
-tags:
-  - competition
-  - composer-quest
-  - music-composition
-  - olympics
+tags: competition composer-quest music-composition olympics
+published: true
 ---
 I&#8217;ve been listening to [Composer Quest](http://composerquest.com) for years, spurred on by [this tweet](https://twitter.com/wtrebella/status/291375926242054144?lang=en) from a Mr. Whitaker Trebella, who is a friend of the podcast host, Charlie McCarron.
 

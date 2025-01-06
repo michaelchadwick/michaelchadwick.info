@@ -2,10 +2,8 @@
 title: Favorite Albums Listened to in 2016
 date: 2017-01-12T16:00:10-08:00
 layout: post
-tags:
-  - album
-  - music
-  - retrospective
+tags: album music retrospective
+published: true
 ---
 _Note:_ these albums didn&#8217;t necessarily come out in 2016, but I listened to them A LOT in 2016 (I&#8217;m behind on a few things)
 

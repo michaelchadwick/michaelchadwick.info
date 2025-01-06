@@ -5,6 +5,7 @@ date: 2023-08-04 10:24:00
 tags: blogging site-maintenance
 headerImage: posts/2023/blogging-all-the-blogs-2023-08-04.jpg
 headerImageCaption: '"blogging all the blogs" - NightCafe (model: SDXL 1.0)'
+published: true
 ---
 
 I've been blogging on the web for over 20 years. I started with [LiveJournal](https://livejournal.com), moved to a personal [Wordpress](https://wordpress.org), and then created a [Jekyll](https://jekyllrb.com) blog inside my public site.

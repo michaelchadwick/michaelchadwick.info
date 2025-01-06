@@ -3,6 +3,7 @@ layout: post
 title: On Being Nebyoolaeous
 date: 2020-09-21 08:43:00
 tags: fly-like-venus guitar music nostalgia pure-yellow-colour retrospective
+published: true
 ---
 
 I first legitimately played a guitar in high school, sometime in the mid-1990s. A friend of mine had brought an acoustic guitar to school for some kind of talent/show-and-tell kind of thing, and I remember being quite impressed. I&#8217;d never really had much interest in learning any kind of music instrument up to that point, except for maybe the drums.

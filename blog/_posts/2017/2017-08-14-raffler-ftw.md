@@ -1,11 +1,10 @@
 ---
-
 layout: post
 title:  "Raffler FTW"
 tags: gulp javascript node-js raffler system-js task-runners uccsc ucsd
 headerImage: posts/screenshot_raffler.png
 excerpt: "Since my last post, I've worked on Raffler quite a bit (it got its own domain, for one), making it **warmer**, _juicier_, and with a nice glaze around the edges. In sum, it's approximately 476% better."
-
+published: true
 ---
 
 Since my [last post](/blog/2017/04/20/fun-with-javascript-frameworks/), I've worked on [Raffler](https://raffler.codana.me) quite a bit (it got its own domain, for one), making it **warmer**, _juicier_, and with a nice <span style='color: #8b8458; font-weight: 700;'>glaze</span> around the edges. In sum, it's approximately <span id='random-percent'>476</span>% better.

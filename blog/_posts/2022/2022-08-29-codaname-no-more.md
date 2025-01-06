@@ -3,6 +3,7 @@ layout: post
 title: 'Codaname No More'
 date: 2022-08-29 15:08:00
 tags: announcement blog codaname domains jekyll-rb mcinfo
+published: true
 ---
 
 My flight of fancy with the domain and blog name "Codaname" is no more. What once was my code and audio blog with a haphazard idea to merge a musical term ("coda") and some kind of spy reference ("codename") is now gone...

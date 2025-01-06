@@ -4,6 +4,7 @@ title: 'Bogdle, a Wordle-inspired Boggle Clone'
 date: 2022-05-03 08:43:00
 tags: bogdle boggle game javascript web-game word-game wordle
 headerImage: posts/2022/bogdle-2022-05-03.png
+published: true
 ---
 
 You remember [Boggle](https://en.wikipedia.org/wiki/Boggle), right? Grid of letters, find words, etc. You also are probably aware of [Wordle](https://nytimes.com/games/wordle), as it’s arguably the most popular English-langage word guessing game existing right now.
