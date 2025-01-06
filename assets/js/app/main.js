@@ -157,6 +157,8 @@ MCInfo.initApi = () => {
   // external site checking for projects page
   if (['/projects', '/projects/'].includes(document.location.pathname)) {
     // get external site data
+    // TODO
+    // MCInfo.SiteApi.AOC()
     MCInfo.SiteApi.BGG()
     MCInfo.SiteApi.BLOG()
     // pinned repo service in flux, so turning off for now
