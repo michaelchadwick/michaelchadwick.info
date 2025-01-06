@@ -41,6 +41,31 @@ else {
 }
 
 switch ($site) {
+  case 'aoc':
+    $AOC_API_URL = 'https://adventofcode.com';
+    $AOC_SESSION = getenv('ADVENT_OF_CODE_SESSION');
+
+    $client = new Client(['base_uri' => $AOC_API_URL, 'timeout'  => 5.0]);
+
+    // get all my calendar stars
+    try {
+      $response = $client->get('', [
+        'debug' => false,
+        'headers' => [
+          'session' => $AOC_SESSION
+        ]
+      ]);
+
+      echo $response->getBody();
+    } catch (GuzzleHttp\Exception\RequestException $e) {
+      $response = $e->getResponse();
+      $responseString = $response->getBody()->getContents();
+
+      echo $responseString;
+    }
+
+    break;
+
   case 'mcinfo_priv':
     $key = getenv('MCINFO_PRIVATE_KEY');
 

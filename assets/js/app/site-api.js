@@ -3,6 +3,28 @@
 
 if (typeof MCInfo.SiteApi === 'undefined') MCInfo.SiteApi = {}
 
+// ADVENTOFCODE (backend)
+MCInfo.SiteApi.AOC = function () {
+  const aocLastYearStars = document.querySelector('.aocLastYearStars')
+  const aocApiData = document.querySelector('.apiData.aoc')
+
+  // get calendar stars information
+  fetch(MCInfo.BACKEND_SITE_API_PATH, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ site: 'aoc' }),
+  })
+    .then((response) => {
+      return response.text()
+    })
+    .then((data) => {
+      console.log('aoc api request SUCCESS', data)
+    })
+}
+
 // BOARDGAMEGEEK (frontend)
 MCInfo.SiteApi.BGG = function () {
   const bggLastGamePlayed = document.querySelector('.bggLastGamePlayed')
@@ -304,7 +326,7 @@ MCInfo.SiteApi.STEAM = function () {
     })
 }
 
-// UNUSED FOR NOW
+// UNUSED FOR NOW (POCKET, SOUNDCLOUD, WORDPRESS)
 /*
 
 // POCKET - disabled because no CORS enabled
