@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 
+const AOC_API_URL = 'https://adventofcode.com'
+
 const BGG_API_URL =
   'https://boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
 
