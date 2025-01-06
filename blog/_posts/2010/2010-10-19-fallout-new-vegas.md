@@ -22,12 +22,12 @@ I remember playing Super Mario Brothers and The Legend of Zelda with my dad on C
 
 While a good deal of my video gaming has been done with someone else, either in a co-operative or competitive sense or just a watcher/watchee situation, I&#8217;d still say the core setup is just me, a controller, and the console. This usually takes place in the form of a multi-hour RPG, but other game types are just as much fun. For instance:
 
-  * I&#8217;ve played a good deal of the Final Fantasies, the Dragon Warriors, the Legend of Zeldas, the Baldur&#8217;s Gates, and the Neverwinter Nights.
-  * Platformers, like Super Mario Brothers, Castlevania, Metroid and their countless sequels and imitators, are covered, too, and the same large amount of invested time per game still applies.
-  * First-Person-Shooters like Doom, Quake, Half Life and their other counterparts, take up huge swaths of time, as well.
-  * Let&#8217;s not forget awesome graphic adventure wonders like * Quests, Secrets of Monkey Island, and Mysts, as the amount of head-scratching and GameFaqqing required to beat them is quite substantial.
-  * iPhone and Flash games probably account for more individual game _plays_ now, even, if not more time _per_ game
-  * Finally, of course, Minecraft, much like any other MMO, brings a unique force to the table that&#8217;s hard to resist once ensnared
+* I&#8217;ve played a good deal of the Final Fantasies, the Dragon Warriors, the Legend of Zeldas, the Baldur&#8217;s Gates, and the Neverwinter Nights.
+* Platformers, like Super Mario Brothers, Castlevania, Metroid and their countless sequels and imitators, are covered, too, and the same large amount of invested time per game still applies.
+* First-Person-Shooters like Doom, Quake, Half Life and their other counterparts, take up huge swaths of time, as well.
+* Let&#8217;s not forget awesome graphic adventure wonders like * Quests, Secrets of Monkey Island, and Mysts, as the amount of head-scratching and GameFaqqing required to beat them is quite substantial.
+* iPhone and Flash games probably account for more individual game _plays_ now, even, if not more time _per_ game
+* Finally, of course, Minecraft, much like any other MMO, brings a unique force to the table that&#8217;s hard to resist once ensnared
 
 The thing that all of these kinds of games share is that they&#8217;re fun. They&#8217;re enjoyable to me as a pastime because they piece together visual, aural, logical, and emotional components that I can then manipulate through gameplay. Since I have an issue with being judged for my choices, playing these games alone comes naturally. I can take as long as I want, do things the way I want, and progressing through the game is ranked on my own value system, and no one else&#8217;s. I may not read books, but I can enjoy the world that a video game presents to me (if not the story, too, providing it has any depth) in the same way, and it&#8217;s much more accessible to me.
 

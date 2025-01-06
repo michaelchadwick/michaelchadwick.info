@@ -39,7 +39,7 @@ def create_snippet(file)
 
   sndorig_comp = file
   sndorig_extn = File.extname sndorig_comp
-  # grab the base filename for later
+  // grab the base filename for later
   sndorig_name = File.basename sndorig_comp, sndorig_extn
 
   Sound.open(sndorig_comp) do |snd|

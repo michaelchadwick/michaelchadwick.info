@@ -21,14 +21,14 @@ So, what do I need to name? As a musician, this comes up all the time: either a 
 
 Some previous album titles and how I came up with them:
 
-  * **Clocks Striking 13** &#8211; I thought it sounded cool, in an edgy, dystopic future. Little did I remember that I was essentially stealing straight from the maw of Orwell with that one.
-  * **Music Unsolicitedly Started Idiosyncratically for Karma, or M.U.S.I.K.** &#8211; /deep breath. I really like to overthink things, don&#8217;t I?
-  * **Ebben Flow** &#8211; RPG music that massages a typical water-related characteristic (&#8220;Ebb and Flow&#8221;, get it?). Most RPGs aren&#8217;t much more creative.
-  * **Majicking** &#8211; My initials, MJC, as a gerund.
-  * **Scraps** &#8211; Short odds and ends from my mind.
-  * **The Matic** &#8211; Collection of themes. Yeeeeah.
-  * **Gamey Mixture** &#8211; A collection, or mixture, of video game remixes
-  * **Adversapolis** &#8211; A made-up Greek word that mixes &#8220;adversity&#8221; and &#8220;polis&#8221;, as it described the personal difficulties sung about on the album. I think I used the Internet to come up with this one.
+* **Clocks Striking 13** &#8211; I thought it sounded cool, in an edgy, dystopic future. Little did I remember that I was essentially stealing straight from the maw of Orwell with that one.
+* **Music Unsolicitedly Started Idiosyncratically for Karma, or M.U.S.I.K.** &#8211; /deep breath. I really like to overthink things, don&#8217;t I?
+* **Ebben Flow** &#8211; RPG music that massages a typical water-related characteristic (&#8220;Ebb and Flow&#8221;, get it?). Most RPGs aren&#8217;t much more creative.
+* **Majicking** &#8211; My initials, MJC, as a gerund.
+* **Scraps** &#8211; Short odds and ends from my mind.
+* **The Matic** &#8211; Collection of themes. Yeeeeah.
+* **Gamey Mixture** &#8211; A collection, or mixture, of video game remixes
+* **Adversapolis** &#8211; A made-up Greek word that mixes &#8220;adversity&#8221; and &#8220;polis&#8221;, as it described the personal difficulties sung about on the album. I think I used the Internet to come up with this one.
 
 As you can tell, I like to be clever, but often end up being cheesy. When your music largely consists of wordless instrumentals, the underlying theme to things can be hard to ascertain.
 

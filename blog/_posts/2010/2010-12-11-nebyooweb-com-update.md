@@ -21,9 +21,9 @@ Even the contact form got some graphical updates as the form elements look coole
 
 Things left to do:
 
-  * Add selected blog postings from here that have to do with web development
-  * Fix flash message position/animation
-  * I might still try to get wkhtmltopdf to work, but it may be too much work
-  * Write a capistrano recipe for deployment
+* Add selected blog postings from here that have to do with web development
+* Fix flash message position/animation
+* I might still try to get wkhtmltopdf to work, but it may be too much work
+* Write a capistrano recipe for deployment
 
 Hopefully, as a friend said recently, this will actually improve my standing in the pantheon of web developers. If not, it was at least a fun exercise.

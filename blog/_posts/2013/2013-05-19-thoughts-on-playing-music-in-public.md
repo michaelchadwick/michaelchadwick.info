@@ -14,28 +14,28 @@ I&#8217;m number #2 on the list, which is alphabetical, right behind some guy na
 
 But! To bring this back around to The Point(tm), I **was** contacted, and I did perform, and it went pretty well. I played ~22 pieces over about 70 minutes. The setlist consisted of the following (_italics_ denotes originals):
 
-  * _<span style="line-height: 1.714285714; font-size: 1rem;">Plenty of Stuffing</span>_
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Melloncollie (Smashing Pumpkins)</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">316 (Van Halen)</span>
-  * _<span style="line-height: 1.714285714; font-size: 1rem;">Barnstormer </span>_
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Étude in E minor (Tárrega)</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Romance Anonimo (Traditional)</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Breezy (Uematsu)</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Brother John (Satriani)</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Grand Vals (Tárrega &#8211; Nokia/Intro)</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Lagrima (Tárrega)</span>
-  * _<span style="line-height: 1.714285714; font-size: 1rem;">Lather Rinse Repeat</span>_
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Blackbird (McCartney)</span>
-  * _<span style="line-height: 1.714285714; font-size: 1rem;">Midnight on the Veranda</span>_
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Asturias (Albéniz &#8211; Intro)</span>
-  * _<span style="line-height: 1.714285714; font-size: 1rem;">Solopsis</span>_
-  * _<span style="line-height: 1.714285714; font-size: 1rem;">Incensed</span>_
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Tears in the Rain (Satriani)</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Longer (Fogelberg)</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Stairway to Heaven (Led Zeppelin)</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Pleasure Dome (Van Halen &#8211; Intro)</span>
-  * _<span style="line-height: 1.714285714; font-size: 1rem;">Beloved</span>_
-  * <span style="line-height: 1.714285714; font-size: 1rem;">Tristram (Uelmen)</span>
+* _<span style="line-height: 1.714285714; font-size: 1rem;">Plenty of Stuffing</span>_
+* <span style="line-height: 1.714285714; font-size: 1rem;">Melloncollie (Smashing Pumpkins)</span>
+* <span style="line-height: 1.714285714; font-size: 1rem;">316 (Van Halen)</span>
+* _<span style="line-height: 1.714285714; font-size: 1rem;">Barnstormer </span>_
+* <span style="line-height: 1.714285714; font-size: 1rem;">Étude in E minor (Tárrega)</span>
+* <span style="line-height: 1.714285714; font-size: 1rem;">Romance Anonimo (Traditional)</span>
+* <span style="line-height: 1.714285714; font-size: 1rem;">Breezy (Uematsu)</span>
+* <span style="line-height: 1.714285714; font-size: 1rem;">Brother John (Satriani)</span>
+* <span style="line-height: 1.714285714; font-size: 1rem;">Grand Vals (Tárrega &#8211; Nokia/Intro)</span>
+* <span style="line-height: 1.714285714; font-size: 1rem;">Lagrima (Tárrega)</span>
+* _<span style="line-height: 1.714285714; font-size: 1rem;">Lather Rinse Repeat</span>_
+* <span style="line-height: 1.714285714; font-size: 1rem;">Blackbird (McCartney)</span>
+* _<span style="line-height: 1.714285714; font-size: 1rem;">Midnight on the Veranda</span>_
+* <span style="line-height: 1.714285714; font-size: 1rem;">Asturias (Albéniz &#8211; Intro)</span>
+* _<span style="line-height: 1.714285714; font-size: 1rem;">Solopsis</span>_
+* _<span style="line-height: 1.714285714; font-size: 1rem;">Incensed</span>_
+* <span style="line-height: 1.714285714; font-size: 1rem;">Tears in the Rain (Satriani)</span>
+* <span style="line-height: 1.714285714; font-size: 1rem;">Longer (Fogelberg)</span>
+* <span style="line-height: 1.714285714; font-size: 1rem;">Stairway to Heaven (Led Zeppelin)</span>
+* <span style="line-height: 1.714285714; font-size: 1rem;">Pleasure Dome (Van Halen &#8211; Intro)</span>
+* _<span style="line-height: 1.714285714; font-size: 1rem;">Beloved</span>_
+* <span style="line-height: 1.714285714; font-size: 1rem;">Tristram (Uelmen)</span>
 
 Playing guitar in public is not something I do much. The bulk of such experience is largely encapsulated by Pure Yellow Colour, and I at least had a partner in crime during that tenure. Anxiety is a daily part of life, and expressing myself creatively to people who may or may not want to partake conjures up a healthy dose of the stuff.
 

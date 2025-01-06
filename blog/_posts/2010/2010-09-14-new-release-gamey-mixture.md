@@ -16,20 +16,20 @@ Videogames! Videogame music! These are two things I love. I&#8217;ve done a few 
 
 Here&#8217;s a list of games I tackled:
 
-  * [Startropics 1](http://nebyoolae.com/songs/228)
-  * [Bionic Commando](http://nebyoolae.com/songs/229)
-  * [Maniac Mansion](http://nebyoolae.com/songs/230)
-  * [Ufouria/Hebereke](http://nebyoolae.com/songs/231)
-  * [Princess Tomato in the Salad Kingdom](http://nebyoolae.com/songs/232)
-  * [Shadowrun](http://nebyoolae.com/songs/233)
-  * [Final Fantasy 1](http://nebyoolae.com/songs/234)
-  * [Metal Gear 2: Snake&#8217;s Revenge](http://nebyoolae.com/songs/235)
-  * [Dragon Warrior 4](http://nebyoolae.com/songs/236)
-  * [Mega Man X](http://nebyoolae.com/songs/237)
-  * [Bubble Bobble](http://nebyoolae.com/songs/238)
-  * [Shadowgate](http://nebyoolae.com/songs/239)
-  * [Magician](http://nebyoolae.com/songs/240)
-  * [Sword of Hope](http://nebyoolae.com/songs/241)
+* [Startropics 1](http://nebyoolae.com/songs/228)
+* [Bionic Commando](http://nebyoolae.com/songs/229)
+* [Maniac Mansion](http://nebyoolae.com/songs/230)
+* [Ufouria/Hebereke](http://nebyoolae.com/songs/231)
+* [Princess Tomato in the Salad Kingdom](http://nebyoolae.com/songs/232)
+* [Shadowrun](http://nebyoolae.com/songs/233)
+* [Final Fantasy 1](http://nebyoolae.com/songs/234)
+* [Metal Gear 2: Snake&#8217;s Revenge](http://nebyoolae.com/songs/235)
+* [Dragon Warrior 4](http://nebyoolae.com/songs/236)
+* [Mega Man X](http://nebyoolae.com/songs/237)
+* [Bubble Bobble](http://nebyoolae.com/songs/238)
+* [Shadowgate](http://nebyoolae.com/songs/239)
+* [Magician](http://nebyoolae.com/songs/240)
+* [Sword of Hope](http://nebyoolae.com/songs/241)
 
 P.S. If it gets me nodding my head to a sweet beat, or gets me banging my head to a rocking groove, then it was a success to me.
 

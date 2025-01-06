@@ -9,13 +9,14 @@ tags:
   - webdev
 published: true
 ---
-**WHEREIN I REFLECT A BIT**
+
+## WHEREIN I REFLECT A BIT
 
 2010 was a good year for me for web development. I got better at ASP.NET/C#. I learned some ruby. I made some significant progress on my personal websites. I got fairly seasoned with git.
 
 2011, so far, has not seen these kinds of developments. I burned out a little. It&#8217;s been hard to get motivated again. This is a natural cycle for me. I aim to change this by moving forth to the part of said cycle where I ridiculously binge on 343423545 projects at once.
 
-**DOCKBLOCKED**
+## DOCKBLOCKED
 
 One roadblock thus far has been my new computer. Usually, getting new tech is supposed to better your situation, not worsen it. Unfortunately, whenever I get a new machine I like to start from scratch instead of restoring a backup (e.g. Time Machine). The idea is that over time your computer builds up with application cruft, bits of code, settings, and applications you may have introduced that were useful for 5 minutes but then forgotten about. Backups save _everything_, for better or worse, and restoring it to a pristine specimen would just make it the same used vehicle you&#8217;ve been riding for years.
 
@@ -29,6 +30,6 @@ Thankfully, I seem to have most of it all squared away. If I could just tear mys
 
 Regardless of all the set up woes and consternation, my new MacBook Pro continues to be the knees of a bee.
 
-**FOR THE ROAD**
+## FOR THE ROAD
 
 The new iPad 2 is reslickulously (to quote myself) sweet. It is everything you like about the iPhone, made bigger and better. If it could just shrink down into your pocket, it would cause the world to rejoice in unison.

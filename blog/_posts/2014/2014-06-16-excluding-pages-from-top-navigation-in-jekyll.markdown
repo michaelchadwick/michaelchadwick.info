@@ -22,26 +22,25 @@ In general, this is cool, but not every page is something you might want to show
 
 There are likely many ways to accomplish the task of excluding them, but one quick and easy way I found is to simply harness the power of Jekyll's [Front-matter](https://jekyllrb.com/docs/frontmatter/) for any page you want to exclude. It's a simple two-step process:
 
-1) Add an `unless` clause to your site-wide navigation block (this is boilerplate Jekyll, with percent signs missing as they were being parsed, btw):
+<ol>
+  <li>Add an `unless` clause to your site-wide navigation block (this is boilerplate Jekyll, with percent signs missing as they were being parsed, btw):
 
-{% highlight liquid %}
-{ for page in site.pages }
-  { unless page.exclude_from_nav }
-    <a class="page-link" href="{ page.url | prepend: site.baseurl }">
-      { page.title }
-    </a>
-  { endunless }
-{ endfor }
-{% endhighlight %}
+    { for page in site.pages }
+      { unless page.exclude_from_nav }
+        <a class="page-link" href="{ page.url | prepend: site.baseurl }">
+          { page.title }
+        </a>
+      { endunless }
+    { endfor }
+  </li>
+  <li>Create a custom variable in the Front-matter section of the page you don't want to be automatically added that matches the one above:
 
-2) Create a custom variable in the Front-matter section of the page you don't want to be automatically added that matches the one above:
-
-{% highlight yaml %}
----
-layout: default
-title: SubDirPage2
-exclude_from_nav: true
----
-{% endhighlight %}
+    ---
+    layout: default
+    title: SubDirPage2
+    exclude_from_nav: true
+    ---
+  </li>
+</ol>
 
 Voila! That page is now safely hidden until you link to it in some laborious, *manual* way.
