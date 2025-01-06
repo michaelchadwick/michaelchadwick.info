@@ -8,6 +8,7 @@ tags:
   - tourism
   - vacation
   - video
+published: true
 ---
 {% include yt_player.html id="lLB_049KVpU" %}
 

@@ -5,6 +5,7 @@ layout: post
 tags:
   - fallout
   - gaming
+published: true
 ---
 I can update from my phone. The future is&#8230;yet to be written. The present, however, is decidedly super great pants ahoy.
 

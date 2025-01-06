@@ -6,6 +6,7 @@ tags:
   - gaming
   - politics
   - rock-band
+published: true
 ---
 ##### ROCK BAND 3 KEYS
 

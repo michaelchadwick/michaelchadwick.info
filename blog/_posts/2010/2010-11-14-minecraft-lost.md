@@ -5,6 +5,7 @@ layout: post
 tags:
   - gaming
   - minecraft
+published: true
 ---
 Remember about a month ago when I said I started playing Minecraft, tossing caution and productivity to the wind? That fire burned bright for a solid week. Oh, how it burned. Several late night sessions, as well as a weekend WLAN party. People built many majestic structures and we chatted the evenings away. It made me feel like certain WoW play sessions from years ago. I even installed phpBB on my host and set up a one-pager explaining how to log in to our servers if anyone recommended someone else come and check it out.
 

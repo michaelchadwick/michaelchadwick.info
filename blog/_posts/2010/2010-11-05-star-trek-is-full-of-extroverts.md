@@ -8,6 +8,7 @@ tags:
   - judgement
   - kinect
   - rant
+published: true
 ---
 &#8220;Make it so.&#8221;
 

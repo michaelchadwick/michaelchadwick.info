@@ -4,6 +4,7 @@ date: 2010-09-14T09:15:22-07:00
 layout: post
 tags: album music music-composition new-release
 headerImage: posts/2010/09/gamey_mixture_cover.jpg
+published: true
 ---
 [Album of the NebyooMoment: Gamey Mixture](http://nebyoolae.com/albums/gamey-mixture)
 

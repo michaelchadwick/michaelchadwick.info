@@ -4,6 +4,7 @@ date: 2012-04-20T14:26:42-07:00
 layout: post
 tags: announcement podcast the-escort-mission
 headerImage: posts/2012/04/tem_cover.png
+published: true
 ---
 [The Escort Mission is now live](http://theescortmission.com).
 

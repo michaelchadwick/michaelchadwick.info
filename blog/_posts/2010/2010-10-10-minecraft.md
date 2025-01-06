@@ -5,6 +5,7 @@ layout: post
 tags:
   - gaming
   - minecraft
+published: true
 ---
 Forgive me, Productivity, but I started playing [Minecraft](http://minecraft.net).
 

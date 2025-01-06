@@ -5,6 +5,7 @@ layout: post
 tags:
   - fallout
   - gaming
+published: true
 ---
 Through repeated plays of many games that require you to overcome enemies to progress through a narrative, I&#8217;ve come to a conclusion: save for a game that actually punishes you for it, by dint of its overall treatment (e.g. Metal Gear, Thief), the best way to win is to Rambo, not stealth-play, the situation.
 

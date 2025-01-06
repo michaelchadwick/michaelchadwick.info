@@ -10,6 +10,7 @@ lj_picture_keyword:
   - laissez
 tags: electronic majicking music music-composition new-release release
 headerImage: posts/2009/09/majicking_cover.jpg
+published: true
 ---
 [Nebyoolae &#8211; Majicking](http://nebyoolae.com/albums/majicking)
 

@@ -7,6 +7,7 @@ tags:
   - livejournal
   - nablopomo
   - twitter
+published: true
 ---
 I know part of the reason for the lack of posting proper blog entries over the years is me. Yep. I got taken in by the allure of the 140-character status update, so much easier to spit out than a many-worded spiel on LiveJournal. Another part of the reason is _everyone else doing the exact same thing_. It&#8217;s like my friends all decided to move to a new city together and I joined them. Twitter was exciting: it was easy to contribute and there were lots and lots of updates, so the content feed rarely felt stale. Even figuring out how to sum up my current condition in a captioned snapshot was in itself an art form. Cleverness was needed to make them count. But that&#8217;s the thing with being clever: it rarely tells the whole story.
 

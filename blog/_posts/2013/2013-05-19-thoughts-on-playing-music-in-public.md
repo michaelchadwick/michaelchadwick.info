@@ -4,6 +4,7 @@ date: 2013-05-19T23:46:55-07:00
 layout: post
 tags: gig guitar music-performance reflection
 headerImage: posts/2013/05/rb_inn_guitar_spot.jpg
+published: true
 ---
 A few weekends ago, I got to play guitar in front of complete strangers, most of which I did not interact with&#8230;except _through song_. Yes, I did another (paid!) gig, the opportunity of which was culled from that mysterious UCSD [Musicians Referral List](http://musicweb.ucsd.edu/about/musicians_referral.php) that somehow people find on the Internet and then use to possibly contact me via.
 

@@ -7,6 +7,7 @@ tags:
   - technology
   - upgrading
   - webdev
+published: true
 ---
 **WHEREIN I REFLECT A BIT**
 

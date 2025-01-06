@@ -11,6 +11,7 @@ tags:
   - new-release
   - the-matic
   - videos
+published: true
 ---
 <iframe class="youtube" width="480" height="270" src="http://www.youtube.com/embed/watch?v=PtH8SXX_PjI" frameborder="0" allowfullscreen></iframe>
 

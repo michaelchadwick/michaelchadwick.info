@@ -3,6 +3,7 @@ id: 4859
 title: Naming The Things
 date: 2011-11-08T10:45:33-08:00
 layout: post
+published: true
 ---
 Oh, _no_. I need to name something.
 

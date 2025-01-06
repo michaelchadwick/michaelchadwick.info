@@ -18,9 +18,9 @@ tags:
   - music
   - new-release
   - pure-yellow-colour
-  - pure-yellow-colour
   - song
   - st-urho
+published: true
 ---
 And to that end, a gift!
 

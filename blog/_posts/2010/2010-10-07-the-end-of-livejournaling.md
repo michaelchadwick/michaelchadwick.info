@@ -12,6 +12,7 @@ tags:
   - blogging
   - livejournal
   - the-end
+published: true
 ---
 I&#8217;m seriously considering moving away from the LiveJournal &#8220;platform&#8221; for my blogging needs. Since the community that was once here doesn&#8217;t feel like it exists anymore, this probably won&#8217;t affect anything. By community, I&#8217;m referring to the people on my friends list, a significant amount of which do not post anymore or leave comments. This includes me. This causes me to check the site infrequently for any locked posts that don&#8217;t get through my public-only RSS feed.
 

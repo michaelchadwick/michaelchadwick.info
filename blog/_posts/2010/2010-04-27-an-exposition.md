@@ -16,6 +16,7 @@ tags:
   - music-composition
   - neurose
   - rant
+published: true
 ---
 Yesterday, I tweeted. This is not a signficant event anymore, but a friend responding to it directly can still be seen as something to make note of. The tweet was as follows:
 

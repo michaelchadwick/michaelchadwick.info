@@ -5,6 +5,7 @@ layout: post
 tags:
   - music-composition
   - soundcloud
+published: true
 ---
 I use [SoundCloud](http://soundcloud.com) because their little visual music players are rad as hell. They are easily embeddable anywhere. Their interface is well-designed and fun to use. With a free account you only get so much space to upload music (unlike my own host), but there&#8217;s a community worth contributing to so I try to put my best tracks there.
 

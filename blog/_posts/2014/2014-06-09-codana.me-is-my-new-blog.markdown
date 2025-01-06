@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "Codana.me is my new dev blog"
 tags: jekyll update webdev
-
+published: true
 ---
 
 Code(dev) + coda(music) + name + wanton need to use a specialized TLD = codana.me :)

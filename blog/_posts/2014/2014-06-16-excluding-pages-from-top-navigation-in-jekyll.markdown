@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "Excluding Pages from Top Navigation in Jekyll"
 tags: jekyll customization navigation layout webdev
-
+published: true
 ---
 While dynamic creation of collections of variables is often a very helpful thing, sometimes it treats all its members the same, even though they are not. Jekyll, the tech that creates this very site, is a bit non-picky about what it puts in its site-wide navigation, but it can be taught.
 

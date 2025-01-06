@@ -5,6 +5,7 @@ layout: post
 tags:
   - music
   - video-game-music
+published: true
 ---
 No matter the instrumentation or style, good music is good music. This means I usually like just about anything that can be reasonably groked (and even some that can&#8217;t). However, more and more I find that the kind of music more-easily created using a computer and sequencer, using synths and samples, is the kind I like the most. It&#8217;s like a mix of my childhood (video games) and my current abilities (Logic) rolled into one. When I hear it, it almost immediately puts me in a good, head-bobbin&#8217; mood.
 

@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "Adventures in Spritekit"
 tags: ios mac game spritekit
-
+published: true
 ---
 
 For some reason, I've really wanted to make a game lately. I play them so often that it's natural that I'd eventually want to make one. My recent renaissance in personal development is helpful in accomplishing this goal. But where to start?

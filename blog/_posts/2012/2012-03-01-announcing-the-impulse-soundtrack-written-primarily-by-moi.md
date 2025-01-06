@@ -4,6 +4,7 @@ date: 2012-03-01T12:00:28-08:00
 layout: post
 tags: announcement impulse-ost music-composition music-performance new-release recording
 headerImage: posts/2012/03/impulse.png
+published: true
 ---
 Making that profile on [IndieGameMusic.com](http://indiegamemusic.com/viewartist.php?id=52 "IndieGameMusic.com") 3+ years ago finally paid off.
 

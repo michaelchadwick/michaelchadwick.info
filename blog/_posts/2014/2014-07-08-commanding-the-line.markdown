@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "Commanding the Line"
 tags: cmd command shell bash prompt osx windows
-
+published: true
 ---
 
 `$ echo 'Hello World!'`

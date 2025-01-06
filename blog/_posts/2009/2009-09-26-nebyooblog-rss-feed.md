@@ -18,6 +18,7 @@ tags:
   - news
   - songs
   - webdev
+published: true
 ---
 NebyooBlog!
 

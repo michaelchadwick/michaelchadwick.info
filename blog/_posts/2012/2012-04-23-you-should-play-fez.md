@@ -4,6 +4,7 @@ date: 2012-04-23T14:54:17-07:00
 layout: post
 tags: disasterpeace fez games music platformer quirky review
 headerImage: posts/2012/04/FEZNL_S.jpg
+published: true
 ---
 An amazing game currently lives on Xbox Live Arcade, just waiting for you to fork over $10 and enter its world. That game is called [Fez](http://marketplace.xbox.com/en-US/Product/Fez/66acd000-77fe-1000-9115-d802584109c0), and you may remember it from concept screenshots **five years ago**. Sometimes, genius takes a while, right? I&#8217;ve spent a good portion of time with this cute, deceptively deep, &#8220;two-dimensional&#8221; platforming game over the last week, and I&#8217;ve just started getting to really know it. I&#8217;m not going to outright spoil anything, but I can&#8217;t be held responsible for describing something you didn&#8217;t want described, so play the game first!
 

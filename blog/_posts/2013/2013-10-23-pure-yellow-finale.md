@@ -11,6 +11,7 @@ tags:
   - ruby-on-rails
   - webdev
 headerImage: posts/2013/10/pyc_flower.jpg
+published: true
 ---
 This post was a long time coming. Time to officially put [PYC](http://pyc.nebyoolae.com), in an Internet way, to bed.
 

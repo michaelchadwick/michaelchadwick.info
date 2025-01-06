@@ -9,6 +9,7 @@ tags:
   - user-design
   - webdev
   - wordpress
+published: true
 ---
 <img
   src="/assets/images/posts/2011/05/deep_blue_template.png"

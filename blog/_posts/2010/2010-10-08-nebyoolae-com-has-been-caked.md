@@ -3,6 +3,7 @@ id: 1931
 title: Nebyoolae.com Has Been Caked
 date: 2010-10-08T09:43:04-07:00
 layout: post
+published: true
 ---
 <img src='http://nebyoolae.com/img/blog/cakephp.png' alt='Nebyoolae.com Has Been Caked' />
 

@@ -4,6 +4,7 @@ date: 2010-08-30T10:16:13-07:00
 layout: post
 tags: album music music-composition new-release the-matic
 headerImage: posts/2010/08/the_matic_cover.jpg
+published: true
 ---
 [Album of the NebyooMoment: The Matic](http://nebyoolae.com/albums/12)
 

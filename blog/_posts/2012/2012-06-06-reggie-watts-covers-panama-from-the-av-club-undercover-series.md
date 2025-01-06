@@ -8,6 +8,7 @@ tags:
   - reggie-watts
   - van-halen
   - video
+published: true
 ---
 [This video](<http://avc.lu/M9pj8m> "Reggie Watts covering Van Halen's "Panama"") is one of my most favorite things now (and possibly forever).
 

@@ -7,6 +7,7 @@ tags:
   - music-composition
   - recording
   - zoetic
+published: true
 ---
 
 So&#8230;I&#8217;m working on a **new album**. The working title is _Nebyoolaeous Experience_, because I am a conceited pedant. I started tracking one piece, and then another, and then another&#8230;and now it&#8217;s starting to look like I might have a full-on collection of pieces to tie some rope around and call it an album. Hell yeah.

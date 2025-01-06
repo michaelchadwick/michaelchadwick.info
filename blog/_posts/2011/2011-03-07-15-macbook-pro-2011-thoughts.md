@@ -7,6 +7,7 @@ tags:
   - apple
   - macbook
   - technology
+published: true
 ---
 Through a combination of Firewire target disc mode, an external hard drive, Dropbox, and a few Internet downloads, I&#8217;ve got my new computer up and running for the most part. It is _usable_ (to me). It&#8217;s not a proper DAW yet, though, as I still have to install my newly-acquired Logic Studio (10.0?) software and remake all of my symlinks to sound libraries. It is then that I will attempt to finish &#8220;Dumeh&#8221;. As far as being a good programming environment, there&#8217;s a lot to do there, too. Besides installing Textmate, I still need to migrate my old command line prompt environment, configure Apache, and install a bunch of Ruby gems.
 

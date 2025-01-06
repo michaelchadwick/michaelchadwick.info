@@ -4,6 +4,7 @@ date: 2013-03-15T16:24:04-07:00
 layout: post
 tags: audio camel-audio gear keyboard m-audio midi samples
 headerImage: posts/2013/03/axiom251.jpg
+published: true
 ---
 I sold a lot of old musical gear last week. I had received most as gifts or hand-me-downs over the last few years and I was looking to make a little cash, so they had to go. The gear included a classic drum machine, a synthesizer module, a preamp, a hardware compressor, and even a large 61-key MIDI keyboard. In general, I never used any of them, either because I didn&#8217;t need them or they took up too much space on my desk (I&#8217;ll let you guess which is which).
 

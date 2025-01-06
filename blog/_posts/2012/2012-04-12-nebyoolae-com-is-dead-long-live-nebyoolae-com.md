@@ -4,6 +4,7 @@ date: 2012-04-12T09:23:20-07:00
 layout: post
 tags: announcement bandcamp nebyoolae.com webdev
 headerImage: posts/2012/04/bandcamp.jpg
+published: true
 ---
 The domain and website of my namesake is dead. [Nebyoolae.com](http://nebyoolae.com), the online home I&#8217;ve held to show off my creative pursuits for nearly a decade, is now merely an A record on a DNS server pointing to my new cozy spot at [Bandcamp](http://bandcamp.com).
 

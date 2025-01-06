@@ -6,6 +6,7 @@ tags:
   - blogging
   - import
   - livejournal
+published: true
 ---
 Whomever actually wrote the [LiveJournal Import tool](http://wordpress.org/extend/plugins/livejournal-importer/) is a godsend. Instead of this blog starting out with one wimpy little &#8220;HEY GUYS&#8221; post, it&#8217;s already stacked with over EIGHTEEN HUNDRED ENTRIES.
 

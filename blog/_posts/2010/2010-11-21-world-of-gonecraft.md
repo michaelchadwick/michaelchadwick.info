@@ -5,6 +5,7 @@ layout: post
 tags:
   - gaming
   - world-of-warcraft
+published: true
 ---
 Blizzard Entertainment makes some sweet games. I put many hours into the likes of Warcraft, Starcraft, and Diablocr &#8212; er, Diablo. The consistent level of quality in the graphics, sound, and gameplay is always high. Of course, this includes their MMO behemoth, World of Warcraft.
 

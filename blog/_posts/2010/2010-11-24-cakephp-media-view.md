@@ -6,6 +6,7 @@ tags:
   - cakephp
   - mediaview
   - webdev
+published: true
 ---
 Anyone else out there using CakePHP 1.2 and trying to use the Media View component? I&#8217;m trying to hide the actual location of the MP3s on nebyoolae.com to make it seem more professional and give me more control over counting downloads (and maybe it&#8217;ll lower the number of random websites direct linking to songs).
 

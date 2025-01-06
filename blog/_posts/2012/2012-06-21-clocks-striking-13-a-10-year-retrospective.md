@@ -4,6 +4,7 @@ date: 2012-06-21T10:01:00-07:00
 layout: post
 tags: bandcamp clocks-striking-13 guitar instrumental-guitar johnson music petrucci ramble retrospective satriani vai
 headerImage: posts/2012/06/cs13.jpg
+published: true
 ---
 One of my earliest musical idols was Joe Satriani. Satch. Satchmo. After picking up the guitar mid-way through high school, I began to get into the instrumental guitar music scene. [Crystal Planet](http://www.amazon.com/Crystal-Planet-Joe-Satriani/dp/B0000062GK "Crystal Planet") was one of my first purchases during this period in my life, and I listened to it quite a bit. By that, I mean track 8, &#8220;Ceremony&#8221;, which just went on loop for weeks before ever listening to any other track. I had heard it before buying the CD (ha, CDs!) and just laser-focused in on it.
 

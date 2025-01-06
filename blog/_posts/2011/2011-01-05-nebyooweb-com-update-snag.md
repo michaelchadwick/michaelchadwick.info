@@ -6,6 +6,7 @@ tags:
   - dev-vs-live
   - dependencies
   - webdev
+published: true
 ---
 I was about to put up the new, much improved version of [nebyooweb.com](http://nebyooweb.com) tonight. Of course, moving from a local dev environment to a shared hosting production server is always fraught with some peril. Things are different on the server as far as location/permissions, and you might not even realize certain dependencies you&#8217;re using in your app are non-existent server-side.
 

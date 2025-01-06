@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "Sending Gmail from OS X Yosemite Terminal"
 tags: web email gmail osx osx-yosemite terminal bash shell scp mail
-
+published: true
 ---
 
 I've messed around with my own personal file host system for years, so that I could share stuff with others over the Internet. Initially, it was just a lazy (FTP to host) + (email link to friend) system. However, the uber way to handle something like this is to write a slick terminal script one-liner.

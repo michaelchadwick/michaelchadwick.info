@@ -8,6 +8,7 @@ tags:
   - music-performance
   - practicing
   - video-game-music
+published: true
 ---
 Bastion is a game by [Supergiant Games](http://supergiantgames.com/). If you haven&#8217;t played it yet, you really should.
 

@@ -4,6 +4,7 @@ date: 2013-06-19T23:04:06-07:00
 layout: post
 tags: bandcamp collaboration composer-quest music music-composition
 headerImage: posts/2013/06/Composer-Quest-Listening-Party-2013-06-19-at-6.13.23-PM.png
+published: true
 ---
 I had been following Internet musician/gamedev, Mr. [Whitaker Trebella](http://www.whitakerblackall.com/), for a while on [Twitter](http://twitter.com/wtrebella); firstly because of some sweet Logic [improv](http://www.youtube.com/watch?v=-xsaAEqat0Y) [session](http://www.youtube.com/watch?v=bK_Dn__ZdKc) [videos](http://www.youtube.com/watch?v=iYlLy-iHguw) he had done, and more generally because of his excellent additions to the [game music soundtrack](http://www.whitakerblackall.com/portfolio/) world.
 

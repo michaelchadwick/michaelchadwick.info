@@ -6,6 +6,7 @@ tags:
   - disasterpeace
   - gaming
   - music
+published: true
 ---
 [This](http://disasterpeace.com/album/fez) is the stuff dreams are literally composed of.
 

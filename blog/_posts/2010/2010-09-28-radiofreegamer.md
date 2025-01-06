@@ -6,6 +6,7 @@ tags:
   - gamey-mixture
   - music-composition
   - recognition
+published: true
 ---
 I don&#8217;t listen to podcasts much, but when someone asked me to let them play some of [Gamey Mixture](http://nebyoolae.com/albums/13) in theirs, I modified my behavior.
 

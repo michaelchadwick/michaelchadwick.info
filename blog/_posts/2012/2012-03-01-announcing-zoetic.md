@@ -10,6 +10,7 @@ tags:
   - new-release
   - recording
   - zoetic
+published: true
 ---
 Introducing _Zoetic_, now available at [Bandcamp](http://nebyoolae.bandcamp.com/album/zoetic)!
 

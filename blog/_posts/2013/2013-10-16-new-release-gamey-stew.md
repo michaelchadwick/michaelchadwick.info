@@ -4,6 +4,7 @@ date: 2013-10-16T09:55:23-07:00
 layout: post
 tags: announcement cover gamey-stew guitar instrumental-guitar music-composition music-performance new-release remix video-games
 headerImage: posts/2013/10/gamey_stew_cover.png
+published: true
 ---
 Even at 32, I&#8217;m still enamored by old video game music. However, I&#8217;m not obsessed with keeping them the way they are and can get behind reimagining them using new ideas and technology. We&#8217;re not restrained by 8 bits or limited space on a cartridge anymore.
 

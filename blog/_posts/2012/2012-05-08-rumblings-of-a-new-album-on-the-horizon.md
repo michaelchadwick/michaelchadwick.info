@@ -4,6 +4,7 @@ date: 2012-05-08T16:30:45-07:00
 layout: post
 tags: album announcement guitar
 headerImage: posts/2012/05/bigstockphoto_Acoustic_Guitar_Performance_By_588782.jpg
+published: true
 ---
 Yes, I have another album in mind and in the works (conceptually, at least). Unlike the past few, however, this new album isn&#8217;t going to be new works. Instead, I&#8217;m going to recraft some old ideas (some of which are covers, too) into a single collection. Basically, between the rocking 4-piece instrumental rock stuff and the electronic grooves, I occasionally bust out an acoustic number here and there. I started my compositional hobby with just a single guitar with no accompaniment, and I like to return there now and then.
 

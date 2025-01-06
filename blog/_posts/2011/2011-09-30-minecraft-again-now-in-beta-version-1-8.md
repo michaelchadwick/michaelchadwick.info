@@ -4,6 +4,7 @@ title: Minecraft, Again! Now in Beta, Version 1.8
 date: 2011-09-30T15:08:45-07:00
 layout: post
 tags: gaming minecraft
+published: true
 ---
 
 The last time I played Minecraft was in late 2010, back when it was still alpha. There were a lot of bugs, but it was playable. My friends and I enjoyed exploring and surviving and building on our mutual friend&#8217;s multiplayer server for a couple weeks. It rocked!

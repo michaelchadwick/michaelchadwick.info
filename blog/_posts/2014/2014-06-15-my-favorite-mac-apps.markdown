@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "My Favorite Mac Apps"
 tags: mac osx mavericks apps faves list utilities
-
+published: true
 ---
 
 As promised a [few days ago](https://codaname.neb.host/2014/06/12/my-favorite-windows-apps/), I come back to you with my list of favorite apps and utilities, only on the Apple side of things.

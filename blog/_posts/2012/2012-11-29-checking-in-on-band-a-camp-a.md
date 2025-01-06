@@ -4,6 +4,7 @@ date: 2012-11-29T12:35:34-08:00
 layout: post
 tags: bandcamp music nebyoolae.com statistics
 headerImage: posts/2012/11/bandcamp11292012-e1354219295537.png
+published: true
 ---
 Since getting most of my albums up on [Bandcamp](http://nebyoolae.bandcamp.com) earlier this year, I&#8217;ve checked the stats pretty much every day. BC keeps track of plays (partial and full), &#8220;buzz&#8221; (where people come from), and purchases/downloads. It&#8217;s in a nifty graph and you can see recent, all-time, and many intervals in between. It&#8217;s something I never got around to doing properly when I created a custom place to host my music, so I&#8217;m glad they&#8217;re smart and ambitious and can deliver something better than I&#8217;d ever come up with on my own.
 

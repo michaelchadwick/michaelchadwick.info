@@ -7,6 +7,7 @@ tags:
   - apple
   - ios
   - technology
+published: true
 ---
 I got home from work yesterday and plugged in my trusty iPhone as quickly as I could.
 

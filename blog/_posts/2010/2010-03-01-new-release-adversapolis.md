@@ -6,6 +6,7 @@ layout: post
 tags:
   - music-composition
   - new-releases
+published: true
 ---
 My entry for the RPM 2010 Challenge is complete! I invented a new &#8220;personality&#8221; for this project called Adversapolis. The album is self-titled because I couldn&#8217;t come up with anything else once I spent my creative juices on that.
 

@@ -12,15 +12,15 @@ published: false
 ---
 There are a few things I don&#8217;t like to deal with because of significant anxiety. These things range from mild concern that can be talked through all the way up to fear-cowered small ball of worry-shriveling death. In no particular order:
 
-  * Planning a vacation
-  * Visiting family
-  * Spending large amounts of money
-  * Using shared facilities at work
-  * Major house changes
-  * Going through my (snail) mail
-  * Calling people
-  * Getting a haircut
-  * Maintenance of any sort, really
+* Planning a vacation
+* Visiting family
+* Spending large amounts of money
+* Using shared facilities at work
+* Major house changes
+* Going through my (snail) mail
+* Calling people
+* Getting a haircut
+* Maintenance of any sort, really
 
 <!--more-->
 

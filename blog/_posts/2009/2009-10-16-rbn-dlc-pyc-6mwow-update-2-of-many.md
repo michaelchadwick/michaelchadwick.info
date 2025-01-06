@@ -21,6 +21,7 @@ tags:
   - reaper
   - rock-band
   - rock-band-network
+published: true
 ---
 I didn&#8217;t think I&#8217;d get there, but Expert Guitar and Vocals are pretty done.
 

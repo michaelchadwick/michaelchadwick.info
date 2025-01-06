@@ -4,6 +4,7 @@ date: 2014-04-24T10:21:12-07:00
 layout: post
 tags: announcement musicking piano
 headerImage: posts/2014/04/piano.jpg
+published: true
 ---
 Due to the unexpected relocation of my wife&#8217;s parents from a house they&#8217;ve lived in for more than 38 years, a piano&#8217;s fate left hanging in the balance.
 

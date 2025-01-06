@@ -6,6 +6,7 @@ tags:
   - app-management
   - desktop
   - user-design
+published: true
 ---
 What&#8217;s on your computer&#8217;s desktop right now? Custom picture? Widgets? A million icons? Maybe even&#8230;_nothing_?
 

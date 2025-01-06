@@ -6,6 +6,7 @@ tags:
   - guitar
   - music-performance
   - work
+published: true
 ---
 It&#8217;s still really amazing when I get paid for doing music. Something I started doing back in high school for fun now has come in handy for producing some kind of sporadic income multiple times.
 

@@ -4,6 +4,7 @@ date: 2014-12-09T15:52:16-08:00
 layout: post
 tags: album announcement lullabies music music-composition music-performance musicking new-release
 headerImage: posts/2014/12/lullabies_cover.jpg
+published: true
 ---
 [Lullabies, by Michael Chadwick](http://nebyoolae.bandcamp.com/album/lullabies)
 

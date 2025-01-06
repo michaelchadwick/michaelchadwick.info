@@ -21,6 +21,7 @@ tags:
   - reaper
   - rock-band
   - rock-band-network
+published: true
 ---
 Tonight, with the discovery of the custom keymaps and Rock Band preview plugin, I&#8217;ve gotten all the Drum charts done. The aforementioned preview plugin lets you see the notes you&#8217;ve charted, or &#8220;gems&#8221;, scroll down a &#8220;gem&#8221; highway much like in the game. It&#8217;s amazingly sweet to see this as it makes all my work seem like it&#8217;s been fo&#8217; realz, ya&#8217;ll.
 

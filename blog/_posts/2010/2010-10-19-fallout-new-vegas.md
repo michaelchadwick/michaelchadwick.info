@@ -8,6 +8,7 @@ tags:
   - family
   - friends
   - gaming
+published: true
 ---
 I&#8217;ve (video) gamed for a long time. You know how I know? Cuz the NES just celebrated its **25th** anniversary.
 

@@ -1,9 +1,8 @@
 ---
-
 layout: post
 title:  "My Favorite Windows Apps"
 tags: windows windows-7 apps faves list utilities
-
+published: true
 ---
 
 People love lists. The Internet *especially* loves lists. It's no surprise, really: a note followed by another note in a simple, structured order is easy to follow and gain knowledge from. Thus, it's time to kick this new blog off with a tried-and-true, yet still hopefully useful, list of my favorite Windows apps.

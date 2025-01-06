@@ -6,6 +6,7 @@ tags:
   - music-composition
   - naming
   - zoetic
+published: true
 ---
 I keep toying with some of the track names on my upcoming instrumental rock album _Zoetic_. Some names just seem right from the get go and others never quite seem right, changing a lot in the process as I listen and work on them. All-instrumental albums are like that: fluid until the time I call it &#8220;done&#8221;.
 

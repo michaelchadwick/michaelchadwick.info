@@ -7,6 +7,7 @@ tags:
   - apple
   - macbook
   - technology
+published: true
 ---
 My brand-spankin&#8217; new MacBook Pro, [hopefully without dent](http://www.reddit.com/r/apple/comments/fucju/buying_a_new_macbook_pro_check_it_before_you/), has been shipped!
 

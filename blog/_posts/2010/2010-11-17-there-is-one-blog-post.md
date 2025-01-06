@@ -6,6 +6,7 @@ tags:
   - blogging
   - star-trek
   - television
+published: true
 ---
 Just finished watching the Star Trek: The Next Generation episode entitled &#8220;Chain of Command.&#8221; That&#8217;s the one where Crusher, Worf, and Picard go on a seekrit mission and Picard gets captured by the Cardassians. He is then systematically tortured for a while, wherein the Internet eventually received the &#8220;There are&#8230;four lights!&#8221; meme.
 

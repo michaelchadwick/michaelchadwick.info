@@ -7,6 +7,7 @@ tags:
   - introduction
   - livejournal
   - origin
+published: true
 ---
 An emigrant from LiveJournal, where I was happily blogging for several years, I have finally made the jump to personal domain blogging. I have 7+ years of LiveJournal entries to import, but that will have to wait for now.
 

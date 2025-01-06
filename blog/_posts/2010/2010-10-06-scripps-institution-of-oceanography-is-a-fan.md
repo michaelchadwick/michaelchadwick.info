@@ -8,6 +8,7 @@ tags:
   - sio
   - the-matic
   - videos
+published: true
 ---
 The first video in my [The Matic](http://nebyoolae.com/albums/12) album of themes has caught the fancy of the institution that afforded the idea for it in the first place! The circle, as they say, is complete.
 

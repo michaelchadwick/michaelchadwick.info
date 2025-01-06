@@ -4,6 +4,7 @@ date: 2012-08-29T09:27:07-07:00
 layout: post
 tags: album diablo ff8 guitar new-release satriani stringing-you-along sya
 headerImage: posts/2012/08/stringing_you_along_cover.jpg
+published: true
 ---
 [Nebyoolae &#8211; Stringing You Along](http://nebyoolae.com/album/stringing-you-along)
 

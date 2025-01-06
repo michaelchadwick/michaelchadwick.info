@@ -4,6 +4,7 @@ date: 2011-01-10T09:45:33-08:00
 layout: post
 tags: fallout gaming wrapup
 headerImage: posts/2011/01/fnv.jpg
+published: true
 ---
 The exciting conclusion to Fallout: New Vegas was finally within my grasp last night. **Be warned: _there be spoilers abound_**.
 

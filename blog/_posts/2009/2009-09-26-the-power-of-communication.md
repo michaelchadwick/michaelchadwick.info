@@ -5,6 +5,7 @@ layout: post
 tags:
   - nebyoolae.com
   - webdev
+published: true
 ---
 <img src='http://nebyoolae.com/img/blog/twitter_rss.jpg' alt='The Power of Communication' />
 

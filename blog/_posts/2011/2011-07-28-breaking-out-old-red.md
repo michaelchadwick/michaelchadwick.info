@@ -5,6 +5,7 @@ layout: post
 tags:
   - music-performance
   - practicing
+published: true
 ---
 Something I used to do everyday for hours without even thinking about it now is something I have to consciously schedule time for. Yes, I&#8217;ve been playing guitar for about 15 years now, and yes I&#8217;m married and own a home. None of those are excuses to not practice, though. No, the boring truth is that my talent peaked a while ago, and my creative ideas are more sparse and are often funneled elsewhere. Instead of something I initially binged on, losing myself in the art, playing the guitar is just something I do occasionally now, and I&#8217;m really just largely _known for having played it_ more than actively plucking the strings.
 

@@ -9,6 +9,7 @@ lj_permalink:
   - nebyooweb.com
 tags:
   - webdev
+published: true
 ---
 Nebyooweb is live! Just point your browser to <http://nebyooweb.com> and feast your eyes on what I&#8217;ve done.
 

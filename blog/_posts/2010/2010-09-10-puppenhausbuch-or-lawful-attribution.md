@@ -5,6 +5,7 @@ layout: post
 tags:
   - friends
   - videos
+published: true
 ---
 This video is at least a year old, but a random egosurf a while back turned it up, and I wanted to share it for posterity. Also, _ahem_, it uses a short snippet of [Prologue &#8211; &#8220;Jellyfish&#8221;](http://nebyoolae.com/songs/view/78) from [Ebben Flow](http://nebyoolae.com/albums/view/5), so there is actually a connection to me. Also also, the video creator is a good friend, so this all just really makes perfect sense.
 

@@ -21,6 +21,7 @@ tags:
   - reaper
   - rock-band
   - rock-band-network
+published: true
 ---
 Much progress, however ancillary, has been made tonight.
 

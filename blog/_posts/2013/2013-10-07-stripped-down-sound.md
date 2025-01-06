@@ -8,6 +8,7 @@ tags:
   - instrumental-guitar
   - music
   - technology
+published: true
 ---
 
 I love technology. I especially love music technology.

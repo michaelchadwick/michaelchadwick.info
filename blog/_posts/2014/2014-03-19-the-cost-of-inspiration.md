@@ -6,6 +6,7 @@ tags:
   - audio-hardware
   - m-audio
   - music-composition
+published: true
 ---
 Inspiration (the spark of creativity) is a well.
 

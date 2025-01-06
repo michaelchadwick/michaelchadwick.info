@@ -7,6 +7,7 @@ aktt_notify_twitter:
 tags:
   - music-composition
   - new-release
+published: true
 ---
 Another new release, you say? Yes, I say.
 

@@ -7,6 +7,7 @@ tags:
   - friends
   - livejournal
   - reflection
+published: true
 ---
 It used to be a series of rituals each day. Check email to see if I got any comments on my latest LJ post. Check my LJ friends list to see what new posts had been made. Read the comments for the posts I was interested in. Maybe reply to one of the comments. Maybe become inspired to write an LJ post of my own. Check my LJ friends list to see what new posts had been made since I wrote up my latest post. Read the comments of those posts. Maybe reply to them. Lather, rinse, repeat. If all else failed, I&#8217;d add some new funny &#8220;interests&#8221; or upload a new usericon to amuse myself and others. Exhausting my friends&#8217; content meant I could just look at the friends of my friends&#8217; content and sometimes find a diamond in the rough I could add to my own personal coffers.
 

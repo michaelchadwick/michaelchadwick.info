@@ -5,6 +5,7 @@ layout: post
 tags:
   - nebyooweb.com
   - webdev
+published: true
 ---
 My webhost, as awesome as they are, already helped me fix the problem and [nebyooweb.com](http://nebyooweb.com) is **now live**. Check out the sleek new look in all its updated glory.
 

@@ -21,6 +21,7 @@ tags:
   - reaper
   - rock-band
   - rock-band-network
+published: true
 ---
 OMFG! I got it to build! I got to build!
 

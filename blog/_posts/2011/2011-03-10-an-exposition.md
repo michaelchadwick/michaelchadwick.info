@@ -4,6 +4,7 @@ title: An Exposition
 date: 2011-03-10T15:04:19-08:00
 layout: post
 tags: introspection music-composition twitter
+published: true
 ---
 Yesterday, I tweeted. This is not a signficant event anymore, but a friend responding to it directly can still be seen as something to make note of. The tweet was as follows:
 

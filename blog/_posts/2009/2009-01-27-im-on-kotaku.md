@@ -10,6 +10,7 @@ tags:
   - music-composition
   - recognition
   - soundtrack
+published: true
 ---
 <http://kotaku.com/5139847/listen-to-the-jrpg-soundtrack-of-the-jrpg-that-doesnt-exist>
 

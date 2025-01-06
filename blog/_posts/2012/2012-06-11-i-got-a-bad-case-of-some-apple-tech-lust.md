@@ -8,6 +8,7 @@ tags:
   - macbook
   - retina-display
   - technology
+published: true
 ---
 [http://www.apple.com/macbook-pro](http://www.apple.com/macbook-pro)
 

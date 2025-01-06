@@ -6,6 +6,7 @@ tags:
   - gaming
   - kinect
   - technology
+published: true
 ---
 A [recent review](http://www.engadget.com/2010/11/04/kinect-for-xbox-360-review/) of the Xbox 360 Kinect, which comes out today, caught my eye this morning.
 

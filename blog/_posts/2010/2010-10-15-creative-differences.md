@@ -5,6 +5,7 @@ layout: post
 tags:
   - music-performance
   - singing
+published: true
 ---
 I&#8217;ve always thought as myself as someone who can get along with just about anyone. Lots of things annoy me just like anyone else, but I&#8217;m pretty good at staying quiet and/or just letting it ride despite any misgivings I may have.
 

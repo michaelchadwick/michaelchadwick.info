@@ -6,6 +6,7 @@ tags:
   - blog
   - site-maintenance
   - updates
+published: true
 ---
 This is not an exciting post, unless you&#8217;ve been looking for more recent information modded onto some of the basic-info-about-me pages that lurk within this site&#8217;s confines. In the event that the slim, but possible, chance encounter described above is being made right now, then have two links: 1) [About](https://blog.nebyoolae.com/about/) and 2) [Music Studio](https://blog.nebyoolae.com/music-studio/).
 

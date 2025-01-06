@@ -6,6 +6,7 @@ tags:
   - ios
   - technology
   - wordpress
+published: true
 ---
 This app has a lot of negative reviews. Besides the &#8220;Settings&#8221; screen not actually making its own design and instead just iFraming the existing one, it&#8217;s not bad. Maybe it&#8217;s still super buggy or something?
 

@@ -4,6 +4,7 @@ title: The New(er) Nebyooweb.com and Nebyoolae.com
 date: 2011-01-08T12:02:54-08:00
 tags: bugs cakephp jquery nebyoolae.com nebyooweb.com ruby-on-rails webdev wrapup
 headerImage: posts/2011/01/ss_nebyooweb.png
+published: true
 ---
 
 My two flagship websites, [Nebyooweb.com](http://nebyooweb.com) (web portfolio), and [Nebyoolae.com](http://nebyoolae.com) (original music), have been updated to versions&#8230;uh&#8230;they&#8217;re newer.

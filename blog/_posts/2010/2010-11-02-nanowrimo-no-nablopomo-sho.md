@@ -10,6 +10,7 @@ tags:
   - nablopomo
   - nanowrimo
   - robyn
+published: false
 ---
 Spurned on by my wife, who is being spurned on by a website, I am dutifully creating a blog post again, one day after my last.
 
