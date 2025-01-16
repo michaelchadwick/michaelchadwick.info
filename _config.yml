@@ -32,6 +32,7 @@ plugins:
   - jekyll-loading-lazy
   - jekyll-paginate-v2
   # - jekyll-tagging # here for ref; uncommenting breaks jekyll build for some reason
+  - jekyll-thumbnail-img
   - jekyll-timeago
   - jemoji
 # Plugin settings

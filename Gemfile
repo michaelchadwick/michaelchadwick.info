@@ -20,5 +20,6 @@ group :jekyll_plugins do
   gem 'jekyll-paginate-v2'
   gem 'jekyll_pages_api', :git => 'https://github.com/chosak/jekyll_pages_api'
   gem 'jekyll-tagging'
+  gem 'jekyll-thumbnail-img'
   gem 'jekyll-timeago'
 end
