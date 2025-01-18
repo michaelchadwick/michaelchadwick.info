@@ -3,6 +3,7 @@ require '../../vendor/autoload.php';
 
 use Dotenv\Dotenv;
 use GuzzleHttp\Client;
+use GuzzleHttp\Cookie\CookieJar;
 
 header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
@@ -31,12 +32,12 @@ else if (isset($argv)) {
   }
 }
 // direct url (debugging)
-// else if (isset($_GET['site'])) {
-//   $site = $_GET['site'];
-// }
+else if (isset($_GET['site'])) {
+  $site = $_GET['site'];
+}
 // no site?
 else {
-  // echo "error: no site supplied\n";
+  echo "error: no site supplied\n";
   exit();
 }
 
@@ -45,23 +46,39 @@ switch ($site) {
     $AOC_API_URL = 'https://adventofcode.com';
     $AOC_SESSION = getenv('ADVENT_OF_CODE_SESSION');
 
-    $client = new Client(['base_uri' => $AOC_API_URL, 'timeout'  => 5.0]);
+    $cookieJar = CookieJar::fromArray([
+      'session' => $AOC_SESSION
+    ], '.adventofcode.com');
+    $client = new Client([
+      'base_uri' => $AOC_API_URL,
+      'timeout' => 5.0
+    ]);
 
     // get all my calendar stars
     try {
-      $response = $client->get('', [
-        'debug' => false,
-        'headers' => [
-          'session' => $AOC_SESSION
-        ]
+      $response = $client->request('GET', '/events', [
+        'cookies' => $cookieJar,
+        'debug' => false
       ]);
 
-      echo $response->getBody();
-    } catch (GuzzleHttp\Exception\RequestException $e) {
-      $response = $e->getResponse();
-      $responseString = $response->getBody()->getContents();
+      $html = $response->getBody();
+      @$document = new FluentDOM\DOM\Document();
+      @$document->loadHTML($html);
+      $stars = [];
 
-      echo $responseString;
+      foreach ($document->querySelectorAll('.eventlist-event') as $event) {
+        $year = substr($event->firstElementChild, 1, -1);
+        $wins = substr($event->firstElementChild->nextElementSibling, 0, -1);
+
+        $stars[$year] = $wins;
+      }
+
+      echo json_encode($stars);
+    } catch (GuzzleHttp\Exception\RequestException $e) {
+      $errorResponse = $e->getResponse();
+      $errorResponseString = $errorResponse->getBody()->getContents();
+
+      echo $errorResponseString;
     }
 
     break;

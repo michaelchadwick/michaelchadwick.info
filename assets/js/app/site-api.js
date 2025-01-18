@@ -5,9 +5,6 @@ if (typeof MCInfo.SiteApi === 'undefined') MCInfo.SiteApi = {}
 
 // ADVENTOFCODE (backend)
 MCInfo.SiteApi.AOC = function () {
-  const aocLastYearStars = document.querySelector('.aocLastYearStars')
-  const aocApiData = document.querySelector('.apiData.aoc')
-
   // get calendar stars information
   fetch(MCInfo.BACKEND_SITE_API_PATH, {
     method: 'POST',
@@ -18,10 +15,24 @@ MCInfo.SiteApi.AOC = function () {
     body: JSON.stringify({ site: 'aoc' }),
   })
     .then((response) => {
-      return response.text()
+      return response.json()
     })
     .then((data) => {
-      console.log('aoc api request SUCCESS', data)
+      // console.log('aoc api request SUCCESS', data)
+
+      const aocApiData = document.querySelector('.apiData.aocStars')
+      const aocStars = document.querySelector('.adventOfCode')
+      const events = []
+
+      Object.entries(data).sort((a, b) => b[0] - a[0]).forEach((event) => {
+        events.push(`<a href="https://adventofcode.com/${event[0]}" target="_blank">${event[0]}</a>: <strong>${event[1]}</strong>`)
+      })
+
+      aocStars.innerHTML = events.join(', ')
+
+      if (!aocApiData.classList.contains('show')) {
+        aocApiData.classList.add('show')
+      }
     })
 }
 
