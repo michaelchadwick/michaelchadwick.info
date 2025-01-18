@@ -4,8 +4,227 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cede26797b1767f7907eac4e85027577",
+    "content-hash": "da82e1696aea959455e7c0e6e1ecd8d6",
     "packages": [
+        {
+            "name": "carica/phpcss",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ThomasWeinert/PhpCss.git",
+                "reference": "944cdd0cf21655ceb1bd3262dee9b33602020c09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ThomasWeinert/PhpCss/zipball/944cdd0cf21655ceb1bd3262dee9b33602020c09",
+                "reference": "944cdd0cf21655ceb1bd3262dee9b33602020c09",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/PhpCss.php"
+                ],
+                "psr-4": {
+                    "PhpCss\\": "src/PhpCss"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Weinert",
+                    "email": "thomas@weinert.info"
+                }
+            ],
+            "description": "An css selector parser and converter",
+            "support": {
+                "issues": "https://github.com/ThomasWeinert/PhpCss/issues",
+                "source": "https://github.com/ThomasWeinert/PhpCss/tree/2.0.0"
+            },
+            "time": "2021-04-25T14:14:13+00:00"
+        },
+        {
+            "name": "fluentdom/fluentdom",
+            "version": "8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ThomasWeinert/FluentDOM.git",
+                "reference": "22ee56352bb5fd0bc41ccf7906780aabc2bccf33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ThomasWeinert/FluentDOM/zipball/22ee56352bb5fd0bc41ccf7906780aabc2bccf33",
+                "reference": "22ee56352bb5fd0bc41ccf7906780aabc2bccf33",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "~7.2 || ~8.0"
+            },
+            "require-dev": {
+                "ext-simplexml": "*",
+                "ext-xmlreader": "*",
+                "ext-xmlwriter": "*"
+            },
+            "suggest": {
+                "ext-json": "JSON support, needed for several loaders/serializers",
+                "ext-xmlreader": "XMLReader, XML pull parser, read large XMLs",
+                "ext-xmlwriter": "XMLWriter, Write large XMLs",
+                "fluentdom/css-selector": "Allows to use css selectors."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/FluentDOM.php"
+                ],
+                "psr-4": {
+                    "FluentDOM\\": "src/FluentDOM"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FluentDOM Contributors",
+                    "homepage": "https://github.com/FluentDOM/FluentDOM/contributors"
+                }
+            ],
+            "description": "A fluent api for the php dom extension.",
+            "homepage": "http://fluentdom.org",
+            "keywords": [
+                "XMLReader",
+                "XMLWriter",
+                "Xpath",
+                "dom",
+                "jquery",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/ThomasWeinert/FluentDOM/issues",
+                "source": "https://github.com/ThomasWeinert/FluentDOM/tree/8.0.0"
+            },
+            "time": "2021-04-18T18:12:11+00:00"
+        },
+        {
+            "name": "fluentdom/selectors-phpcss",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ThomasWeinert/FluentDOM-Selectors-PHPCss.git",
+                "reference": "e0c49bcaf0fd861e2411bcc72e60c845fa76ba33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ThomasWeinert/FluentDOM-Selectors-PHPCss/zipball/e0c49bcaf0fd861e2411bcc72e60c845fa76ba33",
+                "reference": "e0c49bcaf0fd861e2411bcc72e60c845fa76ba33",
+                "shasum": ""
+            },
+            "require": {
+                "carica/phpcss": "^2.0.0",
+                "fluentdom/fluentdom": "^8.0.0"
+            },
+            "provide": {
+                "fluentdom/css-selector": "1.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/plugin.php"
+                ],
+                "psr-4": {
+                    "FluentDOM\\PhpCss\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FluentDOM Contributors",
+                    "homepage": "https://github.com/FluentDOM/FluentDOM/contributors"
+                }
+            ],
+            "description": "Provides CSS selector for FluentDOM using Carica PHPCss.",
+            "homepage": "http://fluentdom.org",
+            "keywords": [
+                "css",
+                "css selectors",
+                "dom",
+                "jquery",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/ThomasWeinert/FluentDOM-Selectors-PHPCss/issues",
+                "source": "https://github.com/ThomasWeinert/FluentDOM-Selectors-PHPCss/tree/2.0.0"
+            },
+            "time": "2021-04-25T17:34:28+00:00"
+        },
+        {
+            "name": "fluentdom/selectors-symfony",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ThomasWeinert/FluentDOM-Selectors-Symfony.git",
+                "reference": "579b463db3436323e83053c3da7513e1c2dfac52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ThomasWeinert/FluentDOM-Selectors-Symfony/zipball/579b463db3436323e83053c3da7513e1c2dfac52",
+                "reference": "579b463db3436323e83053c3da7513e1c2dfac52",
+                "shasum": ""
+            },
+            "require": {
+                "fluentdom/fluentdom": "^8.0",
+                "php": ">=7.0",
+                "symfony/css-selector": "^5.2"
+            },
+            "provide": {
+                "fluentdom/css-selector": "1.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/plugin.php"
+                ],
+                "psr-4": {
+                    "FluentDOM\\Symfony\\CssSelector\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FluentDOM Contributors",
+                    "homepage": "https://github.com/FluentDOM/FluentDOM/contributors"
+                }
+            ],
+            "description": "Provides CSS selector for FluentDOM using Symfony CSS Selectors.",
+            "homepage": "http://fluentdom.org",
+            "keywords": [
+                "css",
+                "css selectors",
+                "dom",
+                "jquery",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/ThomasWeinert/FluentDOM-Selectors-Symfony/issues",
+                "source": "https://github.com/ThomasWeinert/FluentDOM-Selectors-Symfony/tree/4.0.0"
+            },
+            "time": "2021-04-25T17:43:22+00:00"
+        },
         {
             "name": "graham-campbell/result-type",
             "version": "v1.1.3",
@@ -671,6 +890,72 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v5.4.45",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "4f7f3c35fba88146b56d0025d20ace3f3901f097"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/4f7f3c35fba88146b56d0025d20ace3f3901f097",
+                "reference": "4f7f3c35fba88146b56d0025d20ace3f3901f097",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Converts CSS selectors to XPath expressions",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/css-selector/tree/v5.4.45"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-25T14:11:13+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

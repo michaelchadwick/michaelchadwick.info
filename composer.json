@@ -6,6 +6,9 @@
   },
   "require": {
     "guzzlehttp/guzzle": "^7.0",
-    "vlucas/phpdotenv": "^5.4"
+    "vlucas/phpdotenv": "^5.4",
+    "fluentdom/fluentdom": "^8.0",
+    "fluentdom/selectors-phpcss": "^2.0",
+    "fluentdom/selectors-symfony": "^4.0"
   }
 }
