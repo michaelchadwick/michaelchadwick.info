@@ -22,4 +22,5 @@ group :jekyll_plugins do
   gem 'jekyll-tagging'
   gem 'jekyll-thumbnail-img'
   gem 'jekyll-timeago'
+  gem 'jekyll-youtube'
 end
