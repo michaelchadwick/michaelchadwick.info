@@ -3,8 +3,6 @@ id: 4674
 title: 'Private: New Job: Acquired'
 date: 2011-05-11T15:24:20-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

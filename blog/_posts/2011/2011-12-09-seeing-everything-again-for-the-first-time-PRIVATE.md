@@ -3,8 +3,6 @@ id: 4886
 title: 'Private: Seeing Everything Again For the First Time'
 date: 2011-12-09T15:17:40-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

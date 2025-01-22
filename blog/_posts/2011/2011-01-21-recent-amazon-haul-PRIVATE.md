@@ -3,8 +3,6 @@ id: 4073
 title: 'Private: Recent Amazon Haul'
 date: 2011-01-21T09:11:44-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

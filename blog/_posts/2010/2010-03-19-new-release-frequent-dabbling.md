@@ -2,8 +2,6 @@
 title: 'New Release: Frequent Dabbling'
 date: 2010-03-19T22:18:05-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 tags:
   - music-composition
   - new-release

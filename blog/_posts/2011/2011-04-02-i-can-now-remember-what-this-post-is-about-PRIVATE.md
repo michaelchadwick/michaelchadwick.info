@@ -3,8 +3,6 @@ id: 4621
 title: 'Private: I Can Now Remember What This Post Is About'
 date: 2011-04-02T08:33:30-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

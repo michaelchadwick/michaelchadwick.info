@@ -3,8 +3,6 @@ id: 4109
 title: 'Private: Taxing, For Once, Sorta, Briefly'
 date: 2011-02-14T15:34:31-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

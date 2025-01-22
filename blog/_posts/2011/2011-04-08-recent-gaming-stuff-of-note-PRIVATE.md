@@ -3,8 +3,6 @@ id: 4632
 title: 'Private: Recent Gaming Stuff of Note'
 date: 2011-04-08T12:35:13-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

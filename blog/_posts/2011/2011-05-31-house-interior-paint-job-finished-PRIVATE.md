@@ -3,8 +3,6 @@ id: 4688
 title: 'Private: House Interior Paint Job: Finished'
 date: 2011-05-31T10:32:37-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

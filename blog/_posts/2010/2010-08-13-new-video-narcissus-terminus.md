@@ -2,8 +2,6 @@
 title: 'New Video: Narcissus Terminus'
 date: 2010-08-13T09:25:32-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
   - videos
 tags:
   - music-composition

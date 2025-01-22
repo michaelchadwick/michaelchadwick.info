@@ -3,8 +3,6 @@ id: 4659
 title: 'Private: Real Life New Vegas'
 date: 2011-04-15T10:01:19-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

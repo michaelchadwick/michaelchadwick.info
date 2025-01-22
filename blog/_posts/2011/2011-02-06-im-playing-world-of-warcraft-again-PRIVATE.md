@@ -3,8 +3,6 @@ id: 4101
 title: 'Private: I&#8217;m Playing World of Warcraft Again'
 date: 2011-02-06T22:23:32-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

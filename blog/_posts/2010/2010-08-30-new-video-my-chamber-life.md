@@ -2,8 +2,6 @@
 title: 'New Video: My Chamber Life'
 date: 2010-08-30T08:46:16-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
   - videos
 tags:
   - music-composition

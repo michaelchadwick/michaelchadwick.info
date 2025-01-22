@@ -3,8 +3,6 @@ id: 4078
 title: 'Private: Anniversary: The Reboot: One'
 date: 2011-01-24T07:23:15-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

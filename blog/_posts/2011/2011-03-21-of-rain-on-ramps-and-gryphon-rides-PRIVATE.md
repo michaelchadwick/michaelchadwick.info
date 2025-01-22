@@ -3,8 +3,6 @@ id: 4615
 title: 'Private: Of Rain, On-Ramps, and Gryphon Rides'
 date: 2011-03-21T08:45:25-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

@@ -3,8 +3,6 @@ id: 4107
 title: 'Private: Some Neat iPhone Games I Would Like To Tell You About'
 date: 2011-02-10T12:07:50-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

@@ -3,8 +3,6 @@ id: 4808
 title: 'Private: My First &#8220;Our&#8221; Car, The Subaru Outback'
 date: 2011-09-04T12:15:02-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

@@ -3,8 +3,6 @@ id: 4091
 title: 'Private: The Secret Journal'
 date: 2011-01-31T10:55:05-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

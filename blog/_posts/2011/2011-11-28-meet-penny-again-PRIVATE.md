@@ -3,8 +3,6 @@ id: 4866
 title: 'Private: Meet Penny (Again)'
 date: 2011-11-28T09:48:39-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

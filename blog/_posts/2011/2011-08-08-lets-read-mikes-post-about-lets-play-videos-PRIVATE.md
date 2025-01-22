@@ -3,8 +3,6 @@ id: 4790
 title: 'Private: Let&#8217;s Read &#8220;Mike&#8217;s Post About Let&#8217;s Play Videos&#8221;'
 date: 2011-08-08T15:42:20-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

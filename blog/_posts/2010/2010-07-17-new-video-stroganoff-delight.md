@@ -2,8 +2,6 @@
 title: 'New Video: Stroganoff Delight'
 date: 2010-07-17T09:47:30-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
   - videos
 tags:
   - music-composition

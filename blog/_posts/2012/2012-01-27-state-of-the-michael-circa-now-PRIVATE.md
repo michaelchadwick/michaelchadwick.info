@@ -3,8 +3,6 @@ id: 4924
 title: 'Private: State of the Michael, Circa Now'
 date: 2012-01-27T11:44:45-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

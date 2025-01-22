@@ -3,8 +3,6 @@ id: 4630
 title: 'Private: Life in Transition, Or Wowiqatsi'
 date: 2011-04-08T07:49:42-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

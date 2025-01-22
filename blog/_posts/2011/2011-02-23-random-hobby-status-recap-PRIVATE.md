@@ -3,8 +3,6 @@ id: 4121
 title: 'Private: Random Hobby Status Recap'
 date: 2011-02-23T08:47:48-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

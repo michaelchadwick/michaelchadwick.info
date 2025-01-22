@@ -3,8 +3,6 @@ id: 4676
 title: 'Private: Starbucksing'
 date: 2011-05-16T09:43:44-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

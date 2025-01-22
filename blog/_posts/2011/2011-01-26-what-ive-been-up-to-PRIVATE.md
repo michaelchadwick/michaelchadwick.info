@@ -3,8 +3,6 @@ id: 4081
 title: 'Private: What I&#8217;ve Been Up To'
 date: 2011-01-26T08:36:46-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

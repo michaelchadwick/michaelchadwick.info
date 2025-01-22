@@ -3,8 +3,6 @@ id: 4619
 title: 'Private: Don&#8217;t Hate on April Fool&#8217;s Day'
 date: 2011-04-01T09:07:28-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

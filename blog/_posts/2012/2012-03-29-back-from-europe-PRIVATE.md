@@ -3,8 +3,6 @@ id: 4973
 title: 'Private: Back From Europe'
 date: 2012-03-29T10:07:11-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

@@ -2,8 +2,6 @@
 title: 'New Video: TiVo on the Lam'
 date: 2010-07-24T12:10:40-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
   - videos
 tags:
   - music-composition

@@ -3,8 +3,6 @@ id: 4118
 title: 'Private: Money From the Sky'
 date: 2011-02-18T10:07:48-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

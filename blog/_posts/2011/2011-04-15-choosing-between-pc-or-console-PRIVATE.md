@@ -3,8 +3,6 @@ id: 4656
 title: 'Private: Choosing Between PC or Console'
 date: 2011-04-15T08:41:55-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

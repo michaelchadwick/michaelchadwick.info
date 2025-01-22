@@ -3,8 +3,6 @@ id: 4129
 title: 'Private: My First Book Signing'
 date: 2011-03-01T14:29:23-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

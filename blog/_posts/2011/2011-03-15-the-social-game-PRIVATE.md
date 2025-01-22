@@ -3,8 +3,6 @@ id: 4610
 title: 'Private: The Social Game'
 date: 2011-03-15T10:34:40-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

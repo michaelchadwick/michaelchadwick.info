@@ -3,8 +3,6 @@ id: 4681
 title: 'Private: Thoughts on New Job (After a Few Days)'
 date: 2011-05-24T12:26:59-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

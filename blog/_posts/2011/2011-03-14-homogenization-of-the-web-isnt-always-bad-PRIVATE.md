@@ -3,8 +3,6 @@ id: 4607
 title: 'Private: Homogenization of the Web Isn&#8217;t Always Bad'
 date: 2011-03-14T12:40:19-07:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:

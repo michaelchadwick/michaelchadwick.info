@@ -3,8 +3,6 @@ id: 4114
 title: 'Private: Social Media Vacation'
 date: 2011-02-17T10:05:42-08:00
 layout: post
-aktt_notify_twitter:
-  - 'yes'
 aktt_tweeted:
   - "1"
 categories:
