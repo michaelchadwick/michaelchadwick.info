@@ -2,7 +2,6 @@
 title: 'New Video: A Day in the Life (Or How I Ate a Muffin)'
 date: 2010-07-06T10:25:49-07:00
 layout: post
-  - videos
 tags:
   - music-composition
   - music-videos

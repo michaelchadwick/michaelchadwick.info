@@ -2,7 +2,6 @@
 title: 'New Video: Alaska Yo Ho'
 date: 2010-08-17T07:18:44-07:00
 layout: post
-  - videos
 tags:
   - music-composition
   - music-videos
