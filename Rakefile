@@ -33,11 +33,11 @@ task :serve_prod do |t|
 end
 
 task :serve_unpub do |t|
-  sh "SHOW_UNPUB=true bundle exec jekyll serve --incremental --unpublished --livereload --watch --open-url http://localhost:4000"
+  sh "SHOW_UNPUB=true bundle exec jekyll serve --unpublished --livereload --watch --open-url http://localhost:4000"
 end
 
 task :serve_unpub_prod do |t|
-  sh "JEKYLL_SHOW_UNPUB=true JEKYLL_ENV=production bundle exec jekyll serve --incremental --unpublished --livereload --watch --open-url http://localhost:4000"
+  sh "JEKYLL_SHOW_UNPUB=true JEKYLL_ENV=production bundle exec jekyll serve --unpublished --livereload --watch --open-url http://localhost:4000"
 end
 
 task :sync do |t|
