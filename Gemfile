@@ -21,8 +21,6 @@ group :jekyll_plugins do
   gem 'jekyll_pages_api', :git => 'https://github.com/chosak/jekyll_pages_api'
   gem 'jekyll-tagging'
   gem 'jekyll-thumbnail-img'
-  # gem 'jekyll-thumbnail-img', github: "michaelchadwick/jekyll-thumbnail-img", branch: "main"
-  # gem "jekyll-thumbnail-img", git: "https://github.com/S8A/jekyll-thumbnail-img.git", branch: "feature/cache_thumbnails_and_allow_variable_width"
   gem 'jekyll-timeago'
   gem 'jekyll-youtube'
 end
