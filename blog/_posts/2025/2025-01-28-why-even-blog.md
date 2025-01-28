@@ -7,7 +7,7 @@ tags: blogging jekyll livejournal markdown pico8
 # headerImage: posts/2025/why-even-blog.jpg
 headerImageCaption: 'Why Even Blog?'
 image: posts/2025/why-even-blog.jpg
-published: false
+published: true
 ---
 
 {{ page.description }}
