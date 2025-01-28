@@ -118,7 +118,7 @@ MCInfo.addEventHandlers = () => {
       event.target.innerText = 'DEV'
     })
     envLinker.addEventListener('click', function (event) {
-      window.open('https://michaelchadwick.info', '_blank')
+      window.open(`https://michaelchadwick.info${document.location.pathname}`, '_blank')
     })
   }
   themeToggler.addEventListener('click', function () {
