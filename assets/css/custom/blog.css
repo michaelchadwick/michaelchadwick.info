@@ -285,7 +285,7 @@ nav.site-links a {
     justify-content: space-between;
   }
   .post-main .post-teaser {
-    max-width: 70%;
+    max-width: 75%;
   }
 }
 
@@ -336,8 +336,8 @@ nav.site-links a {
 @media (min-width: 768px) {
   .post-header-image {
     max-height: none;
-    max-width: 200px;
-    margin: 0 0 1em 2em;
+    max-width: 175px;
+    margin: 0 0 1em 1em;
   }
 }
 .post-header-image img {
