@@ -362,8 +362,7 @@ ul.links li .loading {
   margin-top: 1px;
 }
 ul.links li ul {
-  margin-bottom: 0;
-  margin-top: 1rem;
+  margin: 1rem 0 0 0.75rem;
 }
 ul.links li ul li {
   font-size: 0.8em;
@@ -842,16 +841,24 @@ footer#site-footer #logo-slogan a.plain {
 .homepage-blocks .row ul.links {
   margin-left: 0;
 }
-@media (min-width: 550px) {
-  .homepage-blocks .row h3,
-  .homepage-blocks .row ul.links {
-    margin-left: 5px;
-  }
+.homepage-blocks .row ul.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: flex-start;
+  width: 100%;
+}
+.homepage-blocks .row.code ul.links li,
+.homepage-blocks .row.audio ul.links li {
+  width: 150px;
 }
 @media (min-width: 768px) {
-  .homepage-blocks .row h3,
   .homepage-blocks .row ul.links {
-    margin-left: 0;
+    display: block;
+  }
+  .homepage-blocks .row.code ul.links li,
+  .homepage-blocks .row.audio ul.links li {
+    width: auto;
   }
 }
 .homepage-blocks .row.code ul.links li.dynamic {
