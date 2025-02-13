@@ -443,6 +443,9 @@ header.header-narrow {
   margin: 2rem 0;
   padding-bottom: 1rem;
 }
+header.header-narrow h1 {
+  margin-bottom: 0;
+}
 @media (min-width: 550px) {
   header.header-narrow {
     display: none;
@@ -496,10 +499,10 @@ header.header-scrolled {
     rgba(158, 195, 231, 0.9122023809523809) 100%
   );
   box-shadow: 0 0 2px 2px #b3aeae;
-  height: 55px;
+  height: 50px;
   left: 0;
   margin-top: 0;
-  padding: 10px 15px;
+  padding: 7px 15px;
   position: fixed;
   top: 0;
   transition: top 0.2s cubic-bezier(0.3, 0.73, 0.3, 0.74);
