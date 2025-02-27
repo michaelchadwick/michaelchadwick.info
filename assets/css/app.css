@@ -361,8 +361,9 @@ ul.links li .loading {
   margin-left: -25px;
   margin-top: 1px;
 }
+
 ul.links li ul {
-  margin: 1rem 0 0 0.75rem;
+  margin: 1rem 0 0 2.75rem;
 }
 ul.links li ul li {
   font-size: 0.8em;
@@ -380,14 +381,10 @@ ul.links li ul li::before {
   position: absolute;
   top: 0.25em;
 }
-ul.links li ul li.loader::before {
-  display: none;
-}
-ul.links li ul.show li.loader::before {
-  display: block;
-}
+
 ul.links li ul li.blank {
-  left: -0.75em;
+  left: 0;
+  margin-bottom: 0;
 }
 ul.links li ul li.blank::before {
   content: '';
@@ -397,6 +394,9 @@ ul.links li ul li.blank span {
   position: relative;
   top: -2px;
 }
+ul.links li ul li.blank ul {
+  margin-left: 0.55em;
+}
 ul.links li ul li.blank ul.apiData {
   margin-top: 0;
 }
@@ -404,11 +404,24 @@ ul.links li ul li.blank ul.apiData li a {
   font-size: 1.2rem;
   top: 0;
 }
+
+ul.links li ul li.loader::before {
+  display: none;
+}
+
 ul.links li ul li.soundcloud {
   left: -0.5em;
 }
 ul.links li ul li.soundcloud::before {
   content: '';
+}
+
+ul.links li ul.show li.loader::before {
+  display: block;
+}
+
+ul.links li ul li ul li {
+  left: 2.3em;
 }
 
 iframe.youtube {
