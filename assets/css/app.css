@@ -428,6 +428,10 @@ details {
       font-size: 2.5rem;
       font-weight: 300;
     }
+
+    & + p:first-of-type {
+      margin-top: 2.5rem;
+    }
   }
 }
 
