@@ -15,11 +15,7 @@ layout: default
     <ul>
     {% for post in page.posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a><br />
-        <div class="tag-meta">
-          <div class="date">{{ post.date | date: site.date_YYYYMMDD_dash }}</div>
-          <div class="tag">{{ post | tags }}</div>
-        </div>
+        {{ post.date | date: site.date_YYYYMMDD_dash }}: <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
     </ul>
