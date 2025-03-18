@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 group :default do
   gem 'ffi', '>=1.15'
+  gem 'html-proofer'
   gem 'jemoji'
   gem 'json'
   gem 'kramdown-parser-gfm'
