@@ -7,7 +7,7 @@ headerImage: posts/2023/more-on-self-hosting-2023-05-08.jpg
 published: true
 ---
 
-About 6 months ago I did a <a href={{ site.blogurl }}/2021/11/19/sometimes-self-hosting-services-satisfies-sufficiently">post</a> about self-hosting: installing versions of server software on your own host, rather than using services provided wholly by another entity (Gmail, Github, etc.). I talked about which services I'm currently self-hosting and which I was thinking about self-hosting.
+About 6 months ago I did a <a href="{{ site.blogurl }}/2021/11/19/sometimes-self-hosting-services-satisfies-sufficiently">post</a> about self-hosting: installing versions of server software on your own host, rather than using services provided wholly by another entity (Gmail, Github, etc.). I talked about which services I'm currently self-hosting and which I was thinking about self-hosting.
 
 Let's get up to speed on what my current status is.
 
