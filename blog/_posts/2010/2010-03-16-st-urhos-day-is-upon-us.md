@@ -26,4 +26,6 @@ And to that end, a gift!
 
 [Pure Yellow Colour &#8211; Grasshoppers](http://pureyellow.net/releases/extras/grasshoppers.mp3)
 
+Edit: [Working link](https://neb.host/audio/pyc/music/singles/pyc-grasshoppers.mp3)
+
 <!--more-->
