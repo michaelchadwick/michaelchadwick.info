@@ -51,7 +51,7 @@ Amazon apparently lost some class-action lawsuit about price fixing, so I got so
 
 **MEDIA**
 
-[How I Met Your Mother](www.cbs.com/shows/how_i_met_your_mother) ended this week. The finale, after 9 long years, was a [doozy](http://boingboing.net/2014/04/02/picking-up-the-pieces-of-how-i.html). The cleverness of it undercut the emotional resonance, largely due to how long it had been on. It&#8217;s gotta be tough for a show to write something so long form when they don&#8217;t if they&#8217;ll even make it past a couple seasons. Regardless, there are some really angry people on the Internet right now. I don&#8217;t know if it was the ending I wanted, but it was the ending they thought we deserved.
+[How I Met Your Mother](https://www.cbs.com/shows/how_i_met_your_mother) ended this week. The finale, after 9 long years, was a [doozy](http://boingboing.net/2014/04/02/picking-up-the-pieces-of-how-i.html). The cleverness of it undercut the emotional resonance, largely due to how long it had been on. It&#8217;s gotta be tough for a show to write something so long form when they don&#8217;t if they&#8217;ll even make it past a couple seasons. Regardless, there are some really angry people on the Internet right now. I don&#8217;t know if it was the ending I wanted, but it was the ending they thought we deserved.
 
 **MISCELLANEOUS**
 

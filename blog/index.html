@@ -45,7 +45,7 @@ tags: fa fa-solid
 
         <div class="tags">
           {% for tag in sorted_tags %}
-          <a href="/blog/tags/{{ tag }}">{{ tag }}</a>
+          <a href={{ site.blogurl }}/tags/{{ tag }}">{{ tag }}</a>
           {% endfor %}
         </div>
       </div>

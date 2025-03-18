@@ -8,10 +8,8 @@ lj_itemid:
 lj_permalink:
   - http://nebyoolae.livejournal.com/561613.html
 tags:
-  - bitching
-  - blah
   - fallout
-  - fallout 3
+  - fallout-3
   - matrix
   - robyn
   - wedding

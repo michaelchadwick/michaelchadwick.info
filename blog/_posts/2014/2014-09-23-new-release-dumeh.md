@@ -6,7 +6,7 @@ tags: dumeh music-composition new-release
 headerImage: posts/2014/09/dumeh_cover.png
 published: true
 ---
-Well, I finally released &#8220;[Dumeh](https://nebyoolae.bandcamp.com/album/dumeh-in-cm-op-1-no-1)&#8220;. To those whom I&#8217;ve spoken to about this piece over the last decade, it may be a bit surprising that I&#8217;ve finally finished, but I think it&#8217;s time. I&#8217;ve [written a bit](/tag/dumeh/) on this piece on the blog, but the story of how the idea behind Dumeh began goes way back.
+Well, I finally released &#8220;[Dumeh](https://nebyoolae.bandcamp.com/album/dumeh-in-cm-op-1-no-1)&#8220;. To those whom I&#8217;ve spoken to about this piece over the last decade, it may be a bit surprising that I&#8217;ve finally finished, but I think it&#8217;s time. I&#8217;ve [written a bit]({{ site.blogurl }}/tags/dumeh/) on this piece on the blog, but the story of how the idea behind Dumeh began goes way back.
 
 <!--more-->
 

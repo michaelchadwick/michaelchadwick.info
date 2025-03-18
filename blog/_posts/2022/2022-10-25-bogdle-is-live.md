@@ -9,7 +9,7 @@ published: true
 
 It's finally time to reveal my finished web game: **Bogdle**.
 
-I [blogged about it before](/blog/2022/05/bogdle-intro) and it's finally ready for prime time.
+I [blogged about it before]({{ site.blogurl }}/2022/05/03/bogdle-intro) and it's finally ready for prime time.
 
 <!--more-->
 

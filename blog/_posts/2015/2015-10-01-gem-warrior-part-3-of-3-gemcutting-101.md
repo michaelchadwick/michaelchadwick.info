@@ -6,7 +6,7 @@ excerpt: "For the most part, Gem Warrior is done. What a blast it has been! I'm 
 published: true
 ---
 
-(Previous posts [1](/2015/06/08/gem-warrior-part-1-of-who-knows/) and [2](/2015/07/16/gem-warrior-part-2-of-some-indeterminate-number/))
+(Previous posts [1]({{ site.blogurl }}/2015/06/08/gem-warrior-part-1-of-who-knows/) and [2]({{ site.blogurl }}/2015/07/16/gem-warrior-part-2-of-some-indeterminate-number/))
 
 For the most part, [Gem Warrior](https://gw.neb.host) is done. What a blast it has been! I'm not sure I've worked so hard on a project in a long time.
 
