@@ -899,7 +899,8 @@ footer#site-footer #logo-slogan a.plain {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .homepage-blocks .row.code ul.links li.dynamic {
+  .homepage-blocks .row.code ul.links li.dynamic,
+  .homepage-blocks .row.audio ul.links li.dynamic.featured {
     height: 80px;
     margin-bottom: 0;
   }
@@ -907,7 +908,8 @@ footer#site-footer #logo-slogan a.plain {
 .homepage-blocks .row ul.links li {
   padding-left: 0;
 }
-.homepage-blocks .row.code ul.links li a {
+.homepage-blocks .row.code ul.links li a,
+.homepage-blocks .row.audio ul.links li.featured a {
   display: flex;
 }
 .homepage-blocks .row.code ul.links li span {
@@ -929,12 +931,14 @@ footer#site-footer #logo-slogan a.plain {
   .homepage-blocks .row {
     justify-self: auto;
   }
-  .homepage-blocks .row.code ul.links li a {
+  .homepage-blocks .row.code ul.links li a,
+  .homepage-blocks .row.audio ul.links li.featured a {
     display: inline;
     font-size: 2.75rem;
     vertical-align: top;
   }
-  .homepage-blocks .row.code ul.links li span {
+  .homepage-blocks .row.code ul.links li span,
+  .homepage-blocks .row.audio ul.links li.featured span {
     bottom: 40px;
     display: block;
     font-size: 2.25rem;
