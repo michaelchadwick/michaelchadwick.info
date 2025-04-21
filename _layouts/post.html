@@ -39,23 +39,29 @@ layout: default
     {% endif %}
 
     <div class="post-header-image full-entry">
-      <img
-        alt="{{ page.title }}"
-        title="{{ page.title }}"
-        loading="lazy"
-        width="480"
-        height="270"
+      {% if page.headerImage %}
+      <a href="{{ site.baseurl }}/assets/images/{{ page.headerImage }}">
+      {% else %}
+      <a href="{{ site.baseurl }}/assets/images/default_header-800.jpg">
+      {% endif %}
+        <img
+          alt="{{ page.title }}"
+          title="{{ page.title }}"
+          loading="lazy"
+          width="480"
+          height="270"
 
-        {% if page.headerImage %}
-        src="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
-        data-image-title="{{ page.headerImage }}"
-        data-orig-file="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
-        {% else %}
-        src="{{ site.baseurl }}/assets/images/default_header-800.jpg"
-        data-image-title="Michael Chadwick blog post"
-        data-orig-file="{{ site.baseurl }}/assets/images/default_header-800.jpg"
-        {% endif %}
-      />
+          {% if page.headerImage %}
+          src="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
+          data-image-title="{{ page.headerImage }}"
+          data-orig-file="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
+          {% else %}
+          src="{{ site.baseurl }}/assets/images/default_header-800.jpg"
+          data-image-title="Michael Chadwick blog post"
+          data-orig-file="{{ site.baseurl }}/assets/images/default_header-800.jpg"
+          {% endif %}
+        />
+      </a>
     </div>
     {% if page.headerImageCaption %}
     <div class="post-header-image-caption">
