@@ -217,12 +217,12 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
 
       // create list of all episode titles
       if (type == 'episodes') {
-        const podbeanEpisodes = document.querySelector('.htgEpisodes')
+        const podbeanEpisodes = document.querySelector('#episode-list')
         let html = '<ul>'
 
         data.body.episodes.forEach((ep) => {
           if (ep.status != 'draft') {
-            html += `<li>${ep.title.substring(20)}</li>`
+            html += `<li><a href="${ep.permalink_url}">${ep.title.substring(20)}</a></li>`
           }
         })
 

@@ -1,8 +1,14 @@
 body {
   margin-top: 0;
 }
-.htgEpisodes {
+#episode-filter-container {
+  margin: 2em 0 0;
+}
+#episode-list {
   min-width: 50%;
   overflow: auto;
   padding: 0.5em;
+}
+#episode-list ul li.hidden {
+  display: none;
 }
