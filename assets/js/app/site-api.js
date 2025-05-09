@@ -222,7 +222,7 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
 
         data.body.episodes.forEach((ep) => {
           if (ep.status != 'draft') {
-            html += `<li><a href="${ep.permalink_url}">${ep.title.substring(20)}</a></li>`
+            html += `<li><a href="${ep.permalink_url}">${ep.title.substring(20)}</a> (${new Date(ep.duration * 1000).toISOString().substr(11, 8)})</li>`
           }
         })
 
