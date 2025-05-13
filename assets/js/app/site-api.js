@@ -215,22 +215,31 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
     .then((data) => {
       // console.log('podbean api request SUCCESS')
 
-      // create list of all episode titles
+      // create list of all episode titles (/podcasts/htg)
       if (type == 'episodes') {
         const podbeanEpisodes = document.querySelector('#episode-list')
-        let html = '<ul>'
+        let html = '<table>'
 
         data.body.episodes.forEach((ep) => {
-          if (ep.status != 'draft') {
-            html += `<li><a href="${ep.permalink_url}">${ep.title.substring(20)}</a> (${new Date(ep.duration * 1000).toISOString().substr(11, 8)})</li>`
+          if (ep.status != 'draft' && ep.status != 'future') {
+            html += '\t<tr>'
+            html += '\t\t<td class="title">'
+            html += `\t\t\t<a href="${ep.permalink_url}">`
+            html += `\t\t\t\t${ep.title.substring(20)}`
+            html += '\t\t\t</a>'
+            html += '\t\t</td>'
+            html += '\t\t<td class="duration">'
+            html += `\t\t\t${new Date(ep.duration * 1000).toISOString().substring(11, 19)}`
+            html += '\t\t</td>'
+            html += '\t</tr>'
           }
         })
 
-        html += '</ul>'
+        html += '</table>'
 
         podbeanEpisodes.innerHTML = html
       }
-      // display latest episode pertinent info
+      // display latest episode pertinent info (/, /projects)
       else {
         const podbeanApi = document.querySelector('.apiData.devPod')
         const podbeanApiListItem = document.querySelector('.htgPod')

@@ -21,20 +21,20 @@ if (['/podcasts/htg', '/podcasts/htg/'].includes(document.location.pathname)) {
 
 document.getElementById('episode-filter-search').addEventListener('keyup', (e) => {
   const filter = e.target.value.trim().toLowerCase()
-  const episodeRows = document.querySelectorAll('#episode-list ul li')
+  const eps = document.querySelectorAll('#episode-list table tr')
 
   if (filter.length > 0) {
     setTimeout(() => {
-      for (let node of episodeRows) {
-        node.classList.remove('hidden')
-        if (!node.innerText.toLowerCase().includes(filter)) {
-          node.classList.add('hidden')
+      for (let ep of eps) {
+        ep.classList.remove('hidden')
+        if (!ep.querySelector('td.title').innerText.toLowerCase().includes(filter)) {
+          ep.classList.add('hidden')
         }
       }
     }, 250)
   } else {
-    for (let node of episodeRows) {
-      node.classList.remove('hidden')
+    for (let ep of eps) {
+      ep.classList.remove('hidden')
     }
   }
 })

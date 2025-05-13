@@ -5,10 +5,16 @@ body {
   margin: 2em 0 0;
 }
 #episode-list {
+  font-family: 'Lucida Console', monospace;
+  font-size: 1.6rem;
   min-width: 50%;
   overflow: auto;
-  padding: 0.5em;
+  padding: 0;
 }
-#episode-list ul li.hidden {
+#episode-list table td {
+  border-bottom: none;
+  padding: 0 10px 0 0;
+}
+#episode-list table tr.hidden {
   display: none;
 }
