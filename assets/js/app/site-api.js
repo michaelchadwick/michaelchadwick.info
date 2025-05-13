@@ -219,8 +219,9 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
       if (type == 'episodes') {
         const podbeanEpisodes = document.querySelector('#episode-list')
         let html = '<table>'
+        let eps = data.body.episodes
 
-        data.body.episodes.forEach((ep) => {
+        eps.forEach((ep) => {
           if (ep.status != 'draft' && ep.status != 'future') {
             html += '\t<tr>'
             html += '\t\t<td class="title">'
