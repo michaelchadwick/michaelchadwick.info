@@ -27,7 +27,7 @@ document.getElementById('episode-filter-search').addEventListener('keyup', (e) =
     setTimeout(() => {
       for (let ep of eps) {
         ep.classList.remove('hidden')
-        if (!ep.querySelector('td.title').innerText.toLowerCase().includes(filter)) {
+        if (!ep.querySelector('div.title').innerText.toLowerCase().includes(filter)) {
           ep.classList.add('hidden')
         }
       }

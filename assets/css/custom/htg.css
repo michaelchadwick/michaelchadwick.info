@@ -29,7 +29,7 @@ body {
     grid-column-gap: 5px;
   }
 }
-#episode-list div.episode div.hidden {
+#episode-list div.episode.hidden {
   display: none;
 }
 #episode-list div.episode div.duration {
