@@ -21,7 +21,7 @@ if (['/podcasts/htg', '/podcasts/htg/'].includes(document.location.pathname)) {
 
 document.getElementById('episode-filter-search').addEventListener('keyup', (e) => {
   const filter = e.target.value.trim().toLowerCase()
-  const eps = document.querySelectorAll('#episode-list table tr')
+  const eps = document.querySelectorAll('#episode-list div.episode')
 
   if (filter.length > 0) {
     setTimeout(() => {

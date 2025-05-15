@@ -5,20 +5,46 @@ body {
   margin: 2em 0 0;
 }
 #episode-list {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
   font-family: 'Lucida Console', monospace;
   font-size: 1.6rem;
-  min-width: 50%;
-  overflow: auto;
   padding: 0;
 }
-#episode-list table tr.hidden {
+@media (min-width: 768px) {
+  #episode-list {
+    display: block;
+  }
+}
+#episode-list div.episode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+}
+@media (min-width: 768px) {
+  #episode-list div.episode {
+    display: grid;
+    grid-template-columns: 1.25fr 0.35fr 0.75fr;
+    grid-column-gap: 5px;
+  }
+}
+#episode-list div.episode div.hidden {
   display: none;
 }
-#episode-list table td {
-  border-bottom: none;
-  padding: 0 15px 0 0;
+#episode-list div.episode div.duration {
+  text-shadow: 1px 1px 1px #000;
 }
-#episode-list table td.perc {
+#episode-list div.episode div.duration.short {
+  color: #4FAE32;
+}
+#episode-list div.episode div.duration.med {
+  color: #a4ae32;
+}
+#episode-list div.episode div.duration.long {
+  color: #ae3232;
+}
+#episode-list div.episode div.perc {
   display: flex;
   gap: 1px;
 }

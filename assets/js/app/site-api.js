@@ -218,7 +218,7 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
       // create list of all episode titles (/podcasts/htg)
       if (type == 'episodes') {
         const podbeanEpisodes = document.querySelector('#episode-list')
-        let html = '<table>'
+        let html = ''
         const eps = data.body.episodes
         const durations = eps.map((ep) => ep.duration)
         const longestEp = Math.max(...durations)
@@ -227,32 +227,34 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
         eps.filter((ep) => !ignoredStatuses.includes(ep.status)).forEach((ep) => {
           const perc = ((ep.duration / longestEp).toFixed(2) * 100).toFixed(0)
           let percGraph = ''
+          let percClass = ''
           for (i = 0; i < Number(perc) / 10; i++) {
             if (i > 7) {
               percGraph += '<span class="red">🟥</span>'
+              percClass = 'long'
             } else if (i > 5) {
               percGraph += '<span class="yellow">🟨</span>'
+              percClass = 'med'
             } else {
               percGraph += '<span class="green">🟩</span>'
+              percClass = 'short'
             }
           }
 
-          html += '\t<tr>'
-          html += '\t\t<td class="title">'
-          html += `\t\t\t<a href="${ep.permalink_url}">`
-          html += `\t\t\t\t${ep.title.substring(20)}`
-          html += '\t\t\t</a>'
-          html += '\t\t</td>'
-          html += '\t\t<td class="duration">'
-          html += `\t\t\t${new Date(ep.duration * 1000).toISOString().substring(11, 19)}`
-          html += '\t\t</td>'
-          html += '\t\t<td class="perc">'
-          html += `\t\t\t${percGraph}`
-          html += '\t\t</td>'
-          html += '\t</tr>'
+          html += '<div class="episode">'
+          html += '\t<div class="title">'
+          html += `\t\t<a href="${ep.permalink_url}">`
+          html += `\t\t\t${ep.title.substring(20)}`
+          html += '\t\t</a>'
+          html += '\t</div>'
+          html += `\t<div class="duration ${percClass}">`
+          html += `\t\t${new Date(ep.duration * 1000).toISOString().substring(11, 19)}`
+          html += '\t</div>'
+          html += '\t<div class="perc">'
+          html += `\t\t${percGraph}`
+          html += '\t</div>'
+          html += '</div>'
         })
-
-        html += '</table>'
 
         podbeanEpisodes.innerHTML = html
       }
