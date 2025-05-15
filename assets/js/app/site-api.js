@@ -219,21 +219,32 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
       if (type == 'episodes') {
         const podbeanEpisodes = document.querySelector('#episode-list')
         let html = '<table>'
-        let eps = data.body.episodes
+        const eps = data.body.episodes
+        const durations = eps.map((ep) => ep.duration)
+        const longestEp = Math.max(...durations)
+        const ignoredStatuses = ['draft', 'future']
 
-        eps.forEach((ep) => {
-          if (ep.status != 'draft' && ep.status != 'future') {
-            html += '\t<tr>'
-            html += '\t\t<td class="title">'
-            html += `\t\t\t<a href="${ep.permalink_url}">`
-            html += `\t\t\t\t${ep.title.substring(20)}`
-            html += '\t\t\t</a>'
-            html += '\t\t</td>'
-            html += '\t\t<td class="duration">'
-            html += `\t\t\t${new Date(ep.duration * 1000).toISOString().substring(11, 19)}`
-            html += '\t\t</td>'
-            html += '\t</tr>'
+        eps.filter((ep) => !ignoredStatuses.includes(ep.status)).forEach((ep) => {
+          const perc = ((ep.duration / longestEp).toFixed(2) * 100).toFixed(0)
+          const percText = perc == '100' ? '' : `${perc}% of longest`
+          let percGraph = ''
+          for (i = 0; i < Number(perc) / 10; i++) {
+            percGraph += '🟩'
           }
+
+          html += '\t<tr>'
+          html += '\t\t<td class="title">'
+          html += `\t\t\t<a href="${ep.permalink_url}">`
+          html += `\t\t\t\t${ep.title.substring(20)}`
+          html += '\t\t\t</a>'
+          html += '\t\t</td>'
+          html += '\t\t<td class="duration">'
+          html += `\t\t\t${new Date(ep.duration * 1000).toISOString().substring(11, 19)}`
+          html += '\t\t</td>'
+          html += '\t\t<td c;ass="perc">'
+          html += `\t\t\t${percGraph}`
+          html += '\t\t</td>'
+          html += '\t</tr>'
         })
 
         html += '</table>'
