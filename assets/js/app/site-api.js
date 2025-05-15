@@ -232,7 +232,7 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
             if (i > 7) {
               percGraph += '<span class="red">🟥</span>'
               percClass = 'long'
-            } else if (i > 5) {
+            } else if (i > 4) {
               percGraph += '<span class="yellow">🟨</span>'
               percClass = 'med'
             } else {
