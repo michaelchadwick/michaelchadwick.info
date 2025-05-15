@@ -226,10 +226,15 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
 
         eps.filter((ep) => !ignoredStatuses.includes(ep.status)).forEach((ep) => {
           const perc = ((ep.duration / longestEp).toFixed(2) * 100).toFixed(0)
-          const percText = perc == '100' ? '' : `${perc}% of longest`
           let percGraph = ''
           for (i = 0; i < Number(perc) / 10; i++) {
-            percGraph += '🟩'
+            if (i > 7) {
+              percGraph += '<span class="red">🟥</span>'
+            } else if (i > 5) {
+              percGraph += '<span class="yellow">🟨</span>'
+            } else {
+              percGraph += '<span class="green">🟩</span>'
+            }
           }
 
           html += '\t<tr>'
@@ -241,7 +246,7 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
           html += '\t\t<td class="duration">'
           html += `\t\t\t${new Date(ep.duration * 1000).toISOString().substring(11, 19)}`
           html += '\t\t</td>'
-          html += '\t\t<td c;ass="perc">'
+          html += '\t\t<td class="perc">'
           html += `\t\t\t${percGraph}`
           html += '\t\t</td>'
           html += '\t</tr>'
