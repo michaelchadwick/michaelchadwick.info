@@ -71,7 +71,7 @@ masto_link: https://masto.neb.host/@nebyoolae
 linkedin_link: https://www.linkedin.com/in/michaeljchadwick
 htg_link: https://hackingthegrepson.com
 # soundcloud
-sc_n_link: https://soundcloud.com/nebyoolae
+sc_neb_link: https://soundcloud.com/nebyoolae
 sc_mb_link: https://soundcloud.com/massive-battery
 # bandcamp
 bc_neb_link: https://nebyoolae.bandcamp.com
@@ -83,7 +83,14 @@ bc_rc_link: https://rustycrab.bandcamp.com
 sp_neb_link: https://open.spotify.com/artist/5S1HHS8jWDcQKXuAfHlmFw?si=HhedVBtsTZW-b5yAXkEYwA
 sp_fenchy_link: https://open.spotify.com/artist/6txteNrnvTbRUb9sUOeAVM?si=w-bXjrb2QVeIbsSwrhTO4g
 sp_flv_link: https://open.spotify.com/artist/0UTm3Fpds4BVrvSFIGj2iD?si=aIM4rCgzTiOYyrzTONkf-g
+sp_pyc_link: https://open.spotify.com/artist/6a5qMaB4YKI6A1umEH7IFj
 # apple music
 am_neb_link: https://music.apple.com/us/artist/nebyoolae/1655123042
 am_fenchy_link: https://music.apple.com/us/artist/fenchy/1652676694
 am_flv_link: https://music.apple.com/us/artist/fly-like-venus/1250934211
+am_pyc_link: https://music.apple.com/us/artist/pure-yellow-colour/279571891
+# youtube music
+yt_neb_link: https://music.youtube.com/channel/UCD9SVVjQptRCasX5Dmgki5Q
+yt_fenchy_link: https://music.youtube.com/channel/UCFpxTtf0D_8bGQQoLcw7pjA
+yt_flv_link: https://music.youtube.com/channel/UCZM6OHNCjdvKJvjseMNVihA
+yt_pyc_link: https://music.youtube.com/channel/UCo9sfG61EnT8MO205DhzEWg
