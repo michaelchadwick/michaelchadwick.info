@@ -7,7 +7,7 @@ tags: fenchy gamey guitar music nebyoolae releases satriani
 headerImage: posts/2025/first-half-of-2025-sounds.jpg
 headerImageCaption: 'First Half of 2025 Has Some Sounds For You'
 image: posts/2025/first-half-of-2025-sounds.jpg
-published: false
+published: true
 ---
 
 {{ page.description }}
