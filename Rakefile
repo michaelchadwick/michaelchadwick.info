@@ -36,11 +36,9 @@ task :serve_unpub do
   sh 'SHOW_UNPUB=true bundle exec jekyll serve --unpublished --livereload --watch --open-url http://localhost:4000'
 end
 
-# rubocop:disable Layout/LineLength
 task :serve_unpub_prod do
   sh 'JEKYLL_SHOW_UNPUB=true JEKYLL_ENV=production bundle exec jekyll serve --unpublished --livereload --watch --open-url http://localhost:4000'
 end
-# rubocop:enable Layout/LineLength
 
 task :sync do
   sh "rsync -auP --no-p --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
