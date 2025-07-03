@@ -1350,6 +1350,10 @@ footer#site-footer #logo-slogan a.plain {
 .page-tag ul {
   margin-top: 10px;
 }
+.page-tag ul li a.unpublished {
+  background-color: #ffacac21;
+  border: 2px dashed #fb9d9d;
+}
 
 .tag-meta {
   margin-bottom: 0.5em;

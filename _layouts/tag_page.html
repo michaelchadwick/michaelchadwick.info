@@ -15,7 +15,7 @@ layout: default
     <ul>
     {% for post in page.posts %}
       <li>
-        {{ post.date | date: site.date_YYYYMMDD_dash }}: <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.date | date: site.date_YYYYMMDD_dash }}: <a href="{{ post.url }}" {% if post.published == false %}class="unpublished"{% endif %}>{{ post.title }}</a>
       </li>
     {% endfor %}
     </ul>
