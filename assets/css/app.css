@@ -1114,7 +1114,7 @@ footer#site-footer #logo-slogan a.plain {
 }
 @media (min-width: 768px) {
   .post-header-image.full-entry {
-    display: block;
+    display: flex;
     margin-top: 1em;
     max-height: 300px;
   }
