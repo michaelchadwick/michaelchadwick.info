@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post{% if page.published == false %} unpublished{% endif %}">
 
   <header class="post-header full-entry">
     {% assign today = site.time | date: '%s' %}
