@@ -10,7 +10,8 @@ tags:
   - videos
 published: true
 ---
-<iframe class="youtube" width="480" height="270" src="http://www.youtube.com/embed/watch?v=R28DF5AagN0" frameborder="0" allowfullscreen></iframe>
+<!-- markdownlint-disable-next-line -->
+{% youtube "https://www.youtube.com/watch?v=R28DF5AagN0" %}
 
 Another entry in the now-illustrious &#8220;The Matic&#8221; music video line is now up. This time it features a family cruise to Alaska. Starting in Vancouver, Canada, we shipped out to Ketchikan, Juneau, Skagway, and finally ended in Whittier, wherein my wife and I took a bus ride through a mountain to Anchorage.
 

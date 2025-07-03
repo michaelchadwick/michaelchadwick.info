@@ -16,6 +16,7 @@ published: true
 
 Back in October of 2024, I released a bunch of silly songs under the moniker "Just a Goof". One of those songs was a ditty called "Wavy Tube Man".
 
+<!-- markdownlint-disable-next-line -->
 {% youtube "https://www.youtube.com/watch?v=zhseifhUSBU" %}
 
 It was, and still is, an ode to the majesty of the waving, air-filled tube creature that is often adorning shops, trying to get your attention by moving to and fro;  trapped, but also given life, by their oxygenated internal system.

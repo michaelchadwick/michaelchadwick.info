@@ -10,7 +10,8 @@ tags:
   - videos
 published: true
 ---
-<iframe class="youtube" width="480" height="270" src="http://www.youtube.com/embed/watch?v=aS525JYfNG8" frameborder="0" allowfullscreen></iframe>
+<!-- markdownlint-disable-next-line -->
+{% youtube "https://www.youtube.com/watch?v=aS525JYfNG8" %}
 
 Oh, no! The TiVos have been falsely accused of watching U-Verse and have been locked in the county jail. Fear not, though, for they have a plan.
 

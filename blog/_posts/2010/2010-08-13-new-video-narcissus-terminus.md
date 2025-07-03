@@ -10,7 +10,8 @@ tags:
   - videos
 published: true
 ---
-<iframe class="youtube" width="480" height="270" src="http://www.youtube.com/embed/watch?v=PtH8SXX_PjI" frameborder="0" allowfullscreen></iframe>
+<!-- markdownlint-disable-next-line -->
+{% youtube "https://www.youtube.com/watch?v=PtH8SXX_PjI" %}
 
 Everything is a little different at night, bathed in the pale moonlight or the stark streetlight.
 

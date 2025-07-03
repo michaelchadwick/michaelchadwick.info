@@ -10,7 +10,8 @@ tags:
   - videos
 published: true
 ---
-<iframe class="youtube" width="480" height="270" src="http://www.youtube.com/embed/watch?v=R28DF5AagN0" frameborder="0" allowfullscreen></iframe>
+<!-- markdownlint-disable-next-line -->
+{% youtube "https://www.youtube.com/watch?v=vysbOGr2ZBQ" %}
 
 The final music video in my series &#8220;The Matic&#8221; is up on YouTube. For this final one, we take a tour of the coast. After living inland for several years, I often forget how nice the beach is. Seeing it just puts me in a better mood.
 
