@@ -2,7 +2,7 @@
 layout: post
 title:  "Axeracer, my first Pico-8 game"
 tags: axeracer game gaming lua pico8 learning github
-headerImage: posts/axeracer_gameplay.gif
+headerImage: posts/2016/12/axeracer_gameplay.gif
 excerpt: "The Github Game Off is over, and my 'finished' product is Axeracer. It's a simple, one-track racing game that has you piloting a little insect car thing with axes for antennae, all the better to 'hack' through the grassy track on your way to the finish line."
 published: true
 ---
@@ -104,7 +104,7 @@ end
 
 Using this wrapper `zspr()` method, it was a lot easier to figure out how to achieve the effect I was going for. Essentially, I had to set up a bunch of chain reactions that created a few `table`s, Pico-8's `array`, of sprite information, zoom into each sprite within, and then remove the array so the next frame updates wouldn't draw them anymore. I think I pretty much nailed it.
 
-<p><img alt="3..2..1..GO!" src="{{ site.baseurl }}/assets/images/posts/axeracer_countdown.gif" width="256" height="256" /></p>
+<p><img alt="3..2..1..GO!" src="{{ site.baseurl }}/assets/images/posts/2016/12/axeracer_countdown.gif" width="256" height="256" /></p>
 
 #### Wrapping Up
 

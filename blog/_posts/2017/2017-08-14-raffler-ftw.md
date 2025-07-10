@@ -2,7 +2,7 @@
 layout: post
 title:  "Raffler FTW"
 tags: gulp javascript node-js raffler system-js task-runners uccsc ucsd
-headerImage: posts/screenshot_raffler.png
+headerImage: posts/2017/08/screenshot_raffler.png
 excerpt: "Since my last post, I've worked on Raffler quite a bit (it got its own domain, for one), making it **warmer**, _juicier_, and with a nice glaze around the edges. In sum, it's approximately 476% better."
 published: true
 ---

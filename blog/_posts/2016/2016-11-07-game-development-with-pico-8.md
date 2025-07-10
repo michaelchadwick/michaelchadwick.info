@@ -2,7 +2,7 @@
 layout: post
 title:  "Game Development with Pico-8"
 tags: game gaming lua pico8 learning github
-headerImage: posts/pico8_startup.gif
+headerImage: posts/2016/11/pico8_startup.gif
 excerpt: "Spurred on by Github's Game Off game jam, I've decided to use Pico-8 as my game engine workplace, as writing everything from scratch can be a bit of an ordeal."
 published: true
 ---

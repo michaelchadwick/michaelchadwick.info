@@ -3,7 +3,7 @@ layout: post
 title:  "Sometimes Self-Hosting Services Satisfies Sufficiently"
 date: 2021-11-19 08:43:00
 tags: self-hosting webdev freshrss homer neb.host wallabag roundcube drupal linode vue-js minecraft wordpress jekyll-rb hugo
-headerImage: posts/self-hosted.jpg
+headerImage: posts/2021/11/self_hosted.jpg
 published: true
 ---
 

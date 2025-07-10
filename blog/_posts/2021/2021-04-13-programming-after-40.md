@@ -3,7 +3,7 @@ layout: post
 title:  "Programming After 40"
 date: 2021-04-13 08:43:00
 tags: introspection minecraft webdev work
-headerImage: posts/mc_40.png
+headerImage: posts/2021/04/mc_40.png
 published: true
 ---
 
