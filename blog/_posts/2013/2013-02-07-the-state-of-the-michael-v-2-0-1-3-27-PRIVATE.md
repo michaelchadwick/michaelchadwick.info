@@ -33,7 +33,7 @@ published: false
 
 It&#8217;s 2013. And a month. And some days. This year, being odd, feels like a breath of new energy. Time to try new things and new ideas, and refuel old ones that ran out of gas. It&#8217;s also been a few months since my last post, so let&#8217;s just wrap up some of the things that have been transpiring, shall we?
 
-**LIFE**
+## LIFE
 
 I AM ALIVE. So, that&#8217;s all good.
 
@@ -45,7 +45,7 @@ Dieting by trying to cut out carbs, is going&#8230;_all right_. It changes from 
 
 Since my FitBit went in the bit bucket a few months ago, I haven&#8217;t been able to chart my steps. Enter [Moves](https://itunes.apple.com/us/app/moves/id509204969?mt=8), a free iOS app that does just that. It&#8217;s not as accurate, nor does it have all the same features, but for free, it&#8217;s for me.
 
-**PENNY**
+## PENNY
 
 She is a dog, and also alive! Besides being alive, she&#8217;s still fluffy, and still kind of borderline weird sometimes that we can get frustrated and unhappy about. Overall, though, things are going well and it&#8217;s not really a big deal like it was in the beginning.
 
@@ -53,15 +53,11 @@ In fact, she&#8217;s been going to agility class for several months now and doin
 
 httpvh://www.youtube.com/watch?v=7PXS2RQj1NY
 
-**MUSIC**
+## MUSIC
 
 I haven&#8217;t done a ton of music lately, but a single or EP sneaks out every once in a while. A friend did their first video game and I made a few chill tracks to play in the background while you push blocks around.
 
-
-
 SoundCloud continues to be a fertile ground for trying out ideas that don&#8217;t necessarily coalesce into a full-fledged album to be &#8220;sold&#8221; &#8220;officially&#8221; on BandCamp. I made a neat one recently that started as a melody that a hotel safe played when you opened and/or closed it.
-
-
 
 I&#8217;m still working on Dumeh here and there, but it&#8217;s such a beast to work on that I often open up Logic, mess with a few things, disdain them, and close it without saving. Writing for orchestral instruments is a lot tougher than making a quick beat in Logic/Nanostudio. However, I did workshop it on [audiotuts.com](http://audio.tutsplus.com/articles/workshop/workshop-266-dumeh-by-michael-chadwick/) recently and got a lot of good feedback.
 
@@ -71,14 +67,14 @@ Speaking of which, someone started doing a Let&#8217;s Play of [Impulse](http://
 
 httpvh://www.youtube.com/watch?v=eYaSP53mx3w
 
-**PODCAST**
+## PODCAST
 
 We&#8217;re still doing it! It&#8217;s alive, you could say. Yes, [The Escort Mission](http://theescortmission.com) soldiers on, having recently made its [thirty-fifth episode](http://theescortmission.com/2013/02/06/tem-podcast-035-cave-chickens-take-over-suburban-tokyo/). We did it all on board games, as Jawn came down from the Bay Area for the weekend and, well, that&#8217;s what we do when he does that.
 
-**PROGRAMMING**
+## PROGRAMMING
 
 This is arguably in critical condition at the moment, unfortunately. My zeal four months ago has predictably petered out, and no real headway has been made in this department. On a hopeful note, though, I am going to be volunteering at a Rails meetup in about a month (oh man, that&#8217;s not as far away as I thought), which seems like crazy scary business, but I&#8217;m hoping my archived knowledge will somehow come back to life in time to be actually helpful. If it means helping out someone who needs it, with the side benefit of hopefully re-energizing my ambition to learn this technology, then I&#8217;m going to do it.
 
-**FOR THE ROAD**
+## FOR THE ROAD
 
 Maybe I&#8217;ll become an actual adult this year.

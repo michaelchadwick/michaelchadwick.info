@@ -25,7 +25,7 @@ Before we get started, a good place to start on your own self-hosting journey, s
 
 ### DASHBOARD
 
-[Homer](https://github.com/bastienwirtz/homer) continues to be a great way to show off all the more nerdy things I want to show off, and you can find it [here](https://neb.host).
+[Homer](https://github.com/bastienwirtz/homer) continues to be a great way to show off all [the more nerdy things I want to show off](https://neb.host).
 
 ### BLOG
 

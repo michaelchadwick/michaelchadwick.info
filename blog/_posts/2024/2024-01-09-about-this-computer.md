@@ -20,7 +20,7 @@ Note, this post is only concerned with macOS/Linux and its various flavors, as t
 
 My personal favorite command line tool to get information about my Mac (or Linux VM) is [neofetch](https://github.com/dylanaraps/neofetch). It's a rad `bash` script that creates a cool, screenshot-able display of useful information alongside either a picture of your OS's logo, or a custom image. Since it runs on `bash`, it runs on virtually any `bash`-compatible shell system, which is a lot of potential operating systems.
 
-Before I found `neofetch`, I used to use [archey](https://github.com/HorlogeSkynet/archey4) (which is a maintained fork of the original found [here](https://github.com/djmelik/archey)). It's written in Python, which is another dependency that may not exist on the system you're checking.
+Before I found `neofetch`, I used to use [archey](https://github.com/HorlogeSkynet/archey4) (which is a [maintained fork of the original](https://github.com/djmelik/archey)). It's written in Python, which is another dependency that may not exist on the system you're checking.
 
 ## SCRIPT TIME
 

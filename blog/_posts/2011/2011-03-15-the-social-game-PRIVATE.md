@@ -21,7 +21,7 @@ tags:
   - twitter
 published: false
 ---
-**SOME RAMBLING**
+## SOME RAMBLING
 
 Obviously I&#8217;ve been doing some thinking about the social landscape as it exists online. Somewhat morose musings on the death of the Golden Age of LiveJournal naturally segue into the Social Web. Every website and application seems to have the trappings of extroversion. Buttons and links to send off your daily browsing and media consumption/creation habits to seemingly endless social networks exist everywhere. This isn&#8217;t a bad thing, necessarily, but it can become overwhelming and have the unintended backlash of making me not want to share anything with anyone&#8230;ever.
 
@@ -29,7 +29,7 @@ The two (arguably) most popular places to share what you&#8217;ve done are Faceb
 
 As for how often/how seriously I use them&#8230;well, that ebbs and flows. I don&#8217;t update Facebook; I update Twitter and it updates Facebook for me. Two birds, one stone. Sometimes I can go for a while without updating, merely consuming others&#8217; updates. If I couldn&#8217;t post stream-of-consciousness sound bites like I do now at some point in the future, it would suck, but I&#8217;d live (and I even took a vacation from them both for a few weeks).
 
-**THE POINT**
+## THE POINT
 
 I don&#8217;t take the Social Web too seriously. Yes, I love to leverage the power of the Internet to share my music and words with my friends and strangers alike. Getting your name of project &#8220;out there&#8221; is necessary if you want an audience. I even enjoy filling out profiles for new sites, ameliorating the somewhat droll nature of them by putting in funny bits to amuse myself. I also enjoy occasionally buying domain names to use for projects present and future. But the real point of it all? **Staking my claim**.
 

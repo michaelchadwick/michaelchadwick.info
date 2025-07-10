@@ -21,7 +21,7 @@ I like knowing how things work. Becoming a programmer meant that I could use a c
 
 ### DASHBOARD
 
-[Homer](https://github.com/bastienwirtz/homer) is a great little [Vue.js-powered](https://vuejs.org) project that quickly allows you to create a SPA dashboard for your server. You can see mine [here](https://neb.host), and it displays some links to stuff I work on or maintain.
+[Homer](https://github.com/bastienwirtz/homer) is a great little [Vue.js-powered](https://vuejs.org) project that quickly allows you to create a SPA dashboard for your server. You can check out [my custom homepage](https://neb.host), replete with links to stuff I work on or maintain.
 
 ### READ-IT-LATER
 

@@ -26,16 +26,16 @@ Robyn and I celebrated our one-month houseiversary last week. Yes, we&#8217;ve a
 
 Things I&#8217;ve noticed:
 
-  * I&#8217;m not bothered by the frogs that come to life and have conversations all night outside in front of our porch. It really does fade into the background after a while.
-  * Having our master bedroom be alley-side should have brought up a red flag. All the noise of people driving into their garages and dogs barking and people talking and heater vent venting outside can be annoyingly evident with the windows open. It&#8217;s the middle of summer, and we leave them open as much as possible, so this comes up a lot.
-  * Ant sightings have dropped considerably in the past week after we put out about a dozen traps around the house. I hope I didn&#8217;t just screw myself by stating that.
-  * Still haven&#8217;t met any new neighbors since we talked to a couple and their kid(s) across the alleyway and one house over. Not really trying to, though.
-  * Walking to Target/Home Depot takes 20 minutes. Walking to Golden Spoon takes 30 minutes. Walking to Vons&#8230;has not happened yet.
-  * Biking is definitely an option, and a fun one at that.
-  * Having a new place that still has the new place smell, replete with new, efficient appliances, is swell.
-  * Still gotta put up pictures we printed out from the wedding. They&#8217;re in frames and all, but just not on a wall.
-  * The downstairs bedroom/music room/gaming room/hangout is awesome. It&#8217;s like having an additional apartment under our regular house.
-  * Commute is longer than old one, but hasn&#8217;t been much of a problem. I wake up a little earlier, is all.
+* I&#8217;m not bothered by the frogs that come to life and have conversations all night outside in front of our porch. It really does fade into the background after a while.
+* Having our master bedroom be alley-side should have brought up a red flag. All the noise of people driving into their garages and dogs barking and people talking and heater vent venting outside can be annoyingly evident with the windows open. It&#8217;s the middle of summer, and we leave them open as much as possible, so this comes up a lot.
+* Ant sightings have dropped considerably in the past week after we put out about a dozen traps around the house. I hope I didn&#8217;t just screw myself by stating that.
+* Still haven&#8217;t met any new neighbors since we talked to a couple and their kid(s) across the alleyway and one house over. Not really trying to, though.
+* Walking to Target/Home Depot takes 20 minutes. Walking to Golden Spoon takes 30 minutes. Walking to Vons&#8230;has not happened yet.
+* Biking is definitely an option, and a fun one at that.
+* Having a new place that still has the new place smell, replete with new, efficient appliances, is swell.
+* Still gotta put up pictures we printed out from the wedding. They&#8217;re in frames and all, but just not on a wall.
+* The downstairs bedroom/music room/gaming room/hangout is awesome. It&#8217;s like having an additional apartment under our regular house.
+* Commute is longer than old one, but hasn&#8217;t been much of a problem. I wake up a little earlier, is all.
 
 All in all, things are good. We&#8217;ve purchased a new bed, new TV, new entertainment center, new cleaning supplies cabinet, new half-height bookcases, and a new dresser. We might still get a new dining table, but it&#8217;s been&#8230;tabled for now.
 

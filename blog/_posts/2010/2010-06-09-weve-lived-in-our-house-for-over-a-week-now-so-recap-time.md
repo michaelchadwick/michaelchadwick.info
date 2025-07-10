@@ -47,10 +47,10 @@ We finally got Internet/TV set up on Monday, even if the wiring job done in the 
 
 As for bad things? A list for ya:
 
-  * The garage door remotes were hella insensitive and underpowered, but that seems to be fixed now.
-  * We have a case of ninja ants de-cloaking in various places that is giving us the heebie-jeebies, but it&#8217;s summer, so I guess it&#8217;s to be expected.
-  * The creek behind our house starts up the Wildlife Noise Machine at sundown and while I definitely had a panic attack about it the first night we moved stuff in, I&#8217;m at peace with it. Not sure how guests are gonna feel, though.
-  * Speaking of guests, parking kind of sucks. Few spots exist inside, so street parking, while not far away, is basically the only option. Damn residents parking their extra vehicles there and never moving them. Also, people parking in the alleyway IN FRONT OF THEIR GARAGES (no driveways here, people). WTF?
+* The garage door remotes were hella insensitive and underpowered, but that seems to be fixed now.
+* We have a case of ninja ants de-cloaking in various places that is giving us the heebie-jeebies, but it&#8217;s summer, so I guess it&#8217;s to be expected.
+* The creek behind our house starts up the Wildlife Noise Machine at sundown and while I definitely had a panic attack about it the first night we moved stuff in, I&#8217;m at peace with it. Not sure how guests are gonna feel, though.
+* Speaking of guests, parking kind of sucks. Few spots exist inside, so street parking, while not far away, is basically the only option. Damn residents parking their extra vehicles there and never moving them. Also, people parking in the alleyway IN FRONT OF THEIR GARAGES (no driveways here, people). WTF?
 
 Overall, we&#8217;re pretty happy with it, as appliances and plumbing and doors all function properly. It&#8217;s nice and new, just as we asked. The negatives are basically annoyances, and not deal-breakers by any means. They&#8217;re just more annoying than normal because WE OWN THIS PLACE OMG, and that&#8217;s a new feeling I&#8217;m not accustomed to by any means.
 

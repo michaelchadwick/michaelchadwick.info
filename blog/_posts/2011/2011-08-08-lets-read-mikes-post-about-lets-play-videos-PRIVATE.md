@@ -12,7 +12,7 @@ tags:
   - lets-play
 published: false
 ---
-**THE SETUP**
+## THE SETUP
 
 ****If you&#8217;re anything like me, the act of playing video games started young. My first real ensnarement by the disease that would later be known as vidiotry came in the form of Christmas morning, 1985. My dad and I played both Super Mario Brothers and The Legend of Zelda on a shiny new Nintendo Entertainment System. I was 5 years and 2 and a half weeks old. It basically changed my life.
 
@@ -20,7 +20,7 @@ Except for portable game systems, for most of my formative years (5-20) gaming m
 
 Today, gaming is much more mainstream and accepted. What it means &#8220;to game&#8221; encompasses more avenues now. It could mean playing a quick game of Drop 7 on your iPhone to kill 5 minutes, loading up your saved game in Fallout: New Vegas and advancing the story for a few hours, moving a wand-like controller (or even your whole body) around to make an on-screen avatar do your bidding, or clicking on a virtual farm in a browser while perusing a social network.
 
-**THE POINT**
+## THE POINT
 
 However you gamed, you most likely did it yourself, actively. Of course, there&#8217;s something to be said for handing the reins to someone else, too. While I&#8217;ve done my fair share of active gaming, I also really enjoy passive gaming. Watching someone else play a game can be just as fun, if not more so in some cases.
 
@@ -34,6 +34,6 @@ I can&#8217;t get enough of these videos! They satisfy both my curiosity for and
 
 If you find this kind of thing as enjoyable as I do, keep in mind that not all LPs are videos, or have funny/useful audio commentary. Some people just use screenshots and text, which are not usually my bagatelle, but you may find interesting, anyway. Also, the LP Archive doesn&#8217;t contain all suchness of this sort, and a general YouTube search will find many more &#8220;unofficial&#8221; LPs.
 
-**FOR THE ROAD**
+## FOR THE ROAD
 
 Gaming can sometimes seem daunting to those who are not accustomed to its conventions. Picking up a controller and manipulating an avatar in a virtual environment can seem overwhelmingly difficult. In times when that&#8217;s the case, let someone else do it for you. Check out an [LP](http://lparchive.org) today!

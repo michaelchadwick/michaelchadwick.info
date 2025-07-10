@@ -29,31 +29,31 @@ Why get a new car? Basically, my old (~8 years-old) Saturn was getting on in yea
 
 Regardless of the &#8220;family car&#8221; moniker that this new vehicle certainly deserves, it also has a lot of creature features my Saturn was woefully lacking. A list follows:
 
-  * Power windows and locks (Saturn had locks, but not windows)
-  * Moonroof
-  * Bluetooth
-  * A much larger trunk
-  * Cargo cover
-  * All-weather floor mats, trunk mat, and wipers
-  * Remote keyless entry
-  * Auto-dimming rearview mirror
-  * Rearview backup camera
-  * Heated seats
-  * Heated side mirrors
-  * Reclining back seats
-  * Power driver&#8217;s seat controls
-  * Outdoor temperature gauge
-  * Compass in rearview mirror
-  * Visors with extensions
-  * Continuously variable transmission (automatic + semi-manual)
-  * Cupholders in the doors
-  * Automatic head lights
-  * Radio mute button (it&#8217;s useful, people!)
-  * More configurable wiper speed
-  * Cruise control
-  * Curtain airbags
-  * Armrest between front seats
-  * Backseat privacy glass
+* Power windows and locks (Saturn had locks, but not windows)
+* Moonroof
+* Bluetooth
+* A much larger trunk
+* Cargo cover
+* All-weather floor mats, trunk mat, and wipers
+* Remote keyless entry
+* Auto-dimming rearview mirror
+* Rearview backup camera
+* Heated seats
+* Heated side mirrors
+* Reclining back seats
+* Power driver&#8217;s seat controls
+* Outdoor temperature gauge
+* Compass in rearview mirror
+* Visors with extensions
+* Continuously variable transmission (automatic + semi-manual)
+* Cupholders in the doors
+* Automatic head lights
+* Radio mute button (it&#8217;s useful, people!)
+* More configurable wiper speed
+* Cruise control
+* Curtain airbags
+* Armrest between front seats
+* Backseat privacy glass
 
 There might be more, but that&#8217;s probably enough to get the point across.
 

@@ -26,7 +26,7 @@ published: false
 
 In an attempt to skirt any kind of latent normalcy or conservatism, my wife and I, along with a couple friends, descended upon the capital of Texas, otherwise known as Austin. Our task? Witness some holy matrimony.
 
-**TEXAS**
+## TEXAS
 
 My experience with Texas is long, but scattered. After living there for a year in 8th grade, I amassed an extraordinary fondness for a few people that I left behind when my Mom and I relocated to San Diego, CA. In the time between now and then, I would visit the Lone Star State a handful of precious, yet meaningful, times.
 
@@ -36,17 +36,17 @@ Shout out to the Hampton Inn in Downtown Austion for two more things, as well: 1
 
 Some interesting things about Austin, Texas (or just the south):
 
-  * **Frontage roads**: a lot of highways have a road that runs alongside them all frontin&#8217; and such. It&#8217;s like they were here first and the new guy in town (i.e. the highway) is now their senior officer, but they work together despite their differences.
-  * **Whataburger**: despite the name, there isn&#8217;t much exclamation for this dead cow-wich. One of our friends originally from Texas really loves it, though.
-  * **H.E.B.**: a local grocery chain. We joked that it stood for something like &#8220;Horrendous Elephant Butt&#8221;, clearly no relation to its actual meaning. [Then I looked it up](http://en.wikipedia.org/wiki/H-E-B). Mr. Butt, you were the, uh, rear-end of many jokes during our weekend, so thanks?
-  * **[The Salt Lick](http://www.saltlickbbq.com/pages/driftwood.html)**: this was actually quite a ways outside Austin, but still some absolutely delicious, legitimate Texas BBQ
-  * **Texas Chili Parlor**: dive bar with some good chili
-  * **[Gourdough&#8217;s](http://www.gourdoughs.com/)**: fancy donut place. Banana pudding, maple bacon, and oreos and gummi worms are _totally_ valid donut toppings.
-  * **[Friday Night Lights Driving Tour](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCcQFjAA&url=http%3A%2F%2Fwww.google.com%2Fmaps%2Fms%3Fmsid%3D200820848983010925650.0004a98d02a16205edfb0%26msa%3D0&ei=H5vmUq6VBcHtoATi4oLACA&usg=AFQjCNGw94ZbCEmmg2vOAxxb5SMRrkYW-w&sig2=mhi5oQmWhjCdAT_EPIktmQ&bvm=bv.59930103,d.cGU)**: FNL is a fantastic TV show, and a lot of it was filmed in and around Austin. We didn&#8217;t end up seeing most of the places, but we _did_ get a picture in front of Coach&#8217;s house, and I&#8217;m sure the people across the road were shaking their heads as they thought &#8220;Jesus, not this again&#8221;.
-  * **Generic commercial establishments**: on the way to the airport for our return trip, we drove past both a &#8220;Major Brand Gas&#8221; fueling station, and a &#8220;Muchos Imports&#8221;, uh, import(?) store.
-  * **Costco**: basically the same, but the hard liquor is in a separate, yet connected, building, and is closed on Sunday
+* **Frontage roads**: a lot of highways have a road that runs alongside them all frontin&#8217; and such. It&#8217;s like they were here first and the new guy in town (i.e. the highway) is now their senior officer, but they work together despite their differences.
+* **Whataburger**: despite the name, there isn&#8217;t much exclamation for this dead cow-wich. One of our friends originally from Texas really loves it, though.
+* **H.E.B.**: a local grocery chain. We joked that it stood for something like &#8220;Horrendous Elephant Butt&#8221;, clearly no relation to its actual meaning. [Then I looked it up](http://en.wikipedia.org/wiki/H-E-B). Mr. Butt, you were the, uh, rear-end of many jokes during our weekend, so thanks?
+* **[The Salt Lick](http://www.saltlickbbq.com/pages/driftwood.html)**: this was actually quite a ways outside Austin, but still some absolutely delicious, legitimate Texas BBQ
+* **Texas Chili Parlor**: dive bar with some good chili
+* **[Gourdough&#8217;s](http://www.gourdoughs.com/)**: fancy donut place. Banana pudding, maple bacon, and oreos and gummi worms are _totally_ valid donut toppings.
+* **[Friday Night Lights Driving Tour](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCcQFjAA&url=http%3A%2F%2Fwww.google.com%2Fmaps%2Fms%3Fmsid%3D200820848983010925650.0004a98d02a16205edfb0%26msa%3D0&ei=H5vmUq6VBcHtoATi4oLACA&usg=AFQjCNGw94ZbCEmmg2vOAxxb5SMRrkYW-w&sig2=mhi5oQmWhjCdAT_EPIktmQ&bvm=bv.59930103,d.cGU)**: FNL is a fantastic TV show, and a lot of it was filmed in and around Austin. We didn&#8217;t end up seeing most of the places, but we _did_ get a picture in front of Coach&#8217;s house, and I&#8217;m sure the people across the road were shaking their heads as they thought &#8220;Jesus, not this again&#8221;.
+* **Generic commercial establishments**: on the way to the airport for our return trip, we drove past both a &#8220;Major Brand Gas&#8221; fueling station, and a &#8220;Muchos Imports&#8221;, uh, import(?) store.
+* **Costco**: basically the same, but the hard liquor is in a separate, yet connected, building, and is closed on Sunday
 
-**WEDDING**
+## WEDDING
 
 The actual reason for our visit to the Texas state capitol was to see our friends Candy and Andic&#8211;er, Andy and Candace tie the knot. We stayed in a hotel with them and a bunch of other friends we hadn&#8217;t seen in a while (miss ya already Matt, Molly, and Lea), and then walked down to the actual capitol building where they got wedded in a large rotunda on the grounds. You could see it from the ground level, but had to go through the main capitol entrance, take an elevator down, and then walk back the way you came to the main event.
 
@@ -56,6 +56,6 @@ Post-wedding, we moved to what was essentially a German Elk Lodge, all long, ope
 
 To Andy and Candace, a long, wonderful life together! They started it by flying to Morocco the next day, so I&#8217;m optimistic.
 
-**FOR THE ROAD**
+## FOR THE ROAD
 
 There is more photographic (and moving photographic evidence) of many of the aforementioned shenanigans, but that&#8217;ll have to wait for later. Text (and the sole Texas waffle above) is all you get for now.

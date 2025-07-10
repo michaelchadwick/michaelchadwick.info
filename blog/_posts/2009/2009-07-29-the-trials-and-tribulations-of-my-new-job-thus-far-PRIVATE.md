@@ -47,30 +47,30 @@ Watching these guys try to login to a remote computer over RD is amusing
 **The Good**
 Here&#8217;s a list of good things about my new job:
 
-  * Full-time
-  * Good wage
-  * Medical benefits
-  * People are laid-back
-  * Commute is good
-  * Lots of stuff going on
-  * Stability
-  * Cool place called &#8220;Letty&#8217;s Bean Shack&#8221; nearby that does lunch fast and yummily
-  * Parking garage has spiral ramp in the middle for descending it (wheeeee!)
-  * I learned I don&#8217;t have to dress so nicely (nixing the tie, button-up shirt, and slacks for polo and jeans if I really want to)
-  * Dual monitors
-  * Cool security card badge that says I&#8217;m a &#8220;Programmer Analyst&#8221;
+* Full-time
+* Good wage
+* Medical benefits
+* People are laid-back
+* Commute is good
+* Lots of stuff going on
+* Stability
+* Cool place called &#8220;Letty&#8217;s Bean Shack&#8221; nearby that does lunch fast and yummily
+* Parking garage has spiral ramp in the middle for descending it (wheeeee!)
+* I learned I don&#8217;t have to dress so nicely (nixing the tie, button-up shirt, and slacks for polo and jeans if I really want to)
+* Dual monitors
+* Cool security card badge that says I&#8217;m a &#8220;Programmer Analyst&#8221;
 
 **The Bad**
 Here&#8217;s a list of bad things about my new job:
 
-  * No cell service in office (we&#8217;re in the basement)
-  * Shared office
-  * Some websites blocked (Twitter, AIM, Facebook)
-  * Not strictly a programming job, let alone a challenging .NET one
-  * No default admin access to everything (but access is slowly being granted to most things I&#8217;d need
-  * General corporate atmosphere
-  * Half-hour lunch
-  * Paper timesheets
+* No cell service in office (we&#8217;re in the basement)
+* Shared office
+* Some websites blocked (Twitter, AIM, Facebook)
+* Not strictly a programming job, let alone a challenging .NET one
+* No default admin access to everything (but access is slowly being granted to most things I&#8217;d need
+* General corporate atmosphere
+* Half-hour lunch
+* Paper timesheets
 
 **The Ugly**
 Yo mama.

@@ -11,21 +11,21 @@ tags:
   - penny
 published: false
 ---
-**THE SETUP**
+## THE SETUP
 
 One of the things about having a collie I did not expect is the abundance of comments people would make about her when out on a dog walk.
 
- **AN ANECDOTE**
+## AN ANECDOTE
 
 One of the most unexpected examples came about a while ago when I was walking Penny around town, all the while listening to music on my iPhone (as I&#8217;m wont to do when walking her alone). I was in the musical zone, sweaty from walking a fair distance, and not really paying attention to anything except the audio coming through my headphones and the task of walking forward without injury. In other words, I wasn&#8217;t really looking for human interaction at the time.
 
 However, at some point I noticed that a car had pulled over right next to me, prompting me to stop and hear them out. My preoccupied, disheveled self had not really afforded a large truck full of strangers beckoning me out of nowhere, so there was some palpable anxiety and annoyance. Thankfully, it turned out that it was just an interested couple who actually had two collies in the back of their truck, and just had to stop and find out about mine. Apparently, this breed is not really popular anymore and the sight of one drives some people to stop and talk to anyone who has one.
 
-**SOME ADMITTANCE**
+## SOME ADMITTANCE
 
 Now, I will admit that Penny is a nice-looking canine, who walks like a show dog, and obviously embodies America (Lassie!) and its amber waves of grain. It&#8217;s going to invite occasional public commentary and interaction. I just never expected it to happen as often, or as fervently, as it does.
 
-**PENNY BINGO**
+## PENNY BINGO
 
 It occurs so frequently that Robyn and I recently devised a little game. We noticed four general comments keep coming up and decided they worked as a mini-Bingo-type challenge. If we could get all four statement types said about her in one day, that was an accomplishment. If they happened during one walk, then we&#8217;d really scored, hardcore-style.
 

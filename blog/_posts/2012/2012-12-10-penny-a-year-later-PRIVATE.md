@@ -23,7 +23,7 @@ published: false
 
 It has been about a year since we brought Penny home. She is 19 months old today. She may not be an actual human child, but she&#8217;s still been the center of our life most of the time. My experience actually having a dependent with wants and needs and quirks has been a storied one, and I&#8217;d like to reflect on it. Others with dogs probably think this is navel-gazing, and those with actual human kids will probably just laugh, but all I know is what my life is and has been. Here&#8217;s how that goes.
 
-**THE GOOD**
+## THE GOOD
 
 I want to start off positive, because it&#8217;s always easier to complain. What? A fluffy puppy who is obviously man&#8217;s best friend engenders complaints? Yes, sometimes puppies do that (the younger they are the more often, usually).
 
@@ -41,7 +41,7 @@ She likes to go on walks, and we can basically go anywhere, as she doesn&#8217;t
 
 All in all, for a first dog (for me), she&#8217;s mostly what I was hoping for and her addition to our lives now feels normal.
 
-**THE BAD**
+## THE BAD
 
 Things start to go south quickly for two primary reasons: fear and unpredictability.
 
@@ -51,7 +51,7 @@ Bringing her to The Big City (comparatively) was a big culture shock. Cars, plan
 
 I do want to preface the rest of this with an observation: Penny tends to be the worst of Robyn&#8217;s and my own anxieties. I see both of us in her behavior, but only more immature and with less restraint. You know, like a dog (or any other creature without an ego and superego) might handle it. It&#8217;s almost like dealing with a furry version of ourselves, which is not necessarily easy all the time.
 
-In general, Penny tends to respond to new stimuli (or even **pre-existing stimuli** sometimes!) with fear instead of curiosity. The thing is, it&#8217;s sometimes expected, but also sometimes completely unpredictable. The things we&#8217;re fairly sure she&#8217;ll always hate are garbage trucks and people appearing out of nowhere, especially with non-standard visual elements (cast, carrying something, holding a kid on their shoulders, etc.). Decorations on houses in our neighborhood are a mixed bag, as sometimes she&#8217;ll let them go, and other times she&#8217;ll bark at them. While inside the house, she&#8217;s pretty quiet, but hearing people or things outside will prompt her voice, even if she&#8217;s tired and looks like she&#8217;s sleeping! Her bark is often sudden and loud/piercing, so while we&#8217;ve grown more accustomed to it over time, the contrast between silence and her on high alert is jarring, unpleasant, and can send us both into a tailspin, especially if others are around and we&#8217;re trying to _avoid _being a nuisance.
+In general, Penny tends to respond to new stimuli (or even **pre-existing stimuli** sometimes!) with fear instead of curiosity. The thing is, it&#8217;s sometimes expected, but also sometimes completely unpredictable. The things we&#8217;re fairly sure she&#8217;ll always hate are garbage trucks and people appearing out of nowhere, especially with non-standard visual elements (cast, carrying something, holding a kid on their shoulders, etc.). Decorations on houses in our neighborhood are a mixed bag, as sometimes she&#8217;ll let them go, and other times she&#8217;ll bark at them. While inside the house, she&#8217;s pretty quiet, but hearing people or things outside will prompt her voice, even if she&#8217;s tired and looks like she&#8217;s sleeping! Her bark is often sudden and loud/piercing, so while we&#8217;ve grown more accustomed to it over time, the contrast between silence and her on high alert is jarring, unpleasant, and can send us both into a tailspin, especially if others are around and we&#8217;re trying to _avoid_ being a nuisance.
 
 Penny tends to be cool with routine and now expects certain things like walks and treats at the same time each day, which is fine, but it also makes you wish she would just &#8220;chill out&#8221; and leave you alone sometimes. Her bathroom routine is also fairly unpredictable as she can change up her habits and where she&#8217;s OK with going regularly. When you&#8217;re trying to leave for work or just want to go to bed (we don&#8217;t have a backyard and have to take her out every time), it can be frustrating. Her digestive system has been awry several times since we&#8217;ve gotten her, prompting unexpected doctor bills for tests that proved that nothing was wrong with her :-\
 
@@ -61,7 +61,7 @@ During her several hour energetic stretch each night (where she becomes much mor
 
 Overall, her quirks confuse me, and her annoyances frustrate me. An animal sitting politely, but just staring at you, and you not knowing what they want, can be kind of unnerving! Her behaviors have gotten easier to handle with time and experience, but she can still cause both Robyn and I to fret when she&#8217;s not eating or ignoring our attempts to entice her with toys, and also to want to murder her when she&#8217;s misbehaving, especially when it&#8217;s totally irrational and we just want her to be good and quiet.
 
-**THE FUZZY**
+## THE FUZZY
 
 The &#8220;bad&#8221; section of this is somewhat longer, I know. Like I said, it&#8217;s easier to criticize than it is to praise. Getting a pet was a risk, as anything new is. You can only be so sure of the personality of the dog, and that can change over time, too. Knowing what we know now, maybe we would&#8217;ve been more cautious getting a dog from a place that was so different from our own environment. We often joke that while Penny is not a &#8220;rescue&#8221;, per se, it feels like we &#8220;rescued&#8221; her from the desert.
 
@@ -69,7 +69,7 @@ Having to board her when we&#8217;re not around is money we&#8217;d rather not s
 
 That&#8217;s kind of the routine: do what we can to regularly get her some exercise, entertain her when she&#8217;s insistent on interaction, and make sure she&#8217;s at least fed and has an opportunity to go to the bathroom every now and then. As long as we do that, she&#8217;s pretty content and independent and we can relax and enjoy her company. I&#8217;m still anxious sometimes when our routine changes and we don&#8217;t necessarily have the time or ability to give her the exercise or interaction I think she needs. My irrational fear is she&#8217;ll wake us up in the middle of the night (instead of sometime between 5:45 and 6:30am, as is her usual awakening time) and be inconsolable, or that she&#8217;ll go to the bathroom in the house while we&#8217;re gone or asleep. Except for a handful of rare exceptions, she&#8217;s been perfect, maintaining her composure for far longer than I thought she would. I have to give her props for that.
 
-**FOR THE ROAD**
+## FOR THE ROAD
 
 Penny is pretty awesome. That doesn&#8217;t mean I can always entirely relax around her, or that she doesn&#8217;t do things that frustrate or annoy us. She&#8217;s just the way she is, and the bad things always eventually end and give way to the good things. We spent a lot of time and money and enlisted training and help along the way to get her to where she is now, and it was worth it. I&#8217;m always gonna expect the best out of her and feel somewhat disappointed when she gives in to the fear and starts becoming a nuisance. I can&#8217;t control that about her, though, so I try to just become at peace with it instead.
 

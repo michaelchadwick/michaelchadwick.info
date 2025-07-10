@@ -14,11 +14,11 @@ Anyone interested in going to either of these?
 **No Doubt (Paramore opening)**
 Fri, 05/22/09, 07:30 p.m. (Cricket Wireless Amphitheater in Chula Vista)
 
-_Lawn tix are sold out (seats are available for $$$ and up), but might be able to snag some from CL week of_
+Lawn tix are sold out (seats are available for $$$ and up), but might be able to snag some from CL week of.
 
 **Kings of Leon**
 Fri, 08/21/09, 07:30 p.m. (Cox Arena @ SDSU)
 
-_General Audience tix are still available for $45_
+General Audience tix are still available for $45.
 
 <!--more-->

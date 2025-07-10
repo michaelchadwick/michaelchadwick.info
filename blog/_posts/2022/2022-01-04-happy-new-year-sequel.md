@@ -6,7 +6,7 @@ tags: announcement blog codaname jekyll nebyooblog wordpress
 published: true
 ---
 
-It's now 2022 (or 2020 2, if you're cheeky), and time for a blog-type announcement dealio: NebyooBlog, formerly [here](https://blog.nebyoolae.com), is finally shutting down...
+It's now 2022 (or 2020 2, if you're cheeky), and time for a blog-type announcement dealio: NebyooBlog, formerly [at its own domain](https://blog.nebyoolae.com), is finally shutting down...
 
 ...so it can be integrated here ;P
 
