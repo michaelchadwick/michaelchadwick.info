@@ -65,7 +65,7 @@ We capped our visit off with a live viewing of the Tony Awards, replete with a 1
 
 ![Mist and spray obscuring a boat tour navigating close to Niagara Falls](/assets/images/posts/2025/ne2025/niagara.jpg)
 
-After our bustling modern city experience in Toronto, moving location to Niagara Falls was a bit less hectic. The hotel we stayed in seemed old, had really short ceilings, and gave off an "old casino hotel in Vegas" vibe. Not my favorite place to stay, but it was fine our purposes.
+After our bustling modern city experience in Toronto, moving location to Niagara Falls was a bit less hectic. The hotel we stayed in seemed old, had really short ceilings, and gave off an "old casino hotel in Vegas" vibe. Not my favorite place to stay, but it was fine for our purposes.
 
 When you go to Niagara Falls, you look at water running down the side of a cliff. You can't get that close to it, but you _can_ take a boat tour which gets you _pretty_ close, so we did. Once you're next to the falls there's so much water spray that the provided ponchos make sense. The child seemed to really enjoy the rain-like climate, as she squealed with delight. A+++, would boat again.
 
