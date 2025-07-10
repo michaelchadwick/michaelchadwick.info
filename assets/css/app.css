@@ -1224,6 +1224,20 @@ footer#site-footer #logo-slogan a.plain {
   background-color: #333;
 }
 
+.post article img {
+  align-items: center;
+  display: flex;
+  max-height: 200px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .post article img {
+    display: flex;
+    margin-top: 1em;
+    max-height: 350px;
+  }
+}
+
 .post .post-date {
   font-size: 1.6rem;
 }
