@@ -259,6 +259,9 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
 
           html += '<div class="episode">'
           html += '\t<div class="title">'
+          html += `\t\t<a href="${ep.player_url}" target="_blank">`
+          html += `\t\t\t<img src="/assets/images/play.svg">`
+          html += `\t\t</a>`
           html += `\t\t<a href="${ep.permalink_url}" title="${new Date(ep.publish_time * 1000).toISOString().substring(0, 10)}">`
           html += `\t\t\t${ep.title.substring(20)}`
           html += '\t\t</a>'

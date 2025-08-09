@@ -25,4 +25,6 @@ In order for `/assets/php/*` files to work, you must run a local server:
 
 ## Acknowledgements
 
-Thanks to [melodiouscode](https://github.com/melodiouscode/melodiouscode-snippets/blob/main/creating-a-sitemap-xml-file-with-jekyll/sitemap.xml) for the cool Liquid templating approach to creating a sitemap vs. using a plugin!
+* [melodiouscode](https://github.com/melodiouscode/melodiouscode-snippets/blob/main/creating-a-sitemap-xml-file-with-jekyll/sitemap.xml): the cool Liquid templating approach to creating a sitemap vs. using a plugin
+* [reshot.com](https://www.reshot.com/free-svg-icons/play-button/): play button
+* [MageCDN](https://magecdn.com/tools/svg-loaders/180-ring/): loading spinner
