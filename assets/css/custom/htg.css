@@ -1,8 +1,13 @@
 body {
   margin-top: 0;
 }
+#episode-meta {
+  font-family: 'Lucida Console', monospace;
+  font-size: 1.3rem;
+  padding: 1em 0;
+}
 #episode-filter-container {
-  margin: 2em 0 0;
+  margin: 0;
 }
 #episode-list {
   display: flex;

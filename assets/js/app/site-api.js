@@ -215,14 +215,30 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
     .then((data) => {
       // console.log('podbean api request SUCCESS')
 
+      /* apple_episode_type, content_explicit, duration, episode_number, id, logo,media_url, object: "Episode", permalink_url, player_url, podcast_id, publish_time, season_number, status, title, transcripts_url, type: "Public" */
+
       // create list of all episode titles (/podcasts/htg)
       if (type == 'episodes') {
-        const podbeanEpisodes = document.querySelector('#episode-list')
+        const podbeanEpisodeMeta = document.querySelector('#episode-meta')
+        const podbeanEpisodeList = document.querySelector('#episode-list')
         let html = ''
         const eps = data.body.episodes
+        const pubDates = eps.map((ep) => ep.publish_time)
         const durations = eps.map((ep) => ep.duration)
         const longestEp = Math.max(...durations)
         const ignoredStatuses = ['draft', 'future']
+
+        const total_eps = data.body.episodes.length
+        const total_duration = eps.reduce((acc, cur) => acc + cur.duration, 0)
+        const firstPubDate = new Date(Math.min(...pubDates) * 1000).toISOString().substring(0, 10)
+        const lastPubDate = new Date(Math.max(...pubDates) * 1000).toISOString().substring(0, 10)
+
+        podbeanEpisodeMeta.innerHTML = `
+          <strong>Total Episodes</strong>: ${total_eps}<br />
+          <strong>Total Duration</strong>: ${new Date(total_duration * 1000).toISOString().substring(11, 19)}<br />
+          <strong>Last Episode</strong>: ${lastPubDate}<br />
+          <strong>First Episode</strong>: ${firstPubDate}<br />
+        `
 
         eps.filter((ep) => !ignoredStatuses.includes(ep.status)).forEach((ep) => {
           const perc = ((ep.duration / longestEp).toFixed(2) * 100).toFixed(0)
@@ -256,7 +272,7 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
           html += '</div>'
         })
 
-        podbeanEpisodes.innerHTML = html
+        podbeanEpisodeList.innerHTML = html
       }
       // display latest episode pertinent info (/, /projects)
       else {
