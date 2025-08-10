@@ -66,9 +66,9 @@ body {
   display: flex;
   gap: 1px;
 }
-#episode-list .episode div.player-wrapper {
+#episode-list div.player-wrapper {
   width: 100%;
 }
-#episode-list .episode iframe.player {
+#episode-list div.player-wrapper iframe.player {
   width: 100%;
 }

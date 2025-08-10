@@ -312,9 +312,9 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
       iframe.id = playerId
       iframe.src = link
       div.appendChild(iframe)
-      ep.appendChild(div)
+      ep.after(div)
     } else {
-      ep.removeChild(document.querySelector(`#${playerWrapperId}`))
+      document.querySelector(`#${playerWrapperId}`).remove()
     }
   }
 }
