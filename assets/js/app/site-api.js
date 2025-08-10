@@ -257,11 +257,11 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
             }
           }
 
-          html += '<div class="episode">'
+          html += `<div class="episode" id="episode-${ep.id}">`
           html += '\t<div class="title">'
-          html += `\t\t<a href="${ep.player_url}" target="_blank">`
-          html += `\t\t\t<img src="/assets/images/play.svg">`
-          html += `\t\t</a>`
+          html += `\t\t<button type="button" onclick="createPlayer('${ep.id}', '${ep.player_url}')">`
+          html += `\t\t\t<img src="/assets/images/play.svg" alt="Play">`
+          html += `\t\t</button>`
           html += `\t\t<a href="${ep.permalink_url}" title="${new Date(ep.publish_time * 1000).toISOString().substring(0, 10)}">`
           html += `\t\t\t${ep.title.substring(20)}`
           html += '\t\t</a>'
@@ -297,6 +297,26 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
       const podbeanApiList = document.querySelector('.apiData.devPod')
       podbeanApiList.style.display = 'none'
     })
+
+  createPlayer = (id, link) => {
+    const ep = document.querySelector(`#episode-${id}`)
+    const playerWrapperId = `player-wrapper-${id}`
+    const playerId = `player-${id}`
+
+    if (!document.querySelector(`#${playerId}`)) {
+      const div = document.createElement('div')
+      div.classList = 'player-wrapper'
+      div.id = playerWrapperId
+      const iframe = document.createElement('iframe')
+      iframe.classList = 'player'
+      iframe.id = playerId
+      iframe.src = link
+      div.appendChild(iframe)
+      ep.appendChild(div)
+    } else {
+      ep.removeChild(document.querySelector(`#${playerWrapperId}`))
+    }
+  }
 }
 
 // RUBYGEMS (backend)

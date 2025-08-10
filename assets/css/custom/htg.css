@@ -41,7 +41,13 @@ body {
   align-items: center;
   display: flex;
 }
-#episode-list .episode div.title img {
+#episode-list .episode div.title button {
+  border: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+#episode-list .episode div.title button img {
   margin-right: 0.25em;
 }
 #episode-list .episode div.duration {
@@ -59,4 +65,10 @@ body {
 #episode-list .episode div.perc {
   display: flex;
   gap: 1px;
+}
+#episode-list .episode div.player-wrapper {
+  width: 100%;
+}
+#episode-list .episode iframe.player {
+  width: 100%;
 }
