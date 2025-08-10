@@ -233,9 +233,20 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
         const firstPubDate = new Date(Math.min(...pubDates) * 1000).toISOString().substring(0, 10)
         const lastPubDate = new Date(Math.max(...pubDates) * 1000).toISOString().substring(0, 10)
 
+        function secondsToHHMMSS(seconds) {
+          const h = Math.floor(seconds / 3600);
+          const m = Math.floor((seconds % 3600) / 60);
+          const s = seconds % 60;
+
+          // Pad each component to 2 digits
+          const pad = num => String(num).padStart(2, '0');
+
+          return `${pad(h)}:${pad(m)}:${pad(s)}`;
+        }
+
         podbeanEpisodeMeta.innerHTML = `
           <strong>Total Episodes</strong>: ${totalEps}<br />
-          <strong>Total Duration</strong>: ${new Date(totalDuration * 1000).toISOString().substring(11, 19)}<br />
+          <strong>Total Duration</strong>: ${secondsToHHMMSS(totalDuration)}<br />
           <strong>Last Episode</strong>: ${lastPubDate}<br />
           <strong>First Episode</strong>: ${firstPubDate}<br />
           <strong>Shortest Episode</strong>: ${shortestEpisode.title.substring(20)} (${new Date(shortestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
