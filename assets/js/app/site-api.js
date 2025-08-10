@@ -221,19 +221,17 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
       if (type == 'episodes') {
         const podbeanEpisodeMeta = document.querySelector('#episode-meta')
         const podbeanEpisodeList = document.querySelector('#episode-list')
-        let html = ''
-        const eps = data.body.episodes
-        const pubDates = eps.map((ep) => ep.publish_time)
-        const durations = eps.map((ep) => ep.duration)
         const ignoredStatuses = ['draft', 'future']
 
-        const totalEps = data.body.episodes.length
+        const eps = data.body.episodes
+        const totalEps = eps.length
         const totalDuration = eps.reduce((acc, cur) => acc + cur.duration, 0)
-        const firstPubDate = new Date(Math.min(...pubDates) * 1000).toISOString().substring(0, 10)
-        const lastPubDate = new Date(Math.max(...pubDates) * 1000).toISOString().substring(0, 10)
-
         const shortestEpisode = JSON.parse(JSON.stringify(eps)).sort((a, b) => a.duration - b.duration)[0]
         const longestEpisode = JSON.parse(JSON.stringify(eps)).sort((a, b) => b.duration - a.duration)[0];
+
+        const pubDates = eps.map((ep) => ep.publish_time)
+        const firstPubDate = new Date(Math.min(...pubDates) * 1000).toISOString().substring(0, 10)
+        const lastPubDate = new Date(Math.max(...pubDates) * 1000).toISOString().substring(0, 10)
 
         podbeanEpisodeMeta.innerHTML = `
           <strong>Total Episodes</strong>: ${totalEps}<br />
@@ -243,6 +241,8 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
           <strong>Shortest Episode</strong>: ${shortestEpisode.title.substring(20)} (${new Date(shortestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
           <strong>Longest Episode</strong>: ${longestEpisode.title.substring(20)} (${new Date(longestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
         `
+
+        let html = ''
 
         eps.filter((ep) => !ignoredStatuses.includes(ep.status)).forEach((ep) => {
           const perc = ((ep.duration / longestEpisode.duration).toFixed(2) * 100).toFixed(0)
