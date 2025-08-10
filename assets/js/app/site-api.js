@@ -225,23 +225,27 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
         const eps = data.body.episodes
         const pubDates = eps.map((ep) => ep.publish_time)
         const durations = eps.map((ep) => ep.duration)
-        const longestEp = Math.max(...durations)
         const ignoredStatuses = ['draft', 'future']
 
-        const total_eps = data.body.episodes.length
-        const total_duration = eps.reduce((acc, cur) => acc + cur.duration, 0)
+        const totalEps = data.body.episodes.length
+        const totalDuration = eps.reduce((acc, cur) => acc + cur.duration, 0)
         const firstPubDate = new Date(Math.min(...pubDates) * 1000).toISOString().substring(0, 10)
         const lastPubDate = new Date(Math.max(...pubDates) * 1000).toISOString().substring(0, 10)
 
+        const shortestEpisode = JSON.parse(JSON.stringify(eps)).sort((a, b) => a.duration - b.duration)[0]
+        const longestEpisode = JSON.parse(JSON.stringify(eps)).sort((a, b) => b.duration - a.duration)[0];
+
         podbeanEpisodeMeta.innerHTML = `
-          <strong>Total Episodes</strong>: ${total_eps}<br />
-          <strong>Total Duration</strong>: ${new Date(total_duration * 1000).toISOString().substring(11, 19)}<br />
+          <strong>Total Episodes</strong>: ${totalEps}<br />
+          <strong>Total Duration</strong>: ${new Date(totalDuration * 1000).toISOString().substring(11, 19)}<br />
           <strong>Last Episode</strong>: ${lastPubDate}<br />
           <strong>First Episode</strong>: ${firstPubDate}<br />
+          <strong>Shortest Episode</strong>: ${shortestEpisode.title.substring(20)} (${new Date(shortestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
+          <strong>Longest Episode</strong>: ${longestEpisode.title.substring(20)} (${new Date(longestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
         `
 
         eps.filter((ep) => !ignoredStatuses.includes(ep.status)).forEach((ep) => {
-          const perc = ((ep.duration / longestEp).toFixed(2) * 100).toFixed(0)
+          const perc = ((ep.duration / longestEpisode.duration).toFixed(2) * 100).toFixed(0)
           let percGraph = ''
           let percClass = ''
           for (i = 0; i < Number(perc) / 10; i++) {
