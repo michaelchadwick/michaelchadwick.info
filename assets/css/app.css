@@ -19,6 +19,8 @@
   --neutral-black: #282828;
   --neutral-dark-gray: #b1b1b1;
   --neutral-white: #fafafa;
+  --neutral-white-trans: #ffffffe6;
+  --neutral-white-darker: #fcfcfc;
   --neutral-white-trans: #f6f6f6ee;
 
   --text-color: var(--neutral-black);

@@ -176,7 +176,7 @@ nav.site-links a {
 }
 
 .overlay {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--neutral-white-trans);
   z-index: 1;
   display: none;
   width: 100%;
@@ -204,8 +204,8 @@ nav.site-links a {
 }
 
 #search-container {
-  background: #fcfcfc;
-  border: 1px solid #bbbbbb;
+  background: var(--neutral-white-darker);
+  border: 1px solid var(--neutral-dark-gray);
   margin: 10px 0 5px;
   padding: 3px;
   position: relative;
@@ -249,12 +249,12 @@ nav.site-links a {
   color: #aaa;
 }
 #search-container input.selected {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid var(--neutral-black);
   outline: none;
 }
 
 #results-container {
-  background: #fcfcfc;
+  background: var(--neutral-white-darker);
   margin: 0;
   padding-left: 20px;
 }
