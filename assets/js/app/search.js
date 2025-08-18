@@ -8,7 +8,7 @@ $(function () {
     resultsContainer: document.getElementById('results-container'),
     dataSource: jsonPath,
     json: jsonPath,
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a> {date}</li>',
     noResultsText: 'No results found',
     limit: 5,
     fuzzy: false
