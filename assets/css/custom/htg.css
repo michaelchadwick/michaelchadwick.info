@@ -40,6 +40,15 @@ body {
 #episode-list .episode div.title {
   align-items: center;
   display: flex;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  #episode-list .episode div.title {
+    width: auto;
+  }
+}
+#episode-list .episode div.title a {
+  line-height: 1.2;
 }
 #episode-list .episode div.title button {
   border: none;
