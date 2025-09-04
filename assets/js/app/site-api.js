@@ -399,13 +399,14 @@ MCInfo.SiteApi.STEAM = function () {
           if (games) {
             const game = games[0]
 
+            const gameDuration = Math.round((game['playtime_forever'] / 60) * 100) / 100
             const gameTitle = game['name']
             const gameId = game['appid']
             const imageHash = game['img_icon_url']
             const gameUrl = `https://steamcommunity.com/app/${gameId}`
             const gameIcon = `https://media.steampowered.com/steamcommunity/public/images/apps/${gameId}/${imageHash}.jpg`
 
-            steamLastGamePlayed.innerHTML = `<span>Latest game:</span><br /><img class="steam-icon" src="${gameIcon}" /><a href="${gameUrl}">${gameTitle}</a>`
+            steamLastGamePlayed.innerHTML = `<span>Latest game: ${gameDuration} hours played</span><br /><img class="steam-icon" src="${gameIcon}" /><a href="${gameUrl}">${gameTitle}</a>`
 
             if (!steamApiData.classList.contains('show')) {
               steamApiData.classList.add('show')
