@@ -61,6 +61,16 @@
 {% if page.tags contains 'about' %}
 <script type="text/javascript" src="/assets/js/app/page/about.js"></script>
 {% endif %} {% if page.style == "site-api" %}
+<!--
+<script type="importmap">
+  {
+    "imports": {
+      "axios": "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    }
+  }
+</script>
+<script type="module" src="/assets/js/vendor/duolingo.js"></script>
+-->
 <script type="text/javascript" src="/assets/js/app/site-api.js"></script>
 {% endif %} {% if page.style == "site-visibility" or page.style == "blog" or page.layout == "post"
 %}

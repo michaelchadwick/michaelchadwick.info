@@ -129,6 +129,11 @@ MCInfo.SiteApi.BLOG = function () {
     })
 }
 
+// DUOLINGO (frontend)
+MCInfo.SiteApi.DUOLINGO = function () {
+
+}
+
 // GITHUB (frontend)
 MCInfo.SiteApi.GH = async function () {
   // get pinned projects
