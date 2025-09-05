@@ -10,6 +10,8 @@ const GH_API_URL = 'https://api.github.com'
 const GH_API_LAST_REPO = `${GH_API_URL}/users/${GH_USER}/repos?sort=updated&per_page=1`
 const GH_PINNED_API = 'https://gh-pinned-repos.egoist.dev/?username='
 
+const DUOLINGO_API = 'https://duolingo.com/2017-06-30'
+
 const MCINFO_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_BLOG_URL = 'https://michaelchadwick.info/blog'
 const MCINFO_API_URL = '/api/v1/pages.json'

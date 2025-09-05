@@ -204,7 +204,14 @@ tags: fa fa-solid
 
     <ul class="links">
 
-      <li class="dynamic"><a href="https://duolingo.com/profile/nebyoolae" class="favicon">Duolingo</a></li>
+      <li class="dynamic">
+        <a href="https://duolingo.com/profile/nebyoolae" class="favicon">Duolingo</a>
+        <ul class="apiData duoData">
+          <li class="duoInfo loader">
+            {% include spinner.html %}
+          </li>
+        </ul>
+      </li>
 
       <li class="dynamic"><a href="https://www.goodreads.com/user/show/30107693-michael-chadwick" class="favicon">Goodreads</a></li>
 

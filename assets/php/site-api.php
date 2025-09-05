@@ -83,6 +83,30 @@ switch ($site) {
 
     break;
 
+  case 'duo':
+    $DUOLINGO_API_URL = 'https://www.duolingo.com/2017-06-30/users?username=nebyoolae';
+    $client = new Client(['base_uri' => $DUOLINGO_API_URL, 'timeout' => 5.0]);
+
+    // get user data
+    try {
+      $response = $client->get('', [
+        'debug' => false,
+      ]);
+
+      $body = json_decode($response->getBody()->getContents());
+
+      echo json_encode([
+        'body' => $body->users
+      ]);
+    } catch (GuzzleHttp\Exception\RequestException $e) {
+      $response = $e->getResponse();
+      $responseString = $response->getBody()->getContents();
+
+      echo $responseString;
+    }
+
+    break;
+
   case 'mcinfo_priv':
     $key = getenv('MCINFO_PRIVATE_KEY');
 

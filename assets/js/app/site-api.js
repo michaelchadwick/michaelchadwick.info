@@ -129,9 +129,47 @@ MCInfo.SiteApi.BLOG = function () {
     })
 }
 
-// DUOLINGO (frontend)
+// DUOLINGO (backend)
 MCInfo.SiteApi.DUOLINGO = function () {
+  const duolingo = document.querySelector('.duoInfo')
+  const duolingoApi = document.querySelector('.apiData.duoData')
 
+  fetch(MCInfo.BACKEND_SITE_API_PATH, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ site: 'duo' }),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Could not get duolingo user data')
+      }
+
+      return response.json()
+    })
+    .then((data) => {
+      // console.log('duolingo api request SUCCESS', data.body[0])
+
+      const neb = data.body[0]
+      const streak = neb.streak
+      const xp = neb.totalXp
+      const last3Langs = neb.courses.slice(0, 3).map((lang) => lang.title).join(', ')
+
+      duolingo.innerHTML = '<span>'
+      duolingo.innerHTML = `<strong>${streak}</strong> day streak<br />`
+      duolingo.innerHTML += `<strong>${xp}</strong> total XP<br />`
+      duolingo.innerHTML += `<strong>Recent</strong>: ${last3Langs}`
+      duolingo.innerHTML += '</span>'
+
+      if (!duolingoApi.classList.contains('show')) {
+        duolingoApi.classList.add('show')
+      }
+    })
+    .catch((error) => {
+      console.error('duolingo api request failed', error)
+    })
 }
 
 // GITHUB (frontend)
