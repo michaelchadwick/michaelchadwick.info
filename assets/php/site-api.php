@@ -67,8 +67,8 @@ switch ($site) {
       $stars = [];
 
       foreach ($document->querySelectorAll('.eventlist-event') as $event) {
-        $year = substr($event->firstElementChild, 1, -1);
-        $wins = substr($event->firstElementChild->nextElementSibling, 0, -1);
+        $year = substr($event->firstChild->textContent, 1, -1);
+        $wins = substr($event->firstChild->nextSibling->textContent, 0, -1);
 
         $stars[$year] = $wins;
       }
