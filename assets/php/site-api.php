@@ -34,6 +34,10 @@ else if (isset($argv)) {
 // direct url (debugging)
 else if (isset($_GET['site'])) {
   $site = $_GET['site'];
+
+  if (isset($_GET['arg1'])) {
+    $arg1 = $_GET['arg1'];
+  }
 }
 // no site?
 else {
@@ -162,24 +166,37 @@ switch ($site) {
       echo $responseString;
     }
 
-    // get episodes
+    // get episodes (max 100 at a time)
     try {
-      $publicUrl = $PODBEAN_API_URL . $PODBEAN_EPS_ROUTE . '?access_token=[redacted]&offset=0&limit=1000';
-      $privateUrl = $PODBEAN_EPS_ROUTE . '?access_token=' . $token . '&offset=0&limit=1000';
-      $response = $client->get(
-        $privateUrl,
+      $url1 = $PODBEAN_EPS_ROUTE . '?access_token=' . $token . '&offset=0&limit=100';
+
+      $response1 = $client->get(
+        $url1,
         [
           'debug' => false
         ]
       );
 
-      $body = json_decode($response->getBody()->getContents());
+      $body1 = json_decode($response1->getBody()->getContents());
+
+      $url2 = $PODBEAN_EPS_ROUTE . '?access_token=' . $token . '&offset=100&limit=100';
+
+      $response2 = $client->get(
+        $url2,
+        [
+          'debug' => false
+        ]
+      );
+
+      $body2 = json_decode($response2->getBody()->getContents());
+
+      $body = $body1;
+      $body->episodes = array_merge($body1->episodes, $body2->episodes);
 
       // get all episodes
       if ($arg1 == 'episodes') {
         echo json_encode([
-          'body' => $body,
-          'url' => $publicUrl,
+          'body' => $body
         ]);
       }
       // get latest episode
