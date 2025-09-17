@@ -165,7 +165,7 @@ switch ($site) {
     // get episodes
     try {
       $response = $client->get(
-        $PODBEAN_EPS_ROUTE . '?access_token=' . $token . '&offset=0&limit=100',
+        $PODBEAN_EPS_ROUTE . '?access_token=' . $token . '&offset=0&limit=1000',
         [
           'debug' => false
         ]
