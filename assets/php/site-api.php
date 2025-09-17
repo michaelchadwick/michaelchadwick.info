@@ -164,9 +164,10 @@ switch ($site) {
 
     // get episodes
     try {
-      $url = $PODBEAN_EPS_ROUTE . '?access_token=' . $token . '&offset=0&limit=1000';
+      $publicUrl = $PODBEAN_API_URL . $PODBEAN_EPS_ROUTE . '?access_token=[redacted]&offset=0&limit=1000';
+      $privateUrl = $PODBEAN_EPS_ROUTE . '?access_token=' . $token . '&offset=0&limit=1000';
       $response = $client->get(
-        $url,
+        $privateUrl,
         [
           'debug' => false
         ]
@@ -178,7 +179,7 @@ switch ($site) {
       if ($arg1 == 'episodes') {
         echo json_encode([
           'body' => $body,
-          'url' => $url,
+          'url' => $publicUrl,
         ]);
       }
       // get latest episode
