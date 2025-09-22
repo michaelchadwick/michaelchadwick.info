@@ -888,11 +888,14 @@ footer#site-footer #logo-slogan a.plain {
 }
 .homepage-blocks .row.code ul.links li,
 .homepage-blocks .row.audio ul.links li {
-  width: 150px;
+  font-size: 1.75rem;
+  width: 100px;
+  word-break: break-word;
 }
 @media (min-width: 768px) {
   .homepage-blocks .row ul.links {
     display: block;
+    font-size: 2rem;
   }
   .homepage-blocks .row.code ul.links li,
   .homepage-blocks .row.audio ul.links li {
@@ -906,7 +909,7 @@ footer#site-footer #logo-slogan a.plain {
 @media (min-width: 768px) {
   .homepage-blocks .row.code ul.links li.dynamic,
   .homepage-blocks .row.audio ul.links li.dynamic.featured {
-    height: 80px;
+    height: 70px;
     margin-bottom: 0;
   }
 }
