@@ -2,7 +2,7 @@
   <h1>My name is <strong><a href="/">Michael</a></strong>.</h1>
 
   <div class="tasks">
-    <a href="/projects">Coder</a>. <a href="/projects#audio">Musician</a>. <span class="blog"><a href="/blog">Blogger</a></span>.
+    <a href="{% if page.title != 'Projects' %}/projects{% endif %}#code">Coder</a>. <a href="{% if page.title != 'Projects' %}/projects{% endif %}#audio">Musician</a>. <span class="blog"><a href="/blog">Blogger</a></span>.
   </div>
 
   <div class="greeting">
@@ -14,7 +14,7 @@
   <h1>My name is <strong>Michael</strong>.</h1>
 
   <div class="location">
-    I'm a <a href="/projects">coder</a> and <a href="/projects#audio">musician</a>.
+    I'm a <a href="{% if page.title != 'Projects' %}/projects{% endif %}#code">coder</a> and <a href="{% if page.title != 'Projects' %}/projects{% endif %}#audio">musician</a>.
   </div>
 </header>
 
