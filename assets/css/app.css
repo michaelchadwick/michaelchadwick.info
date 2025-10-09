@@ -453,6 +453,14 @@ details {
 
 .row {
   margin-bottom: 1rem;
+
+  .section-label {
+    h3 {
+      align-items: center;
+      display: flex;
+      gap: 0.15em;
+    }
+  }
 }
 @media (min-width: 550px) {
   .row .section-label h3 {
@@ -1523,8 +1531,8 @@ footer#site-footer #logo-slogan a.plain {
 }
 
 /* Fontawesome */
-h2 .svg-inline--fa {
-  height: 0.75em;
+.svg-inline--fa {
+  height: 0.9em;
 }
 
 .archives-link {
