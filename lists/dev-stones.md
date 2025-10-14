@@ -11,7 +11,6 @@ My list of <a href="{{ site.siteurl }}/lists/muz-stones">musical milestones</a> 
 * <span style="color: #800000;">CoreAudio: create a custom Audio Unit for Logic/Garageband</span>
 * <span style="color: #800000;">Google Chrome: create extension</span>
 * <span style="color: #800000;">iPhone: create an iPhone app</span>
-* <span style="color: #800000;">Ruby/Rails: finish and deploy a completed Ruby on Rails application</span>
 
 ### <span style="color: #008000;">Objectives Fulfilled</span>
 
@@ -105,6 +104,7 @@ My list of <a href="{{ site.siteurl }}/lists/muz-stones">musical milestones</a> 
 * <span style="color: #008000;">Ruby/Gems: create a Ruby gem</span>
 * <span style="color: #008000;">Ruby/Gems: installed Ruby Gem</span>
 * <span style="color: #008000;">Ruby/Rails: created a new Ruby on Rails application</span>
+* <span style="color: #008000;">Ruby/Rails: finish and deploy a completed Ruby on Rails application</span>
 * <span style="color: #008000;">SQL: wrote SELECT statement</span>
 * <span style="color: #008000;">SQL: wrote UPDATE statement</span>
 * <span style="color: #008000;">SQL/MySQL: created database</span>
