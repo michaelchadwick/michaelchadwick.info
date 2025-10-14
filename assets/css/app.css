@@ -113,6 +113,15 @@ h6 {
   overflow-wrap: break-word;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
 #root,
 #__next {
   isolation: isolate;
@@ -197,7 +206,6 @@ a.anchor {
 
 h1 {
   font-size: 3rem;
-  font-weight: 500;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -232,19 +240,16 @@ h2.task-header {
 
 h3 {
   font-size: 2.5rem;
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 @media (min-width: 550px) {
   h3 {
     font-size: 3rem;
-    font-weight: 600;
   }
 }
 
 h4 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.15rem;
   line-height: 0.8;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -252,14 +257,12 @@ h4 {
 @media (min-width: 550px) {
   h4 {
     font-size: 2.5rem;
-    font-weight: 300;
     margin-bottom: 2rem;
   }
 }
 
 h5 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.85rem;
   margin-bottom: 1rem;
 }
 @media (min-width: 550px) {
@@ -608,7 +611,6 @@ header.page-header {
   height: 50px;
 }
 header.page-header h2 {
-  font-weight: 400;
   margin-bottom: 0;
   padding-right: 5px;
 }
@@ -1045,6 +1047,22 @@ footer#site-footer #logo-slogan a.plain {
 /* Page Content styles */
 /* ----------------------------------------------------------*/
 
+.page.lists {
+  h5 {
+    border-bottom: 1px solid #000;
+  }
+
+  .list {
+    &.sub {
+      margin: 0 0.5em;
+    }
+  }
+
+  ul {
+    list-style: circle;
+    margin-left: 18px;
+  }
+}
 .page-content {
   padding: 15px 0;
 }

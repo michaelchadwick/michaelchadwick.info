@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="page">
+<div class="page{% if page.type %} {{ page.type }}{% else %} {% endif %}">
   <header class="page-header">
     <h2>{{ page.title }} <i class="{{ page.title_icon }}"></i></h2>
   </header>
