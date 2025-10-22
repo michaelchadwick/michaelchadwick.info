@@ -38,9 +38,11 @@ a.formatlink {
     border: 1px solid #161a5f;
     float: left;
     left: 0;
-    margin: 2px 10px 5px 2px;
     position: static;
     width: auto;
+  }
+  .jobname a img {
+    margin: 2px 10px 5px 2px;
   }
   .jobname ul {
     font-weight: normal;
