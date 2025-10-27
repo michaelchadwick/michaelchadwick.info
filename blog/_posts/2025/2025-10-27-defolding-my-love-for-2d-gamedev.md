@@ -5,7 +5,7 @@ date: 2025-10-27
 description: "Season two of Hacking the Grepson is all about making a game. After some consideration, the decision to use Love2D and/or Defold, two different game engines, was made and a concentrated effort to tinker with both of them has begun."
 tags: defold htg gamedev love2d lua podcast
 headerImage: posts/2025/defold-love2d-gamedev.jpg
-headerImageCaption: 'Screenshot of Lua code inside the Defold game engine'
+headerImageCaption: 'Love and Defold logos floating in a wild landscape'
 image: posts/2025/defold-love2d-gamedev.jpg
 published: true
 ---
