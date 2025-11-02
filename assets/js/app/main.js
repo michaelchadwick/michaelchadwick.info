@@ -157,8 +157,13 @@ MCInfo.initApi = () => {
   // external site checking for projects page
   if (['/projects', '/projects/'].includes(document.location.pathname)) {
     // get external site data
+
+    // advent of code scraping not working right now
     // MCInfo.SiteApi.AOC()
-    MCInfo.SiteApi.BGG()
+
+    // boardgamegeek not working right now
+    // MCInfo.SiteApi.BGG()
+
     MCInfo.SiteApi.BLOG()
     MCInfo.SiteApi.DUOLINGO()
 
