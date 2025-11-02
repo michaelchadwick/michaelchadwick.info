@@ -156,11 +156,13 @@ MCInfo.SiteApi.DUOLINGO = function () {
       const streak = neb.streak
       const xp = neb.totalXp
       const last3Langs = neb.courses.slice(0, 3).map((lang) => lang.title).join(', ')
+      const top3Langs = neb.courses.sort((a, b) => b.xp - a.xp).slice(0, 3).map((lang) => `${lang.title} (${lang.xp})`).join(', ')
 
       duolingo.innerHTML = '<span>'
       duolingo.innerHTML = `<strong>${streak}</strong> day streak<br />`
       duolingo.innerHTML += `<strong>${xp}</strong> total XP<br />`
-      duolingo.innerHTML += `<strong>Recent</strong>: ${last3Langs}`
+      duolingo.innerHTML += `<strong>Recent</strong>: ${last3Langs}<br />`
+      duolingo.innerHTML += `<strong>Ranking</strong>: ${top3Langs}`
       duolingo.innerHTML += '</span>'
 
       if (!duolingoApi.classList.contains('show')) {
