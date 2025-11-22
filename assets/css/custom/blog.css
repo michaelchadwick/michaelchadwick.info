@@ -60,10 +60,12 @@ hr {
   background-color: var(--hr-color);
   border: none;
   clear: both;
-  /* box-shadow: 0 1px 1px #2e2e2e; */
-  height: 2px;
-  margin-bottom: 3.5rem;
+  height: 3px;
   margin-top: 3.5rem;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 hr.hr-small {
   margin: 30px auto;
