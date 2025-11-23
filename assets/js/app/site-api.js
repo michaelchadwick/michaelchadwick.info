@@ -451,7 +451,7 @@ MCInfo.SiteApi.STEAM = function () {
             const gameUrl = `https://steamcommunity.com/app/${gameId}`
             const gameIcon = `https://media.steampowered.com/steamcommunity/public/images/apps/${gameId}/${imageHash}.jpg`
 
-            steamLastGamePlayed.innerHTML = `<span>Latest game: ${gameDuration} hours played</span><br /><img class="steam-icon" src="${gameIcon}" /><a href="${gameUrl}">${gameTitle}</a>`
+            steamLastGamePlayed.innerHTML = `<span>Latest game: ${gameDuration} hours played</span><br /><img class="steam-icon" src="${gameIcon}" alt="${gameTitle} logo" title="${gameTitle} logo" /><a href="${gameUrl}">${gameTitle}</a>`
 
             if (!steamApiData.classList.contains('show')) {
               steamApiData.classList.add('show')
