@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: #1e9edb;
-  --color-faded1: #357c9c;
+  --color-faded1: #2c6782;
   --color-faded2: #3083aa;
   --color-faded3: #2d8fbd;
   --color-faded4: #2597cb;
@@ -172,7 +172,7 @@ a:hover {
 }
 
 a.btn-more {
-  background-color: var(--link-color);
+  background-color: var(--link-color-faded1);
   border: 1px solid var(--link-color-rev);
   border-radius: 0.5rem;
   color: var(--link-color-rev);
@@ -793,7 +793,7 @@ footer#site-footer li {
 footer#site-footer a,
 footer#site-footer a:active,
 footer#site-footer a:visited {
-  background-color: var(--link-color);
+  background-color: var(--link-color-faded1);
   border: 1px solid transparent;
   border-radius: 4px;
   color: var(--link-color-rev);
