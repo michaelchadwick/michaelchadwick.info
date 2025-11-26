@@ -319,8 +319,8 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
 
           html += `<div class="episode" id="episode-${ep.id}">`
           html += '\t<div class="title">'
-          html += `\t\t<button type="button" onclick="createPlayer('${ep.id}', '${ep.player_url}')">`
-          html += `\t\t\t<img src="/assets/images/play.svg" alt="Play">`
+          html += `\t\t<button type="button" id="player-toggle${ep.id}" onclick="createPlayer('${ep.id}', '${ep.player_url}')">`
+          html += `\t\t\t<img src="/assets/images/play.svg" alt="Toggle Player" title="Toggle Player">`
           html += `\t\t</button>`
           html += `\t\t<a href="${ep.permalink_url}" title="${new Date(ep.publish_time * 1000).toISOString().substring(0, 10)}">`
           html += `\t\t\t${ep.title.substring(20)}`
@@ -362,8 +362,10 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
     const ep = document.querySelector(`#episode-${id}`)
     const playerWrapperId = `player-wrapper-${id}`
     const playerId = `player-${id}`
+    const button = document.getElementById(`player-toggle${id}`)
 
     if (!document.querySelector(`#${playerId}`)) {
+      button.classList.add('chevron-down')
       const div = document.createElement('div')
       div.classList = 'player-wrapper'
       div.id = playerWrapperId
@@ -374,6 +376,7 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
       div.appendChild(iframe)
       ep.after(div)
     } else {
+      button.classList.remove('chevron-down')
       document.querySelector(`#${playerWrapperId}`).remove()
     }
   }

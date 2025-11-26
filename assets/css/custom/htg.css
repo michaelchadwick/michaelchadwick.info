@@ -62,6 +62,9 @@ body {
   margin-right: 0.5em;
   width: 24px;
 }
+#episode-list .episode div.title button.chevron-down img {
+  transform: rotate(90deg);
+}
 #episode-list .episode div.duration {
   text-shadow: 1px 1px 1px #000;
 }
