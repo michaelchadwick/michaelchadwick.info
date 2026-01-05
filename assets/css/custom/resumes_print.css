@@ -59,9 +59,10 @@ a {
   min-height: 0;
   padding: 5px 10px;
 }
-  .jobname img {
-    display: none;
-  }
+
+.post article img {
+  display: none;
+}
 
 ul.skills {
   padding: 0 10px;
