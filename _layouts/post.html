@@ -1,5 +1,6 @@
 ---
 layout: default
+tags: fa fa-solid
 ---
 <div class="post{% if page.published == false %} unpublished{% endif %}">
 
@@ -20,6 +21,10 @@ layout: default
     {% unless page.published == true %}
     <span>UNPUBLISHED</span>
     {% endunless %}
+
+    <div class="post-reading-time">
+      <i class="fa-solid fa-book" title="Reading time"></i> {{content | reading_time}}
+    </div>
 
     <h1>{{ page.title }}</h1>
 

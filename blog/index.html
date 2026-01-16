@@ -39,6 +39,10 @@ tags: fa fa-solid
 
         <span class="post-date"> {{ post.date | date: site.date_YYYYMMDD_dash }} </span>
 
+        <div class="post-reading-time">
+          <i class="fa-solid fa-book" title="Reading time"></i> {{post.content | reading_time}}
+        </div>
+
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
 
         {% assign sorted_tags = post.tags | sort %}

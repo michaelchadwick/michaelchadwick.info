@@ -1152,6 +1152,9 @@ footer#site-footer #logo-slogan a.plain {
   font-size: 1.5rem;
   color: #818181;
 }
+.posts .post-reading-time {
+  font-size: 0.9em;
+}
 
 /* Post styles */
 /* ----------------------------------------------------------*/
@@ -1171,6 +1174,9 @@ footer#site-footer #logo-slogan a.plain {
   line-height: 1;
   font-weight: 600;
   margin-bottom: 5px;
+}
+.post-header .post-reading-time {
+  font-size: 0.8em;
 }
 .post-header .meta {
   font-size: 1.5rem;
