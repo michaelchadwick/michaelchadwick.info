@@ -93,18 +93,28 @@ tags: fa fa-solid
 
   {% if page.previous.url or page.next.url %}
   <section class="post-nav">
+    {% if page.previous.published %}
+      {% assign prev_classes = 'card post-nav-prev' %}
+    {% else %}
+      {% assign prev_classes = 'card post-nav-prev unpublished' %}
+    {% endif %}
   {% if page.previous.url %}
     <a class="prev" href="{{ page.previous.url }}">
-      <div class="card post-nav-prev">
+      <div class="{{ prev_classes }}">
         <div class="page-nav">&laquo; Previous</div>
         <div class="page-title">{{ page.previous.title }}</div>
         <div class="page-date">{{ page.previous.date | date: site.date_YYYYMMDD_dash }}</div>
       </div>
     </a>
   {% endif %}
+  {% if page.next.published %}
+    {% assign next_classes = 'card post-nav-next' %}
+  {% else %}
+    {% assign next_classes = 'card post-nav-next unpublished' %}
+  {% endif %}
   {% if page.next.url %}
     <a class="next" href="{{ page.next.url }}">
-      <div class="card post-nav-next">
+      <div class="{{ next_classes }}">
         <div class="page-nav">Next &raquo;</div>
         <div class="page-title">{{ page.next.title }}</div>
         <div class="page-date">{{ page.next.date | date: site.date_YYYYMMDD_dash }}</div>
