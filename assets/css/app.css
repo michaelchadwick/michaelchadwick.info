@@ -786,11 +786,11 @@ footer#site-footer p.text-small {
 }
 
 footer#site-footer li {
-  padding: 3px 0;
+  padding: 2px 0;
 }
 @media (min-width: 550px) {
   footer#site-footer li {
-    padding: 2px;
+    padding: 1px;
   }
 }
 

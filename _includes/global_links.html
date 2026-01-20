@@ -1,8 +1,10 @@
 <ul>
-  {% if jekyll.environment == 'production' %}
-  <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a></li>
-  {% endif %}
   <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
   <li><a href="{{ '/sitemap.xml' | prepend: site.baseurl }}">Sitemap</a></li>
+  {% if jekyll.environment == 'production' %}
+  <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">Blog RSS</a></li>
+  {% else %}
+  <li><a href="{{ '/feed.xml' | prepend: site.mc_link }}">Blog RSS</a></li>
+  {% endif %}
   <li><a href="{{ '/resume' | prepend: site.baseurl }}">R&eacute;sum&eacute;</a></li>
 </ul>
