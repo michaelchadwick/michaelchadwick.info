@@ -896,20 +896,12 @@ footer#site-footer #logo-slogan a.plain {
       justify-self: auto;
     }
 
-    &.writing h2,
     &.projects h2 {
       margin-bottom: 1rem;
     }
 
-    &.writing {
-      ul.links li ul {
-        margin-left: 0.5em;
-      }
-    }
-
     h2 {
       font-weight: 700;
-      margin-bottom: 0;
     }
 
     h3 {
