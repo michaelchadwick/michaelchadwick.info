@@ -33,7 +33,7 @@ task :serve_prod do
 end
 
 task :serve_unpub do
-  sh 'SHOW_UNPUB=true bundle exec jekyll serve --unpublished --livereload --watch --open-url http://localhost:4000'
+  sh 'SHOW_UNPUB=true bundle exec jekyll serve --unpublished --future --livereload --watch --open-url http://localhost:4000'
 end
 
 task :serve_unpub_prod do
