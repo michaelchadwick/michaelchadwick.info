@@ -1242,7 +1242,7 @@ footer#site-footer #logo-slogan a.plain {
   clear: both;
   line-height: 1;
   font-weight: 600;
-  margin: 40px 0 20px;
+  margin: 30px 0 20px;
 }
 
 .post-content h2 {
@@ -1256,6 +1256,24 @@ footer#site-footer #logo-slogan a.plain {
 .post-content h4 {
   font-size: 2rem;
   letter-spacing: -1px;
+}
+.post-content h5 {
+  font-size: 1.75rem;
+  letter-spacing: -1px;
+  margin-bottom: 0.2em;
+
+  & + * {
+    margin-top: 5px;
+  }
+}
+.post-content h6 {
+  font-size: 1.625rem;
+  letter-spacing: -1px;
+  margin-bottom: 0.2em;
+
+  & + * {
+    margin-top: 5px;
+  }
 }
 
 .post-content blockquote {
