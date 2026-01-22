@@ -21,6 +21,7 @@ keybase*
 .jekyll-metadata
 .secrets
 act.json
+pinterest*.html
 
 # meta config files
 dandelion.yml
