@@ -28,6 +28,7 @@ tags: fa fa-solid
     class="posts{% if site.unpublished %} posts-unpublished{% endif %}"{% if site.env.SHOW_UNPUB == 'true' %}style="display: block"{% endif %}
   >
     {% for post in paginator.posts %}
+    {% unless post.draft %}
 
     <li
       class="post-row{% if post.published == false %} unpublished{% endif %}"{% if site.env.SHOW_UNPUB == 'true' %}style="display: block"{% endif %}
@@ -85,6 +86,7 @@ tags: fa fa-solid
       {% endif %}
     </li>
 
+    {% endunless %}
     {% endfor %}
   </ul>
 
