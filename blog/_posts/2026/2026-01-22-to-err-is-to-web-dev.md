@@ -4,6 +4,7 @@ title: 'To Err is to Web Develop'
 date: 2026-01-22
 description: 'When planning a way to handle errors in a web application, there are a few ways to go about doing it. However, consider the following: what if you just do something else first for a while?'
 tags: error guide linting prettification webdev
+published: false
 draft: true
 ---
 
@@ -80,6 +81,8 @@ This is caused by a request sending authorization credentials (i.e. due to a rou
 
 * `locahost:3000/login -> user:foo/pass:bar -> 401`
 
+**Solution**: display a client-side error message. [Yup](https://github.com/jquense/yup) is a good library to use.
+
 ##### 403 AUTHENTICATION ERROR
 
 This is caused by a request requiring valid authentication (i.e. due to a route, page, or file needing to have a specific, proven identity), and not getting it, resulting in a `403`.
@@ -95,7 +98,7 @@ This is caused by either your inability to navigate a site or link rot. Usually 
 * `localhost:3000/not-yet-existing-place -> 404`
 * `<a href="http://not-a-site-but-oh-if-only.com">go here for the juice</a>`
 
-**Solution**: if your web framework has a routing system, there is probably a place to create a template to serve to a user if this happens. If not, then your web server software (Apache, nginx, IIS, etc.) probably has a way to serve something similar. If the site is running on a potato, check for freshness.
+**Solution**: If your web framework has a routing system, there is probably a place to create a template to serve to a user if this happens. If not, then your web server software (Apache, nginx, IIS, etc.) probably has a way to serve something similar. If the site is running on a potato, check for freshness.
 
 #### 500 SERVER ERROR
 
@@ -107,17 +110,21 @@ For example, a form could cause an error while processing on the server, and so 
 
 * `localhost:3000/page-with-form -> submit form -> 500`
 
+**Solution**: Display a client-side error message rather than allowing a `500` to bubble up.
+
 ##### REMOTE API ERROR
 
 This is caused by a remote API not existing or failing to do its job.
 
 * `localhost:3000 -> fetch(https://coolsite.com/api/coolThing1) -> 500`
 
-**Solution**: check if the remote API can be accessed outside of your website to make sure it's not just a faulty implementation. Try using `curl -I https://coolsite.com/api/coolThing1` on the command line.
+**Solution**: Check if the remote API can be accessed outside of your website to make sure it's not just a faulty implementation. Try using `curl -I https://coolsite.com/api/coolThing1` on the command line.
 
 #### FORM ERROR
 
 This is caused by entering invalid data into a client-side form input, or by the server rejecting form input values upon submission. Client-side errors will usually appear on the website itself via `HTML` attributes or `Javascript` validation, whereas a submission that makes it to the server but fails may present something similar, or either log or redirect to a `500` error.
+
+**Solution**: Display a client-side error message. [Yup](https://github.com/jquense/yup) is a good library to use.
 
 #### MODEL ERROR
 
@@ -125,4 +132,8 @@ This is caused by the site's database not finding something. It could be due to 
 
 * `localhost:3000/user/dave -> 404 (dave ain't here, man)`
 
-**Solution**: redirect to your 404/Not Found route, and log the issue internally for later research purposes.
+**Solution**: Redirect to your 404/Not Found route, and log the issue internally for later research purposes.
+
+## FOR THE ROAD
+
+Most modern web frameworks have configuration to handle the errors you will likely experience, which is a reason to use them versus going all-custom. Regardless, this is a well-trodden area after decades of web development so there are a lot of resources and there's no reason not to handle them elegantly.
