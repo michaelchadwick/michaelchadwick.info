@@ -22,10 +22,6 @@ tags: fa fa-solid
     <span>UNPUBLISHED</span>
     {% endunless %}
 
-    <div class="post-reading-time">
-      <i class="fa-solid fa-book" title="Reading time"></i> {{content | reading_time}}
-    </div>
-
     <h1>{{ page.title }}</h1>
 
     {% if page.meta %}
@@ -42,6 +38,10 @@ tags: fa fa-solid
         {% endfor %}
       </div>
     {% endif %}
+
+    <div class="post-reading-time">
+      <i class="fa-solid fa-book" title="Reading time"></i> {{content | reading_time}}
+    </div>
 
     <div class="post-header-image full-entry">
       {% if page.headerImage %}
