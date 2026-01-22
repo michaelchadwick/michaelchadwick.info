@@ -80,7 +80,7 @@ This is caused by a request sending authorization credentials (i.e. due to a rou
 
 * `locahost:3000/login -> user:foo/pass:bar -> 401`
 
-**Solution**: display a client-side error message. [Yup](https://github.com/jquense/yup) is a good library to use.
+**Solution**: Display a client-side error message. [Yup](https://github.com/jquense/yup) is a good library to use.
 
 ##### 403 AUTHENTICATION ERROR
 
