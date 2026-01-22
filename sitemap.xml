@@ -40,7 +40,7 @@ exclude: 'yes'
 
   {% for collection in site.collections %}
     {% for post in collection.docs %}
-      {% unless post.published == false or post.sitemap.exclude == "yes" or page.name == "feed.xml"  %}
+      {% unless post.published == false or post.draft == true or post.sitemap.exclude == "yes" or page.name == "feed.xml"  %}
       <url>
         <loc>{{ site.liveUrl }}{{ post.url }}</loc>
 
