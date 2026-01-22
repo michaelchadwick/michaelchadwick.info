@@ -5,6 +5,7 @@ date: 2026-01-22
 description: 'When planning a way to handle errors in a web application, there are a few ways to go about doing it. However, consider the following: what if you just do something else first for a while?'
 tags: error guide linting prettification webdev
 published: false
+draft: true
 ---
 
 {{ page.description }}
