@@ -1,23 +1,18 @@
 ---
 layout: post
 title: 'To Err is to Web Develop'
-date: 2026-01-22
-description: 'When planning a way to handle errors in a web application, there are a few ways to go about doing it. However, consider the following: what if you just do something else first for a while?'
-tags: error guide linting prettification webdev
+date: 2026-01-29
+description: 'When I go to change something on a web application, I sometimes run into errors, either pre-existing or created by my own hand whilst tinkering. Hopefully, there is already systems in place to handle those errors, but maybe they can be improved. Let us take a journey through a typical workflow and what obstacles come up along the way.'
+tags: emberjs error guide http javascript linting prettification webdev
 draft: true
+published: false
 ---
 
 {{ page.description }}
 
 <!--more-->
 
-Errors are unavoidable. Perfection is impossible. This is true in web development just as it is in life. That doesn't mean you can't _do something_ about handling all those inevitable unwanted outcomes, but first: **stand up**. I know you are probably sitting or lying down while reading this, so let's break up the flow a bit.
-
-If you are on a mobile device, prepare to put it down. If you're on a desktop or laptop, be ready to look away from it. Either way, prepare to do some deep breathing in and out for a few minutes while either staring into the middle distance or closing your eyes completely, put the device down or out of sight, and..._do that_. The blog post will wait.
-
-...
-
-OK, done? Now that we have **perspective**, let's first discuss how your web application _could_ go wrong, and then some solutions to potentially handle it. Since I needed to elucidate the myriad ways a web application I've been working on recently _could_ or _might_ go awry, AND ways to combat that, here's a refresher course for both me and you.
+Errors are unavoidable. Perfection is impossible. This is true in web development just as it is in life. That doesn't mean you can't _do something_ about handling all those inevitable unwanted outcomes, however. When I go to make a change on a website, I invariably type something invalid or at least foolish that results in some kind of error.
 
 ## TYPES OF ERRORS
 
@@ -132,7 +127,3 @@ This is caused by the site's database not finding something. It could be due to 
 * `localhost:3000/user/dave -> 404 (dave ain't here, man)`
 
 **Solution**: Redirect to your 404/Not Found route, and log the issue internally for later research purposes.
-
-## FOR THE ROAD
-
-Most modern web frameworks have configuration to handle the errors you will likely experience, which is a reason to use them versus going all-custom. Regardless, this is a well-trodden area after decades of web development so there are a lot of resources and there's no reason not to handle them elegantly.
