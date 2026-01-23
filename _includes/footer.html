@@ -83,6 +83,10 @@
 <script type="text/javascript" src="/assets/js/vendor/vexflow/tabdiv.min.js"></script>
 {% endif %}
 <!-- CUSTOM CONDITIONAL -->
+{% if page.style == "blog" %}
+<script type="text/javascript" src="/assets/js/app/page/blog.js"></script>
+{% endif %}
+<!-- CUSTOM CONDITIONAL -->
 {% if page.tags contains "resume-print" %}
 <script type="text/javascript" src="/assets/js/app/layouts/resumes_print.js"></script>
 {% endif %}

@@ -679,7 +679,7 @@ div#unpub-indicator {
 }
 @media (min-width: 992px) {
   div#unpub-indicator {
-    width: auto;
+    width: 95px;
   }
 }
 div#unpub-indicator.unpublished {
@@ -706,7 +706,7 @@ div#env-indicator {
 }
 @media (min-width: 992px) {
   div#env-indicator {
-    width: auto;
+    width: 95px;
   }
 }
 div#env-indicator.env-indicator-prod {
@@ -722,7 +722,6 @@ div#env-indicator.env-indicator-dev {
     cursor: pointer;
   }
 }
-
 button#theme-toggler {
   background-color: var(--bg-color);
   display: none;

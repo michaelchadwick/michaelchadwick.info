@@ -121,6 +121,7 @@ MCInfo.addEventHandlers = () => {
       window.open(`https://michaelchadwick.info${document.location.pathname}`, '_blank')
     })
   }
+
   themeToggler.addEventListener('click', function () {
     bodyClasses.toggle('dark-theme')
     bodyClasses.toggle('light-theme')

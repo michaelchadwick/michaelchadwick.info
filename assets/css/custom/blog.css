@@ -200,7 +200,47 @@ nav.site-links a {
   }
 }
 
-/* custom ids and classes */
+/* https://gomakethings.com/creating-a-toggle-switch-with-just-css/ */
+[role="switch"] {
+	--height: 1.1875em;
+	--width: 0.8;
+
+	appearance: none;
+	display: inline-block;
+	background-color: #b8b8b8;
+	height: var(--height);
+	width: calc(var(--height) * calc(1 + var(--width)));
+	border: 0;
+	border-radius: 99em;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: background-color 100ms ease-in-out;
+}
+[role="switch"]::after {
+	content: "";
+	display: block;
+	aspect-ratio: 1;
+	background-color: white;
+	border: max(2px, 0.125em) solid #808080;
+	height: 100%;
+	border-radius: 50%;
+}
+[role="switch"]:checked {
+	background-color: #4a90d2;
+}
+[role="switch"]:checked::after {
+	border-color: #0088cc;
+	translate: calc(var(--height) * var(--width)) 0;
+  transition: translate 100ms ease-in-out;
+}
+
+label:has([role="switch"]) {
+  cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25em;
+}
+
 #posts-tags {
   margin: 30px;
 }
@@ -274,6 +314,18 @@ nav.site-links a {
 }
 .posts .img-container {
   box-shadow: 1px 1px 5px #333333;
+}
+.posts.lite {
+  .tags,
+  .post-reading-time,
+  .post-main,
+  hr {
+    display: none;
+  }
+
+  li.post-row {
+    margin-bottom: 0.75em;
+  }
 }
 
 .post-main {
