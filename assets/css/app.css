@@ -677,7 +677,7 @@ div#unpub-indicator {
   width: 40px;
   z-index: 10000;
 }
-@media (min-width: 550px) {
+@media (min-width: 992px) {
   div#unpub-indicator {
     width: auto;
   }
@@ -704,7 +704,7 @@ div#env-indicator {
   width: 40px;
   z-index: 10000;
 }
-@media (min-width: 550px) {
+@media (min-width: 992px) {
   div#env-indicator {
     width: auto;
   }
@@ -740,7 +740,7 @@ button#theme-toggler span.theme-image::after {
   display: none;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 992px) {
   button#theme-toggler {
     width: 95px;
   }
