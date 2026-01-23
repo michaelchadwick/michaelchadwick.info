@@ -1660,3 +1660,20 @@ footer#site-footer #logo-slogan a.plain {
 .archives-link {
   margin-bottom: 1em;
 }
+
+.binge-purge {
+  background-color: rgb(255, 255, 255, 0.4);
+  padding: 10px;
+}
+.binge {
+  color: #018843;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #c3ff59;
+}
+.purge {
+  color: #f20000;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #ffbfbf;
+}
