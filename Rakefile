@@ -3,10 +3,8 @@ task :deploy do
   sh 'git push origin master'
   # build site
   sh 'JEKYLL_ENV=production bundle exec jekyll build'
-  # sync site to remote host
-  sh "rsync -auP --no-p --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
-  # backup drafts
-  sh 'rsync -auP --no-p ./_drafts/* $MCINFO_DRAFTS'
+  # sync site to remote host (use checksum since site gets rebuilt each)
+  sh "rsync -auP --no-p --checksum --delete --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
 end
 
 task :deploy_unpub do
@@ -14,8 +12,11 @@ task :deploy_unpub do
   sh 'git push origin master'
   # build site (with unpublished posts)
   sh 'JEKYLL_ENV=production bundle exec jekyll build --unpublished'
-  # sync site to remote host
-  sh "rsync -auP --no-p --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
+  # sync site to remote host (use checksum since site gets rebuilt each)
+  sh "rsync -auP --no-p --checksum --delete --exclude-from='rsync-exclude.txt' ./_site/* $MCINFO_REMOTE"
+end
+
+task :deploy_drafts do
   # backup drafts
   sh 'rsync -auP --no-p ./_drafts/* $MCINFO_DRAFTS'
 end
