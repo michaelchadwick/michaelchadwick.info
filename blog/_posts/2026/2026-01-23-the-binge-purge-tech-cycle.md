@@ -4,7 +4,7 @@ title: 'The Binge-Purge Tech Cycle'
 date: 2026-01-23
 description: "You begin life simple and slowly become more complex. Within that life there are often multiple periods of growth and reduction. This is evident quite clearly in one's interests. My life is no different."
 tags: reflection
-published: false
+published: true
 ---
 
 {{ page.description }}
