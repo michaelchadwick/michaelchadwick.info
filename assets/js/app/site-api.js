@@ -269,14 +269,15 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
         const ignoredStatuses = ['draft', 'future']
 
         const eps = data.body.episodes
-        const totalEps = eps.length
-        const totalDuration = eps.reduce((acc, cur) => acc + cur.duration, 0)
+        const totalEpisodes = eps.length
+        const totalEpisodesDuration = eps.reduce((acc, cur) => acc + cur.duration, 0)
         const shortestEpisode = JSON.parse(JSON.stringify(eps)).sort((a, b) => a.duration - b.duration)[0]
         const longestEpisode = JSON.parse(JSON.stringify(eps)).sort((a, b) => b.duration - a.duration)[0];
 
         const pubDates = eps.map((ep) => ep.publish_time)
         const firstPubDate = new Date(Math.min(...pubDates) * 1000).toISOString().substring(0, 10)
         const lastPubDate = new Date(Math.max(...pubDates) * 1000).toISOString().substring(0, 10)
+        const podcastAge = daysToYMD(dayDifference(lastPubDate, firstPubDate));
 
         function secondsToHHMMSS(seconds) {
           const h = Math.floor(seconds / 3600);
@@ -289,13 +290,43 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
           return `${pad(h)}:${pad(m)}:${pad(s)}`;
         }
 
+        function dayDifference(day1, day2) {
+          return (new Date(day1).getTime() - new Date(day2).getTime()) / (86400000);
+        }
+
+        function daysToYMD(
+          days,
+          {
+            locale="en-US",
+            unitDisplay='long',
+            style='long',
+            type='conjunction'
+          }={})
+          {
+            let divMod = (v,days) => [Math.floor(v / days), v % days],v;
+            return new Intl.ListFormat(locale,{style:style, type:type}).format(
+              ["year","month","day"].map((unit,i) => {
+                [v,days] = i < 2
+                  ? divMod(days, [365.2425, 30.436875][i])
+                  : [Math.ceil(days)];
+                return v ? Intl.NumberFormat(
+                  locale,
+                  {
+                    style: 'unit', unit, unitDisplay
+                  }
+                ).format(v) : 0;
+              }
+            ).filter(v => v));
+          }
+
         podbeanEpisodeMeta.innerHTML = `
-          <strong>Total Episodes</strong>: ${totalEps}<br />
-          <strong>Total Duration</strong>: ${secondsToHHMMSS(totalDuration)}<br />
-          <strong>Last Episode</strong>: ${lastPubDate}<br />
-          <strong>First Episode</strong>: ${firstPubDate}<br />
-          <strong>Shortest Episode</strong>: ${shortestEpisode.title.substring(20)} (${new Date(shortestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
-          <strong>Longest Episode</strong>: ${longestEpisode.title.substring(20)} (${new Date(longestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
+          <strong>Total Episodes</strong>: &nbsp; ${totalEpisodes}<br />
+          <strong>Total Duration</strong>: &nbsp; ${secondsToHHMMSS(totalEpisodesDuration)}<br />
+          <strong>Last Episode</strong>: &nbsp;&nbsp;&nbsp; ${lastPubDate}<br />
+          <strong>First Episode</strong>: &nbsp;&nbsp; ${firstPubDate}<br />
+          <strong>Podcast Age</strong>:<br /> &nbsp;${podcastAge}<br />
+          <strong>Shortest Episode</strong>:<br /> &nbsp;${shortestEpisode.title.substring(20)} (${new Date(shortestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
+          <strong>Longest Episode</strong>:<br > &nbsp;${longestEpisode.title.substring(20)} (${new Date(longestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
         `
 
         let html = ''
