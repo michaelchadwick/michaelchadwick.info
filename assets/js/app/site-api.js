@@ -36,13 +36,13 @@ MCInfo.SiteApi.AOC = function () {
     })
 }
 
-// BOARDGAMEGEEK (frontend)
+// BOARDGAMEGEEK (backend)
 MCInfo.SiteApi.BGG = function () {
   const bggLastGamePlayed = document.querySelector('.bggLastGamePlayed')
   const bggApiData = document.querySelector('.apiData.bgg')
 
   // get most recent board game play
-  fetch(BGG_API_URL, {
+  fetch(`${MCInfo.BACKEND_SITE_API_PATH}?site=bgg`, {
     method: 'GET',
     mode: 'cors',
   })
@@ -134,7 +134,7 @@ MCInfo.SiteApi.DUOLINGO = function () {
   const duolingo = document.querySelector('.duoInfo')
   const duolingoApi = document.querySelector('.apiData.duoData')
 
-  fetch(MCInfo.BACKEND_SITE_API_PATH, {
+  fetch(`${MCInfo.BACKEND_SITE_API_PATH}?site=duo`, {
     method: 'POST',
     mode: 'cors',
     headers: {
@@ -246,7 +246,7 @@ MCInfo.SiteApi.GH = async function () {
 // PODBEAN (backend)
 MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
   // get podcast episodes
-  fetch(MCInfo.BACKEND_SITE_API_PATH, {
+  fetch(`${MCInfo.BACKEND_SITE_API_PATH}?site=podbean`, {
     method: 'POST',
     mode: 'cors',
     headers: {
@@ -416,7 +416,7 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
 // RUBYGEMS (backend)
 MCInfo.SiteApi.RUBYGEMS = async function () {
   // get linked list of rubygems
-  fetch(MCInfo.BACKEND_SITE_API_PATH, {
+  fetch(`${MCInfo.BACKEND_SITE_API_PATH}?site=rubygems`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -454,7 +454,7 @@ MCInfo.SiteApi.STEAM = function () {
   const steamApiData = document.querySelector('.apiData.steam')
 
   // get most recent steam game played
-  fetch(MCInfo.BACKEND_SITE_API_PATH, {
+  fetch(`${MCInfo.BACKEND_SITE_API_PATH}?site=steam`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

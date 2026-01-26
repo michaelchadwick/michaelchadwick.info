@@ -162,9 +162,7 @@ MCInfo.initApi = () => {
     // advent of code scraping not working right now
     // MCInfo.SiteApi.AOC()
 
-    // boardgamegeek switched to app reg mode; waiting on auth
-    // MCInfo.SiteApi.BGG()
-
+    MCInfo.SiteApi.BGG()
     MCInfo.SiteApi.BLOG()
     MCInfo.SiteApi.DUOLINGO()
 

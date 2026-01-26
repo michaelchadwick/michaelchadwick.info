@@ -87,6 +87,22 @@ switch ($site) {
 
     break;
 
+  case 'bgg':
+    $BGG_API_URL = 'https://boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001';
+    $access_token = getenv('BGG_MCINFO_ACCESS_TOKEN');
+
+    $client = new Client(['base_uri' => $BGG_API_URL, 'timeout' => 5.0]);
+
+    $response = $client->get($BGG_API_URL, [
+      'debug' => false,
+      'headers' => [
+        'Authorization' => "Bearer $access_token"
+      ]
+    ]);
+    echo $response->getBody();
+
+    break;
+
   case 'duo':
     $DUOLINGO_API_URL = 'https://www.duolingo.com/2017-06-30/users?username=nebyoolae';
     $client = new Client(['base_uri' => $DUOLINGO_API_URL, 'timeout' => 5.0]);
@@ -130,7 +146,7 @@ switch ($site) {
       'client_secret' => getenv('PODBEAN_MCINFO_CLIENT_SECRET')
     );
 
-    $client = new Client(['base_uri' => $PODBEAN_API_URL, 'timeout'  => 5.0]);
+    $client = new Client(['base_uri' => $PODBEAN_API_URL, 'timeout' => 5.0]);
     $token = null;
 
     // get access_token first
@@ -194,7 +210,7 @@ switch ($site) {
       $body->episodes = array_merge($body1->episodes, $body2->episodes);
 
       // get all episodes
-      if ($arg1 == 'episodes') {
+      if (isset($arg1) && $arg1 == 'episodes') {
         echo json_encode([
           'body' => $body
         ]);

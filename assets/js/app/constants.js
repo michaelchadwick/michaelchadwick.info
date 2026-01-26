@@ -2,9 +2,6 @@
 
 const AOC_API_URL = 'https://adventofcode.com'
 
-const BGG_API_URL =
-  'https://boardgamegeek.com/xmlapi2/plays?username=nebyoolae&type=thing&subtype=boardgame&page=001'
-
 const GH_USER = 'michaelchadwick'
 const GH_API_URL = 'https://api.github.com'
 const GH_API_LAST_REPO = `${GH_API_URL}/users/${GH_USER}/repos?sort=updated&per_page=1`
