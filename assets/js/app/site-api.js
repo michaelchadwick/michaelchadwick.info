@@ -320,13 +320,16 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
           }
 
         podbeanEpisodeMeta.innerHTML = `
-          <strong>Total Episodes</strong>: &nbsp; ${totalEpisodes}<br />
-          <strong>Total Duration</strong>: &nbsp; ${secondsToHHMMSS(totalEpisodesDuration)}<br />
-          <strong>Last Episode</strong>: &nbsp;&nbsp;&nbsp; ${lastPubDate}<br />
-          <strong>First Episode</strong>: &nbsp;&nbsp; ${firstPubDate}<br />
-          <strong>Podcast Age</strong>:<br /> &nbsp;${podcastAge}<br />
-          <strong>Shortest Episode</strong>:<br /> &nbsp;${shortestEpisode.title.substring(20)} (${new Date(shortestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
-          <strong>Longest Episode</strong>:<br > &nbsp;${longestEpisode.title.substring(20)} (${new Date(longestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
+          <details class="quick-facts">
+            <summary>Quick Facts</summary>
+            <strong>Total Episodes</strong>: &nbsp; ${totalEpisodes}<br />
+            <strong>Total Duration</strong>: &nbsp; ${secondsToHHMMSS(totalEpisodesDuration)}<br />
+            <strong>Last Episode</strong>: &nbsp;&nbsp;&nbsp; ${lastPubDate}<br />
+            <strong>First Episode</strong>: &nbsp;&nbsp; ${firstPubDate}<br />
+            <strong>Podcast Age</strong>:<br /> &nbsp;${podcastAge}<br />
+            <strong>Shortest Episode</strong>:<br /> &nbsp;${shortestEpisode.title.substring(20)} (${new Date(shortestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
+            <strong>Longest Episode</strong>:<br > &nbsp;${longestEpisode.title.substring(20)} (${new Date(longestEpisode.duration * 1000).toISOString().substring(11, 19)})<br />
+          </details>
         `
 
         let html = ''
@@ -353,7 +356,7 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
           html += `\t\t<button type="button" id="player-toggle${ep.id}" onclick="createPlayer('${ep.id}', '${ep.player_url}')">`
           html += `\t\t\t<img src="/assets/images/play.svg" alt="Toggle Player" title="Toggle Player">`
           html += `\t\t</button>`
-          html += `\t\t<a href="${ep.permalink_url}" title="${new Date(ep.publish_time * 1000).toISOString().substring(0, 10)}">`
+          html += `\t\t<a class="link" href="${ep.permalink_url}" title="${new Date(ep.publish_time * 1000).toISOString().substring(0, 10)}">`
           html += `\t\t\t${ep.title.substring(20)}`
           html += '\t\t</a>'
           html += '\t</div>'
