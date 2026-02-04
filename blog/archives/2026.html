@@ -1,0 +1,67 @@
+---
+title: Blog > Archives
+title_icon: fa-solid fa-book
+layout: archive_year
+style: blog
+search: false
+tags: fa fa-solid
+---
+
+{% assign page_url_parts = page.path | split: '/' %}
+{% assign year = page_url_parts[2] | replace: '.html', '' %}
+{% assign archive_year = page_url_parts[2] | replace: '.html', '' %}
+{% assign archive_year_posts = site.posts | date: "%Y" | where: "date", archive_year %}
+
+<h2><a href="{{ site.blogurl }}">Blog</a> <i class="fa-solid fa-book"></i> &gt; <a href="../">Archives</a> > {{ archive_year }} ({{ archive_year_posts.size }})</h2>
+<h6 class="year-links">
+  {% assign current_year = site.time | date: '%Y' %}
+  {% assign year_range = (2009..current_year) | reverse %}
+  {% for year in year_range %}
+    {% assign year_string = year | append: "" %}
+    {% if year_string == archive_year %}
+      {{ year }}
+    {% else %}
+      <a href="../{{ year }}">{{ year }}</a>
+    {% endif %}
+
+    {% if forloop.last == false %}
+     |
+    {% endif %}
+  {% endfor %}
+</h6>
+
+<div class="home">
+  <ul
+    class="posts{% if site.unpublished %} posts-unpublished{% endif %}"{% if site.env.SHOW_UNPUB == 'true' %}style="display: block"{% endif %}
+  >
+    {% for post in site.posts %}
+      {% capture year %}{{ post.date | date: site.date_YYYY }}{% endcapture %}
+      {% if year == archive_year %}
+
+      <li
+        class="post-row{% if post.published == false %} unpublished{% endif %}"{% if site.env.SHOW_UNPUB == 'true' %}style="display: block"{% endif %}
+      >
+        <div class="post-meta">
+          {% if post.published == false %}
+          <div><strong>UNPUBLISHED</strong></div>
+          {% endif %}
+
+          <span class="post-date"> {{ post.date | date: site.date_YYYYMMDD_dash }} </span>
+
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+
+          {% assign sorted_tags = post.tags | sort %}
+
+          <div class="tags">
+            {% for tag in sorted_tags %}
+            <a href="{{ site.blogurl }}/tags/{{ tag }}">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </li>
+
+      {% endif %}
+
+    {% endfor %}
+  </ul>
+</div>
