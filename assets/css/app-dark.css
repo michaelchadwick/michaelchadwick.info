@@ -124,3 +124,8 @@ body.dark-theme .lds-dual-ring:after {
   border: 2px solid var(--neutral-white);
   border-color: var(--neutral-white) transparent var(--neutral-white) transparent;
 }
+
+body.dark-theme .click-to-talk:hover {
+  background-color: var(--neutral-white);
+  color: var(--neutral-black);
+}

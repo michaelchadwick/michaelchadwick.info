@@ -1598,6 +1598,15 @@ details:not(:open):hover {
   text-decoration: underline;
 }
 
+.click-to-talk {
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--neutral-black);
+    color: var(--neutral-white);
+  }
+}
+
 .musical-tone,
 .musical-tone:active,
 .musical-tone:focus,
