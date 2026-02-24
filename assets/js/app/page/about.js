@@ -8,7 +8,7 @@ if (note) {
     const masterGainNode = audioContext.createGain()
     masterGainNode.gain.value = 0.0001
 
-    const FREQS = [220, 440, 880]
+    const FREQS = [220, 440, 660, 880]
     const TYPES = ['sine', 'square', 'triangle', 'saw']
 
     const oscNode = audioContext.createOscillator()
