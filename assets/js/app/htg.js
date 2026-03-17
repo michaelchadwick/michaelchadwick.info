@@ -19,7 +19,7 @@ if (['/podcasts/htg', '/podcasts/htg/'].includes(document.location.pathname)) {
   MCInfo.SiteApi.PODBEAN('episodes')
 }
 
-document.getElementById('episode-filter-search').addEventListener('keyup', (e) => {
+document.getElementById('episode-filter-search').addEventListener('input', (e) => {
   const filter = e.target.value.trim().toLowerCase()
   const eps = document.querySelectorAll('#episode-list div.episode')
 
