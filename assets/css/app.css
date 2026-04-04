@@ -1275,6 +1275,31 @@ footer#site-footer #logo-slogan a.plain {
   }
 }
 
+.post-content aside {
+  background-color: var(--color-primary-rev);
+  line-height: 1.2;
+  padding: 0.8em 1em;
+
+  @media (min-width: 768px) {
+    width: 30%;
+
+    &.left {
+      float: left;
+      margin: 0 1em 1em 0;
+    }
+
+    &.right {
+      float: right;
+      margin: 0 0 1em 1em;
+    }
+  }
+}
+
+.post-content audio {
+  margin: 0;
+  width: 100%;
+}
+
 .post-content blockquote {
   border-left: 4px solid #e8e8e8;
   padding-left: 20px;

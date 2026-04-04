@@ -442,6 +442,18 @@ label:has([role="switch"]) {
   text-decoration: none;
 }
 
+.post-content aside {
+  margin: 1em;
+  width: 30%;
+
+  &.left {
+    float: left;
+  }
+
+  &.right {
+    float: right;
+  }
+}
 .post-content blockquote {
   border-left: 4px solid #ffc82f;
 }
