@@ -3,7 +3,7 @@ layout: post
 title: 'Event Listener Ephiphany'
 date: 2025-08-27
 description: "Being able to use Javascript event listeners to check when certain things happen, and then trigger useful tasks when they do, is not always as straightforward as I'd think."
-tags: audio event-listeners keyboard javascript js webdev
+tags: audio event-listeners keyboard javascript js soundlister webdev
 headerImage: posts/2025/event-listener-epiphany.jpg
 headerImageCaption: 'Screenshot from Sound Lister, my web app for displaying a playlist of audio'
 image: posts/2025/event-listener-epiphany.jpg
