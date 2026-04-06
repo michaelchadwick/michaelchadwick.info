@@ -38,7 +38,7 @@ Of course, as a budding young guitarist at the the time, I looked up tabs and tr
 
 It's now 2025, though. I've been playing guitar for nearly 30 years. It was time to finally see if I could pull off Satriani. After spending a fair amount of time setting up backing tracks, I plowed into 17 different Satriani songs running the first 20 years (1984-2004) of his recorded output. I chose favorite songs, even if they weren't all "the hits". Over the years I had actually tried and recorded a few "easier" Satriani songs, and decided to include them in my collection. I also added one more track, originally written in 2008 but recorded now, that was heavily inspired by Satch.
 
-[Listen to all of Satch 20](https://satch20.neb.host)
+[Listen to all of Satch 20](https://satch20.nebyoolae.com)
 
 My efforts are not as professional as I would like, and there are errors and hand-wavy attempts and patch-ins, but it's all my guitar playing. It's my own little Satch collection, finally done after so many years of admiration.
 
