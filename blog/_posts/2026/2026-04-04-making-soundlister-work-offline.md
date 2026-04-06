@@ -75,13 +75,13 @@ self.addEventListener('install', (event) => {
 })
 ```
 
-What it is _not_ is necessarily intuitive to set up when you have both known static files **AND** a dynamic list of audio files that can change depending on the instance or day.
+What a Service Worker is _not_ is something that provides an intuitive way to cache not only static files **BUT ALSO** a dynamic list of audio files that can change depending on the instance or day.
 
 ## CHORUS: The Part You Will Remember
 
 PHP to the rescue!
 
-That is to say that I was already using a PHP script to scan a directory and build a nice array of all the subdirs and their files so that I could use it build the playlist interface.
+That is to say, of course, that I was already using a PHP script to scan a directory and build a nice array of all the subdirs and their files so that I could use it build the playlist interface.
 
 ```php
 <?php
@@ -112,9 +112,9 @@ echo json_encode($files);
 ?>
 ```
 
-Once it was returned to Javascript, one is left with a `const response = fetch(SL_PHP_SCRIPT)` call that then feeds into a `const data = response.json()` call that is then processed into the UI.
+Once the script returns its value Javascript, one is left with a `const response = fetch(SL_PHP_SCRIPT)` call that then feeds into a `const data = response.json()` call that is then processed into the UI.
 
-However, the Service Worker `install` method cannot have any arguments, so in order to load things dynamically into its cache when it is installed you need to have a manifest of sorts to tell it what to cache once you know. This, I had to do an extra step in my PHP script like so:
+However, the Service Worker `install` method cannot have any arguments, so in order to load things dynamically into its cache when it is installed you need to have a manifest of sorts to tell it what to cache once you _do_ know. Thus, I had to do an extra step in my PHP script, like so:
 
 ```php
 <?php
@@ -171,7 +171,7 @@ Two notes:
 
 ## BRIDGE: Slight Tangent for Variety
 
-As much as I want anyone reading this to listen to _my_ music and fall in love with all of it and listen to it all the time and reach out to me about it, there are other people making music that is equally good (but really probably way more good), and you should check it out.
+As much as I want anyone reading this to listen to _my_ music and fall in love with **all of it** and listen to it **_all the time_** and reach out to me about it, there are other people making music that is equally good (but really probably way more good), and you should check it out.
 
 While writing this post I've been jamming out to Angine de Poitrine [Vol. 1](https://anginedepoitrine.bandcamp.com/album/vol-1) and [Vol. II](https://anginedepoitrine.bandcamp.com/album/vol-ii) and this stuff RULES SO HARD.
 
@@ -181,7 +181,7 @@ PHP to the rescue!
 
 Not that saying 'PHP is cool' has ever been, well, _cool_, I'd still like to shout it out because when I need to drop to the _backend_ in order to do things frontend Javascript won't do I still default to PHP. Python is really popular, too, and it seems to be getting more popular as LLM and AI agent programming becomes the norm, but it's not in my gut like PHP.
 
-My first ever real web app was your typical *AMP (Mac/Win/Linux, Apache, MySQL, PHP) type of project, and it really laid the groundwork for how I think to make a web application to this day. They released **8.5** back in November 2025 and 8.6 is already in development, so support remains strong even if it's not hip to use.
+My first ever real web app was your typical *AMP (Mac/Win/Linux, Apache, MySQL, PHP) type of project, and it really laid the groundwork for how I think to make a web application to this day. They released **8.5** back in November 2025 and **8.6** is already in development, so support remains strong even if it's not hip to use.
 
 ## OUTRO: Transition Out of Here
 
