@@ -652,13 +652,18 @@ header.page-header h3.tag::after {
 }
 
 aside.dashboard {
-  bottom: 5px;
+  bottom: 15px;
   display: flex;
   flex-direction: column;
   gap: 0.1em;
   position: fixed;
-  right: 5px;
+  right: 15px;
   z-index: 1;
+
+  @media (min-width: 550px) {
+    bottom: 5px;
+    right: 5px;
+  }
 }
 
 div#unpub-indicator {
