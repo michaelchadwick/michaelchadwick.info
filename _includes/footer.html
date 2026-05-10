@@ -54,6 +54,9 @@
 <!-- CUSTOM CONDITIONAL -->
 {% if page.tags contains 'about' %}
 <script type="text/javascript" src="/assets/js/app/page/about.js"></script>
+{% endif %}
+{% if page.tags contains 'tone' %}
+<script type="text/javascript" src="/assets/js/app/page/tone.js"></script>
 {% endif %} {% if page.style == "site-api" %}
 <!--
 <script type="importmap">
