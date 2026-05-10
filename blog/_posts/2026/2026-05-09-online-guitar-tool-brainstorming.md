@@ -7,7 +7,8 @@ headerImage: posts/2026/guitar-playing.jpg
 headerImageCaption: 'Me, playing guitar'
 image: posts/2026/guitar-playing.jpg
 tags: chords guitar tabdiv tablature tuner vexflow vextab vuejs webdev
-published: false
+published: true
+
 ---
 
 {{ page.description }}
