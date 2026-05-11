@@ -6,7 +6,7 @@ description: 'As a guitarist, I sometimes need to reach for tools to facilitate 
 headerImage: posts/2026/guitar-playing.jpg
 headerImageCaption: 'Me, playing guitar'
 image: posts/2026/guitar-playing.jpg
-tags: chords guitar tabdiv tablature tuner vexflow vextab vuejs webdev
+tags: chords guitar tabdiv tablature tone tuner vexflow vextab vuejs webdev
 published: true
 
 ---
@@ -27,7 +27,7 @@ notes 3-5/6 2-3-5/5 2-4-5/4
 
 Regardless of its failings, guitar tablature was easier to write and read, being closer to the metal, mimicking the 6-string fretboard of your average guitar, so I was able to grok it immediately, unlike standard sheet music. That, and all my favorite pop and rock songs were often in tablature format and accessible from OLGA (rip) or Ultimate Guitar, so I devoured that in my first few years of learning the guitbox. I even printed out a massive book of them at one point!
 
-While tablature is amazing, if you can't tune your guitar it's not going to be much help. Also, some of the "tablature" you find may just be chord charts, and if you don't know how to play a C#sus4, then you'd be out of luck. Thus, that's kind of the three tools I first think of when I ponder a new web app to help guitarists (myself and anyone else).
+While tablature is amazing, if you can't tune your guitar it's not going to be much help. Also, some of the "tablature" you find may just be chord charts, and if you don't know how to play a <a class="musical-tone musical-chord" href="#" title="click for a C#sus4" data-notes="69.296,103.83,138.59,155.56,207.65">C#sus2</a>, then you'd be out of luck. Thus, that's kind of the three tools I first think of when I ponder a new web app to help guitarists (myself and anyone else).
 
 * Tablature
 * Tuner
