@@ -6,7 +6,7 @@ description: 'As a guitarist, I sometimes need to reach for tools to facilitate 
 headerImage: posts/2026/guitar-playing.jpg
 headerImageCaption: 'Me, playing guitar'
 image: posts/2026/guitar-playing.jpg
-tags: chords guitar tabdiv tablature tone tuner vexflow vextab vuejs webdev
+tags: chords guitar keebord tabdiv tablature tone tuner vexflow vextab vuejs webdev
 published: true
 
 ---
@@ -39,7 +39,7 @@ There are plenty of web apps available that do one or multiple of these things. 
 
 Of the three tools that I identified, I think that a chord lookup app appeals to me the most. Tablature (and the editing of it) is a big job, with lots of decisions to make and edge cases to handle. A tuner would be even easier than a chord lookup tool, but I use it less, in general, since I have an app on my phone and even a couple hardware tuners (or I can just hit a note on a piano).
 
-Chord lookup appeals not only to my intrinsic interest in cataloguing and identifying and theorizing about music, but it also sounds like a fun challenge. My online keyboard app, Keebord, already does some decent chord idenfitification on a piano, but this would allow me to expand that, and center it around my main instrument. In fact, maybe I could even intermingle the tuning thing to potentially identify a strummed chord. I'm sure that's a lot harder than using an algorithm with manual notes or intervals, but...it is also intriguing.
+Chord lookup appeals not only to my intrinsic interest in cataloguing and identifying and theorizing about music, but it also sounds like a fun challenge. My online keyboard app, <a href="https://keebord.neb.host">Keebord</a>, already does some decent chord identification on a piano, but this would allow me to expand that, and center it around my main instrument. In fact, maybe I could even intermingle the tuning thing to potentially identify a strummed chord. I'm sure that's a lot harder than using an algorithm with manual notes or intervals, but...it is also intriguing.
 
 ## POST-AMBLE
 
