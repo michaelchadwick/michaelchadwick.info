@@ -351,17 +351,20 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
             }
           }
 
+          const epTitle = `${ep.title} (${new Date(ep.publish_time * 1000).toISOString().substring(0, 10)})`
+          const epDuration = new Date(ep.duration * 1000).toISOString().substring(11, 19)
+
           html += `<div class="episode" id="episode-${ep.id}">`
           html += '\t<div class="title">'
           html += `\t\t<button type="button" id="player-toggle${ep.id}" onclick="createPlayer('${ep.id}', '${ep.player_url}')">`
           html += `\t\t\t<img src="/assets/images/play.svg" alt="Toggle Player" title="Toggle Player">`
           html += `\t\t</button>`
-          html += `\t\t<a class="link" href="${ep.permalink_url}" title="${new Date(ep.publish_time * 1000).toISOString().substring(0, 10)}">`
+          html += `\t\t<a class="link" href="${ep.permalink_url}" title="${epTitle}}">`
           html += `\t\t\t${ep.title.substring(20)}`
           html += '\t\t</a>'
           html += '\t</div>'
           html += `\t<div class="duration ${percClass}">`
-          html += `\t\t${new Date(ep.duration * 1000).toISOString().substring(11, 19)}`
+          html += `\t\t${epDuration}`
           html += '\t</div>'
           html += '\t<div class="perc">'
           html += `\t\t${percGraph}`
