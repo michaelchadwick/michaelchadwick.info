@@ -2,8 +2,8 @@
   <nav id="site-bio">
     <div class="row">
       <!-- logo and summary -->
-      <div class="four columns" id="logo-slogan">
-        <a href="https://michaelchadwick.info" class="plain h-card" rel="me">
+      <div class="four columns h-card" id="logo-slogan">
+        <a rel="me" href="https://michaelchadwick.info" class="plain">
           <img
             src="/assets/images/mc-logo-53x60.png"
             alt="Michael Chadwick"
@@ -21,7 +21,7 @@
       <div class="three columns" id="social">
         <ul id="social-links">
           <li>
-            <a href="{{ site.gh_link }}">
+            <a rel="me" href="{{ site.gh_link }}">
               <span class="icon github">{% include svg_gh.html %}</span>
               <span class="username">{{ site.gh_username }}</span>
             </a>
