@@ -36,14 +36,15 @@ tags: fa fa-solid
     {% unless post.draft %}
 
     <li
-      class="post-row{% if post.published == false %} unpublished{% endif %}"{% if site.env.SHOW_UNPUB == 'true' %}style="display: block"{% endif %}
+      class="h-entry post-row{% if post.published == false %} unpublished{% endif %}"{% if site.env.SHOW_UNPUB == 'true' %}style="display: block"{% endif %}
     >
       <div class="post-meta">
+        <data class="u-url" value="{{ post | absolute_url }}"></data>
         {% if post.published == false %}
         <div><strong>UNPUBLISHED</strong></div>
         {% endif %}
 
-        <span class="post-date"> {{ post.date | date: site.date_YYYYMMDD_dash }} </span>
+        <span class="post-date dt-published" datetime="{{ post.date | date_to_xmlschema }}"> {{ post.date | date: site.date_YYYYMMDD_dash }} </span>
 
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
 
