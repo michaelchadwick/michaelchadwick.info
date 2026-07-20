@@ -11,13 +11,14 @@ tags: fa fa-solid
     {% assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60 %}
     {% assign daysSince = hoursSince | divided_by: 24 %}
 
-    <span class="post-date" title="{{ page.date | date: "%b %-d, %Y" }}">
+    <span class="post-date dt-published" title="{{ page.date | date: "%b %-d, %Y" }}" datetime="{{ page.date | date_to_xmlschema }}">
       {% if daysSince > 365 %}
         Posted: {{ page.date | timeago }}
       {% else %}
         {{ page.date | date: site.date_YYYYMMDD_dash | slice: 0, 10 }}
       {% endif %}
     </span>
+    <data class="u-url" value="{{ page | absolute_url }}"></data>
     {% unless page.published == true %}
     <span>UNPUBLISHED</span>
     {% endunless %}
@@ -39,8 +40,19 @@ tags: fa fa-solid
       </div>
     {% endif %}
 
-    <div class="post-reading-time">
-      <i class="fa-solid fa-book" title="Reading time"></i> {{content | reading_time}}
+    <div class="author-duration">
+      <div class="p-author h-card">
+        <span>By</span>
+        <a class="u-url p-name" href="{{ site.url }}">
+          <img src="{{ site.usericon_tiny_url }}" />
+          <span>{{ site.author }}</span>
+        </a>
+      </div>
+      <data class="u-photo" value="{{ site.usericon_url }}"></data>
+       |
+      <div class="post-reading-time">
+        <i class="fa-solid fa-book" title="Reading time"></i> {{content | reading_time}}
+      </div>
     </div>
 
     <div class="post-header-image full-entry">
@@ -75,8 +87,10 @@ tags: fa fa-solid
     {% endif %}
   </header>
 
-  <article class="post-content">
-    {{ content }}
+  <article class="post-content h-entry">
+    <div class="e-content">
+      {{ content }}
+    </div>
   </article>
 
   {% if site.enable_comments %}

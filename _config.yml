@@ -8,6 +8,8 @@ description: 'code, audio, and life developments by michael chadwick'
 description_html: "code, audio, and life of <a href='/'>michael chadwick</a>"
 description_short: 'code, audio, life'
 url: 'https://michaelchadwick.info'
+usericon_url: 'https://michaelchadwick.info/assets/images/author.png'
+usericon_tiny_url: 'https://michaelchadwick.info/assets/images/author_icon.png'
 home_relative_url: '/'
 blogurl: '/blog'
 encoding: UTF-8

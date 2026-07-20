@@ -1152,6 +1152,19 @@ footer#site-footer #logo-slogan a.plain {
   font-size: 1.5rem;
   color: #818181;
 }
+.posts .author-duration {
+  align-items: center;
+  display: flex;
+  font-size: 0.9em;
+  gap: 2px;
+}
+.posts .p-author {
+  display: flex;
+  gap: 5px;
+}
+.posts .p-author .p-name {
+  display: flex;
+}
 .posts .post-reading-time {
   font-size: 0.9em;
 }
@@ -1174,6 +1187,26 @@ footer#site-footer #logo-slogan a.plain {
   line-height: 1;
   font-weight: 600;
   margin-bottom: 5px;
+}
+.post-header .author-duration {
+  align-items: center;
+  display: flex;
+  font-size: 0.8em;
+  gap: 2px;
+}
+.post-header .p-author {
+  display: flex;
+  gap: 5px;
+}
+.post-header .p-author .p-name {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.post-header .p-author .p-name img {
+  height: 16px;
+  width: 16px;
 }
 .post-header .post-reading-time {
   font-size: 0.8em;
