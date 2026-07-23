@@ -164,7 +164,7 @@ MCInfo.initApi = () => {
 
     MCInfo.SiteApi.BGG()
     MCInfo.SiteApi.BLOG()
-    MCInfo.SiteApi.DUOLINGO()
+    // MCInfo.SiteApi.DUOLINGO()
 
     // pinned repo service in flux, so turning off for now
     //// MCInfo.SiteApi.GH()
