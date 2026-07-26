@@ -1353,6 +1353,10 @@ footer#site-footer #logo-slogan a.plain {
   padding-left: 10px;
 }
 
+.comment-content {
+  min-height: 269px;
+}
+
 .post {
   margin: 0;
 }
