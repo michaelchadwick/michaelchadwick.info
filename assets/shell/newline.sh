@@ -4,9 +4,9 @@
 
 for file in *.md
 do
-  if [ "$(tail -c 1 "$file"; echo x)" != $'\nx' ]; then
+  if [ "$(tail -c 1 "${file}"; echo x)" != $'\nx' ]; then
     # File does not end in newline, add one
-    echo "" >> "$file"
+    echo "" >> "${file}"
     # echo "$file has no newline; add"
   else
     # File ends in a newline, don't add one

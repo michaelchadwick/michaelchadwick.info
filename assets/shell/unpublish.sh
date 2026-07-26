@@ -1,53 +1,44 @@
 #!/bin/bash
 
 # adds "published: false" to meta
+# Ollama gpt-oss:20b
 
-count=0
-# limit=1
+DIR=${1:-.}          # default to current directory
+updated=0
 
-DIR=.
+for file in "$DIR"/*.md; do
+    [[ -f $file ]] || continue        # skip if glob expands empty
 
-if [ -n "$1" ]; then
-  DIR=$1
-fi
+    # Decide whether this file needs processing.
+    if grep -q '^\s*-\s*unpublished\s*$' "$file" ||
+       [[ $file == *-PRIVATE.md ]]; then
 
-if [ -d "$DIR" ]; then
+        perl -i -ne '
+            BEGIN { $in_front = 0 }              # are we inside front‑matter?
 
-  echo "processing $DIR/*.md"
+            # Skip the "- unpublished" line.
+            next if /^\s*-\s*unpublished\s*$/;
 
-  for file in "$DIR"/*.md
-  do
-    # if [[ $count -lt $limit ]]; then
+            # Detect opening "---".
+            if (/^---\s*$/ && ! $in_front) {
+                print;          # keep it
+                $in_front = 1;
+                next;
+            }
 
-      unpublish=false
+            # Detect closing '---'.
+            if (/^---\s*$/ && $in_front) {
+                print "published: false\n";
+                print;          # the closing line
+                $in_front = 0;
+                next;
+            }
 
-      while IFS= read -r line
-      do
-        if [[ $line == "- unpublished" ]]; then
-          # File has unpublished tag, so add published: false
-          echo "..processing $file"
-          unpublish=true
-        else
-          # File does not have unpublished tag; skip
-          :
-        fi
-      done < "$file"
+            print;              # any other line is printed unchanged
+        ' "$file"
 
-      # add new unpublished tag
-      if [[ $unpublish == true ]]; then
-        count=$((count + 1))
+        updated=$((updated + 1))
+    fi
+done
 
-        match='tags:'
-        insert='\n  - unpublished'
-
-        sed -i "" "s/$match/$match$insert/" "$file"
-      fi
-
-    # fi
-  done
-
-  echo "processed $count post(s)"
-
-else
-  echo "Error: $DIR does not exist"
-fi
+echo "Updated $updated file(s)."

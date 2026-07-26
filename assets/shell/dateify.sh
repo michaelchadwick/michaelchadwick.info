@@ -7,15 +7,15 @@ count=0
 
 DIR=.
 
-if [ -n "$1" ]; then
+if [ -n "${1}" ]; then
   DIR=$1
 fi
 
-if [ -d "$DIR" ]; then
+if [ -d "${DIR}" ]; then
 
-  echo "processing $DIR/*.md"
+  echo "processing ${DIR}/*.md"
 
-  for file in "$DIR"/*.md
+  for file in "${DIR}"/*.md
   do
     #if [[ $count -lt $limit ]]; then
 
@@ -23,17 +23,17 @@ if [ -d "$DIR" ]; then
 
       while IFS= read -r line
       do
-        if [[ $line == date* ]]; then
+        if [[ ${line} == date* ]]; then
           # File has date
           date=${line:6:10}
 
-          curdir=$(echo "$file" | cut -d "/" -f 1)
-          curfile=$(echo "$file" | cut -d "/" -f 2)
+          curdir=$(echo "${file}" | cut -d "/" -f 1)
+          curfile=$(echo "${file}" | cut -d "/" -f 2)
 
-          if [[ ! $curfile == $date* ]]; then
+          if [[ ${curfile} != ${date}* ]]; then
             # file doesn't start with date; grab and rename file
             # echo "found date: $date"
-            echo "..processing $file"
+            echo "..processing ${file}"
             rename=true
           fi
         else
@@ -41,23 +41,23 @@ if [ -d "$DIR" ]; then
           # echo "no date string found"
           :
         fi
-      done < "$file"
+      done < "${file}"
 
       # add date to front, e.g. file1.md -> 1999-01-05-file1.md
-      if [[ $rename == true ]]; then
+      if [[ ${rename} == true ]]; then
         count=$((count + 1))
 
-        curdir=$(echo "$file" | cut -d "/" -f 1)
-        curfile=$(echo "$file" | cut -d "/" -f 2)
+        curdir=$(echo "${file}" | cut -d "/" -f 1)
+        curfile=$(echo "${file}" | cut -d "/" -f 2)
 
-        mv "$file" "$curdir/$date-$curfile"
+        mv "${file}" "${curdir}/${date}-${curfile}"
       fi
 
     #fi
   done
 
-  echo "processed $count post(s)"
+  echo "processed ${count} post(s)"
 
 else
-  echo "Error: $DIR does not exist"
+  echo "Error: ${DIR} does not exist"
 fi
