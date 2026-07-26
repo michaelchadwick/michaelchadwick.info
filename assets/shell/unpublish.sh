@@ -3,18 +3,17 @@
 # adds "published: false" to meta
 # Ollama gpt-oss:20b
 
-DIR=${1:-.}          # default to current directory
+DIR=${1:-.}
 updated=0
 
 for file in "$DIR"/*.md; do
-    [[ -f $file ]] || continue        # skip if glob expands empty
+    [[ -f $file ]] || continue
 
-    # Decide whether this file needs processing.
     if grep -q '^\s*-\s*unpublished\s*$' "$file" ||
        [[ $file == *-PRIVATE.md ]]; then
 
         perl -i -ne '
-            BEGIN { $in_front = 0 }              # are we inside front‑matter?
+            BEGIN { $in_front = 0 }
 
             # Skip the "- unpublished" line.
             next if /^\s*-\s*unpublished\s*$/;
@@ -34,7 +33,7 @@ for file in "$DIR"/*.md; do
                 next;
             }
 
-            print;              # any other line is printed unchanged
+            print;
         ' "$file"
 
         updated=$((updated + 1))
