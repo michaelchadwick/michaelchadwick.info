@@ -1501,6 +1501,10 @@ footer#site-footer #logo-slogan a.plain {
   justify-content: space-between;
   margin-bottom: 2em;
 
+  &.no-prev {
+    justify-content: flex-end;
+  }
+
   @media (min-width: 768px) {
     flex-direction: row;
   }
