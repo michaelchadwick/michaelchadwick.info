@@ -6,8 +6,8 @@ tags: foo bar baz qux
 published: false
 ---
 
-This is the headline of an `unpublished`, but not `-PRIVATE`-ed, test post.
+This is the headline of an `unpublished`, but *NOT* `-PRIVATE`-ed, test post.
 
 <!--more-->
 
-This is the body of an `unpublished`, but not `-PRIVATE`-ed, test post.
+This is the body of an `unpublished`, but *NOT* `-PRIVATE`-ed, test post.
