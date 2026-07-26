@@ -10,7 +10,7 @@ The exciting conclusion to Fallout: New Vegas was finally within my grasp last n
 
 <!--more-->
 
-##### THE FATE OF NEW VEGAS
+## THE FATE OF NEW VEGAS
 
 _For the record, I played on Normal difficulty, Hardcore mode. Most of my time was spent with Rex and Veronica as companions (halfway through until end), and I was more or less Morally Good (except to the NCR and Legion, whom I slaughtered with reckless abandon in the finale)._
 
@@ -24,7 +24,7 @@ In the end, I went for an independent New Vegas. After catching up to Benny, the
 
 Now, **I&#8217;m in control**. And the credits roll, detailing the fate of all known significant players.
 
-##### WOT I THINK
+## WOT I THINK
 
 The header is stolen from [Rock, Paper, Shotgun](http://rockpapershotgun.com), but the conclusion is my own :-)
 
@@ -36,7 +36,7 @@ Hardcore mode is pretty much a joke, as well. The nomenclature chosen does not m
 
 One thing that bothered me about both this game and its immediate predecessor are the words. You know, the text spoken by characters you meet and interact with constantly. In general, dialogue was fine, as lines are recorded clearly and the writing is tight, wasting few words. The voice acting was satisfactory for the most part, but also really inconsistent. Some people, like Felicia Day, did great and seemed to have fun recording her lines. Lots of NPCs just seemed bored and had flat readings. I hate seeing a line that ends with an exclamation mark and not _hearing any exclamation_. Very few voice actors for NPCs were used so you hear the same actor **a lot**, even for named characters that are supposed to be unique. Also, the writers continue to use a lot of swearing that just seems immature and unnecessary. I have no problem with swearing itself, but it&#8217;s a tool that needs to be used effectively.
 
-##### FINALLY
+## FINALLY
 
 Wow. I&#8217;ve been on-and-off playing this game since late October 2010. I didn&#8217;t reach the level cap, I didn&#8217;t visit every location, and I didn&#8217;t do all quests. There&#8217;s a lot of game I didn&#8217;t touch. And it still took me 2.5 months and 80 game hours to play. Thus, this is a deep game. With such a deep, complex game, there&#8217;s bound to be some inconsistency and bugs, and F:NV has those. But it&#8217;s also extremely engrossing to me, and I love just being in its world. I was sad to finish it, because it meant my initial experience was now shaped and now that experience can only be added to or amended, but never truly relived.
 

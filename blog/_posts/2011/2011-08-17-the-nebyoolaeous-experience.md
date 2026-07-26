@@ -18,7 +18,7 @@ Yes, it&#8217;s going to have guitar, bass, and drums. It&#8217;s also going to 
 
 It doesn&#8217;t have a theme&#8230;_yet_. For something like _Average Town_ or _Ebben Flow_, there is a definite unifying theme, be it &#8220;make only chiptune music&#8221; or &#8220;write an RPG soundtrack&#8221;. Other times, I just have a bunch of ideas in my head at around the same time and those eventually, hopefully, get packaged together in that time-honored package of music called **the album**. This project may gain a theme later, but most likely it will just be a collection of tunes I think work together in sequence. Even if there&#8217;s no theme, the sequence of tracks is definitely important.
 
-##### THE PROCESS
+## THE PROCESS
 
 It&#8217;s entirely possible I&#8217;ve gone through this before, but every time I do, I feel like I&#8217;m getting closer and closer to formalizing it. There&#8217;s even a nice list for you to reference!
 
@@ -37,6 +37,6 @@ Before any of that happens, however, a riff or idea that gets stuck in my head w
 
 In the _good_ cases, if I find I still want to explore/expand/finish it after some time has passed and several listens go by, I&#8217;ll flesh out things by doing a live recording, or just add more to the synth/sample lines, especially if it&#8217;s not meant to have live guitar/bass. In the **awesome** cases this leads to the list above and a true member of the Nebyooverse gets added. Whether the idea comes to fruition or not, I&#8217;m still happy. The act of creation is really satisfying, pushed to a zen state by the realization of these _canon_ pieces.
 
-##### FOR THE ROAD
+## FOR THE ROAD
 
 I have four or five rough demos done so far. My favorite is the first track, which is heavily modeled after a session with drummer Russ and I jamming it to high heaven. It&#8217;s called &#8220;The Jam Bridge&#8221;, is a 12-bar blues piece in B, and I love it. Everyone else could deem it a colossal piece of crap and I&#8217;d still love it to bits. I will eventually feel this way about the rest of the album, and _that&#8217;s when I know it&#8217;s done_.

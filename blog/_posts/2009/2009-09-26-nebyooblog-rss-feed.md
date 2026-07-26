@@ -6,10 +6,6 @@ lj_itemid:
   - "2204"
 lj_permalink:
   - http://nebyoolae.livejournal.com/564232.html
-lj_picture_keyword:
-  - studio
-  - nebyoolae.com
-  - rss
 tags:
   - blog
   - feed

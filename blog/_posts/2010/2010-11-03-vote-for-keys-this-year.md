@@ -7,7 +7,7 @@ tags:
   - politics
 published: true
 ---
-##### ROCK BAND 3 KEYS
+## ROCK BAND 3 KEYS
 
 The new Rock Band introduces us to a keyboard controller. It&#8217;s a two-octave jobby and it&#8217;s pretty decent for $80. There protrudes a handle off its left side, and it comes with a strap so the transition to key_tar_ is easy and pleasing. That being said, I pretty much suck at using it.
 
@@ -19,7 +19,7 @@ The satisfaction of impressing people by playing on Expert Guitar for years now 
 
 I&#8217;ll keep at it, of course, because rhythm games are fun, the music is great, and I want to become more comfortable with the keyboard in general. However, once I get a Pro Guitar, that statement will most likely be modified a bit.
 
-##### ELECTION 2010
+## ELECTION 2010
 
 Yo voté ayer. It was thrilling! OK, not really.
 

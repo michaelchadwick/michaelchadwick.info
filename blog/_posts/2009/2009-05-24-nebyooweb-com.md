@@ -6,8 +6,8 @@ lj_itemid:
   - "2189"
 lj_permalink:
   - http://nebyoolae.livejournal.com/560602.html
-  - nebyooweb.com
 tags:
+  - nebyooweb.com
   - webdev
 published: true
 ---

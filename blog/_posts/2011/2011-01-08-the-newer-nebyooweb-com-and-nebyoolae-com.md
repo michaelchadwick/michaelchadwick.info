@@ -27,7 +27,7 @@ The contact form is pretty much the same, but it works with AJAX now, giving bet
 
 All in all, I&#8217;m happy with the new look and added functionality. Using CSS3 is fun because it allows me to make rounded corners and shadows without having to make images in Photoshop. I&#8217;m not a great visual artist, so any programmatic tools to get around having to make little graphics is helpful.
 
-##### NEBYOOLAE.COM
+## NEBYOOLAE.COM
 
 <img aria-describedby="caption-attachment-4008" data-attachment-id="4008" data-orig-file="{{ site.baseurl }}/assets/images/posts/2011/01/ss_nebyoolae.png" data-orig-size="845,561" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="ss_nebyoolae" data-image-description="<p>Nebyoolae.com screenshot</p>
 " data-image-caption="<p>Nebyoolae.com</p>
@@ -45,7 +45,7 @@ The tag cloud was always a point of contention. Horizontal lists made things dif
 
 The studio information page hasn&#8217;t changed, but the about page&#8217;s overall length got truncated, to minimize scrolling. I buffed up the description a bit, but made the gallery slideshow smaller. Images now change with a minor fade.
 
-##### PLANS FOR THE FUTURE
+## PLANS FOR THE FUTURE
 
 One thing that was not included in these revisions was any kind of significant update to the administrative side. The public-facing part was most important, since that&#8217;s what everyone sees, so I made it the focus.
 

@@ -6,9 +6,9 @@ lj_itemid:
   - "2232"
 lj_permalink:
   - http://nebyoolae.livejournal.com/571438.html
+tags:
   - blogging
   - livejournal
-tags:
   - blogging
   - livejournal
   - the-end

@@ -6,8 +6,6 @@ lj_itemid:
   - "2227"
 lj_permalink:
   - http://nebyoolae.livejournal.com/570210.html
-lj_picture_keyword:
-  - blah
 tags:
   - art
   - attention
@@ -26,7 +24,7 @@ Said friend asked for me to expand on this in an LJ post. I feel like the best w
 
 <!--more Competing in the age of the Internet-->
 
-##### COMPETING IN THE AGE OF THE INTERNET
+## COMPETING IN THE AGE OF THE INTERNET
 
 Competition brings to mind a contest, wherein there is an established forum for battle, as far as writing notes and recording them can be a battle. As cool as it might be to have a Collosseum devoted to such ends, what reality shows is that it&#8217;s more of an asynchronous test of egos.
 
@@ -50,7 +48,7 @@ Feel free to visit [http://nebyoolae.com](http://nebyoolae.com) and give a liste
 
 And what do I do? [I create music](http://nebyoolae.com).
 
-##### CONTINUOUSLY ACCEPTING MEDIOCRITY
+## CONTINUOUSLY ACCEPTING MEDIOCRITY
 
 Whether you end up going to my website, listening to what I create, and/or commenting on it or not, I want you to know that I have a problem with composing and recording: I suck. OK, I don&#8217;t really suck, but I&#8217;m often not happy with my final output. This could be a product of a lousy handle on musical theory, less-than-virtuosic talent, or subpar recording techniques. Most likely, it&#8217;s all of the above, but in the end, I let it go, anyway. I let my output be mediocre. I just want to create. I don&#8217;t want to spend endless hours tweaking EQ and plugins to make it sound as good as a professionally-recorded piece of music. I want some new tunes to listen to because my old stuff has been played out.
 
@@ -64,6 +62,6 @@ While doing things in actual General MIDI when I first started has given way to 
 
 Also, what do I hope to achieve? I don&#8217;t want to be a traveling rock star. I don&#8217;t necessarily want to direct an orchestra. I want some intangible respect that comes from being awesome without knowing what that means or how to get it. The Internet has blurred the distinctions of amateur and professional when a Hollywood blockbuster&#8217;s orchestral score could be as important as a retro 8-bit reimagining of &#8220;Dark Side of the Moon&#8221;. All I know is that the allure of music-making is as strong as ever, and yet when I look back on my record, there&#8217;s still too much of my output that seems negligible and amateurish. Surely, spending this much time on a pursuit (however many hours shy of that magical 10,000 I am) should&#8217;ve improved my prowess a significant amount, right? Then why do I still feel shame at even talking about what I love to do with others who don&#8217;t already know about it (and even then, I hesitate)?
 
-##### FOR THE ROAD
+## FOR THE ROAD
 
 Ugh. In the end, 140 characters was probably more than enough characters to spill on this.

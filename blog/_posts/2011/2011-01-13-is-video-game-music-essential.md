@@ -18,7 +18,7 @@ I am now writing a blog post responding to both.
 
 <!--more-->
 
-##### THE ANALYSIS
+## THE ANALYSIS
 
 The former article recounts the experience of one person who went from lionizing video game music as canon to the video game playing experience, holding it as sacrosanct, to someone who now admits he will take the risk of dismissing it to multi-task with other audio sources, or none at all, rendering video game composers &#8220;non-essential&#8221;.
 
@@ -36,7 +36,7 @@ Music holds a special place in my heart and mind, as it can soothe, excite, plac
 
 Games are unique in that they not only give you sensory interactions of sight and hearing, like TV or movies, but they also give you control. Most of the time, that control becomes the primary reason for playing. We enjoy entering a world with rules and interacting with them. The graphics can make us want to see more or less of it. The writing can make us want to pay more or less attention to it. The music and sound can make us want to listen to more or less of it. These all come together to make a very unique, immersive experience. Take away any one of them and the whole thing is diminished in some way. It probably won&#8217;t invalidate the game entirely, but it is now lessened significantly.
 
-##### THE CONCLUSION
+## THE CONCLUSION
 
 To reiterate, is video game music essential? This broad question can only be answered in the context of a different question: **was the specific video game designed to be enjoyed with particular music played along with it, and do you wish to have that prescribed experience**? If so, then yes, it&#8217;s essential.
 

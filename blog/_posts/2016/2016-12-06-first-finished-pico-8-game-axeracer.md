@@ -15,11 +15,11 @@ This post is not meant to go over every detail of the game, but just to hit on s
 
 Axeracer was built in [Pico-8](https://lexaloffle.com/pico-8.php), which allows for all the code, graphics, and sound to be in one nice package. Of course, there are graphical, aural, and input restrictions, by design, so it can make it both easy and difficult to work in. My month-long endeavor to understand the system may not have delivered flashy visuals or sound, but getting it to where it is today took a lot of work, regardless.
 
-#### Humble Beginnings
+## Humble Beginnings
 
 To get a feel for things, I made a bunch of prototypes: arkanoid, pong, shooter, and snake. Via online tutorials and my own fiddling, I got the gist of how a Pico-8 game came together, what with sprites and collisions and movement. One particular prototype that kept me coming back to was an overheard racing game, and it reminded me of playing Super Off Road, Spy Hunter, and R.C. Pro-Am back in the day. This would be what I would flesh out.
 
-#### Game Basics
+## Game Basics
 
 After all this tinkering, I came to some general conclusions about what's necessary for a finished game:
 
@@ -38,9 +38,9 @@ In general, all Pico-8 projects use two main system calls to rock that game loop
 
 Everything else in a `.p8` file's code section is just variables and helper methods to those ends. All variables are global unless they're prefixed with `local`, so you generally just stick them all up front. It's not modern OOP programming, for sure. In fact, it's a mess of spaghetti code in a single file. However, it's like being able to program in a virtual NES-in-a-box in 2016, so that's cool.
 
-#### Intermediate Goings-On
+## Intermediate Goings-On
 
-##### Movement
+### Movement
 
 The simplest game's avatar would just be a single pixel, but it could also be a shape, like a rectangle or circle. Regardless, its basic 2d movement capabilities are basically covered by the following:
 
@@ -57,9 +57,9 @@ Pico-8, like most game development tools, allows for _sprites_, which are just p
 
 The next level of logic is acceleration, as simply "teleporting" an avatar around by changing its position by a fixed amount doesn't look real. So, as you hold down a button, the amount that your avatar changes position (their velocity) increases (acceleration). Release the button, and the velocity slows down (deceleration). All of that is present in Axeracer, and is pretty standard implementation.
 
-#### The Hard Stuff
+## The Hard Stuff
 
-##### Sprite Rotation
+### Sprite Rotation
 
 Fortunately, for realism, the avatar you control isn't just one sprite always facing the same direction. Unfortunately, _rotating_ that sprite so it faces the direction you are moving was beyond my capacity alone, so I had to bring in [help](https://www.lexaloffle.com/bbs/?tid=2189). Thanks to Pico-8 BBS user _movAX13h_'s brilliant Pico Wheels game that had this amazing bit of code in it:
 
@@ -83,7 +83,7 @@ end
 
 Axeracer doesn't allow for jumping (yet), so I didn't need that `shadow` part, but the rest was golden. It essentially redraws the sprite as you rotate it, on-the-fly. Now I could turn my car around and around, and when it went forward, the front part of your avatar followed suit. Everything looked and acted much more realistic now. This was a huge part of making this particular prototype one I would end up expanding upon.
 
-##### Sprite Zooming
+### Sprite Zooming
 
 As the project was reaching its end, I realized I wanted to add a countdown before you got control of your avatar (you know, 3..2..1..GO! kind of thing). You'd get to see these big numbers zooming in all dramatically, like I remember from other driving/racing games. Figuring out how to redraw sprites on the fly like with rotation was another roadblock, however.
 
@@ -106,12 +106,12 @@ Using this wrapper `zspr()` method, it was a lot easier to figure out how to ach
 
 <p><img alt="3..2..1..GO!" src="{{ site.baseurl }}/assets/images/posts/2016/12/axeracer_countdown.gif" width="256" height="256" /></p>
 
-#### Wrapping Up
+## Wrapping Up
 
 Obviously, just having the one scene of a race track would be a little incomplete, so I also added a title screen scene which the game boots to, as well as _lose_ and _win_ conditions that just pop up a little dialog with some explanatory text. All of these details turn a _prototype_ into a **game**, in my opinion. Also, I added some music and sound FX to appropriate places to jazz it all up.
 
 Another cool thing about Pico-8 is that it easily allows for screenshots and animated GIFs of your game, so documenting and marketing things are a snap. Thus, I put it up on [Game Jolt](https://gamejolt.com/games/axeracer/215403) for fun.
 
-#### For the Road
+## For the Road
 
 I can definitely see using Pico-8 for quick prototypes of game ideas. Just being able to jump right into working code, especially now that I have templates to draw upon, really expedites the process. It's super easy to make lo-fi sprites and sounds, which I love. However, my next major project will be in [Stencyl](https://stencyl.com) for a game jam starting in a few days. Stencyl is a more modern GUI tool that's more complicated and allows for higher fidelity of graphics and sound and input. I look forward to seeing what it can do.

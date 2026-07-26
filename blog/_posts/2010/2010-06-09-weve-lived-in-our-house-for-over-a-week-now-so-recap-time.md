@@ -1,5 +1,4 @@
 ---
-published: false
 title: 'We&#8217;ve Lived in Our House For Over a Week Now, So Recap Time'
 date: 2010-06-09T10:39:00-07:00
 layout: post
@@ -23,7 +22,7 @@ This is our story.
 
 <!--more-->
 
-##### THE MOVE
+## THE MOVE
 
 ![Music room in new home](http://lh3.ggpht.com/_9Yiv4isc_w0/TA8e8gDZVfI/AAAAAAAACZU/P0dIYzGAUhw/s288/09_musicroom2.jpg)]
 
@@ -37,7 +36,7 @@ Saturday brought Robyn&#8217;s parents and brother and a van, so our vehicleload
 
 Sunday made that a reality. We got the requisite, large moving truck and, with a little help from our friends, got most of the remnants packed. It&#8217;s always kind of empowering to drive a Big Truck versus my Little Car, but it definitely takes more coordination to move it into certain spaces, so a big thanks to Josh for helping out. We got everything out and into the new place in a Depeche Mode, which included a stop at Costco for our new Cal King bed and pizza. After resting to consume said pizza, washed down with beer, our compatriots eventually exited and we commenced to setting up the place.
 
-##### WE LIVE HERE NOW
+## WE LIVE HERE NOW
 
 ![Dining room at new home](http://lh6.ggpht.com/_9Yiv4isc_w0/TA8fFjlEH_I/AAAAAAAACaA/b-twLDthf0U/s288/17_diningroom.jpg)
 
@@ -54,7 +53,7 @@ As for bad things? A list for ya:
 
 Overall, we&#8217;re pretty happy with it, as appliances and plumbing and doors all function properly. It&#8217;s nice and new, just as we asked. The negatives are basically annoyances, and not deal-breakers by any means. They&#8217;re just more annoying than normal because WE OWN THIS PLACE OMG, and that&#8217;s a new feeling I&#8217;m not accustomed to by any means.
 
-##### FOR THE ROAD
+## FOR THE ROAD
 
 Want pictures? [BAM](http://picasaweb.google.com/michael.chadwick/NewHouse)
 Want videos? [1st Floor](http://www.youtube.com/watch?v=fjY2_fbxmlk), [2nd Floor](http://www.youtube.com/watch?v=jHgVtU4hnM8), [3rd Floor](http://www.youtube.com/watch?v=t3DTPz1FZaY)

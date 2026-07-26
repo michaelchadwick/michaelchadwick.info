@@ -11,9 +11,6 @@ enclosure:
     http://pureyellow.net/releases/extras/grasshoppers.mp3
     5248473
     audio/mpeg
-
-  - music
-  - pure-yellow-colour
 tags:
   - music
   - new-release
