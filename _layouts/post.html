@@ -11,7 +11,7 @@ tags: fa fa-solid
     {% assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60 %}
     {% assign daysSince = hoursSince | divided_by: 24 %}
 
-    <span class="post-date dt-published" title="{{ page.date | date: "%b %-d, %Y" }}" datetime="{{ page.date | date_to_xmlschema }}">
+    <span class="post-date dt-published" title='{{ page.date | date: "%b %-d, %Y" }}' datetime="{{ page.date | date_to_xmlschema }}">
       {% if daysSince > 365 %}
         Posted: {{ page.date | timeago }}
       {% else %}
