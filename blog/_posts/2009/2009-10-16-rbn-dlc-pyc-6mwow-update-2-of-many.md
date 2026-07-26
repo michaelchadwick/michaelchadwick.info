@@ -6,21 +6,7 @@ lj_itemid:
   - "2208"
 lj_permalink:
   - http://nebyoolae.livejournal.com/565298.html
-lj_picture_keyword:
-  - laissez
-  - gaming
-  - pure-yellow-colour
-  - rock-band
-  - rock-band network
-tags:
-  - gaming
-  - midi
-  - music-composition
-  - note-charts
-  - pure-yellow-colour
-  - reaper
-  - rock-band
-  - rock-band-network
+tags: gaming midi music-composition note-charts pure-yellow-colour reaper rbn
 published: true
 ---
 I didn&#8217;t think I&#8217;d get there, but Expert Guitar and Vocals are pretty done.

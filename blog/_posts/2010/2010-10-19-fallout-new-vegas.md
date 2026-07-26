@@ -2,12 +2,7 @@
 title: 'Fallout: New Vegas'
 date: 2010-10-19T10:41:46-07:00
 layout: post
-tags:
-  - childhood
-  - fallout
-  - family
-  - friends
-  - gaming
+tags: childhood fallout family friends gaming
 published: true
 ---
 I&#8217;ve (video) gamed for a long time. You know how I know? Cuz the NES just celebrated its **25th** anniversary.

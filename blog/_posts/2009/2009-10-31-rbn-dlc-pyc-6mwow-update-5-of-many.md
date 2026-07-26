@@ -6,21 +6,7 @@ lj_itemid:
   - "2211"
 lj_permalink:
   - http://nebyoolae.livejournal.com/566143.html
-lj_picture_keyword:
-  - laissez
-  - gaming
-  - pure-yellow-colour
-  - rock-band
-  - rock-band network
-tags:
-  - gaming
-  - midi
-  - music-composition
-  - note-charts
-  - pure-yellow-colour
-  - reaper
-  - rock-band
-  - rock-band-network
+tags: gaming midi music-composition note-charts pure-yellow-colour reaper rbn
 published: true
 ---
 It&#8217;s been a while, everybody, but I finally got back on track with everything.

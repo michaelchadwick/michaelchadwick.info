@@ -6,21 +6,7 @@ lj_itemid:
   - "2210"
 lj_permalink:
   - http://nebyoolae.livejournal.com/565882.html
-lj_picture_keyword:
-  - laissez
-  - gaming
-  - pure-yellow-colour
-  - rock-band
-  - rock-band network
-tags:
-  - gaming
-  - midi
-  - music-composition
-  - note-charts
-  - pure-yellow-colour
-  - reaper
-  - rock-band
-  - rock-band-network
+tags: gaming midi music-composition note-charts pure-yellow-colour reaper rbn
 published: true
 ---
 Another late night, another PYC RBN update.

@@ -6,21 +6,7 @@ lj_itemid:
   - "2212"
 lj_permalink:
   - http://nebyoolae.livejournal.com/566314.html
-lj_picture_keyword:
-  - laissez
-  - gaming
-  - pure-yellow-colour
-  - rock-band
-  - rock-band network
-tags:
-  - gaming
-  - midi
-  - music-composition
-  - note-charts
-  - pure-yellow-colour
-  - reaper
-  - rock-band
-  - rock-band-network
+tags: gaming midi music-composition note-charts pure-yellow-colour reaper rbn
 published: true
 ---
 Much progress, however ancillary, has been made tonight.

@@ -2,14 +2,7 @@
 title: NaNoWriMo? No. NaBloPoMo? Sho.
 date: 2010-11-02T08:35:37-07:00
 layout: post
-tags:
-  - blogging
-  - domestic
-  - fallout
-  - gaming
-  - nablopomo
-  - nanowrimo
-  - robyn
+tags: blogging domestic fallout gaming nablopomo nanowrimo robyn
 published: false
 ---
 Spurned on by my wife, who is being spurned on by a website, I am dutifully creating a blog post again, one day after my last.

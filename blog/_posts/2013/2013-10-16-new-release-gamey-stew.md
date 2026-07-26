@@ -2,7 +2,7 @@
 title: 'New Release: Gamey Stew'
 date: 2013-10-16T09:55:23-07:00
 layout: post
-tags: announcement cover gamey-stew guitar instrumental-guitar music-composition music-performance new-release remix video-games
+tags: announcement cover gamey-stew guitar instrumental-guitar music-composition music-performance new-release remix
 headerImage: posts/2013/10/gamey_stew_cover.png
 published: true
 ---

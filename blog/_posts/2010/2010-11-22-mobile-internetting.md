@@ -2,9 +2,7 @@
 title: Mobile Internetting
 date: 2010-11-22T23:48:05-08:00
 layout: post
-tags:
-  - fallout
-  - gaming
+tags: fallout gaming
 published: true
 ---
 I can update from my phone. The future is&#8230;yet to be written. The present, however, is decidedly super great pants ahoy.
