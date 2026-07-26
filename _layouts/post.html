@@ -12,11 +12,7 @@ tags: fa fa-solid
     {% assign daysSince = hoursSince | divided_by: 24 %}
 
     <span class="post-date dt-published" title='{{ page.date | date: "%b %-d, %Y" }}' datetime="{{ page.date | date_to_xmlschema }}">
-      {% if daysSince > 365 %}
-        Posted: {{ page.date | timeago }}
-      {% else %}
-        {{ page.date | date: site.date_YYYYMMDD_dash | slice: 0, 10 }}
-      {% endif %}
+      {{ page.date | date: site.date_YYYYMMDD_dash | slice: 0, 10 }} ({{ page.date | timeago }})
     </span>
     <data class="u-url" value="{{ page | absolute_url }}"></data>
     {% unless page.published == true %}
