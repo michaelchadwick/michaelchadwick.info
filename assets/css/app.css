@@ -1178,7 +1178,6 @@ footer#site-footer #logo-slogan a.plain {
 @media (min-width: 768px) {
   .post-header {
     margin-bottom: 1em;
-    margin-top: 2em;
   }
 }
 .post-header h1 {
@@ -1562,6 +1561,31 @@ footer#site-footer #logo-slogan a.plain {
 
     &:hover {
       color: var(--link-color);
+    }
+  }
+
+  &.mini {
+    gap: 1rem;
+    margin-bottom: 0;
+
+    .card {
+      box-shadow: none;
+      flex-direction: row;
+      gap: 0.35rem;
+      justify-content: space-evenly;
+      padding: 1rem;
+      width: 100%;
+
+      .page-nav,
+      .page-title,
+      .page-date {
+        font-size: 1.3rem;
+        line-height: 1;
+      }
+
+      &.post-nav-next {
+        justify-content: right;
+      }
     }
   }
 }
