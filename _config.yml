@@ -33,7 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-loading-lazy
   - jekyll-paginate-v2
-  # - jekyll-tagging # here for ref; uncommenting breaks jekyll build for some reason
+  # - jekyll-tagging # here for ref; uncommenting breaks jekyll build
   - jekyll-thumbnail-img
   - jekyll-timeago
   - jemoji
@@ -53,6 +53,9 @@ pagination:
   per_page: 20
   sort_field: 'date'
   sort_reverse: true
+  trail:
+    before: 5
+    after: 5
 
 # Build settings
 markdown: kramdown
