@@ -273,7 +273,13 @@ switch ($site) {
     $STEAM_API_URL = 'https://api.steampowered.com';
     $STEAM_API_KEY = getenv('STEAM_WEB_API_KEY');
     $STEAM_API_ID = getenv('STEAM_ID_64');
-    $STEAM_GET_GAMES_ROUTE = '/IPlayerService/GetRecentlyPlayedGames/v1';
+
+    # https://partner.steamgames.com/doc/webapi
+    if (isset($arg1) && $arg1 == 'owned') {
+      $STEAM_GET_GAMES_ROUTE = '/IPlayerService/GetOwnedGames/v1';
+    } else {
+      $STEAM_GET_GAMES_ROUTE = '/IPlayerService/GetRecentlyPlayedGames/v1';
+    }
 
     $client = new Client(['base_uri' => $STEAM_API_URL, 'timeout'  => 5.0]);
 
@@ -284,6 +290,8 @@ switch ($site) {
         'query' => [
           'key' => $STEAM_API_KEY,
           'steamid' => $STEAM_API_ID,
+          'include_appinfo' => true,
+          'include_played_free_games' => true,
           'format' => 'json'
         ]
       ]);
