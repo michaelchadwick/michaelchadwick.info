@@ -930,8 +930,7 @@ footer#site-footer #logo-slogan a.plain {
     &.audio ul.links,
     &.writing ul.links {
       li {
-        font-size: 1.75rem;
-        width: 100px;
+        font-size: 1.65rem;
         word-break: break-word;
 
         a,
