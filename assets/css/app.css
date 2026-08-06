@@ -817,6 +817,12 @@ footer#site-footer a:visited:hover {
   border: 1px solid var(--link-color);
   color: var(--link-color);
   text-decoration: none;
+
+  &:hover {
+    svg path {
+      fill: var(--neutral-black);
+    }
+  }
 }
 
 footer#site-footer a.plain,
@@ -860,6 +866,10 @@ footer#site-footer .soundcloud-icon-svg {
   height: 16px;
   position: relative;
   top: 3px;
+
+  path {
+    fill: var(--neutral-white);
+  }
 }
 
 footer#site-footer #logo-slogan,
