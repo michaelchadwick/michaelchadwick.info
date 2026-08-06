@@ -889,21 +889,12 @@ footer#site-footer #logo-slogan a.plain {
 
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 50% 50%; /* Two columns, each 50% */
-    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
     width: 100%;
   }
 
   .row {
-    @media (min-width: 768px) {
-      justify-self: auto;
-    }
-
-    &.projects h2 {
-      margin-bottom: 1rem;
-    }
-
     h2 {
       font-weight: 700;
     }
@@ -1029,6 +1020,10 @@ footer#site-footer #logo-slogan a.plain {
       }
     }
   }
+}
+
+.projects p {
+  margin-bottom: 1em;
 }
 
 /* Base */
