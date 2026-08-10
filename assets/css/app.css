@@ -766,6 +766,10 @@ footer#site-footer p {
 footer#site-footer p {
   margin-bottom: 5px;
 }
+footer#site-footer a.compact {
+  padding-bottom: 0;
+  padding-top: 0;
+}
 
 footer {
   border-top: 1px solid var(--neutral-gray);
@@ -860,13 +864,19 @@ footer#site-footer #site-bio .cols {
 footer#site-footer .github-icon-svg,
 footer#site-footer .masto-icon-svg,
 footer#site-footer .linkedin-icon-svg,
-footer#site-footer .soundcloud-icon-svg {
+footer#site-footer .soundcloud-icon-svg,
+footer#site-footer .tools-icon-svg {
   display: inline-block;
   width: 16px;
   height: 16px;
   position: relative;
   top: 3px;
+}
 
+footer#site-footer .github-icon-svg,
+footer#site-footer .masto-icon-svg,
+footer#site-footer .linkedin-icon-svg,
+footer#site-footer .soundcloud-icon-svg {
   path {
     fill: var(--neutral-white);
   }
