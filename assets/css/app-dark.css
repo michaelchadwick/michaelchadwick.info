@@ -64,6 +64,11 @@ body.dark-theme {
     background: #111111;
     color: #fcfcfc;
   }
+  body.dark-theme .post pre,
+  body.dark-theme .post code {
+    background-color: #111111;
+    border-color: #aaaaaa;
+  }
   body.dark-theme .overlay {
     background: rgba(120, 120, 120, 0.8);
   }
@@ -74,6 +79,9 @@ body.dark-theme {
   body.dark-theme #search-container input {
     background: #222222;
     color: #ffffff;
+  }
+  body.dark-theme #search-container #results-container {
+    background: #222222;
   }
   body.dark-theme footer#site-footer p {
     color: #f3f3f3;
