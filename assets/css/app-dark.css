@@ -86,6 +86,11 @@ body.dark-theme {
   body.dark-theme footer#site-footer p {
     color: #f3f3f3;
   }
+  body.dark-theme footer#site-footer .tools-icon-svg {
+    path {
+      fill: var(--neutral-white);
+    }
+  }
   /*
   body.dark-theme ul.links li {
     background-color: #282828;
