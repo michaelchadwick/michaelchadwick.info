@@ -110,6 +110,11 @@ body.dark-theme header.header-scrolled {
     background: #000000ee;
   }
 
+body.dark-theme div#unpub-indicator.published,
+body.dark-theme div#env-indicator {
+  background-color: #28962f;
+}
+
 body.dark-theme button#theme-toggler {
   background-color: var(--bg-color);
   color: var(--text-color);

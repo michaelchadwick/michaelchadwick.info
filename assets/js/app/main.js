@@ -3,8 +3,6 @@
 /* global MCInfo */
 /* eslint-disable no-undef */
 
-let theme = 'light'
-
 // find links and change their <li> background to be their favicon
 const faviconLinks = document.querySelectorAll('ul.links li.dynamic a.favicon')
 
@@ -75,35 +73,33 @@ const themeToggler = document.querySelector('#theme-toggler')
 const imgThemeToggler = document.querySelector('#theme-toggler span.theme-image')
 const lblThemeToggler = document.querySelector('#theme-toggler span.theme-label')
 const headerScrolled = document.querySelector('header.header-scrolled')
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
-const savedTheme = localStorage.getItem('mcinfo-theme')
 
+let theme
 let bodyClasses = document.body.classList
 bodyClasses.remove(['dark-theme', 'light-theme'])
 
 // check system color theme first
-if (prefersDarkScheme.matches) {
-  bodyClasses.add('dark-theme')
-  bodyClasses.remove('light-theme')
-  imgThemeToggler.innerHTML = '🌙'
-} else {
-  bodyClasses.add('light-theme')
-  bodyClasses.remove('dark-theme')
-  imgThemeToggler.innerHTML = '☀️'
-}
-
-// then check theme toggler
-if (themeToggler) {
-  themeToggler.style.display = 'inline-block'
-  if (savedTheme == 'dark') {
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
+const setColorScheme = (e) => {
+  if (e.matches) {
     bodyClasses.add('dark-theme')
     bodyClasses.remove('light-theme')
     imgThemeToggler.innerHTML = '🌙'
+    theme = 'dark'
   } else {
     bodyClasses.add('light-theme')
     bodyClasses.remove('dark-theme')
     imgThemeToggler.innerHTML = '☀️'
+    theme = 'light'
   }
+}
+
+setColorScheme(prefersDarkScheme)
+prefersDarkScheme.addEventListener('change', setColorScheme)
+
+// then check theme toggler
+if (themeToggler) {
+  themeToggler.style.display = 'inline-block'
 }
 
 let lastKnownScrollPosition = 0
@@ -130,8 +126,6 @@ MCInfo.addEventHandlers = () => {
 
     // update text inside toggler
     imgThemeToggler.innerHTML = theme == 'light' ? '☀️' : '🌙'
-
-    localStorage.setItem('mcinfo-theme', theme)
   })
 
   window.onresize = MCInfo._handleResize
