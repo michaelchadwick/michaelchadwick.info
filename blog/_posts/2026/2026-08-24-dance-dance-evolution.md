@@ -7,7 +7,7 @@ headerImage: posts/2026/dance_dance_evolution.png
 headerImageCaption: 'Maximizer, the best song from the 8th Mix (Extreme 2).'
 image: posts/2026/dance_dance_evolution.png
 tags: ddr exercise mini-pc raspberry-pi
-published: false
+published: true
 ---
 
 {{ page.description }}
