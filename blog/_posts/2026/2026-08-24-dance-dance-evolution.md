@@ -52,7 +52,7 @@ I excitedly downloaded OutFox and double-clicked the icon. A brief glimpse of a 
 
 **Strike 2**.
 
-Despite really initially liking the hacking aspect of a RPi-powered DDR machine, the hacking was not going anywhere, and I had reached my limit. Ordering a newer RPi was an option, but I feared I'd run into similar issues, and so decided to order a mini-PC running Windows 11. I got it up and running, installed OutFox, and...
+Despite really initially liking the hacking aspect of a RPi-powered DDR machine, the hacking was not going anywhere, and I had reached my limit. Ordering a newer RPi was an option, but I feared I'd run into similar issues, and so decided to order a [mini-PC](https://www.amazon.com/dp/B0BWDJDMP8) running Windows 11. I got it up and running, installed OutFox, and...
 
 **~~Strike 3~~WINNER!**
 
@@ -65,3 +65,5 @@ It's not especially fast (setup took seemingly forever just to get to a desktop)
 And that brings us to the present. I started on my at-home DDR journey in my 20s. I was lighter, more agile, and had more stamina. I'm in my 40s now and I'm...not as much any of that. However, once my new setup was complete, the nascent skills came back and the muscle memory kicked in all the same. I just gotta work on getting back the ability to play for 1-2 hours regularly without completely dying.
 
 I'm thinking of re-adding the two custom DDR songs I made for two of my original songs, but maybe cleaning them up so they are more danceable (I created them using a computer and tested them with a keyboard, and they've never been quite idiomatic when it comes to actually dancing). I have so many more original songs I could turn into DDR songs now, too, so maybe I'll get back into the custom thing. It's exciting to re-open this chapter of my life, and I really hope it helps me drop some weight, because that's the most important thing to me right now, besides just having fun and enjoying "working out" again.
+
+(*Edit 2026-08-24*: I ordered a [Creative Sound Blaster GS3 soundbar](https://www.amazon.com/dp/B0CTHBSG6X), and it helps with actually getting some proper bass output, which is crucial for rhythm games)
