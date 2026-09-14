@@ -44,9 +44,17 @@ tags: fa fa-solid
         <div><strong>UNPUBLISHED</strong></div>
         {% endif %}
 
-        <span class="post-date dt-published" datetime="{{ post.date | date_to_xmlschema }}"> {{ post.date | date: site.date_YYYYMMDD_dash }} </span>
+        <div class="post-date-title">
+          <div class="cal-block">
+            <div class="cal-block-month">{{ post.date | date: site.date_MON }}</div>
+            <div class="cal-block-day">{{ post.date | date: site.date_DAY }}</div>
+          </div>
+          <div class="date-title">
+            <span class="post-date dt-published" datetime="{{ post.date | date_to_xmlschema }}"> {{ post.date | date: site.date_YYYYMMDD_dash }} </span>
 
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+          </div>
+        </div>
 
         {% assign sorted_tags = post.tags | sort %}
 
