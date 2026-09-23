@@ -359,7 +359,7 @@ MCInfo.SiteApi.PODBEAN = function (type = 'latest') {
           html += `\t\t<button type="button" id="player-toggle${ep.id}" onclick="createPlayer('${ep.id}', '${ep.player_url}')">`
           html += `\t\t\t<img src="/assets/images/play.svg" alt="Toggle Player" title="Toggle Player">`
           html += `\t\t</button>`
-          html += `\t\t<a class="link" href="${ep.permalink_url}" title="${epTitle}}">`
+          html += `\t\t<a class="link" href="${ep.permalink_url}" title="${epTitle}">`
           html += `\t\t\t${ep.title.substring(20)}`
           html += '\t\t</a>'
           html += '\t</div>'
