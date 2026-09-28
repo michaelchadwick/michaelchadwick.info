@@ -131,6 +131,11 @@ h6 {
   isolation: isolate;
 }
 
+/* hide apiData stuff if no js */
+.apiData {
+  display: none;
+}
+
 /* FOUNDATIONAL */
 
 body {
@@ -1022,6 +1027,10 @@ footer#site-footer #logo-slogan a.plain {
     &.audio ul.links li {
       &.dynamic {
         display: list-item;
+
+        &.featured {
+          list-style-image: url(/assets/icons/favicon-32x32.png);
+        }
       }
 
       span {
@@ -1029,12 +1038,16 @@ footer#site-footer #logo-slogan a.plain {
         padding-left: 0;
 
         @media (min-width: 768px) {
-          bottom: 40px;
           display: block;
           font-size: 2.25rem;
-          margin-left: 0.8rem;
-          padding-left: 3em;
+          padding-left: 2em;
           position: relative;
+
+          &.nudged {
+            bottom: 40px;
+            margin-left: 0.8rem;
+            padding-left: 3em;
+          }
         }
       }
     }

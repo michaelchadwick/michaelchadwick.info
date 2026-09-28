@@ -3,14 +3,22 @@
 /* global MCInfo */
 /* eslint-disable no-undef */
 
+// find all .apiData elements and turn them on
+const apiDataElems = document.querySelectorAll('.apiData')
+if (apiDataElems) {
+  apiDataElems.forEach((elem) => {
+    elem.style.display = 'block'
+  })
+}
+
 // find links and change their <li> background to be their favicon
-const faviconLinks = document.querySelectorAll('ul.links li.dynamic a.favicon')
+const faviconListItems = document.querySelectorAll('ul.links li.dynamic')
 
-faviconLinks.forEach((f) => {
-  const parentStyle = f.parentElement.style
-  const hostname = f.href
+faviconListItems.forEach((fli) => {
+  const link = fli.querySelector('a')
+  const hostname = link.href
 
-  let iconSize = f.dataset.size ?? 16
+  let iconSize = link.dataset.size ?? 16
   let url = ''
 
   // exceptions
@@ -45,7 +53,12 @@ faviconLinks.forEach((f) => {
     }
   }
 
-  parentStyle.listStyleImage = `url(${url})`
+  fli.style.listStyleImage = `url(${url})`
+
+  const spanLabel = fli.querySelector('span')
+  if (spanLabel) {
+    spanLabel.classList.add('nudged')
+  }
 })
 
 const indentedLists = document.querySelectorAll('ul.links li ul li')
