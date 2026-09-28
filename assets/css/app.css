@@ -133,7 +133,7 @@ h6 {
 
 /* hide apiData stuff if no js */
 .apiData {
-  display: none;
+  display: none !important;
 }
 
 /* FOUNDATIONAL */

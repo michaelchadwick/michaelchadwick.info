@@ -6,11 +6,17 @@ style: htg
 <h1>Hacking the Grepson Episodes</h1>
 <a href="/projects#audio">&lt;&lt; back to projects</a>
 
-<div id="episode-meta">
+<noscript>
+  <p style="padding: 1em 0;">
+    Hacking the Grepson episodes are pulled from a remote API via Javascript, but your device has disabled it. Thus...nada.
+  </p>
+</noscript>
+
+<div class="apiData" id="episode-meta">
   {% include svg_loading.html %}
 </div>
 
-<div id="episode-filter-container">
+<div class="apiData" id="episode-filter-container">
   <input
     type="search"
     id="episode-filter-search"
@@ -18,12 +24,12 @@ style: htg
   />
 </div>
 
-<div id="color-code-legend">
+<div class="apiData" id="color-code-legend">
   <span class="green-short">🟩 short</span>
   <span class="yellow-medium">🟨 medium</span>
   <span class="red-long">🟥 long</span>
 </div>
 
-<div id="episode-list">
+<div class="apiData" id="episode-list">
   {% include svg_loading.html %}
 </div>
