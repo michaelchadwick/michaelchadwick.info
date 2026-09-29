@@ -114,3 +114,8 @@ body {
 #episode-list div.player-wrapper iframe.player {
   width: 100%;
 }
+
+/* hide apiData stuff if no js */
+.apiData {
+  display: none;
+}
