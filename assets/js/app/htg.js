@@ -1,6 +1,14 @@
 /* htg */
 /* global MCInfo */
 
+// find all .apiData elements and turn them on
+const apiDataElems = document.querySelectorAll('.apiData')
+if (apiDataElems) {
+  apiDataElems.forEach((elem) => {
+    elem.style.display = 'block'
+  })
+}
+
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
 let bodyClasses = document.body.classList
 bodyClasses.remove(['dark-theme', 'light-theme'])
