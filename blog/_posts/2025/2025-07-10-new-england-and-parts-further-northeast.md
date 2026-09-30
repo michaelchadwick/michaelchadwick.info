@@ -3,7 +3,7 @@ layout: post
 title: 'New England and Parts Further Northeast'
 date: 2025-07-10 13:23:40
 description: "Sometimes, you just gotta get away from it all, see something new, and do something else. Thus, it is time to recount the recent travels of me, my wife, and our daughter, after 3 weeks spent in New England and Canada. Be it by car, ship, or plane, we traveled to new places, saw new things, and had new experiences. Buckle up: here is the account of said adventure."
-tags: canada cruise maine massachusetts new-jersey new-york nova-scotia pei prince-edward-island travel
+tags: audio canada cruise maine massachusetts new-jersey new-york nova-scotia pei prince-edward-island travel video
 headerImage: posts/2025/ne2025/header.jpg
 headerImageCaption: 'Sea foam in calm Atlantic Ocean waters somewhere off the coast of New England or Canada'
 image: posts/2025/ne2025/header.jpg
@@ -18,8 +18,9 @@ published: true
 
 Three weeks is a long period of time. At least in the year 2025, it also means one probably took a lot of photos and videos with their mobile phone. And I did. Besides the words below, I also sifted through said photos and videos AND created a whole vacation video AND its soundtrack.
 
-<!-- markdownlint-disable-next-line -->
-{% youtube "https://www.youtube.com/watch?v=zwIdDTqpQVE" %}
+<video controls>
+  <source src="https://files.neb.host/_movies/New_England_2025.mp4" type="video/mp4" />
+</video>
 
 You can watch the video above, and then read the words. You could also just listen to the soundtrack, "Just the Halifax, Ma'am", in the background while you read the words. OR you could _just_ read the words and throw shade on my creative efforts. Very choices, many option, wow!
 

@@ -1359,6 +1359,10 @@ footer#site-footer #logo-slogan a.plain {
   width: 100%;
 }
 
+.post-content video {
+  margin-bottom: 1em;
+}
+
 .post-content blockquote {
   border-left: 4px solid #e8e8e8;
   padding-left: 20px;
