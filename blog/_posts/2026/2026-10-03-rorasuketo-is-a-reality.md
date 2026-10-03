@@ -19,7 +19,7 @@ A new video game appears on the horizon, and its name is <a href="https://rorasu
 To quote from the <a href="https://rorasuketo.win">official website</a>:
 <blockquote>
 Rorasuketo is a ghost sports adventure being created and designed by Cam Norcross, and co-written by Tiffany VanPeenen. Inspired by and orchestrated with classic SNES sounds, the soundtrack was written by Michael Chadwick.
-</blockquote>.
+</blockquote>
 
 You may have noticed that last name is the same as mine. Yes, I created the soundtrack that plays in the background during the game, and I was glad to do it. I found a bunch of soundfonts at some point that included sampled instruments from popular SNES video games, and used them to arrange my own compositions, to really give the game that SNES-ified flavor.
 
