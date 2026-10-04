@@ -5,7 +5,7 @@ date: 2024-04-20 10:17:00
 tags: omni nebapps
 headerImage: posts/2024/omni-sees-all-my-webs.jpg
 headerImageCaption: 'omni sees all my webs - NightCafe (model: Dreamshaper XL Lightning, preset: NightCafe)'
-image: posts/2024/omni-sees-all-my-webs.jpg
+image: assets/images/posts/2024/omni-sees-all-my-webs.jpg
 published: true
 ---
 

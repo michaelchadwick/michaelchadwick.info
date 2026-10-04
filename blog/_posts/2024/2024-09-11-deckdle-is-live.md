@@ -6,7 +6,7 @@ description: "Announcing Deckdle, yet another web game in my portfolio. Play a d
 tags: cards daily deckdle game nebapp solitaire web webdev wordle-like
 headerImage: posts/2024/deckdle-is-live.png
 headerImageCaption: 'Deckdle web game logo'
-image: posts/2024/deckdle-is-live.png
+image: assets/images/posts/2024/deckdle-is-live.png
 published: true
 ---
 
