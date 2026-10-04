@@ -85,11 +85,7 @@ tags: fa fa-solid
     </div>
 
     <div class="post-header-image full-entry">
-      {% if page.headerImage %}
       <a href="{{ site.baseurl }}/assets/images/{{ page.headerImage }}">
-      {% else %}
-      <a href="{{ site.baseurl }}/assets/images/default_header-800.jpg">
-      {% endif %}
         <img
           alt="{{ page.title }}"
           title="{{ page.title }}"
@@ -99,11 +95,11 @@ tags: fa fa-solid
 
           {% if page.headerImage %}
           src="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
-          data-image-title="{{ page.headerImage }}"
+          data-image-title="{{ page.title }}"
           data-orig-file="{{ site.baseurl }}/assets/images/{{ page.headerImage }}"
           {% else %}
           src="{{ site.baseurl }}/assets/images/default_header-800.jpg"
-          data-image-title="Michael Chadwick blog post"
+          data-image-title="Michael Chadwick blog post image"
           data-orig-file="{{ site.baseurl }}/assets/images/default_header-800.jpg"
           {% endif %}
         />

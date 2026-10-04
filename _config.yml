@@ -36,8 +36,8 @@ defaults:
       path: ""
       type: "posts"
     values:
-      headerImage: "default_header-800.jpg"
-      image: "default_header-800.jpg"
+      headerImage: "posts/default_header-800.jpg"
+      image: "assets/images/default_header-800.jpg"
 
 plugins:
   - jekyll-environment-variables
