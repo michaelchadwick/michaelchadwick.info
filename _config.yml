@@ -30,6 +30,15 @@ date_MMDDYYYY: '%b %-d, %Y'
 date_YYYYMD: '%Y-%m-%d'
 date_YYYY: '%Y'
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      headerImage: "default_header-800.jpg"
+      image: "default_header-800.jpg"
+
 plugins:
   - jekyll-environment-variables
   - jekyll-feed
