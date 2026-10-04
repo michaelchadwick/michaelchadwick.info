@@ -5,7 +5,7 @@ date: 2026-08-21 17:45
 description: 'In my youth I picked up the skill of moving my feet to hit arrows on the ground in time to music, both for fun and for exercise. It has been many years since I did so, but guess what? You are never too old to show your ultimate dance.'
 headerImage: posts/2026/dance_dance_evolution.png
 headerImageCaption: 'Maximizer, the best song from the 8th Mix (Extreme 2).'
-image: posts/2026/dance_dance_evolution.png
+image: assets/images/posts/2026/dance_dance_evolution.png
 tags: ddr exercise mini-pc raspberry-pi
 published: true
 ---

@@ -6,7 +6,7 @@ description: "As the title announces, it is now the year 2025-and-a-few-days, an
 tags: aoc balatro coffee factorio guitar satriani steamdeck
 headerImage: posts/2025/it-is-2025.jpg
 headerImageCaption: 'It is 2025'
-image: posts/2025/it-is-2025.jpg
+image: assets/images/posts/2025/it-is-2025.jpg
 published: true
 ---
 

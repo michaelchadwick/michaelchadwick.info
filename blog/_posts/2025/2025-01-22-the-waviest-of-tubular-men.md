@@ -6,7 +6,7 @@ description: "Through no particular effort of my own beyond recording and titlin
 tags: just-a-goof music wavy-tube-man youtube
 headerImage: posts/2025/wavy-tube-man.jpg
 headerImageCaption: 'The Waviest of Tubular Men'
-image: posts/2025/wavy-tube-man.jpg
+image: assets/images/posts/2025/wavy-tube-man.jpg
 published: true
 ---
 

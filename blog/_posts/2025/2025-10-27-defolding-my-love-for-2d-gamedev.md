@@ -6,7 +6,7 @@ description: "Season two of Hacking the Grepson is all about making a game. Afte
 tags: defold htg gamedev love2d lua podcast
 headerImage: posts/2025/defold-love2d-gamedev.jpg
 headerImageCaption: 'Love and Defold logos floating in a wild landscape'
-image: posts/2025/defold-love2d-gamedev.jpg
+image: assets/images/posts/2025/defold-love2d-gamedev.jpg
 published: true
 ---
 

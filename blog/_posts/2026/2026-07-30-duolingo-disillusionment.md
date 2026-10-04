@@ -5,7 +5,7 @@ date: 2026-07-30 09:25
 description: 'Duolingo was once a super awesome place for me to experiment with language, and I really enjoyed using it. Nearly 5 and a half years of a daily streak later, I have become disillingoed.'
 headerImage: posts/2026/duolingo-disillusionment.jpg
 headerImageCaption: 'What a lovable owl face, right?'
-image: posts/2026/duolingo-disillusionment.jpg
+image: assets/images/posts/2026/duolingo-disillusionment.jpg
 tags: duolingo language wrapup
 published: true
 ---

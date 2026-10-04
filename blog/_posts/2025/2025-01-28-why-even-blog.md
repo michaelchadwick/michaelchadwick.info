@@ -4,9 +4,7 @@ title: 'Why Even Blog?'
 date: 2025-01-28 09:46:00
 description: "With social media and microblogging all the rage on the Internet these days, why even blog? I'm going to tell you, through one of the oldest Internet things I know of: being tagged to fill out a template."
 tags: blogging jekyll livejournal markdown pico8
-# headerImage: posts/2025/why-even-blog.jpg
 headerImageCaption: 'Why Even Blog?'
-image: posts/2025/why-even-blog.jpg
 published: true
 ---
 

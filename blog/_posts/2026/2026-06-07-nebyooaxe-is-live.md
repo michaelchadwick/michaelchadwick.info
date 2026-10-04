@@ -5,7 +5,7 @@ date: 2026-06-07 17:12
 description: 'Occasionally I like to look up guitar chords and their proper names. Why? Cuz it is edifying. The web has many tools that can help with this, but none of them are mine. And now one is.'
 headerImage: posts/2026/nebyooaxe-2026-06-07.png
 headerImageCaption: 'A terrible logo for NebyooAxe, but it needed a visual, and I made one.'
-image: posts/2026/nebyooaxe-2026-06-07.png
+image: assets/images/posts/2026/nebyooaxe-2026-06-07.png
 tags: astro audio chords cypress emberjs guitar music nebapp playwright qunit testing tool typescript vitest vuejs web web-app web-audio-api web-storage-api
 published: true
 ---

@@ -6,7 +6,7 @@ description: "Sometimes, you just gotta get away from it all, see something new,
 tags: audio canada cruise maine massachusetts new-jersey new-york nova-scotia pei prince-edward-island travel video
 headerImage: posts/2025/ne2025/header.jpg
 headerImageCaption: 'Sea foam in calm Atlantic Ocean waters somewhere off the coast of New England or Canada'
-image: posts/2025/ne2025/header.jpg
+image: assets/images/posts/2025/ne2025/header.jpg
 published: true
 ---
 

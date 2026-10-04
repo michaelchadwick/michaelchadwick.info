@@ -6,7 +6,7 @@ description: "Being able to use Javascript event listeners to check when certain
 tags: audio event-listeners keyboard javascript js soundlister webdev
 headerImage: posts/2025/event-listener-epiphany.jpg
 headerImageCaption: 'Screenshot from Sound Lister, my web app for displaying a playlist of audio'
-image: posts/2025/event-listener-epiphany.jpg
+image: assets/images/posts/2025/event-listener-epiphany.jpg
 published: true
 ---
 

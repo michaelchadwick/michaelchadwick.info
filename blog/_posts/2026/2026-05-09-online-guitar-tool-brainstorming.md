@@ -5,7 +5,7 @@ date: 2026-05-09 19:00:00
 description: 'As a guitarist, I sometimes need to reach for tools to facilitate the proper plucking of strings on my axe. While plenty of existing options exist, they never seem to perfectly fit what I want, and I start thinking about making my own versions. But what and how?'
 headerImage: posts/2026/guitar-playing.jpg
 headerImageCaption: 'Me, playing guitar'
-image: posts/2026/guitar-playing.jpg
+image: assets/images/posts/2026/guitar-playing.jpg
 tags: chords guitar keebord tabdiv tablature tone tuner vexflow vextab vuejs webdev
 published: true
 
