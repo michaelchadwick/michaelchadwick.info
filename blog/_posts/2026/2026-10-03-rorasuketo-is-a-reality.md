@@ -6,7 +6,7 @@ description: "Rorasuketo, a JRPG inspired by roller derby, SNES-era video games,
 tags: japan mental-health roller-derby rorasuketo soundtrack steam video-games
 headerImage: posts/2026/rorasuketo-is-win.png
 headerImageCaption: 'Rorasuketo is Win'
-image: posts/2026/rorasuketo-is-win.png
+image: assets/images/posts/2026/rorasuketo-is-win.png
 published: true
 ---
 
