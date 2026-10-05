@@ -147,3 +147,8 @@ body.dark-theme .click-to-talk:hover {
   background-color: var(--neutral-white);
   color: var(--neutral-black);
 }
+
+body.dark-theme .post-date-title .cal-block {
+  background-color: var(--neutral-black);
+  border: 1px solid var(--neutral-white);
+}
