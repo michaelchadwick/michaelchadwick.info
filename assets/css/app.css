@@ -1712,6 +1712,7 @@ footer#site-footer #logo-slogan a.plain {
   cursor: pointer;
 }
 .js-accordion-controller:hover {
+  background-color: #7debf716;
   color: var(--link-color);
 }
 
