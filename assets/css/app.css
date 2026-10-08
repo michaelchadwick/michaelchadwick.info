@@ -245,10 +245,18 @@ h2.task-header {
 h3 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+
+  &.header-indented {
+    font-size: 2.25rem;
+  }
 }
 @media (min-width: 550px) {
   h3 {
     font-size: 3rem;
+
+    &.header-indented {
+      font-size: 2.75rem;
+    }
   }
 }
 
@@ -454,6 +462,52 @@ details {
 
     & + p:first-of-type {
       margin-top: 2.5rem;
+    }
+  }
+}
+
+details:not(:open):hover {
+  text-decoration: underline;
+}
+
+details.audio-plugin-section {
+  padding: 0.1rem;
+
+  &:not(:open):hover {
+    text-decoration: none;
+  }
+
+  summary {
+    font-size: 3rem;
+    height: 0;
+
+    &::marker {
+      content: '';
+    }
+
+    &:hover {
+      background-color: #c2f9ff16;
+      color: var(--link-color);
+    }
+  }
+
+  &::details-content {
+    height: 0;
+    margin: 1em 2.3em;
+    opacity: 0;
+    transition:
+      opacity 200ms ease-out,
+      content-visibilty 600ms ease-in-out 100ms;
+  }
+
+  &[open] {
+    summary {
+      height: auto;
+    }
+
+    &::details-content {
+      height: auto;
+      opacity: 1;
     }
   }
 }
@@ -1706,18 +1760,6 @@ footer#site-footer #logo-slogan a.plain {
 #tag-cloud a.tag-size-1:hover {
   background-color: #ffffff;
   color: var(--link-color-faded1);
-}
-
-.js-accordion-controller {
-  cursor: pointer;
-}
-.js-accordion-controller:hover {
-  background-color: #7debf716;
-  color: var(--link-color);
-}
-
-details:not(:open):hover {
-  text-decoration: underline;
 }
 
 .click-to-talk {

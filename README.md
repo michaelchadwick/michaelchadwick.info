@@ -33,7 +33,6 @@ In order for `/assets/php/*` files to work, you must run a local server:
 
 * [fontawesome](https://fontawesome.com)
 * [jQuery](https://jquery.com)
-  * [accordion-blocks](https://github.com/philbuchanan/Accordion-Blocks): cool expand/collapse audio plugin blocks
   * [colorbox](https://www.jacklmoore.com/colorbox/): website screenshots on my resume
 * [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
 * [raphael.js](https://dmitrybaranovskiy.github.io/raphael/)
