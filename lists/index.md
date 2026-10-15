@@ -24,9 +24,12 @@ Over time, one begins to realize they vibe with certain things.
   <section class="list sub">
     <h5>Aural</h5>
     <ul>
+      <li><a href="https://anginedepoitrine.com">Angine de Poitrine</a></li>
       <li><a href="https://carpenterbrut.bandcamp.com">Carpenter Brut</a></li>
       <li><a href="https://disasterpeace.com">Disasterpeace</a></li>
-      <li><a href="http://www.satriani.com">Joe Satriani</a></li>
+      <li><a href="https://www.satriani.com">Joe Satriani</a></li>
+      <li><a href="https://knowermusic.bandcamp.com">KNOWER</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Nobuo_Uematsu">Nobuo Uematsu</a>
     </ul>
   </section>
 
@@ -96,6 +99,18 @@ Over time, one begins to realize they vibe with certain things.
       <li><a href="https://en.wikipedia.org/wiki/Chants_of_Sennaar">Chants of Sennar</a></li>
       <li><a href="https://en.wikipedia.org/wiki/Portal_(series)">Portal</a></li>
       <li><a href="https://en.wikipedia.org/wiki/The_Witness_(2016_video_game)">The Witness</a></li>
+    </ul>
+  </section>
+
+  <section class="list sub">
+    <h5>RPG</h5>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Chrono_Trigger">Chrono Trigger</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Final_Fantasy_IV">Final Fantasy IV</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Final_Fantasy_VI">Final Fantasy VI</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Final_Fantasy_Tactics">Final Fantasy Tactics</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Planescape:_Torment">Planescape: Torment</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Shadowrun_(1993_video_game)">Shadowrun (SNES)</a></li>
     </ul>
   </section>
 
