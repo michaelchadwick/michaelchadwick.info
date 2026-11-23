@@ -12,6 +12,8 @@ published: true
 
 {{ page.description }}
 
+EDIT (2026-11-23):  It's actually been weeks now, but the playlist for the LP of Rorasuketo is <a href="https://www.youtube.com/watch?v=s33-KQfhJLc&list=PLeFeOMIgTFiY&pp=sAgC">available now</a>.
+
 <!--more-->
 
 <iframe src="https://store.steampowered.com/widget/4401480/" frameborder="0" width="646" height="190"></iframe>
@@ -32,5 +34,3 @@ Note: the podcast I still do bi-weekly with my friend Matt did <a href="https://
 EDIT (2026-10-07): Finished my first full playthough, and I adore it even more. What an incredibly personal and effecting story. Nice job, Cam.
 
 EDIT (2026-10-10): Started a Let's Play of Rorasuketo. Once it's all done and recorded, I'll be putting it up at <a href="https://youtube.com/@nebyooplays">NebyooPlays</a>.
-
-EDIT (2026-11-23):  It's actually been weeks now, but the playlist for the LP of Rorasuketo is <a href="https://www.youtube.com/watch?v=s33-KQfhJLc&list=PLeFeOMIgTFiY&pp=sAgC">available now</a>.
