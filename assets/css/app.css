@@ -889,6 +889,10 @@ footer#site-footer a:visited:hover {
     svg path {
       fill: var(--neutral-black);
     }
+
+    svg.youtube-icon-svg path + path {
+      fill: var(--neutral-white);
+    }
   }
 }
 
@@ -928,7 +932,8 @@ footer#site-footer .github-icon-svg,
 footer#site-footer .masto-icon-svg,
 footer#site-footer .linkedin-icon-svg,
 footer#site-footer .soundcloud-icon-svg,
-footer#site-footer .tools-icon-svg {
+footer#site-footer .tools-icon-svg,
+footer#site-footer .youtube-icon-svg {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -942,6 +947,15 @@ footer#site-footer .linkedin-icon-svg,
 footer#site-footer .soundcloud-icon-svg {
   path {
     fill: var(--neutral-white);
+  }
+}
+footer#site-footer .youtube-icon-svg {
+  path {
+    fill: var(--neutral-white);
+
+    & + path {
+      fill: var(--link-color-faded1);
+    }
   }
 }
 

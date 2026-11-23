@@ -80,6 +80,8 @@ linkedin_username: michaeljchadwick
 sc_n_username: nebyoolae
 sc_mb_username: massive-battery
 bc_username: nebyoolae
+yt_nebyoolae_username: nebyoolae
+yt_nebyooplays_username: nebyooplays
 ca_link: https://www.google.com/maps/place/California/@35.8949354,-137.2963832,4z/data=!3m1!4b1!4m5!3m4!1s0x808fb9fe5f285e3d:0x8b5109a227086f55!8m2!3d36.778261!4d-119.4179324
 mc_link: https://michaelchadwick.info
 neb_link: https://nebyoolae.com
@@ -106,8 +108,11 @@ am_neb_link: https://music.apple.com/us/artist/nebyoolae/1655123042
 am_fenchy_link: https://music.apple.com/us/artist/fenchy/1652676694
 am_flv_link: https://music.apple.com/us/artist/fly-like-venus/1250934211
 am_pyc_link: https://music.apple.com/us/artist/pure-yellow-colour/279571891
+# youtube
+yt_nebyoolae_link: https://youtube.com/@nebyoolae
+yt_nebyooplays_link: https://youtube.com/@nebyooplays
 # youtube music
-yt_neb_link: https://music.youtube.com/channel/UCD9SVVjQptRCasX5Dmgki5Q
-yt_fenchy_link: https://music.youtube.com/channel/UCFpxTtf0D_8bGQQoLcw7pjA
-yt_flv_link: https://music.youtube.com/channel/UCZM6OHNCjdvKJvjseMNVihA
-yt_pyc_link: https://music.youtube.com/channel/UCo9sfG61EnT8MO205DhzEWg
+ytm_neb_link: https://music.youtube.com/channel/UCD9SVVjQptRCasX5Dmgki5Q
+ytm_fenchy_link: https://music.youtube.com/channel/UCFpxTtf0D_8bGQQoLcw7pjA
+ytm_flv_link: https://music.youtube.com/channel/UCZM6OHNCjdvKJvjseMNVihA
+ytm_pyc_link: https://music.youtube.com/channel/UCo9sfG61EnT8MO205DhzEWg
